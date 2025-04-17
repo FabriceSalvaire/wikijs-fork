@@ -32,14 +32,14 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
 # Upgrades
 
 - [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
-- [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated
-- [Katex](https://katex.org) was upgraded to the latest to enhance the Math support
+- [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated and printed a warning.
+- [Katex](https://katex.org) was upgraded to the latest to enhance the Math support.
 
 ## Known Issues
 
 - [ssh2](https://github.com/mscdex/ssh2) has an optional dependencies, `cpu_features`, that fails to build and make noises.
 
-  See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083)
+  See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083).
   A workaround is to use `--ignore-optional` for Yarn.
 
 # Further upgrades
