@@ -10,6 +10,7 @@ Build process works on Fedora 41.
 1. Install the packages:
    ```
    # yarn cache clean
+   ln -sf .../node_modules node_modules
    yarn install --frozen-lockfile --non-interactive --ignore-optional
    ```
 1. Build `assets`:
@@ -20,7 +21,7 @@ Build process works on Fedora 41.
 1. To cleanup `node_modules` for production:
    ```
    rm node_modules
-   ln -sf /srv/cache/fabrice/node_modules-prod node_modules
+   ln -sf .../node_modules-prod node_modules
    yarn --frozen-lockfile --non-interactive --ignore-optional --production
    yarn patch-package
    ```
@@ -37,7 +38,7 @@ Build process works on Fedora 41.
 # Further upgrades
 
 - `yarn.lock` is a castle of cards !
-- Most of the packages are outdated, unmaintained, end of life, and could as security issues !
+- Most of the packages are outdated, unmaintained, end of life, and could have security issues !
 - Any upgrade can break everything !
 - Most of the time, a major upgrade changes the API !
 
