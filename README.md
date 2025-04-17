@@ -76,4 +76,5 @@ LanguageTool doesn't work with CodeMirror.
 # Links
 
 - [Yarn](https://yarnpkg.com)
+
   [CLI](https://classic.yarnpkg.com/en/docs/cli/)
