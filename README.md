@@ -4,9 +4,9 @@ This repository contains a [Wiki.js](https://github.com/requarks/wiki) fork feat
 
 # Build Status
 
-Build process works on Fedora 41.
+If you don't want to use a Docker image, the build process works on Linux Fedora 41.
 
-1. Install Node.js ...
+1. Install Web development packages: Node.js Yarn ...
 1. Install the packages:
    ```
    # yarn cache clean
@@ -31,9 +31,16 @@ Build process works on Fedora 41.
 
 # Upgrades
 
-- PostCSS was upgraded to fix `No PostCSS Config found` error
-- caniuse-lite was outdated
-- Katex was upgraded to the latest to enhance the math support
+- [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
+- [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated
+- [Katex](https://katex.org) was upgraded to the latest to enhance the Math support
+
+## Known Issues
+
+- [ssh2](https://github.com/mscdex/ssh2) has an optional dependencies, `cpu_features`, that fails to build and make noises.
+
+  See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083)
+  A workaround is to use `--ignore-optional` for Yarn.
 
 # Further upgrades
 
