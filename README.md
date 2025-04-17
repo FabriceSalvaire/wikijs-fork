@@ -23,11 +23,13 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
    rm node_modules
    ln -sf .../node_modules-prod node_modules
    yarn --frozen-lockfile --non-interactive --ignore-optional --production
-   yarn patch-package
+   yarn patch-package   # or yarn postinstall
    ```
 1. Setup `config.yml`
 1. Set `dev` to `false` in `package.json`
-1. Run Wiki.js using `node server`
+1. Run Wiki.js using `node server` or `yarn start`
+   For dev mode use `yarn dev`, see also `yarn watch`
+1. Install [Vue DevTools](https://devtools.vuejs.org) browser extension (Chrome, Firefox)
 
 # Upgrades
 
@@ -44,17 +46,34 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
 
 # Further upgrades
 
+**Notice that**
 - `yarn.lock` is a castle of cards !
 - Most of the packages are outdated, unmaintained, end of life, and could have security issues !
 - Any upgrade can break everything !
 - Most of the time, a major upgrade changes the API !
 
+**Idea**
+1. upgrade serious security issues, see `yarn audit`
+1. upgrade to Vue 3
+1. check for improvements
+
+  - Markown-it
+  - CodeMirror
+1. upgrade for better performance
+
 ## Build Tools
 
 Vue.js depends of Babel, so don't update build tool.
 
-## CodeMirror
+## Markown-it
 
 It seems `**` breaks the editor, the page live preview is blank.
 
+## CodeMirror
+
 LanguageTool doesn't work with CodeMirror.
+
+# Links
+
+- [Yarn](https://yarnpkg.com)
+  [CLI](https://classic.yarnpkg.com/en/docs/cli/)
