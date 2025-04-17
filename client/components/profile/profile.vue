@@ -167,6 +167,18 @@
               v-icon(left) mdi-progress-check
               span {{$t('profile:auth.changePassword')}}
       v-flex(lg6 xs12)
+        v-card.animated.fadeInUp.wait-p2s
+          v-toolbar(color='indigo', dark, dense, flat)
+            v-toolbar-title.subtitle-1 Session Settings
+          v-card-text
+            v-switch.mt-0(
+              inset
+              label='Disable editor selection'
+              color='indigo'
+              v-model='disableEditorSelector'
+              persistent-hint
+              hint='Disable editor selection for new page'
+            )
         //- v-card
         //-   v-toolbar(color='blue-grey', dark, dense, flat)
         //-     v-toolbar-title
@@ -343,7 +355,7 @@
 </template>
 
 <script>
-import { get } from 'vuex-pathify'
+import { get, sync } from 'vuex-pathify'
 import gql from 'graphql-tag'
 import _ from 'lodash'
 import Cookies from 'js-cookie'
@@ -642,6 +654,7 @@ export default {
     }
   },
   computed: {
+    disableEditorSelector: sync('user/disableEditorSelector'),
     dateFormats () {
       return [
         { text: this.$t('profile:localeDefault'), value: '' },
@@ -724,6 +737,11 @@ export default {
      * Save User Profile
      */
     async saveProfile () {
+      Cookies.set('WikijsProfileSettings',
+                  {
+                    disableEditorSelector: this.disableEditorSelector
+                  },
+                  { expires: 365 })
       this.saveLoading = true
       this.$store.commit(`loadingStart`, 'profile-save')
 

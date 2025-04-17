@@ -15,7 +15,10 @@ const state = {
   permissions: [],
   iat: 0,
   exp: 0,
-  authenticated: false
+  authenticated: false,
+  disableEditorSelector: true
+  // settings: {
+  //  }
 }
 
 export default {
@@ -40,9 +43,20 @@ export default {
           st.permissions = jwtData.permissions
           st.iat = jwtData.iat
           st.exp = jwtData.exp
+          // st.disableEditorSelector = jwtData.disableEditorSelector
           st.authenticated = true
+
+          // Fixme: multi-user -> save in db
+          let profileCookie = Cookies.get('WikijsProfileSettings')
+          if (profileCookie !== undefined) {
+            profileCookie = JSON.parse(profileCookie)
+            // console.log('profileCookie', typeof(profileCookie), profileCookie)
+            st.disableEditorSelector = profileCookie.disableEditorSelector
+            console.log('disableEditorSelector', st.disableEditorSelector)
+          }
         } catch (err) {
           console.debug('Invalid JWT. Silent authentication skipped.')
+          // console.debug(err)
         }
       }
     }

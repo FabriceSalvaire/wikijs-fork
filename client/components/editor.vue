@@ -240,7 +240,8 @@ export default {
 
     this.initContentParsed = this.initContent ? Base64.decode(this.initContent) : ''
     this.$store.set('editor/content', this.initContentParsed)
-    if (this.mode === 'create' && !this.initEditor) {
+    let useSelector = this.$store.get('user/disableEditorSelector')
+    if (!useSelector && this.mode === 'create' && !this.initEditor) {
       _.delay(() => {
         this.dialogEditorSelector = true
       }, 500)
