@@ -313,6 +313,7 @@ md.renderer.rules.heading_open = injectLineNumbers
 md.renderer.rules.blockquote_open = injectLineNumbers
 
 cmFold.register('markdown')
+
 // ========================================
 // PLANTUML
 // ========================================
@@ -369,15 +370,20 @@ md.renderer.rules.emoji = (token, idx) => {
 let mermaidId = 0
 
 export default {
+  // ----------------------------------------------------------------------------
   components: {
     markdownHelp
   },
+
+  // ----------------------------------------------------------------------------
   props: {
     save: {
       type: Function,
       default: () => {}
     }
   },
+
+  // ----------------------------------------------------------------------------
   data() {
     return {
       fabInsertMenu: false,
@@ -390,6 +396,8 @@ export default {
       insertLinkDialog: false
     }
   },
+
+  // ----------------------------------------------------------------------------
   computed: {
     isMobile() {
       return this.$vuetify.breakpoint.smAndDown
@@ -402,6 +410,8 @@ export default {
     mode: get('editor/mode'),
     activeModal: sync('editor/activeModal')
   },
+
+  // ----------------------------------------------------------------------------
   watch: {
     previewShown (newValue, oldValue) {
       if (newValue && !oldValue) {
@@ -412,6 +422,7 @@ export default {
         })
       }
     },
+
     spellModeActive (newValue, oldValue) {
       if (newValue) {
         this.$nextTick(() => {
@@ -420,18 +431,26 @@ export default {
       }
     }
   },
+
+  // ----------------------------------------------------------------------------
   methods: {
     toggleModal(key) {
       this.activeModal = (this.activeModal === key) ? '' : key
       this.helpShown = false
     },
+
+    // ---------------------------------------------
     closeAllModal() {
       this.activeModal = ''
       this.helpShown = false
     },
+
+    // ---------------------------------------------
     onCmInput: _.debounce(function (newContent) {
       this.processContent(newContent)
     }, 600),
+
+    // ---------------------------------------------
     onCmPaste (cm, ev) {
       // const clipItems = (ev.clipboardData || ev.originalEvent.clipboardData).items
       // for (let clipItem of clipItems) {
@@ -449,6 +468,8 @@ export default {
       //   }
       // }
     },
+
+    // ---------------------------------------------
     processContent (newContent) {
       linesMap = []
       // this.$store.set('editor/content', newContent)
@@ -464,12 +485,16 @@ export default {
         this.scrollSync(this.cm)
       })
     },
+
+    // ---------------------------------------------
     /**
      * Update cursor state
      */
     positionSync(cm) {
       this.cursorPos = cm.getCursor('head')
     },
+
+    // ---------------------------------------------
     /**
      * Wrap selection with start / end tags
      */
@@ -484,6 +509,8 @@ export default {
       }
       this.cm.doc.replaceSelections(this.cm.doc.getSelections().map(s => start + s + end))
     },
+
+    // ---------------------------------------------
     /**
      * Set current line as header
      */
@@ -497,6 +524,8 @@ export default {
       lineContent = _.times(lvl, n => '#').join('') + ` ` + lineContent
       this.cm.doc.replaceRange(lineContent, { line: curLine, ch: 0 }, { line: curLine, ch: lineLength })
     },
+
+    // ---------------------------------------------
     /**
      * Get the header lever of the current line
      */
@@ -511,6 +540,8 @@ export default {
       }
       return lvl
     },
+
+    // ---------------------------------------------
     /**
      * Insert content at cursor
      */
@@ -518,6 +549,8 @@ export default {
       const cursor = this.cm.doc.getCursor('head')
       this.cm.doc.replaceRange(content, cursor)
     },
+
+    // ---------------------------------------------
     /**
      * Insert content after current line
      */
@@ -526,6 +559,8 @@ export default {
       const lineLength = this.cm.doc.getLine(curLine).length
       this.cm.doc.replaceRange(newLine ? `\n${content}\n` : content, { line: curLine, ch: lineLength + 1 })
     },
+
+    // ---------------------------------------------
     /**
      * Insert content before current line
      */
@@ -554,6 +589,8 @@ export default {
         this.cm.doc.replaceRange(`\n${after}\n`, { line: lastLine, ch: this.cm.doc.getLine(lastLine).length + 1 })
       }
     },
+
+    // ---------------------------------------------
     /**
      * Update scroll sync
      */
@@ -572,18 +609,26 @@ export default {
         }
       }
     }, 500),
+
+    // ---------------------------------------------
     toggleHelp () {
       this.helpShown = !this.helpShown
       this.activeModal = ''
     },
+
+    // ---------------------------------------------
     toggleFullscreen () {
       this.cm.setOption('fullScreen', true)
     },
+
+    // ---------------------------------------------
     refresh() {
       this.$nextTick(() => {
         this.cm.refresh()
       })
     },
+
+    // ---------------------------------------------
     renderMermaidDiagrams () {
       document.querySelectorAll('.editor-markdown-preview pre.codeblock-mermaid > code').forEach(elm => {
         mermaidId++
@@ -593,6 +638,8 @@ export default {
         elm.parentElement.replaceWith(mmElm)
       })
     },
+
+    // ---------------------------------------------
     autocomplete (cm, change) {
       if (cm.getModeAt(cm.getCursor()).name !== 'markdown') {
         return
@@ -652,15 +699,21 @@ export default {
         }
       }
     },
+
+    // ---------------------------------------------
     insertLink () {
       this.insertLinkDialog = true
     },
+
+    // ---------------------------------------------
     insertLinkHandler ({ locale, path }) {
       const lastPart = _.last(path.split('/'))
       this.insertAtCursor({
         content: siteLangs.length > 0 ? `[${lastPart}](/${locale}/${path})` : `[${lastPart}](/${path})`
       })
     },
+
+    // ---------------------------------------------
     processMarkers (from, to) {
       let found = null
       let foundStart = 0
@@ -715,6 +768,8 @@ export default {
         }
       })
     },
+
+    // ---------------------------------------------
     addMarker ({ kind, from, to, text, action }) {
       const markerElm = document.createElement('span')
       markerElm.appendChild(document.createTextNode(text))
@@ -723,6 +778,8 @@ export default {
       this.cm.markText(from, to, { replacedWith: markerElm, __kind: kind })
     }
   },
+
+  // ----------------------------------------------------------------------------
   mounted() {
     this.$store.set('editor/editorKey', 'markdown')
 
@@ -854,6 +911,8 @@ export default {
       this.cm.setValue(this.$store.get('editor/content'))
     })
   },
+
+  // ----------------------------------------------------------------------------
   beforeDestroy() {
     this.$root.$off('editorInsert')
   }
