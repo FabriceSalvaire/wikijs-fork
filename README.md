@@ -61,7 +61,6 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
 - Markdown editor : key to add `</br>`
 - Insert Link : insert the page title instead of its slug
 - Insert Link Modal : Expand current folder and scroll to it (notice the modal is only destroyed when we leave the editor).
-</br>
 
 **Short list of PR to review**
 - [fix: open newtab when using middle mouse button in tag overview by rtpt-romankarwacik · Pull Request #7143 · requarks/wiki](https://github.com/requarks/wiki/pull/7143)
@@ -89,19 +88,19 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
   - CodeMirror
 1. upgrade for better performance
 
-## Build Tools
+### Build Tools
 
 Vue.js depends of Babel, so don't update build tool.
 
-## Markown-it
+### Markown-it
 
 It seems `**` breaks the editor, the page live preview is blank.
 
-## CodeMirror
+### CodeMirror
 
 LanguageTool doesn't work with CodeMirror.
 
-## MDI
+### MDI
 
 - [RELEASED - Version 6.1.95 - Breaking Changes · Issue #5409 · Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign/issues/5409)
 
