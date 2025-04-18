@@ -1,8 +1,9 @@
 This repository contains a custom [Wiki.js](https://github.com/requarks/wiki) fork featuring some upgrades and modifications.
 
 > [!IMPORTANT]
-> NOTICE THAT ANY SUPPORT IS PROVIDED
-> BUT ANY USEFUL PR IS WELCOME OR TALK ABOUT MAINTAINING V2
+> **NOTICE THAT ANY SUPPORT IS PROVIDED**
+>
+> **BUT ANY USEFUL PR IS WELCOME OR TALK ABOUT MAINTAINING V2**
 
 # Changelog vs V2
 
@@ -105,6 +106,17 @@ LanguageTool doesn't work with CodeMirror.
 - [RELEASED - Version 6.1.95 - Breaking Changes · Issue #5409 · Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign/issues/5409)
 
 
+# Framework Notes
+
+Vues.js is known to be more lighter than React but what about is API stability, code readability ???
+
+I wrote some React apps, but I could not figure out where is the documentation for Vuetify using Pug :-) ...
+</br>
+
+**Tutorials**
+- [Building Vue Components With Pug & Stylus. | by Victor Onuoha Martins | Medium](https://medium.com/@martinsOnuoha/building-vue-components-with-pug-stylus-564615ed289)
+- [Vuetify + VueJS 3 | Cours](https://cours.brosseau.ovh/tp/vuejs3/vuetify.html)
+
 # Dependencies Links
 
 - [Yarn](https://yarnpkg.com)
@@ -136,6 +148,8 @@ LanguageTool doesn't work with CodeMirror.
   Syntax highlighter
 - [Pug](https://pugjs.org/api/getting-started.html)
   Template engine
+  
+  [Pug HTML Template Engine: A Beginner's Guide — SitePoint](https://www.sitepoint.com/a-beginners-guide-to-pug/)
 - [punycode](https://github.com/mathiasbynens/punycode.js)
   Punycode converter that fully complies to RFC 3492 and RFC 5891
 - [simple-git](https://github.com/steveukx/git-js)
