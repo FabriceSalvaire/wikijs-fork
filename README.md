@@ -167,12 +167,12 @@ I wrote some React apps, but I could not figure out where is the documentation f
   Webpack plugin
 
 
-# Interresting Package Links
+# Interesting Package Links
+
+### Monaco
 
 - [Monaco Editor](https://microsoft.github.io/monaco-editor)
-
-  VS Code editor so should ba as bad as it...
-  LanguageTool support ???
-
- [purocean/monaco-spellchecker](https://github.com/purocean/monaco-spellchecker/)
+- VS Code editor so should be as bad as...
+- LanguageTool support ???
+- [purocean/monaco-spellchecker](https://github.com/purocean/monaco-spellchecker/)
   Demo is not so convincing...
