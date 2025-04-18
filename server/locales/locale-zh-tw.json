@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "請先登入"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "電子郵件地址 / 使用者名稱"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "密碼"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "登入"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "無效的登入。"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "無效的電子郵件地址或密碼。"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "無效的使用者電子郵件地址"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "登入錯誤"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "您尚未被授權登入此網站。"
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "嘗試次數過多！"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "您在短時間內失敗了太多次，請 {{time}} 後再試一次。"
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "找不到使用者"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "站內"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft 帳號"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "兩步驟驗證"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "安全碼（必填）："
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "驗證"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "控制面板"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "一般"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "語言"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "統計"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "主題"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "群組"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "使用者"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "認證"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "編輯器"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "記錄檔"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "轉譯"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "搜尋引擎"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "儲存空間"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API 存取"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "系統資訊"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "實用工具"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "開發者工具"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "為 Wiki.js 貢獻"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "您的 Wiki 主要設定"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "網站資訊"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "網站商標"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "網站"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "使用者"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "模組"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "系統"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "為您的 Wiki 設定本地化選項"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "語言設定"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "多語言路徑"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "下載語言"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "預設語言"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "所有 UI 文字都將以選定的語言顯示。"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "自動更新"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "自動下載下方已啟用語言的更新。"
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "多語言路徑"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "為單一頁面啟用多語言版本。"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "已啟用的語言路徑"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "啟用多語言路徑的語言列表。選項最終會包含上方選擇的預設語言。"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "語言代碼將作為所有網址路徑的前綴。（例如 /{{langCode}}/page-name）"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "不含語言代碼的路徑將自動跳轉至上方選擇的預設語言。"
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "儲存"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "取消"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "下載"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "上傳"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "放棄"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "清除"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "建立"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "編輯"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "刪除"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "重新整理"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "儲存變更"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "繼續"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "網站語言"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "當此語言有可用的更新時自動下載。"
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "關於您系統的資訊"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "主機資訊"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "目前版本"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "最新版本"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "已發佈於"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "作業系統"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "主機名稱"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU 核心"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "總記憶體"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "工作目錄"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "設定檔"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "記憶體使用量：{{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "支援 Wiki.js 的開發和維運"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "資助我們的工作"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "公開分享"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "告訴您的朋友和同事們 Wiki.js 有多棒！"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "在 {{0}} 上關注我們。"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "提交點子或在 {{0}} 上對提案進行投票。"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "功能請求區"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "發現了 Bug？在 {{0}} 上提交問題。"
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "協助將 Wiki.js 翻譯成您的語言。在 {{0}} 上告訴我們。"
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "贊助"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "貢獻"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js 是 Open Collective 計劃的一員。Open Collective 是面向社群資源的透明基金平台。您可以通過每月固定或一次性捐款來貢獻："
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "我們需要您的協助來不斷改進此軟體和執行各種相關的服務（例如伺服器和網路服務）。"
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js 是由 {{1}} 和 {{2}} 用 {{0}} 免費提供您的開源軟體。"
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "貢獻者"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "頁面"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "轉譯中"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "請稍後..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "頁面建立成功。"
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "建立頁面時發生錯誤"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "您也可以購買 Wiki.js 的 T 恤來支持此專案的財務："
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js 商城"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "確認"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}。版權所有。"
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "此頁面還不存在。"
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "您想要現在建立嗎？"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "建立頁面"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "返回"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "頁面"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "導航"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "管理網站導航"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "新增"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "連結"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "分隔線"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "標題"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "文字"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "圖標"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "目標類型"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "目標"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "從左側選擇導航項目。"
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "無標題{{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "外部連結"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "首頁"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "頁面"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "搜尋參數"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "編輯{{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "刪除{{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "導航已成功儲存。"
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "點擊新增按鈕來新增第一個導航項目。"
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "導航是空的"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "套用"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "電子郵件地址"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "重覆密碼"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "名稱"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "註冊"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "建立帳號"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "已經有帳號了？{{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "改為登入"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "使用 {{strategy}} 登入"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "忘記密碼？"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "或透過這些平台登入..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "還沒有帳號嗎？{{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "建立帳號"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "請輸入有效的電子郵件地址 / 使用者名稱。"
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "請輸入有效的密碼。"
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "登入成功！正在重新導向…"
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "登入中…"
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "認證不可用。"
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "填寫下面的資料以建立您的帳號。"
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "請稍候"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "帳號建立成功！"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "帳號建立中..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "缺少電子郵件地址。"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "電子郵件地址無效。"
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "缺少密碼。"
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "密碼太短。"
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "兩次密碼輸入不同。"
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "缺少名稱。"
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "名稱太短。"
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "名稱太長。"
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "取消"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "重設密碼"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "輸入您的 Email 地址以接收密碼重置說明："
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "信件"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "設置信件相關設定"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "設定"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM（選用）"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "查看您的 Email 以啓用您的帳號。"
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "頁面已成功更新。"
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "未授權"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "您無法查看此頁面。"
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "您無法查看該頁面原始碼。"
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "您無法查看該頁面歷史記錄。"
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "您無法編輯該頁面。"
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "您無法建立頁面。"
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "返回"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "首頁"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "找不到頁面"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "此頁面不存在。"
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "立即登入"
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "成為 Patreon 贊助者"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "在 Patreon 上成為支持者或贊助者（支援開發人員領導 Nicolas Giard 在 Wiki.js 全職工作的目標）"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "歡迎來到您的維基！"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "讓我們起步並建立首頁。"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "建立首頁"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "偵錯工具"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "透過 Paypal 進行一次性或重覆性捐贈："
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "我們接受使用以太幣捐款："
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "載入語言包"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "如果您無法連線到網際網路或無法透過以上方式下載語言檔案，你可以從下方瀏覽本機檔案手動上傳。"
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "瀏覽..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "管理外部服務的 Webhook"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "發送測試電子郵件"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "電子郵件地址"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "發送信件"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "寄件人"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "寄件人名稱"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "寄件人電子郵件"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP 設定"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "主機名稱"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "連接埠"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "通常是 465（建議使用）、587 或 25。"
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "安全性（TLS）"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "使用連接埠 465 時應啟用，否則關閉（587 或 25）。"
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "使用者名稱"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "密碼"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM（DomainKeys Identified Mail，域名金鑰辨識郵件）為收件人提供驗證網域名稱並確保訊息真實性的方法，讓所有自 Wiki.js 發送的電子郵件受到一層安全防護。"
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "使用 DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "網域名稱"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "金鑰選取器"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "私密金鑰"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM 格式的選取器私密金鑰"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "發送測試電子郵件，以確保您的 SMTP 設定可以正常執行。"
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "設定已成功儲存。"
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "無法完整支援您的資料庫版本。某些功能可能受到限制或無法如預期執行。"
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "系統資訊已更新。"
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "設定您 Wiki 的身份認證功能"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "登入機制"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "全域進階設定"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT 接收者"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "用於登入後簽發 JWT 的接收者 URN。通常是您的域名（例如 urn:your.domain.com）"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token 到期日"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Token 需要被更新的有效期限。（預設值：30 分）"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Token 更新週期"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Token 過期後可以被更新的最大期限。（預設值：14d）"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "此登入機制{{state}}{{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "啓用"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "未啟用"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "並且無法被停用。"
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "測試電子郵件已成功發送。"
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "修改您的 Wiki 的外觀"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "網站佈景主題"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "佈景主題會影響頁面內容的顯示。其他網站區塊（例如編輯器或後台管理）將不受影響。"
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "使用深色模式"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "不建議用於無障礙網頁。並非所有佈景主題都支援。"
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "程式碼注入"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS 覆寫"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "注入在系統預設 CSS 之後的 CSS 樣式碼。如果您有大量的 CSS 樣式碼，可以考慮使用自訂佈景主題。注入過多的 CSS 樣式碼可能導致頁面載入性能降低！CSS 樣式碼將自動被壓縮。"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head 標籤 HTML 注入"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "置入於 head 結束標籤前的 HTML 程式碼。通常是使用 script 標籤。"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body 標籤 HTML 注入"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML 程式碼會被置入於 body 結束標籤前。"
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "下載佈景主題"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "管理後台"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "登入機制設定"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "此登入機制沒有您可以修改的設定選項。"
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "註冊"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "開放自由註冊"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "允許透過該登入機制登入成功的任何使用者訪問 Wiki。"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "限制特定的電子郵件網域"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "授權註冊的域名列表。使用者的電子郵件地址域必須符合任一項才能獲得存取權。"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "指派至群組"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "自動將新使用者指派到這些群組。"
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "安全性"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "強制所有使用者使用兩步驟驗證（2FA）"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "首次登入時，使用者必須設定兩步驟驗證（2FA），並且不能將其停用。"
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "設定參考"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "某些登入機制可能需要在供應商平台中設定一些參數。這些內容僅供參考，目前的登入機制可能不需要。"
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "您必須先設置有效的{{siteUrl}}！點擊左側欄中的「{{general}}」。"
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "允許的網頁來源"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "回調 URL / 導向 URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "登入網址"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "登出網址"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token 端點認證方式"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "首頁"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "新頁面"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "目前頁面"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "查看"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "編輯"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "歷史紀錄"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "查看原始碼"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "移動 / 重新命名"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "刪除"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "素材"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "圖片和檔案"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "搜尋..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "管理後台"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "帳號"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "我的維基"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "個人資料"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "登出"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "登入"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "上次更新由"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "未發佈"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "編輯頁面"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "頁面內容"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "書籤"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "分享"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "列印格式"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "關閉"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "頁面"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "設定備份和同步內容的目的地"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "目標"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "狀態"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "上次同步時間為 {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "上次嘗試時間是 {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "錯誤訊息"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "您沒有任何啟用中的儲存目標。"
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "目標設定"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "此儲存目標沒有您可以修改的設定選項。"
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "同步方向"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "選擇此儲存目標使用的內容同步方式。"
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "雙向"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "推送到目標"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "自目標取回"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "不支援"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "在雙向模式下，首先從儲存目標中取回內容。任何新內容都會覆蓋本機內容。接著將自上次同步後的新內容推送至儲存目標中，將所有內容覆蓋。"
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "內容將被推送到儲存目標中，覆蓋任何現有內容。這對備份來說是最安全的選擇。"
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "內容將從儲存目標中取回並覆蓋本機中已存在的所有內容。此選項通常保留給一次性匯入使用。注意使用此選項時，任何本機內容都將被覆蓋！"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "同步預約時間"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "由於效能考量，此儲存目標不是每次更改都會同步更新，而是按固定時間更新。設定進行同步的間隔時間。"
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "目前設定為每 {{schedule}}。"
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "預設為每 {{schedule}}。"
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "操作"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "執行"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "設定您的 Wiki 搜尋功能"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "重建索引"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "搜尋引擎"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "引擎設定"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "此搜尋引擎沒有您可以修改的設定選項。"
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "搜尋引擎列表已更新。"
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "搜尋引擎設定已成功儲存。"
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "索引已成功重建。"
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "發生了意外錯誤。"
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "頁面"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "使用者"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "群組"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "您正在執行最新版本。"
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "發現新版本：{{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js 是一項免費的開源專案。您可以通過多種方式為此專案做出貢獻。"
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "我們需要你的幫助！"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "了解更多"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "登入機制列表已更新。"
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "認證設定已成功儲存。"
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "一般"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "網站網址"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "您 Wiki 的完整網址，結尾不包含斜線。（例如 https://wiki.example.com）"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "網站標題"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "顯示在頂部導航中，並附加在所有頁面的標題後方。"
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "標誌"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "上傳標誌"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "清除"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "建議使用 {{size}} 像素的圖片以獲得最佳效果。"
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "僅限 {{typeList}} 或 {{lastType}} 檔案"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "頁尾版權"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "公司 / 組織名稱"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "在頁尾顯示版權聲明時使用的名稱。留空時隱藏。"
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "網站敘述"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "頁面未提供任何內容時使用的的預設敘述。"
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta 標籤 Robots 值"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "預設值：Index、Follow。也可以針對單一頁面設定。"
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "輸入 2 字元以上來搜尋..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "搜尋中..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "沒有符合您查詢的結果。"
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "找到 {{total}} 項結果"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "您是指..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "關閉"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "複製搜尋連結"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "非常弱"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "弱"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "普通"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "強"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "非常強"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "刪除頁面"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "您確定要刪除頁面「{{title}}」嗎？"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "該頁面可以從管理後台中還原。"
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "搜尋使用者"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "搜尋使用者..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "每"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "分鐘"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "小時"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "日"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "月"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "年"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "頁面屬性"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "頁面資訊"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "標題"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "簡短敘述"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "顯示於標題下方"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "路徑與分類"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "語言"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "路徑"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "開頭或結尾不要包含斜線。"
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "標籤"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "使用標籤來將頁面進行分類，使其更易於查找。"
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "發佈狀態"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "已發佈"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "對此頁面具有寫入權限的使用者仍然可以看到未發佈的頁面。"
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "發佈於..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "留空表示無起始日期"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "發佈結束於..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "留空表示無結束日期"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "放棄未儲存的更改？"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "您的更改尚未儲存。您確定要離開編輯器並放棄自上次儲存以來所做的任何更改嗎？"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "放棄更改"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "您想要用哪個編輯器來編輯此頁面？"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "頁面一旦建立後就無法更改。"
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "素材"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "新增資料夾"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "資料夾名稱"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "必須遵循素材資料夾 {{namingRules}}。"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "命名規則"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "移動"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "重新命名"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "最佳化"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "預覽"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "屬性"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "此素材資料夾是空的。"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} 個檔案"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "插入"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "檔案名稱"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "類型"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "檔案大小"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "已新增"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "操作"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "上載素材"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "瀏覽或將檔案拖放至此..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "獲取遠端圖片"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "圖片對齊"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "重新命名素材"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "輸入此素材的新名稱："
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "刪除素材"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "您確定要刪除素材嗎"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "此操作無法還原！"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "素材列表已成功更新。"
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "檔案上傳失敗。"
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "素材資料夾已成功建立。"
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "素材已成功重新命名。"
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "素材已成功刪除。"
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "您必須先選擇要上傳的文件！"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "獲取"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "返回編輯器"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "粗體"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "斜體"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "刪除線"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "標題 {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "下標"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "上標"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "段落引用"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "段落引用（資訊）"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "段落引用（成功）"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "段落引用（警告）"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "段落引用（錯誤）"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "項目符號清單"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "編號清單"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "行內程式碼"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "鍵盤快速鍵"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "水平分隔線"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "隱藏/顯示預覽視窗"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "插入連結"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "插入素材"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "插入區塊"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "插入區塊程式碼"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "插入影片/音訊"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "插入圖表"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "插入數學表達式"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "表格幫手"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "專注模式"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown 格式化說明"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "檢視頁面「{{path}}」的原始碼"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "返回一般內容"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "語言"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "分析工具"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "為你的 Wiki 加入分析和追蹤工具"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "供應商"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "供應商設定"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "該供應商沒有您可以修改的設定選項。"
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "供應商列表已成功更新。"
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "分析設定已成功儲存"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "維護及其他工具"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "工具"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "認證"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "各式認證 / 使用者工具"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "清除快取"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "清除各元件快取"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL 端點"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "變更 Wiki.js 的 GraphQL 端點"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "從 Wiki.js 1.x 匯入"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "從之前安裝的 1.x 的遷移數據"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "遙測"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "啟用/停用遙測或重置客戶端 ID"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "留言"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "已發佈"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "私人"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "全域"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "頁面中..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "代碼"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "名稱"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "本地化名稱"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL 排版"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "完整性"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "下載"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "內容"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "頁面的各種工具"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "圖標套件"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "用於側欄導航的圖標來源。"
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "您的瀏覽器已過時。請升級到{{modernBrowser}}。"
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "現代瀏覽器"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "名稱"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "作者"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "下載"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}}指定頁面內容樣式時，必須限制在 {{cssClass}} CSS 類別下方。忽略這一點可能會破壞編輯器的佈局！"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "注意："
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "主題選項"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "已用中"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "已用中"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "已驗證"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "未驗證"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "編輯使用者"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "基本資訊"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "電子郵件地址"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "顯示名稱"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "認證方式"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "供應商"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "密碼"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "更改密碼"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "新密碼"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "兩步驟驗證（2FA）"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "切換 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "供應商 ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "使用者群組"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "此使用者尚未指派到任何群組。您必須至少為使用者指派 1 個群組。"
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "選擇群組..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "指派"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "額外資訊"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "地點"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "職稱"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "時區"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "使用者已成功更新。"
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "使用者已經被指派至此群組！"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "此儲存目標狀態為 {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "已啓用"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "已停用"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "您必須啟用此儲存目標並套用變更後才能執行操作。"
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "選擇新密碼"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "您必須選擇新密碼："
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "新密碼"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "確認新密碼"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "更改密碼"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "更改密碼..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "近期更新頁面"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "熱門頁面"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "資訊"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "排程"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "社群"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "分類"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "社群功能"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "允許留言"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "在此頁面上啟用留言功能。"
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "允許評分"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "顯示作者資訊"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "顯示分享工具列"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "顯示分享和列印頁面的工具列"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "顯示頁面作者和最後編輯時間"
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "在此頁面上啟用評分功能。"
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "或建立自訂內容？"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "按標籤瀏覽"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "網站地圖"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "頁面操作"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "已選擇"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "清除選擇"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "選擇一個或多個標籤"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "在結果中搜尋..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "語言"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "排序依據"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "請在左側欄中選擇一個或多個標籤。"
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "讀取頁面結果中..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "找不到包含所選標記的任何頁面。"
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "找不到與目前過濾選項相符的頁面。"
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "最後更新於 {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "建立日期"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "最後更新"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "路徑"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "標題"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "不限"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "透過 GitHub Sponsors 成為贊助商（支援開發人員領導 Nicolas Giard 在 Wiki.js 全職工作的目標）"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "成為贊助者"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "標籤"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL 憑證"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "管理 SSL 設定"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "供應商"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "如果您已擁有自己的憑證，請選擇自訂憑證。"
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "網域"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "請輸入指向您 Wiki 的完整網域名稱。（例如 wiki.example.com）"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "供應商選項"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "停用"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "自訂憑證"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "連接埠"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP 連接埠"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "伺服器監聽 HTTP 請求的非 SSL 連接埠。通常是 80 或 3000。"
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS 連接埠"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "伺服器監聽 HTTPS 請求的 SSL 連接埠。通常是 443。"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "將 HTTP 請求導向至 HTTPS。"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "將自動將任何 HTTP 連接埠的請求導向至 HTTPS。"
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "請注意，您的設定檔必須可寫入才能保留連接埠設定。"
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "標誌網址"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "指定一張圖片作為標誌。支援 SVG, PNG 和 JPG，尺寸為 34x34 或更大的正方形比例。點擊右側的按鈕來上傳新圖片。"
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "確定要刪除使用者？"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "您確定要刪除使用者「{{username}}」嗎？"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "更新使用者"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "請注意，您不能在此區域將使用者指派至 Administrators 或 Guest 群組。"
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "請注意，您不能刪除已經建立內容的使用者。您必須停用該使用者或刪除該使用者建立的所有內容。"
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "腳本"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS 樣式"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "儲存後 CSS 會自動被最小化。不需要包含 style 標籤，只要輸入實際的 CSS 樣式碼。"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "所有人可見"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "指定群組可見..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "選擇頁面..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "導航模式"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "網站樹"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "傳統樹狀導航"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "自訂導航"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "靜態導覽選單 + 樹狀按鈕"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "無"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "停用網站導航"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "使用者已成功驗證。"
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "使用者已成功啟用。"
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "使用者已成功停用。"
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "必須先選取文字！"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "更新憑證"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "憑證狀態"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "憑證到期時間"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "訂閱者電子郵件"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "目前狀態"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "開啓"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "關閉"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "更新憑證中..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "不要離開此頁面。"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "憑證已成功更新。"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP 導向已成功變更。"
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "管理頁面標籤"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "沒有標籤可顯示。"
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "編輯標籤"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "標籤內容"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "顯示文字"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "建立於 {{created}}，{{updated}} 更新"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "刪除此標籤"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "從左側欄列表選擇一個標籤。"
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "在頁面上新增標籤以開始動作。"
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "標籤已更新。"
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "標籤已成功刪除。"
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "標籤已成功儲存。"
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "過濾..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "查看已連結頁面"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "刪除標籤？"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "您確定要刪除標籤「{{tag}}」嗎？該標籤將從所有頁面上被移除。"
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "管理 API 密鑰"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API 已啟用"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API 已停用"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "啟用 API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "停用 API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "新增 API 密鑰"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "名稱"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "密鑰結尾"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "到期日"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "建立時間"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "最後更新"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "撤消"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "尚未產生 API 密鑰。"
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "撤銷 API 密鑰？"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "您確定要撤銷密鑰「{{name}}」嗎？此操作將無法復原！"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "撤消"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API 密鑰列表已更新。"
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "密鑰已成功撤銷。"
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "新增 API 密鑰"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API 密鑰已成功建立。"
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "名稱為空或無效。"
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "您必須選擇一個群組。"
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "訪客群組不能用於 API 密鑰。"
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "密鑰用途"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "名稱"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "到期日"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "無論到期時間為何，您可以隨時撤銷密鑰。"
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "權限範圍"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "完整存取權"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "或使用群組權限..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "產生"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "群組"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API 密鑰將具有與所選群組相同的權限。"
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 天"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 天"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 天"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 年"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 年"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "請將下方密鑰立即複製，因為{{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "後續「無法」再次檢視"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API 已成功啟用。"
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API 已成功停用。"
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "已儲存"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "無"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "創用CC授權：姓名標示（CC-BY）"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "創用CC授權：姓名標示-相同方式分享（CC-BY-SA）"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "創用CC授權：姓名標示-禁止改作（CC-BY-ND）"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "創用CC授權：姓名標示-非商業性使用（CC-BY-NC）"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "創用CC授權：姓名標示-非商業性-相同方式分享（CC-BY-NC-SA）"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "創用CC授權：姓名標示-非商業性使用-禁止改作（CC-BY-NC-ND)"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "公眾領域"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "保留所有權利"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "內容授權"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "授權方式將顯示在所有頁面的頁尾。"
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "內容可在 {{company}} 的「{{license}}」下取用。"
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "你不能下載該頁面內容。"
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "你不能下載此版本的頁面內容。"
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "你不能查看此版本的頁面原始碼。"
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "檢視「{{path}}」頁面 {{date}} 的原始碼"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "版本 ID {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "確定要還原頁面版本？"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "您確定要將此頁面內容還原至 {{date}} 的版本嗎？該版本將被複製為最新的歷史記錄。不過，新的版本仍然會被保留。"
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "還原"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "頁面版本已成功還原！"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} 個字元， {{words}} 個單字"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "解決儲存衝突"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "使用本機"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "使用線上"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "放棄本機更改並使用最新版本"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "使用左側面板中的內容"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "查看最新版本"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "本頁面的最新版本由 {{authorName}} 於 {{date}} 儲存"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "你想要怎麼做？"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "使用目前的本機版本，並忽略最新的更改。"
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "使用線上版本（最新版）並放棄您的編輯內容。"
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "覆蓋線上版本？"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "您確定要使用最新的線上內容取代目前的本機版本嗎？{{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "您目前編輯的內容將遺失。"
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "確認"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "本機版本 {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "（可編輯）"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "（唯讀）"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "線上版本 {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "您目前的修改是基於 {{date}} 的版本"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "最後由 {{authorName}} 於 {{date}} 編輯"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "標題："
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "敘述："
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "您有尚未儲存的編輯內容。您確定要離開編輯器嗎？"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "儲存衝突！另一個使用者已經修改了此頁面。"
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "複製"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "顯示名稱"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "地點"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "職稱"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "時區"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "個人資料"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "我的個人資訊"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "我的資訊"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "查看公開資料"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "認證"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "供應商"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "更改密碼"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "目前密碼"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "新密碼"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "確認新密碼"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "群組"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "動態"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "加入於"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "個人資料更新於"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "最後登入於"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "已建立頁面"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "已發表留言"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "個人資料已成功儲存。"
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "密碼已成功變更。"
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "頁面"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "留言"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "我建立或上次修改的頁面列表"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "沒有頁面可顯示。"
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "頁面列表已成功更新。"
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "標題"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "路徑"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "建立時間"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "最後更新"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "上次登入"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "瀏覽"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "主選單"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "目前資料夾"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "（根目錄）"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "從其他語言複製..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "來源語言"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "作為導航導覽項目複製來源的語言。"
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "複製"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "選擇項目複製來源的語言。該項目會被附加到目前使用中語言的項目清單中。"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "靜態導航"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "僅使用靜態導航選單"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "偏好設定"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "日期格式"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "預設語言"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "外觀"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "網站預設"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "淺色"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "深色"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "驗證 SSL 憑證"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "某些伺服器必須停用 SSL 憑證檢查。保持啟用狀態以獲得最佳安全性。"
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "外部連結（新視窗）"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "安全性"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "最大上傳尺寸"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "單次檔案最大上傳數量"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "一次可以上傳多少個檔案？"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "單個檔案的尺寸上限。"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "檔案"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "上傳"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "這些設定僅影響 Wiki.js。如果您使用反向代理（如 nginx、apache 或 Cloudflare），則必須連同更改其設定。"
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "安全性設定"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "外掛"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "安裝外掛以獲得更多功能"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "供應商"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "在您的 Wiki 頁面增加討論功能"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "供應商設定"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "該供應商沒有您可以修改的設定選項。"
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "該使用者建立的任何內容（頁面、上傳或留言等）將被重新分配給下方選擇的使用者。如果您不希望將內容被重新分配給任何目前啓用中的使用者，建議建立一個虛擬使用者（例如「已刪除的使用者」）。"
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "啟用中的供應商"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "新增登入機制"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "樣式"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "您必須用 HTML 的 script 標籤將 JavaScript 程式碼包起來。"
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "此頁面未發佈。"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "留言"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "發表新留言..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "您的名稱"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "您的電子郵件地址"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown 格式"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "發表留言"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "載入留言中..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "以 {{name}} 發布"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "成為第一個發表留言的人。"
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "暫時沒有留言。"
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "更新留言"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "確認刪除"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "您確定要永久刪除此留言嗎？"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "此操作無法復原！"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "於 {{reldate}}修改"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "留言成功發佈。"
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "留言是空的或太短了！"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "留言已成功更新。"
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "留言已成功刪除。"
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "切換拼字檢查"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "登入"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "登入畫面"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT 設定"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "略過登入畫面"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "使用者是否應自動導向至第一個身份認證供應商。"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "登入頁面背景圖片網址"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "指定要作為登入頁面背景的圖片。支持 PNG 和 JPG，建議尺寸為 1920x1080。留空則使用預設設定。點擊右側的按鈕來上傳新圖片。請注意，該圖片必須為「Guests」設定讀取權限！"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "隱藏站內認證供應商"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "不在登入畫面上顯示站內認證供應商。在網址結尾增加「?all」以暫時啓用。"
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "安全性"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "強制使用 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "當使用了「使用者名稱 / 密碼」形式的身份認證供應商時，強制所有使用者使用兩步驟驗證。"
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "查看討論"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "新留言"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "留言內容"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "討論"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "標籤"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "與標籤相符的頁面"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "返回頂部"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "使用者名稱"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "離開"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "設定頁面轉譯規則"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "網站標題包含無效字元。"
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "網站設定已成功儲存。"
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA 已成功停用。"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA 已成功啟用。"
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "要求重設密碼..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "查看您的 Email 來確認密碼重置說明！"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "已啓用"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "使用者是否可以透過此登入機制登入？"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "顯示名稱"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "此身份認證登入機制顯示給使用者的標題。"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "選擇身份認證供應商"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "輸入您的登入資訊"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "忘記密碼"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "輸入從您的信任裝置產生的安全碼："
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "您的管理員要求在您的帳號中啟用兩步驟驗證（2FA）。"
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) 從您的行動裝置上的 2FA 應用程式掃描以下 QR 碼："
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) 輸入從您的信任裝置產生的安全碼："
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "選擇"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "選擇新的頁面位置"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "移動 / 重新命名頁面位置"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "選擇頁面"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "虛擬資料夾"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "頁面"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "此資料夾是空的。"
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "轉換"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "轉換頁面"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "選擇想在頁面「{{title}}」上想使用的編輯器："
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "頁面內容即將轉換至新選擇的編輯器格式。請注意，某些格式或未轉譯的內容可能會因轉換而消失。目前的頁面內容會被移動至頁面歷史記錄中，並且可以隨時復原。"
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "轉換"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "管理後台"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "匯出到磁碟"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "將內容保存為 tarball 以進行備份 / 遷移"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "目錄"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "目錄"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "使用網站預設值"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "目錄標題層級"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "目錄將顯示至所選層級的標題。"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "預設目錄標題級別"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "預設情況下，目錄將顯示所選級別的標題。"
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "客戶端識別主機名稱"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "傳送到 SMTP 伺服器以識別您電子郵件程式的選用名稱。留空則使用伺服器主機名稱。對於 Google Workspace 的用戶，這應該是您的主域名。"
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "頁面副檔名"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "將被視為頁面網址的副檔名清單，使用逗號分隔。例如加入 md 會將 /foobar.md 與 /foobar 視為相同。"
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "網站名稱"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "在編輯按鈕上顯示的外部網站名稱。不可包含「編輯」前綴。"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "圖標"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "顯示在編輯按鈕上的圖標。例如 mdi-github 顯示 GitHub 圖標。"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "網址"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "外部儲存庫的頁面 URL。在應該包含文件名的地方使用 {filename} 佔位符。（例如 https://github.com/foo/bar/blob/main/{filename}）"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "編輯捷徑"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB 快速編輯選單"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "在畫面右下方顯示帶有快速撥號選單的編輯浮動操作按鈕（FAB）。"
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "編輯選單列"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "顯示編輯選單列"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "在頁面頂部顯示編輯選單列。"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "顯示「編輯」按鈕"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "顯示編輯目前頁面的按鈕。"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "顯示「外部編輯」按鈕"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "顯示連結到外部儲存庫（例如 GitHub）的按鈕，用戶可以在其中編輯或提交目前頁面的 PR。"
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "在 {{name}} 上編輯"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

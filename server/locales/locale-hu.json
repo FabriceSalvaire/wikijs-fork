@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Futtatja:"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Bejelentkezés szükséges"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "E-mail / Felhasználónév"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Jelszó"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Bejelentkezés"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Érvénytelen bejelentkezés"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Az e-mail vagy jelszó érvénytelen."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Érvénytelen felhasználói e-mail"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Bejelentkezési hiba"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Még nem vagy jogosult belépni erre a webhelyre."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Túl sok próbálkozás!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Túl sok sikertelen kísérletet hajtottál végre rövid idő alatt, próbáld újra {{time}} múlva."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Felhasználó nem található"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Helyi"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft fiók"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Kétlépcsős azonosítás"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Biztonsági kód szükséges:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Megerősítés"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Irányítópult"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Általános"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Nyelv"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statisztikák"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Téma"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Csoportok"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Felhasználók"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Hitelesítés"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Szerkesztő"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Naplózás"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Renderelés"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Keresőmotor"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Tárhely"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API-hozzáférés"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Rendszerinformáció"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Segédprogramok"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Fejlesztői eszközök"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Hozzájárulás a Wiki.js-hez"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "A wikid fő beállításai"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Oldal információ"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Webhely branding"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Oldal"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Felhasználók"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Modulok"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Rendszer"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "A wikid lokalizációs beállításainak beállítása"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Nyelv beállítások"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Többnyelvű névterezés"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Nyelv letöltése"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Alapnyelv"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Minden UI szövegelem a kijelölt nyelven fog megjelenni."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Automatikus frissítés"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Frissítések automatikus letöltése az összes alább felsorolt névtérhez."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Többnyelvű névterek"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Lehetővé teszi az oldal több nyelvű változatának engedélyezését."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktív névterek"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "A többnyelvű névterezéshez engedélyezett nyelvek listája. A fent megadott alapnyelv mindig a kiválasztástól függetlenül szerepel."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "A nyelvi kód minden útvonalon prefix lesz. (pl. /{{langCode}}/oldal-neve)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "A nyelvi kód nélküli útvonalak automatikusan átirányításra kerülnek a fent meghatározott alapnyelvre."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Mentés"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Mégse"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Letöltés"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Feltöltés"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Elvetés"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Törlés"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Létrehozás"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Szerkesztés"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Törlés"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Frissítés"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Módosítások mentése"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Folytatás"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Oldal nyelv"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Frissítések automatikus letöltése ehhez a nyelvhez, amint elérhetővé válnak."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Információ a rendszeredről"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Hoszt információ"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Jelenlegi verzió"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Legújabb verzió"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Közzétett"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operációs rendszer"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Hosztnév"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU magok"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Összes RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Munkakönyvtár"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Konfigurációs fájl"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAM használat: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Segítsd támogatni a Wiki.js fejlesztését és működését"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Támogasd a munkánkat"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Hirdess"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Mesélj barátaidnak és kollégáidnak arról, hogy mennyire jó a Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Kövess minket itt: {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Nyújts be egy ötlet, vagy szavazz egy meglévőre itt: {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "funkció kérési fórum"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Találtál egy hibát? Jelezd a problémát itt: {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Segíts lefordítani a Wiki.js-t a nyelvedre. Tudasd velünk itt: {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Támogass"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Hozzájárulás"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "A Wiki.js az átlátható alapú Open Collective kezdeményezés része is, amely a közösségi források felé irányul. Havi vagy egyszeri adományozással pénzügyileg támogathatsz:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Szükségünk van a segítségedre a szoftver továbbfejlesztéséhez és a különféle kapcsolódó szolgáltatások futtatásához (pl. tárhely és hálózat)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "A Wiki.js egy ingyenes és nyílt forráskódú szoftver, amellyet {{0}} hozott létre a {{1}} és a {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "közreműködők"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Oldal"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Feldolgozás"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Kérlek várj..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Az oldal sikeresen létrehozva."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Hiba történt az oldal létrehozása során"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Wiki.js pólókat is vásárolhatsz, hogy a projektet pénzügyileg támogasd:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js Bolt"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Minden jog fenntartva."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Ez az oldal még nem létezik."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Szeretnéd most létrehozni?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Oldal létrehozása"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Vissza"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Oldalak"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigáció"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Webhely navigációjának kezelése"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Hozzáadás"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Elválasztó"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Fejléc"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Címke"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikon"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Cél típusa"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Cél"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Válassz egy navigációs elemet balról."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Névnélküli {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Külső hivatkozás"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Otthon"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Oldal"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Keresési lekérdezés"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "{{kind}} szerkesztése"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "{{kind}} törlése"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "A navigáció sikeresen elmentve."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Az első navigációs elem hozzáadásához kattints a Hozzáadás gombra."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "A navigáció üres"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Alkalmaz"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "E-mail cím"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Jelszó megerősítése"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Név"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Regisztráció"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Fiók létrehozása"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Van már fiókod? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Inkább belépek"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Belépés ezzel: {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Elfelejtetted a jelszavadat?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "vagy jelentkezz be ezzel:"
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Nincs még fiókod? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Hozz létre egy fiókot"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Adj meg egy érvényes e-mailt / felhasználónevet."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Adj meg egy érvényes jelszót."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Sikeres bejelentkezés! Átirányítás..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Bejelentkezés..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "A hitelesítés nem érhető el."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "A fiók létrehozásához töltsd ki az alábbi űrlapot."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Kérlek várj"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Fiók sikeresen létrehozva!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Fiók létrehozása..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Hiányzó e-mail cím."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Érvénytelen e-mail cím."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Hiányzó jelszó."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "A jelszó túl rövid."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Nem egyeznek a jelszavak."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Hiányzó név."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "A név túl rövid."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "A név túl hosszú."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Mégse"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Jelszó visszaállítása"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Add meg e-mail címedet, hogy elküldhessük a jelszó visszaállításához szükséges lépéseket:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Üzenetek"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "E-mail beállítások konfigurálása"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Konfiguráció"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (opcionális)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Nézd meg az e-mailjeidet, hogy aktivált a fiókodat."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Oldal sikeresen frissítve."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Jogosulatlan"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Nem nézheted meg ezt az oldalt."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Nem nézheted meg az oldal forrását."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Nem nézheted meg az oldal történetét."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Nem szerkesztheted az oldalt."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Nem hozhatod létre az oldalt."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Vissza"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Otthon"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Nem található"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Ez az oldal nem létezik."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Bejelentkezés..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Legyél egy Patreon támogató"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Legyél támogató vagy szponzor a Patreonon keresztül (közvetlenül a vezető fejlesztő Nicolas Giard célja felé megy, hogy teljes munkaidőben dolgozzon a Wiki.js-en)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Üdvözlünk a wikin!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Kezdünk bele és hozzuk létre a kezdőlapot."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Kezdőlap létrehozása"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Jelzők"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Egyszeri vagy ismétlődő adományozás Paypalon keresztül:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Elfogadunk Ethereum adományokat:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Nyelvi csomag betöltése"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Ha nincs internet kapcsolat vagy nem lehet letölteni a nyelvi fájlokat a fenti módszer használatával, a csomagokat lentebb feltöltve manuálisan is be lehet tölteni."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Tallózás ..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhookok"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Webhookok kezelése külső szolgáltatásokhoz"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Teszt e-mail küldése"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Címzett e-mail címe"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "E-mail küldése"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Feladó"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Feladó neve"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Feladó e-mail címe"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP beállítások"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Host"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Általában 465 (ajánlott), 587 vagy 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Biztonságos (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Engedélyezni kell a 465-ös port használatakor, egyébként kikapcsolva (587 vagy 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Felhasználónév"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Jelszó"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "A DKIM (DomainKeys Identified Mail) egy biztonsági réteget biztosít minden, a Wiki.js által küldött emailhez, lehetővé téve a címzettek számára a tartománynév érvényesítését és az üzenet hitelességének ellenőrzését."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM használata"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domain név"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Kulcsválasztó"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Privát kulcs"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM formátumú privát kulcs a kiválasztóhoz."
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Teszt email küldése az SMTP beállítás működésének ellenőrzéséhez."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "A konfiguráció sikeresen elmentve."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "A jelenleg használt adatbázis verzió nem teljes mértékben támogatott. Egyes funkciók korlátozottan, vagy nem a várt módon működhetnek."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "A rendszerinformáció frissítve."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "A wiki hitelesítési beállításainak beállítása"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Stratégiák"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Globális haladó beállítások"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "A JWT-ben használt, a bejelentkezéskor kiadott audience URN. Általában a tartománynév (pl.: urn:sajat.tartomany.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token lejárata"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "A token lejárati ideje, amíg meg nem kell újítani. (alapértelmezett: 30p)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Token megújítási időszak"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "A maximális időtartam, amelyet egy token megújíthat, ha lejárt. (alapértelmezett: 14n)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "A stratégia: {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "aktív"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "nem aktív"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "és nem lehet letiltani."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "A teszt e-mailt sikeresen elküldve."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "A wikid megjelenésének és hangulatának módosítása"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Oldal témája"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "A témák befolyásolják az oldalak megjelenítését. Más webhelyrészeket (például a szerkesztőt vagy az adminisztrációs területet) nem érinti."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Sötét mód"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Akadálymentességi szempontból nem javasolt. Lehet, hogy nem minden téma támogatja."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Kód beillesztés"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS felülbírálás"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "A rendszer alapértelmezés szerinti CSS kódja után beillesztett CSS kód. Nagy mennyiségű CSS kód esetén érdemes lehet egyéni témát használni. Túl sok CSS kód beillesztése esetén lelassulhat az oldalak betöltési sebessége! A CSS automatikusan tömörítve lesz."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head HTML beillesztés"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML kód ami közvetlenül a záró head címke elé lesz beillesztve. Általában parancsfájlcímkékhez jó."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML beillesztés"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML kód ami közvetlenül a záró body címke elé lesz beillesztve."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Témák letöltése"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Adminisztrációs terület"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Stratégia konfiguráció"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Ennek a stratégiának nincsenek módosítható beállítási lehetőségei."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Regisztráció"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Az önregisztráció engedélyezése"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "A stratégia által sikeresen hitelesített minden felhasználó hozzáférhet a wikihez."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Korlátozás meghatározott email tartományokra"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "A regisztrálni jogosult tartományok listája. A felhasználók email cím tartományának meg kell egyeznie az egyikkel, hogy hozzáférést kapjanak."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Hozzárendelés csoporthoz"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Új felhasználók automatikus hozzárendelése ehhez a csoporthoz."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Biztonság"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Minden felhasználó kényszerítése kétfaktorú hitelesítésre (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "A felhasználóknak az első bejelentkezésükkor kötelezően be kell állítaniuk a 2FA-t és nem tilthatják le."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Beállítási referencia"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Egyes stratégiákhoz bizonyos beállítási értékek megadása szükséges a szolgáltatónál. Ezek csak referenciaként szolgálnak, amelyekre a jelenlegi stratégiának valószínűleg nincs szüksége."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Először be kell állítanod egy érvényes {{siteUrl}}-t! Kattints a(z) {{general}} gombra a bal oldali sávban."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Engedélyezett Web originek"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Biztonsági URL / Átirányítási URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Bejelentkezés URL-je"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Kijelentkezés URL-je"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token végpont hitelesítési módszer"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Kezdőlap"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Új oldal"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Aktuális oldal"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Megtekintés"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Szerkesztés"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Történet"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Forrás megtekintése"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Áthelyezés/Átnevezés"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Törlés"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Eszközök"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Képek és fájlok"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Keresés..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Adminisztráció"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Fiók"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Saját Wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Kijelentkezés"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Bejelentkezés"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Utoljára szerkesztette"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Nem közzétett"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Oldal szerkesztése"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Tartalomjegyzék"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Könyvjelző"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Megosztás"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Nyomtatási formátum"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Bezárás"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Oldal"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "A tartalom mentési és szinkronizálási céljának beállítása"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Célok"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Állapot"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Utolsó szinkronizálás {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Utolsó probálkozás ideje {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Hibaüzenet"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Nincs aktív tároló cél."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Cél beállítása"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Ennek a tárolási célnak nincsenek módosítható beállítási lehetőségei."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Szinkronizálás iránya"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Hogyan legyen kezelve a szinkronizálás ehhez a tárolási célhoz."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Kétirányú"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Beküldés a célba"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Lekérés a céltól"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Nem támogatott"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Kétirányú módban a tartalom először le lesz kérve a tároló célból. Minden újabb tartalom felülírja a helyi tartalmat. Ezek után minden, az utolsó szinkronizálás óta készült tartalom be lesz küldve a tároló célba, felülírva minden a célon meglévő tartalmat ha van."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "A tartalom mindig be lesz küldve a tároló célba, felülírva minden már meglévő tartalmat. Biztonsági mentésekhez ez a legbiztonságosabb választás."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "A tartalom mindig a tároló céltól lesz lekérve, felülírva minden már létező helyi tartalmat. Ez a lehetőség általában egy egyszer használt tartalomimporthoz van fenntartva. Óvatosan kell használni mivel minden helyi tartalom minden esetben felül lesz írva!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Szinkronizálás ütemezése"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Teljesítmény optimalizálási okokból ez a tároló cél a változásokat rendszeres időközönként szinkronizálja, nem pedig minden változáskor. Meg kell adni, hogy milyen időközönként történjen a szinkronizálás."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "A jelenlegi beállítás minden {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Alapértelmezés szerint minden{{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Műveletek"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Végrehajtás"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "A wiki keresési képességeinek beállítása"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Index újraépítése"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Keresőmotor"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Motor beállítása"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Ennek a motornak nincsenek módosítható beállítási lehetőségei."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "A keresőmotorok listája frissítve."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "A keresőmotor beállítása sikeresen mentve."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Index sikeresen újraépítve."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Váratlan hiba történt."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Oldalak"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Felhasználók"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Csoportok"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "A legfrissebb verzió fut."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Az új verzió elérhető: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "A Wiki.js egy szabad, nyílt forráskódú projekt. Többféle módon is hozzá lehet járulni a projekthez."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Szükségünk van segítségre!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "További információk"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "A stratégiák listája frissítve."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "A hitelesítési beállítás sikeresen mentve."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Általános"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Oldal címe"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Teljes URL-cím a wikidhez, a leghátsó perjel nélkül. (pl. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Oldal címe"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "A felső sávban jelenik meg és minden oldal metaadatához hozzácsatolódik."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logó"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Logó feltöltése"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Törlés"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "A legjobb eredmény érdekében {{size}} pixel nagyságú képet ajánlunk."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Csak {{typeList}} vagy {{lastType}} fájlok"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Lábléc szerzői jog"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Vállalat / szervezet neve"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "A láblécben a szerzői jogi figyelmeztetések megjelenítéséhez használt név. Hagyd üresen az elrejtéshez."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Oldal leírás"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Alapértelmezett leírás, ha egy oldalnak nincs megadva."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta robotok"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Alapértelmezés szerint: Index, Follow. Oldalanként is beállítható."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Írj be legalább 2 karaktert a kereséshez..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Keresés..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Nincsenek a keresésnek megfelelő oldalak."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}} eredmény"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Úgy értetted..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Bezárás"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Keresési link másolása"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Nagyon gyenge"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Gyenge"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Átlagos"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Erős"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Nagyon erős"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Oldal törlése"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Biztosan törli szeretnéd a(z) {{title}} oldalt?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Az oldal visszaállítható az adminisztrációs területről."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Felhasználó keresése"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Felhasználók keresése ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Minden"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Perc"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Óra"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Nap"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Hónap"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Év"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Oldal tulajdonságai"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Oldal információ"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Cím"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Rövid leírás"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "A cím alatt jelenik meg"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Útvonal és kategorizálás"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Nyelv"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Útvonal"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Nem tartalmazhat kezdő vagy záró perjelet."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Címkék"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Címkék használatával kategorizálhatók az oldalak, és könnyebben megtalálhatóak."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Közzétételi állapot"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Közzétett"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "A nem közzétett oldalakat az oldalon írási joggal rendelkező felhasználók továbbra is megtekinthetik."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Közzététel kezdete ekkor..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Hagyd üresen ha nincs kezdeti dátum"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Közzététel vége ekkor..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Hagyd üresen ha nincs lejárati dátum"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "El nem mentett változások elvetése?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "El nem mentett változások vannak. Biztosan elhagyod a szerkesztőt és eldobsz minden változást amit a legutóbbi mentés óta tettél?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Módosítások elvetése"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Milyen szerkesztőt akarsz használni erre az oldalra?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Ezt nem lehet megváltoztatni miután az oldal létrehozásra kerül."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Elemek"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Új mappa"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Mappa neve"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Meg kell felelni az eszközmappa {{namingRules}}"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "elnevezési szabályok"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Mozgat"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Átnevez"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimalizálás"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Előnézet"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Tulajdonságok"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Ez az asset mappa üres"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} fájl"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Beilleszt"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Fájlnév"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Típus"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Fájl mérete"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Hozzáadva"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Műveletek"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Elem feltöltése"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Tallózás vagy fájl behúzása ide..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Távoli kép lekérése"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Kép igazítása"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Elem átnevezése"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Írd be az elem új nevét"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Elem törlése"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Biztosan törölni akarod az elemet?"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Ezt a műveletet nem lehet visszavonni!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Elemek listája sikeresen frissítve."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Fájl feltöltése sikertelen."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Elemmappa sikeresen létrehozva."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Elem sikeresen átnevezve."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Elem sikeresen törölve."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Előbb ki kell választanod egy feltöltendő fájlt!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Lekérés"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Vissza a szerkesztőbe"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Félkövér"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Dőlt"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Áthúzott"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Címsor {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Alsó index"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Felső index"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Idézetblokk"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Infó idézetblokk"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Siker idézetblokk"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Figyelmeztetés idézetblokk"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Hiba idézetblokk"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Rendezetlen lista"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Rendezett lista"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Inline kód"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Billentyűzet gomb"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Vízszintes sáv"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Előnézet sáv mutatása/elrejtése"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Link beszúrása"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Eszközök beszúrása"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Blokk beszúrása"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Kódblokk beszúrása"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Videó/hang beszúrása"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Diagram beszúrása"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Matematikai egyenlet beszúrása"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Table segítség"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Zavartalan mód"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown formázás segítség"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "{{path}} oldal forrának megtekintése"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Vissza a normál nézethez"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "Azonosító: {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Nyelv"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analitika"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Anayltics és követési eszközök hozzáadása a wikihez"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Szolgáltatók"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Szolgáltató konfiguráció"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Ez a szolgáltató nem rendelkezik beállítási opciókkal amiket módosíthatsz."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Szolgáltatók listája sikeresen frissítve."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analytics konfiguráció sikeresen elmentve"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Karbantartás és egyéb eszközök"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Eszközök"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Hitelesítés"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Hitelesítés / felhasználói eszközök"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Gyorsítótár ürítése"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Több komponens gyorsítótárának ürítése"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL végpont"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "GraphQL endpoint módosítás a Wiki.js számára"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Importálás a Wiki.js 1.x-ből"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Előző 1.x telepítésből való adat-migráció"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetria"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Telemetria be/ki kapcsolása vagy felhasználó ID visszaállítása"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Hozzászólások"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Közzétett"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privát"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Globális"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Oldal betöltése..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Kód"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Név"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Natív név"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "Jobbról balra"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Elérhetőség"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Letöltés"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Tartalom"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Különböző szerszámok az oldalakhoz"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Ikonkészlet"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Oldalsó navigációs-sávban használt ikoncsomag"
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "A böngésző elavult. Frissíteni kell egy {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "modern böngésző"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Név"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Szerző"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Letöltés"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Stílusok oldaltartalmakhoz történő hozzáadásakor azokat ki kell terjeszteni a {{cssClass}}osztályba. Ennek elmulasztása tönkreteheti a szerkesztő elrendezését!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "VIGYÁZAT:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Téma beállítások"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktív"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Inaktív"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Ellenőrzött"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Nem ellenőrzött"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Felhasználó szerkesztése"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "Azonosító: {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Alapinformáció"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Email"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Megjelenített név"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Hitelesítés"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Szolgáltató"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Jelszó"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Jelszó módosítása"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Új jelszó"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Kétlépcsős azonosítás (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "2FA átkapcsolása"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Szolgáltató azonosítója"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Felhasználói csoportok"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Ez a felhasználó még nincs hozzárendelve egyetlen csoporthoz sem. A felhasználóhoz legalább egy csoportot hozzá kell rendelni."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Csoport kiválasztása..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Hozzárendelés"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Bővített metaadatok"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Hely"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Beosztás"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Időzóna"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "A felhasználó sikeresen frissítve."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "A felhasználó már hozzá van rendelve ehhez a csoporthoz!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "A tároló cél: {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "aktív"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "inaktív"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Műveletek végrehajtása előtt engedélyezni kell ezt a tárolót és alkalmazni kell a módosításokat."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Új jelszó kiválasztása"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Új jelszót kell választani:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Új jelszó"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Új jelszó megerősítése"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Jelszó módosítása"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Jelszó módosítása ..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Legutóbbi oldalak"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Legnépszerűbb oldalak"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Információ"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Ütemezés"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Közösség"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Kategorizálás"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Közösségi lehetőségek"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Megjegyzések engedélyezése"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Hozzászólási képességek engedélyezése ezen az oldalon."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Értékelések engedélyezése"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "A szerző adatainak megjelenítése"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Megosztás eszköztár mwgjelenítése"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Eszköztár megjelenítése gombokkal az oldal megosztásához és nyomtatásához"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Mutassa az oldal szerzőjét az utolsó szerkesztés idejével együtt."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Értékelési képességek engedélyezése ezen az oldalon."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "vagy egyéni nézet létrehozása?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Böngészés címkék szerint"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Oldaltérkép"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Oldalműveletek"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Jelenlegi kiválasztás"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Kiválasztás törlése"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Egy vagy több címke kiválasztása"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Keresés a találatok között ..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Nyelv"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Rendezés"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Egy vagy több címkét kell kiválasztani a bal oldalról."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Oldaltalálatok beolvasása..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Nem található oldal a kijelölt címkékkel."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Nem található olyan oldal, amely megfelelne az aktuális szűrési beállításoknak."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Utoljára frissítve: {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Létrehozás dátuma"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "Azonosító"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Utoljára módosítva"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Útvonal"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Cím"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Bármely"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Támogatás a GitHub Sponsors szolgáltatásán keresztül (a vezető fejlesztő Nicolas Giard azon céljának közvetlen támogatása, hogy teljes munkaidőben a Wiki.js fejlesztésén dolgozhasson)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Szponzorálás"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Címkék"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL beállítás kezelése"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Szolgáltató"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Egyéni tanúsítvány kiválasztása ha már létezik saját tanúsítvány."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Tartomány"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "A wikire mutató teljes minősített tartománynév (FQDN) megadása. Pl.: wiki.example.com"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Szolgáltatói beállítások"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Tiltott"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Egyéni tanúsítvány"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Portok"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP port"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Nem SSL port amin a kiszolgáló a HTTP kéréseket fogja figyelni. Általában 80 vagy 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS port"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Az SSL port amin a kiszolgáló figyelni fogja a HTTPS kéréseket. Általában 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP kérések átirányítása HTTPS-re"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "A HTTP portra érkező minden kérést automatikusan át fog irányítani HTTPS-re."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Meg kell jegyezni, hogy a konfigurációs fájnak írhatónak kell lennie, hogy a port beállítás megmaradjon."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logó URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "A logóként használni kívánt kép megadása. Négyzetes arányű, minimum 34x34 pixel méretű SVG, PNG, JPG képek támogatottak. A jobb oldali gombra kattintva lehet feltölteni új képet."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Felhasználó törlése?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "{{username}} biztosan törölhető?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Felhasználó frissítése"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Meg kell jegyezni, hogy erről a panelről nem lehet felhasználókat hozzárendelni az Adminisztrátorok vagy a Vendégek csoporthoz."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Meg kell jegyezni, hogy anem törölhető olyan felhasználó aki már hozott létre tartalmat. Helyette vagy deaktiválni kell a felhasználót, vagy a felhasználó által létrehozott összes tartalmat törölni kell."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Parancsfájlok"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "Mentéskor a CSS automatikusan tömörítve lesz. Nem tartalmazhatja a befoglaló stílus címkéket csak a tényleges CSS kódot."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Mindenki láthatja"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "A kiválasztott csoportok láthatják..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Oldal kiválasztása"
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigációs mód"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Webhelyfa"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Klasszikus fa-alapú navigáció"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Egyéni navigáció"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Statikus navigációs menü + Webhelyfa gomb"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Nincs"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Webhelynavigáció letiltása."
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "A felhasználó sikeresen ellenőrizve."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "A felhasználó sikeresen aktiválva."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "A felhasználó sikeresen deaktiválva."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Először a szöveget kell kiválasztani!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Tanúsítvány megújítása"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Tanúsítvány állapota"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Tanúsítvány lejárata"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Feliratkozási email cím"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Jelenlegi állapot"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Bekapcsolás"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Kikapcsolás"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Tanúsítvány megújítása..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Ne hagyja el ezt az oldalt."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Tanúsítvány sikeresen megújítva."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP átirányítás sikeresen módosítva."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Oldalcímkék kezelése"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Nincs megjeleníthető címke."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Címke szerkesztése"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Címke"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Címke"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Létrehozva: {{created}}, utoljára frissítve: {{updated}}"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Címke törlése"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Címke kiválasztása a bal oldali listából."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "A kezdéshez hozzá kell adni egy címkét egy oldalhoz."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Címkék frissítve."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Címke sikeresen törölve."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Címke sikeresen mentve."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Szűrő..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Hivatkozott oldalak megtekintése"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Címke tölése?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "{{tag}} címke biztosan törölhető? A címke minden hivatkozott oldalról el lesz távolítva."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Az API eléréséhez szükséges kulcsok kezelése"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API engedélyezve"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API letiltva"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API engedélyezése"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API tiltása"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Új API kulcs"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Név"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Kulcs vége"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Lejárat"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Létrehozva"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Utoljára frissítve"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Visszavonás"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Még nincsenek létrehozva API kulcsok."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API kulcs visszavonása?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "{{name}} kulcs biztosan visszavonható? Ez a művelet nem vonható vissza!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Visszavonás"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API kulcsok listája frissítve."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "A kulcs sikeresen visszavonva."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Új API kulcs"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API kulcs sikeresen létrehozva."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Hiányzó vagy érvénytelen név."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Ki kell választani egy csoportot."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "A vendégek csoportja nem használható API kulcsokhoz."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "A kulcs célja"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Név"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Lejárat"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Egy kulcs bármijor visszavonható a lejáratától függetlenül."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Jogisultság hatókörei"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Teljes hozzáférés"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "vagy csoport jogosultságok használata..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Létrehoz"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Csoport"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Az API kulcsnak ugyanazok lesznek a jogosultságai mint a kiválasztott csoportnak."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 nap"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 nap"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 nap"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 év"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 év"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Az lentebb látható kulcs másolása mint {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "NEM fog újra megjelenni"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API sikeresen engedélyezve."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API sikeresen letiltva."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Mentett"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Nincs"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Creative Commons Nevezd meg! licenc"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Nevezd meg! - Így add tovább! licenc"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Nevezd meg! - Ne változtasd! licenc"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Nevezd meg! - Ne add el! licenc"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Nevezd meg! - Ne add el! - Így add tovább! licenc"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Nevezd meg! - Ne add el! - Ne változtasd! licenc"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Közkincs"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Minden jog fenntartva"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Tartalomlicenc"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Minden tartalomoldal láblécében megjelenő licenc."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "A tartalom {{company}} {{license}} alatt érhető el."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Az oldal tartalma nem tölthető le."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Ennek az oldalverziónak a tartalma nem tölthető le."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Az oldal ezen verziójának forrása nem tekinthető meg."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "{{path}} oldal {{date}} dátumú forrásának megtekintése."
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Verzió azonosítója: {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Oldalverzió visszaállítása"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Biztosan visszaállítható az oldal tartalma ahogy {{date}} időpontban volt? Ez a verzió az aktuális történet tetejére lesz másolva. Ígí az újabb változatok továbbra is megmaradnak."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Visszaállítás"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Oldalverzió sikeresen visszaállítva!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} karakter, {{words}} szó"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Mentési probléma megoldása"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Helyi használata"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Távoli használata"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "A helyi módosítások elvetése és a legfrissebb verzió használata"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Tartalom használata a bal oldali panelről"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Legfrissebb verzió megtekintése"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Ennek az oldalnak egy frissebb verzióját mentette {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Mi legyen?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Az aktuális helyi verzió használata és a legfrissebb módosítások figyelmen kívül hagyása."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "A távoli verzió (legutolsó) használata és a módosítások elvetése."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Felülírás a távoli verzióval?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Biztosan lecserélhető az aktuális helyi verzió a legfrissebb távoli tartalommal? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "A jelenlegi módosítások elvesznek."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Megerősítés"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Helyi verzió {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(szerkeszthető)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(csak olvasható)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Távoli verzió {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Az aktuális szerkesztés, az oldal {{date}} dátumú verziója alapján."
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Utoljára szerkesztette {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Cím:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Leírás:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Vannak nem mentett módosítások. Biztosan bezárható a szerkesztő?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Mentési probléma! Egy másik felhasználó már módosította ezt az oldalt."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Másolat"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Megjelenített név"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Hely"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Beosztás"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Időzóna"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Saját személyes információm"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Saját információm"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Nyilvános profil megtekintése"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Hitelesítés"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Szolgáltató"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Jelszó módosítása"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Jelenlegi jelszó"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Új jelszó"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Új jelszó megerősítése"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Csoportok"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Tevékenység"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Csatlakozott"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profil legutóbb frissítve"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Utolsó bejelentkezés"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Létrehozott oldalak"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Beküldött hozzászólások"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profil sikeresen elmentve."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Jelszó sikeresen módosítva."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Oldalak"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Hozzászólások"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Általam létrehozott vagy utoljára frissített oldalak listája"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Nincs megjeleníthető oldal."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Oldallista frissítve."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Cím"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Útvonal"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Létrehozva"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Utoljára frissítve"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Utolsó bejelentkezések"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Böngészés"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Főmenü"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Aktuális könyvtár"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(gyökér)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Másolja a nyelvből..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Forrás nyelve"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "A nyelv ahonnan a navigáció elemei másolásra kerülnek."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Másolás"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "A nyelv kiválasztása ahonnan az elemek másolva lesznek. Az elemek hozzá lesznek fűzve az aktív nyelv aktuális elemlistájához."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Statikus navigáció"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Csak statikus navigációs menü"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Beállítások"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Dátum formátuma"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Nyelv alapértelmezése"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Megjelenés"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Weboldal alapértelmezése"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Világos"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Sötét"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL tanúsítvány ellenőrzése"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Néhány kiszolgálónál szükséges az SSL tanúsítvány ellenőrzés letiltása. A megfelelő biztonság érdekében engedélyezni kell"
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Külső hivatkozás (új ablak)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Biztonság"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Maximális feltöltési méret"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Fájlok maximális száma feltöltésenként"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Hány fájl tölthető fel egyszerre?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Egy fájl maximális mérete."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bájt"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "fájlok"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Feltöltések"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Ez csak a Wiki.js-re van hatással. Reverse-proxy (pl.: nginx, apache, Cloudflare) annak beállításait is megfelelően módosítani kell."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Biztonsági beállítások konfigurálása"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Kiterjesztések"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Kiterjesztések telepítése extra funkciókért"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Szolgáltató"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Beszélgetések hozzáadása a wiki oldalaihoz"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Szolgáltató beállítása"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Ez a szolgáltató nem rendelkezik módosítható beállításokkal."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "A felhasználó által létrehozott bármely tartalom (oldalak, feltöltések, megjegyzések stb.) az alább kiválasztott felhasználóhoz kerül. Javasoljuk, hogy hozzon létre egy hamis célfelhasználót (pl. Törölt felhasználó), ha nem szeretné, hogy a tartalom bármely aktuális aktív felhasználóhoz legyen hozzárendelve."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Aktív stratégiák"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Stratégia hozzáadása"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stílusok"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "A javascript kódot HTML szkript címkék közé kell tenni."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Ez az oldal nincs közzétéve."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Hozzászólások"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Új hozzászólás írása..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Név"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Saját email cím"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown formátum"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Hozzászólás beküldése"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Hozzászólások betöltése..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Beküldés mint {{name}}."
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Legyél az első hozzászóló."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Még nincsenek hozzászólások."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Hozzászólás frissítése"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Törlés megerősítése"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Biztosan véglegesen törölhető ez a hozzászólás?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Ezt a műveletet nem lehet visszavonni!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "módosítva {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Az új hozzászólás sikeresen elküldve."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "A hozzászólás üres vagy túl rövid!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "A hozzászólás sikeresen frissítve."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "A hozzászólás sikeresen törölve."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Helyesírás-ellenőrzés váltása"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Bejelentkezés"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Bejelentkezési képernyő"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT konfiguráció"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Bejelentkezési képernyő megkerülése"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Irányítsa át a felhasználót automatikusan az első hitelesítési szolgáltatóhoz."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Bejelentkezés háttérképének URL-je"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Adjon meg egy képet amelyet bejelentkezési háttérként használna. PNG és JPG formátumok támogatottak, a javasolt méret 1920x1080. Hagyja üresen az alapértelmezett háttérhez. Kattintson a jobb oldali gombra új kép feltöltéséhez. (A Vendégek számára külön olvasási jogot kell biztosítani, hogy elérjék a képet.)"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Helyi hitelesítésszolgáltató elrejtése"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Ne jelenítse meg a helyi hitelesítés szolgáltatót a bejelentkezési képernyőn. (Adja hozzá a ?all-t az URL-hez átmeneti használathoz.)"
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Biztonság"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Kétlépcsős hitelesítés kikényszerítése"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Kényszerítse az összes felhasználót a kétlépcsős hitelesítés használatára, ha felhasználó / jelszó űrlappal rendelkező hitelesítési szolgáltatót használ."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Hozzászólások megtekintése"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Új hozzászólás"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Hozzászólás tartalma"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Hozzászólások"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Címkék"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "A címkéknek megfelelő oldalak"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Vissza a lap tetejére"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Felhasználónév"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Kilépés"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Oldallétrehozási folyamat beállítása"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Az oldal címe érvénytelen karaktert tartalmaz."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Az oldal beállításai sikeresen elmentve."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "Kétlépcsős bejelentkezés kikapcsolva."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "Kétlépcsős bejelentkezés engedélyezve."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Jelszó-visszaállítás kérése ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Ellenőrizze e-mailjeiben a jelszó visszaállítására vonatkozó utasításokat!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktív"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Be tudnak jelentkezni a felhasználók ezzel a stratégiával?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Megjelenített név"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "A hitelesítési stratégia felhasználóknak megjelenített címe."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Válasszon hitelesítésszolgáltatót"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Hitelesítő adatatok megadása"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Elfelejtette a jelszavát?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Adja meg a biztonsági kódot amelyet elküldtünk a megbízható eszközre:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Az adminisztrátor kötelezővé tette a kétlépcsős hitelesítést a fiókján."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Olvassa be az alábbi kódot a telefonján a 2FA alkalmazásban:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Adja meg a biztonsági kódot, amit megbízható eszköze generált:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Kiválasztás"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Válassza ki az új oldal helyét"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Oldal helyének áthelyezése / átnevezése"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Egy oldal kiválasztása"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtuális mappák"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Oldalak"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Ez a mappa üres."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Konvertálás"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Oldal Konvertálása"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Válassza ki a használni kívánt szerkesztőt a következő oldalhoz"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Az oldal tartalma az újonnan kiválasztott szerkesztő formátumába konvertálódik. Vegye figyelembe, hogy az átalakítás eredményeként bizonyos formázások vagy nem megjelenített tartalom elveszhet. Egy pillanatkép hozzáadódik az oldalelőzményekhez, és bármikor visszaállítható."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Konvertálás"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Adminisztráció"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Exportálás lemezre"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Tartalomjegyzék"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Tartalomjegyzék"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Alapértelmezett Beállítások Használata"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Tartalomjegyzék fejléc szintek"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Kliensazonosító hosztnév"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Oldal kiterjesztések"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Gomb Webhely neve"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Gomb ikon"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "A szerkesztőgombon megjelenítendő ikon. Például mdi-github a GitHub ikon megjelenítéséhez."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Gomb URL-je"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Rövidítések szerkesztése"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Menüsor szerkesztése"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Szerkesztési menüsor megjelenítése"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "A szerkesztési menüsor megjelenítése az oldal fejlécében."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Szerkesztés gomb megjelenítése"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Az aktuális oldal szerkesztésére szolgáló gomb megjelenítése."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Külső szerkesztőgomb megjelenítése"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Gomb megjelenítése, amely egy külső kód tárolóhoz (pl. GitHub) vezet, ahol a felhasználók szerkeszthetik vagy PR-t küldhetnek az aktuális oldalhoz."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Szerkesztés itt:"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "A megjegyzések beállítása sikeresen mentve."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Lábléc Szöveg Felülírása"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Opcionálisan felülírható a lábléc szövege egy egyéni üzenettel. Hasznos, ha a fenti licencek egyike sem megfelelő."
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Desenvolupat per"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Inici de sessió obligatori"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Correu electrònic / Nom d'usuari"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Contrasenya"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Iniciar Sessió"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Inici de sessió no vàlid"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "El correu electrònic o la contrasenya no són vàlids."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Correu electrònic no vàlid"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Error d’inici de sessió"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Encara no has estat autoritzat per accedir a aquesta web."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Massa intents!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Heu fet massa intents fallits en poc temps. Torneu-ho a provar en {{time}} ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "No s'ha trobat l'usuari"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Local"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Compte de Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Directori Actiu d'Azure"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Autentificació de doble factor"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Codi de seguretat obligatori:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Verifiqueu"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Panell de control"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "General"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Configuració regional"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Estadístiques"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Tema"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grups"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Usuaris"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autenticació"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Registre"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Renderitzat"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Motor de cerca"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Emmagatzematge"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Accés API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Informació del sistema"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Utilitats"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Eines per a desenvolupadors"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Contribuir a Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Configuració principal de la vostra wiki"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Informació de la web"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Marca del lloc web"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Web"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Usuaris"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Mòduls"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Sistema"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Definiu les opcions de localització del vostre wiki"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Configuració regional"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Espai de noms multilingüe"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Descarrega la configuració regional"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Base local"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Tots els elements de text de la interfície d'usuari es mostraran en l'idioma seleccionat."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Actualitza automàticament"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Baixeu automàticament les actualitzacions de totes les configuracions regionals d'espai de noms activades a continuació."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Espais de noms multilingües"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Habilita diverses versions lingüístiques de la mateixa pàgina."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Espais de noms actius"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Llista d'idiomes per la configuració multilingue. L'idioma base definit a sobre sempre serà inclòs sense tenir en compte la selecció."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "El codi de l'idioma serà prefixat a totes les rutes. (Ex. /{{langCode}}/nom-de-pagina)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Les rutes sense codi d'idioma seran automaticament redirigides a l'idioma base definit anteriorment."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Desa"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Cancel·lar"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Descarregar"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Pujar"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Descartar"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Netejar"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Crear"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Edita"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Suprimeix"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Refrescar"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Desa els canvis"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Continuar"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Localització de la web"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Baixeu automàticament les actualitzacions d'aquesta localització a mesura que estiguin disponibles."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informació sobre el sistema"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Informació de Host"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Versió actual"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Última versió"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Publicat"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Sistema operatiu"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Hostname"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Nuclis de CPU"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "RAM total"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Directori de treball"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Fitxer de configuració"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Ús de RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Ajuda a donar suport al desenvolupament i a les operacions de Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Finança la nostra feina"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Escampa la veu"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Parla amb els teus amics i companys sobre com és d'impressionant Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Segueix-nos a {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Envieu una idea o voteu-ne una proposta al {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "tauler de sol·licituds de funcions"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Has trobat un error? Envia el problema a {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Ajuda a traduir Wiki.js al teu idioma. Feu-nos-ho saber a {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Fes una donació"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Contribuir"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js també forma part de la iniciativa Open Collective, un fons transparent que es destina als recursos comunitaris. Pots contribuir econòmicament fent una donació mensual o única:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Necessitem la vostra ajuda per seguir millorant el programa i executar els diferents serveis associats (per exemple, allotjament i xarxes)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js és un software gratuït i de codi obert portat a tu amb {{0}} per {{1}} i {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "col·laboradors"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Pàgina"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Renderitzant"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Si us plau, esperi..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "La pàgina s'ha creat correctament."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "S'ha produït un error en crear la pàgina"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "També podeu comprar samarretes de Wiki.js per donar suport econòmic al projecte:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Botiga Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "D'acord"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Tots els drets reservats."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Aquesta pàgina no existeix."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Vols crear-la ara?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Crea una pàgina"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Tornar enrere"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Pàgines"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navegació"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Gestioneu la navegació de la web"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Afegeix"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Enllaç"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Divisor"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Capçalera"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Etiqueta"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Icona"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Tipus d'objectiu"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Objectiu"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Selecciona un element de navegació de l'esquerra."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Sense títol {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Enllaç extern"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Inici"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Pàgina"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Expressió de cerca"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Edita {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Suprimeix {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "La navegació s'ha guardat correctament."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Feu clic al botó Afegeix per afegir el vostre primer element de navegació."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "La navegació està buida"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Aplicar"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Correu electrònic"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Verifica la contrasenya"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Nom"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Registra't"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Crear un compte"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Ja tens un compte? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Inicieu la sessió"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Inicieu la sessió mitjançant {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Has oblidat la teva contrasenya?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "o inicieu la sessió mitjançant ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Encara no teniu cap compte? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Crear un compte"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Introduïu un nom d'usuari o correu electrònic vàlid."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Introduïu una contrasenya vàlida."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Inici de sessió correcte. S'està redirigint ..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "S'està iniciant la sessió ..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "L'autentificació no està disponible."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Omple el formulari a sota per crear el teu compte."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Si us plau, esperi..."
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Compte creat correctament!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "S'està creant el compte ..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Falta l'adreça d'email."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "L'adreça d'email és invalida."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Falta la contrasenya."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "La contrasenya és massa curta."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Les contrasenyes no coincideixen."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Falta omplir el nom."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "El nom és massa curt."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "El nom és massa llarg."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Cancel·la"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Canvia la contrasenya"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Introduïu la vostra adreça de correu electrònic per rebre instruccions per restablir la vostra contrasenya:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Email"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Configura les opcions de l'email"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Configuració"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (opcional)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Comproveu el vostre correu electrònic per activar el compte."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "La pàgina s'ha actualitzat correctament."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "No autoritzat"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "No pots veure aquesta pàgina."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "No pots veure l'orígen de la pàgina."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "No pots veure l'històric de la pàgina."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "No pots editar la pàgina."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "No pots crear la pàgina."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Tornar enrere"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Inici"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "No s'ha trobat"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Aquesta pàgina no existeix."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Inicia sessió com ..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Fes-te mecenes"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Converteix-te en creador o patrocinador mitjançant Patreon (passa directament a donar suport a l'objectiu del desenvolupador principal Nicolas Giard de treballar a temps complet a Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Benvingut a la teva wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Comença creant la pàgina principal."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Crea la pàgina d'inici"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Banderes"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Feu una donació única o recurrent mitjançant Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Acceptem donacions mitjançant Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Carrega configuració regional"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Si no esteu connectat a Internet o no podeu descarregar fitxers de configuració regional mitjançant el mètode anterior, podeu carregar els paquets manualment penjant-los a continuació."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Navegar..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Organitza webhooks a serveis externs"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Envia un email de prova"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Email del destinatari"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Enviar email"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Emisor"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Email de l'emissor"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Correu electrònic del remitent"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Configuració SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Amfitrió"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Normalment 465 (recomanat), 587 o 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Segur (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "S'hauria d'activar quan s'utilitza el port 465, en cas contrari està desactivat (587 o 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Nom d'usuari"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Contrasenya"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) proporciona una capa de seguretat en tots els correus electrònics enviats des de Wiki.js proporcionant els mitjans perquè els destinataris validin el nom de domini i garanteixin l’autenticitat del missatge."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Utilitza el DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Nom de domini"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Selector de clau"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Clau privada"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Clau privada pel selector en un format PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Envieu un correu electrònic de prova per assegurar-vos que la vostra configuració SMTP funciona."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Configuració guardada correctament."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "La versió de la base de dades no està completament suportada. Algunes funcionalitats podrien estar limitades o no funcionar correctament."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "L'informació del sistema s'ha actualitzat."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Configura les opcions d'autentificació de la wiki"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Estratègies"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Opcions globals avançades"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "Audiència JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "L'URN d'audiència que s'utilitza a JWT es va emetre en iniciar la sessió. Normalment el vostre nom de domini. (p. ex. urna:elteu.domini.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Expiració de token"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "El període d'expiració d'un token fins que s'ha de renovar. (defecte: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Periode de renovació de token"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "El màxim temps de renovació d'un token un cop expirat. (Per defecte: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "L'estratègia és {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "actiu"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "desactivat"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "y no pot ser desactivat"
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "L'email de prova s'ha enviat correctament."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Modifica l'aspecte de la teva wiki"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Tema de la web"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Els temes afecten com es mostren les pàgines de contingut. Altres seccions de la web (com ara l'editor o l'àrea d'administració) no es veuen afectades."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Mode fosc"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "No es recomana per a l’accessibilitat. No tots els temes poden oferir-ne suport."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Injecció de codi"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Sobreescriure CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Codi CSS per injectar després del CSS predeterminat del sistema. Penseu en utilitzar temes personalitzats si teniu una gran quantitat de codi CSS. Injectar massa codi CSS provocarà un baix rendiment de càrrega de la pàgina! El CSS es reduirà automàticament."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Injecció HTML al head"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Codi HTML que s'injecta just abans de l'etiqueta de tancament del head. Normalment per a etiquetes d'script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Injecció HTML al body"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Codi HTML per ser injectat just abans de l'etiqueta de tancament del body."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Descarregar temes"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Area d'administració"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Configuració de l'estratègia"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Aquesta estratègia no te opcions de configuració que es puguin modificar."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registrar"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Permet registrar-se"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Permet accedit a la wiki a qualsevol usuari correctament autoritzat per la estratègia."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Limita a dominis d'email especifics"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Una llista dels dominis autoritzats a registrar-se. El domini de l'email de l'usuari ha de coincidir amb una d'aquestes per obtenir accés."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Assigna al grup"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Assigna automàticament nous usuaris a aquests grups."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Seguretat"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Força tots els usuaris a utilitzar l'autenticació de dos factors (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Els usuaris hauran de configurar 2FA la primera vegada que inicien sessió i no poden ser desactivats per l’usuari."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Referència de configuració"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "És possible que algunes estratègies requereixin establir alguns valors de configuració al vostre proveïdor. Aquests es proporcionen només com a referència i és possible que l'estratègia actual no els necessiti."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Primer heu d’establir un {{siteUrl}} vàlid. Feu clic a {{general}} a la barra lateral esquerra."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Orígens web permesos"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL de devolució de trucada / URI de redirecció"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL d'inici de sessió"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL de tancament de sessió"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Mètode d'autenticació del punt final del testimoni"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Inici"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Nova Pàgina"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Pàgina Actual"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Mostra"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Edita"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Historial"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Veure la font"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Mou / canvia el nom"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Suprimeix"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Actius"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Imatges i fitxers"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Cerca..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administració"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Compte"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "La meva wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Perfil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Tancar sessió"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Iniciar Sessió"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Darrera edició per"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "No publicada"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Edita la Pàgina"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Taula de continguts"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Marcador"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Compartir"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Format d’impressió"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Tanca"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Pàgina"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Definiu objectius de còpia de seguretat i sincronització del vostre contingut"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Objectius"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Estat"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Darrera sincronització {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "L'últim intent va ser {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Missatge d'error d'intent de sincronització"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "No teniu cap objectiu d'emmagatzematge actiu."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Configuració de destinació"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Aquest objectiu d'emmagatzematge no té opcions de configuració que podeu modificar."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Direcció de sincronització"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Trieu com es gestiona la sincronització de contingut per a aquest objectiu d'emmagatzematge."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Bidireccional"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Empeny a l'objectiu"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Tira de l'objectiu"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Sincronització no suportada"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "En mode bidireccional, el contingut primer s’extreu de l’objectiu d’emmagatzematge. Qualsevol contingut més nou sobreescriu el contingut local. El contingut nou des de l'última sincronització s'enfoca a l'objectiu d'emmagatzematge, sobreescrivint qualsevol contingut de l'objectiu si hi ha."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "El contingut sempre s’inclou a la destinació d’emmagatzematge, sobreescrivint qualsevol contingut existent. Aquesta és l'opció més segura per als escenaris de còpia de seguretat."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "El contingut sempre es treu de la destinació d'emmagatzematge, sobreescrivint qualsevol contingut local que ja existeixi. Aquesta opció normalment es reserva per a la importació de contingut d’un sol ús. Precaució amb aquesta opció, ja que sempre es sobreescriurà qualsevol contingut local."
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Sincronitza la planificació"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Per raons de rendiment, aquest emmagatzematge objectiu sincronitza els canvis en un procediment basat en intervals de temps en comptes de a cada canvi. Defineix cada quan hauria de sincronitzar-se."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Actualment establert cada {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Per defecte és cada {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Accions"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Executa"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Configura les capacitats de busqueda de la teva wiki"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Reconstrueix l’índex"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Motor de cerca"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Configuració del motor"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Aquest motor no té opcions de configuració que podeu modificar."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "S'ha actualitzat la llista de motors de cerca."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "La configuració del motor de cerca s'ha desat correctament."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "L'índex s'ha reconstruït correctament."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "S'ha produït un error inesperat."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Pàgines"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Usuaris"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grups"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Esteu executant l'última versió."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Hi ha disponible una nova versió: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js és un projecte lliure i de codi obert. Hi ha diverses maneres de contribuir al projecte."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Necessitem la teva ajuda!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Descobreix-ne més"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "S'ha actualitzat la llista d'estratègies."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "La configuració d’autenticació s’ha desat correctament."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "General"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL de la web"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "L'URL completa de la vostra wiki, sense la barra de seguiment. (per exemple, https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Títol de la web"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Es mostra a la barra superior i s'afegeix al metatítol de totes les pàgines."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logotip"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Penja el logotip"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Neteja"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Una imatge de  {{size}} píxels és la recomanada per a millors resultats."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Només fitxers {{typeList}} o {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Peu de copyright"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Nom organització / Empresa"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Nom a usar quan es mostri l'avís de drets d'autor al final de la pàgina. Deixa-ho buit per amagar-ho."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Descripció de la web"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Descripció per defecte d'una pàgina quan aquesta no estigui definida."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Per defecte: Índex, Segueix. També es pot configurar per pàgina."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Escriviu com a mínim 2 caràcters per començar a cercar ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Cercant..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "No hi ha cap pàgina que coincideixi amb la vostra consulta."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "S'han trobat {{total}} resultats"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Volies dir..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Tanca"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Copia l'enllaç de cerca"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Molt feble"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Feble"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Normal"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Segura"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Molt segura"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Suprimeix la pàgina"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Esteu segur que voleu suprimir la pàgina {{title}} ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "La pàgina es pot restaurar des de l'àrea d'administració."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Cerca usuari"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Cerca usuaris ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Cada"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minut(s)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Hora(s)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Dia(s)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Mes(os)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Any(s)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Propietats de la pàgina"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Informació de la pàgina"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Títol"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Descripció breu"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Es mostra a sota del títol"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Camí i categorització"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Localització"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Camí"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "No inclogueu cap barra inclinada o final."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Etiquetes"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Utilitzeu etiquetes per classificar les vostres pàgines i facilitar-ne la cerca."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Estat de publicació"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Publicat"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Les pàgines despublicades encara són visibles per a usuaris amb permisos d'escriptura d'aquesta pàgina"
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publica a partir de"
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Deixar en blanc si no es vol especificar data"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publicació finalitzada el ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Deixeu-ho buit per no tenir data de finalització"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Voleu descartar els canvis no desats?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Teniu canvis no desats. Esteu segur que voleu sortir de l'editor i descartar les modificacions que heu fet des de l'última desada?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Descartar els canvis"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Quin editor voleu utilitzar per a aquesta pàgina?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Això no es pot canviar un cop creada la pàgina."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Actius"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Nova carpeta"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Nom de la carpeta"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Heu de seguir la carpeta de {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "regles de denominació"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Mou"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Canvia el nom"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimitzar"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Vista prèvia"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Propietats"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Aquesta carpeta està buida."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} fitxers"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Insereix"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Nom de l'arxiu"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Tipus"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Mida del fitxer"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Afegit"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Accions"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Pujar arxius"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Cerqueu o deixeu anar fitxers aquí ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Recupera la imatge remota"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Alineament de la imatge"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Canvia el nom de l'arxiu"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Introduïu el nou nom d'aquest recurs:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Suprimeix l'arxiu"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Esteu segur que voleu suprimir els recursos"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Aquesta acció no es pot desfer!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "La llista de recursos s’ha actualitzat correctament."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Ha fallat la pujada del fitxer."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "La carpeta de recursos s'ha creat correctament."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "L'arxiu s'ha reanomenat correctament."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "L'arxiu s'ha suprimit correctament."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Has d'escollir un fitxer abans de pujar-lo!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Recupera"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Torna a l'editor"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Negreta"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Cursiva"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Ratllat"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Encapçalament {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Subscript"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Superscript"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Informació Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Èxit Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Error Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Error Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Llista no ordenada"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Llista ordenada"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Codi en línia"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Dreceres de teclat"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Barra horitzontal"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Amaga / Mostra el tauler de previsualització"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Insereix un enllaç"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Insereix actius"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Inseriu un bloc de codi"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Inseriu el bloc de codi"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Insereix vídeo / àudio"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Insereix un diagrama"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Insereix una expressió matemàtica"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Assistent de taules"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Mode sense distraccions"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Ajuda sobre el format de Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Visualitza de l'origen de la pàgina {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Torna a la visualització normal"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Llengua"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analítica"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Afegiu eines d’anàlisi i seguiment al vostre wiki"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Proveïdors"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Configuració del proveïdor"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Aquest proveïdor no té opcions de configuració que podeu modificar."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "La llista de proveïdors s'ha actualitzat correctament."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "La configuració d'Analytics s'ha desat correctament"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Manteniment i eines diverses"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Eines"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Autenticació"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Diverses eines per a l'autenticació / usuaris"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Esborra la memòria cau"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Esborra la memòria cau de diversos components"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Punt final GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Canvieu el punt final GraphQL per a Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Importa des de Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migrar dades d'una instal·lació anterior a l'1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetria"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Activeu / Desactiveu la telemetria o restableix l'identificador de client"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Comentaris"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Publicat"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privat"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "S'està carregant la pàgina ..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Codi"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Nom"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Nom nadiu"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Disponibilitat"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Descarregar"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Contingut"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Diverses eines per a pàgines"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Conjunt d'icones"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Conjunt d'icones per utilitzar a la barra lateral de navegació."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "El vostre navegador no està actualitzat. Actualitzeu a un {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "navegador modern"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Nom"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Autor"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Descarregar"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Quan afegiu estils al contingut de la pàgina, heu d'aplicar-los a la classe {{cssClass}}. Ometre això podria malmetre el disseny de l'editor."
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ATENCIÓ:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Opcions del tema"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Actiu"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Inactiu"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Verificat"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "No verificat"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Edita l' Usuari"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Informació bàsica"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Correu electrònic"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Nom de visualització"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autenticació"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Proveïdor"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Contrasenya"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Canvia la contrasenya"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Nova contrasenya"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Autenticació de dos factors (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Activar Autenticació de 2 Factors (2FA)"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Proveïdor"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Grups d’ Usuaris"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Aquest usuari encara no està assignat a cap grup. Heu d'assignar com a mínim un grup a cada usuari."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Selecciona un Grup..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Assignar"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Metadades ampliades"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Ubicació"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Càrrec"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Zona horària"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "L' Usuari s'ha actualitzat correctament."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "L'usuari ja està assignat a aquest grup."
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Aquest dispositiu d'emmagatzematge està {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "actiu"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "inactiu"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Has d'activar aquest dispositiu d'emmagatzematge i aplicar canvis abans de poder executar accions."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Trieu una contrasenya nova"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Heu de triar una nova contrasenya:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Nova contrasenya"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Verifiqueu la nova contrasenya"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Canvia la contrasenya"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "S'està canviant la contrasenya ..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Pàgines recents"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Pàgines més populars"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Informació"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Planificació"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Social"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Categorització"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Funcions socials"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Permetre comentaris"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Activeu els comentaris en aquesta pàgina."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Permetre valoracions"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Mostra informació sobre l'autor"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Visualitza la barra d'eines per compartir"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Mostra una barra d'eines juntament amb els botons de compartir i imprimir pàgina"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Mostra l'autor de la pàgina juntament amb la darrera edició."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Habilita la puntuació en aquesta pàgina."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "o preferiu crear una vista personalitzada?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Navegar per Etiquetes"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Mapa de la pàgina web"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Accions de la pàgina"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Selecció actual"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Esborra la selecció"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Seleccioneu una o més etiquetes"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Cerca en els resultats..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Localització"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Ordenar per"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Seleccioneu una o més etiquetes a l'esquerra."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "S'estan recuperant els resultats de la pàgina ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "No s'ha trobat cap pàgina amb les etiquetes seleccionades."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "No s'ha trobat cap pàgina que coincideixi amb les opcions del filtre actual."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Darrera actualització {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Data de creació"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Darrera modificació"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Path"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Títol"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Qualsevol"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Feu-vos patrocinador mitjançant GitHub Sponsors (es dirigeix directament a donar suport a l’objectiu del desenvolupador principal Nicolas Giard de treballar a temps complet a Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Converteix-te en patrocinador"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Etiquetes"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Gestiona la configuració de SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Proveïdor"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Seleccioneu Certificat Personalitzat si ja teniu el vostre propi certificat."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domini"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Introduïu completament el domini que apunta al vostre wiki. (per exemple, wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Opcions del proveïdor"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Desactivat"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Certificat Personalitzat"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Ports"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Port HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Port no-SSL que escoltarà el servidor per a les sol·licituds HTTP. Normalment, 80 o 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Port HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Port SSL que el servidor escoltarà per a sol·licituds HTTPS. Normalment el 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Redirecciona les sol·licituds HTTP a HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Redirigirà automàticament qualsevol sol·licitud del port HTTP a HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Tingueu en compte que el fitxer de configuració ha de tenir permisos d'escriptura per poder guardar la configuració dels ports."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL del logotip"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Especifiqueu una imatge per utilitzar-la com a logotip. S'admeten SVG, PNG, JPG, en proporció quadrada, de 34x34 píxels o més. Feu clic al botó de la dreta per penjar una imatge nova."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Voleu suprimir l'usuari?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Esteu segur que voleu suprimir l'usuari {{username}} ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Actualitza l'usuari"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Tingueu en compte que des d'aquest tauler no podeu assignar usuaris als grups Administradors o Convidats."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Tingueu en compte que no podeu suprimir un usuari que ja ha creat contingut. En lloc d'això, heu de desactivar l'usuari o suprimir tot el contingut que aquest usuari hagi creat."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Scripts"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "El CSS es reduirà automàticament quan es desi. No inclogueu les etiquetes d'estil circumdants, només el codi CSS real."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Visible per a tothom"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Visible per a seleccionar grups..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Selecciona la pàgina..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Mode de navegació"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Arbre de la web"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Navegació clàssica basada en arbres"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Navegació personalitzada"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Menú de navegació estàtica + Botó de l'arbre de la web"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Cap"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Desactiveu la navegació de la web"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "L'usuari s'ha verificat correctament."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "L'usuari s'ha activat correctament."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "L'usuari s'ha desactivat correctament."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Primer s’ha de seleccionar el text!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Renova el certificat"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Estat del certificat"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Caducitat del certificat"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Correu electrònic del subscriptor"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Estat actual"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Desactiva"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Activa"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "S'està renovant el certificat ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "No sortiu d'aquesta pàgina."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "El certificat s’ha renovat amb èxit."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "La redirecció HTTP s'ha canviat correctament."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Gestioneu les etiquetes de pàgina"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "No hi ha etiquetes per mostrar."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Edita l'etiqueta"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Etiqueta"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Etiqueta"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Creat {{created}} i darrera actualització {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Suprimiu aquesta etiqueta"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Seleccioneu una etiqueta a la llista de l'esquerra."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Afegiu una etiqueta a una pàgina per començar."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "S'han actualitzat les etiquetes."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "L'etiqueta s'ha suprimit correctament."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "L'etiqueta s'ha desat correctament."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filtra..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Veure pàgines enllaçades"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Voleu suprimir l'etiqueta?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Esteu segur que voleu suprimir l'etiqueta {{tag}} ? L'etiqueta també es desvincularà de totes les pàgines."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Gestioneu les claus per accedir a l'API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API habilitada"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API deshabilitada"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Habilita l'API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Inhabilita l'API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Nova clau API"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Nom"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Final de la clau"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Caducitat"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Creada"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Última actualització"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Revocar"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Encara no s'ha generat cap clau API."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Voleu revocar la clau API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Esteu segur que voleu revocar la clau {{name}}? Aquesta acció no es pot desfer."
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Revocar"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "S'ha actualitzat la llista de claus API."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "La clau s'ha revocat amb èxit."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Nova clau API"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "La clau API s'ha creat correctament."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Falta el nom o no és vàlid."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Heu de seleccionar un grup."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "El grup de convidats no es pot utilitzar per a claus d'API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Finalitat d'aquesta clau"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Nom"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Caducitat"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Podeu revocar una clau en qualsevol moment independentment de la caducitat."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Àmbits dels permisos"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Accés complet"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "o feu servir permisos de grup..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generar"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Grup"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "La clau API tindrà els mateixos permisos que el grup seleccionat."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 dies"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 dies"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 dies"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 any"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 anys"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Copieu la clau que es mostra a continuació com a {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "NO es tornarà a mostrar més"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "L'API s'ha activat correctament."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "L'API s'ha desactivat correctament."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Desat"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Cap"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Llicència Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Llicència Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Llicència Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Llicència Creative Commons Attribution-NonCommercial"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Llicència Creative Commons Attribution-NonCommercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Llicènica Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Domini públic"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Tots els drets reservats"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Contingut de la llicència"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Llicència que es mostra al peu de pàgina de totes les pàgines de contingut."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "El contingut està disponible sota {{license}}, per {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "No podeu descarregar el contingut de la pàgina."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "No podeu descarregar el contingut d'aquesta versió de la pàgina."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "No podeu veure el codi d'aquesta versió de la pàgina."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "S'està visualitzant el codi del {{date}} de la pàgina {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID de la versió {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Voleu restaurar la versió de la pàgina?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Esteu segur que voleu restaurar el contingut d'aquesta pàgina tal com estava el {{date}} ? Aquesta versió es copiarà a la part superior de l'historial actual. Així, les versions més noves es conservaran."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Restaura"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "La versió de la pàgina s'ha restaurat correctament!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} lletres, {{words}} paraules"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Resol el conflicte en desar"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Utilitza la Local"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Utilitzar la Remota"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Descartar els canvis locals i utilitzar la versió més recent"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Utilitzeu contingut al tauler esquerra"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Veure la versió més recent"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Una versió més recent d'aquesta pàgina ha estat desada per {{authorName}} el {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Què vols fer?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Utilitzeu la vostra versió local actual i ignoreu els darrers canvis."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Utilitzeu la versió remota (la última) i descarteu els canvis."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Voleu sobreescriure-ho amb la versió remota?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Esteu segur que voleu substituir la vostra versió actual pel contingut remot més recent? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Es perdran les vostres modificacions actuals."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Confirmeu"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Versió local {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(editable)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(només de lectura)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Versió remota {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "La vostra edició actual, basada en la versió de la pàgina de {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Editat per última vegada per {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Títol:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Descripció:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Teniu canvis no desats. Esteu segur que voleu deixar l'editor?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Conflicte en guardar! Un altre usuari ja ha modificat aquesta pàgina."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplicar"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Nom de visualització"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Ubicació"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Lloc de treball"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Zona horària"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Perfil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "La meva informació personal"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "La meva informació"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Veure el perfil públic"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autenticació"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Proveïdor"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Canvia la contrasenya"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Contrasenya actual"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Nova contrasenya"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Confirma la nova contrasenya"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grups"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Activitat"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "S'ha unit el"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Perfil actualitzat per última vegada el"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Últim inici de sessió el"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Pàgines creades"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Comentaris publicats"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "El perfil s'ha desat correctament."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "La contrasenya s'ha canviat correctament."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Pàgines"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Comentaris"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Llista de pàgines que he creat o modificat per darrera vegada"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "No hi ha pàgines per mostrar."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "S'ha actualitzat la llista de pàgines."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Títol"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Camí"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Creat"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Última actualització"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Últims inicis de sessió"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Navega"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Menú principal"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Directori actual"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(arrel)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Copia des de la configuració regional ..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Configuració regional"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "La configuració regional des de la qual es copiaran els elements de navegació."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Copia"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Seleccioneu la configuració regional des d'on es copiaran els elements. Els elements s'afegiran a la llista actual d'ítems de la configuració regional activa."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Navegació estàtica"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Només menú de navegació estàtic"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Preferències"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Format de data"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Configuració regional predeterminada"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Aspecte"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Per defecte del lloc"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Clar"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Fosc"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Verifiqueu el certificat SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Alguns Hosts requereixen la desactivació de la verificació del certificat SSL. Deixeu-ho activat per obtenir una seguretat adequada."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Enllaç extern (finestra nova)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Seguretat"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Mida màxima de pujada"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Nombre màxim de fitxers per pujada"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Quants fitxers es poden pujar de cop?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "La mida màxima d'un sol fitxer."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "ﬁtxers"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Càrregues"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Aquests paràmetres només afecten a Wiki.js. Si utilitzeu un proxy invers (per exemple, nginx, apache, Cloudflare), també heu de canviar la configuració perquè coincideixi."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Configureu els paràmetres de seguretat"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Extensions"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Instal·leu extensions per obtenir funcions addicionals"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Proveïdor"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Afegir comentaris a les vostres pàgines de la wiki"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Configuració del proveïdor"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Aquest proveïdor no té opcions de configuració que podeu modificar."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Qualsevol contingut (pàgines, càrregues, comentaris, etc.) que hagi creat aquest usuari es reassignarà a l'usuari seleccionat a continuació. Es recomana crear un usuari objectiu fals (per exemple, usuari suprimit) si no voleu reassignar el contingut a cap usuari actiu actual."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Estratègies actives"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Afegeix estratègia"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Styles"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Heu d’encapsular el codi javascript amb etiquetes de script HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Aquesta pàgina no està publicada."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Comentaris"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Escriu un comentari nou..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "El teu nom"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "El teu correu electrònic"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Format Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Escriu un comentari"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Carregant els comentaris..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Publica com a {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Sigues el primer a comentar."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Encara no hi ha cap comentari."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Actualitza el comentari"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Confirmeu Suprimeix"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Esteu segur que voleu suprimir permanentment aquest comentari?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Aquesta acció no es pot desfer!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "modificat {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "El nou comentari s'ha publicat correctament."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "El comentari és buit o massa curt."
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "El comentari s'ha actualitzat correctament."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "El comentari s'ha suprimit correctament."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Commuta la correcció ortogràfica"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Iniciar Sessió"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Pantalla d'inici de sessió"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Configuració de JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Ignora la pantalla d'inici de sessió"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "L'usuari hauria de ser redireccionat automàticament al primer proveïdor d'autenticació."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL de la imatge de fons d'inici de sessió"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Especifiqueu una imatge per utilitzar-la com a fons d'inici de sessió. S'admeten PNG i JPG, es recomana 1920x1080. Deixeu-ho en blanc per defecte. Feu clic al botó de la dreta per penjar una imatge nova. Tingueu en compte que el grup de convidats ha de tenir accés de lectura a la imatge seleccionada."
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Amaga el proveïdor d'autenticació local"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "No mostreu el proveïdor d'autenticació local a la pantalla d'inici de sessió. Afegiu-ho tot a l'URL per utilitzar-lo temporalment."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Seguretat"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Fer complir 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Força tots els usuaris a utilitzar l'autenticació de dos factors quan s'utilitza un proveïdor d'autenticació amb un formulari d'usuari / contrasenya."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Veure el debat"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Nou comentari"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Contingut del comentari"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Discussió"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Etiquetes"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Pàgines coincidents amb les etiquetes"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Torna a dalt"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Nom d'usuari"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Surt"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Configureu el renderitzat de la pàgina"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "El títol de la web conté caràcters invàlids"
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "La configuració de la web s'ha guardat correctament"
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA s'ha desactivat correctament"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA s'ha activat correctament"
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "S'està sol·licitant el restabliment de la contrasenya ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Comproveu el correu electrònic per reinicialitzar la contrasenya"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Actiu"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Els usuaris poden iniciar sessió mitjançant aquesta estratègia?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Nom visible"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "El títol que es mostra a l'usuari final per a aquest tipus d'autenticació."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Seleccioneu el Proveïdor d'autenticació"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Introduïu les vostres credencials"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "No recordo la contrasenya"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Introduïu el codi de seguretat generat des del dispositiu de confiança:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "El vostre administrador ha requerit que s'habiliti l'autenticació de dos factors (2FA) al vostre compte."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Escaneja el codi QR següent des de l'aplicació mòbil 2FA:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Introduïu el codi de seguretat generat des del dispositiu de confiança:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Seleccioneu"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Seleccioneu Una ubicació de pàgina nova"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Mou / canvia el nom de la ubicació de la pàgina"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Seleccioneu una pàgina"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Carpetes virtuals"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Pàgines"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Aquesta carpeta està buida."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Convertir"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Converteix la pàgina"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Seleccioneu l'editor que vulgueu utilitzar per avançar per a la pàgina {{title}} :"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "El contingut de la pàgina es convertirà al format de l'editor seleccionat recentment. Tingueu en compte que és possible que es perdi part del format o contingut no representat com a resultat de la conversió. S'afegirà una instantània a l'historial de pàgines i es podrà restaurar en qualsevol moment."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Convertir"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administració"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Exportar al disc"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Guarda el contingut a un tarball per fer una còpia de seguretat/migració"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TdC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Taula de continguts"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Usar predeterminats"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Nivells d'encapçalament de la taula de continguts"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "La taula de continguts mostrarà encapçalaments des de i fins als nivells seleccionats."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Encapçalaments predeterminats de la taula de continguts"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "La taula de continguts mostrarà els encapçalaments de i fins als nivells seleccionats per defecte"
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Nom d'identificació del client"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Un nom opcional per enviar al servidor SMTP per a identificar el seu correu. Deixa-ho buit per usar el nom del servidor. Per clients de Google Workspace, aqui hi hauria d'anar el nom principal del seu domini."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Extensions de pàgina"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Una llista separada per comes de les URLs de les extensions que seran tractades com a pàgines. Per exemple, afegint md tractarà /foobar.md igual que /foobar"
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Botó Nom del lloc"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "El nom del lloc extern que es mostra al botó d'edició. No inclogueu el prefix \"Edita a\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Icona del botó"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "La icona que es mostra al botó d'edició. Per exemple, mdi-github per mostrar la icona de GitHub."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Botó d'URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "URL de la pàgina del repositori extern. Utilitzeu el marcador de posició {filename} on s'ha d'incloure el nom del fitxer. (p. ex. https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Editar dreceres"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Botó flotant d'edició ràpida"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Mostrar el botó d'acció flotant (FAB) amb un menú de marcatge ràpid a l'extrem inferior dret de la pantalla."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Barra de menú d'edició"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Mostra la barra del menú d'edició"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Mostra la barra del menú d'edició en la capçalera de la pàgina."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Mostra botó d'edició"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Mostra un botó per editar la pàgina actual."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Mosta botó extern d'edició"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Mostra un botó enllaçant a un repositori extern (per exemple, GitHub) on els usuaris poden editar o presentar una PR per la pàgina actual."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Editar a {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "La configuració dels comentaris s'ha desat correctament."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Substitució del text del peu de pàgina"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Opcionalment, substituïu el text del peu de pàgina amb un missatge personalitzat. Útil si cap de les llicències anteriors és adequada."
+                }
+            ]
+        }
+    }
+}

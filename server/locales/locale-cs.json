@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Běží na"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Požadováno přihlášení"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "E-mail / uživatelské jméno"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Heslo"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Přihlásit se"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Neplatné přihlášení"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "E-mail nebo heslo je neplatné."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Neplatný e-mail uživatele."
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Chyba při přihlášení"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Nemáte oprávnění k přihlášení k této stránce."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Příliš mnoho pokusů!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Udělali jste příliš mnoho neúspěšných pokusů v krátkém čase, zkuste to znovu za {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Uživatel nenalezen"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Místní"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Účet Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Dvoufázové ověření"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Požadovaný bezpečnostní kód:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Ověřit"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Řídicí panel"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Obecné"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Lokalizace"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistiky"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Vzhled"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Skupiny"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Uživatelé"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Ověření"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Protokolování"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Vykreslování"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Vyhledávač"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Úložiště"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API Přístup"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Systémové informace"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Nástroje"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Vývojářské nástroje"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Přispějte k projektu Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Hlavní nastavení Vaší wiki"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Informace o stránce"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Značení stránky"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Stránka"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Uživatelé"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Moduly"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Systém"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Nastavte si možnosti lokalizace wiki"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Nastavení lokalizace"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Vícejazyčné jmenné prostory"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Stáhnout lokalizace"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Základní lokalizace"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Všechny textové prvky uživatelského rozhraní se zobrazí ve vybraném jazyce."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Aktualizovat automaticky"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Automaticky stáhnout aktualizace pro všechny lokalizace povolené níže."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Vícejazyčné jmenné prostory"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Umožnit více jazykových verzí stejné stránky."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktivní jmenné prostory"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Seznam lokalizací je povolen pro vícejazyčné jmenné prostory. Základní lokalizace definovaná výše bude vždy zahrnuta bez ohledu na tento výběr."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Kód lokalizace bude umístěn do všech cest. (např. /{{langCode}}/page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Cesta bez lokalizovaného kódu bude automaticky přesměrována do základní lokalizace definované výše."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Uložit"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Zrušit"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Stáhnout"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Nahrát"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Zrušit"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Vymazat"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Vytvořit"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Upravit"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Odstranit"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Obnovit"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Uložit změny"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Pokračovat"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Lokalizace stránky"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Automaticky stahovat aktualizace tohoto prostředí, jakmile budou k dispozici."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informace o Vašem systému"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Informace o hostiteli"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Aktuální verze"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Nejnovější verze"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Publikováno"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operační systém"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Jméno hostitele"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Jádra CPU"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Celková paměť"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Pracovní adresář"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Konfigurační soubor"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Využití paměti RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Pomozte podpořit Wiki.js vývoj a provoz"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Financujte naši práci"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Propagujte nás"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Povězte přátelům a kolegům jak úžasná je Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Sledujte nás na {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Pošlete nápad nebo hlasujte pro existující na {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "tabule žádostí o funkce"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Našli jste chybu? Odešlete ji na {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Pomozte přeložit Wiki.js do Vašeho jazyka. Dejte nám vědět na {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Přispějte"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Přispět"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js je také součástí iniciativy Open Collective transparentního učtu, který podporujje komunitní zdroje. Finančně můžete přispívat měsíčně nebo jednorázovým darováním:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Potřebujeme Vaši pomoc, abychom neustále zlepšovali software a provozovali různé přidružené služby (např. Hosting a síť)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js je bezplatný a otevřený software, který vám přináší {{0}} od {{1}} a {{2}} ."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "přispěvatelé"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Stránka"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Probíhá zpracování..."
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Prosím, čekejte..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Stránka byla úspěšně vytvořena."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Při vytváření stránky došlo k chybě"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Můžete si také koupit Wiki.js trička a projekt finančně podpořit:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js obchod"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . Všechna práva vyhrazena."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Tato stránka ještě neexistuje."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Chcete ji nyní vytvořit?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Vytvořit stránku"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Jít zpět"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Stránky"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigace"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Spravovat navigaci webu"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Přidat"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Odkaz"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Oddělovač"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Záhlaví"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Popisek"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikona"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Typ cíle"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Cíl"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Vyberte navigační položku vlevo."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Bez názvu {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Externí odkaz"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Domů"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Stránka"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Vyhledávací dotaz"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Upravit {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Odstranit {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigace byla úspěšně uložena."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Klepnutím na tlačítko Přidat přidáte první navigační položku."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigace je prázdná"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Použít"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "E-mailová adresa"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Ověření hesla"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Jméno"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Zaregistrovat se"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Vytvořte si účet"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Již máte účet? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Přihlásit se místo toho"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Přihlásit se pomocí {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Zapomněli jste heslo?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "nebo se přihlásit pomocí..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Ještě nemáte účet? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Vytvořit účet"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Zadejte platný e-mail / uživatelské jméno."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Zadejte platné heslo."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Úspěšně přihlášeno! Přesměrování..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Přihlašování..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Ověření je nedostupné."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Vyplňte formulář níže a vytvořte si účet."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Počkejte prosím"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Účet byl úspěšně vytvořen!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Vytváření účtu..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Chybí e-mailová adresa."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "E-mailová adresa je neplatná."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Chybí heslo."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Heslo je příliš krátké."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Obě hesla se neshodují."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Jméno chybí."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Jméno je příliš krátké."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Jméno je příliš dlouhé."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Zrušit"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Obnovit heslo"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Zadejte svoji e-mailovou adresu pro obdržení instrukcí k obnovení Vašeho hesla:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Schránka"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Konfigurace nastavení schránky"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Konfigurace"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (volitelné)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Zkontrolujte svoje e-maily pro aktivaci Vašeho účtu."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Stránka úspěšně aktualizována."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Neoprávněno"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Nemůžete si zobrazit tuto stránku."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Nemůžete si zobrazit zdroj této stránky."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Nemůžete si zobrazit historii stránky."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Nemůžete upravit stránku."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Nemůžete vytvořit stránku."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Jít zpět"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Domů"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Nenalezeno"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Tato stránka neexistuje."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Přihlásit se jako..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Staňte se patronem"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Staňte se podporovatelem nebo sponzorem prostřednictvím Patreonu (příspěvek jde přímo na podporu hlavního vývojáře Nicolasa Giarda, kterého cíl je pracovat na Wiki.js na plný úvazek)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Vítejte na Vaší wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Začněme a vytvoříme domovskou stránku."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Vytvořit domovskou stránku"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Příznaky"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Podpořte nás jednorázově nebo opakovaně přes Paypal"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Přjímáme dary přes Ethereum"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Balíček národního prostředí Sideload"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Pokud nejste připojeni k internetu nebo nemůžete stahovat soubory lokální soubory pomocí výše uvedené metody, můžete místo toho ručně načíst tyto balíčky nahráním."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Procházet..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooky"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Správa webhooků pro externí služby"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Odeslat testovací e-mail"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "E-mailová adresa příjemce"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Poslat e-mail"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Odesilatel"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Jméno odesilatele"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "E-mail odesilatele"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP nastavení"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Hostitel"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Běžně 465 (doporučeno), 587 nebo 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Zabezpečeno (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Mělo by být povoleno, pokud se používá port 465, jinak je vypnuto (587 nebo 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Uživatelské jméno"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Heslo"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) poskytuje vrstvu zabezpečení všech e-mailů odeslaných z Wiki.js tím, že příjemcům poskytuje prostředky k ověření názvu domény a zajištění autenticity zprávy."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Použít DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Název domény"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Výběr klíče"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Soukromý klíč"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Soukromý klíč pro výběr ve formátu PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Odeslat testovací e-mail pro ujištění, že vaše SMTP konfigurace funguje."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Konfigurace byla úspěšně uložena."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Vaše databáze není plně podporována. Některé funkce mohou být omezeny nebo nemusí fungovat podle očekávání."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Informace o systému byly aktualizovány."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Nakonfigurujte si nastavení ověřování vaší wiki"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Strategie"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Globální pokročilá nastavení"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "Publikum JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "Publikum URN použité v JWT vydané při přihlášení. Obvykle název vaší domény. (např. urn: vase.domena.cz)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Vypršení platnosti tokenu"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Doba platnosti tokenu, dokud není nutné jej obnovit. (výchozí: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Interval obnovení tokenu"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Maximální doba, po jejiž uplynutí může být token obnoven. (výchozí hodnota: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Tato strategie je {{state}}{{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "aktivní"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "neaktivní"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "a nelze ji zakázat."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Testovací e-mail byl úspěšně odeslán."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Upravit vzhled a dojem vaší wiki"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Motiv webové stránky."
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Motivy ovlivňují zobrazení stránek obsahu. Ostatní části webu (například editor nebo administrativní oblast) ovlivněny nejsou."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Tmavý režim."
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Nedoporučuje se pro usnadnění přístupu. Nemusí být podporováno všemi motivy."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Vkládání kódu"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Přepsání šablon stylů CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Kód CSS, který se má vložit po výchozím nastavení systému CSS. Pokud máte velké množství kódu CSS, zvažte použití vlastních motivů. Vložení příliš mnoho CSS kódu bude mít za následek malý výkon při načítání stránky! Šablona stylů CSS bude automaticky minifikována."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Vkládání do HTML hlavičky."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Kód HTML, který se bude vkládat těsně před uzavírací tag HEAD. Obvykle pro tagy skriptů."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Vkládání textu do HTML"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Kód HTML, který se bude vkládat těsně před uzavírací tag BODY."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Stáhnout motivy"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Administrativní oblast"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Konfigurace strategie"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Tato strategie nemá žádné možnosti konfigurace, které můžete změnit."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registrace"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Povolit vlastní registraci"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Povolit všem úspěšně autorizovaným uživatelům dle strategií přístup na wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Omezit na konkrétní e-mailové domény"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Seznam domén oprávněných k registraci. Doména e-mailové adresy musí souhlasit s jedním z nich pro získání přístupu."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Přiřadit ke skupině"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Automaticky přiřadit nové uživatele do těchto skupin."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Zabezpečení"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Vynucení všech uživatelů, aby používali dvoufaktorové ověřování (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Uživatelé budou muset nastavit 2FA při prvním přihlášení a nemohou být uživateli zakázány."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Reference pro konfiguraci"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Některé strategie mohou vyžadovat nastavení některých konfiguračních hodnot na straně vašeho poskytovatele. Tyto informace jsou poskytovány pouze pro referenci a stávající strategie je nemusí potřebovat."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Nejprve je nutné nastavit platnou {{siteUrl}}. V levém pruhu klepněte na položku {{general}}"
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Povolené webové kořeny"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL zpětného volání / URI přesměrování"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Adresa URL pro přihlášení"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Adresa URL pro odhlášení"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Metoda ověřování koncového bodu"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Domů"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Nová stránka"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Aktuální stránka"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Zobrazit"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Upravit"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Historie"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Zobrazit zdroj"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Přesunout / přejmenovat"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Odstranit"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Objekty"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Obrázky a soubory"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Hledat..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Správa"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Účet"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Moje Wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Odhlásit se"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Přihlásit se"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Naposledy upravil"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Nepublikované"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Upravit stránku"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Obsah"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Záložka"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Sdílet"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Formát tisku"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Zavřít"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Stránka"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Nastavení zálohování a synchronizace obsahu pro váš obsah."
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Cíle"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Stav"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Poslední synchronizace {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Poslední pokus byl {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Chybové hlášení"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Nemáte žádný aktivní cíl úložiště."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Cílová konfigurace"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Tento cíl úložiště nemá žádné možnosti konfigurace, které lze upravit."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Směr synchronizace"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Zvolte způsob zpracování synchronizace obsahu pro tento cíl úložiště."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Obousměrný"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Pushnout do cíle"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Vytáhnout z cíle"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Nepodporováno"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "V obousměrném režimu je obsah nejprve stažen z cíle úložiště. Jakýkoliv novější obsah přepíše lokální obsah. Nový obsah od poslední synchronizace je pak pushnutý do cíle úložiště a přepíše jakýkoliv obsah v cíli, pokud je cíl přítomen."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Obsah je vždy pushnutý do cíle úložiště a přepisuje veškerý existující obsah. Toto je nejbezpečnější volba pro scénáře zálohování."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Obsah je vždy stažen z cíle úložiště a přepíše veškerý lokální obsah, který již existuje. Tato volba je obvykle vyhrazena pro import obsahu pro jedno použití. Při této možnosti buďte opatrní, protože veškerý lokální obsah bude vždy přepsán!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Plán Synchronizace"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Z důvodů výkonu tento cíl úložiště synchronizuje změny v plánu v intervalech namísto každé změny. Definujte, v jakém intervalu má probíhat synchronizace."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Nyní nastavena na každý {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Výchozí nastavení je každý {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Akce"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Spustit"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Nakonfigurovat vyhledávací funkce vaší wiki"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Znovu sestavit index"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Vyhledávač"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Konfigurace Modulu"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Tento modul nemá žádné možnosti konfigurace, které lze změnit."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Seznam vyhledávačů byl aktualizován."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Konfigurace vyhledávače byla úspěšně uložena."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Index byl úspěšně znovu vytvořen."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Došlo k neočekáváné chybě."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Stránky"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Uživatelé"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Skupiny"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Používáte nejnovější verzi."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Je dostupná nová verze: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js je bezplatný projekt s otevřeným zdrojovým kódem. Je tu několik možností, jak můžete přispět projektu."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Potřebujeme vaši pomoc!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Zjistit více"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Seznam strategií byl aktualizován."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Konfigurace ověřování byla úspěšně uložena."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Obecné"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL Stránky"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Úplná adresa URL vaší wiki, bez koncového lomítka. (např. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Název Stránky"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Zobrazí se v horním panelu a připojí se ke všem titulům metadat."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Nahrát logo"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Vymazat"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Pro dosažení nejlepších výsledků se doporučuje obrázek o {{size}} pixelů."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Pouze {{typeList}} nebo {{lastType}} soubory"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Autorská práva v zápatí"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Název společnosti / organizace"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Název, který se použije při zobrazování oznámení o autorských právech v zápatí. Chcete-li skrýt, nechte prázdné."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Popisek Stránky"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Výchozí popis, pokud pro stránku není uveden žádný."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Roboti"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Výchozí: Index, Follow. Lze také nastavit na základě jednotlivých stránek."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Chcete-li zahájit hledání, zadejte alespoň 2 znaky..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Vyhledávání..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Vašemu dotazu neodpovídají žádné stránky."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Nalezeno {{total}} výsledků"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Mysleli jste..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Zavřít"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Kopírovat Odkaz hledání"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Velmi slabé"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Slabé"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Průměrné"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Silné"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Velmi silné"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Odstranit stránku"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Opravdu chcete odstranit stránku {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Stránku lze obnovit z administrační oblasti."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Hledat uživatele"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Vyhledat uživatele..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Každý"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minuty"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Hodiny"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Den(dny)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Měsíc(e)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Rok(y)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Vlastnosti Stránky"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Informace o stránce"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Název"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Krátký Popis"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Zobrazeno pod názvem"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Cesta & Kategorizace"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Lokalizace stránky"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Cesta"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Nezahrnuji žádná úvodní ani koncová lomítka."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Tagy"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Pomocí tagů můžete stránky kategorizovat a snadněji je najít."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Stav Publikování"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Publikováno"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Nepublikované stránky mohou uživatelé stále vidět, pokud mají k této stránce oprávnění k zápisu."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publikovat od ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Ponechat prázdné pro počáteční datum"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publikovat koncem..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Ponechat prázdné pro koncové datum"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Zrušit neuložené změny?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Máte neuložené změny. Opravdu chcete opustit editor a zrušit všechny změny, které jste provedli od posledního uložení?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Zrušit změny"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Který Editor chcete použít pro tuto stránku?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Po vytvoření stránky tohle již nelze změnit."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Objekty"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Nová Složka"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Název Složky"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Musí následovat složku objektu {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "pravidla při pojmenování"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Přesunout"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Přejmenovat"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimalizovat"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Náhled"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Vlastnosti"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Tato složka objektů je prázdná."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} souborů"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Vložit"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Název souboru"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Typ"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Velikost souboru"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Přidáno"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Akce"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Nahrát Objekty"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Zde můžete procházet nebo přetahovat soubory ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Načíst Vzdálený Obrázek"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Zarovnání obrázku"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Přejmenovat Objekt"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Zadejte novou cestu objektu:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Odstranit Objekt"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Opravdu chcete odstranit objekt"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Tuto akci nelze vrátit zpět!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Seznam objektů úspěšně obnoven."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Nahrávání souboru se nezdařilo."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Adresář objektu úspěšně vytvořen."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Objekt úspěšně přejmenován."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Objekt úspěšně odstraněn."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Nejprve musíte vybrat soubor, který chcete nahrát!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Načtení"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Zpět do editoru"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Tučné"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Kurzíva"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Přeškrtnutí"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Nadpis {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Dolní index"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Horní index"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Citace-blok"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Informační Citace-blok"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Úspěch Citace-blok"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Varovná Citace-blok"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Chybová Citace-blok"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Nečíslovaný Seznam"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Uspořádaný Seznam"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Vnořený Kód"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Tlačidlo Klávesnice"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horizontální Bar"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Skrýt / Zobrazit Panel Náhledu"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Vložit odkaz"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Vložit objekty"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Vložit blok"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Vložit blok kódu"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Vložit video / audio"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Vložit diagram"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Vložit matematický výraz"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Pomocník pro Tabulku"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Volný režim Bez rozptýlení"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Nápověda pro formátování Markdownu"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Prohlížení zdroje stránky {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Návrat do Normálního Zobrazení"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Jazyk"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analytika"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Přidejte do své wiki analytické a sledovací nástroje"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Poskytovatelé"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Konfigurace Poskytovatele"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Tento poskytovatel nemá žádné možnosti konfigurace, které můžete upravovat."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Seznam poskytovatelů byl úspěšně aktualizován."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analytická konfigurace byla úspěšně uložena."
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Údržba a různé nástroje"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Nástroje"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Ověření"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Různé nástroje pro ověřování / uživatelé"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Vyprázdnit Cache"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Vyprázdnění mezipaměti různých komponent."
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Změnit GraphQL endpoint pro Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Import z Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migrace dat z předchozí instalace 1.x."
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetrie"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Povolí/zakáže telemetrii nebo resetuje ID klienta"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Komentáře"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Publikováno"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Soukromé"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Globální"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Načítání stránky..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Kód"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Název"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Název v daném jazyce"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "ZprDoLe"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Dostupnost"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Stáhnout"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Obsah"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Různé nástroje pro stránky"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Sada ikon"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Sada ikon pro navigaci na postranním panelu."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Váš prohlížeč je zastaralý. Přejděte na {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "moderní prohlížeč"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Název"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Autor"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Stáhnout"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Při přidávání stylů pro obsah stránky je nutné je přiřadit k třídě {{cssClass}}. Vynechání této funkce může narušit rozvržení editoru!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "VAROVÁNÍ:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Možnosti Témy"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktivní"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Neaktivní"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Ověřeno"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Neověřeno"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Upravit Uživatele"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Základní Info"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "E-mail"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Zobrazované Jméno"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autentizace"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Poskytovatel"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Heslo"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Změnit Heslo"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Nové Heslo"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Dvoufaktorová Autentizace (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Přepnout 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "ID poskytovatele"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Uživatelské Skupiny"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Tento uživatel zatím není přiřazen k žádné skupině. Uživateli musíte přiřadit alespoň 1 skupinu."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Vybrat skupinu..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Přiřadit"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Rozšířená metadata"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Umístění"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Funkce"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Časové pásmo"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Uživatel byl úspěšně aktualizován."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Uživatel je již přiřazen k této skupině!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Tento cíl úložiště je {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "aktivní"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "neaktivní"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Před spuštěním akcí je nutné povolit tento cíl úložiště a použít změny."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Zvolte nové heslo"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Musíte zvolit nové heslo:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Nové heslo"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Potvrďte nové heslo"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Změnit heslo"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Měnění hesla..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Poslední stránky"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Nejpopulárnější stránky"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Informace"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Plánování"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Sociální"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Kategorizace"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Sociální funkce"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Povolit komentáře"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Povolit možnost komentování na této stránce."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Povolit hodnocení"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Zobrazit informace o autorovi"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Zobrazit panel nástrojů pro sdílení"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Zobrazit panel nástrojů s tlačítky pro sdílení a tisk této stránky"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Zobrazit autora stránky spolu s časem poslední verze."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Povolit možnost hodnocení na této stránce."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "nebo vytvořit vlastní zobrazení?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Procházet podle tagů"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Mapa stránky"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Akce stránky"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Aktuální výběr"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Vymazat výběr"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Vyberte jeden nebo více tagů"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Hledat ve výsledcích ..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Lokalizace"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Seřadit podle"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Vyberte jeden nebo více tagů vlevo."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Načítání výsledků stránek."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Nepodařilo se najít žádnou stránku s vybranými tagy."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Nepodařilo se najít žádnou stránku odpovídající současnému nastavení filtrů."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Posledně upraveno {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Datum vytvoření"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Posledně upraveno"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Cesta"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Název"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Libovolná"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Staňte se sponzorem prostřednictvím GitHub Sponsors (jde přímo na podporu hlavního vývojářského cíle Nicolase Giarda, aby mohl pracovat na Wiki.js na plný úvazek)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Staňte se sponzorem"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Tagy"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Správa konfigurace SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Poskytovatel"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Pokud již máte vlastní certifikát, vyberte vlastní certifikát."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Doména"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Zadejte plně kvalifikovanou doménu směřující na vaši wiki. (např. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Možnosti poskytovatele"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Zakázáno"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Vlastní certifikát"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Porty"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Port HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Port, který není typu SSL, server bude naslouchat požadavkům protokolu HTTP. Obvykle 80 nebo 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Port HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Port SSL, na kterém bude server naslouchat požadavkům protokolu HTTPS. Obvykle 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Přesměrovat požadavky HTTP na HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Automaticky přesměruje všechny požadavky na portu HTTP na HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Chcete-li zachovat konfiguraci portů, musí být váš konfigurační soubor zapisovatelný."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL loga"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Určete obrázek, který chcete použít jako logo. Podporovány jsou SVG, PNG, JPG ve čtvercovém poměru 34 x 34 pixelů nebo větší. Kliknutím na tlačítko vpravo nahrajte nový obrázek."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Odstranit uživatele?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Opravdu chcete smazat uživatele {{username}} ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Aktualizovat uživatele"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Z tohoto panelu nemůžete přiřadit uživatele do skupin Administrators nebo Guests."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Uživatele, který již vytvořil obsah, nemůžete smazat. Místo toho musíte uživatele deaktivovat nebo odstranit veškerý obsah vytvořený tímto uživatelem."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Skripty"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS bude automaticky minifikováno při uložení. Ponechejte pouze vlastní kód CSS, neobklopujte ho HTML značkami stylu."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Viditelné všem"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Viditelné pro výběr skupin..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Vybrat stránku..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Režim navigace"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Mapa stránky"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Klasická navigace na základě stromové struktury"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Vlastní navigace"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Statické Navigační Menu + Tlačítko Stromu Stránky"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Žádný"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Zakázat navigaci stránky"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Uživatel byl úspěšně ověřen."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Uživatel byl úspěšně aktivován."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Uživatel byl úspěšně deaktivován."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Nejprve je nutné vybrat text!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Obnovit Certifikát"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Stav Certifikátu"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Vypršení Platnosti Certifikátu"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "E-mail Odběratele"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Aktuální Stav"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Zapnout"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Vypnout"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Obnovení Certifikátu..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Neopouštět tuto stránku."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Certifikát byl úspěšně obnoven."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Přesměrování HTTP bylo úspěšně změněno."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Spravovat tagy stránky"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Žádné tagy k zobrazení."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Upravit Tag"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tag"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Popisek"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Vytvářen {{created}} a naposledy aktualizován {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Smazat tento tag"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Vyberte tag ze seznamu na levé straně."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Chcete-li začít, přidejte na stránku tag."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tagy byly aktualizovány."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Tag úspěšně odstraněn."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tag byl úspěšně uložen."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filtr..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Zobrazit Propojené Stránky"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Odstranit Tag?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Opravdu chcete smazat tag {{tag}} ? Značka bude také odpojena od všech stránek."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Spravujte klíče pro přístup k API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API povoleno"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API zakázáno"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Povolit API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Zakázat API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Nový klíč API"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Jméno"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Konec klíče"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Vypršení platnosti"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Vytvořeno"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Naposledy aktualizováno"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Odvolat"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Nejsou vygenerovány žádné API klíče."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Odvolat klíč rozhraní API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Opravdu chcete zrušit klíč {{name}} ? Tuto akci nelze vrátit zpět!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Odvolat"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Seznam API klíčů byl aktualizován."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Klíč byl úspěšně zrušen."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Nový klíč API"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Klíč API byl úspěšně vytvořen."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Jméno chybí nebo je neplatné."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Musíte vybrat skupinu."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Guests skupinu nelze použít pro API klíče."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Účel tohoto klíče"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Jméno"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Vypršení platnosti"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Klíč můžete kdykoli odvolat bez ohledu na vypršení platnosti."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Rozsah oprávnění"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Plný přístup"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "nebo použít oprávnění skupny..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generovat"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Skupina"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API klíč bude mít stejná oprávnění jako vybraná skupina."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 dní"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 dní"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 dní"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 rok"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 roky"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Zkopírujte níže uvedený klíč jako {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "nebude znovu zobrazeno"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API bylo úspěšně aktivováno."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "Rozhraní API bylo úspěšně deaktivováno."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Uloženo"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Žádný"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Licence Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs License"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Licence Creative Commons typu Uvedení autora - nekomerční licence - licence NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Veřejná doména"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Všechna práva vyhrazena"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Licence na obsah"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Licence uvedená v zápatí všech obsahových stránek."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Obsah je k dispozici na základě {{license}} od {{company}} ."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Obsah stránky nelze stáhnout."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Tuto verzi stránky nemůžete stáhnout."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Nemůžete zobrazit zdrojový kód této verze stránky."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Prohlížení zdroje od {{date}} stránky {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID verze {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Obnovit verzi stránky?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Opravdu chcete obnovit obsah této stránky tak, jak byl k datu {{date}}? Tato verze bude zkopírována na začátek aktuální historie. Novější verze zůstanou zachovány."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Obnovit"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Verze stránky byla úspěšně obnovena!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} znaky, {{words}} slova"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Vyřešte konflikt při ukládání"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Použít místní"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Použít vzdálený"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Zrušit lokální verzi a použít poslední."
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Použijte obsah v levém panelu"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Zobrazit poslední verzi"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Novější verzi této stránky uložil {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Co chcete dělat?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Použít vaše úpravy a ignorovat poslední změny."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Použít vzdálenou verzi a zrušit vaše změny."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Přepsat vzdálenou verzí?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Opravdu chcete nahradit vaše úpravy vzdálenou verzí? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Vaše aktuální úpravy budou ztraceny."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Potvrdit"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Lokální verze {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(upravitelné)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(pouze ke čtení)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Vzdálená verze {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Vámi editovaná stránka vychází z verze {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Naposledy upraveno"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Titulek"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Popis:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Máte neuložené úpravy. Opravdu chcete opustit editor?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Konflikt při ukládání! Tuto stránku již upravil jiný uživatel."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplikát"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Zobrazované jméno"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Umístění"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Pracovní pozice"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Časové pásmo"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Moje osobní informace"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Moje informace"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Zobrazit veřejný profil"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Ověření"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Poskytovatel"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Změnit heslo"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Aktuální heslo"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Nové heslo"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Potvrďte nové heslo"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Skupiny"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktivita"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Připojil se"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profil byl naposledy aktualizován dne"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Poslední přihlášení dne"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Stránky byly vytvořeny"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Komentáře zveřejněny"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profil býl úspěšně uložen"
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Heslo bylo úspěšně změněno."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Stránky"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Komentáře"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Seznam stránek, které jsem vytvořil nebo naposledy upravil"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Žádné stránky k zobrazení."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Seznam stránek byl aktualizován."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Název"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Cesta"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Vytvořeno"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Naposledy upraveno"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Poslední přihlášení"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Procházet"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Hlavní menu"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Aktuální adresář"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "Hlavní složka"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Kopírovat z lokalizace..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Zdroj lokalizace"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Lokalizace, ze kterého budou navigační položky zkopírovány."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Kopírovat"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Vyberte lokalizaci, ze které budou zkopírovány položky. Položky budou připojeny k aktuálnímu seznamu položek v aktivní lokalizaci."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Statická navigace"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Pouze statické navigační menu"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Předvolby"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Formát data"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Výchozí národní prostředí"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Vzhled"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Výchozí web"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Světlý"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Tmavý"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Ověření certifikátu SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Některé hostingy vyžadují kontrolu SSL pro zakázání. Nechte povolené pro zajištění správné bezpečnosti."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Externí odkaz (nové okno)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Zabezpečení"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Maximální velikost pro nahrávání"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Maximální počet souborů na nahrání"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Kolik souborů lze nahrát v jedné dávce?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Maximální velikost jednoho souboru."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bajtů"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "soubory"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Nahrávání"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Toto nastavení ovlivní pouze Wiki.js. Pokud používáte reverzní proxy (např. Nginx, apache, Cloudflare), musíte také změnit nastavení tak, aby odpovídala."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Konfigurace nastavení zabezpečení"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Rozšíření"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Nainstalujte rozšíření pro rozšíření funkcionality"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Poskytovatel"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Přidejte diskuzi k vašim wiki stránkám"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Konfigurace poskytovatele"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Tento poskytovatel nemá žádné možnosti konfigurace, které by se daly upravit."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Jakýkoli obsah (stránky, nahrané soubory, komentáře apod.), který byl vytvořen tímto uživatelem bude přidělen k uživateli níže. Pokud nechcete, aby byl obsah přidělen k současnému aktivnímu uživateli, doporučujeme vytvořit fiktivního cílového uživatele (např. Smazaný uživatel)."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Aktivní Strategie"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Přidat Strategii"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Styly"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Váš javascript kód musí být obkloben HTML značkami pro skript."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Tato stránka není publikována."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Komentáře"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Napište nový komentář..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Vaše jméno"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Vaše e-mailová adresa"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Formát Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Přidat komentář"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Načítání komentářů..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Přidat komentář jako {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Buďte první komentující."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Doposud nebyly přidány žádné komentáře."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Aktualizovat komentář"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Potvrdit odstranění"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Jste si opravdu jisti, že chcete tento komentář trvale odstranit?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Tuto akci nelze vrátit zpět!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "upraveno {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Nový komentář byl úspěšně přidán."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Komentář je prázdný nebo příliš krátký!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Komentář byl úspěšně aktualizován."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Komentář byl úspěšně odstraněn."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Přepnout kontrolu pravopisu"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Přihlášení"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Přihlašovací obrazovka"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Konfigurace JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Přeskočit přihlášovací obrazovku"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Uživatel by měl být automaticky přesměrován na první způsob přihlášení"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL Adresa obrázku pozadí na přihlašovacího stránce"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Určete obrázek, který chcete použít jako přihlašovací pozadí. Podporovány jsou soubory PNG a JPG, doporučuje se rozlišení 1920x1080. Pro použití výchozího nechte prázné. Kliknutím na tlačítko vpravo nahrajte nový obrázek. Uvědomte si, že skupina Hosté musí mít přístup ke čtení u vybraného obrázku!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Skrýt lokální možnost přihlášení"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Skrýt lokální možnost přihlášení. Je možné ji použít, když do URL zadáte parametr ?all."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Zabezpečení"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Vynutit dvoufaktorové ověřování"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Vynutit používání dvoufaktorové autentifikace ve formulářích s uživatelskkým jménem a heslem."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Zobrazit komentáře"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Přidat komentář"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Obsah"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Diskutovat"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Tagy"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Stránky odpovídající tagům"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Vrátit se nahoru"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Uživatelské jméno"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Ukončit"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Konfigurace kanálu vykreslování stránek"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Název webu obsahuje neplatné znaky."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Konfigurace webu úspěšně uložena."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA bylo úspěšně zakázáno."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA bylo úspěšně povoleno."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Žádání o obnovení hesla..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Zkontrolujte své e-maily pro pokyny k obnovení hesla!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktivní"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Mohou se uživatelé přihlásit pomocí této strategie?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Zobrazované jméno"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Název zobrazený koncovému uživateli pro tuto ověřovací strategii."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Vyberte poskytovatele ověřování"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Zadejte své přihlašovací údaje"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Zapomněli jste heslo"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Zadejte bezpečnostní kód vygenerovaný vaším důvěryhodným zařízením:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Váš administrátor vyžaduje, aby bylo na vašem účtu povoleno dvoufaktorové ověřování."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Naskenujte QR kód níže pomocí vaší mobilní 2FA aplikace:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Zadejte bezpečnostní kód vygenerovaný z vašeho důvěryhodného zařízení:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Vybrat"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Vyberte Nové umístění stránky"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Přesunout / přejmenovat umístění stránky"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Vyberte stránku"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtuální složky"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Stránky"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Tato složka je prázdná."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Převést"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Převést stránku"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Který Editor chcete použít pro stránku {{title}}?"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Obsah stránky bude převeden do formátu nově vybraného editoru. Upozorňujeme, že v důsledku převodu může dojít ke ztrátě některého formátovaného nebo nevyrenderovaného obsahu. Do historie stránky bude přidán časový snímek, který lze kdykoli obnovit."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Převést"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administrace"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Exportovat na Disk"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Uložit obsah do tarballu k zálohování / přesunu"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Obsah"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Obsah"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Použít výchozí nastavení stránky"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Úrovně nadpisů obsahu"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Osnova obsahu bude ukazovat nadpisy o různých vybraných úrovních."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Výchozí úrovně nadpisů obsahu"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Osnova obsahu bude ukazovat nadpisy o různých vybraných úrovních ve výchozím nastavení."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Hostitelské jméno identifikující klienta"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Volitelné jméno k odeslání na SMTP server k indentifikaci odesílatele.  Ponechejte prázdné pro použití jména serveru. Pro zákazníky Google Workspace: měla by to být hlavní doména."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Přípony stránky"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Čárkami oddělený seznam URL přípon, které budou považovány za stránky. Například po přidání md bude s /foobar.md zacházeno stejně jako s /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Název tlačítka"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Název externího webu, který se zobrazí na tlačítku."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Ikona tlačítka"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Ikona, která se bude zobrazovat na tlačítku pro editaci. Např. pro zobrazení ikony GitHubu se použije mdi-github."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Url tlačítka"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Url na stránku v externím úložišti. Použijte zástupný symbol {filename}, ve kterém má být uveden název souboru. (např. https://github.com/foo/bar/blob/main/{filename} )."
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Upravit zkratky"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Nabídka rychlých úprav FAB"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Zobrazení plovoucího tlačítka úprav (FAB) s nabídkou rychlé volby v pravém dolním rohu obrazovky."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Panel Úprav"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Zobrazení panelu úprav"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Zobrazení panelu úprav v záhlaví stránky."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Zobrazit tlačítko editovat"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Zobrazit tlačítko editovat aktuální stránku"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Zobrazení externího tlačítka úprav"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Zobrazit tlačítko vedoucí na externí repozitář (např. GitHub), kde mohou uživatelé editovat a odesílat PR pro současnou stránku."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Upravit na {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Konfigurace komentářů byla úspěšně uložena."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Přepsání textu zápatí"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Text zápatí můžete volitelně přepsat vlastní zprávou. Užitečné, pokud žádná z výše uvedených licencí není vhodná."
+                }
+            ]
+        }
+    }
+}

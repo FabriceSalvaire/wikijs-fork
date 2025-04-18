@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Darbojas, izmantojot"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Nepieciešama pierakstīšanās"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "E-pasts / Lietotājvārds"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Parole"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Pieslēgties"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Nederīga pieteikšanās"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "E-pasta adrese vai parole nav derīga."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Nederīgs lietotāja e-pasts"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Pieteikšanās kļūda"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Jums vēl nav piešķirta atļauja pieteikties šajā vietnē."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Pārāk daudz mēģinājumu!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Jūs esat veicis pārāk daudz neveiksmīgu mēģinājumu īsā laika periodā. Lūdzu, mēģiniet vēlreiz pēc {{time}} ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Lietotājs nav atrasts"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Lokāls"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft konts"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Divu faktoru autentifikācija"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Nepieciešams drošības kods:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Pārbaudīt"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Vadības panelis"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Vispārīgi"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Valoda"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistika"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Tēma"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grupas"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Lietotāji"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autentifikācija"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Redaktors"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Reģistrēšanas"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Renderēšana"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Meklētājprogramma"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Krātuve"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API piekļuve"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Informācija par sistēmu"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Utilītas"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Izstrādātāja rīki"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Palīdzēt Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Wiki galvenie iestatījumi"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Informācija par vietni"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Vietnes zīmolrade"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Vietne"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Lietotāji"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Moduļi"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Sistēma"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Wiki valodas opciju iestatīšana"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Valodas iestatījumi"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Daudzvalodu lapas"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Lejupielādēt valodu"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Pamatvaloda"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Visi lietotāja saskarnes teksta elementi tiks parādīti izvēlētajā valodā."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Atjaunināt automātiski"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Automātiski lejupielādēt atjauninājumus visām tālāk esošajām valodām."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Daudzvalodu nosaukumvietas"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Iespējo vienas lapas vairāku valodu versijas."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktīvās lappušu valodas"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "List of languages enabled for multilingual namespacing. The base language defined above will always be included regardless of this selection."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Valodas kods tiks pievienots visiem ceļiem. (piemēram,/{{langCode}}/lapas-nosaukums)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Ceļi bez valodas koda tiks automātiski novirzīti uz iepriekš definēto bāzes valodu."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Saglabāt"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Atcelt"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Lejupielādēt"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Augšupielādēt"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Atmest"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Notīrīt"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Izveidot"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Rediģēt"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Dzēst"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Atjaunot"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Saglabāt izmaiņas"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Turpināt"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Vietnes valoda"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Automātiski lejupielādēt šīs valodas atjauninājumus, tiklīdz tie ir pieejami."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informācija par jūsu sistēmu"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Informācija par hostu"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Pašreizējā versija"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Jaunākā versija"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Publicēts"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operētājsistēma"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": " Saimniekdatora nosaukums "
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Centrālā procesora korpusi"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Kopējā operatīvā atmiņa"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Darba direktorija"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Konfigurācijas fails"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Operatīvas atmiņas lietojums:{{used}}/{{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Palīdzētu atbalstīt Wiki.js darbības un attīstības"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Finansējiet mūsu darbu"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Dalīties"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Pastāstiet draugiem un kolēģiem par to, kā Sakne Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Sekojiet mums pa {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Iesniegt ideju vai balsot par ierosināto vienu par {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "funkciju pieprasījumu dēlis"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Vai esat atradis kļūdu? Ziņojiet par to: {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Palīdziet pārsūtīt Wiki.js uz jūsu valodu. Ļaujiet mums zināt {{0}}"
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Ziedojuma veikšana"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Atbalstīt"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js ir arī daļa no Atvērto grupu iniciatīvas, kas ir pārredzams fonds, kurš ir vērsts uz kopienas resursiem. Finansiāli varat palīdzēt, veicot ikmēneša vai vienreizējo ziedojumu:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Mums ir nepieciešama jūsu palīdzība, lai turpinātu uzlabot programmatūru un vadīt dažādus saistītos pakalpojumus (piem., viesošanu un tīklošanu)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js ir bezmaksas un atvērtā pirmkoda programmatūra, kas jums tiek piegādāta kopā ar {0} pēc {1} un {2}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "Atbalstītāji"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Lapa"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Renderēšana"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Lūdzu, uzgaidiet"
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Lapa izveidota veiksmīgi."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Veidojot lapu, radās kļūda"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Jūs varat arī iegādāties Wiki.js t-kreklus, lai atbalstītu šo projektu finansiāli:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js Veikals"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Visas tiesības aizsargātas."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Šī lapa vēl neeksistē."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Vai vēlaties to izveidot tagad?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Izveidot lapu"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Atgriezties"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Lapas"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigācija"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Pārvaldīt vietnes navigāciju"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Pievienot"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Saite"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Atdalītājs"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Virsraksts"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Uzraksts"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikona"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Saites tips"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Saite"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Atlasiet navigācijas elementu no kreisās puses."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Bez nosaukuma {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Ārējā saite"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Sākums"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Lapa"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Meklēšanas vaicājums"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Rediģēt {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Dzēst {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigācija veiksmīgi saglabāta."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Nospiediet Pievienot pogai, lai pievienotu savu pirmo navigācijas elementu."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigācija ir tukša"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": " Piemērot "
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Epasta adrese"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Pārbaudīt paroli"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Vārds"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Reģistrēties"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Izveidot kontu"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Vai jums jau ir konts ? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Pieteikšanās"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Pieteikšanās, izmantojot {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Vai esat aizmirsis paroli?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "vai piesakieties, izmantojot..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Vai jums vēl nav konta? {{link}}Account"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Izveidot kontu"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Ievadiet derīgu e-pasta adresi/lietotājvārdu."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Ievadiet derīgu paroli."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Pieteikšanās veiksmīga! Notiek novirzīšana..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Notiek pierakstīšanās..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Autentifikācija nav pieejama"
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Aizpildiet šo veidlapu, lai izveidotu savu kontu."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Lūdzu, uzgaidiet"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Konts ir veiksmīgi izveidots."
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Notiek konta izveide..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Trūkst e-pasta adreses."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "E-pasta adrese nav derīga."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Trūkst paroles."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Parole ir pārāk īsa."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Abas paroles nesakrīt."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Trūkst vārda."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Vārds ir pārāk īss."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Vārds ir pārāk garš."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Atcelt"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Atiestatīt paroli"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Ievadiet savu e-pasta adresi, lai saņemtu norādījumus paroles atiestatīšanai:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Pasts"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Konfigurējiet pasta iestatījumus"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Konfigurācija"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (pēc izvēles)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Pārbaudiet e-pasta ziņojumus, lai aktivizētu kontu."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Lapa veiksmīgi atjaunināta."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Nav autorizēts"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Jūs nevarat apskatīt šo lapu."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Jūs nevarat apskatīt lapas avotu."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Jūs nevarat apskatīt, lapu vēsturi."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Jūs nevarat rediģēt lapu."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Jūs nevarat izveidot lapu."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Atgriezties"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Sākums"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Nav atrasts"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Šī lapa neeksistē."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Pieteikties kā..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Become a Patron"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Kļūt par dublieri vai sponsoru, izmantojot Patreon (dodas tieši uz atbalsta izstrādātāja Nikolā Giard mērķi strādāt pilnu slodzi Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Laipni lūdzam jūsu wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Sāksim darbu un veidosim mājas lapu."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Izveidot sākumlapu"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Karogi"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Veiciet vienreizēju vai atkārtotu ziedojumu caur Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Mēs pieņemam ziedojumus, izmantojot Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Valodas pakotnes ielāde"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Ja neesat izveidojis savienojumu ar internetu vai nevarat ielādēt valodas pakotnes, kas aprakstītas iepriekš, varat pievienot lokalus failus manuāli, ielādējot tos zemāk."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Pārlūkot..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Pārvaldīt tīmekļa āķus uz ārējiem pakalpojumiem"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Sūtīt testa e-pastu"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Saņēmēja e-pasta adrese"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Sūtīt e-pastu"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Sūtītājs"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Sūtītāja vārds"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Sūtītāja e-pasts"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP iestatījumi"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Host"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Ports"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Parasti 465 (ieteicams), 587 vai 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Drošība (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Būtu jāiespējo, izmantojot portu 465, pretējā gadījumā tas ir jāizslēdz (587 vai 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Lietotājvārds"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Parole"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) nodrošina drošības līmeni visiem e-pasta ziņojumiem, kas tiek sūtīti no Wiki.js, nodrošinot adresātiem līdzekļus domēna nosaukuma validēšanai un ziņojuma autentiskuma nodrošināšanai."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Izmantot DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domēna vārds"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Atslēgas atlasītājs"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Privātā atslēga"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Privātā atslēga atlasītājā PEM formātā"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Nosūtiet testa e-pastu, lai pārliecinātos, ka darbojas jūsu SMTP konfigurācija."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Navigācija veiksmīgi saglabāta."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Datu bāzes versija netiek pilnībā atbalstīta. Iespējams, ka dažas funkcionalitātes ir ierobežotas vai nedarbojas, kā paredzēts."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Informācija par sistēmu ir atjaunota."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Konfigurēt Wiki autentifikācijas iestatījumus"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Autorizācijas veidi"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Globālie papildu iestatījumi"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT auditorija"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "JWT LIETOTĀ auditorijas URNA, kas izdota, piesakoties sistēmā. Parasti jūsu domēna nosaukums. (piemēram, urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Marķiera derīguma termiņš"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Marķierierīces derīguma termiņš līdz tās atjaunošanai (noklusējums: 30 m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Marķiera atjaunošanas periods"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Maksimālais pilnvaru periods, kad beidzies derīguma termiņš. (noklusējums: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Šis autorizācijas veids ir {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "aktīvs"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "neaktīvs"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "un to nevar atspējot."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Testa e-pasts tika veiksmīgi nosūtīts."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Modificējiet Wiki izskatu un darbību"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Vietnes tēma"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Motīvi ietekmē satura lapu parādīšanas veidu. Citas vietnes sadaļas (piemēram, redaktora vai administratora apgabals) netiek ietekmētas."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Tumšais režīms"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Nav ieteicams pieejamībai. Iespējams, ka visas tēmas to neatbalsta."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Koda ieviešana"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS pārlabošana"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS kods, kas jāievada pēc sistēmas noklusējuma CSS. Apsveriet iespēju izmantot pielāgotus dizainus, ja jums ir liels css koda daudzums. Pārāk liela CSS koda ievadīšana izraisīs sliktu lapas ielādes veiktspēju! CSS tiks automātiski samazināti."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Virsraksta HTML koda ieviešana"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML kods, kas jāievada tieši pirms noslēdzošās galvas taga. Parasti skriptu tagiem."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "HTML koda ieviešana ķermenī (body)"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML kods, kas jāievada tieši pirms noslēdzošā pamatteksta."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Lejupielādēt Tēmas"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Administrēšanas zona"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Autorizācijas veida konfigurēšana"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Šīm autorizācijas veidam nav konfigurācijas iespējas, ko jūs varat mainīt."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Reģistrācija"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Atļaut pašreģistrāciju"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Atļaut jebkuram lietotājam, kurš ir veiksmīgi autorizēts, piekļūstot vikivielai."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Ierobežot līdz noteiktiem e-pasta domēniem"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Sarakstu ar domēniem, kurus ir atļauts reģistrēt. Lai iegūtu piekļuvi, lietotāja e-pasta adreses domēnam ir jāatbilst vienam no šiem."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Piešķirt grupai"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Automātiski piešķiriet šīm grupām jaunus lietotājus."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Drošība"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Piespiest visus lietotājus izmantot divfaktoru autentifikāciju (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Lietotājiem būs jāiestata 2FA pirmajā pieteikšanās reizē, un lietotājs to nevarēs atspējot."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Konfigurācijas izziņa"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Dažām autorizācijas veidam var būt nepieciešamas dažas konfigurācijas vērtības, kas jāiestata pakalpojumu sniedzējam. Tās ir paredzētas tikai atsaucei, un pašreizējās autorizācijas veids tām var nebūt vajadzīga."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Vispirms ir jāiestata derīgs {{siteUrl}}! Noklikšķiniet uz {{general}} kreisajā sānjoslā."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Atļautā tīmekļa izcelsme"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Atsauces URL / Novirzes URL"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Pieteikšanās URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Izrakstīšanās URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Marķiera galapunkta autentifikācijas metode"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Sākums"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Jauna lapa"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Pašreizējā lapa"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Skats"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Rediģēt"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Vēsture"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Skatīt avotu"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Pārvietot / pārdēvēt"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Dzēst"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Faili"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Attēli un faili"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Meklēt..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administrēšana"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Konts"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Mana Wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profils"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Izrakstīties"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Pieslēgties"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Pēdējoreiz rediģēja"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Nepublicēts"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Rediģēt lapu"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Lapas Saturs"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Grāmatzīme"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Dalies"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Drukas formāts"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Aizvērt"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Lapa"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Dublēšanas un sinhronizācijas mērķu iestatīšana saturam"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Repozitorijs"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Statuss"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Pēdējā sinhronizācija {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Pēdējais mēģinājums bija {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Kļūdas ziņojums"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Jums nav neviena aktīva krātuves repozitorija."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Repozitorijas konfigurēšana"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Šim krātuves repozitorijs nav konfigurācijas opciju, kuru varat modificēt."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Sinhronizācijas virziens"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Izvēlieties, kā tiek apstrādāta satura sinhronizācija šim krātuves repozitorijam."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Divvirzienu"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Sūtīt (push) repozitorijā"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Izgūt (pull) no repozitorija"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Neatbalstīts"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Divvirzienu režīmā saturs vispirms tiek izvilkts no krātuves mērķa. Jebkurš jaunāks saturs pārraksta lokālo saturu. Pēc pēdējās sinhronizācijas jauns saturs tiek pārvirzīts uz krātuves mērķi, pārrakstot jebkuru mērķa saturu, ja tāds ir."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Content is always pushed to the storage target, overwriting any existing content. This is safest choice for backup scenarios."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Saturs vienmēr tiek izņemts no krātuves mērķa, pārrakstot jebkuru jau esošu lokālo saturu. Šī izvēle parasti tiek rezervēta vienreizējās lietošanas satura importam. Uzmanieties ar šo opciju, jo jebkurš lokālais saturs vienmēr tiks pārrakstīts!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Sinhronizācijas grafiks"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "For performance reasons, this storage target synchronize changes on an interval-based schedule, instead of on every change. Define at which interval should the synchronization occur."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Pašreizējais iestatījums - ik pēc {{schedule}}"
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Pēc noklusējuma - ik pēc {{schedule}}"
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Darbības"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Palaist"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Konfigurējiet sava wiki meklēšanas iespējas"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Atjaunot indeksu"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Meklēšanas sistēma"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Meklēšanas sistēmas konfigurācija"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Šai meklēšanas sistēmai nav konfigurācijas opciju, kuras var modificēt."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Meklēšanas sistēmu saraksts ir atjaunots."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Meklēšanas sistēmas konfigurācija ir veiksmīgi saglabāta"
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Indekss veiksmīgi pārbūvēts."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Radās neparedzēta kļūda."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Lapas"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Lietotāji"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grupas"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Jūs izmantojat jaunāko versiju."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Ir pieejama jauna versija: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js ir bezmaksas un atvērtā koda projekts. Ir vairāki veidi, kā jūs varat dot ieguldījumu projektā."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Mums vajag Tavu palīdzību!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Uzzināt vairāk"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Autorizācijas veidu saraksts ir atjaunināts."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Autentifikācijas konfigurācija ir veiksmīgi saglabāta."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Vispārējie iestatījumi"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Vietnes URL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Pilnu URL uz jūsu wiki, bez noslēdzošo slīpsvītru. (piem. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Vietnes nosaukums"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Tiek rādīts augšējā panelī un pievienots visām lappušu metadatām."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logotips"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Augšupielādēt logotipu"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Notīrīt"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Lai iegūtu labākos rezultātus, ieteicams attēls ar {{size}} pikseļiem."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} vai {{lastType}} faili"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Kājenes autortiesības"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Uzņēmuma / organizācijas nosaukums"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Nosaukums, ko izmantot, ja kājenē tiek rādīts autortiesību paziņojums. Atstājiet tukšu, lai paslēptos."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Vietnes apraksts"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Noklusējuma apraksts, ja lapai nav norādīts neviens."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta roboti"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Noklusējums: indekss, sekojums. Var iestatīt arī katrai lapai."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Lai sāktu meklēšanu, ierakstiet vismaz 2 rakstzīmes..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Notiek meklēšana..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Nav nevienas jūsu vaicājumam atbilstošas lapas."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Atrasti {{total}} rezultāti"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Vai jūs domājāt..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Aizvērt"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Kopēt meklēšanas saiti"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Ļoti vienkārša "
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Vienkārša "
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Vidēja"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Sarežģīta"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Ļoti sarežģīta"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Dzēst lapu"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Vai tiešām vēlaties izdzēst lapu {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Lapu var atjaunot no administrēšanas zonas."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Meklēt lietotāju"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Lietotāju meklēšana..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Jebkuru"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minūte(s)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Stunda(s)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Diena (-as)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Mēnesis (-i)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Gads (-i)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Lapa Īpašības"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Informācija par lapu"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Virsraksts"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Īss apraksts"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Redzams zem virsraksta"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Ceļš & Kategorizēšana"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Valoda"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Ceļš"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Neiekļaujiet nekādas sākuma vai beigu slīpsvītras."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Tagi"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Izmantojiet tagus, lai sadalītu lapas kategorijās un atvieglotu to atrašanu."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Publicēšanas statuss"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Publicēts"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Nepublicētās lapas joprojām ir redzamas lietotājiem ar rakstīšanas tiesībām šajā lapā."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publicēšana sākas ar ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Atstāt tukšu, ja nav sākuma datuma"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publicēt līdz..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Atstāt tukšu bez beigu datuma"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Vai atmest nesaglabātās izmaiņas?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Jums ir nesaglabātas izmaiņas. Vai tiešām vēlaties atstāt redaktoru un atmest visas izmaiņas, kas veiktas kopš pēdējās saglabāšanas?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Atmest izmaiņas"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Kuru redaktoru vēlaties izmantot šai lapai?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Pēc lapas izveides to nevar mainīt."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Faili"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Jauna mape"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Mapes nosaukums"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Ir jāseko failu mapei {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "nosaukšanas noteikumi"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Pārvietot"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Pārdēvēt"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimizēt"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Priekšskatījums"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Īpašības"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Šī failu mape ir tukša."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} faili"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Ievietot"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Faila nosaukums"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Veids"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Faila lielums"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Pievienots"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Darbības"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Augšupielādēt failus"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Pārlūkot vai nometiet failus šeit ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Ielādēt attālo attēlu"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Attēlu izlīdzināšana"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Pārdēvēt failu"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Ievadiet šī faila jauno nosaukumu:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Dzēst failu"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Vai tiešām vēlaties dzēst failu?"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Šo darbību nevar atsaukt!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Failu saraksts veiksmīgi atjaunināts."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Faila augšupielāde neizdevās."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Failu mape ir veiksmīgi izveidota."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Fails ir veiksmīgi pārdēvēts."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Fails ir sekmīgi izdzēsts."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Vispirms jāizvēlas fails, kuru augšupielādēt."
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Atnest"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Atpakaļ uz redaktoru"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Treknraksts"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Kursīvs"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Pārsvītrots"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Virsraksts {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Apakšraksts"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Augšraksts"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Informācija Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Veiksmigs Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Brīdinājums Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Kļūda Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Nesakārtots saraksts"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Sakārtots saraksts"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Iekļautais kods"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Tastatūras taustiņš"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horizontālā josla"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Slēpt / parādīt priekšskatījuma rūti"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Ievietot saiti"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Ievietot failus"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Ievietot bloku"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Ievietot  kodu bloku"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Ievietot video / audio"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Ievietot diagrammu"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Ievietot matemātisko izteiksmi"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Tabulas palīgs"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Uzmanības novēršanas brīvais režīms"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown formatēšanas palīdzība"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Skatīt lapas avota kodu {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Atgriešanās normālā skatā"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Valoda"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analītika"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Analīzes un izsekošanas rīku pievienošana vikipēdām"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Sniedzēji"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Pakalpojumu sniedzēja iestatījumi"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Šim pakalpojumu sniedzējam nav konfigurācijas opciju, kuru varat modificēt."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Pakalpojumu sniedzēju saraksts veiksmīgi atjaunināts."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analītikas konfigurācija ir sekmīgi saglabāta"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Apkope un dažādi instrumenti"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Rīki"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Autentifikācija"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Dažādi rīki autentifikācijai / lietotājiem"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Notirīt kešatmiņu"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Dažādu komponentu kešatmiņas tīrīšana"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL galapunkts"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Mainīt Wiki.js GraphQL galapunktu"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Importēt no Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Datu migrēšana no iepriekšējās 1. x instalācijas"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetrija"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Iespējot / atspējot telemetriju vai atiestatīt klienta ID"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Komentāri"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Publicēts"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privāts"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Globāls"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Notiek lapas ielāde ..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Kods"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Nosaukums"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Dzimtais vārds"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Pieejamība"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Lejupielādēt"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Saturs"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Dažādi rīki lapām"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Ikonu komplekts"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Ikonu kopa, ko izmantot sānjoslas navigācijai."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Jūsu pārlūkprogramma ir novecojusi. Jaunināt uz {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "mūsdienīga pārlūkprogramma"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Nosaukums"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Autors"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Lejupielādēt"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Pievienojot stilus lapas saturam, tie ir jāattiecina uz {{cssClass}} klasi. Tā izlaišana var izjaukt redaktora izkārtojumu!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "UZMANĪBU:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Tēmas opcijas"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktīvs"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Neaktīvs"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Pārbaudīts"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Nepārbaudīts"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Rediģēt lietotāju"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Pamatinformācija"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "E-pasts"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Parādāmais vārds"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autentifikācija"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Pakalpojumu sniedzējs"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Parole"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Mainīt paroli"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Jauna parole"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Divu faktoru autentifikācija (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Ieslēgt 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Pakalpojumu Sniedzēja Id"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Lietotāju grupas"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Šis lietotājs vēl nav piešķirts nevienai grupai. Lietotājam jāpiešķir vismaz 1 grupa."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Izvēlieties Grupu..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Piešķirt"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Paplašināti metadati"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Atrašanās vieta"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Amats"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Laika josla"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Lietotājs ir veiksmīgi atjaunināts."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Lietotājs jau ir piešķirts šai grupai."
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Mērķa krātuve {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "aktīvs"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "neaktīvs"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Lai varētu izpildīt darbības, ir jāiespējo šis krātuves mērķis un jāveic izmaiņas."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Izvēlieties jaunu paroli"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Jāizvēlas jauna parole:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Jauna parole"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Pārbaudīt jaunu paroli"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Mainīt paroli"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Notiek paroles maiņa..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Nesenās lapas"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Populārākās lapas"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Informācija"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Ieplānošana"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Sociālais"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Kategorizēšanas"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Sociālās funkcijas"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Atļaut komentārus"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Iespējot komentēšanas iespējas šajā lapā."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Atļaut vērtējumus"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Parādīt informāciju par autoru"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Rādīt koplietošanas rīkjoslu"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Rādīt rīkjoslu ar pogām šīs lappuses koplietošanai un drukāšanai"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Rādīt lapas autoru kopā ar pēdējā izdevuma laiku."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Iespējojiet novērtējuma iespējas šajā lapā."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "vai izveidot pielāgotu skatu?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Pārlūkot pēc tagiem"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Vietnes karte"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Lapas darbības"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Pašreizējā atlase"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Notīrīt atlasi"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Atlasiet vienu vai vairākus tagus"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Meklēt rezultātos ..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Valoda"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Sakārtot pēc"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Kreisajā pusē atlasiet vienu vai vairākus tagus."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Notiek lapas rezultātu iegūšana ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Nevarēja atrast nevienu lapu ar atlasītajiem tagiem."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Nevarēja atrast nevienu lapu, kas atbilstu pašreizējām filtrēšanas opcijām."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Pēdējoreiz atjaunināts {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Izveidošanas datums"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Pēdējoreiz modificēts"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Ceļš"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Virsraksts"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Jebkurš"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Kļūt par sponsoru, izmantojot pakalpojumu GitHub Sponsors (tiek tieši izmantots, lai atbalstītu izstrādātāja Nicolas Giard mērķi strādāt pilnu slodzi Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Kļūsti par sponsoru"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Tagi"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Pārvaldīt SSL konfigurāciju"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Pakalpojumu sniedzējs"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Atlasiet lietotāju sertifikātu, ja jums jau ir savs sertifikāts."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domēns"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Ievadiet pilnībā kvalificētu domēnu, kas norāda uz jūsu wiki. (piemēram, wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Sniedzēja iespējas"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Deaktivēts"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Lietotāja sertifikāts"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Porti"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP ports"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Non-SSL ports serveris uzklausīs HTTP pieprasījumus. Parasti 80 vai 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS ports"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL portu serveris klausās HTTPS pieprasījumus. Parasti 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Novirzīt HTTP pieprasījumus uz HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Automātiski novirzīt visus pieprasījumus HTTP portu uz HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Ņemiet vērā, ka jūsu konfigurācijas failam jābūt rakstāmam, lai saglabātu portu konfigurāciju."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logotipa URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Norādiet attēlu, ko izmantot kā logotipu. Tiek atbalstīti SVG, PNG, JPG, kvadrāta attiecība 34 x 34 pikseļi vai lielāki. Noklikšķiniet uz pogas labajā pusē, lai augšupielādētu jaunu attēlu."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Vai izdzēst lietotāju?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Vai tiešām vēlaties dzēst lietotāju {{username}} ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Atjaunināt lietotāju"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Ievērojiet, ka šajā panelī lietotājus nevar piešķirt grupām Administratori vai Viesi."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Ievērojiet, ka lietotāju, kas jau ir izveidojis saturu, nevar izdzēst. Tā vietā vai nu deaktivizējiet lietotāju, vai izdzēsiet visu saturu, ko izveidojis šis lietotājs."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Skripti"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "Saglabāšanas laikā CSS tiks automātiski samazināts. Neiekļaujiet apkārtējos stila tagus, tikai faktisko CSS kodu."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Redzams visiem"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Redzams izvēlieties grupas..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Izvēlieties Lapu..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigācijas režīms"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Vietnes koks"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Klasiska navigācija uz koku bāzes"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Pielāgota navigācija"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Statiskā navigācijas izvēlne + poga Vietnes koks"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Nav"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Atslēgt vietnes navigāciju"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Lietotājs ir veiksmīgi verificēts."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Lietotājs ir veiksmīgi aktivizēts."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Lietotājs veiksmīgi deaktivizēts."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Vispirms jāatlasa teksts!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Atjaunot sertifikātu"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Sertifikāta statuss"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Sertifikāta derīguma termiņš"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Abonenta e-pasts"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Pašreizējais stāvoklis"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Ieslēgt"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Izslēgt"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Sertifikāta atjaunošana ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Neatstājiet šo lapu."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Sertifikāts veiksmīgi atjaunots."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP novirzīšana ir veiksmīgi mainīta."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Pārvaldiet lapu tagus"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Nav tagu attēlošanai."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Rediģēt tagu"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tags"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Iezīme"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Izveidots {{created}} un pēdējo reizi atjaunināts {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Dzēst šo tagu"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Kreisajā pusē esošajā sarakstā atlasiet atzīmi."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Lai sāktu, pievienojiet lapai tagu."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tagi ir atjaunināti"
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Tags izdzēsts veiksmīgi."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tags ir veiksmīgi saglabāts."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filtrēt ..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Skatīt saistītās lapas"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Vai dzēst tagu?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Vai tiešām vēlaties izdzēst tagu {{tag}}? Tags arī tiks atsaistīts no visām lapām."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Pārvaldīt atslēgas, lai piekļūtu API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API ir iespējota"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API ir atspējota"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Iespējot API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Atspējot API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Jauna API atslēga"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Nosaukums"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Atslēgas beigas"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Derīguma termiņš"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Izveidots"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Pēdējoreiz atjaunots"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Atsaukt"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Pagaidām nav ģenerētas API atslēgas."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Vai atsaukt API atslēgu?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Vai tiešām vēlaties atsaukt atslēgu {{name}} ? Šo darbību nevar atsau"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Atsaukt"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API atslēgu saraksts ir atjaunināts."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Atslēga ir veiksmīgi atsaukta."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Jauna API atslēga"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API atslēga ir veiksmīgi izveidota."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Vārda nav vai tas nav derīgs."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Jums jāizvēlas grupa."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Viesu grupu nevar izmantot API atslēgām."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Noteikt atslegu "
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Nosaukums"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Derīguma termiņš"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Jūs joprojām varat atsaukt atslēgu jebkurā laikā, neatkarīgi no tā termiņa beigām."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Atļauju darbības joma"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Pilna piekļuve"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "vai izmantot grupas atļaujas ..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Ģenerēt"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Grupa"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API atslēgai būs tādas pašas atļaujas kā atlasītajai grupai."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 dienas"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 dienas"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 dienas"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 gads"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 gadi"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Nokopējiet tālāk redzamo atslēgu kā {{Bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "tas vairs netiks rādīts"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API ir veiksmīgi iespējots."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API ir veiksmīgi atspējots."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Saglabāts"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Nav"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "“Creative Commons” attiecinājuma licence"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike licence"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons attiecinājuma NoDerivs licence"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons attiecinājuma nekomerciāla licence"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-nekomerciāla-ShareAlike licence"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons licence - nekomerciāla licence nekomercdarbībai"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Vispārējais īpašums"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Visas tiesības aizsargātas"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Satura licence"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Licence tiek rādīta visu satura lapu kājenē."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Saturs ir pieejams vietnē {{license}} no {{company}} ."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Jūs nevarat lejupielādēt lapas saturu."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Šai lapas versijai nevar lejupielādēt saturu."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Jūs nevarat apskatīt šīs lapas versijas avota kodu."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Skatiet {{path}} lapas avota kodu šādā {{date}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID versijas {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Atjaunot lapas versiju?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Vai tiešām vēlaties atjaunot šīs lapas saturu tādu, kāds tas bija {{date}} ? Šī versija tiks kopēta pašreizējās vēstures augšpusē. Kā tādas, jaunākās versijas joprojām tiks saglabātas."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Atjaunot"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Lapas versija veiksmīgi atjaunota!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} rakstzīmes, {{words}} vārdi"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Atrisiniet saglabāšanas konfliktu"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Izmantot lokālo"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Izmantot attālo"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Atmest lokālās izmaiņas un izmantot jaunāko versiju"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Izmantojiet saturu kreisajā panelī"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Skatīt jaunāko versiju"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Šīs lapas jaunākā versija tika saglabāta ar {{authorName}}, {{Date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Ko jūs vēlaties darīt?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Izmantojiet savu pašreizējo lokālo versiju un ignorējiet jaunākās izmaiņas."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Izmantojiet attālo versiju (jaunākā) un atmetiet izmaiņas."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Vai pārrakstīt ar attālo versiju?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Vai tiešām vēlaties aizstāt pašreizējo versiju ar jaunāko attālo saturu? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Jūsu pašreizējie labojumi tiks zaudēti."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Apstiprināt"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Lokālā versija {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(rediģējams)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(tikai lasāms)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Attālā versija {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Pašreizējo rediģēšanu, pamatojoties uz lapas versiju no {{Date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Pēdējo reizi rediģējis {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Nosaukums:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Apraksts:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Jums ir nesaglabātas rediģēšanas. Vai tiešām vēlaties iziet no redaktora?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Saglabāt konfliktu! Cits lietotājs jau ir modificējis šo lapu."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Dublēt"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Parādāmais vārds"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Atrašanās vieta"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Amats"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Laika josla"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profils"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Apakšvirsraksts"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Mana informācija"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Skatīt publisko profilu"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autentifikācija"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Pakalpojumu sniedzējs"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Mainīt paroli"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Pašreizējā parole"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Jauna parole"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Apstipriniet jauno paroli"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grupas"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktivitāte"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Pievienojās"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profils pēdējo reizi atjaunināts"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Pēdējā pieteikšanās"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Izveidotas lapas"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Komentāri ievietoti"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profils ir veiksmīgi saglabāts."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Parole ir veiksmīgi mainīta."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Lapas"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Komentāri"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Izveidoto vai pēdējo modificēto lapu saraksts"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Nav lappušu, ko parādīt."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Lapu saraksts ir atjaunots."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Virsraksts"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Ceļš"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Izveidots"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Pēdējoreiz atjaunots"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Pēdējās pieteikšanās reizes"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Pārlūkot"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Galvenā izvēlne"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Pašreizējais direktorijs"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(sakne)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Kopēt no lokalizācijas ..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Avota lokalizācija"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Lokalizācija, no kuras tiks kopēti navigācijas vienumi."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Kopēt"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Izvēlieties lokalizāciju, no kuras tiks kopēti vienumi. Vienumi tiks pievienoti pašreizējam aktīvā lokalizācijas vienumu sarakstam."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Statiskā navigācija"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Tikai statiskā navigācijas izvēlne"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Iestatījumi "
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Datuma formāts"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Noklusējuma lokalizācija"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Izskats"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Vietnes noklusējums"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Gaišs"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Tumšs"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Pārbaudīt SSL sertifikātu"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Daži resursdatori pieprasa SSL sertifikātu validācijas atspējošanu. Atstājiet to, kas ir ieslēgts labākai drošībai."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Ārējā saite (jauns logs)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Drošība"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Maksimālais augšupielādes lielums"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Maksimālais failu skaits vienā augšupielādē"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Cik failus var augšupielādēt vienā paketē?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Maksimālais lielums vienam failam."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "baiti"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "Files"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Augšupielādes"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Šie iestatījumi ietekmē tikai Wiki.js. Ja izmantojat atpakaļejošu starpniekserveri (piemēram, nginx, Apache, Cloudflare), varat arī mainīt tā iestatījumus."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Konfigurēt drošības uzstādījumi"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Paplašinājumi"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Instalējiet paplašinājumus papildu funkcionalitātei"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Pakalpojumu sniedzējs"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Pievienojiet diskusijas savām wiki lapām"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Pakalpojumu sniedzēja iestatījumi"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Šim pakalpojumu sniedzējam nav konfigurācijas opciju, kuru varat modificēt."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Visi pašreizējā lietotāja izveidotie materiāli (lapas, lejupielādes, komentāri utt.) tiks piešķirti lietotājam, kas atlasīts tālāk. Iesakām izveidot pakalpojuma kontu (piemēram, Deleted User), ja nevēlaties piešķirt materiālus aktīviem lietotājiem."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Aktīvās stratēģijas"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Pievienot stratēģiju"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stili"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "JavaScript kods ir jāsavieno ar HTML skripta tagiem."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Šī lapa nav publicēta."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Komentāri"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Rakstīt jaunu komentāru..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Jūsu Vārds"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Jūsu E-Pasta Adresi"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown formāts"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Publicēt komentāru"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Notiek komentāru ielāde ..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Publicēt kā {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Esi pirmais, kurš komentē"
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Pagaidām nav komentāru."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Atjaunināt komentāru"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Apstiprināt dzēšanu"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Vai tiešām vēlaties neatgriezeniski izdzēst šo komentāru?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Šo darbību nevar atsaukt!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "modificēts {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Jauns komentārs ir sekmīgi publicēts."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Komentārs ir tukšs vai pārāk īss!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Komentārs tika veiksmīgi atjaunināts."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Komentārs tika veiksmīgi izdzēsts."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Pārslēgt pareizrakstības pārbaudi"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Pieteikšana"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Pieteikšanās ekrāns"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT konfigurācija"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Apvedceļa pieteikšanās ekrāns"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Ja lietotājs tiek automātiski novirzīts uz pirmo autentifikācijas nodrošinātāju."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Pieteikšanās fona attēla URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Norādiet attēlu, ko izmantot kā pieteikšanās fonu. Tiek atbalstīti PNG un JPG, ieteicams 1920 x 1080. Atstājiet tukšu noklusēto. Noklikšķiniet uz pogas labajā pusē, lai augšupielādētu jaunu attēlu. Ievērojiet, ka grupai Viesi ir nepieciešama piekļuve izvēlētajam attēlam!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Paslēpt lokālās autentifikācijas nodrošinātāju"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Nerādīt vietējo autentifikācijas nodrošinātāju pieteikšanās ekrānā. Pievienojiet ?all vietrādim URL, lai to īslaicīgi izmantotu."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Drošība"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Ieviest 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Likt visiem lietotājiem izmantot divu faktoru autentifikāciju, izmantojot autentifikācijas nodrošinātāju ar lietotāja/paroles veidlapu."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Skatīt diskusiju"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Jauns komentārs"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Komentāru saturs"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Diskusija"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Tagi"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Lapas, kas atbilst tagiem"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Atgriezties uz augšu"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Lietotājvārds"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Iziet"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Konfigurēt lapas renderēšanas plūsmu"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Vietnes nosaukumā ir nederīgas rakstzīmes."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Vietnes konfigurācija ir veiksmīgi saglabāta."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA tika veiksmīgi atspējota."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA tika veiksmīgi iespējota."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Notiek paroles atiestatīšanas pieprasīšana..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Pārbaudiet savu e-pastu paroles atiestatīšanas norādījumiem!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktīvs"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Vai lietotāji var pieteikties, izmantojot šo risinājumu?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Parādāmais nosaukums"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Autentifikācijas risinājuma nosaukums, kas tiks rādīts gala lietotājam"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Izvēlieties autentifikācijas pakalpojumu sniedzēju"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Ievadiet savus rekvizītus"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Aizmirsi savu paroli"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Ievadiet drošības kodu, kas ģenerēts no jūsu uzticamās ierīces"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Jūsu administrators ir pieprasījis, lai jūsu kontā būtu iespējota divu faktoru autentifikācija (2FA)."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Skenējiet QR kodu no savas mobilās 2FA lietojumprogrammas:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Ievadiet drošības kodu, kas ģenerēts no jūsu uzticamās ierīces:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Izvēlieties"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Izvēlieties jaunu lapas atrašanās vietu"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Pārvietot/pārdēvēt lapas atrašanās vietu"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Izvēlieties lapu"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtuālās mapes"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Lapas"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Šī mape ir tukša"
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Konvertēt"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Konvertēt lapu"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Izvēlieties redaktoru, kuru turpmāk izmantot lapai {{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Lapas saturs tiks pārveidots tikko izvēlētā redaktora formātā. Ņemiet vērā, ka konvertēšanas rezultātā var tikt zaudēts kāds formatējums vai nerenderēts saturs. Lapas vēsturei tiks pievienots momentuzņēmums, un to var atjaunot jebkurā laikā."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Konvertēt"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administrācija"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Eksportēt uz disku"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Saglabāt saturu arhīvā rezerves kopijai / migrācijai"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Satura Rādītājs"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Satura rādītājs"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Pielietot Vietnes Noklusējuma"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Satura rādītāja Virsrakstu Līmeņi"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Satura rādītājā būs redzami virsraksti no un līdz atlasītajiem līmeņiem."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Noklusējuma Satura Rādītāja Virsrakstu Līmeņi"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Satura rādītājā pēc noklusējuma būs redzami virsraksti no un līdz atlasītajiem līmeņiem."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Klienta Identifikācijas Resursdatora Nosaukums"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Neobligāts nosaukums, kas jānosūta uz SMTP serveri, lai identificētu jūsu pasta sūtītāju. Atstājiet tukšu, lai izmantotu servera resursdatora nosaukumu. Google Workspace klientiem šim ir jābūt jūsu galvenajam domēna nosaukumam."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Lapas Paplašinājumi"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Ar komatiem atdalīts URL paplašinājumu saraksts, kas tiks uzskatīti par lapām. Piemēram, pievienojot md, /foobar.md tiks apstrādāts tāpat kā /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Poga Vietnes Nosaukums"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Ārējās vietnes nosaukums, kas jāparāda rediģēšanas pogā. Neiekļaujiet prefiksu \"Rediģēt\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Pogas Ikona"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Ikona, kas jāparāda rediģēšanas pogā. Piemēram, mdi-github, lai parādītu GitHub ikonu."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Pogas URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Ārējā repozitorija lapas URL. Izmantojiet vietturi {filename} , kur jāiekļauj faila nosaukums. (piemēram, https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Rediģēt Saīsnes"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "PDP Ātrās Rediģēšanas Izvēlne"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Ekrāna apakšējā labajā stūrī attēlot rediģēšanas peldošās darbības pogu (PDP) ar ātrās piekļuves izvēlni."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Rediģēt Izvēlņu Joslu"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Attēlot Rediģēt Izvēlņu Joslu"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Attēlot rediģēšanas izvēlnes joslu lapas galvenē."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Attēlot Rediģēšanas Poga"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Attēlot pašreizējās lapas rediģēšanas pogu."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Attēlot Ārējās Rediģēšanas Poga"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Attēlot pogu, kas novirza uz ārēju repozitoriju (piemēram, GitHub), kurā lietotāji var rediģēt vai iesniegt pašreizējās lapas PR."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Rediģēt {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Komentāru konfigurācija ir veiksmīgi saglabāta."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Kājenes Teksta Pārlabošana"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Pēc izvēles pārlabot kājenes tekstu ar pielāgotu ziņojumu. Noderīgi, ja neviena no iepriekš minētajām licencēm nav pieņemama."
+                }
+            ]
+        }
+    }
+}

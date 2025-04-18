@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Được cung cấp bởi"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Yêu cầu đăng nhập"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Email / Tên đăng nhập"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Mật khẩu"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Đăng Nhập"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Đăng nhập không hợp lệ"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Email hoặc mật khẩu không hợp lệ."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Email không hợp lệ"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Lỗi đăng nhập"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Bạn không được phép truy cập vào trang này."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Quá nhiều lần thử!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Bạn đã thực hiện quá nhiều lần thử trong một khoảng thời gian ngắn, xin vui lòng thử lại sau {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Không tìm thấy người dùng"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Cục bộ"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Tài Khoản Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Tài khoản Google"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Xác thực hai yếu tố"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Yêu cầu mã bảo vệ:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Xác minh"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Bảng điều khiển"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Tổng quát"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Ngôn ngữ"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Thống kê"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Chủ đề"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Nhóm"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Người dùng"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Xác thực"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Trình chỉnh sửa"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Ghi nhật ký"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Kết xuất"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Công cụ tìm kiếm"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Bộ nhớ"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Truy cập API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Thông tin hệ thống"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Tiện ích"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Công cụ nhà phát triển"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Đóng góp cho Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Cài đặt chính của wiki của bạn"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Thông tin trang web"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Thương hiệu"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Trang web"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Người dùng"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Mô-đun"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Hệ thống"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Thiết lập tùy chọn bản địa hóa cho wiki của bạn"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Cài đặt ngôn ngữ"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Không gian tên đa ngôn ngữ"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Tải xuống ngôn ngữ"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Ngôn ngữ cơ sở"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Tất cả các thành phần văn bản UI sẽ được hiển thị bằng ngôn ngữ đã chọn."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Cập nhật bản dịch tự động"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Tự động tải xuống các bản cập nhật cho tất cả các ngôn ngữ được đặt tên được kích hoạt bên dưới."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Không gian tên đa ngôn ngữ"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Cho phép nhiều phiên bản ngôn ngữ của cùng một trang."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Không gian tên đang hoạt động"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Danh sách các ngôn ngữ được kích hoạt cho không gian tên đa ngôn ngữ. Ngôn ngữ cơ sở được xác định ở trên sẽ luôn được bao gồm bất kể lựa chọn này."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Mã miền địa phương sẽ được thêm tiền tố vào tất cả các đường dẫn. (ví dụ như /{{langCode}}/ten-trang)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Các đường dẫn không có mã ngôn ngữ sẽ tự động được chuyển hướng đến ngôn ngữ cơ sở được xác định ở trên."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Lưu lại"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Hủy"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Download"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Upload"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Discard"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Clear"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Tạo"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Chỉnh sửa"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Xóa"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Refresh"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Lưu thay đổi"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Tiến hành"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Ngôn ngữ trang web"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Tự động tải xuống các bản cập nhật cho ngôn ngữ này khi chúng có sẵn."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Thông tin về hệ thống của bạn"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Thông tin máy chủ"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Phiên bản hiện tại"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Phiên bản mới nhất"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Được phát hành"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Hệ điều hành"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Tên máy chủ"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Số lõi CPU"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Tổng bộ nhớ RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Thư mục làm việc"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Tệp cấu hình"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Mức sử dụng RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Hỗ trợ giúp Wiki.js phát triển và hoạt động"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Tài trợ cho công việc của chúng tôi"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Truyền bá dự án"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Hãy nói với bạn bè và đồng nghiệp của bạn về sự tuyệt vời của Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Theo dõi chúng tôi trên {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Gửi ý tưởng hoặc bỏ phiếu cho ý tưởng được đề xuất trên {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "bảng yêu cầu tính năng"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Gặp lỗi? Báo cáo tại {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Giúp dịch Wiki.js ra ngôn ngữ của bạn. Hãy cho chúng tôi biết trên {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Thực hiện quyên góp"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Đóng góp"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js cũng là một phần của quỹ sáng kiến Open Collective, một quỹ minh bạch hướng tới các nguồn lực cộng đồng. Bạn có thể đóng góp tài chính bằng cách quyên góp hàng tháng hoặc một lần:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Chúng tôi cần sự giúp đỡ của bạn để tiếp tục cải tiến phần mềm và chạy các dịch vụ liên quan khác nhau (ví dụ: lưu trữ và kết nối mạng)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js là phần mềm miễn phí và mã nguồn mở, được mang đến cho bạn với {{0}} bởi {{1}} và {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "người đóng góp"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Trang"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Đang xử lý..."
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Hãy chờ..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Trang đã tạo thành công."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Lỗi đã xảy ra khi tạo trang"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Bạn cũng có thể mua áo phông Wiki.js để hỗ trợ tài chính cho dự án:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Cửa hàng Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. All rights reserved."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Trang này chưa tồn tại."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Bạn có muốn tạo nó ngay không?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Tạo trang mới"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Quay lại"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Trang"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Menu"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Quản lý điều hướng trang web"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Thêm"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Liên kết"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Bộ chia"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Tiêu đề"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Nhãn"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Biểu tượng"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Loại mục tiêu"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Mục tiêu"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Chọn một mục điều hướng ở bên trái."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}} không có tiêu đề"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Liên kết ngoài"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Trang chủ"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Trang"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Truy vấn tìm kiếm"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Sửa {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Xóa {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Điều hướng được lưu thành công."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Nhấp vào nút Thêm để thêm mục điều hướng đầu tiên của bạn."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Điều hướng trống"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Áp dụng"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Địa chỉ email"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Xác minh mật khẩu"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Tên"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Đăng ký"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Tạo tài khoản"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Đã có tài khoản? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Login instead"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Đăng nhập bằng {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Quên mật khẩu?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "hoặc nhập bằng..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Vẫn chưa có tài khoản? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Tạo tài khoản"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Nhập email / tên người dùng hợp lệ."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Nhập mật khẩu hợp lệ."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Đăng nhập thành công! Đang chuyển hướng ..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Đang đăng nhập..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Authentication is unavailable."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Điền vào biểu mẫu bên dưới để tạo tài khoản của bạn."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Hãy chờ"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Tài khoản đã tạo thành công!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Đang tạo tài khoản..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Thiếu địa chỉ email."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Địa chỉ email không hợp lệ."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Thiếu mật khẩu."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Mật khẩu quá ngắn."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Hai mật khẩu không khớp."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Thiếu tên."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Tên quá ngắn."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Tên quá dài."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Hủy"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Đặt lại mật khẩu"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Nhập địa chỉ email của bạn để được hướng dẫn đặt lại mật khẩu:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Thư điện tử"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Định cấu hình cài đặt thư điện tử"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Cấu hình"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (tùy chọn)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Kiểm tra email để kích hoạt tài khoản của bạn."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Trang đã cập nhật thành công."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Trái phép"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Bạn không thể xem trang này."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Bạn không thể xem mã nguồn trang."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Bạn không thể xem lịch sử trang."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Bạn không thể sửa trang."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Bạn không thể tạo trang."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Quay lại"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Trang chủ"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Không tìm thấy"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Trang này không tồn tại."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Đăng Nhập Như Là..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Trở thành Patron"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Trở thành người ủng hộ hoặc nhà tài trợ thông qua Patreon (đi thẳng vào mục tiêu hỗ trợ nhà phát triển chính Nicolas Giard là làm việc toàn thời gian trên Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Chào mừng đến với wiki của bạn!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Hãy bắt đầu và tạo trang chủ."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Tạo trang chủ"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Cờ"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Thực hiện quyên góp một lần hoặc định kỳ qua Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Chúng tôi chấp nhận quyên góp bằng Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Gói ngôn ngữ ngoài"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Nếu bạn không kết nối Internet hoặc không thể tải xuống các tệp ngôn ngữ bằng phương pháp trên, thay vào đó, bạn có thể tải các gói theo cách thủ công bằng cách tải chúng lên bên dưới."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Browse..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhook"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Quản lý webhook với các dịch vụ bên ngoài"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Gửi email thử"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Địa chỉ email người nhận"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Gửi email"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Người gửi"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Tên người gửi"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Email người gửi"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Cài đặt SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Máy chủ"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Cổng"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Nên dùng cổng 465 (được khuyến nghị), 587 hoặc 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Bảo mật (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Nên bật khi sử dụng cổng 465, nếu không thì tắt (587 hoặc 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Tên đăng nhập"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Mật khẩu"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (Thư nhận dạng khóa miền) cung cấp một lớp bảo mật trên tất cả các email được gửi từ Wiki.js bằng cách cung cấp phương tiện để người nhận xác thực tên miền và đảm bảo tính xác thực của thư."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Sử dụng DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Tên miền"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Bộ chọn khóa"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Khóa riêng"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Khóa riêng cho bộ chọn ở định dạng PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Gửi email kiểm tra để đảm bảo cấu hình SMTP của bạn đang hoạt động."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Đã lưu cấu hình thành công."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Phiên bản cơ sở dữ liệu của bạn không được hỗ trợ đầy đủ. Một số chức năng có thể bị hạn chế hoặc không hoạt động như mong đợi."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Thông tin hệ thống đã được làm mới."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Định cấu hình cài đặt xác thực cho wiki của bạn"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Chiến lược"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Cài đặt nâng cao toàn cầu"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "Đối tượng JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "URN đối tượng được sử dụng trong JWT được cấp khi đăng nhập. Thông thường tên miền của bạn . (ví dụ: urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Hết hạn mã thông báo"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Thời hạn hết hạn của mã thông báo cho đến khi nó phải được gia hạn. (mặc định: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Thời gian gia hạn mã thông báo"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Khoảng thời gian tối đa mà mã thông báo có thể được gia hạn khi hết hạn. (mặc định: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Chiến lược này là {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "hoạt động"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "không hoạt động"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "và không thể bị vô hiệu hóa."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Một email thử nghiệm đã được gửi thành công."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Sửa đổi giao diện wiki của bạn"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Chủ đề trang web"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Chủ đề ảnh hưởng đến cách hiển thị các trang nội dung. Các phần khác của trang web (chẳng hạn như khu vực soạn thảo hoặc quản trị viên) không bị ảnh hưởng."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Chế độ tối"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Không được khuyến khích cho khả năng tiếp cận. Có thể không được hỗ trợ bởi tất cả các chủ đề."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Chèn mã"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Ghi đè CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Mã CSS để chèn vào sau CSS mặc định của hệ thống. Hãy cân nhắc sử dụng các chủ đề tùy chỉnh nếu bạn có số lượng lớn mã css. Việc chèn thêm quá nhiều mã CSS sẽ dẫn đến hiệu suất tải trang kém! CSS sẽ tự động được thu nhỏ."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Chèn nội dung HTML đầu"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Mã HTML sẽ được chèn ngay trước thẻ head đóng. Thông thường dùng cho các thẻ script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Chèn nội dung HTML"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Mã HTML sẽ được chèn ngay trước thẻ đóng nội dung."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Tải xuống chủ đề"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Quản trị"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Cấu hình chiến lược"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Chiến lược này không có tùy chọn cấu hình mà bạn có thể sửa đổi."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Đăng ký"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Cho phép tự đăng ký"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Cho phép bất kỳ người dùng nào được chiến lược ủy quyền thành công có thể truy cập wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Giới hạn ở các miền email cụ thể"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Danh sách các tên miền được phép đăng ký. Miền địa chỉ email của người dùng phải khớp với một trong những miền này để có quyền truy cập."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Chỉ định cho nhóm"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Tự động chỉ định người dùng mới vào các nhóm này."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Bảo mật"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Buộc tất cả người dùng sử dụng Xác thực hai yếu tố (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Người dùng sẽ được yêu cầu thiết lập 2FA trong lần đăng nhập đầu tiên và người dùng không thể tắt được."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Cấu hình tham khảo"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Một số chiến lược có thể yêu cầu đặt một số giá trị cấu hình trên nhà cung cấp của bạn. Những thông tin này chỉ được cung cấp để tham khảo và có thể không cần thiết đối với chiến lược hiện tại."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Trước tiên, bạn phải đặt {{siteUrl}} hợp lệ! Nhấp vào {{general}} ở thanh bên trái."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Liên kết nguồn được phép"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL gọi lại/URI chuyển hướng"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL đăng nhập"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL đăng xuất"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Phương thức xác thực điểm cuối API"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Trang Chủ"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Tạo trang mới"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Trang hiện tại"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Xem"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Chỉnh sửa"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Lịch sử"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Xem mã nguồn"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Di chuyển/đổi tên"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Xóa"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Assets"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Images & Files"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Tìm..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Quản trị"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Tài khoản"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Wiki của tôi"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Hồ sơ"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Đăng xuất"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Đăng nhập"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Sửa lần cuối bởi"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Unpublished"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Sửa trang"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Nội dung trang"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Đánh dấu"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Chia sẻ"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Định dạng in"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Đóng"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Trang"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Đặt mục tiêu sao lưu và đồng bộ hóa cho nội dung của bạn"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Mục tiêu"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Trạng thái"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Đồng bộ hóa lần cuối lúc {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Lần thử cuối cùng lúc {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Thông báo lỗi"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Bạn không có bất kỳ mục tiêu lưu trữ đang hoạt động nào."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Cấu hình mục tiêu"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Mục tiêu lưu trữ này không có tùy chọn cấu hình mà bạn có thể sửa đổi."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Hướng đồng bộ"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Chọn cách xử lý đồng bộ hóa nội dung cho mục tiêu lưu trữ này."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Hai chiều"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Đẩy tới mục tiêu"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Kéo từ mục tiêu"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Không được hỗ trợ"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Ở chế độ hai chiều, nội dung đầu tiên được lấy từ mục tiêu lưu trữ. Mọi nội dung mới hơn sẽ ghi đè lên nội dung cục bộ. Sau đó, nội dung mới kể từ lần đồng bộ hóa cuối cùng sẽ được đẩy đến mục tiêu lưu trữ, ghi đè bất kỳ nội dung nào trên mục tiêu nếu có."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Nội dung luôn được đẩy đến mục tiêu lưu trữ, ghi đè mọi nội dung hiện có. Đây là sự lựa chọn an toàn nhất cho các kịch bản sao lưu."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Nội dung luôn được lấy từ mục tiêu lưu trữ, ghi đè mọi nội dung cục bộ đã tồn tại. Lựa chọn này thường được dành riêng cho việc nhập nội dung sử dụng một lần. Hãy thận trọng với tùy chọn này vì mọi nội dung cục bộ sẽ luôn bị ghi đè!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Lịch trình đồng bộ hóa"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Vì lý do hiệu suất, mục tiêu lưu trữ này sẽ đồng bộ hóa các thay đổi theo lịch trình theo khoảng thời gian, thay vì theo từng thay đổi. Xác định khoảng thời gian nào việc đồng bộ hóa sẽ diễn ra."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Hiện được đặt thành mỗi {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Mặc định là mỗi {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Hành động"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Chạy"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Cấu hình khả năng tìm kiếm cho wiki của bạn"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Xây dựng lại chỉ mục"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Máy tìm kiếm"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Cấu hình công cụ"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Công cụ này không có tùy chọn cấu hình mà bạn có thể sửa đổi."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Danh sách các công cụ tìm kiếm đã được làm mới."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Cấu hình công cụ tìm kiếm đã được lưu thành công."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Xây dựng lại chỉ mục thành công."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Xảy ra lỗi bất ngờ."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Trang"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Người dùng"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Nhóm"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Bạn đang chạy phiên bản mới nhất."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Đã có phiên bản mới: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js là một dự án nguồn mở và miễn phí. Có một số cách bạn có thể đóng góp cho dự án."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Chúng tôi cần sự giúp đỡ của bạn!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Tìm hiểu thêm"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Danh sách các chiến lược đã được làm mới."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Cấu hình xác thực được lưu thành công."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Tổng quát"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL trang web"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "URL đầy đủ tới wiki của bạn, không có dấu gạch chéo ở cuối. (ví dụ: https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Tiêu đề trang web"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Được hiển thị ở thanh trên cùng và được thêm vào tiêu đề meta của tất cả các trang."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Tải lên biểu trưng"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Xóa"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Nên sử dụng hình ảnh có {{size}} pixel để có kết quả tốt nhất."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Chỉ các tệp {{typeList}} hoặc {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Bản quyền chân trang"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Tên Công ty / Tổ chức"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Tên sử dụng khi hiển thị thông báo bản quyền ở footer. Tẩy trống để ẩn."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Mô tả trang web"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Mô tả mặc định khi không có mô tả nào được cung cấp cho một trang."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Robot Meta"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Mặc định: Lập chỉ mục, Theo dõi. Cũng có thể được đặt trên cơ sở mỗi trang."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Gõ ít nhất 2 ký tự để bắt đầu tìm ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Đang tìm ..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Không có kết quả phù hợp với truy vấn của bạn"
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Đã thấy  {{total}} kết quả"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Ý bạn là..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Đóng"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Copy Search Link"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Rất yếu"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Yếu"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Trung bình"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Mạnh"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Rất mạnh"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Xóa trang"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Bạn có chắc chắn muốn xóa trang {{title}} ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "The page can be restored from the administration area."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Tìm người dùng ..."
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Tìm người dùng ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Mỗi"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Phút"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Giờ"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Ngày"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Tháng"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Năm"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Properties trang"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Thông tin trang"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Tiêu đề"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Mô tả ngắn"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Hiển thị bên dưới tiêu đề"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Path & Categorization"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Ngôn ngữ"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Path"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Do not include any leading or trailing slashes."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Tags"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Sử dụng tag để phân loại các trang của bạn và làm cho chúng dễ tìm hơn."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Publishing State"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Published"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Trang chưa xuất bản vẫn hiển thị với người dùng có quyền viết nội dung trên trang này."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publish starting on..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Để trống nếu không có ngày bắt đầu"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publish ending on..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Để trống nếu không có ngày kết thúc"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Discard Unsaved Changes?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Bạn có những thay đổi chưa được lưu. Bạn có chắc chắn muốn rời khỏi trình soạn thảo và loại bỏ bất kỳ sửa đổi nào bạn đã thực hiện kể từ lần lưu cuối cùng không?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Discard Changes"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Bạn muốn sử dụng trình soạn thảo nào cho trang này?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Điều này không thể thay đổi khi trang đã được tạo."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Assets"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "New Folder"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Folder Name"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Must follow the asset folder {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "naming rules"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Move"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Rename"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimize"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Preview"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Properties"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "This asset folder is empty."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} files"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Insert"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Filename"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Type"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "File Size"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Added"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Actions"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Upload Assets"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Browse or Drop files here..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Fetch Remote Image"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Image Alignment"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Rename Asset"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Enter the new name for this asset:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Delete Asset"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Are you sure you want to delete asset"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "This action cannot be undone!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "List of assets refreshed successfully."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "File upload failed."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Asset folder created successfully."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Asset renamed successfully."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Asset deleted successfully."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Trước tiên,  bạn phải chọn một tập tin để upload"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Fetch"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Back to Editor"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Bold"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Italic"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Strikethrough"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Heading {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Subscript"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Superscript"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Info Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Success Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Warning Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Error Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Unordered List"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Ordered List"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Inline Code"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Keyboard Key"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horizontal Bar"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Ẩn / Hiện xem trước"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Insert Link"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Insert Assets"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Insert Block"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Insert Code Block"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Insert Video / Audio"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Insert Diagram"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Chèn biểu thức toán học"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Table Helper"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Distraction Free Mode"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Trợ giúp định dạng Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Xem mã nguồn của trang {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Quay trở lại Normal View"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Ngôn ngữ"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Phân tích"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Thêm công cụ phân tích và theo dõi vào wiki của bạn"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Nhà cung cấp"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Cấu hình nhà cung cấp"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Nhà cung cấp này không có tùy chọn cấu hình mà bạn có thể sửa đổi."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Danh sách các nhà cung cấp đã được làm mới."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Cấu hình phân tích đã lưu thành công"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Bảo trì và các công cụ khác"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Công cụ"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Xác thực"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Các công cụ khác nhau để xác thực / người dùng"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Xóa bộ nhớ đệm"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Xóa bộ đệm của các thành phần khác nhau"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Điểm cuối GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Thay đổi điểm cuối GraphQL cho Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Nhập từ Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Di chuyển dữ liệu từ bản cài đặt 1.x trước đó"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Đo từ xa"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Bật/Tắt tính năng đo từ xa hoặc đặt lại ID trình khách"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Bình luận"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Published"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Private"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Đang tải trang..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Mã"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Tên"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Tên địa phương"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "Phải sang trái"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Tính khả dụng"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Tải xuống"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Nội dung"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Các công cụ khác nhau cho các trang"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Bộ biểu tượng"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Tập hợp các biểu tượng để sử dụng cho thanh bên điều hướng."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Trình duyệt của bạn đã lỗi thời. Nâng cấp lên {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "modern browser"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Tên"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Tác giả"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Tải xuống"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Khi thêm kiểu cho nội dung trang, bạn phải đặt chúng trong lớp {{cssClass}}. Bỏ qua điều này có thể phá vỡ bố cục của trình soạn thảo!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "THẬN TRỌNG:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Tùy chọn chủ đề"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Hoạt động"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Không hoạt động"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Đã xác minh"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Chưa được xác minh"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Chỉnh sửa người dùng"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Thông tin cơ bản"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Email"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Tên hiển thị"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Xác thực"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Nhà cung cấp"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Mật khẩu"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Đổi mật khẩu"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Mật khẩu mới"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Xác thực hai yếu tố (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Thiết lập 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Nhà cung cấp"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Nhóm của người dùng"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Người dùng này chưa có nhóm. Bạn phải đặt người dùng trong ít nhất 1 nhóm"
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Chọn nhóm..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Gán"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Metadata mở rộng"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Vị trí"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Chức vụ"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Múi giờ"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Đã cập nhật được người dùng"
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Người dùng đã có trong nhóm"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Storage target này "
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "bật"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "tắt"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Bạn phải kích hoạt mục tiêu lưu trữ này và áp dụng các thay đổi trước khi có thể chạy các hành động."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Chọn mật khẩu mới"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Bạn phải chọn mật khẩu mới:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Mật khẩu mới"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Xác nhận mật khẩu mới"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Đổi mật khẩu"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Đang đổi mật khẩu..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Trang gần đây"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Trang phổ biến nhất"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Thông tin"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Lập lịch"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Mạng xã hội"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Phân loại"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Chức năng mạng xã hội"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Cho phép bình luận"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Cho phép bình luận trên trang này."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Cho phép xếp hạng"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Hiện thông tin tác giả"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Hiện Sharing Toolbar"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Hiện thanh công cụ nà nút nhấn để chia sẻ và in trang này"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Hiện tác giả trang kèm thời điểm sửa gần nhất."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Bật chức năng xếp hạng trên Trang này."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "hoặc tạo view tuỳ biến?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Duyệt theo Thẻ"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Sơ đồ trang web"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Thao tác trên trang"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Lựa chọn hiện tại"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Xóa lựa chọn"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Chọn một hoặc nhiều thẻ"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Tìm trong kết quả..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Ngôn ngữ"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Sắp xếp theo"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Chọn một hoặc nhiều thẻ ở bên trái."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Đang lấy kết quả ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Không tìm thấy trang nào có thẻ đã chọn."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Không tìm thấy trang nào khớp với bộ lọc này."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Cập nhật ngày"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Ngày tạo"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Lần sửa cuối"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Đường dẫn"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Tiêu đề"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Bất kì"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Trở thành nhà tài trợ thông qua GitHub Sponsors (trực tiếp hỗ trợ mục tiêu của nhà phát triển chính Nicolas Giard làm việc toàn thời gian trên Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Trở thành nhà tài trợ"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Thẻ"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Quản lý cấu hình SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Nhà cung cấp"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Chọn Chứng chỉ tùy chỉnh nếu bạn đã có chứng chỉ của riêng mình."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Tên miền"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Nhập tên miền đủ điều kiện trỏ đến wiki của bạn. (ví dụ wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Tùy chọn nhà cung cấp"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Vô hiệu hóa"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Chứng nhận tùy chỉnh"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Cổng"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Cổng HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Cổng Non-SSL máy chủ sẽ lắng nghe các yêu cầu HTTP. Thường là 80 hoặc 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Cổng HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Cổng SSL máy chủ sẽ lắng nghe các yêu cầu HTTPS. Thường là 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Chuyển hướng yêu cầu HTTP sang HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Sẽ tự động chuyển hướng bất kỳ yêu cầu nào trên cổng HTTP sang HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Lưu ý rằng tập tin cấu hình của bạn phải có thể ghi được để duy trì cấu hình cổng."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL biểu tượng"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Chỉ định một hình ảnh để sử dụng làm logo. SVG, PNG, JPG được hỗ trợ, theo tỷ lệ vuông, 34x34 pixels hoặc lớn hơn. Nhấp vào nút bên phải để tải lên một hình ảnh mới."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Xóa người dùng?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Bạn có chắc chắn muốn xóa người dùng {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Cập nhật người dùng"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Lưu ý rằng bạn không thể chỉ định người dùng cho nhóm Quản trị viên hoặc Khách từ bảng điều khiển này."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Lưu ý rằng bạn không thể xóa người dùng đã tạo nội dung. Thay vào đó, bạn phải hủy kích hoạt người dùng hoặc xóa tất cả nội dung được tạo bởi người dùng đó."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Tập lệnh"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS sẽ tự động được tối giản khi lưu. Không bao gồm các thẻ xung quanh, chỉ có mã CSS thực tế."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Hiển thị với mọi người"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Hiển thị đến các nhóm được chọn..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Chọn trang..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Chế độ điều hướng"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Cây trang web"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Điều hướng cây cổ điển"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Điều hướng tùy chỉnh"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Menu điều hướng tĩnh + Nút cây trang"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Không"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Vô hiệu hóa điều hướng trang"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Người dùng đã được xác minh thành công."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Đã kích hoạt người dùng thành công."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Đã hủy kích hoạt người dùng thành công."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Văn bản phải được chọn trước!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Gia hạn chứng nhận"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Tình trạng chứng nhận"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Thời hạn chứng nhận"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Email người đăng ký"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Tình trạng hiện tại"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Bật"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Tắt"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Đang gia hạn chứng nhận ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Đừng rời khỏi trang này."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Chứng nhận đã gia hạn thành công."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Chuyển hướng HTTP đã thay đổi thành công."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Quản lý thẻ trang"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Không có thẻ để hiển thị."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Chỉnh sửa thẻ"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Thẻ"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Nhãn"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Đã tạo  {{created}} và cập nhật lần cuối {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Xóa thẻ này"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Chọn một thẻ từ danh sách bên trái."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Thêm một thẻ vào trang để bắt đầu."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Thẻ đã được làm mới."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Thẻ đã được xóa thành công."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Thẻ đã được lưu thành công."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Bộ lọc..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Xem các trang được liên kết"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Xóa thẻ?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Bạn có chắc chắn muốn xóa thẻ {{tag}}? Thẻ cũng sẽ được hủy liên kết đến tất cả các trang."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Quản lý khóa truy cập API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API đã kích hoạt"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API đã vô hiệu"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Kích hoạt API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Vô hiệu hóa API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Khóa API mới"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Tên"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Kết thúc khóa"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Hết hạn"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Tạo ngày"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Cập nhật lần cuối"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Thu hồi"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Không có khóa API nào được tạo."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Thu hồi khóa API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Bạn có chắc chắn muốn thu hồi khóa {{name}}? Hành động này không thể được hoàn tác!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Thu hồi"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Danh sách các khóa API đã được làm mới."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Khóa đã được thu hồi thành công."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Khóa API mới"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Khóa API đã được tạo thành công."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Tên bị thiếu hoặc không hợp lệ."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Bạn phải chọn một nhóm."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Nhóm khách không thể được sử dụng cho các khóa API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Mục đích của khóa này"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Tên"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Hết hạn"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Bạn vẫn có thể thu hồi khóa bất cứ lúc nào bất kể thời hạn."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Phạm vi cho phép"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Truy cập đầy đủ"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "hoặc sử dụng quyền của nhóm ..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Tạo"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Nhóm"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Khóa API sẽ có cùng quyền với nhóm đã chọn."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 ngày"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 ngày"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 ngày"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 năm"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 năm"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Sao chép khóa được hiển thị bên dưới là {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "nó sẽ KHÔNG được hiển thị lại"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API đã được kích hoạt thành công."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API đã được vô hiệu hóa thành công."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Đã lưu"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Không"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Giấy phép Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Giấy phép Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Giấy phép Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Giấy phép Creative Commons Attribution-NonCommercial"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Giấy phép Creative Commons Attribution-NonCommercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Giấy phép Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Phạm vi công cộng"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Giữ mọi bản quyền"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Giấy phép nội dung"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Giấy phép hiển thị ở chân trang của tất cả các trang nội dung."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Nội dung có sẵn theo {{license}}, bởi {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Bạn không thể tải về nội dung trang."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Bạn không thể tải về nội dung cho phiên bản trang này."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Bạn không thể xem nguồn của phiên bản này của trang."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Xem nguồn kể từ {{date}} của trang {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Phiên bản ID {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Khôi phục phiên bản trang?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Bạn có chắc chắn muốn khôi phục nội dung trang này như ngày {{date}} không? Phiên bản này sẽ được sao chép trên đầu trang của lịch sử hiện tại. Như vậy, các phiên bản mới hơn vẫn sẽ được bảo tồn."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Khôi phục"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Phiên bản trang được khôi phục thành công!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} ký tự, {{words}} từ"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Giải quyết xung đột"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Sử dụng Local"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Sử dụng Remote"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Hủy thay đổi cục bộ và sử dụng phiên bản mới nhất"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Sử dụng nội dung trong bảng bên trái"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Xem phiên bản mới nhất"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Một phiên bản gần đây hơn của trang này đã được lưu bởi {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Bạn muốn làm gì?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Sử dụng phiên bản hiện tại của máy bạn và loại bỏ các thay đổi mới nhất."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Sử dụng phiên bản máy chủ (mới nhất) và loại bỏ các thay đổi của bạn."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Ghi đè với phiên bản từ máy chủ?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Bạn có chắc chắn muốn thay thế phiên bản hiện tại của mình bằng nội dung mới nhất từ máy chủ không? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Chỉnh sửa hiện tại của bạn sẽ bị mất."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Xác nhận"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Phiên bản máy bạn {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(có thể chỉnh sửa)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(chỉ đọc)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Phiên bản máy chủ {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Chỉnh sửa hiện tại của bạn, dựa trên phiên bản từ {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Chỉnh sửa lần cuối bởi {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Tiêu đề:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Mô tả:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Bạn có các chỉnh sửa chưa được lưu. Bạn có chắc chắn muốn rời khỏi trình chỉnh sửa?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Lưu xung đột! Một người dùng khác đã sửa đổi trang này."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Tạo bản sao"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Tên hiển thị"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Vị trí"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Chức vụ"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Múi giờ"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Hồ sơ"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Thông tin cá nhân của tôi"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Thông tin của tôi"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Xem hồ sơ công khai"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Xác thực"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Nhà cung cấp"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Đổi mật khẩu"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Mật khẩu hiện tại"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Mật khẩu mới"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Xác nhận mật khẩu mới"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Nhóm"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Hoạt động"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Tham gia vào"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Hồ sơ cập nhật lần cuối vào"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Đăng nhập lần cuối vào"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Trang đã được tạo"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Bình luận đã được đăng"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Hồ sơ đã lưu thành công."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Mật khẩu đã thay đổi thành công."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Trang"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Bình luận"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Danh sách các trang tôi đã tạo hoặc sửa đổi lần cuối"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Không có trang nào để hiển thị."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Danh sách trang đã được làm mới."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Tiêu đề"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Đường dẫn"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Tạo ngày"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Cập nhật lần cuối"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Đăng nhập gần đây"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Cây Thư Mục"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Menu Chính"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Mục Hiện Tại"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "Gốc"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Sao chép từ "
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Nguồn của ngôn ngữ"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Ngôn ngữ mà từ đó các mục điều hướng sẽ được sao chép vào"
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Sao Chép"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Chọn ngôn ngữ mà từ đó các mục sẽ được sao chép. Các mục được sao chép sẽ được thêm vào danh sách hiện tại của ngôn ngữ đang dùng."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Điều Hướng Cố Định"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Điều Hướng Cố Định"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Những cài đặt"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Định dạng Ngày"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Ngôn ngữ mặc định"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Giao Diện"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Mặc định Trang"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Light"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Dark"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Xác minh chứng chỉ SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Một số máy chủ yêu cầu tắt kiểm tra chứng chỉ SSL. Bật lên để an toàn hơn"
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Liên kết ngoài (Cửa sổ mới)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Bảo mật"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Kích thước tải lên tối đa"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Số lượng files tối đa trong một lần tải lên"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Số files có thể được tải lên trong một lượt?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Kích thước tối đa cho một file."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytea"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "Files"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Tải lên"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Các cài đặt này chỉ ảnh hưởng đến Wiki.js. Nếu bạn đang sử dụng reverse-proxy (ví dụ: nginx, apache, Cloudflare), bạn cũng phải thay đổi cài đặt của nó để phù hợp."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Thiết lập cấu hình bảo mật"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Phần mở rộng"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Cài đặt tiện ích mở rộng để có thêm chức năng"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Nhà cung cấp"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Thêm thảo luận vào các trang wiki của bạn"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Cấu hình Nhà cung cấp"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Nhà cung cấp này không có tùy chọn cấu hình để có thể sửa đổi."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Bất kỳ nội dung nào (trang, video tải lên, bình luận, v.v.) do người dùng này tạo sẽ được gán lại cho người dùng được chọn bên dưới. Bạn nên tạo người 1 dùng giả (ví dụ: \"Vô Hình\") nếu bạn không muốn nội dung được gán lại cho bất kỳ người dùng đang hoạt động"
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Những chiến lược đang dùng"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Thêm chiến lược"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Kiểu dáng"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Bạn phải bao quanh mã javascript bằng thẻ HTML"
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Trang này chưa được đăng."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Bình luận"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Viết bình luận mới ..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Tên bạn"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Địa chỉ Email của bạn"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Định dạng Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Đăng bình luận"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Đang tải bình luận..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Đăng với {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Hãy là người đầu tiên bình luận."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Chưa có bình luận nào."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Cập nhật bình luận"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Xác nhận Xóa"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Bạn có chắc chắn muốn xóa vĩnh viễn bình luận này?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Hành động này không thể thu hồi!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "Đã thay đổi {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Bình luận mới đã được đăng."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Bình luận trống hoặc quá ngắn!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Bình luận đã được thay đổi"
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Bình luận đã được xóa"
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Chuyển đổi Kiểm tra chính tả"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Đăng nhập"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Màn hình Đăng nhập"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Cấu hình JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Bỏ qua màn hình đăng nhập"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Người dùng có nên được chuyển hướng tự động đến phương thức xác thực đầu tiên không?"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Đường dẫn của hình nền đăng nhập"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Chỉ định một hình ảnh để sử dụng làm nền đăng nhập. Hỗ trợ: PNG và JPG, đề nghị 1920x1080. Ảnh mặc định sẽ được dùng khi để trống. Nhấp vào nút ở bên phải để tải lên hình ảnh mới. Lưu ý rằng nhóm Khách phải có quyền \"đọc\" đối với hình ảnh đã chọn!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Ẩn phương thức xác thực cục bộ"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Không hiển thị nhà cung cấp xác thực trên màn hình đăng nhập. Thêm ?all vào URL để tạm thời sử dụng nó."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Bảo mật"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Buộc dùng 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Buộc tất cả người dùng sử dụng Xác thực hai yếu tố khi sử dụng nhà cung cấp xác thực với mật khẩu."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Xem thảo luận"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Bình luận mới"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Nội dung bình luận"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Trò chuyện"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Thẻ"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Tìm trang giống thẻ"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Trở về đầu trang"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Tên tài khoản"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Thoát"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Cài đặt thông số tạo trang"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Tiêu đề trang có ký tự không hợp lệ"
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Cấu hình trang web đã được lưu"
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA đã bị vô hiệu hóa"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA được kích hoạt thành công."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Đang yêu cầu đặt lại mật khẩu ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Kiểm tra email của bạn để biết hướng dẫn đặt lại mật khẩu!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Bật"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Người dùng có thể đăng nhập bằng chiến lược này không?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Tên hiển thị"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Dòng tiêu đề hiển thị cho người dùng khi chọn loại xác thực này"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Chọn phương thức xác thực"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Nhập thông tin đăng nhập"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Quên mật khẩu?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "2) Nhập mã bảo mật được tạo từ thiết bị tin cậy của bạn"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Quản trị viên yêu cầu bật Xác thực hai yếu tố (2FA) trên tài khoản của bạn"
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Dùng ứng dụng 2FA trên điện thoại quét mã QR bên dưới"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Nhập mã bảo mật được tạo từ thiết bị tin cậy của bạn"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Chọn"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Tạo Đường Dẫn Trang Mới"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Di chuyển / Đổi Đường Dẫn Trang"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Chọn một trang"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Thư mục ảo"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Trang"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Thư mục này trống."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Chuyển đổi"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Chuyển đổi trang"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Chọn trình soạn thảo bạn muốn dùng từ thời điểm này cho trang {{title}}"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Nội dung trang sẽ được chuyển đổi sang định dạng của trình soạn thảo mới được chọn. Lưu ý rằng một vài định dạng hoặc nội dung không thể chuyển đổi sẽ bị mất như là 1 kết quả của việc chuyển đổi. Một bản chụp nội dung sẽ được thêm vào lịch sử trang và có thể khôi phục bất kể lúc nào."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Chuyển đổi"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Quản trị"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Xuất sang đĩa"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Lưu nội dung thành chuẩn tar để sao lưu / di chuyển dữ liệu"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Mục lục"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Mục lục"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Sửa dụng mặc định của trang"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Cấp tiêu đề mục lục"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Bảng mục lục sẽ hiển thị các đề mục từ và đến các cấp được chọn"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Cấp tiêu đề mục lục mặc định"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Bảng mục lục sẽ hiển thị các đề mục từ và đến các cấp được chọn theo mặc định"
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Tên nhận dạng của máy chủ cho máy khách"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Một tên tùy chọn dùng để gửi đến máy chủ SMTP để nhận dạng bộ gửi email. Nếu sử dụng hostname của máy chủ, vui lòng để trống. Với người dùng Google Workspace, tên này sẽ là tên miền chính của bạn."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Phần mở rộng của trang"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Danh sách URL được ngăn cách bằng dấu phẩy sẽ được nhận diện là các trang. Ví dụ nếu thêm md vào URL thì /foobar.md cũng sẽ được nhận diện như /foobar"
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Tên trang nút"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Tên của trang web bên ngoài hiển thị trên nút chỉnh sửa. Không bao gồm chữ \"Chỉnh sửa\" ở trước."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Biểu tượng nút bấm"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Biểu tượng hiển thị ở nút chỉnh sửa. Ví dụ, mdi-github hiển thị biểu tượng Github."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Đường dẫn nút bấm"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Đường dẫn đến trang ở kho lưu trữ bên ngoài. Sử dụng {filename} placeholder để hiển thị tên file. (ví dụ: https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Chỉnh sửa phím tắt"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Menu chỉnh sửa nhanh FAB"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Hiển thị một nút FAB với menu nhanh ở phía dưới bên phải màn hình."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Thanh chỉnh sửa menu"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Hiển thị thanh hỉnh sửa menu"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Hiển thị thanh chỉnh sửa menu trên tiêu đề trang."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Hiển thị nút bấm chỉnh sửa"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Hiển thị một nút bấm để chỉnh sửa trang hiện tại."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Hiển thị nút chỉnh sửa bên ngoài."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Hiển thị nút bấm liên kết đến kho lưu trữ bên ngoài (vd, Github) mà người dùng có thể chỉnh sửa hoặc gửi một yêu cầu PR cho trang này."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Chỉnh {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Cấu hình bình luận được lưu thành công."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Ghi đè văn bản chân trang (footer)"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Thông điệp văn bản tùy chọn ở chân trang (footer). Hữu ích nếu không có bất kỳ giấy phép (licenses) nào ở trên thích hợp."
+                }
+            ]
+        }
+    }
+}

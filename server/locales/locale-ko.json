@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "로그인이 필요합니다"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "이메일 / 사용자 이름"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "비밀번호"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "로그인"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "로그인 오류"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "이메일 또는 비밀번호가 유효하지 않습니다."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "잘못된 사용자 이메일"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "로그인 오류"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "아직 이 사이트에 로그인 할 수 있는 권한이 없습니다."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "너무 많은 로그인을 시도하였습니다!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "짧은 시간동안 너무 많은 로그인 시도를 하였습니다. {{time}} 후에 다시 시도하세요."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "사용자를 찾을 수 없음"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "로컬 계정"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft 계정"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure AD 계정"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google 계정"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook 계정"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub 계정"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack 계정"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / AD 계정"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "2단계 인증"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "2단계 인증코드가 필요합니다:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "확인"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "개요"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "일반"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "언어"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "통계"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "테마"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "그룹"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "사용자"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "계정 인증"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "문서 편집기"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "로그"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "렌더링"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "검색 엔진"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "보관소"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "시스템 정보"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "도구"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "개발자 도구"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Wiki.js 후원"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "일반 설정"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "사이트 정보"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "사이트 브랜딩"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "사이트"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "유저"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "모듈"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "시스템"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "언어 옵션"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "현재 언어"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "다국어 이름 공간"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "언어 다운로드"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "기본 언어"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "모든 UI 텍스트 요소는 선택한 언어로 표시됩니다."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "자동 업데이트"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "아래에서 활성화된 모든 언어에 대한 업데이트를 자동으로 다운로드합니다."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "언어 이름 공간 지원"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "동일한 문서의 다국어 지원을 활성화합니다."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "활성 언어"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "다국어 이름 공간을 사용할 수 있는 언어 목록입니다. 위에서 정의한 기본 언어는 이 선택에 관계없이 항상 포함됩니다."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "모든 문서 경로를 /{{langCode}}/page로 바꿀 거예요."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "언어 코드가 없는 경로는 위에 정의된 기본 언어로 자동으로 리디렉션됩니다."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "저장"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "취소"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "다운로드"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "업로드"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "변경 사항 취소"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "모두 지우기"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "생성"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "편집"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "삭제"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "새로 고침"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "변경 사항 저장"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "계속"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "사이트 언어"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "이 언어는 자동 업데이트할 거예요."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "시스템에 대한 정보"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "서버 정보"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "현재 버전"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "최신 버전"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "발행됨"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "운영 체제"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "서버 이름"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "코어 개수"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "메모리 용량"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "구동 폴더"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "설정 파일"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "메모리 사용: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Wiki.js 돕기"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "기부하세요."
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "소문 내세요."
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "친구 혹은 동료에게 Wiki.js를 추천하세요!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "{{0}}에서 저희를 팔로우 하세요."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "{{0}}에서 아이디어를 제안하거나 평가해 주세요."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "기능 요청 게시판"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "버그를 찾았나요? {{0}}에 알려 주세요."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "당신의 언어로 Wiki.js를 번역하도록 도와주세요. {{0}} 에서 알려주세요."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "기부"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "기여"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js는 커뮤니티 리소스에 사용되는 투명한 기금인 Open Collective 이니셔티브의 일부입니다. 매월 또는 일회성 기부를 할 수 있습니다."
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Wiki.js를 유지하고 운영하는 데 여러분 도움이 필요해요."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js는 {{1}}와 {{2}}가 {{0}}을 담아 만든 오픈 소스 소프트웨어예요."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "기여자"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "문서"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "처리 중"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "잠시만 기다려 주세요..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "문서를 만들었어요."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "문서를 생성하는 동안 오류가 발생했습니다."
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "후원을 위하여 Wiki.js 티셔츠를 주문하세요."
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js 상점"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "확인"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. All rights reserved."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "이 문서는 아직 존재하지 않습니다."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "이 문서를 지금 생성하시겠습니까?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "문서 만들기"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "돌아가기"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "문서"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "메뉴"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "메뉴 바"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "추가"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "링크"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "구분"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "제목"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "이름"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "심볼"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "유형"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "대상"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "메뉴 항목을 골라서 수정하세요."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "이름 없는 {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "외부 링크"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "홈"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "문서"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "검색 쿼리"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "{{kind}} 수정"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "{{kind}} 삭제"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "바꾼 부분을 저장했어요."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "첫 번째 메뉴를 만들어 보세요."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "메뉴가 없어요."
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "적용"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "이메일 주소"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "비밀번호 확인"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "이름"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "가입"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "계정 생성"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "계정이 있나요? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "대신 로그인하기"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "{{strategy}}로 로그인"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "비밀번호를 잊으셨나요?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "또는 다음을 사용하여 로그인..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "계정이 없나요? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "계정 만들기"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "유효한 이메일 / 사용자 이름을 입력하세요."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "유효한 비밀번호를 입력하세요."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "로그인 성공! 리디렉션 중..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "로그인 중..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "인증을 사용할 수 없습니다."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "아래 양식을 작성하여 계정을 생성하세요."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "잠시만 기다리세요"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "계정이 성공적으로 생성되었습니다!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "계정을 생성하는 중..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "이메일 주소가 없습니다."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "이메일 주소가 유효하지 않습니다."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "비밀번호가 없습니다."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "비밀번호가 너무 짧습니다."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "두 비밀번호가 일치하지 않습니다."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "이름이 없습니다."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "이름이 너무 짧습니다."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "이름이 너무 깁니다."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "취소"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "비밀번호 재설정"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "비밀번호 재설정 지침을 받으려면 이메일 주소를 입력하십시오."
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "메일"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "메일 구성"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "구성"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (선택 사항)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "이메일을 확인하여 계정을 활성화하세요."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "문서가 성공적으로 수정되었습니다."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "권한이 없습니다"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "이 문서를 볼 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "이 문서의 소스를 볼 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "이 문서의 기록을 볼 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "이 문서를 수정할 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "문서를 생성할 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "돌아가기"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "처음 문서"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "문서 없음"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "이 문서는 존재하지 않습니다."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "다른 계정을 써서 로그인..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "후원자가 되세요."
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Wiki.js 전담 개발자 Nicolas Giard와 뜻을 같이 하고 싶을 때는 Patreon에서 backer나 sponsor로 후원하세요."
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "환영합니다!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "홈 문서를 만들고 시작해 봅시다."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "홈 문서 만들기"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Flags"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Paypal로 후원하세요."
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Ethereum으로 후원하세요."
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "로컬에서 가져오기"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "인터넷 접속 오류 등으로 언어 파일을 받을 수 없을 때 로컬 언어 파일 직접 업로드하여 패키지를 사이드로딩할 수 있습니다."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "찾아 보기..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "웹 훅"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "외부 서비스"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "테스트 메일 보내기"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "받는 사람 메일 주소"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "보내기"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "보내는 사람"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "보내는 사람 이름"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "보내는 사람 메일 주소"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP 설정"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "호스트"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "포트"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "일반적인 건 465 (권장), 587 혹은 25예요."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "보안 (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "포트 465를 쓸 때만 활성화하세요."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "유저 이름"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "암호"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "받는 사람이 도메인 이름의 유효성을 검사하고 메일을 신뢰할 수 있도록 하는 보안 레이어예요."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DomainKeys Identified Mail 사용"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "도메인 이름"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "선택자"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "개인 키"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM 형식에서 선택자에 대한 개인 키"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "테스트 메일을 보내서 SMTP 구성이 작동하는지 확인할 거예요."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "구성이 성공적으로 저장되었습니다."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "데이터베이스 버전이 권장 범위가 아니네요. 일부 기능이 제한되거나 제대로 작동하지 않을 수도 있어요."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "새로 고쳤어요."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "가입 설정 구성"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "계정 인증"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "전역 고급 설정"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT 사용자"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "JWT에 쓴 URN은 보통 도메인 이름이에요. (예: urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "토큰 만료"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "토큰을 갱신해야 할 때까지 걸리는 시간이에요. (기본값: 30분)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "토큰 갱신 기간"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "토큰을 폐기해야 할 때까지 걸리는 시간이에요. (기본값: 14일)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "이 계정 인증은 {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "활성"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "비활성"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "상태이고 바꿀 수 없어요."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "테스트 메일을 보냈어요."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "테마 수정"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "사이트 테마"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "테마는 콘텐츠 페이지가 표시되는 방식에 영향을 미칩니다. 다른 사이트 섹션(예: 편집기 또는 관리 영역)은 영향을 받지 않습니다."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "야간 모드"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "접근성 설정이 아니에요. 모든 테마에서 지원하지 않을 수도 있어요."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "소스 코드 삽입"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS 덮어쓰기"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "시스템 기본 CSS 다음에 삽입할 CSS 코드입니다. 많은 양의 CSS 코드가 있는 경우 사용자 지정 테마를 사용하는 것이 좋습니다. 너무 많은 CSS 코드를 삽입하면 페이지 로드 성능이 저하됩니다! CSS는 자동으로 축소됩니다."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head에 넣기"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "head 태그를 닫기 전에 들어가는 HTML 코드예요. 주로 script 태그를 넣는 데 사용해요."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body에 넣기"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "body 태그를 닫기 전에 들어가는 코드예요."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "테마 받기"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "관리 영역"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "계정 인증 구성"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "이 계정 인증에서는 구성을 수정할 수 없어요."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "가입"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "자동 가입 허용"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "계정 인증을 성공한 모든 유저에게 사이트 접근 권한을 자동 부여해요."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "메일 주소 Whitelist"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "메일 주소로 등록할 수 있는 도메인이에요."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "그룹 할당"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "새 유저를 이 그룹들에 자동 할당할 거예요."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "보안"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "2차 인증 강제"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "처음 로그인할 때 2차 인증을 설정해야만 해요."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "구성 참조"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "인증 방법에 따라서 공급자의 구성이 필요할 수도 있어요. 이 참조가 현재는 필요하지 않을 수도 있어요."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "유효한 {{siteUrl}}을 설정하세요. 메뉴 바에서 {{general}}로 가세요."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "허용된 웹 출처"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "콜백 혹은 리다이렉트 URL"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "로그인 URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "로그아웃 URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "토큰 Endpoint 인증 방법"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "처음 문서"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "새 문서"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "현재 문서"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "기본 보기"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "수정"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "수정 기록"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "소스 보기"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "이동"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "삭제"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "자원"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "이미지와 파일"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "검색..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "관리"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "계정"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "내 사이트"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "내 정보"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "로그아웃"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "로그인"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "마지막 수정:"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "게시되지 않음"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "문서 수정"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "문서 내용"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "북마크"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "공유"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "인쇄 형식"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "닫기"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "문서 정보"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "동기화 옵션"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "보관 공간"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "현재 상태"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "마지막 동기화 {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "마지막 시도 {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "오류 메시지"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "사용 중인 보관소가 없습니다."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "보관소 구성"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "이 스토리지 대상에는 수정할 수 있는 구성 옵션이 없습니다."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "동기화 방향"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "이 스토리지 대상에 대한 콘텐츠 동기화 처리 방법을 선택하십시오."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "바꾼 내용만 보관소에다가 저장하기"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "보관소에다가 저장하기"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "보관소에서 가져오기"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "지원 안 함"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "양방향 모드에서는 먼저 스토리지 대상에서 콘텐츠를 가져옵니다. 최신 콘텐츠는 로컬 콘텐츠를 덮어씁니다. 그런 다음 마지막 동기화 이후의 새 콘텐츠가 스토리지 대상으로 푸시되어 대상의 모든 콘텐츠가 있는 경우 덮어씁니다."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "콘텐츠는 항상 스토리지 대상으로 푸시되어 기존 콘텐츠를 덮어씁니다. 이것은 백업 시나리오에 가장 안전한 선택입니다."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "콘텐츠는 항상 스토리지 대상에서 가져와서 이미 존재하는 로컬 콘텐츠를 덮어씁니다. 이 선택은 일반적으로 일회용 콘텐츠 가져오기를 위해 예약되어 있습니다. 로컬 콘텐츠는 항상 덮어쓰기 되므로 이 옵션에 주의하십시오!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "동기화 일정"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "성능상의 이유로 이 저장소 대상은 모든 변경이 아닌 간격 기반 일정에 따라 변경 내용을 동기화합니다. 동기화가 발생하는 간격을 정의하십시오."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "현재 모든 {{schedule}}로 설정되어 있습니다."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "기본값은 모든 {{schedule}}입니다."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "작업 실행"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "실행"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "위키 검색 기능 구성"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "구성 새로 고침"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "엔진 목록"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "구성 항목"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "이 엔진에는 수정할 수 있는 구성 옵션이 없습니다."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "검색 엔진 목록을 새로 고쳤습니다."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "검색 엔진 구성이 성공적으로 저장되었습니다."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "구성 항목을 새로 고쳤습니다."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "예기치 않은 오류가 발생했습니다."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "문서 수"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "사용자 수"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "그룹 수"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "최신 버전입니다."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "새 버전이 있습니다: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js는 자유 오픈 소스 프로젝트입니다. 프로젝트에 기여할 수 있는 방법에는 여러 가지가 있습니다."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "도움이 필요해요!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "더 알아보기"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "계정 인증 목록을 새로 고쳤습니다."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "인증 구성이 성공적으로 저장되었습니다."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "일반"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "사이트 주소"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "후행 슬래시 없이 당신의 위키 전체 URL. (예: https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "사이트 제목"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "상단 표시 줄에 표시되고 모든 페이지의 메타 제목에 추가됩니다."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "로고"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "로고 올리기"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "지우기"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "최상의 결과를 얻으려면 {{size}} 픽셀의 이미지를 권장합니다."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} 또는 {{lastType}} 파일 만"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "저작권 표시"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "회사 / 조직 이름"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "꼬리말에 저작권 표시를 표시 할 때 사용할 이름입니다. 숨기려면 비워 두십시오."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "사이트 설명"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "페이지에 설명이 제공되지 않은 경우 기본 설명입니다."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "메타 로봇"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "기본값 : Index, Follow. 페이지 단위로 설정할 수 있습니다."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "검색하시려면 두 글자 이상 입력하셔야 합니다"
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "검색..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "검색어와 일치하는 문서가 없습니다."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}} 의 결과를 찾았습니다."
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "혹시 이런 의미였습니까?"
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "닫기"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "검색 링크 복사"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "매우 약"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "약한"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "평균"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "강한"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "매우 강한"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "페이지 삭제"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "{{title}} 문서를 삭제 하시겠습니까?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "관리 영역에서 문서를 복원할 수 있습니다."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "사용자 검색"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "사용자 검색..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "모든"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "분"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "시간"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "일"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "월"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "년"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "페이지 등록 정보"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "문서 정보"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "제목"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "간략한 설명"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "제목 아래에 표시됨"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "경로 및 분류"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "언어"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "경로"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "선행 또는 후행 슬래시를 포함하지 마십시오."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "태그"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "태그를 사용하여 페이지를 분류하고 페이지를 더 쉽게 찾을 수 있습니다."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "게시 상태"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "발행됨"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "이 문서에 대한 쓰기 권한이 있는 사용자는 게시되지 않은 문서를 볼 수 있습니다."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "게시 시작일..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "시작 날짜가 없는 경우 비워 둡니다."
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "게시 종료일..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "종료 날짜가 없는 경우 비워 둡니다."
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "저장되지 않은 변경 사항을 삭제하시겠습니까?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "저장되지 않은 변경 내용이 있습니다. 마지막으로 저장한 이후 수정한 내용을 삭제하시겠습니까?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "변경 사항을 취소"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "이 문서에 어떤 편집기를 사용하시겠습니까?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "페이지를 만든 후에는 변경할 수 없습니다."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "자원"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "새 폴더"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "폴더 이름"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "자원 폴더 {{namingRules}}을 따라야합니다."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "이름 지정 규칙"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "이동"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "이름 바꾸기"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "최적화"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "미리 보기"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "등록 정보"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "이 폴더는 비어 있습니다."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} 파일"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "삽입"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "아이디"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "파일명"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "형식"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "파일 크기"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "추가됨"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "작업"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "미디어 업로드"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "파일을 선택하거나 여기에 파일을 내려놓습니다..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "원격 이미지 가져오기"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "이미지 정렬"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "자원 이름 바꾸기"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "이 자원의 새 이름을 입력합니다."
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "자원 삭제하기"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "정말로 자원을 삭제하시겠습니까?"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "이 작업은 복구할 수 없습니다!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "자산 목록을 성공적으로 새로 고쳤습니다."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "파일 업로드에 실패했습니다."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "자산 폴더가 성공적으로 생성되었습니다."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "자원의 이름을 성공적으로 변경하였습니다."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "자원을 성공적으로 삭제하였습니다."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "먼저 업로드할 파일을 선택해야 합니다!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "가져오기"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "편집기로 돌아가기"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "굵게"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "기울임꼴"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "취소선"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "제목 {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "아래 첨자"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "위 첨자"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "인용구"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "정보 인용구"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "성공 인용구"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "경고 인용구"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "오류 인용구"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "정렬되지 않은 목록"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "정렬된 목록"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "코드 블록"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "키보드 키"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "가로 막대"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "미리 보기 창 숨기기 / 표시하기"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "링크 삽입"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "미디어 삽입"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "블록 삽입"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "코드 블록 삽입"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "비디오 / 오디오 삽입"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "다이어그램 삽입"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "수학식 삽입"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "표 도우미"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "글쓰기 최적화 모드"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "마크다운 포맷 도움말"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "{{path}} 문서의 원본 소스를 봅니다"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "기본 보기로 돌아가기"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "아이디 {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "언어"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "분석"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "위키에 분석 및 추적 도구 추가"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "제공 업체"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "공급자 구성"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "이 공급자에는 수정할 수 있는 구성 옵션이 없습니다."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "공급자 목록을 성공적으로 새로 고쳤습니다."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "웹 분석 구성이 저장되었습니다."
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "유지 보수 및 기타 도구"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "도구"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "계정 인증"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "인증 / 사용자 도구"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "캐시 플러시"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "다양한 구성 요소의 캐시 플러시"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL 종점"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Wiki.js에 대한 GraphQL 종점 변경"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Wiki.js 1.x에서 가져 오기"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "이전 1.x 설치에서 데이터 마이그레이션"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "원격"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "원격 분석 활성화 / 비활성화 또는 클라이언트 ID 재설정"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "댓글"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "게시됨"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "개인"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "전역"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "문서 로드 중..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "코드"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "이름"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "본명"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL (Right To Left)"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "가용성"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "받기"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "콘텐츠"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "문서를 위한 다양한 도구"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "아이콘 세트"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "사이드바에 사용할 아이콘 모음입니다."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "브라우저가 오래되었습니다. {{modernBrowser}} 로 업그레이드하십시오."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "최신 브라우저"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "이름"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "작성자"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "받기"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} 페이지 내용에 스타일을 추가 할 때는 {{cssClass}} 클래스의 범위를 지정해야합니다. 이것을 생략하면 에디터의 레이아웃이 깨질 수 있습니다!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "주의:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "테마 옵션"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "활성"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "비활성"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "확인됨"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "미확인"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "사용자 편집"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "아이디 {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "기본 정보"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "이메일"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "표시 이름"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "계정 인증"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "공급자"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "비밀번호"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "비밀번호 변경"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "새 비밀번호"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "2단계 인증 (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "이중 인증 선택"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "공급자 ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "사용자 그룹"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "이 사용자는 아직 그룹에 할당되지 않았습니다. 사용자에게 1개 이상의 그룹을 할당해야 합니다."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "그룹 선택..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "배치"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "확장 메타데이터"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "위치"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "직위"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "시간대"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "사용자가 성공적으로 업데이트되었습니다."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "사용자가 이미 이 그룹에 할당되어 있습니다!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "이 보관소 공간은 {{state}} 상태입니다."
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "활성"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "비활성"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "작업을 실행하려면 보관소 설정 및 변경 내용을 적용해야 합니다."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "새 비밀번호를 선택하십시오"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "새 비밀번호를 선택해야 합니다."
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "새 비밀번호"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "새 비밀번호 확인"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "비밀번호 변경"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "비밀번호 변경 중..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "최근 문서"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "가장 인기 있는 문서"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "정보"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "스케줄링"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "소셜"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "분류"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "소셜 기능"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "댓글 허용"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "이 문서에서 댓글 기능을 활성화합니다."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "평가 허용"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "작성자 정보 표시"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "공유 도구 모음 표시"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "이 페이지를 공유하고 인쇄할 수 있는 도구 모음 표시"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "마지막 편집 시간과 함께 문서 작성자를 표시합니다."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "이 문서에서 평가 기능을 활성화합니다."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "또는 사용자 지정 보기를 만들까요?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "태그로 찾아보기"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "사이트 맵"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "페이지 작업"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "현재 선택"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "선택 취소"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "하나 이상의 태그를 선택합니다."
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "결과 내에서 검색..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "언어"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "정렬"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "왼쪽에서 하나 이상의 태그를 선택합니다."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "페이지 결과 검색 중..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "선택한 태그가 있는 페이지를 찾을 수 없습니다."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "현재 필터링 옵션과 일치하는 페이지를 찾을 수 없습니다."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "최근 업데이트{{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "생성 날짜"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "아이디"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "마지막 수정"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "경로"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "제목"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "아무거나"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "GitHub Sponsors를 통해 스폰서 되기 (Wiki.js에서 풀 타임으로 일하는 수석 개발자 Nicolas Giard의 목표를 지원하기 위해 이동)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "스폰서 되기"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "태그"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL 구성 관리"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "공급자"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "이미 인증서를 가지고 있는 경우, 사용자 지정 인증서를 선택합니다."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "도메인"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "위키를 가리키는 전체 도메인 주소를 입력하세요. (예: wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "공급자 옵션"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "사용안함"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "사용자 지정 인증서"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "포트"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP 포트"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "HTTP 요청을 받는 비 SSL 포트입니다. 보통 80이나 3000입니다."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS 포트"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "HTTPS 요청을 받는 SSL 포트입니다. 보통 443입니다."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP 요청을 HTTPS로 리디렉션"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "HTTP 포트의 모든 요청을 HTTPS로 자동으로 리디렉션합니다."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "포트 구성을 유지하려면 설정 파일에 쓰기 권한이 있어야 합니다."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "로고 URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "로고로 사용할 이미지를 지정합니다. 정사각형 비율의 SVG, PNG, JPG가 지원되며, 34x34 픽셀 이상이어야 합니다. 오른쪽 버튼을 클릭하여 새 이미지를 업로드하세요."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "사용자를 삭제하시겠습니까?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "정말로 사용자 {{username}}을 삭제하시겠습니까?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "사용자 업데이트"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "이 패널에서는 사용자를 관리자나 손님 그룹으로 지정할 수 없습니다."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "이미 콘텐츠를 만든 사용자는 삭제할 수 없습니다. 사용자가 작성한 모든 문서를 지운 후 사용자를 삭제하거나, 사용자를 비활성화해야 합니다."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "스크립트"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "저장 시 CSS가 자동으로 압축됩니다. 주변 스타일 태그를 포함하지 말고 실제 CSS 코드 만 포함하십시오."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "모두에게 공개"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "선택된 그룹에게 공개"
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "페이지 선택..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "탐색 모드"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "사이트 트리"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "클래식 트리 기반 탐색"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "맞춤 탐색"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "정적 탐색 메뉴 + 사이트 트리 버튼"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "없음"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "사이트 탐색 비활성화"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "사용자가 성공적으로 확인되었습니다."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "사용자가 성공적으로 활성화되었습니다."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "사용자가 성공적으로 비활성화되었습니다."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "텍스트를 먼저 선택해야 합니다!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "인증서 갱신"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "인증서 상태"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "인증서 만료"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "구독자 이메일"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "현재 상태"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "켜기"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "끄기"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "인증서 갱신 중..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "이 페이지에서 이동하지 마세요"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "인증서가 갱신되었습니다."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP 리디렉션이 성공적으로 변경되었습니다."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "페이지 태그 관리"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "표시할 태그가 없습니다."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "태그 수정"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "태그"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "라벨"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "{{created}} 을(를) 생성하고 {{updated}} 에 마지막 업데이트 되었습니다."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "이 태그를 삭제"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "왼쪽의 목록에서 태그를 선택하십시오."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "시작하려면 페이지에 태그를 추가하십시오."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "태그가 갱신되었습니다."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "태그가 성공적으로 삭제되었습니다."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "태그가 성공적으로 저장되었습니다."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "필터..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "연결된 페이지 보기"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "태그를 삭제하시겠습니까?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "태그 {{tag}} 을(를) 삭제 하시겠습니까? 태그는 모든 페이지에서 연결 해제됩니다."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "API에 액세스하기 위한 키 관리"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API 활성화됨"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API 비활성화됨"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API 활성화"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API 비활성화"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "새로운 API 키"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "이름"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "키 엔딩"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "만료"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "생성되었습니다"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "마지막 업데이트"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "취소"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "아직 생성된 API 키가 없습니다."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API 키를 취소하시겠습니까?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "키 {{name}}을 취소하시겠습니까? 이 작업을 취소할 수 없습니다!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "취소"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API 키 목록을 새로 고쳤습니다."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "API 키가 성공적으로 폐기되었습니다."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "새로운 API 키"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API 키가 성공적으로 생성되었습니다."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "이름이 없거나 잘못되었습니다."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "그룹을 선택해야 합니다."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "API 키에 게스트 그룹을 사용할 수 없습니다."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "이 API 키의 목적"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "이름"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "만료"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "만료에 관계없이 언제든지 키를 폐기할 수 있습니다."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "사용 권한 범위"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "전체 권한"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "또는 그룹 권한 사용..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "생성"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "그룹"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API 키는 선택한 그룹과 동일한 권한을 갖습니다."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30일"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90일"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180일"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1년"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3년"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "아래에 표시된 키를 {{bold}} 로 복사하십시오."
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "다시 표시되지 않습니다"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API가 성공적으로 활성화되었습니다"
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API가 성공적으로 비활성화되었습니다"
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "저장되었습니다"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "없음"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "크리에이티브 커먼즈 저작자표시 라이선스"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "크리에이티브 커먼즈 저작자표시-동일조건변경허락 라이선스"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "크리에이티브 커먼즈 저작자표시-변경금지 라이선스"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "크리에이티브 커먼즈 저작자표시-비영리 라이선스"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "크리에이티브 커먼즈 저작자표시-비영리-동일조건변경허락 라이선스"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "크리에이티브 커먼즈 저작자표시-비영리-변경금지 라이선스"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "퍼블릭 도메인"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "모든 권리는 저작권자에게 있습니다."
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "콘텐츠 라이선스"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "모든 콘텐츠 페이지의 바닥 글에 표시된 라이선스입니다."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "콘텐츠는 {{company}} 의 {{license}}에 따라 제공됩니다."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "페이지 콘텐츠를 다운로드할 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "이 페이지 버전의 콘텐츠를 다운로드할 수 없습니다."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "이 버전의 페이지 소스를 볼 수 없습니다."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "{{path}} 페이지의 {{date}} 일자 소스보기"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "버전 ID"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "문서 버전을 복원하시겠습니까?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "이 페이지 콘텐츠를 {{date}} 에있는 그대로 복원 하시겠습니까? 이 버전은 현재 기록 위에 복사됩니다. 따라서 최신 버전은 계속 유지됩니다."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "복원"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "페이지 버전이 성공적으로 복원되었습니다!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} 글자, {{words}} 단어"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "저장 충돌을 해결하기"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "내 수정본 사용"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "서버 저장본 사용"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "로컬 변경 사항을 버리고 최신 버전을 사용"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "왼쪽 패널의 콘텐츠 사용"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "최신 버전보기"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "이 페이지의 최신 버전이 {{authorName}} , {{date}} 의해 저장되었습니다"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "어떻게 하시겠습니까?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "현재 로컬 버전을 사용하고 최신 변경 사항을 무시하십시오."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "원격 버전 (최신)을 사용하고 변경 사항을 삭제하십시오."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "원격 버전으로 덮어쓰시겠습니까?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "현재 버전을 최신 원격 버전으로 바꾸시겠습니까? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "현재 수정 사항이 사라집니다."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "확인"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "로컬 버전"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(편집 가능)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(읽기 전용)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "원격 버전 {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "{{date}} 페이지 버전을 기반으로 한 현재 수정 사항"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "마지막 수정:{{authorName}}{{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "제목:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "설명:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "변경 사항을 저장하지 않고 나가시겠습니까?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "다른 사용자가 이 페이지를 이미 수정했습니다."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "중복"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "닉네임"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "위치"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "직책"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "시간대"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "내 정보"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "내 개인 정보"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "내 정보"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "내 프로필 보기"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "계정 인증"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "제공자"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "비밀번호 변경"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "현재 비밀번호"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "새 비밀번호"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "새 비밀번호 확인"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "그룹"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "활성화"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "가입일"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "마지막으로 업데이트된 프로필"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "마지막 로그인"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "작성된 페이지"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "의견 게시"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "프로필이 저장되었습니다."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "비밀번호가 변경되었습니다."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "페이지"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "댓글"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "내가 만들었거나 마지막으로 수정한 문서 목록"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "표시할 문서가 없습니다."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "문서 목록이 새로 고쳐졌습니다."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "제목"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "경로"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "만든이"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "마지막 업데이트"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "마지막 로그인"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "탐색"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "메인 메뉴"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "현재 디렉토리"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(루트)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "로케일에서 복사 ..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "소스 로케일"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "탐색 항목을 복사 할 원본 로케일입니다."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "복사"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "항목을 복사할 언어를 선택하십시오. 항목은 활성 언어의 현재 항목 목록에 추가됩니다."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "고정된 탐색"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "고정된 탐색 메뉴만 선택"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "환경 설정"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "날짜 형식"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "언어 기본값"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "외관"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "사이트 기본값"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "밝은 모드"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "다크 모드"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL 인증서 확인"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "일부 호스트에서는 SSL 인증서 검사를 사용하지 않도록 설정해야 합니다. 적절한 보안을 위해 사용하도록 설정된 상태로 둡니다."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "외부 링크 (새 창)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "보안"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "최대 업로드 크기"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "업로드 당 최대 파일"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "한 번에 몇 개의 파일을 업로드할 수 있습니까?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "단일 파일의 최대 크기입니다."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "바이트"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "파일"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "업로드"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "이 설정은 Wiki.js에만 영향을 줍니다. 리버스 프록시 (예 : nginx, apache, Cloudflare)를 사용하는 경우 해당 설정도 일치하도록 변경해야 합니다."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "보안 설정 구성"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "확장기능"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "추가 기능을 위한 확장기능 설치"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "제공자"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "위키 페이지에 댓글 추가"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "제공자 구성"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "이 제공자는 당신이 수정할 수 있는 옵션을 제공하지 않습니다"
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "이 사용자가 만든 모든 콘텐츠 (페이지, 업로드, 댓글 등)는 아래에서 선택한 사용자에게 재 할당됩니다. 콘텐츠를 현재 활성 사용자에게 재할당하지 않으려면 더미 대상 사용자 (예 : 삭제된 사용자)를 만드는 것이 좋습니다."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "활성화된 전략"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "전략 추가"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "스타일"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "자바스크립트 코드를 HTML 스크립트 태그로 묶어야 합니다."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "이 페이지는 공개되지 않았습니다"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "댓글"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "새 댓글 작성..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "이름"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "이메일 주소"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "마크다운 포멧"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "댓글 달기"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "댓글 불러오는중"
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "{{name}} 이름으로 게시"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "새 댓글 작성..."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "아직 댓글이 없습니다."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "댓글 업데이트"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "삭제를 확인합니다"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "이 댓글을 영구적으로 삭제하시겠습니까?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "이 작업은 복구할 수 없습니다!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "{{reldate}}에 수정됨"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "새 댓글이 성공적으로 게시되었습니다."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "댓글이 비어 있거나 너무 짧습니다!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "댓글이 성공적으로 업데이트되었습니다."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "댓글이 성공적으로 삭제되었습니다."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "맞춤법 검사 선택"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "로그인"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "로그인 화면"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT 구성"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "로그인 화면 우회"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "사용자가 첫 번째 인증 공급자로 자동 리디렉션될 것입니다."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "로그인 배경 이미지 URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "로그인 배경으로 사용할 이미지를 지정하십시오. PNG 및 JPG가 지원되며 1920x1080이 권장됩니다. 기본값은 비워 둡니다. 오른쪽 버튼을 클릭하여 새 이미지를 업로드하세요. Guests 그룹에는 선택한 이미지에 대한 읽기 액세스 권한이 있어야합니다!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "로컬 인증 공급자 숨기기"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "로그인 화면에 로컬 인증 공급자를 표시하지 않습니다. 임시로 사용하려면 '?all'을 URL에 추가하십시오."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "보안"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA 강제적용"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "사용자/암호 양식으로 인증 공급자를 사용할 때 모든 사용자가 2단계 인증을 사용하도록 합니다."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "토론 보기"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "새 댓글"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "댓글 콘텐츠"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "이야기"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "태그"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "태그와 일치하는 페이지"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "맨 위로"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "이름"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "종료"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "페이지 렌더링 파이프 라인 구성"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "사이트 제목에 잘못된 문자가 있습니다."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "사이트 구성이 성공적으로 저장되었습니다."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA가 성공적으로 비활성화되었습니다."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA가 성공적으로 활성화되었습니다."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "비밀번호 재설정 요청 중 ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "비밀번호 재설정 지침에 대한 이메일을 확인하세요!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "활성"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "사용자가 이 방식을 사용하여 로그인 할 수 있게 할까요?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "이름"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "이 인증 방식에 대해 사용자에게 표시되는 제목."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "인증 공급자 선택"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "자격 증명 입력"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "비밀번호를 잊었나요?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "신뢰할 수 있는 장치에서 생성된 보안 코드를 입력하십시오:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "2단계 인증을 활성화 하십시오."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) 모바일 2FA 앱으로 아래 QR 코드를 스캔하십시오."
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) 신뢰할 수 있는 장치에서 생성된 보안 코드를 입력하십시오."
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "선택"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "새 페이지 위치 선택"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "이동 / 페이지 위치 변경"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "페이지 선택"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "가상 폴더"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "페이지"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "이 폴더는 비어 있습니다."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "변환"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "문서 변환"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "{{title}} 문서에 사용할 편집기를 선택하십시오."
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "이 페이지의 내용이 새롭게 선택된 편집기의 양식으로 변환됩니다. 변환 과정에서 일부 서식과 렌더링되지 않은 요소가 손실될 수 있습니다. 페이지 변경 이력에 스냅샷이 추가되므로, 언제든지 복원할 수 있습니다."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "변환"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "관리"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "디스크로 내보내기"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "백업 / 마이그레이션을 위해 tarball에 콘텐츠를 저장합니다."
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "목차"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "목차"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "사이트 기본값 사용"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "목차 제목 레벨"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "목차에서 선택한 수준의 제목이 표시됩니다."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "기본 목차 제목 레벨"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "목차에는 기본적으로 선택한 수준의 제목이 표시됩니다."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "식별 가능한 클라이언트 호스트명"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "메일러를 식별하기 위해 SMTP 서버로 보낼 선택적 이름입니다. 서버 호스트 이름을 사용하려면 비워 두십시오. Google Workspace 고객의 경우 기본 도메인 이름이어야 합니다."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "페이지 확장"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "페이지로 처리될 URL 확장자의 쉼표로 구분된 목록입니다. 예를 들어 md를 추가하면 /foobar.md를 /foobar와 동일하게 취급합니다."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "버튼 사이트 이름"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "편집 버튼에 표시할 외부 사이트의 이름입니다. \"Edit on\" 접두사를 포함하지 마십시오."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "버튼 아이콘"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "편집 버튼에 표시할 아이콘입니다. 예를 들어 mdi-github는 GitHub 아이콘을 표시합니다."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "버튼 URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "외부 저장소의 페이지 URL입니다. 파일 이름이 포함되어야 하는 {filename} Placeholder를 사용하십시오. (예: https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "바로 가기 편집"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB 빠른 편집 메뉴"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "화면 오른쪽 하단에 단축 다이얼 메뉴가 있는 편집 플로팅 작업 버튼(FAB)을 표시합니다."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "메뉴 표시줄 편집"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "편집 메뉴 표시줄 표시"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "문서 머리글에 편집 메뉴 모음을 표시합니다."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "편집 버튼 표시"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "현재 문서를 편집하는 버튼을 표시합니다."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "외부 편집 버튼 표시"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "사용자가 현재 문서를 수정하거나 PR을 제출할 수 있는 외부 리포지토리(예: GitHub)에 연결되는 버튼을 표시합니다."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "{{name}} 에서 수정"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "댓글 설정이 저장되었습니다."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "바닥글 텍스트 재정의"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "선택적으로 바닥글 텍스트를 사용자 지정 메시지로 재정의합니다. 위의 라이센스 중 어느 것도 적절하지 않은 경우에 유용합니다."
+                }
+            ]
+        }
+    }
+}

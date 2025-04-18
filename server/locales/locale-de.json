@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Anmeldung erforderlich"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "E-Mail / Benutzername"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Passwort"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Anmeldung"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Falscher Login"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Die E-Mail oder das Passwort sind ungültig."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Falsche Benutzer E-Mail-Adresse"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Anmeldefehler"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Du bist noch nicht berechtigt, dich auf dieser Seite anzumelden."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Zu viele Versuche!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Du hattest zu viele Fehlversuche in zu kurzer Zeit, bitte versuche es erneut {{time}}"
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Benutzer nicht gefunden"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Lokal"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft-Konto"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Zwei-Faktor-Authentifizierung"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Sicherheitscode erforderlich:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Überprüfen"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Dashboard"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Allgemeines"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Lokalisierung"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistiken"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Theme"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Gruppen"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Benutzer"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Authentifizierung"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Bearbeitung"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Protokollierung"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Rendering"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Suchmaschine"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Speicher"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API-Zugriff"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Systeminformationen"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Dienstprogramme"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Entwickler-Tools"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "An Wiki.js mitwirken"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Haupteinstellungen des Wikis"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Seiteninformation"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Seiten-Kennzeichnung (Branding)"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Seite"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Benutzer"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Module"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "System"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Lege Lokalisierungsoptionen für das Wiki fest"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Spracheinstellungen"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Mehrsprachiger Namensraum"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Lokalisierung herunterladen"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Basis-Lokalisierung"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Alle UI-Textelemente werden in der gewählten Sprache angezeigt."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Automatisch aktualisieren"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Lade automatisch Aktualisierungen für alle unten aktivierten Lokalisierungen mit Namensraum herunter."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Mehrsprachige Namensräume"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Aktiviert mehrere Sprachversionen derselben Seite."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktive Namensräume"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Liste der Lokalisierungen, die für mehrsprachige Namensräume aktiviert sind. Die oben definierte Basis-Lokalisierung wird unabhängig von dieser Auswahl immer eingeschlossen."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Der Lokalisierungs-Code wird allen Pfaden vorangestellt. (z.B. /{{langCode}}/seitenname)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Pfade ohne Lokalisierungs-Code werden automatisch zur oben definierten Basis-Lokalisierung umgeleitet."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Speichern"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Abbrechen"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Herunterladen"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Hochladen"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Verwerfen"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Leeren"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Erstellen"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Bearbeiten"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Löschen"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Aktualisieren"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Änderungen speichern"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Fortfahren"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Seiten Lokalisierung"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Lade Updates für diese Lokalisierung automatisch herunter, sobald sie verfügbar sind."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informationen über dein System"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Host-Informationen"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Aktuelle Version"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Neueste Version"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Veröffentlicht"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Betriebssystem"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Hostname"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU Kerne"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "RAM insgesamt"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Arbeitsverzeichnis"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Konfigurationsdatei"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAM-Nutzung: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Unterstütze die Entwicklung und den Betrieb von Wiki.js."
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Finanziere unsere Arbeit"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Spread the word"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Sprich mit deinen Freunden und Kollegen darüber, wie großartig Wiki.js ist!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Folge uns auf {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Bringe eine Idee ein oder stimme über vorgeschlagene Ideen ab auf der {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "Plattform für Anfragen zu neuen Funktionen"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Einen Fehler gefunden? Erstelle einen Vorgang auf {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Hilf bei der Übersetzung von Wiki.js in deine Sprache. Kontaktiere uns auf {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Spenden"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Mitwirken"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js ist auch Teil der Open Collective Initiative, einem transparenten Fonds, der für Gemeinschaftsmittel verwendet wird. Du kannst dich finanziell beteiligen, indem du eine monatliche oder einmalige Spende machst:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Wir benötigen deine Hilfe, um die Software ständig zu verbessern und die verschiedenen notwendigen Dienste (z. B. Hosting und Networking) betreiben zu können."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js ist eine kostenlose Open-Source-Software, bereitgestellt mit {{0}} von {{1}} und {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "Mitwirkende"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Seite"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Verarbeitung"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Bitte warten..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Seite erfolgreich erstellt."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Beim Erstellen der Seite ist ein Fehler aufgetreten"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Du kannst auch Wiki.js-T-Shirts kaufen, um das Projekt finanziell zu unterstützen:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js Shop"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Alle Rechte vorbehalten."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Diese Seite existiert noch nicht."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Möchtest du die Seite jetzt erstellen?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Seite erstellen"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Zurück"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Seiten"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigation"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Verwalten der Seitennavigation"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Hinzufügen"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Trennlinie"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Kopfzeile"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Label"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Symbol"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Zieltyp"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Ziel"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Wähle links ein Navigationselement aus."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}} ohne Titel"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Externer Link"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Startseite"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Seite"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Suchanfrage"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Bearbeite {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Lösche {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigation erfolgreich gespeichert."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Klicke den Hinzufügen-Button, um dein erstes Navigationselement hinzuzufügen."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Die Navigation ist leer"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Anwenden"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "E-Mail-Adresse"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Passwort bestätigen"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Name"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Registrieren"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Erstelle eine Account"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Du hast schon einen Account? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Stattdessen einloggen"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Anmeldung mit {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Hast du dein Passwort vergessen?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "oder melde dich an mit..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Du hast noch keinen Account? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Erstelle einen Account"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Gültige E-Mail / Benutzernamen eingeben."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Gültiges Passwort eingeben."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Anmeldung erfolgreich! Weiterleitung..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Anmelden..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Authentifizierung ist nicht verfügbar."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Fülle das untenstehende Formular aus, um dein Konto zu erstellen."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Bitte warten"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Der Account wurde erfolgreich erstellt!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Konto wird erstellt..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Fehlende E-Mail-Adresse."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "E-Mail-Adresse ist ungültig."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Fehlendes Passwort."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Das Passwort ist zu kurz."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Die Passwörter stimmen nicht überein."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Der Name fehlt."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Der Name ist zu kurz."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Der Name ist zu lang."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Abbrechen"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Passwort zurücksetzen"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "E-Mail-Adresse eingeben, um Anweisungen zum Zurücksetzen des Passworts zu erhalten:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "E-Mail"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "E-Mail-Einstellungen konfigurieren"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Konfiguration"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (optional)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Überprüfe deine E-Mails, um dein Konto zu aktivieren."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Seite erfolgreich aktualisiert."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Nicht autorisiert"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Du darfst diese Seite nicht ansehen."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Du darfst dir den Seitenquellcode nicht ansehen."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Du darfst dir die Seitenhistorie nicht ansehen."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Du darfst diese Seite nicht bearbeiten."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Du darfst diese Seite nicht erstellen."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Zurück"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Startseite"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Nicht gefunden"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Diese Seite existiert nicht."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Anmelden als..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Werde ein Förderer"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Werde ein Unterstützer oder Sponsor über Patreon (wird direkt zum Erreichen des Ziels des leitenden Entwicklers Nicolas Giard verwendet, Vollzeit an Wiki.js zu arbeiten)."
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Willkommen in deinem Wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Los geht's! Erstelle die Startseite."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Startseite erstellen"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Flags"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Mache eine einmalige oder wiederkehrende Spende über Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Wir akzeptieren Spenden mittels Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Manuelles Laden von Sprachpaketen"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Wenn du nicht mit dem Internet verbunden bist oder keine Sprachpakete mit der oben angegebenen Option herunterladen kannst, hast du die Möglichkeit Pakete stattdessen manuell hochladen."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Durchsuchen…"
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Webhooks zu externen Diensten verwalten"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Eine Test-E-Mail senden"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "E-Mail-Adresse des Empfängers"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "E-Mail senden"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Absender"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Absender Name"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Absender E-Mail"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP-Einstellungen"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Server"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Normalerweise 465 (empfohlen), 587 oder 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Sicher (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Sollte bei Verwendung von Port 465 aktiviert werden, andernfalls ausgeschaltet (587 oder 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Benutzername"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Passwort"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) bietet eine Sicherheitsebene für alle E-Mails, die von Wiki.js gesendet werden, indem es den Empfänger:innen die Möglichkeit bietet, den Domänennamen zu validieren und die Authentizität der Nachricht zu gewährleisten."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM verwenden"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domain Name"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Schlüssel-Selektor"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Privater Schlüssel"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Privater Schlüssel für den Selektor im PEM-Format"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Sende eine Test-E-Mail, um sicherzustellen, dass die SMTP-Konfiguration funktioniert."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Konfiguration erfolgreich gespeichert."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Die Datenbankversion wird nicht vollständig unterstützt. Einige Funktionen sind möglicherweise eingeschränkt oder funktionieren nicht wie erwartet."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Systeminformationen wurden aktualisiert."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Die Authentifizierungseinstellungen des Wikis konfigurieren"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Strategien"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Globale erweiterte Einstellungen"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "Die in JWT verwendete  Audience URN wird beim Anmelden vergeben. Normalerweise der Name der Domain. (z.B. urn:wiki.domain.de)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token Ablaufdatum"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Die Gültigkeitsdauer eines Tokens, bis dieser erneuert werden muss. (Standard: 30min)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Token-Erneuerungszeitraum"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Der maximale Zeitraum, in dem ein Token nach Ablauf verlängert werden kann. (Standard: 14 Tage)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Diese Strategie ist {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "aktiv"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "nicht aktiv"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "und kann nicht deaktiviert werden."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Eine Test-E-Mail wurde erfolgreich gesendet."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Ändert das Aussehen und Verhalten des Wikis"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Site Theme"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Themen beeinflussen die Darstellung von Inhaltsseiten. Andere Bereiche der Website (z.B. der Editor oder der Admin-Bereich) sind davon nicht betroffen."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Dunkler Modus"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Nicht für Barrierefreiheit empfohlen. Wird möglicherweise nicht von allen Themen unterstützt."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Code Injektion"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS überschreiben"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS-Code, der nach dem Standard-CSS des Systems eingefügt werden soll. Erwägen Sie, benutzerdefinierte Designs zu verwenden, wenn Sie sehr viel eigenen CSS-Code haben. Wenn zu viel CSS-Code einfügt wird, wird die Leistung beim Laden von Seiten beeinträchtigt! CSS wird automatisch minimiert."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head HTML Injektion"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML-Code, der direkt vor dem schließenden Head-Tag eingefügt werden soll. Normalerweise für Skript-Tags."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML Injektion"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML-Code, der direkt vor dem schließenden Body-Tag eingefügt werden soll."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Themen herunterladen"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Administrationsbereich"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Strategie-Konfiguration"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Diese Strategie hat keine Konfigurationsoptionen, die geändert werden können."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registrierung"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Selbstregistrierung zulassen"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Jede:r durch diese Strategie autorisierte Benutzer:in darf auf das Wiki zugreifen."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Beschränkung auf bestimmte E-Mail-Domains"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Eine Liste der Domains, die zur Registrierung berechtigt sind. Die E-Mail-Adresse des Benutzers muss mit einer dieser Adressen übereinstimmen, um Zugriff zu erhalten."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Der Gruppe zuweisen"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Automatisches zuweisen von neuen Benutzer:innen zu diesen Gruppen."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Sicherheit"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Erzwingen, dass alle Benutzer:innen die Zwei-Faktor-Authentifizierung (2FA) aktivieren."
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Benutzer:innen müssen die 2FA bei der ersten Anmeldung einrichten und können diese nicht deaktivieren."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Konfigurationsreferenz"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Einige Methoden können erfordern, dass bestimmte Konfigurationswerte bei deinem Provider gesetzt werden. Diese sind nur als Referenz vorgesehen und werden von der aktuellen Methode möglicherweise nicht benötigt."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Du musst zuerst eine gültige {{siteUrl}} setzen! Klicke auf {{general}} in der linken Seitenleiste."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Zulässige Web Origins"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback-URL / Redirect-URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Login-URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Logout-URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token-Endpunkt-Authentifizierungsmethode"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Startseite"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Neue Seite"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Aktuelle Seite"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Ansicht"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Bearbeiten"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Verlauf"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Quellcode anzeigen"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Verschieben / Umbenennen"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Löschen"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Assets"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Bilder & Dateien"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Suche..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administration"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Konto"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Mein Wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Abmelden"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Anmelden"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Zuletzt bearbeitet von"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Unveröffentlicht"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Seite bearbeiten"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Inhaltsverzeichnis"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Lesezeichen"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Teilen"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Druckformat"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Schließen"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Seite"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Backup- und Synchronisierungsziele für den Inhalt festlegen"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Ziele"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Status"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Letzte Synchronisation {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Der letzte Versuch war {{time}}."
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Fehlermeldung"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Es existiert kein aktives Speicherziel."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Zielkonfiguration"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Dieses Speicherziel hat keine Konfigurationsoptionen, die angepasst werden können."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Synchronisationsrichtung"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Wähle, wie die Inhaltssynchronisierung für dieses Speicherziel durchgeführt wird."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Bidirektional"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Zum Ziel hochladen"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Vom Ziel herunterladen"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Nicht unterstützt"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Im bidirektionalen Modus wird der Inhalt zunächst aus dem Speicherziel gezogen. Jeder neuere Inhalt überschreibt lokale Inhalte. Neuer Inhalt seit der letzten Synchronisierung wird dann auf das Speicherziel übertragen und überschreibt alle Inhalte auf dem Ziel, falls vorhanden."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Inhalte werden immer auf das Speicherziel kopiert, alle vorhandenen Inhalte werden überschreiben. Dies ist die sicherste Wahl für Backup-Szenarien."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Der Inhalt wird immer vom Speicherziel abgerufen und überschreibt den bereits vorhandenen lokalen Inhalt. Diese Auswahl ist normalerweise für den Import von Inhalten zur einmaligen Verwendung reserviert. Vorsicht bei dieser Option, da lokale Inhalte immer überschrieben werden!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Synchronisierungszeitplan"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Aus Performance-Gründen synchronisiert dieses Speicherziel Änderungen nicht bei jeder Änderung, sondern nach einem intervallbasierten Zeitplan. Lege fest, in welchem Intervall die Synchronisation stattfinden soll."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Derzeit gesetzt auf alle {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Der Standard ist alle {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Aktionen"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Ausführen"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Die Suchfunktionen des Wikis konfigurieren"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Index neu aufbauen"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Suchmaschine"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Engine-Konfiguration"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Diese Engine hat keine Konfigurationsoptionen, die verändert werden können."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Die Liste der Suchmaschinen wurde aktualisiert."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Suchmaschinenkonfiguration erfolgreich gespeichert."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Index erfolgreich neu aufgebaut."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Es ist ein unerwarteter Fehler aufgetreten."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Seiten"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Benutzer"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Gruppen"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Sie verwenden die neueste Version."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Eine neue Version ist verfügbar: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js ist ein kostenloses Open-Source-Projekt. Es gibt mehrere Möglichkeiten, zum Projekt beizutragen."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Wir brauchen deine Hilfe!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Erfahre mehr"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Die Liste der Strategien wurde aktualisiert."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Authentifizierungskonfiguration erfolgreich gespeichert."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Allgemeines"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Seiten-URL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Vollständige URL zum Wiki, ohne den abschließenden Schrägstrich. (z.B. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Titel der Website"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Wird in der oberen Leiste angezeigt und an den Meta-Titel aller Seiten angehängt."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Logo hochladen"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Leeren"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Für beste Ergebnisse wird ein Bild mit {{size}} Pixeln empfohlen."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Nur {{typeList}} oder {{lastType}} Dateien"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Fußzeile Copyright"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Name des Unternehmens / der Organisation"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Name, der bei der Anzeige des Copyright-Vermerks in der Fußzeile verwendet werden soll. Lassen Sie das Feld leer, um es auszublenden."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Seitenbeschreibung"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Standardbeschreibung, wenn für eine Seite keine angegeben ist."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Standard: Index, Follow. Kann auch auf Seitenbasis eingestellt werden."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Geben Sie mindestens 2 Zeichen ein, um mit der Suche zu beginnen…"
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Suchen..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Keine Seiten, die der Suchanfrage entsprechen."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Es wurde(n) {{total}} Ergebnis(se) gefunden"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Meintest du..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Schließen"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Suchlink kopieren"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Sehr schwach"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Schwach"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Durchschnittlich"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Stark"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Sehr stark"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Seite löschen"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Soll die Seite {{title}} gelöscht werden?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Die Seite kann im Administrationsbereich wiederhergestellt werden."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Benutzer suchen"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Benutzer suchen ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Alle"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minute(n)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Stunde(n)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Tag(e)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Monat(e)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Jahr(e)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Seiteneigenschaften"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Seiteninformation"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Titel"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Kurzbeschreibung"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Wird unter dem Titel angezeigt"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Pfad & Kategorisierung"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Lokalisierung"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Pfad"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Füge keine führenden oder nachfolgenden Schrägstriche ein."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Schlagwörter"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Verwende Schlagwörter, um Seiten zu kategorisieren und leichter zu finden."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Veröffentlichungsstatus"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Veröffentlicht"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Unveröffentlichte Seiten sind weiterhin sichtbar für Benutzer, die über Schreibberechtigungen für diese Seite verfügen."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Veröffentlichen ab ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Leer lassen für kein Startdatum"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Ende der Veröffentlichung am ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Leer lassen für kein Enddatum"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Nicht gespeicherte Änderungen verwerfen?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Es gibt ungesicherte Änderungen. Soll der Editor geschlossen werden? Alle ungesicherten Änderungen gehen verloren."
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Änderungen verwerfen"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Welcher Editor soll für diese Seite verwendet werden?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Dies kann nach dem Anlegen der Seite nicht mehr geändert werden."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Dateien"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Neuer Ordner"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Ordnername"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Es muss den Datei-Ordner {{namingRules}} gefolgt werden."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "Namensregeln"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Verschieben"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Umbenennen"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimieren"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Vorschau"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Eigenschaften"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Dieser Ordner ist leer"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} Datei(en)"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Einfügen"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Dateiname"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Typ"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Dateigröße"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Hinzugefügt"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Aktionen"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Datei(en) hochladen"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Dateien durchsuchen oder hier ablegen ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Externes Bild abrufen"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Bildausrichtung"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Datei umbenennen"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Geben Sie den neuen Namen für diese Datei ein:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Datei löschen"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Soll diese Datei gelöscht werden?"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Diese Aktion kann nicht rückgängig gemacht werden!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Liste der Dateien wurde erfolgreich aktualisiert."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Datei-Upload fehlgeschlagen."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Datei-Ordner erfolgreich erstellt."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Datei erfolgreich umbenannt."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Datei erfolgreich gelöscht"
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Es muss eine Datei zum hochladen ausgewählt sein."
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Holen"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Zurück zum Editor"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Fett"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Kursiv"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Durchgestrichen"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Überschrift {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Tiefgestellt"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Hochgestellt"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockzitat"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Info Blockzitat"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Erfolg Blockzitat"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Warnung Blockzitat"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Fehler Blockzitat"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Ungeordnete Liste"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Geordnete Liste"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Eingebetteter Code"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Tastaturtaste"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horizontale Linie"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Vorschaufenster ein- / ausblenden"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Link einfügen"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Datei(en) einfügen"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Blockzitat einfügen"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Codeblock einfügen"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Video / Audio einfügen"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Diagramm einfügen"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Einfügen eines mathematischen Ausdrucks"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Tabellenhelfer"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Ablenkungsfreier Modus"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown-Formatierungshilfe"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Quelltext der Seite {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Zurück zur normalen Ansicht"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Sprache"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analytics"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Analyse- und Tracking-Tools zum Wiki hinzufügen"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Anbieter"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Anbieter-Konfiguration"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Dieser Anbieter verfügt über keine Konfigurationsoptionen, die angepasst werden können."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Liste der Anbieter erfolgreich aktualisiert."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Die Analytics-Konfiguration wurde erfolgreich gespeichert"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Wartung und verschiedene Werkzeuge"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Werkzeuge"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Authentifizierung"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Werkzeuge für Authentifizierung / Benutzer"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Cache leeren"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Cache verschiedener Komponenten leeren"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL-Endpunkt"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Ändern des GraphQL-Endpunktes für Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Importieren aus Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migrieren von Daten aus einer vorherigen 1.x-Installation"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetrie"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Aktivieren / Deaktivieren der Telemetrie oder Zurücksetzen der Client-ID"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Kommentare"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Veröffentlicht"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privat"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Seite wird geladen…"
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Code"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Muttersprachlicher Name"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "Rechts-nach-links"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Verfügbarkeit"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Herunterladen"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Inhalt"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Werkzeuge für Seiten"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Icon Satz"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Satz von Icons, die für die Seitenleistennavigation verwendet werden sollen."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Dieser Browser ist veraltet. Aktualisiere auf einen {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "modernen Browser"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Autor"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Herunterladen"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Wenn Styles für Seiteninhalte hinzugefügt werden, muss diese auf die {{cssClass}} Klasse eingrenzt werden. Andernfalls könnte das Layout des Editors beschädigt werden!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "VORSICHT:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Theme Optionen"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktiv"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Inaktiv"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Verifiziert"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Unverifiziert"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Benutzer bearbeiten"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Grundlegende Informationen"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "E-Mail"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Anzeigename"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Authentifizierung"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Anbieter"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Passwort"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Passwort ändern"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Neues Passwort"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Zwei-Faktor-Authentifizierung (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "2FA umschalten"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Anbieter ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Benutzergruppen"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Der Nutzer ist noch keiner Gruppe zugewiesen. Es muss mindestens eine Gruppe zugewiesen werden."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Gruppe wählen …"
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Zuweisen"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Erweiterte Metadaten"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Ort"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Job Titel"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Zeitzone"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Benutzer erfolgreich aktualisiert."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Benutzer ist bereits Mitglied dieser Gruppe!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Dieses Speicherziel ist {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "aktiv"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "inaktiv"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Du musst dieses Speicherziel aktivieren und die Änderungen anwenden, bevor Aktionen ausgeführt werden können."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Neues Passwort wählen"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Wähle ein neues Passwort:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Neues Passwort"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Neues Passwort bestätigen"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Passwort ändern"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Ändere Passwort …"
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Letzte Seiten"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Beliebteste Seiten"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Info"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Terminierung"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Social"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Kategorisierung"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Soziale Funktionen"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Kommentare erlauben"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Aktiviere die Kommentarfunktion auf dieser Seite."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Bewertungen erlauben"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Autoreninformationen anzeigen"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Teilen-Symbolleiste anzeigen"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Zeige eine Symbolleiste mit Schaltflächen zum Teilen und Drucken dieser Seite an."
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Zeige den Autor der Seite zusammen mit dem Zeitpunkt der letzten Bearbeitung an."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Bewertungsfunktion auf dieser Seite aktivieren."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "Erstelle eine benutzerdefinierte Ansicht:"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Nach Schlagwörtern filtern"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Seitenverzeichnis"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Seitenaktionen"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Aktuelle Auswahl"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Auswahl aufheben"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Wählen Sie einen oder mehrere Tags aus"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Suche in den Ergebnissen..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Lokalisierung"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Sortieren nach"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Wählen Sie einen oder mehrere Tags auf der linken Seite aus."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Seitenergebnisse werden abgerufen ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Es konnte keine Seite mit den ausgewählten Tags gefunden werden."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Es konnte keine Seite gefunden werden, die den aktuellen Filteroptionen entspricht."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Zuletzt aktualisiert {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Erstellungsdatum"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Zuletzt geändert"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Pfad"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Titel"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Alle"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Werde Sponsor über GitHub Sponsors (wird direkt zum Erreichen des Ziels des leitenden Entwicklers Nicolas Giard verwendet, Vollzeit an Wiki.js zu arbeiten)."
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Werde ein Sponsor"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Schlagwörter"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Verwalten der SSL-Konfiguration"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Anbieter"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Wählen Sie Benutzerdefiniertes Zertifikat, wenn Sie bereits ein eigenes Zertifikat besitzen."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domain"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Geben Sie die vollqualifizierte Domain (FQDN) ein, die auf Ihr Wiki zeigt. (z.B. wiki.beispiel.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Anbieter-Optionen"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Deaktiviert"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Benutzerdefiniertes Zertifikat"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Ports"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP-Port"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Nicht-SSL-Port, auf welchem der Server auf HTTP-Anfragen wartet. Normalerweise 80 oder 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS-Port"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL-Port, auf welchem der Server auf HTTPS-Anfragen wartet. Normalerweise 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP-Anforderungen an HTTPS umleiten"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Leitet alle Anfragen auf dem HTTP-Port automatisch an HTTPS weiter."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Die Konfigurationsdatei muss beschreibbar sein, damit die Konfiguration der Ports erhalten bleibt."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logo URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Wähle ein Bild, welches als Logo verwendet werden soll. SVG, PNG, JPG werden unterstützt, in einem quadratischen Seitenverhältnis, 34x34 Pixel oder größer. Klicke auf die Schaltfläche rechts, um ein neues Bild hochzuladen."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Benutzer löschen?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Soll der Benutzer {{username}} gelöscht werden?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Benutzer aktualisieren"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Beachte, dass hier keine Benutzer den Gruppen \"Administratoren\" oder \"Gäste\" zugewiesen werden können."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Ein Benutzer, der bereits Inhalte erstellt hat, kann nicht gelöscht werden. Entweder den Benutzer deaktivieren oder alle Inhalte, die von diesem Benutzer erstellt wurden, löschen."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Skripte"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS wird beim Speichern automatisch verkleinert. Fügen Sie keine einschließenden Style-Tags ein, sondern nur den eigentlichen CSS-Code."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Für alle sichtbar"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Sichtbar für ausgewählte Gruppen..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Seite auswählen..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigationsmodus"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Seiten-Baumanzeige"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Klassische Baumnavigation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Benutzerdefinierte Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Statisches Navigationsmenü + Seiten-Baumanzeige Button"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Keine"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Seitennavigation deaktivieren"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Benutzer wurde erfolgreich verifiziert."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Benutzer wurde erfolgreich aktiviert."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Benutzer erfolgreich deaktiviert."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Der Text muss zuerst ausgewählt werden!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Zertifikat erneuern"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Zertifikat-Status"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Ablauf des Zertifikats"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Abonnenten-Email"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Aktueller Status"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Einschalten"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Ausschalten"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Zertifikat wird erneuert …"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Verlassen Sie diese Seite nicht."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Zertifikat erfolgreich erneuert."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP-Umleitung erfolgreich geändert."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Seiten-Tags verwalten"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Keine Tags zum Anzeigen."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Tag bearbeiten"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tag"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Label"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Erstellt {{created}} und zuletzt aktualisiert {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Dieses Tag löschen"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Wähle einen Tag aus der Liste links aus."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Füge einen Tag zu einer Seite hinzu, um zu beginnen."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tags wurden aktualisiert."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Tag erfolgreich gelöscht."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tag wurde erfolgreich gespeichert."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filter..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Verknüpfte Seiten anzeigen"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Tag löschen?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Soll das Tag {{tag}} wirklich gelöscht? Das Tag wird auch von allen Seiten entfernt."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Schlüssel für den API-Zugriff verwalten"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API aktiviert"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API deaktiviert"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API aktivieren"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API deaktivieren"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Neuer API-Schlüssel"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Schlüssel-Ende"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Ablauf"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Erstellt"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Zuletzt aktualisiert"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Widerrufen"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Es wurden noch keine API-Schlüssel generiert."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API-Schlüssel widerrufen?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Soll der Schlüssel {{name}} wirklich widerrufen werden? Diese Aktion kann nicht rückgängig gemacht werden!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Widerrufen"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Liste der API-Schlüssel wurde aktualisiert."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Der Schlüssel wurde erfolgreich widerrufen."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Neuer API-Schlüssel"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API-Schlüssel erfolgreich erstellt."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Name fehlt oder ist ungültig."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Es muss eine Gruppe ausgewählt sein."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Die Gästegruppe kann nicht für API-Schlüssel verwendet werden."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Zweck dieses Schlüssels"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Ablauf"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Sie können einen Schlüssel unabhängig vom Ablaufdatum jederzeit widerrufen."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Berechtigungsbereiche"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Voller Zugriff"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "oder Gruppenberechtigungen verwenden..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generieren"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Gruppe"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Der API-Schlüssel hat die gleichen Berechtigungen wie die ausgewählte Gruppe."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 Tage"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 Tage"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 Tage"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 Jahr"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 Jahre"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Kopieren Sie den unten gezeigten Schlüssel als {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "es wird NICHT noch einmal angezeigt werden"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API wurde erfolgreich aktiviert."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API wurde erfolgreich deaktiviert."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Gespeichert"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Keine"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Creative Commons Lizenz (Namensnennung)"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Lizenz (Namensnennung – Weitergabe unter gleichen Bedingungen)"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Lizenz (Namensnennung – keine Bearbeitung)"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Lizenz (Namensnennung – nicht kommerziell)"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Lizenz (Namensnennung – nicht kommerziell – Weitergabe unter gleichen Bedingungen)"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Lizenz (Namensnennung – nicht kommerziell – keine Bearbeitung)"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Public Domain"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Alle Rechte vorbehalten"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Inhaltslizenz"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Lizenz, die in der Fußzeile aller Inhaltsseiten angezeigt wird."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Der Inhalt ist unter der {{license}} von {{company}} verfügbar."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Du darfst den Seiteninhalt nicht herunterladen."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Du darfst den Inhalt dieser Seitenversion nicht herunterladen."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Du darfst den Quellcode dieser Seitenversion nicht betrachten."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Betrachte Quellcode vom {{date}} der Seite {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Versions-ID {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Seitenversion wiederherstellen?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Soll der Seiteninhalt vom {{date}} wiederhergestellt werden? Diese Version wird an die erste Stelle der Versionshistorie kopiert. Neuere Versionen bleiben in der Historie erhalten."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Wiederherstellen"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Seitenversion erfolgreich wiederhergestellt!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} Zeichen, {{words}} Wörter"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Konflikt beim Speichern auflösen"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Lokal verwenden"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Remote verwenden"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Verwerfen lokaler Änderungen und Verwenden der neuesten Version"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Inhalt im linken Bereich verwenden"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Neueste Version anzeigen"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Eine neuere Version dieser Seite wurde von {{authorName}}, {{date}} gespeichert"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Was möchtest du tun?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Verwende die aktuellste lokale Version und ignoriere die neuesten Änderungen."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Verwenden der Remote-Version (neueste) und Verwerfen deiner Änderungen."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Mit Remote-Version überschreiben?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Soll Ihre aktuelle Version durch den neuesten Remote-Inhalt ersetzt werden? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Deine aktuellen Änderungen gehen verloren."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Bestätigen"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Lokale Version {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(editierbar)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(schreibgeschützt)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Remote-Version {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Deine aktuelle Bearbeitung, basierend auf der Seitenversion von {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Zuletzt bearbeitet von {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Titel:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Beschreibung:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Es gibt nicht gespeicherte Änderungen. Soll der Editor wirklich geschlossen werden?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Konflikt beim Speichern! Ein anderer Benutzer hat diese Seite bereits geändert."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplizieren"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Anzeigename"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Ort"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Job Titel"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Zeitzone"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Meine persönlichen Informationen"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Meine Informationen"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Öffentliches Profil anzeigen"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Authentifizierung"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Anbieter"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Passwort ändern"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Aktuelles Passwort"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Neues Passwort"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Neues Passwort bestätigen"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Gruppen"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktivität"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Beitritt am"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profil zuletzt aktualisiert am"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Letzte Anmeldung am"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Seiten erstellt"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Kommentare veröffentlicht"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profil erfolgreich gespeichert."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Passwort erfolgreich geändert."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Seiten"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Kommentare"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Liste der Seiten, die ich erstellt oder zuletzt geändert habe"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Keine Seiten zum Anzeigen."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Seitenliste wurde aktualisiert."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Titel"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Pfad"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Erstellt"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Zuletzt aktualisiert"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Letzte Anmeldungen"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Durchsuchen"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Hauptmenü"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Aktuelles Verzeichnis"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(root)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Kopiere von Lokalisierung..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Ursprungs-Lokalisierung"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Die Lokalisierung, aus welcher Navigationselemente kopiert werden."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Kopieren"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Wähle die Lokalisierung aus, von der Elemente kopiert werden sollen. Elemente werden an die aktuelle Liste der Elemente in der aktiven Lokalisierung angehängt."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Statische Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Nur statisches Navigationsmenü"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Einstellungen"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Datumsformat"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Standard-Lokalisierung"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Aussehen"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Seiten-Standard"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Hell"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Dunkel"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL-Zertifikat überprüfen"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Bei einigen Hosts muss die Überprüfung des SSL-Zertifikats deaktiviert sein. Lassen Sie diese Option für ordnungsgemäße Sicherheit aktiviert."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Externer Link (neues Fenster)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Sicherheit"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Max. Upload-Größe"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Max. Dateien pro Upload"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Wie viele Dateien können in einem Durchgang hochgeladen werden?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Die maximale Größe für eine einzelne Datei."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "Bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "Dateien"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Uploads"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Diese Einstellungen betreffen nur Wiki.js. Wenn Sie einen Reverse-Proxy (z.B. nginx, apache, Cloudflare) verwenden, müssen Sie auch dessen Einstellungen entsprechend ändern."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Konfigurieren von Sicherheitseinstellungen"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Erweiterungen"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Erweiterungen für zusätzliche Funktionen installieren"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Anbieter"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Füge Diskussionen zu deinen Wiki Seiten hinzu"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Anbieter-Konfiguration"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Dieser Anbieter verfügt über keine Konfigurationsoptionen, die angepasst werden können."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Alle Inhalte (Seiten, Uploads, Kommentare usw.), die von diesem Benutzer erstellt wurden, werden dem unten ausgewählten Benutzer zugeordnet. Es wird empfohlen, einen Dummy-Zielbenutzer (z.B. „Gelöschter Benutzer“) zu erstellen, wenn der Inhalt keinem aktuell aktiven Benutzer zugeordnet werden soll."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Strategien"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Strategie hinzufügen"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stile"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Der Javascript-Code muss in HTML-Skript-Tags eingeschlossen werden."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Diese Seite ist nicht veröffentlicht."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Kommentare"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Neuen Kommentar schreiben..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Dein Name"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Deine E-Mail-Adresse"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown-Format"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Lade Kommentare..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Kommentiere als {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Verfasse den ersten Kommentar."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Noch keine Kommentare."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Kommentar aktualisieren"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Löschen bestätigen"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Soll dieser Kommentar wirklich endgültig gelöscht werden?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Diese Aktion kann nicht rückgängig gemacht werden!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "geändert {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Neuer Kommentar erfolgreich gepostet."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Kommentar ist leer oder zu kurz!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Kommentar wurde erfolgreich aktualisiert."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Kommentar wurde erfolgreich gelöscht."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Rechtschreibprüfung umschalten"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Anmeldung"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Anmeldebildschirm"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT-Konfiguration"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Anmeldebildschirm umgehen"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Benutzer wird automatisch zum ersten Authentifizierungsanbieter umgeleitet."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Login Hintergrundbild URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Gib an, welches Bild als Login-Hintergrund verwendet werden soll. PNG und JPG werden unterstützt, 1920×1080 px empfohlen. Lass das Feld für die Voreinstellung leer. Klicke auf die Schaltfläche rechts, um ein neues Bild hochzuladen. Beachte, dass die Gruppe \"Gäste\" Lesezugriff auf das ausgewählte Bild haben muss!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Lokalen Authentifizierungsanbieter ausblenden"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Lokalen Authentifizierungsanbieter nicht auf dem Anmeldebildschirm anzeigen. Füge \"?all\" zur URL hinzu, um ihn vorübergehend zu verwenden."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Sicherheit"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA erzwingen"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Erzwinge alle Benutzer die 2FA-Authentifizierung zu verwenden, wenn ein Authentifizierungsanbieter mit einem Benutzer- / Kennwortformular verwendet wird."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Diskussion ansehen"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Neuer Kommentar"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Inhalt kommentieren"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Kommentieren"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Schlagwörter"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Seiten mit übereinstimmenden Tags"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Zurück nach oben"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Benutzername"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Verlassen"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Konfiguriere die Pipeline für die Seitendarstellung"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Seitentitel enthält ungültige Zeichen."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Konfiguration erfolgreich gespeichert."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA wurde erfolgreich deaktiviert."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA wurde erfolgreich aktiviert."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Kennwortzurücksetzung wird angefordert."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Überprüfe deine E-Mails auf Anweisungen zum Zurücksetzen des Passworts!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktiv"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Können Benutzer sich mit dieser Methode anmelden?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Angezeigter Name"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Der Titel, der dem Endbenutzer für diese Authentifizierungsstrategie angezeigt wird."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Authentifizierungsanbieter auswählen"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Gib deine Anmeldedaten ein"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Passwort vergessen"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Gib den von deinem vertrauenswürdigen Gerät generierten Sicherheitscode ein:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Ein Administrator hat die Zwei-Faktor-Authentifizierung (2FA) für dein Konto aktiviert."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Scanne den untenstehenden QR-Code aus Ihrer mobilen 2FA-Anwendung:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Gebe den von einem vertrauenswürdigen Gerät generierten Sicherheitscode ein:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Auswählen"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Neuen Seitenpfad auswählen"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Seite verschieben / umbenennen"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Seite auswählen"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtuelle Ordner"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Seiten"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Dieser Order ist leer."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Konvertieren"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Seite konvertieren"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Wähle den Editor, den du zukünftig für die Seite {{title}} verwenden möchten:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Der Inhalt dieser Seite wird in das Format des ausgewählten Editors konvertiert. Bitte beachten Sie, dass einige Formatierungsoptionen und nicht-gerenderte Inhalte eventuell bei der Konvertierung verloren gehen könnten. Die aktuelle Version wird im Seitenverlauf gespeichert und kann jederzeit wiederhergestellt werden."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Konvertieren"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administration"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Auf Festplatte exportieren"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Inhalte für Sicherung / Migration als tarball speichern"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Inhaltsverzeichnis"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Inhaltsverzeichnis"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Site-Standardwerte verwenden"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Inhaltsverzeichnis-Überschrift-ebenen"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Das Inhaltsverzeichnis zeigt Überschriften von und bis zu den ausgewählten Ebenen."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Standard Inhaltsverzeichnis Überschriftenebenen"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Das Inhaltsverzeichnis zeigt standardmäßig Überschriften von und bis zu den ausgewählten Ebenen."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Client identifizierender Hostname"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Ein optionaler Name, der an den SMTP-Server gesendet wird, um Ihren Mailer zu identifizieren. Leer lassen, um den Server-Hostnamen zu verwenden. Für Google Workspace-Kunden sollte dies Ihr Hauptdomainname sein."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Seitenerweiterungen"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Eine durch Kommas getrennte Liste von URL-Erweiterungen, die als Seiten behandelt werden. Wenn Sie beispielsweise md hinzufügen, wird /foobar.md genauso behandelt wie /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Button Seitenname"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Der Name der externen Website, die auf der Bearbeiten-Button angezeigt werden soll. Das Präfix \"bearbeiten\" darf nicht enthalten sein."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Button Icon"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Symbol, welches auf dem Bearbeiten-Button angezeigt werden soll. Zum Beispiel: mdi-github, um das GitHub-Symbol anzuzeigen."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Button URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Externe Repository URL zu dieser Seite. Benutzte den {filename} Platzhalter an der Stelle an welcher der Dateiname eingesetzt werden soll. (z. B. https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Verknüpfungen bearbeiten"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Schnellaktionsbuttonmenü bearbeiten"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Schnellaktionsbutton mit Schnellauswahlmenü im unteren rechten Bildschirmeck anzeigen."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Bearbeiten Menüleiste"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Bearbeiten Menüleiste anzeigen"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Bearbeiten Menüleiste in der Seitenüberschrift anzeigen"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Bearbeiten Button anzeigen"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Button zum Bearbeiten der aktuellen Seite anzeigen"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Externen Bearbeiten Button anzeigen"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Button anzeigen, welcher auf ein externes Repository (z. B. GitHub) verweist, wo Benutzer einen PR für die aktuelle Seite bearbeiten oder einreichen können."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Auf {{name}} bearbeiten"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Kommentar-Einstellungen wurden erfolgreich gespeichert"
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Fußzeilentext überschreiben"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Überschreiben Sie optional den Fußzeilentext mit einer benutzerdefinierten Nachricht. Nützlich, wenn keine der oben genannten Lizenzen geeignet ist."
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Bygga med"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Innlogging naudsynt"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "E-post / brukarnamn"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Passord"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Logg på"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Ugyldig innlogging"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "E-postadressa eller passordet er ikkje gyldig."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "E-postadressa er ikkje gyldig"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Innloggingsfeil"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Du har ikkje lov å logge inn på denne sida enda."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Du har prøvd for monge gonger!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Du har gjort for mange mislykka forsøk på kort tid, prøv igjen {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Brukaren blei ikkje funne"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Språk"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft-konto"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Microsoft Entra ID-konto (Tidlegare Azure Active Directory)"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google-konto"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook-konto"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub-konto"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack-konto"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "To-faktor autentisering (2FA)"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Tryggleikskode krevd:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Verifiser"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Dashbord"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Generelt"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Språk"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistikk"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Utsjånad"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grupper"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Brukarar"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autentisering"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logging"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Gjengivelse"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Motor for å leite"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Lagring"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API-tilgang"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Systeminformasjon"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Reiskap"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Utviklarreiskap"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Bidra til Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Hovudinnstillingar for wikien din"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Info om nettstaden"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Merke på nettstaden"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Nettstaden"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Brukarar"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Modular"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "System"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Sett språkalternativ for wikien din"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Språkinnstillingar"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Fleirspråklege område"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Last ned språk"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Hovudspråk"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Alle brukargrensesnitt-tekst-element vil bli vist på valt språk."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Oppdater automatisk"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Last ned oppdateringar til alle språk som er aktiverte nedanfor automatisk."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Fleirspråklege område"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Gjer det mogleg med fleire språkversjonar av same side."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktive språk"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Liste over språk som er aktivert for fleirspråklege sidar. Hovudspråket som er definert over vil alltid verte inkludert uavhengig av dette valet."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Språket som vil verte lagt til foran alle stiar. (t.d. /{{langCode}}/side-namn)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Brødsmulestiar utan eit språk vil automatisk bli omdirigert til grunnspråket definert over."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Lagre"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Avbryt"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Last ned"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Last opp"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Kast"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Tøm"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Skap"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Rediger"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Slett"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Oppdater"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Lagre endringar"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Fortsett"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Språk"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Last ned oppdateringar til dette språket automatisk når dei vert tilgjengelege."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informasjon om systemet ditt"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Vertsinformasjon"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Noverande versjon"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Siste versjon"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Publisert"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operativsystem"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Vertsnamn"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU-kjernar"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Totalt RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Arbeidsmappe"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Konfigurasjonsfil"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAM-bruk: {{used}}/{{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Hjelp til med å støtte utviklinga og drifta av Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Finansier arbeidet vårt"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Sprei ordet"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Snakk med vener og kollegaene dine om kor fantastisk Wiki.js er!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Følg oss på {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Send inn ein ide eller stem på ein foreslått ein på {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "forslagstavla"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Fann du ein feil? Send inn eit problem på {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Hjelp til med å omsetje Wiki.js til ditt språk. Lat oss vite på {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Gi ein donasjon"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Bidra"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js er også ein del av Open Collective-initiativet, eit transparent fond som jobbar for communityressursar. Du kan bidra økonomisk ved å gjere eit månadleg eller eit engangsbidrag:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Vi treng hjelpa di for å halde fram med å forbetre programvaren og drive dei ulike tilknytta tenestene (t.d. hosting og nettverk)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js er ein gratis og open kjeldekode programvare som er gitt til deg med {{0}} av {{1}} og {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "bidragsytarar"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Side"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Eg jobbar"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "No må du vente medan eg arbeider..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Sida vart oppretta."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Ein feil oppstod medan me oppretta sida"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Du kan og kjøpe Wiki.js-t-sjorter for å støtte prosjektet:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js Butikk"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "{{year}} {{company}}. Alle rettar reserverte."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Denne sida finst ikkje."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Vil du skape denne sida no?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Skap sida"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Gå att ende"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Sider"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Hovudmeny"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Sett opp hovudmenyen"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Legg til"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Skilje"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Overskrift"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Merkelapp"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikon"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Type mål"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Mål"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Vel eit menyelement til venstre."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Utan tittel {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Ekstern lenke"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Heim"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Side"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Søkeførespurnad"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Rediger {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Slett {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Hovudmenyen vart lagra."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Vel Skap innhald-knappen for å leggja til ditt første element i hovudmenyen,"
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Hovudmenyen er sørgeleg tom"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Bruk innstillingane"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "E-post"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Stadfest passord"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Namn"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Registrer"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Skap ein konto"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Har du allereide ein konto? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Logg inn i staden"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Logg inn med {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Gløymt passord?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "eller logg inn med ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Har du ikkje ein konto enno? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Skap ein konto"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Du må skrive ei e-postadresse eller eit brukarnamn som er gyldig."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Du må skrive eit passord som er gyldig."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Innlogginga var velukka! No sender eg deg vidare..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Loggar deg på..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Det er ikkje moglet å logga det inn nett no. Kom att ende seinare."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Fyll ut skjemaet nedanfor for å opprette kontoen din."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "No må du vente medan eg jobbar"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Kontoen vart oppretta!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Opprettar konto..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Manglande e-postadresse."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "E-postadressa du skreiv er ikkje gyldig."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Du må vele eit passord."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Passordet er for kort."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Passorda er ikkje like."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Namnet manglar."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Namnet er for kort."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Namnet er for langt."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Avbryt"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Still att ende passord"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Skriv inn e-postadressa di for å motta instruksjonane for å stille att ende passordet ditt:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "E-post"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Konfigurer e-postinnstillingar"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Konfigurasjon"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (valfritt)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "No kan du sjekke e-posten din. Der finn du ei aktiveringslenke."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Sida vart oppdatert."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Uautorisert"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Du kan ikkje se denne sida."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Du kan ikkje se sidekjelda."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Du kan ikkje se sideloggen."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Du kan ikkje redigere sida."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Du kan ikkje opprette sida."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Gå att ende"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Heim"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Ikkje funne"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Denne sida finst ikkje."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Logg inn som..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Bli ein sponsor"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Bli ein støttespelar eller sponsor via Patreon (går direkte til å støtte hovudutviklar Nicolas Giard sitt mål om å arbeide fulltid med Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Velkommen til wikien din!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "La oss komme i gang og lage heimesida."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Opprett heimesida"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Flagg"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Gjer ein eingongs- eller gjentakande donasjon via Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Vi aksepterer donasjonar ved hjelp av Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Last inn språkpakke"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Om du ikkje er kopla til internett eller ikkje kan laste ned lokale filer ved å bruke metoden ovanfor, kan du i staden laste inn pakkar manuelt ved å laste dei opp nedanfor."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Bla..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Handter webhooks til eksterne tenester"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Send ein test-e-post"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Mottakar sin e-postadresse"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Send e-post"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Avsendar"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Avsendarnamn"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Avsendar e-post"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP-innstillingar"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Vert"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Vanlegvis 465 (anbefalt), 587 eller 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Sikkjer (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Skal vera aktivert når ein brukar port 465, elles slått av (587 eller 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Brukarnamn"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Passord"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) gir eit lag med tryggleik på alle e-postar sendt frå Wiki.js ved å gi mottakarane moglegheit til å validere domenenamnet og sikre meldingsautentisiteten."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Bruk DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domenenavn"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Nøkkelveljar"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Privat nøkkel"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Privat nøkkel for veljaren i PEM-format"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Send ein test-e-post for å forsikra deg om at SMTP-konfigurasjonen din fungerer."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Konfigurasjonen har vorte lagra."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Databasen din er ikkje fullt støtta. Nokre funksjonar kan vere begrensa eller ikkje fungere som forventa."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Systeminfo har verte oppdatert."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Konfigurer autentiseringsinnstillingane til wikien din"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Identitetstilbod"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Globale avanserte innstillingar"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT-plublikum"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "Tilhøyrande URN brukt i JWT utstedt ved innlogging. Vanlegvis domenenamnet ditt. (t.d. urn:ditt.domene.no)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Utløpsperiode"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Utløpsperioden for ein token til han må fornyast. (standard: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Tokenfornyingsperiode"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Den maksimale perioden ein token kan verte fornya når det har gått ut på dato. (standard: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Denne strategien er {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "aktivert"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "deaktivert"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "og kan ikkje deaktiverast."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Ein test-e-post vart sendt."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Endre utsjånad"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Utsjånad på denne nettstaden"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Tema påverkar korleis innhaldssider vert viste. Andre seksjonar på nettstaden (som redigeraren eller adminområdet) blir ikkje påverka."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Mørk modus"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Ikkje anbefalt for tilgjengelegheit. Kanskje ikkje støtta av alle tema."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Kodeinjeksjon"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS-overstyring"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS-kode som injiserast etter systemets standard CSS. Vurder å bruke tilpassa tema om du har ein stor mengde CSS-kode. Å injisere for mykje CSS-kode vil føre til dårleg sideinnlastingsytelse! CSS vil automatisk bli minifisert."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head-HTML-injeksjon"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML-kode som skal injiserast rett før den avsluttande head-tagen. Vanlegvis for script-tagar."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML-injeksjon"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML-kode som skal injiserast rett før den avsluttande body-taggen."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Last ned tema for utsjånad"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Administrasjon"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Konfigurer denne tilbyderen"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Denne tilbyderen har ingen konfigurasjonsalternativ du kan endre."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registrering"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Tillat sjølvregistrering"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Tillat at alle brukarar som er godkjende av strategien å få tilgang til wikien."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Begrens til spesifikke e-postdomene"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Ein liste over domene som er autoriserte til å registrere seg. Brukaren si e-postadresse sitt domene må samsvare med eitt av desse for å få registrert seg."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Tildel til gruppe"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Tildel automatisk nye brukarar til desse gruppene."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Tryggleik"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Tving alle brukarar til å bruke tofaktorautentisering (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Brukarar vil verte påkravd å setja opp 2FA første gong dei loggar inn og det kan ikkje bli deaktivert av brukaren."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Konfigurasjonsreferanse"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Nokre strategiar kan krevje at nokre konfigurasjonsverdiar blir sett hjå leverandøren din. Desse er gitt berre som døme og er ikkje naudsynt for den noverande strategien."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Du må setje ein gyldig {{siteUrl}} først! Klikk på {{general}} i venstre sidemeny."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Tillatte nettopphav"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL for tilbakekall"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL for å logge inn"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL for å logge ut"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token Endpoint Autentiseringsmetode"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Heim"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Ny side"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Noverande side"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Vis"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Rediger"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Historie"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Vis kjelda"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Flytt / gi nytt namn"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Slett"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Innhald"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Bilete og filer"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Leit..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administrasjon"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Konto"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Min wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Logg ut"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Logg inn"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Sist endra av"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Upublisert"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Rediger side"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Sideinnhald"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Bokmerke"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Del"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Format på utskrift"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Lukk"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Side"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Sett sikkerhetskopi og synkroniseringsmål for innhaldet ditt"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Tenester"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Status"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Siste synkronisering {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Siste forsøk var {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Feilmelding"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Du har ikkje nokre aktive eksterne lager."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Sett opp ekstern lagring"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Denne eksterne lagringa har ingen konfigurasjonsalternativ du kan endre."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Synkroniseringsretning"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Vel korleis innhaldssynkronisering blir handsama for denne eksterne lagringa."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Tovegs-modus"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Send til ekstern lagring"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Hent frå ekstern lagring"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Ikkje støtta"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "I tovegsmodus blir innhaldet først henta frå ekstern lagring. Alt nyare innhald overskriv lokalt innhald. Nytt innhald sidan siste synkronisering blir deretter dytta til lagringsmålet, og overskriv eventuelt innhald på målet om det er til stades."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Innhaldet blir alltid dytta til esktern lagring, og overskriv eventuelt eksisterande innhald. Dette er det tryggaste valet for sikkerhetskopi-scenario."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Innhaldet blir alltid henta frå ekstern lagring, og skriv over alt lokalt innhald som allereie eksisterer. Dette valet er vanlegvis reservert for import av innhald for engangsbruk. Ver forsiktig med dette alternativet, for alt lokalt innhald vil alltid bli overskrive!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Tidsplan for synkronisering"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Av ytelsesgrunnar synkroniserer dette lagringsmålet endringar på eit intervallbasert tidsplan, i staden for ved kvar endring. Definer ved kva intervall synkroniseringa skal skje."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Er for tida sett til kvar {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Standarden er kvar {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Handlingar"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Køyr"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Sett opp leitefunksjonar for wikien din"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Bygg indeks på nytt"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Leitemotor"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Konfigurer leitemotor"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Denne leitemotoren har ingen opsjonar du kan endra."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Liste over leitemotorar har verte lasta på nytt."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Innstillingane for leitemotor vart lagra."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "No kan du leite att."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Ein heilt unventa feil dukka opp."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Sider"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Brukarar"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grupper"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Du køyrer den siste versjonen."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Ein ny versjon er tilgjengeleg: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js er eit gratis og open kjeldekode-prosjekt. Det er fleire måtar du kan bidra til prosjektet på."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Vi treng hjelpa di!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Lær meir"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Lista over strategiar har vorte oppdatert."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Autentiseringskonfigurasjonen har vorte lagra."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Generelt"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Nettstads-URL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Fullstendig URL til wikien din, utan den siste skråstreken. (t.d. https://wiki.guri.ne)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Nettstadstittel"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Visast i toppbjelken og vert lagt til i alle sidene sin meta-tittel."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Merke"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Last opp merke"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Tøm"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Eit bilete på {{size}} pikslar gjev dei beste resultata."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Berre {{typeList}} eller {{lastType}} filar."
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Botntekst om opphavsrettar"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Selskap / organisasjonsnamn"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Namn å bruke når opphavsrettsmerknaden vises i botnteksten. Lat stå tomt for å skjule."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Sidebeskriving"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Standardbeskriving når ingen er gitt for ei side."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Metarobotar"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Standard: Indeks, Følj. Kan og settes per side."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Skriv inn minst to teikn for å leita..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Leitar..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Ikkje nokre sider som passar med søket ditt."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Fann {{total}} treff"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Meinte du..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Lukk"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Kopier søkjelenkje"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Ovleg vakt"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Svakt"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Middels"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Sterkt"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Ovleg sterkt"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Slett sida"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Er du heilt sikker på at du vil slette sida {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Sida kan gjenopprettjast frå admin-sida."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Leit etter brukar"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Leit etter brukarar..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Kvart"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minutt(ar)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Time/timar"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Dag(ar)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Månad(er)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "År"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Sideeigenskapar"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Sideinfo"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Tittel"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Kort beskriving"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Vist under tittelen"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Sti og kategorisering"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Språk"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Sti"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Ikke inkluder nokon leiande eller etterfølgjande skråstrek."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Merkelappar"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Bruk merkelappar for å kategorisere sidene dine og gjere dei enklare å finne."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Publiseringsstatus"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Publisert"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Upubliserte sider er framleis synlege for brukarar med skrivetilgang til denne sida."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publiser startar på..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Lat stå tom for ingen startdato"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publisering tek slutt på..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Lat stå tom for inga sluttdato"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Kasta uspara endringar?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Du har uspara endringar. Er du sikker på at du vil forlate redigeringsprogrammet og forkaste alle endringar du har gjort sidan siste sparing?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Forkast endringar"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Kva for ein redigerar vil du bruke for denne sida?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Dette kan ikkje endrast så snart sida er oppretta."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Innehaldselementer"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Ny mappe"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Mappenamn"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Må følgje eigedel-mappa {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "namnereglar"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Flytt"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Gi nytt namn"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimaliser"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Førehandsvising"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Eigenskapar"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Denne mappa er tom."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} filar"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Sett inn"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Filnamn"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Type"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Filstorleik"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Lagt til"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Handlingar"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Last opp innhald"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Bla gjennom eller slepp filer her..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Hent eit bilete frå ein annan plass"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Biletejustering"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Gi nytt namn til innhaldet"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Skriv inn det nye namnet for innhaldet:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Slett innhald"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Er du heilt sikker på at du vil slette innhaldet?"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Denne handlinga kan ikkje gjerast om!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Lista over innhald vart lasta på nytt."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Filopplasting mislykka."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Mappa vart oppetta."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Innhaldet fekk nytt namn."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Innhaldet vart sletta."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Du må velje ei fil å laste opp fyrst!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Hent"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Att ende til Editor"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Tjukk"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Kursiv"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Gjennomstreking"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Overskrift {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Senka skrift"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Heva skrift"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Utheva sitat"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Utheva boks for til dømes informasjon"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Utheva boks for til dømes suksess"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Utheva boks for til dømes advarslar"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Utheva boks for til dømes feil"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Ikkje-ordna liste"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Ordna liste"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Innebygga kodeblokk"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Tast"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horisontal linje"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Skjul/Vis førehandsvisningsrute"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Sett inn ei lenke"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Sett inn eit innholdselement"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Sett inn ein blokk"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Sett inn ein kodeblokk"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Sett inn ein video eller ein lyd"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Sett inn eit diagram"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Sett inn eit matematisk uttrykk"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Tabellhjelpar"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Forstyrringsfri modus"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Formateringshjelp for markdown "
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Ser på kjelda til sida {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Gå att ende til normalvisning"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Språk"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analyse"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Legg til eit analyse- og sporingsverktøy på wikien din"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Leverandørar"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Leverandørkonfigurasjon"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Leverandøren har inga konfigurasjonar du kan endre."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Liste over leverandørar vart oppdatert."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analytics-konfigurasjonen vart lagra"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Vedlikehald og diverse reiskap"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Reiskap"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Autentisering"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Ymse reiskap for autentisering / brukarar"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Tøm mellomlager"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Tøm mellomlageret til ulike komponentar"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL endepunkt"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Bytt GraphQL-endepunkt for wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Importer fra Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Flytt data fra ein tidlegare 1.x-installasjon"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetri"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Aktiver / deaktiver telemetri eller still tilbake klient-ID"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Kommentarar"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Publisert"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privat"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Laster inn sida..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Kode"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Namn"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Namn (lokalt)"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Tilgjenge"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Last ned"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Innhald"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Ymse verktøy for sider"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Ikonsett"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Sett med ikon for å bruke til sidemenynavigering."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Nettlesaren din er utdatert. Oppgrader til ein {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "moderne nettlesar"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Namn"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Forfattar"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Last ned"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Når du legg til stilar for sida, må du avgrense dei til {{cssClass}} klassen. Å utelate dette kan øydelegge layouten til redigeraren!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ÅTVARING:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Alternativ for utsjånad"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktiv"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Ikkje aktiv"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Stadfesta"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Ikkje stadfesta"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Rediger brukar"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Grunnleggjande info"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "E-post"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Namn som visast"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autentisering"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Leverandørar"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Passord"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Endre passord"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Nytt passord"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "To-faktor-autentisering (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Vis/Sjul 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Brukargrupper"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Denne brukaren er ikkje tildelt nokon gruppe enno. Du må tildele minst 1 gruppe til ein brukar."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Vel gruppe ..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Tildel"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Utvida metadata"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Stad"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Jobbtittel"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Tidssone"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Brukar vart lagra."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Brukar er allereie tildelt denne gruppa!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Lagringsmålet er {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "akriv"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "ikkje aktiv"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Aktiver lagringsmålet og aktiver endringar før du kan gjere handlingar."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Vel eit nytt passord"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Vel eit nytt passord:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Nytt passord"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Verifiser nytt passord"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Endre passord"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Endrar passord..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Nylige sider"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Mest populære sider"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Info"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Planlegging"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Sosiale funksjonar"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Kategorisering"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Sosiale funksjonar"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Tillat kommentarar"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Aktiver kommentarar på denne sida."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Tillat rangeringar"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Vis forfattarinfo"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Vis delingsverktøylinja"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Vis ei verktøylinje med knappar for å dele og skrive ut denne sida"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Vis forfattaren av sida saman med siste redigeringstid."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Aktiver rangeringsfunksjonar på denne sida."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "eller opprett ein tilpassa visning?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Bla etter merkelappar"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Nettstadskart"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Sidehandlingar"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Noverande utval"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Fjern utval"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Vel eitt eller fleire merke"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Søk i resultata .."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Språk"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Sorter etter"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Vel eitt eller fleire merke på venstre side."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Hentar sideresultat..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Kunne ikkje finne nokon side med dei valgte merkelappane."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Kunne ikkje finne nokon side som samsvarar med dei noverande filtreringsalternativa."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Sist oppdatert {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Opprettelsesdato"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Sis endra"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Sti"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Tittel"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Alle"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Vert ein sponsor via GitHub Sponsors (går direkte til å støtte hovudutviklar Nicolas Giard's mål om å jobbe fulltid på Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Vert ein sponsor"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Merker"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Handsam SSL-konfigurasjon"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Leverandør"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Vel eigedefinert sertifikat om du allereie har ditt eige sertifikat."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domene"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Skriv inn det fullt kvalifiserte domenet som peikar til wikien din. (t.d. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Leverandøralternativ"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Ikkje på"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Eigedefinert sertifikat"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Portar"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP-port"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Ikkje-SSL-port tjenaren vil lytte til for HTTP-førespurnader. Vanlegvis 80 eller 3000"
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS-port"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL-porten serveren vil lytte til for HTTPS-førespurnader. Vanlegvis 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Omdiriger HTTP-førespurnader til HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Vil automatisk omdirigere alle førespurnader på HTTP-porten til HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Merk at konfigurasjonsfila di må vera skrivbar for å lagre portkonfigurasjon."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logo URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Spesifiser eit bilete som skal brukast som logo. SVG, PNG, JPG er støtta, i eit kvadratisk forhold, 34x34 pikslar eller større. Klikk på knappen til høgre for å laste opp eit nytt bilete."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Slett brukar?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Er du heilt sikker på at du vil slette brukaren {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Oppdater brukar"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Merk at du ikkje kan tildele brukarar til Administrators- eller Guests-gruppene frå dette panelet."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Merk at du ikkje kan slette ein brukar som allereie har laga innhald. Du må i staden enten deaktivere brukaren eller slette alt innhald som vart laga av den brukaren."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Skript"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS vil automatisk bli minifisert ved lagring. Ikkje inkluder omkringliggande stil-taggjar, berre den faktiske CSS-koden."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Synleg for alle"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Synleg for valde grupper..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Vel side..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigasjonsmodus"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Sidetre"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Klassisk trebasert navigasjon"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Eige tilpassa navigasjonsmeny"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Statisk navigasjonsmeny + nettstadstreknapp"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Inga"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Deaktiver menyen"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Brukar vart stadfesta."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Brukar vart aktivert."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Brukar vart deaktivert."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Tekst må veljast først!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Forny sertifikat"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Sertifikatstatus"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Sertifikatutløp"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Abonnent-e-post"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Gjeldande tilstand"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Slå på"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Slå av"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Forny sertifikat ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Ikkje gå vekk frå denne sida."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Sertifikatet vart fornya"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP Redirect vart endra."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Handsam merker på denne sida"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Inga merker å syne fram."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Rediger merke"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Merke"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Merkelapp"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Oppretta {{created}} og sist oppdatert {{updated}}"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Slett merkelappen"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Vel ein merkelapp frå lista til venstre."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Legg til ein merkelapp på ei side for å komme i gang."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Merkelappane har vorte oppdatert."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Merkelappen vart sletta."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Merkelappen er lagra."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filter..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Vis kobla sider"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Vi ldu slette merkelappen?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Er du sikker på at du vil slette merkelappen {{tag}}? Merket vil også bli fråkopla alle sider."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Handter nøklar for å tilgang til API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API er slått på"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API er slått av"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Slå på APIet"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Skru av API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Ny API-nykel"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Namn"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Nykelen sluttar på"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Løp ut"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Oppretta"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Sist oppdatert"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Kall att ende"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Inga API-nykler har vorte skapt enno."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Kall API-nykelen att ende?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Er du sikker på at du vil kalle nyklen {{name}} att ende? Denne handlinga kan ikkje gjerast om!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Kall att ende"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Lista over API-nykler vart oppdatert."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Nykelen har vorte trukke tilbake."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Ny API-nykel"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API-nykel vart oppretta."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Namnet manglar eller er ugyldig."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Du må velje ei gruppe."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Gjestegruppa kan ikkje brukast med API-nøklar."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Føremål med denne nykelen"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Namn"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Utløp"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Du kan framleis kalla att ende ein nøkkel når som helst, ubunden av utløpsdatoen."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Tillatelsesomfang"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Full tilgang"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "eller bruk gruppetillatelser..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generere"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Gruppe"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API-nøkkelen vil ha dei same rettane som den valde gruppa."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 dagar"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 dagar"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 dagar"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 år"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 år"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Kopier nøkkelen som er vist nedanfor som {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "det vil IKKJE bli vist att"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API vart aktivert"
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API vart deaktivert"
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Lagra"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Inga"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": " Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs License"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Attribution-NonCommercial-NoDerivs License"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Offentleg domene"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Alle rettar reserverte."
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Innhaldslisens"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Lisens visast i botnteksten på alle sider med innhald."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Innhaldet er ikkje tilgjengeleg under {{license}}, frå {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Du kan ikkje laste ned innhaldet på denne sida."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Du kan ikkje laste ned innhaldet for denne sida av versjonen."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Du kan ikkje se kilda til denne versjonen av sida."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Ser på kjelda per  {{date}} på sida {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Versjons-ID {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Vil du gjenopprette versjonen?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Er du sikker på at du vil gjenopprette innhaldet på denne sida slik det var på {{date}}? Denne versjonen vil verte kopiert over den noverande historikken. Slik vil nyare versjonar framleis bli bevart."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Sett att ende"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Sideversjon gjenoppretta med suksess!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} teikn, {{words}} ord"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Løys lagringskonflikt"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Bruk lokal versjon"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Bruk fjernversjon"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Kast lokale endringar og bruk siste versjon"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Bruk innhaldet i venstre panel"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Sjå siste versjon"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Ein meir nyleg versjon av denne sida vart lagra av {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Kva vil du gjere?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Bruk din noverande lokale versjon og ignorér dei siste endringane."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Bruk fjernversjonen (siste) og forkast endringane dine."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Overstyr med fjernversjon?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Er du sikker på at du vil erstatte din noverande versjon med det siste fjerninnhaldet? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Dine noverandre endringar vil gå tapt."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Stadfest"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Lokal versjon {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(redigerbar)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(berre-lese)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Fjernversjon {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Din noverande versjon, basert på sideversjonen frå {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Sist endra av {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Tittel:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Skildring:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Du har ulagra endringar. Er du sikker på at du vil forlate redigeraren og hive vekk endringar du har skrivi inn?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Versjonskonflikt! Ein annan brukar har allereie endra denne sida."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Dupliser"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Visingsnamn"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Stad"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Stilling"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Tidssone"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Min personlege info"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Min info"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Sjå offentleg profil"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autentisering"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Tilbyder"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Bytt passord"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Noverandre passord"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Nytt passord"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Stadfest nytt passord"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grupper"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktivitet"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Vart med"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profilet har sist vorte oppdatert på"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Siste pålogging på"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Sider oppretta"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Kommentarar lagt ut"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profilet har vorte lagra."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Passordet har vorte endra."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Sider"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Kommentarar"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Liste over sider eg oppretta eller endra"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Inga sider å syne frem."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Sidelista har vorte oppdatert."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Tittel"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Sti"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Oppretta"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Sist oppdatert"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Siste påloggingar"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Bla gjennom"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Hovudmeny"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Noverande mappe"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(rot)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Kopier frå språk..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Kjeldespråk"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Språket som navigasjonselementa vil verte kopiert frå."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Kopier"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Vel språk som elementa skal kopierast frå. Elementa vil bli lagt til i den noverande lista over element i det aktive språket."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Statisk navigering"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Berre statisk navigasjonsmeny"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Innstillingar"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Datoformat"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Standard språk"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Utsjånad"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Wikiens standard"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Ljus"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Mørk"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Verifiser SSL-sertifikat"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Nokre vertar krev at SSL-sertifikatkontroll blir deaktivert. Lat vera aktivert for skikkeleg tryggleik."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Ekstern lenke (nytt vindauge)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Tryggleik"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Maks opplastingsstorleik"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Maks antall filer per opplasting"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Kor mange filer kan lastast opp i ein enkelt batch?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Maksimal storleik for ei enkelt fil."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "filer"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Opplastingar"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Desse innstillingane påverkar berre Wiki.js. Om du brukar ein revers-proxy (t.d. Nginx, apache, Cloudflare), må du òg endre innstillingane hans for å passe."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Konfigurer tryggleika i wikien din"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Utvidingar"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Installer utvidingar for ekstra funksjonalitet"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Tilbyder"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Ha diskusjonar på wikisidane dine"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Konfigurasjon"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Denne leverandøren har ingen konfigurasjonsalternativ du kan endre."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Alt innhald (sider, opplastingar, kommentarar, osb.) som vart laga av denne brukaren vil bli omfordelt til brukaren som er vald nedanfor. Det er tilrådd å lage ein dummy målbrukar (t.d. Sletta Brukar) om du ikkje vil at innhaldet skal bli omfordelt til nokon noverande aktiv brukar."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Aktive strategiar"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Legg til strategi"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stilar"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Du må omgi javascript-koden din med HTML-skriptmerke."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Denna sida har ikkje verte publisert"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Kommentarar"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Skriv ein ny kommentar ..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Navnet ditt"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Epostadressa di"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown-format"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Legg til kommentar"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Lastar kommentarar..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Legg ut som {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Ver den første til å kommentere."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Ingen kommentarar enno."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Oppdater kommentar"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Stadfest sletting"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Er du trygg på at du vil slette denne kommentaren permanent?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Denne handlinga kan ikkje gjerast om!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "endra {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Dennye kommentaren vart lagt ut."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Kommentaren er tom eller for kort!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Kommentaren vart oppdatert."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Kommentaren vart sletta."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Slå på/av stavekontroll"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Logg inn"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Innloggingsskjerm"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT-konfigurasjon"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Omstig innloggingsskjerm"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Skal brukaren bli automatisk omdirigert til den første autentiseringsleverandøren."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL for bakgrunnsbilete ved innlogging"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Spesifiser eit bilete som skal brukast som bakgrunn for innlogging. PNG og JPG er støtta, 1920x1080 er anbefalt. Lat stå tomt for standard bilete. Klikk på knappen til høgre for å laste opp eit nytt bilete. Merk at Gjestegruppa må ha lesetilgang til det valgte bildet!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Gøym lokal autentiseringsløysing."
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Gøym den lokale autentiseringsløysinga frå innloggingsbiletet. Legg til ?all til URLen for mellombels bruk."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Tryggleik"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Handhev 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Tving alle brukarar til å bruke tofaktorautentisering når dei brukar ei autentiseringsløysing som brukar brukarnamn og passord."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Vis kommentarar"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Ny kommentar"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Innhald frå prat"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Prat"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Merke"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Sider som samsvarer med merke"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Gå attende til toppen"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Brukarnamn"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Avslutt"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Konfigurer utviklingsplan for sideattgjeving."
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Tittelen inneheld ugyldige teikn."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Sidevala er lagra."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA er no skrudd av."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA er no skrudd på."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Etterspør tilbakestilling av passord..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Sjekk innboksen din for vidare rettleiing for å tilbakestille passordet ditt."
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktiv"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Kan brukarar logge inn med denne løysinga?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Visningsnamn"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Tittel som blir vist sluttbrukaren for denne autentiseringsløysinga."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Vel autentiseringsleverandør"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Logg inn"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Gløymt passord?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Skriv inn tryggingskoden frå mobilen din."
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Administrator krever to-faktor-autentisering (2FA) a av kontoen din."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Skann QR-koden med ein 2FA-app på mobilen:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Skriv inn tryggingskoden frå mobilen din."
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Vel"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Vel ny sideplassering"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Flytt / Gi nytt namn Sideplassering"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Vel ei side"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtuelle mapper"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Sider"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Mappa er tom."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Konvertering"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Konverter side"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Vel den redigeraren du ønskjer å bruke framover for {{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Sidesinnhaldet vil bli konvertert til formatet til den nyvalde editoren. Merk at noko formatering eller ikkje-rendera innhald kan gå tapt som eit resultat av konverteringa. Eit augneblinksbilete vil verte lagt til i sidehistorikken og kan verte gjenoppretta seinare."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Konverter"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administrasjon"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Eksporter til Disk"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Lagra innhald til tarball for sikkerhetskopi / migrasjon"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "INNHALDSLISTE"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Innhaldsliste"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Bruk nettstadstandardar"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Innhaldsliste Overskriftsnivå"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Innhaldslista vil vise overskrifter frå og opp til dei valde nivåa."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Standard overskriftsnivå for innhaldsliste"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Innhaldslista vil vise overskrifter frå og opp til dei valde nivåa som standard."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "SMTP Vertsnamn"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Eit valfritt namn for å senda til SMTP-serveren for å identifisera sendaren. Lat stå tomt for å bruka servernamnet. For Google Workspace-kundar, bør dette vera hovuddomenenamnet ditt."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Sideutvidingar"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Ein komma-separert liste over nettadressetillegg som vil bli behandla som sider. Til dømes, ved å leggje til md vil /foobar.md bli behandla på same måte som /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Knapp nettstad namn"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Namnet på den eksterne nettstaden som skal visast på redigeringsknappen. Ikkje inkluder \"Rediger på\" prefikset."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Knapp ikon"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Ikonet som skal visast på redigeringsknappen. Til dømes, mdi-github for å vise GitHub-ikonet."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Knapp lenkje"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "URL til sida på det eksterne lageret. Bruk {filename} plasshaldaren der filnamnet skal inkluderast. (t.d. https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Rediger snarvegar"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAG Snøggvalsmeny"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Vis ein flytande redigeringsknapp (FAB) med ein snøggvalsmeny i nedre høgre hjørne av skjermen."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Rediger menylinja"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Vis redigeringsmenylinja"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Vis redigeringsmenylinja i sidehovudet."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Vis redigeringsknapp"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Vis ein knapp for å redigere gjeldande side."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Vis ekstern redigeringsknapp"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Vis ein knapp som lenkjer til eit eksternt lager (t.d. GitHub) der brukarar kan redigere eller sende inn ein PR for den noverande sida."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Rediger på {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Kommentarkonfigurasjonen er lagret."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Overstyr botnteksten"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Valfritt overstyr teksten i botnteksten med ei tilpassa melding. Nyttig om ingen av dei overnevnte lisensane er passande."
+                }
+            ]
+        }
+    }
+}

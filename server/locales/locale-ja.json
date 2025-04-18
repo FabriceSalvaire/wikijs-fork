@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "ログインが必要です"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "メールアドレスまたはユーザー名"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "パスワード"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "ログイン"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "不正なログイン"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Eメール又はパスワードが無効です"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "無効なメールアドレス"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "ログインエラー"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "まだこのサイトにログインする権限がありません"
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "試行回数が多すぎます"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "短期間に失敗した試行回数が多すぎます。{{time}}にもう一度お試しください"
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "ユーザーが見つかりません"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "ローカル"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft Account"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "2段階認証"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "セキュリティコードが必要です:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "検証"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "ダッシュボード"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "全般設定"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "言語"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "統計"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "テーマ"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "グループ"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "ユーザー"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "認証"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "エディタ"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "ログ"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "レンダリング"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "検索エンジン"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "ストレージ"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API アクセス"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "システム情報"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "ユーティリティ"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "開発者ツール"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Wiki.js に貢献する"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "ウィキ全体に関わる主要なオプションを設定します"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "サイト情報"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "サイトのブランディング"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "サイト"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "ユーザー"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "モジュール"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "システム"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "言語に関するオプションを設定します"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "言語設定"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "多言語名前空間"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "言語をダウンロード"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "基本言語"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "UIテキストは選択した言語で表示されます"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "自動的に更新する"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "以下で有効になっている、名前空間を持つ全言語のアップデートを自動的にダウンロードします"
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "多言語名前空間"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "同一ページで複数の言語のバージョンが使えるようにします"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "アクティブな名前空間"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "多言語名前空間が有効になっている言語のリスト。上で定義された基本言語はこの選択に関わらず常に含まれます"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "言語コードがすべてのパスの前に付与されます (例: /{{langCode}}/page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "言語コードがないパスは、上で定義した基本言語に自動的にリダイレクトされます"
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "保存"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "キャンセル"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "ダウンロード"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "アップロード"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "破棄"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "クリア"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "作成"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "編集"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "削除"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "更新"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "変更を保存"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "続行"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "サイトの言語"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "この言語に対するアップデートを利用可能になり次第自動的にダウンロードします"
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "システムに関する情報を表示します"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "ホスト"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "現在のバージョン"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "最新バージョン"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "公開日"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "OS"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "ホスト名"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPUコア数"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "合計RAMサイズ"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "作業ディレクトリ"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "設定ファイル"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAMの使用状況: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Wiki.js の開発と運営を支援する"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Wiki.js の開発を支援する"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "世界に広める"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Wiki.js がどんなに素晴らしいか友人や同僚に話しましょう"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "{0}で私たちをフォローしてください"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "{{0}}でアイデアを提案したり、提案されたアイデアに投票したりしましょう"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "機能要望用の掲示板"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "バグを見つけましたか？{{0}}に問題を報告してください"
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Wiki.jsをあなたの言語に翻訳するのを手伝ってください。 {{0}}までご連絡ください"
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "寄付する"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "貢献する"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js は Open Collective Initiative の一部でもあります。これは、コミュニティのリソースに向けた透明性のある基金です。毎月または1回限りの寄付をすることで、経済的に貢献することができます"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "ソフトウェアの改良を続け、関連するさまざまなサービス (ホスティングやネットワークなど) を運営するにはあなたの助けが必要です"
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.jsは、 {{1}}と{{2}}によって{{0}}と共に提供されるフリーのオープンソースソフトウェアです"
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "貢献者"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "ページ"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "処理中"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "しばらくお待ちください..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "ページを作成しました"
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "ページ作成中にエラーが発生しました"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "プロジェクトを経済的にサポートするために Wiki.js のTシャツを購入することもできます"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js ショップ"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "{{year}} {{company}}. All rights reserved."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "このページはまだ存在しません"
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "今すぐ作成しますか？"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "ページの作成"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "戻る"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "ページ"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "ナビゲーション"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "サイトのナビゲーションを管理します"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "追加"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "リンク"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "区切り線"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "ヘッダー"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "ラベル"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "アイコン"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "ターゲットの種類"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "ターゲット"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "左側のナビゲーション項目を選択してください"
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "無題の{{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "外部リンク"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "ホーム"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "ページ"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "検索"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "{{kind}}を編集"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "{{kind}}を削除"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "ナビゲーションを保存しました"
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "追加ボタンをクリックしてナビゲーションの項目を追加してください"
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "ナビゲーションは空です"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "適用"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "メールアドレス"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "パスワードの確認"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "名前"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "登録"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "アカウントの作成"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "すでにアカウントをお持ちですか？ {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "代わりにログインする"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "{{strategy}}を使用してログイン"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "パスワードをお忘れですか？"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "またはログイン"
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "まだアカウントを持っていませんか？ {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "アカウントの作成"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "有効なメールアドレスまたはユーザー名を入力してください"
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "有効なパスワードを入力してください"
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "ログインに成功しました。リダイレクトしています..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "ログインしています..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "認証は利用できません"
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "下記のフォームに記入し、アカウントを作成してください"
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "しばらくお待ちください"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "アカウントを作成しました"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "アカウントを作成しています..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "メールアドレスが入力されていません"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "メールアドレスが無効です"
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "パスワードが入力されていません"
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "パスワードが短すぎます"
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "2つのパスワードが一致していません"
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "名前が入力されていません"
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "名前が短すぎます"
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "名前が長すぎます"
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "キャンセル"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "パスワードをリセット"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "パスワードをリセットするためにあなたのメールアドレスを入力してください"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "メール"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "メールに関するオプションを設定します"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "設定"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (任意)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "メールを確認しアカウントを有効にしてください"
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "ページを更新しました"
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "未認証"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "このページを見ることはできません"
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "このページのソースを見ることはできません"
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "このページの履歴を見ることはできません"
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "このページは編集できません"
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "このページは作成できません"
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "戻る"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "ホーム"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "見つかりません"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "このページは存在しません"
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "ログイン..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "パトロンになる"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Patreon を介して後援者またはスポンサーになる (フルタイムで Wiki.js を開発している主任開発者 Nicolas Giard に直接入ります)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "あなたのウィキへようこそ！"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "まずはホームページを作成してみましょう"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "ホームページの作成"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "フラグ"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Paypal で1度限りまたは繰り返し寄付をする"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Ethereum を使った寄付を受け付けています"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "言語パッケージを手動で読み込む"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "インターネットに接続していない場合や、上記の方法で言語ファイルをダウンロードできない場合は、代わりに以下のパッケージをアップロードし手動で読み込むことができます"
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "参照…"
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhook"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "外部サービスへの webhook を管理します"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "テスト用のメールを送信する"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "受信者のメールアドレス"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "メールを送信する"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "送信者"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "送信者名"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "送信者のアドレス"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP設定"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "ホスト"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "ポート"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "通常は465 (推奨)、587、25のいずれかです"
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "安全な通信 (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "465番ポートを使用している場合はオンに、それ以外 (587か25) の場合はオフにします"
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "ユーザー名"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "パスワード"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeysIdentified Mail) は、受信者がドメイン名を検証しメッセージの信頼性を確かめられるようにすることで、Wiki.js から送られるメールの安全性を高めます"
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIMを使う"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "ドメイン名"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "キーセレクタ"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "秘密鍵"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM形式のセレクタの秘密鍵"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "SMTP の設定が機能しているか確かめるため、テスト用のメールを送信します"
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "設定を保存しました"
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "お使いのデータベースのバージョンは完全にはサポートされていません。一部の機能が制限されていたり、期待通りに動作しない場合があります"
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "システム情報を更新しました"
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "ウィキの認証システムを設定します"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "認証方式"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "高度な設定"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "ログイン時に発行される JWT で使われるAudience URN。通常はあなたのドメイン名を設定します (例: urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "トークンの有効期限"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "トークンを更新しなければならなくなるまでの有効期間 (デフォルト: 30分)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "トークンの更新期限"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "トークンの有効期限が切れたときに更新できる最大期間 (デフォルト: 14日)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "この認証方式は{{state}}{{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "アクティブ"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "非アクティブ"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "で、無効化できません"
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "テスト用のメールを送信しました"
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "ウィキの見た目を変更します"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "テーマ"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "テーマはコンテンツページの表示方法に影響します。サイトの他の部分 (エディタや管理ページなど) には影響を与えません"
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "ダークモード"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "アクセシビリティの観点では非推奨です。ダークモードをサポートしていないテーマもあります"
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "追加コード"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSSの上書き"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "システムのデフォルトCSSの後に挿入されるCSSコードです。CSSのコードが多い場合には、カスタムテーマの使用を検討してください。あまりに多くのCSSコードを挿入しすぎるとページの読み込みパフォーマンスが低下します。CSSは自動的に最小化されます"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "head に挿入するHTMLコード"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "&lt;head&gt; タグが終了する直前に挿入されるHTMLコードです。通常は &lt;script&gt; タグ用です"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "body に挿入するHTMLコード"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "&lt;body&gt; タグが終了する直前に挿入されるHTMLコードです"
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "テーマをダウンロード"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "管理用エリア"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "認証方式の設定"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "この認証方式には変更可能な設定がありません"
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "登録"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "自己登録を許可する"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "この認証方法で認証されたユーザーにウィキへのアクセスを許可します"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "メールアドレスのドメインを特定のものに制限する"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "登録が許可されているドメインのリスト。アクセスするには、ユーザーのメールアドレスのドメインがこれらのいずれかと一致する必要があります"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "割り当てるグループ"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "自動的に新しいユーザーをこれらのグループに割り当てます"
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "セキュリティ"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "全ユーザーに2段階認証 (Two-Factor Authentication; 2FA) の使用を強制させる"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "ユーザーは最初にログインするときに2段階認証を設定する必要があります。ユーザーがこれを無効にすることはできません"
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "設定"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "認証方式の中にはそれぞれのプロバイダでの設定を必要とするものがあります。これらはあくまで参考として記載されており、この認証方式には必要ないかもしれません"
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "先に有効な{{siteUrl}}を設定する必要があります。左側のサイドバーの{{general}}をクリックしてください"
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "許可されている origin"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URL"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "ログインURL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "ログアウトURL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "認証方式のトークンエンドポイント"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "ホーム"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "新規作成"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "現在のページ"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "閲覧"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "編集"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "履歴"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "ソースを表示"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "移動/名前の変更"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "削除"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "ファイル"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "画像とファイル"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "検索..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "管理画面"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "アカウント"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "個人用ウィキ"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "プロフィール"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "ログアウト"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "ログイン"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "最終更新"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "非公開"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "ページを編集"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "目次"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "ブックマーク"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "共有"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "印刷形式"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "閉じる"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "ページ"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "コンテンツのバックアップと同期のターゲットを設定します"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "ターゲット"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "ステータス"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "最後の同期 {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "最後の試行 {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "エラーメッセージ"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "アクティブなストレージがありません"
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "ターゲットの設定"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "このターゲットには変更可能な設定がありません"
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "同期の方向"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "このストレージターゲットに対するコンテンツ同期の方法を選択してください"
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "双方向"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "ターゲットへ push"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "ターゲットから pull"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "未サポート"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "双方向モードでは、まずストレージからコンテンツを pull してきます。新しいコンテンツはローカルのコンテンツを上書きします。最後の同期以降に新しく増えたコンテンツはストレージに push され、ストレージ側にも同じコンテンツがあればそれを上書きします"
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "コンテンツを常にストレージへ push します。既存のコンテンツは上書きされます。バックアップ目的としてはもっとも安全な選択肢です"
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "コンテンツを常にストレージから pull します。既存のローカルのコンテンツは上書きされます。これは通常使い捨てのコンテンツをインポートするためのものです。ローカルのコンテンツが常に上書きされることにご注意ください"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "同期スケジュール"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "パフォーマンス上の理由から、このストレージは変更のたびに毎回同期するのではなく決められた間隔で同期します。どれくらいの間隔で同期をおこなうかを設定します。"
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "現在{{schedule}}ごとに設定されています"
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "デフォルトでは{{schedule}}ごとです"
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "アクション"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "実行"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "ウィキの検索機能に関するオプションを設定します"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "インデックスの再構築"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "検索エンジン"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "エンジンの設定"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "このエンジンには変更可能な設定がありません"
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "検索エンジンの一覧を更新しました"
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "検索エンジンの設定を保存しました"
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "インデックスを再構築しました"
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "予期せぬエラーが発生しました"
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "ページ数"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "ユーザー数"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "グループ数"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "このバージョンは最新版です"
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "新しいバージョンが利用可能です: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js はフリーのオープンソースプロジェクトです。このプロジェクトに貢献できる方法はいくつかあります"
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "あなたの力が必要です！"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "もっと詳しく知る"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "認証方式の一覧を更新しました"
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "認証の設定を保存しました"
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "全般設定"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "サイトのURL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "末尾のスラッシュを含まないウィキの完全なURL。例: https://wiki.example.com"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "サイトのタイトル"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "上部のバーに表示されます。各ページのタイトルにも付与されます"
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "ロゴ"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "アップロード"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "削除"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "{{size}} の画像を推奨します"
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typelist}}, {{lasttype}} のみ選択可能です"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "ページ下部に表示する著作権情報"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "会社/組織名"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "ページ下に表示される著作権情報です。空のままにすると非表示になります"
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "サイトの説明"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "ページに何も指定されていない場合のデフォルトの説明"
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "クローラー設定"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "デフォルト: index、follow。ページ単位で設定することもできます"
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "検索を始めるには少なくとも2文字を入力してください"
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "検索中..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "一致するページがありません"
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}}件見つかりました"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "もしかして..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "閉じる"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "検索リンクをコピー"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "非常に弱い"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "弱い"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "普通"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "強い"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "非常に強い"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "ページを削除"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "本当に{{title}}を削除しますか？"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "このページは管理ページから復旧可能です"
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "ユーザーを検索"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "ユーザーを検索..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "毎"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "分"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "時間"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "日"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "月"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "年"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "ページのプロパティ"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "ページ情報"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "タイトル"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "簡単な説明"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "タイトルの下に表示されます"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "パスとカテゴリー"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "言語"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "パス"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "先頭または末尾にスラッシュを含めないでください"
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "タグ"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "タグでページを分類し、見つけやすくします"
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "公開状態"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "公開"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "非公開のページは、このページの書き込み権限を持つユーザーに引き続き表示されます。"
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "公開開始日時"
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "公開開始日時を設定しない場合は空のままにします"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "公開終了日時"
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "公開終了日時を設定しない場合は空のままにします"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "保存されていない変更を破棄しますか？"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "保存されていない変更があります。本当にこのページを離れますか？これまでの変更は破棄されます"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "変更を破棄"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "このページにどのエディタを使用しますか？"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "ページを作成した後は変更できません"
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "ファイル"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "新しいフォルダ"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "フォルダ名"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "フォルダ名は{{namingRules}}に従う必要があります"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "命名規則"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "移動"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "名前の変更"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "最適化"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "プレビュー"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "プロパティ"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "フォルダは空です"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}}ファイル"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "挿入"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "ファイル名"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "種類"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "ファイルサイズ"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "追加日時"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "アクション"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "ファイルをアップロード"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "ファイルを参照またはここにドロップ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "URLから画像を取得"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "画像の配置"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "ファイル名を変更"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "このファイルの新しい名前を入力してください"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "ファイルを削除"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "本当にファイルを削除しますか？"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "この変更は元に戻せません"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "ファイルの一覧を更新しました"
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "ファイルのアップロードに失敗しました"
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "フォルダを作成しました"
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "ファイル名を変更しました"
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "ファイルを削除しました"
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "先にアップロードするファイルを選択してください"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "取得"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "エディタに戻る"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "太字"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "斜体"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "取り消し線"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "見出し {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "下付き文字"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "上付き文字"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "引用"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "引用 (情報)"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "引用 (成功)"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "引用 (警告)"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "引用 (エラー)"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "順序無しリスト"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "順序付きリスト"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "インラインコード"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "キーボードキー"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "水平線"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "プレビュー画面を表示/非表示"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "リンクの挿入"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "画像の挿入"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "ブロックの挿入"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "コードブロックの挿入"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "動画/音声の挿入"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "図の挿入"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "数式の挿入"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "表の入力"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "集中モード"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "マークダウン書式のヘルプ"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "{{path}}のソースを表示"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "通常の画面へ戻る"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "言語"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "アナリティクス"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "ウィキにアナリティクスとトラッキングツールを導入します"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "プロバイダ"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "プロバイダ設定"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "このプロバイダには変更可能な設定がありません"
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "プロバイダの一覧を更新しました"
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "アナリティクスの設定を保存しました"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "メンテナンスおよびその他のツール"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "ツール"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "認証"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "認証/ユーザー用のさまざまなツール"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "キャッシュをクリア"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "さまざまなコンポーネントのキャッシュをクリアします"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL エンドポイント"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Wiki.js の GraphQL エンドポイントを変更します"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Wiki.js 1.x からインポート"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "以前のバージョン1.xからデータを移行します"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "テレメトリ"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "テレメトリを有効/無効にするか、クライアントIDをリセットします"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "コメント"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "公開"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "非公開"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "公開"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "ページを読み込み中..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "コード"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "名前"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "現地語名"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "利用可能"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "ダウンロード"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "コンテンツ"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "さまざまなツール"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "アイコンセット"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "サイドバーナビゲーションに使用するアイコンのセット。"
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "お使いのブラウザは古くなっています。 {{modernBrowser}}にアップグレードしてください。"
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "最新のブラウザ"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "名前"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "作者"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "ダウンロード"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} ページコンテンツにスタイルを追加する場合、スコープを{{cssClass}}クラス以下にする必要があります。これをしないとエディターのレイアウトが壊れる可能性があります。"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "注意:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "テーマオプション"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "有効"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "無効"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "検証済"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "未検証"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "ユーザーを編集"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "基本情報"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "メールアドレス"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "表示名"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "認証"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "プロバイダ"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "パスワード"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "パスワードを変更"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "新しいパスワード"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "2要素認証 (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "2FAを切り替え"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "プロバイダ ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "ユーザーグループ"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "このユーザーはまだどのグループにも割り当てられていません。ユーザーには少なくとも1つのグループを割り当てる必要があります。"
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "グループを選択..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "割り当て"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "追加のメタデータ"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "場所"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "役職"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "タイムゾーン"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "ユーザーを更新しました"
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "ユーザーはすでにこのグループに割り当てられています。"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "このストレージターゲットは{{state}}です"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "有効"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "無効"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "アクションを実行する前にこのストレージターゲットを有効化してください。"
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "新しいパスワードを入力"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "新しいパスワードを入力:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "新しいパスワード"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "新しいパスワードを確認"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "パスワードを変更する"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "パスワード変更中…"
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "最近更新されたページ"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "人気のページ"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "情報"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "予約"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "ソーシャル"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "カテゴリー"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "ソーシャル機能"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "コメントを許可"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "このページでコメントを有効化します。"
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "評価を許可"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "編集者情報を表示"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "共有ツールバーを表示"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "共有と印刷ボタンのツールバーを表示します。"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "ページ編集者を最終更新時刻とともに表示します。"
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "このページの評価を有効化します。"
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "またはカスタムビューを作成。"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "タグ"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "サイトマップ"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "ページアクション"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "現在の選択"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "選択を解除"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "1つ以上のタグを選択"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "検索結果を絞り込む…"
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "言語"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "並べ替え"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "左から1つ以上のタグを選択してください。"
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "ページを取得しています…"
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "選択したタグを含むページが見つかりませんでした。"
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "選択したフィルターに一致するページがみつかりません。"
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "最終更新 {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "作成日"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "最終更新"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "パス"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "タイトル"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "すべて"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "GitHub Sponsors を介してスポンサーになる (フルタイムで Wiki.js を開発しているリード開発者 Nicolas Giard に直接入ります)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "スポンサーになる"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "タグ"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL 構成の管理"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "プロバイダ"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "既に独自の証明書がある場合は、カスタム証明書を選択します。"
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "ドメイン"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "wikiの完全修飾ドメインを入力します。(例: wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "プロバイダのオプション"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "無効"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "カスタム証明書"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "ポート"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTPポート"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "HTTP リクエストを非SSLで待ち受けるポートです。通常は80や3000です。"
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPSポート"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "HTTPSリクエストを待ち受けるSSLポート。通常は443です。"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTPリクエストをHTTPSにリダイレクトする"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "HTTPポートへのすべてのリクエストを自動的にHTTPSにリダイレクトします。"
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "ポート構成を保存するには設定ファイルが書込み可能である必要があります。"
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "ロゴURL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "ロゴとして使用する画像を指定します。SVG, PNG, JPGがサポートされています。34x34ピクセル以上の正方形にしてください。右のボタンをクリックすると新しい画像をアップロードできます。"
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "ユーザーを削除しますか？"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "本当にユーザー {{username}} を削除しますか?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "ユーザーを更新"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "この画面からユーザーを管理者やゲストのグループに割り当てることはできません。"
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "コンテンツを作成したユーザーは削除できません。代わりにユーザーを無効化するか、そのユーザーの作成したコンテンツをすべて削除する必要があります。"
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "スクリプト"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSSは保存時に自動的に圧縮されます。styleタグで囲わずに、CSSコードのみを記述してください。"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "誰でも閲覧可能"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "閲覧可能にするグループを選択..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "ページを選択してください..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "ナビゲーションモード"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "サイトツリー"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "ツリー形式のナビゲーション(クラシック)"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "カスタムナビゲーション"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "固定ナビゲーションメニュー+サイトツリーボタン"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "なし"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "サイトナビゲーションを無効化する"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "ユーザーを確認しました。"
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "ユーザーを有効化しました。"
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "ユーザーを無効化しました。"
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "最初にテキストを選択してください。"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "証明書を更新する"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "証明書の状態"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "証明書の有効期限"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "購読者のメールアドレス"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "現在の状態"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "有効化"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "無効化"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "証明書を更新しています..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "このページを離れないでください。"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "証明書を更新しました。"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTPリダイレクト設定を変更しました。"
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "ページタグの管理"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "表示するタグがありません。"
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "タグの編集"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "タグ"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "ラベル"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "作成者 : {{created}}, 最終更新 : {{updated}}"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "このタグを削除する"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "左側のリストからタグを選択してください。"
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "開始するには、ページにタグを追加してください。"
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "タグが更新されました。"
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "タグを削除しました。"
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "タグを保存しました。"
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "フィルター..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "リンクされたページを表示"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "タグを削除しますか？"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "本当に {{tag}} タグを削除しますか？すべてのページからこのタグへのリンクが解除されます。"
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "APIにアクセスするためのキーを管理"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "APIが有効"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "APIが無効"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "APIを有効にする"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "APIを無効にする"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "新しいAPIキー"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "名前"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "キーの末尾"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "有効期限"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "作成日時"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "最終更新"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "無効化"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "APIキーはまだ生成されていません。"
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "APIキーを無効化しますか？"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "本当にキー {{name}} を無効化しますか？この操作は元に戻すことができません！"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "無効化"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "APIキーの一覧を更新しました。"
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "キーは正常に無効化されました。"
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "新しいAPIキー"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "APIキーは正常に作成されました。"
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "名前が入力されていないか無効です。"
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "グループを選択する必要があります。"
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "ゲスト グループは API キーには使用できません。"
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "このキーの目的"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "名前"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "有効期限"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "有効期限に関係なく、いつでもキーを取り消すことができます。"
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "権限の範囲"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "全権アクセス"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "グループ権限を使用"
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "生成"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "グループ"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "APIキーは選択されたグループと同じ権限を持ちます。"
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30日"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90日"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180日"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1年"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3年"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "以下に示す {{bold}} のキーをコピーしてください。"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "後から再度表示することはできません"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "APIは正常に有効化されました。"
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "APIは正常に無効化されました。"
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "保存しました"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "なし"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "CCライセンス BY(表示)"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "CCライセンス BY-SA(表示-継承)"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "CCライセンス BY-ND(表示-改変禁止)"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "CCライセンス BY-NC(表示-非営利)"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "CCライセンス BY-NC-SA(表示-非営利-継承)"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "CCライセンス BY-NC-ND(表示-非営利-改変禁止)"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "パブリックドメイン"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "All Rights Reserved"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "コンテンツライセンス"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "ライセンスはすべてのページのフッターに表示されます。"
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "コンテンツは{{license}}の下で利用できます (by {{company}})。"
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "ページのコンテンツをダウンロードすることはできません。"
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "このページバージョンのコンテンツはダウンロードできません。"
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "このバージョンのページのソースは表示できません。"
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "ページ{{path}}の{{date}}時点でのソースを表示しています"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "バージョンID {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "バージョンを復元しますか？"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "このページのコンテンツを{{date}}時点の状態に復元してよろしいですか？このバージョンは履歴の一番上にコピーされ、新しいバージョンも引き続き保持されます。"
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "復元"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "バージョンを復元しました！"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}}文字, {{words}}単語"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "競合の解決"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "ローカルを使用"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "リモートを使用"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "ローカルの変更を破棄して最新バージョンを使用します"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "パネル左側のコンテンツを使用します"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "最新のバージョンを表示"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "このページのより新しいバージョンが {{authorName}} によって保存されました。{{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "どのようにしたいですか？"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "現在のローカルバージョンっを使用し、最新の変更を無視します。"
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "最新のリモートバージョンを使用し、あなたの変更を破棄します。"
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "リモートバージョンで上書きしますか?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "現在のバージョンを最新のリモートコンテンツで置き換えます。よろしいですか？ {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "現在の編集内容は失われます。"
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "確認"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "ローカルバージョン {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(編集可能)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(読み取り専用)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "リモートバージョン {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "現在{{date}}時点のページを編集しています"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "最終編集者 {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "タイトル："
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "説明:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "保存されていない内容があります。編集画面から離れてもよろしいですか？"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "競合が発生しました！他のユーザーがこのページを既に変更しています。"
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "複製"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "表示名"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "場所"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "役職"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "タイムゾーン"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "プロフィール"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "自分の個人情報"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "自分の情報"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "公開プロフィールを表示"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "認証"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "認証方式"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "パスワードを変更"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "現在のパスワード"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "新しいパスワード"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "新しいパスワード (再入力)"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "グループ"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "アクティビティ"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "参加日時"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "プロフィールの最終更新日時"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "最終ログイン"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "ページ作成数"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "コメント投稿数"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "プロフィールは正常に保存されました。"
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "パスワードは正常に変更されました。"
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "ページ"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "コメント"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "自分が作成・編集したページの一覧"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "表示するページがありません。"
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "ページの一覧を更新しました。"
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "タイトル"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "パス"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "作成日時"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "最終更新"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "最終ログイン"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "参照"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "メインメニュー"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "現在のディレクトリ"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(ルート)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "他の言語からコピー"
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "コピー元言語"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "ナビゲーション項目のコピー元の言語"
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "コピー"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "どの言語から項目をコピーするか選択してください。現在有効化されている言語のナビゲーションに追加されます。"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "固定ナビゲーション"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "固定ナビゲーションのみ"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "設定"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "日付形式"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "言語のデフォルト"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "外観"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "サイトのデフォルト"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "ライト"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "ダーク"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL証明書の検証"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "一部のホストでは、SSL証明書のチェックを無効にする必要があります。適切なセキュリティのために有効のままにします。"
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "外部リンク (新しいウィンドウ)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "セキュリティ"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "最大アップロードサイズ"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "一回あたりの最大ファイル数"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "一度にアップロードできる最大ファイル数を指定します"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "1ファイルあたりの最大サイズを指定します"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "バイト"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "ファイル"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "アップロード"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "これらの設定はWiki.jsのみに影響します。リバースプロキシ (nginx, apache, Cloudflareなど) を使用している場合は、それらの設定と一致させる必要があります。"
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "セキュリティに関するオプションを設定します"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "拡張機能"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "機能を追加するための拡張機能をインストールします"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "コメントシステム"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "wikiのページにコメント欄を追加します"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "コメントシステムの設定"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "このコメントシステムには変更可能な設定がありません"
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "このユーザーが作成したコンテンツ (ページ、ファイル、コメントなど) は、以下で選択したユーザーに割り当てられます。現在有効なユーザーに割り当てたくない場合は、ダミーのユーザー (削除済みユーザーなど) を作成することをお勧めします。"
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "有効化済みの認証方式"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "認証方式を追加"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "スタイル"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Javascriptコードは、HTMLスクリプトタグで囲む必要があります。"
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "このページは公開されていません。"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "コメント"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "新しいコメントを投稿する..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "名前"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "メールアドレス"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown記法"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "コメントを投稿"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "コメントを読込中..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "{{name}}として投稿"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "最初のコメントを投稿しましょう。"
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "コメントはまだありません。"
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "コメントを更新"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "削除の確認"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "このコメントを完全に削除してもよろしいですか？"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "この変更は元に戻せません"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "編集済み：{{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "新しいコメントが正しく投稿されました。"
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "コメントが空欄であるか、短すぎます。"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "コメントは正常に更新されました。"
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "コメントは正常に削除されました。"
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "スペルチェックの切り替え"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "ログイン"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "ログイン画面"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT設定"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "ログイン画面をスキップ"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "ユーザーを一番目の認証方式に自動的にリダイレクトします。"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "ログイン画面の背景画像URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "ログイン画面の背景画像を指定します。PNG, JPGがサポートされており、1920x1080ピクセルの画像が推奨されます。標準の画像を使用するには、空欄にしてください。新しく画像をアップロードするには、右側のボタンをクリックしてください。※ 選択した画像に対して、ゲストグループが読み込み権限を持つ必要があります。"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "ローカル認証方式を非表示にする"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "ログイン画面におけるローカル認証方式を非表示にします。一時的に使用したい場合は、URLに ?all を追加してください。"
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "セキュリティ"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "二段階認証を強制する"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "ユーザー名 / パスワードフォームが表示される認証方式を使用している場合、すべてのユーザーに二段階認証の使用を強制します。"
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "コメント欄を表示"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "新しいコメント"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "コメント内容"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "コメント"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "タグ"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "タグに一致するページ"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "トップへ戻る"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "ユーザー名"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "閉じる"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "ページをレンダリングする際のパイプラインを設定します"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "サイトタイトルに無効な文字が含まれています。"
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "サイト設定は正常に保存されました。"
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2段階認証は正常に無効化されました。"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2段階認証は正常に有効化されました。"
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "パスワードの再設定を申請中..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "メールを確認してパスワードを再設定してください"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "有効"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "ユーザーにこの方式を使用したログインを許可しますか？"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "表示名"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "この認証方式のエンドユーザーに表示されるタイトル"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "認証プロバイダを選択"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "資格情報を入力"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "パスワードを忘れた場合"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "信頼できるデバイスから生成されたセキュリティコードを入力:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "管理者がアカウントの2段階認証 (2FA) を要求しています。"
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) モバイル2FAアプリケーションで以下のQRコードをスキャン:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) 信頼できるデバイスから生成されたセキュリティコードを入力:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "選択"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "新しいページの場所を選択"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "ページの場所を移動・リネーム"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "ページを選択"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "仮想フォルダ"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "ページ"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "このフォルダは空です。"
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "変換"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "ページを変換"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "ページ「{{title}}」で今後使用したいエディターを選択："
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "ページの内容は、新しく選択したエディターの形式に変換されます。変換の結果、一部の書式やレンダリングされていない内容が失われることがあります。スナップショットがページ履歴に追加されるため、いつでも元に戻すことが出来ます。"
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "変換"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "管理画面"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "ディスクにエクスポート"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "バックアップ/移行のためにtarballでコンテンツを保存する"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "目次"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "目次"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "サイトのデフォルトを使用する"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "目次の見出しレベル"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "目次には選択したレベルの見出しが表示されます。"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "目次のデフォルト見出しレベル"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "目次にはデフォルトで選択された見出しレベルが表示されます。"
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "クライアント識別ホスト名"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "SMTPサーバーに送信するメーカーを識別するための任意の名前。サーバーのホスト名を使用する場合は空欄のままにします。Google Workspaceを使用している場合はメインドメイン名に設定します。"
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "ページ拡張機能"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "ページとして扱うURL拡張子(コンマ区切り)。たとえば、mdを追加すると/foobar.mdは/foobarと同じように扱われます。"
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "ボタンのサイト名"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "編集ボタンに表示する外部サイトの名前。\"で編集\"の部分は含めないでください。"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "ボタンアイコン"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "編集ボタンに表示されるアイコン。たとえば、GitHub アイコンを表示するには mdi-github と入力します。"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "ボタンURL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "外部リポジトリの URL。ファイル名を含める場合は {filename} を使用します。(例: https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "編集ショートカット"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FABクイック編集メニュー"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "画面右下にメニューボタン（FAB）を追加"
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "メニューバーを編集する"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "編集メニューバーの表示"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "ページヘッダーに編集メニューバーを表示する。"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "編集ボタンを表示する"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "現在のページを編集するためのボタンを表示する。"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "外部編集ボタンを表示する"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "ユーザーが現在のページのPRを編集または送信できる外部リポジトリ(GitHubなど)にリンクするボタンを表示する。"
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "{{name}}で編集する"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "コメント設定は正常に保存されました。"
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "フッターテキストの上書き"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "必要に応じて、フッター テキストをカスタム メッセージで上書きします。上記のライセンスのいずれも適切でない場合に役立ちます。"
+                }
+            ]
+        }
+    }
+}

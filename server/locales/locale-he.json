@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "מופעל על ידי"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "נדרשת כניסה"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "דוא\"ל / שם משתמש"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "סיסמה"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "התחברות"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "התחברות לא תקינה"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "כתובת הדוא\"ל או הסיסמה אינן תקינות."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "דוא\"ל משתמש לא תקין"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "שגיאת התחברות"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "טרם נתקבלה הרשאת התחברות לאתר זה."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "יותר מדי ניסיונות!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "בוצעו ניסיונות כושלים רבים מדי בפרק זמן קצר, נא לנסות שוב {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "לא נמצא משתמש"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "מקומי"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "חשבון מיקרוסופט"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "מזהה גוגל"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "פייסבוק"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "גיטהאב"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "אימות דו־גורמי"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "נדרש קוד אבטחה:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "וידוא"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "לוח מחוונים"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "כללי"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "שפה"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "סטטיסטיקות"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "ערכת נושא"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "קבוצות"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "משתמשים"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "אימות"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "עורך"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "רישום"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "תיצוג"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "מנוע חיפוש"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "שטח אחסון"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "גישה ל־API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "מידע על המערכת"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "כלי עזר"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "כלי מפתח"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "תרומה ל־Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "ההגדרות ראשיות לויקי"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "מידע על האתר"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "מיתוג אתר"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "אתר"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "משתמשים"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "פרקנים"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "מערכת"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "הגדר אפשרויות שפה עבור הויקי שלך"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "הגדרות שפה"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "מרחבים רב לשוניים"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "הורד הגדרות שפה"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "שפת בסיס"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "כל רכיבי מלל מנשק משתמש יוצגו בשפה שנבחרה."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "עדכון באופן אוטומטי"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "הורדת עדכונים אוטומטית של כל המקמים במרחבי השמות שאופשרו מטה."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "מרחבים רב לשוניים"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "מאפשר שפות מרובות באותו עמוד."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "מרחבים פעילים"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "רשימת מקמים מאופשרת למרחב שם רב לשוני. מקם הבסיס שהוגדר מעלה יכלל תמיד ללא קשר לבחירה זו."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "קוד השפה יוצמד לכל הנתיבים. (לדוגמה /{{langCode}}/page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "נתיבים ללא קוד שפה יהיו מנותבים אוטומטית אל שפת הבסיס שהוגדרה לעיל."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "שמירה"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "בטל"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "הורד"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "העלה"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "דחה"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "נקה"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "צור"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "עריכה"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "מחק"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "רענן"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "שמירת שינויים"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "המשך"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "שפת האתר"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "הורד עדכונים באופן אוטומטי לאזור זה כאשר הם הופכים לזמינים."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "מידע על המערכת שלך"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "מידע על המחשב המארח"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "הגרסה הנוכחית"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "הגרסה העדכנית ביותר"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "פורסם"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "מערכת הפעלה"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "שם מחשב המארח"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "ליבות מעבד"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "סה\"כ זיכרון"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "מחיצת עבודה"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "קובץ הגדרות"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "שימוש בזיכרון: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "עזור לתמוך בפיתוח ופעולות של Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "ממן את עבודתנו"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "הפיצו את השמועה"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "דברו עם חברים ועמיתים לעבודה על כמה Wiki.js מדהים!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "עקוב אחרינו ב- {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "שלחו רעיון או הצביעו על רעיון מוצע ב{{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "לוח בקשות פיטצ'רים"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "מצאתם באג? דווחו לנו ב- {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "עזרו לנו לתרגם את Wiki.js לשפה שלך. ספרו לנו ב- {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "לתרום"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "תרום"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js היא גם חלק מיוזמת Open Collective, קרן שקופה העוסקת במשאבים קהילתיים. ניתן לתרום כלכלית על ידי תרומה חודשית או חד פעמית:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "אנו זקוקים לעזרתך כדי להמשיך ולשפר את התוכנה ולהפעיל את השירותים הנלווים השונים (לדוגמה אירוח ורשתות)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "wiki.js היא תוכנת קוד פתוח, המובאת אליך עם {{0}} על ידי {{1}} ו{{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "תורמים"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "עמוד"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "מתבצע תיצוג"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "נא להמתין"
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "יצירת עמוד צלחה."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "אירעה שגיאה בעת יצירת העמוד"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "ניתן גם לקנות חולצות Wiki.js לתמיכה כספית בפרויקט:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "חנות Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "אישור"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. כל הזכויות שמורות."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "עמוד זה אינו קיים עדיין."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "האם ברצונך ליצור אותו כעת?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "יצירת עמוד"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "חזור"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "דפים"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "ניווט"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "ניהול ניווט האתר"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "הוספה"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "קישור"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "מחיצה"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "כותרת עליונה"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "תווית"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "סמל"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "סוג יעד"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "יעד"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "בחירת פריט ניווט מימין."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "ללא שם {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "קישור חיצוני"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "עמוד הבית"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "עמוד"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "שאילתת חיפוש"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "עריכת {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "מחק {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "הניווט נשמר בהצלחה."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "לחץ על לחצן הוסף כדי להוסיף את פריט הניווט הראשון שלך."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "הניווט ריק"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "החלה"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "כתובת דוא\"ל"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "אמת סיסמה"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "שם"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "רישום"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "יצירת חשבון"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "כבר יש לך חשבון? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "התחבר במקום זאת"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "התחברות באמצעות {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "שכחת סיסמה?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "או התחברו באמצעות..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "עדיין אין לך חשבון? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "יצירת חשבון"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "נא להזין דוא\"ל / שם משתמש תקין."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "נא להזין ססמה תקינה."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "תחברת צלחה! הסטה מתבצעת..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "נכנס..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "אימות אינו זמין."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "מלא את הטופס למטה כדי ליצור את חשבונך."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "אנא המתן"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "ייצירת חשבון צלחה!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "יוצר חשבון..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "כתובת דוא\"ל חסרה."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "כתובת הדוא\"ל לא תקינה."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "חסרה סיסמה."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "הסיסמה קצרה מדי."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "שתי הסיסמאות אינן תואמות."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "חסר שם"
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "השם קצר מדי."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "השם ארוך מדי."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "בטל"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "שיצוב סיסמה"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "נא להזין את כתובת הדוא\"ל לקבלת ההוראות לשיצוב הסיסמה:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "דואר"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "קביעת תצורה של הגדרות דואר"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "הגדרות"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (אופציונלי)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "נא לבדוק את תיבת הוא\"ל לשיפעול החשבון"
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "עדכן עמוד צלח."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "לא מורשה"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "אינך יכול להציג עמוד זה."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "אינך יכול להציג את מקור העמוד."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "אינך יכול להציג את היסטוריית הדפים."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "לא ניתן לערוך עמוד זה."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "אין באפשרותך ליצור את העמוד."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "חזור"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "עמוד הבית"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "לא נמצא"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "עמוד זה אינו קיים."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "התחברות כ..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "הפוך לפטרון"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "אפשר לתמוך או לתת חסות באמצעות GitHub Sponsors (מופנה ישירות לתמיכה במפתח הראשי ניקולס גיארד במטרה שיעבוד במשרה מלאה על Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "ברוך בואך לוויקי!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "בואו נתחיל ביצירית עמוד הבית"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "יצירת עמוד בית"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "דגלים"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "וויאג'ר"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "בצע תרומה חד פעמית או חוזרת באמצעות PayPal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "תרומות מתקבלות באמצעות אית'ריום – Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "טעינת חבילת מקום"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "ללא חיבור לאינטרנט לא ניתן לטעון קבצי מקום בשיטה המצוינת לעיל, ניתן לטעון חבילות באופן ידני על ידי העלאתם מטה."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "עיון..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "ניהול webhooks לשירותים חיצוניים"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "שליחת אימייל לבדיקה"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "כתובת אימייל של הנמען"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "שליחת אימייל"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "שולח"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "שם השולח"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "דוא\"ל שולח"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "הגדרות SMTP (דוא\"ל)"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "שרת"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "פורט"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "לרוב 465 (מומלץ), 587 או 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "מאובטח (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "יש להפוך לזמין בעת שימוש בפורט 465, אחרת כבוי (587 או 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "שם משתמש"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "סיסמה"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) מספק שכבת אבטחה בכל המיילים שנשלחים מ- Wiki.js על ידי מתן האמצעים למקבילים לאמת את שם הדומיין ולהבטיח את מקוריות ההודעה."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "הפעל DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "שם דומיין"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "בוחר מפתחות"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "מפתח פרטי"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Private key for the selector in PEM format"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Send a test email to ensure your SMTP configuration is working."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "הגדרות נשמרו בהצלחה."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "גירסת מסד הנתונים לא נתמכת במלואה. ייתכן שפעילות מסוימת תהיה מוגבלת או לא תפעל כצפוי."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "מידע המערכת רוענן."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "קביעת התצורה של הגדרות האימות של הווקי"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "אסטרטגיות"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "הגדרות מתקדמות גלובליות"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "כתובת URNהל  בשימוש ב־JWT שהונפק בהתחברות. בדרך כלל שם התחום. (לדוגמה urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "תפוגת טוקן"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "תקופת התפוגה של אסימון עד שיש לחדשו. (ברירת מחדל: 30 דקות)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "תקופת חידוש טוקן"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "התקופה המקסימלית אליה טוקן יכול להתחדש (ברירת מחדל: 14 ימים)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "אסטרטגיה זו היא {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "פעיל"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "לא פעיל"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "ולא ניתן להשבית אותו."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "דוא\"ל לבדיקה נשלח בהצלחה."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "שינוי 'מראה ותחושה' של הוויקי"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "ערכת נושא של האתר"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "ערכות נושא משפיעות על אופן הצגת דפי התוכן. קטעי אתרים אחרים (כגון העורך או אזור הניהול) אינם מושפעים."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "מצב כהה"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "לא מומלץ מבחינת נגישות. ייתכן שלא נתמך על-ידי כל ערכות הנושא."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "הזרקת קוד"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS Override"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "קוד CSS להזרקה לאחר CSS ברירת המחדל של המערכת. שקול להשתמש בערכות נושא מותאמות אישית אם יש לך כמות גדולה של קוד CSS. הזרקת קוד CSS רב מדי תפגע בביצועים של טעינת העמודים! CSS יעבור minify באופן אוטומטי."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head HTML Injection"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "קוד HTML שיוחדר לפני תג HEAD הסוגר. משמש בדרך כלל לתגי תסריט."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML Injection"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "קוד HTML שיוזרק ממש לפני תג הbody הסוגר."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "הורדת ערכות נושא"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "איזור מנהל"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "תצורת אסטרטגיה"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "לתצורת אסטרטגיה זו אין אפשרויות תצורה שניתן לשנות."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "הרשמה"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "אפשר הרשמה עצמית"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "אפשר לכל משתמש שאושר בהצלחה על ידי האסטרטגיה לגשת לוויקי."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "הגבלה לתחומי דוא\"ל מסויימים"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "רשימה של תחומים המורשים להירשם. תחום כתובת הדואר האלקטרוני של המשתמש חייב להתאים לאחד מאלה כדי לקבל גישה."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "הקצה לקבוצה"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "הקצה באופן אוטומטי משתמשים חדשים לקבוצות אלה."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "אבטחה"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "הכרח את כל המשתמשים להשתמש באימות דו-שלבי"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "משתמשים יידרשו להגדיר אימות דו-שלבי בפעם הראשונה שהם נכנסים ולא יוכלו לבטלו."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "אזכור תצורה"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "אסטרטגיות מסוימות עשויות לדרוש הגדרת ערכי תצורה מסוימים בספק־השרות. אלה ניתנים כאזכור בלבד וייתכן שלא יהיה צורך בהם באסטרטגיה הנוכחית."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "תחילה יש להגדיר {{siteUrl}} תקין! לחץ על {{general}} בסרגל הצד השמאלי."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "מקורות מרשתת מותרים"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "כתובת אתר להתקשרות חוזרת / URI להפניה מחדש"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "כתובת URL להתחברות"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "כתובת URL להתנתקות"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "שיטת אימות טוקן"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "עמוד הבית"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "עמוד חדש"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "עמוד נוכחי"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "מצג"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "עריכה"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "היסטוריה"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "הצגת קוד מקור"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "העבר / שנה שם"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "מחק"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "נכסים"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "תמונות וקבצים"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "חיפוש..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "ניהול"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "חשבון"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "הוויקי שלי"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "פרופיל"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "התנתקות"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "התחברות"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "נערך לאחרונה על ידי"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "לא פורסם"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "עריכת עמוד"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "תוכן עניינים"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "סימניה"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "שתף"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "פורמט הדפסה"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "סגירה"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "עמוד"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "הגדרת יעדי גיבוי וסינכרון עבור התוכן"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "מטרות"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "מצב"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "סנכרון אחרון {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "הניסיון האחרון היה ב- {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "הודעת שגיאה"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "אין לך יעד אחסון פעיל."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "תצורת יעד"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "ליעד האחסון הזה אין אפשרויות תצורה שניתן לשנות."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "כיוון סינכרון"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "בחירת אופן הטיפול בסינכרון תוכן עבור יעד אחסון זה."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "דו - כיווני"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "דחוף ליעד"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "משוך מהיעד"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "לא נתמך"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "במצב דו-כיווני, התוכן נשלף תחילה מיעד האחסון. כל תוכן חדש יותר מחליף תוכן מקומי. לאחר מכן, תוכן חדש מאז הסינכרון האחרון נדחף ליעד האחסון, ומחליף כל תוכן ביעד אם קיים."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "תוכן תמיד נדחף אל יעד האחסון, ומחליף כל תוכן קיים. זוהי הבחירה הבטוחה ביותר עבור תרחישי גיבוי."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Content is always pulled from the storage target, overwriting any local content which already exists. This choice is usually reserved for single-use content import. Caution with this option as any local content will always be overwritten!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "לוח זמנים לסנכרון"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "בשביל ביצועי המערכת, מיקום האחסון מתעדכן פעם בכמה זמן במקום בכל שינוי. ניתן לשנות כל כמה זמן סנכרון יתבצע."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "מוגדר כעת לכל {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "ברירת המחדל היא כל {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "פעולות"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "הפעל"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "תיצור יכולות החיפוש של הוויקי"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "בניית מפתח מחדש"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "מנוע חיפוש"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "הגדרת מנוע"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "במנוע זה לא קיימות הגדרות הניתנות לשינוי."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "רשימת מנועי החיפוש עודכנה."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "הגדרת מנוע החיפוש נשמרה בהצלחה."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "בניית מפתח מחדש צלחה."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "שגיאה לא צפויה התרחשה."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "דפים"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "משתמשים"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "קבוצות"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "הגרסה האחרונה מופעלת."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "גרסה חדשה זמינה: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js הוא פרויקט קוד פתוח וחינמי. ישנן מספר דרכים לתרום לפרויקט."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "אנחנו זקוקים לעזרתך!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "למד עוד"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "רשימת האסטרטגיות עודכנה."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "תצורת האימות נשמרה בהצלחה."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "כללי"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "כתובת אתר"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "כתובת URL מלאה לוויקי, ללא לוחסן כפול מסורתי אחריו. (לדוגמה https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "כותרת האתר"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "מוצג בסרגל העליון ומצורף לכל כותרות המטא של הדפים."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "סמל"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "העלאת סמל"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "נקה"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "תמונה של {{size}} פיקסלים מומלצת לתוצאות הטובות ביותר."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "קבצים מסוג {{typeList}} או {{lastType}} בלבד"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "זכויות יוצרים בסיומת עמוד"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "שם החברה / הארגון"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "שם לשימוש בעת הצגת הודעת זכויות יוצרים בסיומת עמוד. להסתרה יש להשאיר ריק."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "תיאור האתר"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "תיאור ברירת המחדל כאשר אין תיאור לעמוד."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "רובוטי מטא"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "ברירת מחדל:  מפתח, מעקב. ניתן גם להגדיר על בסיס עמוד."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "נא להקליד לפחות 2 תווים כדי להתחיל לחפש..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "מחפש..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "אין עמודים שתואמים לחיפוש זה."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "נמצאו {{total}} תוצאות"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "האם הכוונה היתה..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "סגירה"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "העתקת קישור לחיפוש"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "חלש מאוד"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "חלש"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "ממוצע"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "חזק"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "חזק מאוד"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "מחיקת עמוד"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "האם למחוק את העמוד {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "ניתן לשחזר את העמוד מאזור הניהול."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "חיפוש משתמש"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "חיפוש משתמשים..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "כל"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "דקה(ות)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "שעה (ות)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "יום (ים)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "חודש (ים)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "שנה (ים)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "מאפייני עמוד"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "פרטי עמוד"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "כותרת"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "תיאור קצר"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "מוצג מתחת לכותרת"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "נתיב וסיווג"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "שפה"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "נתיב"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "אל תכלול קווים נטויים."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "תגים"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "שימוש בתגים לסווג עמודים ולהפוך אותם לקלים יותר לאיתור."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "מצב פרסום"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "פורסם"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "דפים שלא פורסמו גלויים למשתמשים עם הרשאות כתיבה בעמוד."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "פרסום החל ב..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "השאירו ריק כדי לא לקבוע תאריך התחלה"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "פרסום סיום ב..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "השאירו ריק כדי לא לקבוע תאריך סיום"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "למחוק שינויים שלא נשמרו?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "קיימים שינויים שלא נשמרו. האם לעזוב את העורך ולמחוק את כל השינויים שבוצעו מאז השמירה האחרונה?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "בטל שינויים"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "באיזה עורך ברצונך להשתמש בעמוד זה?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "לא ניתן לשינוי לאחר יצירת העמוד."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "נכסים"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "תיקייה חדשה"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "שם היקייה"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "נדרש לעקוב אחר תיקיית נכסים {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "כללי שיום"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "העבר"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "שנה שם"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "אופטימיזציה"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "תצוגה מקדימה"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "מאפיינים"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "תיקיית נכסים זו ריקה."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} קבצים"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "הכנס"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "מזהה"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "שם קובץ"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "סוג"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "גודל קובץ"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "התווסף"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "פעולות"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "העלאת נכסים"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "דפדוף או גרירת קבצים לכאן.."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "הבאת תמונה מרוחקת"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "יישור תמונה"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "שינוי שם נכס"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "הזנת שם חדש לנכס זה:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "מחיקת נכס"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "האם למחוק נכס"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "לא ניתן לבטל פעולה זו!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "עדכון רשימת נכסיםצלחה."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "העלאת קובץ כשלה."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "יצירת תיקיית נכסים צלחה."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "שינוי שם נכס צלח."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "מחיקת נכס צלחה."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "יש לבחור קובץ להעלאה תחילה!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "הורד"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "חזרה לעורך"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "הדגשה"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "נטוי"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "קו חוצה"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "כותרת {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "כתב תחתון"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "כתב עליון"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Blockquote מידע"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Blockquote הצלחה"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Blockquote אזהרה"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Blockquote שגיאה"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "רשימה לא מסודרת"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "רשימה ממוינת"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "קוד תחוב ישירות"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "מקש מקלדת"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "סרגל אופקי"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "הסתרת / הצגת חלונית תצוגה מקדימה"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "הוספת קישור"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "הכנסת נכסים"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "הכנסת גוש"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "הוספת גוש קוד"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "הוספת חוזי / שמע"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "הוספת דיאגרמה"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "הוספת ביטוי מתמטי"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "סייען טבלאות"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "מצב ללא הסחת דעת"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "עזרת מרקדאון"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "מציג את מקור ה עמוד{{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "חזור לתצוגה רגילה"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "מזהה {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "שפה"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "מדידה וניתוח"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "הוספת כלי מדידה וניתוח לוויקי"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "ספקי־שרות"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "תצורת ספק־שרות"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "לספק־שרות זה אין אפשרויות תצורה שניתן לשנות."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "רשימת ספקי־השרות רועננה בהצלחה."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "תצורת מדידה וניתוח נשמרה בהצלחה"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "תחזוקה וכלים שונים"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "כלים"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "אימות"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "כלים שונים לאימות / משתמשים"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "ריקון מטמון"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "ריקון מטמון של רכיבים שונים"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "נקודת קצה של GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "שנוי נקודת הקצה של GraphQL עבור Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "ייבא מ- Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "העבר נתונים מהתקנה קודמת של 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "טלמטריה"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "הפעלת / השבתת מדידת־רוחק או שיצוב מזהה הלקוח"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "תגובות"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "פורסם"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "פרטי"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "גלובלי"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "מתבצעת טעינת עמוד..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "קוד"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "שם"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "שם מקורי"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "זמינות"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "הורד"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "תוכן"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "כלים שונים לדפים"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "ערכת סמלים"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "ערכת סמלים לשימוש בניווט בסרגל־הצד."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "דפדפן זה מיושן. נא שדרג ל־{{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "דפדפן מודרני"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "שם"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "מחבר"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "הורד"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} בעת הוספת CSS לתוכן עמוד, יש להקיף אותם במחלקה {{cssClass}} אחרת פריסת העורך עשויה לההרס."
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "זהירות:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "אפשרויות ערכת נושא"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "פעיל"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "לא פעיל"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "מאומת"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "לא מאומת"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "עריכת משתמש"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "מזהה {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "מידע בסיסי"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "דוא״ל"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "שם תצוגה"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "אימות"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "ספק"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "סיסמה"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "שינוי סיסמה"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "סיסמה חדשה"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "אימות דו-שלבי (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "החלף מצב אימות דו-שלבי"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "מזהה ספק־שרות"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "קבוצות משתמשים"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "משתמש זה עדיין לא הוקצה לקבוצה. יש להקצות לפחות קבוצה אחת למשתמש."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "בחירת קבוצה..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "הקצה"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Extended Metadata"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "מיקום"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "הגדרת תפקיד"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "אזור זמן"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "עדכון משתמש צלח."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "המשתמש כבר הוקצה לקבוצה זו!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "יעד האחסון הוא {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "פעיל"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "לא פעיל"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "יש לאפשר יעד אחסון זה ולהחיל שינויים לפני שניתן יהיה לבצע פעולות."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "בחירת סיסמה חדשה"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "יש לבחור סיסמה חדשה:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "סיסמה חדשה"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "אמת סיסמה חדשה"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "שינוי סיסמה"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "משנה סיסמה..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "דפים אחרונים"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "הדפים הפופולריים ביותר"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "מידע"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "תזמון"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "חברתי"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "סיווג"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "תכונות חברתיות"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "אפשר תגובות"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "אפשור יכולות תגובית בעמוד זה."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "אפשר דירוגים"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "הצגת מידע אודות מחבר"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "הצגת סרגל כלי שיתוף"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "הראה סרגל כלים עם לחצנים לשיתוף והדפסת עמוד זה"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "הצגת מחבר העמוד בליוי זמן עריכה אחרון."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "אפשר יכולות דירוג בעמוד זה."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "או ליצור תצוגה מותאמת אישית?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "דפדוף לפי תגים"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "מפת אתר"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "פעולות בעמוד"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "בחירה נוכחית"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "ניקוי בחירה"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "בחירת תג אחד או יותר"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "חיפוש בתוצאות..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "שפה"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "מיין לפי"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "נא לבחור תג אחד או יותר מימין."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "מתבצעת טעינת תוצאות..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "לא נמצאו עמודים עם התגים שנבחרו."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "לא נמצא שום עמוד התואם את אפשרויות הסינון הנוכחיות."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "עודכן לאחרונה {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "תאריך יצירה"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "מזהה"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "שונה לאחרונה"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "נתיב"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "כותרת"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "הכול"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "אפשר לתת חסות באמצעות GitHub Sponsors (מופנה ישירות לתמיכה במפתח הראשי ניקולס גיארד במטרה שיעבוד במשרה מלאה על Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "הפוך לספונסר"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "תגים"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "ניהול תצורת SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "ספק"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "בחירת תעודה מותאםמת אישית ככול שיש תעודה כזו."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "דומיין"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "הזנת התחום הכשיר המלא שמצביע על הוויקי. (לדוגמה wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "אפשרויות ספק"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "לא פעיל"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "תעודה מותאמת אישית"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "פורטים"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "פורט HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "יציאה שאינה SSL השרת יקשיב לבקשות HTTP. בדרך כלל 80 או 3000"
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "יציאות(פורטים) HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "פורט SSL/TLS עליו יאזין השרת לבקשות HTTPS. לרוב 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "הפנה מחדש בקשות HTTP ל- HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "יפנה באופן אוטומטי כל בקשת HTTP מפורט 80 אל פורט 443 (HTTPS)."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "שים לב שקובץ התצורה חייב להיות ניתן לכתיבה כדי להמשיך בתצורת היציאות."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "סמל כתובת URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "אפיון תמונה שתשמש בתור סמל. נתמכים תסדיריSVG, PNG, JPG ביחס מרובע , בגודל 34x34 פיקסלים או יותר. להעלות תמונה חדשה נא ללחוץ על הלחצן בצד ימין."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "מחק משתמש?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "האם למחוק את המשתמש {{username}} ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "עדכון משתמש"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "שים לב שלא ניתן להקצות משתמשים לקבוצות Administrators או Guests ממסך זה."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "שים לב שאין באפשרותך למחוק משתמש שכבר יצר תוכן. במקום זאת, יש להשבית את המשתמש או למחוק את כל התוכן שנוצר על-ידי משתמש זה."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "סקריפטים"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS  ימוזער באופן אוטומטי בעת השמירה. לא לכלול תגי סגנון, אלא את קוד ה־CSS עצמו."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "גלוי לכולם"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "גלוי לקבוצות מסוימות..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "בחירת עמוד..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "מצב ניווט"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "מפת אתר"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "ניווט עץ קלאסי"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "ניווט מותאם אישית"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "תפריט ניווט סטטי + לחצן עץ האתר"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "ללא"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "השבתת ניווט אתר"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "אימות משתמש צלח."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "משתמש הופעל בהצלחה."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "משתמש בוטל בהצלחה."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "יש לבחור מלל תחילה!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "חידוש תעודה"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "מצב תעודה"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "פקיעת תעודה"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "דוא\"ל של המנוי"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "מצב נוכחי"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "הפעל"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "כבה"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "חידוש תעודה..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "לא לעזוב עמוד זה."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "חידוש תעודה צלח."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "שינוי העברת HTTP צלח."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "ניהול תגי עמוד"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "אין תגים להצגה."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "עריכת תג"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "תג"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "תווית"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "נוצר {{created}} ועודכן לאחרונה {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "מחיקת תג זה"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "נא לבחור תג מהרשימה מימין."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "הוספת תג לעמוד כדי להתחיל."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "תגים רועננו."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "מחיקת תג צלחה."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "שמירת תג צלחה."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "סנן..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "צפיה בעמודים מקושרים"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "האם למחוק תג?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "האם למחוק את התג {{tag}}? התג ימחק מכל העמודים."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "ניהול מפתחות כדי לגשת אל ה־API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API מאופשר"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API הושבת"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "איפשור API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "השבתת API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "מפתח API חדש"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "שם"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "תווים אחרונים במפתח"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "תפוגה"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "נוצר"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "עודכן לאחרונה"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "לבטל"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "לא נוצרו עדיין מפתחות API."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "לבטל מפתח API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "האם לבטל מפתח {{name}}? פעולה זו לא ניתנתן לביטול!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "לבטל"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "רשימת מפתחות API רועננה."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "המפתח בוטל בהצלחה."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "מפתח API חדש"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "מפתח API נוצר בהצלחה."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "שם חסר או לא תקין."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "נדרש לבחור קבוצה."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "לא ניתן להשתמש בקבוצת האורחים עבור מפתחות API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "מטרת מפתח זה"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "שם"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "תפוגה"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "ניתן עדיין לבטל מפתח בכל עת ללא קשר לתפוגה."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "טווחי הרשאה"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "גישה מלאה"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "או שימוש בהרשאות קבוצה..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "צור"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "קבוצה"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "הרשאות מפתח ה־API יהיו זהות לאלו של הקבוצה שנבחרה."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 יום"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 יום"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 ימים"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "שנה אחת"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 שנים"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "העתקת המפתח שמוצג מטה כ־{{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "זה לא יוצג שוב"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API אופשר בהצלחה."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API הושבת בהצלחה."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "נשמר"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "ללא"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs License"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Attribution-NonCommercial-NoDerivs License"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "דומיין ציבורי"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "כל הזכויות שמורות"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "רישיון תוכן"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "רישיון מוצג בסיומת עמוד בכל עמודי התוכן."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "תוכן זמין ב־{{license}}, על ידי {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "לא ניתן להוריד את תוכן העמוד."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "אינך יכול להוריד את התוכן עבור גרסת עמוד זו."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "אינך יכול להציג את המקור בגרסת עמוד זה."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "הצגת המקור נכון ל-{{date}} של ה עמוד{{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "מזהה גרסה {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "האם לשחזר את גירסת העמוד?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "האם לשחזר את תוכן העמוד הזה כפי שהיה ב־{{date}}? גרסה זו תועתק לראש היסטוריה הנוכחית. לכן, גרסאות חדשות יותר עדיין יישמרו."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "שחזור"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "שחזור גרסת עמוד צלח!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} תווים, {{words}} מילים"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "פתור את תקלת השמירה"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "השתמש במקומי"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "שימוש מרחוק"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "סילוק שינויים מקומיים ולהשתמש בגרסה עדכנית"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "השתמש בתוכן בלוח השמאלי"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "צפיה בגרסה אחרונה"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "גרסה עדכנית יותר של עמוד זה נשמרה על ידי {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "מה לעשות?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "להשתמש בגרסה מקומית נוכחית ולהתעלם מהשינויים האחרונים."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "להשתמש בגרסה מרוחקת (אחרונה) ולהשמיט את השינויים."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "האם להחליף בגירסה מרוחקת?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "האם להחליף את הגרסה הנוכחית בתוכן המרוחק האחרון? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "העריכות הנוכחיות ימחקו."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "אשר"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "גירסה מקומית {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(ניתן לעריכה)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(לקריאה בלבד)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "גירסה מרוחקת {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "עריכה נוכחית, מבוססת על גרסת עמוד מ־{{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "נערך לאחרונה על ידי {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "כותרת:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "תיאור:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "קיימים שינויים שלא נשמרו. האם לעזוב את העורך?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "התנגשות בשמירה! משתמש אחר ערך כבר  עמוד זה."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "שכפל"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "שם תצוגה"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "מיקום"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "הגדרת תפקיד"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "אזור זמן"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "פרופיל"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "המידע האישי שלי"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "הפרטים שלי"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "צפיה בפרופיל ציבורי"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "אימות"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "ספק"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "שינוי סיסמה"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "סיסמה נוכחית"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "סיסמה חדשה"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "אמת סיסמה חדשה"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "קבוצות"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "פעילות"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "הצטפות ב־"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "הפרופיל עודכן לאחרונה בתאריך"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "התחברות אחרונה ב־"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "עמודים שנוצרו"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "תגובות שפורסמו"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "שמירת פרופיל צלחה."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "שינוי סיסמה צלח."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "דפים"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "תגובות"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "רשימת הדפים שיצרתי או שיניתי לאחרונה"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "אין דפים לתצוגה."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "רשימת הדפים עודכנה."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "כותרת"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "נתיב"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "נוצר"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "עודכן לאחרונה"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "התחברויות אחרונות"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "עיון"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "תפריט ראשי"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "תיקייה נוכחית"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(שורש)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "העתקה ממיקמום..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "שפת מקור"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "השפה שממנה יועתקו פריטי הניווט."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "העתקה"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "בחירת המקום שממנו יועתקו הפריטים. פריטים יצורפו לרשימת הפריטים הנוכחית במקום הפעיל."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "ניווט סטטי"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "תפריט ניווט סטטי בלבד"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "העדפות"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "תבנית תאריך"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "ברירת מחדל של שפה"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "מראה"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "ברירת המחדל של האתר"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "בהיר"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "כהה"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "אימות תעודת SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "מארחים מסוימים דורשים השבתת בדיקת תעודת SSL. לאבטחה נאותה יש להשאיר 'מאופשר'."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "קישור חיצוני (חלון חדש)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "אבטחה"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "גודל העלאה מרבי"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "מקסימום קבצים להעלאה"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "כמה קבצים ניתן להעלות בבת אחת?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "הגודל המירבי לקובץ בודד."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "בתים"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "קבצים"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "העלאות"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "הגדרות אלה משפיעות רק על Wiki.js. בשימוש במתווך הפוך (לדוגמהnginx, apache, Cloudflare), יש לשנות גם את ההגדרות בו כך שיתאימו."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "תיצור הגדרות אבטחה"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "הרחבות"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "התקנת הרחבות ליכולות נוספות"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "ספק־שרות"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "הוספת דיונים לעמודי וויקי"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "קביעת תצורה של ספק"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "לספק זה אין אפשרויות תצורה שבאפשרותך לשנות."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "כל תוכן (עמודים, העלאות, הערות וכדומה) שנוצרו על ידי משתמש זה יוקצו מחדש למשתמש שנבחר מטה. מומלץ ליצור משתמש יעד דמה (לדוגמה משתמש שנמחק) כדי שהתוכן לא יוקצה מחדש למשתמש פעיל נוכחי כלשהו."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "אסטרטגיות פעילות"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "הוספת אסטרטגיה"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "עיצובים (סגנונות)"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "יש להקיף את קוד javascript בתגי תסריט HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "עמוד זה לא פורסם."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "תגובות"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "כתיבת תגובה חדשה..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "השם שלך"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "כתובת דוא\"ל שלך"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "פורמט Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "פרסום תגובה"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "טעינת תגובות..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "פרסום בשם {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "הראשון להגיב."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "עדיין אין תגובות."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "עדכון תגובה"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "אישור מחיקה"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "האם למחוק תגובה זו לצמיתות?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "לא ניתן לבטל פעולה זו!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "{{reldate}} שונה"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "תגובה חדשה פורסמה בהצלחה."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "תגובית ריקה או קצרה מדי!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "תגובה התעדכנה בהצלחה."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "מחיקת תגובה צלחה."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "מיתוג בדיקת איות"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "התחברות"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "חלון התחברות"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "תצורת JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "עקיפת חלון התחברות"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "האם המשתמש ינותב מחדש אוטומטית לספק האימות הראשון."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "כתובת URL של תמונת רקע התחברות"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "אפיון תמונה שתשמש כרקע לדף התחברות. סיומות PNG ו־JPG נתמכים, גודל מומלץ 1920x1080. לברירת המחדל נא להשאיר ריק. כדי להעלות תמונה חדשה יש ללחוץ על הלחצן בצד ימין. שימו לב שלאורחים חייבת להיות גישת קריאה לתמונה שנבחרה!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "הסתרת ספק אימות מקומי"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "לא להציג את ספק האימות המקומי בחלון ההתחברות. האם להוסיף  ?'הכול' לכתובת URL כדי להשתמש בו באופן זמני."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "אבטחה"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "אכוף אימות דו-שלבי"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "הכרח את כל המשתמשים להשתמש באימות דו-שלבי כאשר הם משתמשים בשיטה עם שם משתמש וסיסמה."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "צפיה בדיון"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "תגובה חדשה"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "תוכן תגובה"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "שיחה"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "תגים"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "דפים התואמים לתגים"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "חזרה מעלה"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "שם משתמש"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "יציאה"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "תצור צנרת תיצוג העמוד"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "כותרת אתר מכילה תווים לא תקינים."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "שמירת תצורת אתר צלחה."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "אימות דו־גרמי הושבת בהצלחה."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "אימות דו־גרמי הופעל בהצלחה."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "בקשת איפוס סיסמה..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "נא לבדוק בדוא\"ל הוראות לאיפוס סיסמה!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "פעיל"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "האם משתמשים יכולים להתחבר באמצעות אסטרטגיה זו?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "שם תצוגה"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "הכותרת שמוצגת למשתמש הקצה עבור אסטרטגיית אימות זו."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "בחירת ספק אימות"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "נא להזין נתוני אימות"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "הסיסמה נשכחה?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "נא להזין את קוד האבטחה שנוצר מהמכשיר המהימן:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "מנהל המערכת דרש שיופעל בחשבון אימות דו־שלבי (2FA)."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) יש לסרוק את קוד ה־QR מטה מיישום 2FA הנייד:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) נא להזין את קוד האבטחה שנוצר מהמכשיר המהימן:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "בחירה"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "בחירת מיקום חדש לעמוד"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "העברת / שנוי מיקום עמוד"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "בחירת עמוד"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "תיקיות מדומות"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "עמודים"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "תיקיה זו ריקה."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "המרה"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "המרת עמוד"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "בחירת העורך לשימוש בהמשך בעמוד{{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "תוכן העמוד יומר לפורמט של העורך החדש שנבחר. שים לב שייתכן שחלק מהעיצוב או התוכן שאינו מעובד יאבדו כתוצאה מההמרה. מצב ה עמודיתווסף להיסטוריית הדפים וניתן יהיה לשחזר אותו בכל עת."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "המרה"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "מנהלה"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "ייצוא לכונן"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "שמירת תוכן ל־tarball לגיבוי / הגירה"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TOC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "תוכן עניינים"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "שימוש בברירות מחדל אתר"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "רמות כותרת TOC"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "טבלת התוכן תציג כותרות מ- ועד לרמות הנבחרות."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "רמות כותרת TOC ברירת מחדל"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "תוכן העניינים יציג כותרות מהרמות שנבחרו ומעלה כברירת מחדל."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "לקוח מזהה שם מארח"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "שם חלופי למשלוח לשרת ה־SMTP לזהוי דואר השולח. יש להשאיר ריק כדי להשתמש בשם המארח של השרת. ללקוחות Google Workspace, זה אמור להיות שם התחום הראשי."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "הרחבות עמוד"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "רשימת כתובות URL להרחבות שיטופלו כעמודים, מופרדת בפסיקים. לדוגמה, הוספת md יטופל כ־/foobar.md בדומה ל־/foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "שם אתר לחצן"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "שם האתר החיצוני שיוצג בלחצן העריכה. לא לכלול את הקידומת \"נערוך ב\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "סמל לחצן"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "הסמל שיוצג בלחצן העריכה. לדוגמה, mdi-github להצגת סמל GitHub."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "לחצן כתובת URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "כתובת url לעמוד במאגר החיצוני. נא להשתמש בשומר־המיקום {filename} שבו יש לכלול את שם הקובץ. (לדוגמהhttps://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "עריכת קיצורי דרך"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "תפריט עריכה מהירה FAB"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "הצגת לחצן פעולת עריכה צף (FAB) עם תפריט חיוג מהיר בפינה הימנית התחתונה של המרקע."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "סרגל תפריט עריכה"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "הצגת סרגל תפריט העריכה"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "הצגת שורת סרגל תפריט העריכה בכותרת."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "הצגת לחצן עריכה"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "הצגת לחצן לעריכת העמוד הנוכחי."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "הצגת לחצן עריכה חיצוני"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "הצגת לחצן שמקשר למאגר חיצוני (כמו GitHub) בו משתמשים יכולים לערוך או להגיש בקשת משיכה (PR) לעמוד הנוכחי."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "נערך בידי {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "שמירת תצורת תגובות הצליחה."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "עקיפת מלל סיומת עמוד"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "אפשרות לעקוף מלל כותרת תחתית בהודעה מותאמת אישית. שימושי אם אף אחד מהרישיונות מעלה לא מתאימים."
+                }
+            ]
+        }
+    }
+}

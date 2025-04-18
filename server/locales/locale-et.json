@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Jooksutab"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Sisselogimine vajalik"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "E-post / kasutajanimi"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Parool"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Logi sisse"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Vigane sisselogimisinfo"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "E-post või kasutajanimi on vigane."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Vigane kasutaja e-post"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Sisselogimise viga"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Sul puudub ligipääs sellele lehele sisselogimiseks."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Liiga palju katseid!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Te olete teinud lühikese aja jooksul liiga palju katseid, proovige uuesti {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Kasutajat ei leitud"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Kohalik"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsofti konto"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google'i ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Kahefaktoriline autentimine (2FA)"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Nõutav turvakood:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Kinnita"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Armatuurlaud"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Üldine"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Lokaat"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistika"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Stiil"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Rühmad"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Kasutajad"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autentimine"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Redaktor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logimine"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Renderdamine"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Otsingumootor"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Säilitus"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API juurdepääs"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Süsteemi teave"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Tööriistad"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Arendaja tööriistad"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Panusta Wiki.js-i"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Viki peamised seaded"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Saidi teave"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Saidi brändimine"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Sait"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Kasutajad"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Moodulid"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Süsteem"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Määra oma viki lokaliseerimise seadeid"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Keele seaded"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Mitmekeelsed nimeruumid"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Lae keel alla"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Baaslokaat"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Kõik kasutajaliidese teksti elemendid kuvatakse valitud keeles."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Uuenda automaatselt"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Laadi kõigi allpool lubatud keelte jaoks uuendused alla kohe, kui need saadaval on."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Mitmekeelsed nimeruumid"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Võimaldab sama lehte mitmes keeles."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktiivsed nimeruumid"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Nimekiri mitmekeelsete nimeruumide jaoks lubatud keeltest. Eespool määratud baaskeel on alati kaasatud sellest valikust olenemata."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Keelekood lisatakse kõigi teede ette (nt /{{langCode}}/lehe-nimi)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Keelekoodita teed suunatakse automaatselt ümber ülal määratud baaskeelele."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Salvesta"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Tühista"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Laadi alla"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Laadi üles"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Loobu"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Tühjenda"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Loo uus"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Muuda"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Kustuta"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Värskenda"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Salvesta muudatused"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Jätka"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Saidi lokaat"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Laadi selle keele jaoks uuendused alla kohe, kui need saadaval on."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Info su süsteemi kohta"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Hosti teave"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Praegune versioon"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Uusim versioon"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Avaldatud"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operatsioonisüsteem"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Hostinimi"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU tuumad"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Kogu mälu (RAM)"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Aktiivne kataloog"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Seadete fail"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Mälu (RAM) kasutus: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Aita toetada Wiki.js arendust ja toiminguid"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Rahasta meie tööd"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Räägi teistele"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Räägi oma sõpradele ja kolleegidele, kui lahe Wiki.js on!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Jälgi meid {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Esita idee või hääleta pakutute kohta {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "funktsionaalsuste taotluste tahvel"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Leidsid bugi? Esita issue {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Aidake tõlkida Wiki.js oma keelde. Anna meile teada {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Tee annetus"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Aita kaasa"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js on Open Collective algatuse osa. Te saate rahaliselt panustada, these igakuise või ühekordse annetuse:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Me vajame su abi, et parandada tarkvara veelgi ja juhtida sellega seotud teenuseid (nt majutus ja võrgustike loomine)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js on tasuta ja avatud lähtekoodiga tarkvara, toodud teile koos {{0}}, {{1}} ja {{2}} poolt."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "toetajate"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Leht"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Töötlen"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Palun oota..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Leht edukalt loodud."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Lehe loomise ajal ilmnes viga"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Võid ka osta Wiki.js t-särke, et toetada projekti rahaliselt:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js pood"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Kõik õigused kaitstud."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Seda lehte pole veel olemas."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Kas soovid selle kohe luua?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Loo leht"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Mine tagasi"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Lehed"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigatsioon"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Saidi navigatsiooni haldamine"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Lisa"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Eraldaja"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Päis"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Silt"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikoon"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Sihi tüüp"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Siht"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Vali vasakult navigeerimiskoht."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Nimeta {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Väline link"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Kodu"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Leht"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Otsingupäring"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Redigeeri {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Kustuta {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigatsioon edukalt salvestatud."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Esimese navigeerimiskoha lisamiseks klõpsa nuppu Lisa."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigatsioon on tühi"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Rakenda"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "E-posti aadress"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Kinnita parool"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Nimi"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Registreeri"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Loo konto"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Konto juba olemas? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Logi sisse"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Logi sisse kasutades {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Unustasid parooli?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "või logi sisse kasutades..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Kontot veel pole? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Loo konto"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Sisesta õige e-post / kasutajanimi."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Sisesta õige parool."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Sisselogimine õnnestus! Ümbersuunamine..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Sisselogimine..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Autentimine pole saadaval."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Oma konto loomiseks täida allolev vorm."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Palun oota"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Konto on edukalt loodud!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Loon kontot..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "E-posti aadress puudub."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "E-posti aadress on vigane."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Parool puudub."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Parool on liiga lühike."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Mõlemad paroolid ei kattu."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Nimi puudub."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Nimi on liiga lühike."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Nimi on liiga pikk."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Tühista"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Parooli lähtestamine"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Sisesta oma e-posti aadress, et saada juhiseid oma parooli lähtestamiseks:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Post"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Seadista e-posti seadeid"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Seaded"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (valikuline)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Kontrolli oma e-kirju oma konto aktiveerimiseks."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Leht edukalt uuendatud."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Autoriseerimata"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Sa ei saa seda lehte vaadata."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Sa ei saa selle lehe lähtekoodi vaadata."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Sa ei saa selle lehe ajalugu vaadata."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Sa ei saa seda lehte muuta."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Sa ei saa seda lehte luua."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Mine tagasi"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Kodu"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Ei leitud"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Seda lehte pole olemas."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Logi sisse kui..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Hakka Patrooniks"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Hakka Patreoni kaudu toetajaks või sponsoriks (läheb otse pea-arendaja Nicolas Giardi täiskohaga Wiki.js'il töötamise eesmärgi toetamisse)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Tere tulemast oma vikisse!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Alustame ja loome kodulehekülje."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Loo koduleht"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Lipud"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Tehke ühekordne või korduv annetus PayPali kaudu:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Võtame vastu Ethereumi annetusi:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Külglaadi lokaadi pakett"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Kui teil pole Interneti-ühendust või ei saa ülaltoodud meetodi abil lokaadifaile alla laadida, saate selle asemel paketid käsitsi külglaadida, laadides need üles allpool."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Sirvi ..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Veebikonks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Halda välisteenuste veebikonkse"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Testmeili saatmine"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Saaja e-posti aadress"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Saada e-kiri"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Saatja"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Saatja nimi"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Saatja e-post"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP seaded"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Meiliserver"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Tavaliselt 465 (soovitatav), 587 või 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Turvaline (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Pordi 465 kasutamisel peaks see olema lubatud, muidu välja lülitatud (587 või 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Kasutajanimi"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Parool"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) lisab Wiki.js-ist saadetud e-kirjadele turvalisust, pakkudes saajatele võimaluse domeeninime valideerimiseks ja sõnumi autentsuse tagamiseks."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM-i kasutamine"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domeeninimi"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "DKIM võtme valik"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Privaatvõti"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Valija privaatvõti PEM-vormingus"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Saatke testmeil, et veenduda, et teie SMTP konfiguratsioon töötab."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Konfiguratsioon edukalt salvestatud."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Teie andmebaasiversioon pole täielikult toetatud. Mõned funktsioonid võivad olla piiratud või ei tööta ootuspäraselt."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Süsteemiteave on värskendatud."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Viki autentimissätete konfigureerimine"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Strateegiad"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Globaalsed täpsemad seaded"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT sihtrühm (aud)"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "JWT-s kasutatav sihtrühma URN, mis väljastatakse sisselogimisel. Tavaliselt teie domeeninimi. (nt urn:minudomeen.ee)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Pääsme aegumine"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Pääsme kehtivusaeg, kuni seda tuleb uuendada. (vaikimisi: 30 min)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Pääsme uuendamise periood"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Maksimaalne aeg, mille jooksul saab pääset aegumise korral pikendada. (vaikimisi: 14 päeva)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "See strateegia  {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "on aktiivne"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "pole aktiivne"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "ja seda ei saa keelata."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Testmeil edukalt saadetud."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Muutke oma wiki välimust ja tunnet"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Saidi kujundusteema"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Teemad mõjutavad sisulehtede kuvamist, kuid ei mõjuta muid saidi alajaotisi (nt tekstitoimetit või halduspiirkonda)."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Tume režiim"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Juurdepääsetavuse huvides pole soovitatav. Kõik teemad ei pruugi seda toetada."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Koodi süstimine"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS-i alistamine"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS-i kood, mida sisestada pärast süsteemi vaikimisi CSS-i. Kui teil on suur hulk koodi, siis kaaluge kohandatud teemade kasutamist. Liiga mahuka CSS-koodi süstimine toob kaasa aeglaselt laadiva lehe! CSS-i minifitseeritakse automaatselt."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "HTML lisamine <head> sisse"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Vahetult lõpetava </head> ette süstitav HTML kood. Tavaliselt skriptimärgendi jaoks."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "HTML lisamine <body> sisse"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Vahetult lõpetava </body> ette süstitav HTML kood."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Teemade allalaadimine"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Halduspiirkond"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Strateegia konfiguratsioon"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Sellel strateegial pole konfiguratsioonisuvandeid, mida saaksite muuta."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registreerimine"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Luba iseregistreerimine"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "See strateegia lubab igal edukalt volitatud kasutajal vikile juurde pääseda."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Kindlate meilidomeenide piiramine"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Registreerimiseks volitatud domeenide loend. Kasutaja meiliaadressi domeen peab juurdepääsu saamiseks vastama ühele neist."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Määra rühma"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Määra uued kasutajad automaatselt nendesse rühmadesse."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Turvalisus"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Kõikide kasutajate sundimine kasutama kahefaktorilist autentimist (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Kasutajalt nõutakse 2FA seadistamist esmakordsel sisselogimisel ja kasutaja ei saa seda välja lülitada."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Konfiguratsiooni viide"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Mõni strateegia võib vajada konfiguratsiooniväärtuse määramist teie teenusepakkuja juures. Need on esitatud ainult teadmiseks ja ei pruugi olla vajalikud praeguses strateegias."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Esmalt peate seadma sobiva {{siteUrl}}! Klõpsake vasakpoolsel külgribal {{general}}."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Lubatud veebipäritolu"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Sisselogimise URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Väljalogimise URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Pääsme lõpp-punkti autentimise meetod"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Kodu"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Uus leht"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Praegune leht"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Kuva"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Muuda"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Ajalugu"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Kuva lähtekood"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Teisalda / nimeta ümber"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Kustuta"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Varad"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Pildid ja failid"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Otsing..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Haldus"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Konto"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Minu viki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profiil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Logi välja"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Logi sisse"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Viimati muutnud"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Avaldamata"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Redigeeri lehte"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Lehe sisu"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Järjehoidja"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Jaga"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Prindivorming"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Sulge"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Leht"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Sisu varundus- ja sünkroonimiseesmärkide seadmine"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Eesmärgid"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Olek"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Viimane sünkroonimine {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Viimane katse {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Veateade"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Teil pole ühtegi aktiivset salvestusruumi sihtmärki."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Sihtmärgi konfiguratsioon"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Sellel salvestusruumi sihtmärgil pole konfiguratsioonivalikuid, mida saaksite muuta."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Sünkroniseerimise suund"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Valige, kuidas salvestuse sihtmärgi sisu sünkroonimist käsitletakse."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Kahesuunaline"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Lükka sihtmärki"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Tõmba sihtmärgist"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Toetamata"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Kahesuunalises režiimis tõmmatakse sisu esmalt salvestuse sihtmärgist. Iga uuem sisu kirjutab kohaliku sisu üle. Uus sisu pärast viimast sünkroonimist lükatakse seejärel salvestusruumi, kirjutades üle sihtmärgi sisu, kui see on olemas."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Sisu lükatakse alati salvestusruumi, kirjutades üle olemasoleva sisu. See on varundamistsenaariumide jaoks kõige turvalisem valik."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Sisu tõmmatakse alati salvestuse sihtmärgist, kirjutades üle juba olemasoleva kohaliku sisu. See valik on tavaliselt reserveeritud ühekordse sisu importimiseks. Ettevaatust selle valikuga, kuna igasugune kohalik sisu kirjutatakse alati üle!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Sünkroniseerimise ajakava"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Toimivuse huvides sünkroonib see salvestuse sihtmärk muudatusi intervallipõhise ajakava alusel, mitte iga muudatuse järel. Määrake, millise intervalliga peaks sünkroonimine toimuma."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Praegu on määratud iga {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Vaikeväärtus on iga {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Toimingud"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Käivita"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Wiki otsinguvõimaluste konfigureerimine"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Indekseeri uuesti"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Otsingumootor"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Mootori konfiguratsioon"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Sellel mootoril pole muudetavaid konfiguratsioonisuvandeid."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Otsingumootorite loend on värskendatud."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Otsingumootori konfiguratsioon salvestati edukalt."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Indeks on edukalt üles ehitatud."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Ilmnes ootamatu tõrge."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Lehed"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Kasutajad"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Rühmad"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Kasutate uusimat versiooni."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Saadaval on uus versioon: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js on tasuta ja avatud lähtekoodiga projekt. Projekti saab panustada mitmel viisil."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Me vajame teie abi!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Lisateave"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Strateegiate loend on värskendatud."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Autentimise konfiguratsiooni salvestamine õnnestus."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Üldine"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Saidi URL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Teie viki täielik URL ilma kaldkriipsuta lõpus (nt https://wiki.example.com)."
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Saidi pealkiri"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Kuvatakse ülemisel ribal ja lisatakse kõigi lehtede meta-pealkirjale."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Logo üleslaadimine"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Tühjenda"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Parima tulemuse saavutamiseks on soovitatav {{size}} piksline pilt."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Ainult {{typeList}} või {{lastType}} failid"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Autoriõiguse teatis jaluses"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Ettevõtte / organisatsiooni nimi"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Nimi, mida kasutada autoriõiguse teatise kuvamisel jaluses. Peitmiseks jätke see tühjaks."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Saidi kirjeldus"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Vaikekirjeldus, kui lehel eraldi kirjeldust pole."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta robotid"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Vaikimisi: Index, Follow. Saab seada ka leheküljepõhiselt."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Otsingu alustamiseks tippige vähemalt 2 märki..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Otsimine..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Päringule ei vasta ühtegi lehte."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Leiti {{total}} tulemust"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Kas mõtlesite ..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Sulge"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Kopeeri otsingulink"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Väga nõrk"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Nõrk"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Keskmine"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Tugev"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Väga tugev"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Kustuta leht"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Kas soovite kindlasti lehe {{title}} kustutada?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Lehte saab taastada halduspiirkonnas."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Otsi kasutajat"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Otsi kasutajaid..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Iga..."
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minut(it)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Tund(i)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Päev(a)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Kuu(d)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Aasta(t)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Lehe atribuudid"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Lehe teave"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Pealkiri"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Lühikirjeldus"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Näidatakse pealkirja all"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Tee ja kategoriseerimine"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Lokaat"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Tee"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Ärge lisage algusesse või lõppu kaldkriipsu."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Sildid"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Kasutage oma lehtede kategoriseerimiseks ja nende leidmise hõlbustamiseks silte."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Avaldamise olek"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Avaldatud"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Avaldamata lehed on endiselt nähtavad kasutajatele, kellel on sellel lehel kirjutamisõigused."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Avalda alates..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Jäta tühjaks, kui alguskuupäeva pole vaja määrata"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Avaldamine lõpeb ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Jäta tühjaks, kui lõppkuupäeva pole vaja määrata"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Kas soovite salvestamata muudatused hüljata?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Teil on salvestamata muudatusi. Kas soovite kindlasti redaktorist lahkuda ja pärast viimast salvestamist tehtud muudatused hüljata?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Hülga muudatused"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Millist redaktorit soovite selle lehe jaoks kasutada?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Seda ei saa pärast lehe loomist muuta."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Varad"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Uus kaust"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Kausta nimi"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Nimi peab järgnema {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "nimetamisreeglid"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Liiguta"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Nimeta ümber"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimeeri"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Eelvaade"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Atribuudid"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "See varakaust on tühi."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} faili"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Sisesta"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Failinimi"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Tüüp"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Faili suurus"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Lisatud"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Toimingud"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Varade üleslaadimine"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Sirvi või kukuta failid siia..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Kaugpildi toomine"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Pildi joondus"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Vara ümbernimetamine"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Sisestage selle vara uus nimi:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Kustuta vara"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Kas soovite kindlasti kustutada vara"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Seda toimingut ei saa tagasi võtta!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Värskendatud varade loend."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Faili üleslaadimine nurjus."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Varakaust on edukalt loodud."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Vara nimetati edukalt ümber."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Vara on edukalt kustutatud."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Esmalt peate valima üleslaaditava faili!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Tõmba"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Tagasi redaktorisse"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Paks"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Kursiiv"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Läbikriipsutus"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Pealkiri {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Alaindeks"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Ülaindeks"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Lõigu tsiteerimine"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Lõigu tsiteerimine teabe kujul"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Lõigu tsiteerimine edukana"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Hoiatus plokktsitaat"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Viga plokktsitaat"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Järjestamata loend"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Järjestatud loend"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Tekstisisene kood"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Klaviatuuri klahv"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horisontaalne riba"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Peida / kuva eelvaatepaan"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Lisa link"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Sisesta varad"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Sisesta plokk"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Sisesta koodiplokk"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Lisa video / heli"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Lisa diagramm"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Lisa matemaatikaavaldis"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Tabeliabiline"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Keskendumist soosiv režiim"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown vormindamise spikker"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Lehe {{path}} lähtekood"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Naase normaalvaatesse"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Keel"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analüütika"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Lisage oma wikile analüütika ja jälgimisvahendid"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Pakkujad"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Pakkuja konfiguratsioon"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Sellel pakkujal pole muudetavaid konfiguratsioonisuvandeid."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Pakkujate loend on edukalt värskendatud."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analüütika konfiguratsioon edukalt salvestatud"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Hooldus- ja mitmesugused tööriistad"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Tööriistad"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Autentimine"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Mitmesugused tööriistad kasutajate autentimise jaoks"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Tühjenda vahemälu"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Erinevate komponentide vahemälu tühjendamine"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL lõpp-punkt"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Muuda Wiki.js-i GraphQL-i lõpp-punkti"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Impordi Wiki.js versioonist 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migreeri andmed versiooni 1.x paigaldusest"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemeetria"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Luba/keela telemeetria või lähtesta kliendi ID"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Kommentaarid"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Avaldatud"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privaatne"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Globaalne"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Lehe laadimine..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Kood"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Nimi"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Emakeelne nimi"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL (paremalt vasakule)"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Kättesaadavus"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Lae alla"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Sisu"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Mitmesugused tööriistad lehtede jaoks"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Ikoonikomplekt"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Külgribal navigeerimisel kasutatavate ikoonide komplekt."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Teie brauser on aegunud. Minge üle versioonile {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "kaasaegne brauser"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Nimi"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Autor"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Lae alla"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Kui lisate lehele stiile, peate need hõlmama klassi {{cssClass}} Selle ignoorimine võib rikkuda redaktori kujunduse!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ETTEVAATUST:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Teema suvandid"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktiivne"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Passiivne"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Kontrollitud"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Kontrollimata"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Redigeeri kasutajat"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Põhiteave"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "E-post"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Kuvatav nimi"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autentimine"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Pakkuja"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Parool"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Muuda parooli"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Uus parool"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Kahefaktoriline autentimine (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Lülita 2FA sisse/välja"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Pakkuja ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Kasutajarühmad"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "See kasutaja pole veel ühtegi rühma määratud. Peate kasutajale määrama vähemalt ühe rühma."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Vali rühm..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Määra"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Laiendatud metaandmed"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Asukoht"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Ametinimetus"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Ajavöönd"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Kasutaja on edukalt värskendatud."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Kasutaja on sellesse rühma juba määratud!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Selle salvestusruumi sihtmärk on {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "aktiivne"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "mitteaktiivne"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Enne toimingute käivitamist peate selle salvestusruumi sihtmärgi lubama ja muudatused rakendama."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Vali uus parool"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Peate valima uue parooli:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Uus parool"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Kinnita uus parool"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Muuda parooli"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Parooli muutmine..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Viimased lehed"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Kõige populaarsemad lehed"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Teave"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Aja planeerimine"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Sotsiaalne"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Liigitamine"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Sotsiaalsed omadused"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Luba kommentaarid"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Lubage sellel lehel kommenteerimisvõimalused."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Luba hinnangud"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Kuva autoriteave"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Ühiskasutuse tööriistariba kuvamine"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Kuva tööriistariba nuppudega selle lehe ühiskasutusse andmiseks ja printimiseks"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Kuva lehe autor koos viimase redaktsiooni ajaga."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Lubage sellel lehel hindamisvõimalused."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "või luua kohandatud vaade?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Sirvi siltide järgi"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Saidi kaart"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Lehe toimingud"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Praegune valik"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Tühjenda valik"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Ühe või mitme sildi valimine"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Otsi tulemustest ..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Lokaat"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Järjestusalus"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Vali vasakult üks või mitu silti."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Lehetulemite toomine..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Ei leidnud ühtegi lehekülge valitud siltidega."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Praegustele filtreerimissuvanditele vastavaid lehti ei leitud."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Viimati uuendatud {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Loomise kuupäev"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Viimati muudetud"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Tee"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Pealkiri"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Suvaline"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Hakka sponsoriks GitHubi sponsorite kaudu (läheb otse juhtiva arendaja Nicolas Giard'i eesmärgi toetamiseks, et töötada täistööajaga Wiki.js'i kallal)."
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Hakka sponsoriks"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Sildid"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL konfiguratsiooni haldamine"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Pakkuja"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Kui teil on juba oma sert, valige Kohandatud sert."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domeen"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Sisestage täielikult kvalifitseeritud domeen, mis osutab teie vikile. (nt wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Pakkuja suvandid"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Keelatud"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Kohandatud sert"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Pordid"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP port"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Mitte-SSL port, mida server kuulab HTTP-päringute puhul. Tavaliselt 80 või 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS port"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL-port, mida server kuulab HTTPS-päringute puhul. Tavaliselt 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP ümbersuunamine HTTPS-i"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Suunab kõik HTTP-pordis esitatud päringud automaatselt HTTPS-i."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Pange tähele, et teie konfiguratsioonifail peab olema kirjutatav, et portide konfiguratsioon püsiks."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logo URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Määrake logona kasutatav pilt. Toetatud on võrdkülgne SVG, PNG, JPG 34x34 pikslit või rohkem. Uue pildi üleslaadimiseks klõpsake paremal olevat nuppu."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Kas soovite kasutaja kustutada?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Kas soovite kindlasti kustutada kasutaja {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Värskenda kasutajat"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Pange tähele, et selle paneeli kaudu ei saa kasutajaid määrata administraatorite või külaliste rühmadesse."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Pange tähele, et te ei saa kustutada kasutajat, kes on juba sisu loonud. Selle asemel peate kas kasutaja deaktiveerima või kustutama kogu selle kasutaja loodud sisu."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Skriptid"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS minimeeritakse salvestamisel automaatselt. Ärge lisage ümbritsevaid <style>-märgendeid, ainult tegelik CSS-kood."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Kõigile nähtav"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Nähtav rühmade valimiseks..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Vali leht..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigeerimisrežiim"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Saidipuu"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Klassikaline puupõhine navigeerimine"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Kohandatud navigeerimine"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Staatiline navigeerimismenüü + nupp Saidipuu"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Puudub"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Keela saidil navigeerimine"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Kasutaja on edukalt kontrollitud."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Kasutaja on edukalt aktiveeritud."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Kasutaja on edukalt deaktiveeritud."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Esmalt tuleb valida tekst!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Uuenda serti"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Serdi olek"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Serdi aegumine"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Tellija e-post"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Praegune olek"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Lülita sisse"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Lülita välja"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Serdi uuendamine..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Ärge lahkuge sellelt lehelt."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Serti uuendati edukalt."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP ümbersuunamine on edukalt muudetud."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Lehekülje siltide haldamine"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Kuvatavaid silte pole."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Redigeeri silti"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Silt"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Sildi tekst"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Loodud {{created}} ja viimati värskendatud {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Kustuta see silt"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Vali vasakul asuvast loendist silt."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Algatuseks lisage lehele silt."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Sildid on värskendatud."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Silt on edukalt kustutatud."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Silt on edukalt salvestatud."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filter..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Lingitud lehtede kuvamine"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Kas kustutada silt?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Kas olete kindel, et soovite kustutada sildi {{tag}}? Silt eemaldatakse ka ülejäänud lehekülgedelt."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "API-le juurdepääsu võtmete haldamine"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API on lubatud"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API on välja lülitatud"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API lubamine"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Lülita API välja"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Uus API võti"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Nimi"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Võtme lõpp"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Aegumine"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Loodud"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Viimati uuendatud"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Tühistamine"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "API võtmeid pole veel loodud."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Kas soovite API võtme tühistada?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Kas soovite kindlasti võtme {{name}} tühistada? Seda toimingut ei saa tagasi võtta!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Tühista"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API võtmete loend on värskendatud."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Võti on edukalt tühistatud."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Uus API võti"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API võti on edukalt loodud."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Nimi puudub või ei sobi."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Peate valima rühma."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Külaliste rühma ei saa API-võtmete puhul kasutada."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Selle võtme eesmärk"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Nimi"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Aegumine"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Võtit saate siiski igal ajal tühistada, olenemata aegumisest."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Õiguse ulatused"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Täielik juurdepääs"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "või kasuta rühmaõigusi..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Genereeri"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Rühm"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API võtmel on samad õigused kui valitud rühmal."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 päeva"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 päeva"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 päeva"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 aasta"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 aastat"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Kopeerige allpool paksus kirjas näidatud võti"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "seda EI näidata uuesti"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API on edukalt lubatud."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API on edukalt välja lülitatud."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Salvestatud"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Puudub"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Litsents CC-BY (Creative Commons, By Attribution) lubab sisu vabalt kasutada, kuid peate viitama autorile."
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "CC-BY-SA"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "CC-BY-ND"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "CC-BY-NC"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "CC-BY-NC-SA"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "CC-BY-NC-ND"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Avalik kasutus"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Kõik õigused kaitstud"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Sisulitsents"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Kõigi sisulehtede jaluses kuvatud litsents."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "{{company}} loodud sisu on {{license}} litsentsiga."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Lehe sisu ei saa alla laadida."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Selle leheversiooni sisu ei saa alla laadida."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Lehe selle versiooni allikat ei saa vaadata."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Vaatamisallikas: leht {{path}} seisuga {{date}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Versiooni ID {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Kas taastada lehe versioon?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Kas soovite kindlasti taastada selle lehe sisu, nagu see oli {{date}}? See versioon kopeeritakse praeguse ajaloo algusesse. Seega säilitatakse endiselt uuemad versioonid."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Taasta"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Lehe versioon taastati edukalt!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} tähemärki, {{words}} sõna"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Salvestamiskonflikti lahendamine"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Kasuta kohalikku sisu"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Kasuta kaugsisu"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Hülga kohalikud muudatused ja kasuta uusimat versiooni"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Kasutage vasakpoolse paneeli sisu"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Kuva uusim versioon"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Selle lehe uuema versiooni salvestas {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Mida sa tahad teha?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Kasutage oma praegust kohalikku versiooni ja eirake viimaseid muudatusi."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Kasutage kaugversiooni (uusim) ja hüljake oma muudatused."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Kas kirjutada kaugversiooniga üle?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Kas soovite kindlasti asendada oma praeguse versiooni uusima kaugsisuga? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Teie praegused muudatused lähevad kaotsi."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Kinnita"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Kohalik versioon {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(redigeeritav)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(kirjutuskaitstud)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Kaugversioon {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Teie praegune redaktsioon, mis põhineb lehekülje versioonil {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Viimati redigeeris {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Pealkiri:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Kirjeldus:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Teil on salvestamata muudatusi. Kas soovite kindlasti redaktorist lahkuda?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Salvestuskonflikt! Teine kasutaja on seda lehekülge juba muutnud."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplikaat"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Kuvatav nimi"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Asukoht"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Ametinimetus"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Ajavöönd"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profiil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Minu isiklik teave"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Minu teave"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Kuva avalik profiil"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autentimine"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Pakkuja"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Muuda parooli"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Praegune parool"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Uus parool"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Kinnita uus parool"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Rühmad"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktiivsus"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Liitunud"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profiil viimati värskendatud"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Viimane sisselogimine"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Loodud lehed"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Postitatud kommentaarid"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profiil salvestati edukalt."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Parool on edukalt muudetud."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Leheküljed"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Kommentaarid"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Minu loodud või viimati muudetud lehtede loend"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Kuvatavaid lehti pole."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Leheloend on värskendatud."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Pealkiri"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Rada"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Loodud"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Viimati uuendatud"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Viimased sisselogimised"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Lehitse"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Peamenüü"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Praegune kataloog"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(juur)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Kopeeri lokaadist..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Allika lokaat"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Lokaat, kust navigeerimisüksused kopeeritakse."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Kopeeri"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Vali lokaat, kust üksused kopeeritakse. Üksused lisatakse aktiivse lokaadi praegusesse üksuste loendisse."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Staatiline navigeerimine"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Ainult staatilise navigeerimise menüü"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Eelistused"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Kuupäeva vorming"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Lokaadi vaikesäte"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Välimus"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Saidi vaikesäte"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Hele"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Tume"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL-serdi kontrollimine"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Mõni host nõuab, et SSL-sertifikaadi kontrollimine oleks välja lülitatud. Jätke see korraliku turvalisuse tagamiseks lubatuks."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Väline link (uus aken)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Turvalisus"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Maksimaalne üleslaadimise suurus"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Maksimaalne failide arv üleslaadimise kohta"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Mitu faili saab ühe partiina üles laadida?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Ühe faili maksimaalne suurus."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "baiti"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "fail(i)"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Üleslaadimised"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Need sätted mõjutavad ainult Wiki.js. Kui kasutate pöördpuhverserverit (nt nginx, apache, Cloudflare), peate muutma ka selle sätteid, et need sobiksid."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Turvasätete konfigureerimine"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Laiendused"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Lisafunktsioonide laienduste installimine"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Pakkuja"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Arutelude lisamine vikilehtedele"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Pakkuja konfiguratsioon"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Sellel pakkujal pole muudetavaid konfiguratsioonisuvandeid."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Selle kasutaja loodud sisu (lehed, üleslaadimised, kommentaarid jne) omistakse ümber allpool valitud kasutajale. Kui te ei soovi sisu mõnele praegusele aktiivsele kasutajale omistada, on soovitatav luua tühi sihtkasutaja (nt Kustutatud Kasutaja)."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Aktiivsed strateegiad"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Lisa strateegia"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stiilid"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Javascripti kood tuleb ümbritseda HTML-i script siltidega."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "See lehekülg ei ole avalikustatud."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Kommentaarid"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Kirjuta uus kommentaar..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Sinu nimi"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Sinu emaili aadress"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown vorming"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Postita kommentaar"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Kommentaaride laadimine"
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Postitamine kasutajana {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Ole esimene, kes kommenteerib."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Kommentaare pole veel."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Värskenda kommentaar"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Kinnita kustutamine"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Kas olete kindel, et soovite selle kommentaari jäädavalt kustutada?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Seda toimingut ei saa tagasi võtta!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "muudetud {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Uus kommentaar edukalt sisestatud."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Kommentaar puudub või on liiga lühike!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Kommentaar edukalt uuendatud"
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Kommentaar edukalt kustutatud."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Lülita õigekirjakontroll sisse/välja"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Sisselogimine"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Sisselogimiskuva"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT konfiguratsioon"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Sisselogimiskuvast möödahiilimine"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Kui kasutaja suunatakse automaatselt esimese autentimisteenuse pakkuja juurde."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Sisselogimise taustapildi URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Määrake sisselogimistaustal kasutatav pilt. PNG ja JPG on toetatud, soovitatav suurus 1920x1080. Täitmata väli annab vaikimisi valiku. Uue pildi üleslaadimiseks klõpsake paremal olevat nuppu. Pange tähele, et külaliste rühmal peab olema valitud pildi lugemisõigus!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Peida kohaliku autentimise pakkuja"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Ärge kuvage sisselogimiskuval kohalikku autentimisteenuse pakkujat. Lisage URL-ile ?all, et seda ajutiselt kasutada."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Turvalisus"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Jõusta 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Kasutajanime / parooli vormiga autentimisteenuse pakkuja puhul sundige kõiki kasutajaid kasutama kahefaktorilist autentimist."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Kuva arutelu"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Uus kommentaar"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Kommentaari sisu"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Vestlus"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Sildid"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Siltidele vastavad lehed"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Tagasi üles"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Kasutajanimi"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Välju"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Lehe renderdamise konveieri konfigureerimine"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Saidi pealkiri sisaldab sobimatuid märke."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Saidi konfiguratsioon salvestati edukalt."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA on edukalt välja lülitatud."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA on edukalt sisse lülitatud."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Parooli lähtestamise taotlus..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Kontrollige oma e-kirju parooli lähtestamise juhiste saamiseks!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktiivne"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Kas kasutajad saavad selle strateegia abil sisse logida?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Kuvatav nimi"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Selle autentimisstrateegia puhul lõppkasutajale näidatav pealkiri."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Autentimisteenuse pakkuja valimine"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Sisestage oma volitused"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Unustasin parooli"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Sisestage oma usaldusväärsest seadmest loodud turvakood:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Administraator tegi teie kontol kahefaktorilise autentimise (2FA) sisse lülitamise kohustuslikuks."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Skannige allpool olev QR-kood oma mobiil-2FA rakendusest:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Sisestage oma usaldusväärsest seadmest loodud turvakood:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Vali"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Vali uue lehe asukoht"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Lehe asukoha teisaldamine / ümbernimetamine"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Lehe valimine"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtuaalsed kaustad"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Lehed"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "See kaust on tühi."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Teisenda"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Teisenda leht"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Valige redaktor, mida soovite kasutada lehel {{title}} :"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Lehe sisu teisendatakse vastvalitud redaktori vormingusse. Pange tähele, et mõni vormindus või renderdamata sisu võib teisendamise tõttu kaduma minna. Lehe ajalukku lisatakse hetktõmmis, mida saab igal ajal taastada."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Teisenda"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Haldus"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Ekspordi kettale"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Salvesta sisu pakitud failina varundamiseks või mujale liigutamiseks"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Sisukord"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Sisukord"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Kasuta saidi vaikeväärtuseid"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Sisukorra pealkirjade tasemed"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Sisukord näitab valitud tasemetega pealkirju."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Vaikimisi sisukorra päiste tasemed"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Sisukord näitab vaikimisi valitud tasemetega pealkirju."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Klienti tuvastav hostinimi"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Valikuline nimi, mis saadetakse SMTP-serverile teie posti saatja identifitseerimiseks. Jätke tühjaks, et kasutada serveri hostinime. Google Workspace'i klientide puhul peaks see olema teie peamine domeeninimi."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Lehekülje laiendused"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Komaga eraldatud loetelu URL-laiendustest, mida käsitletakse lehekülgedena. Näiteks, lisades md, käsitletakse /foobar.md samamoodi nagu /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Nupu saidi nimi"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Välise saidi nimi, mida näidatakse muutmise nupul. Ära lisa teksti \"Muuda\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Nupu ikoon"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Ikoon, mida näidatakse muutmis enupul. Näiteks mdi-github, et näidata GitHubi ikooni."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Nupu URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Välises hoidlas oleva lehe URL. Kasutage faili asemel kohahoidjat {filename} (nt https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Muuda otseteid"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB kiire muutmise menüü"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Näita ekraani paremas alanurgas hõljuvat toimingunuppu kiirvalimismenüüga (FAB)."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Muutmise menüüriba"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Näita muutmise menüüriba"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Näita lehekülje päises muutmise menüüd."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Näita muutmise nuppu"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Näita lehel selle muutmise nuppu."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Näita välist muutmise nuppu"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Näita linki välisele hoidlale (nt. GitHub), kus kasutajad saavad muuta või lisada praegust lehte."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Muuda saidil {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Kommentaaride seaded on salvestatud."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Jaluse teksti ülekirjutamine"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Kirjuta soovi korral jaluse tekst kohandatud sõnumiga üle. Kasulik, kui ükski ülalolevatest litsentsidest pole sobiv."
+                }
+            ]
+        }
+    }
+}

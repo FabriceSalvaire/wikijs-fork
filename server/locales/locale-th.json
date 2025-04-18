@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "ขับเคลื่อนโดย"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "ต้องเข้าสู่ระบบ"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "อีเมล / ชื่อผู้ใช้"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "รหัสผ่าน"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "เข้าสู่ระบบ"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "เข้าสู่ระบบไม่ถูกต้อง"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "อีเมลหรือรหัสผ่านไม่ถูกต้อง"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "เข้าสู่ระบบไม่ถูกต้อง"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "ข้อผิดพลาดในการเข้าสู่ระบบ"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "คุณยังไม่ได้รับอนุญาตให้เข้าสู่เว็บไซต์นี้"
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "พยายามหลายครั้งเกินไป!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "คุณพยายามล้มเหลวหลายครั้งเกินไปในช่วงเวลาสั้น ๆ โปรดลองอีกครั้ง {{time}}"
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "ไม่พบชื่อผู้ใช้"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "ท้องถิ่น"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "บัญชี Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "การรับรองความถูกต้องสองปัจจัย"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "ต้องการรหัสความปลอดภัย:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "ตรวจสอบ"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "แดชบอร์ด"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "ทั่วไป"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "ภาษา"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "สถิติ"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "ธีม"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "กลุ่ม"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "ผู้ใช้งาน"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "การตรวจสอบสิทธิ์"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "ผู้แก้ไข"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "บันทึกเหตุการณ์"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "การแสดงผล"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "เครื่องมือค้นหา"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "พื้นที่เก็บข้อมูล"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "การเข้าถึง API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "ข้อมูลระบบ"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "ยูทิลิตี้"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "เครื่องมือสำหรับนักพัฒนา"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "มีส่วนร่วมกับ Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "ตั้งค่าหลัก wiki ของคุณ"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "ข้อมูลเว็บไซต์"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "แบรนด์ดิ้งเว็บไซต์"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "ไซต์"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "ผู้ใช้"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "มอดูล"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "ระบบ"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "ตั้งค่าภาษาท้องถิ่นสำหรับวิกิของคุณ"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "รูปแบบภาษาท้องถิ่น"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "การตั้งชื่อหลายภาษา"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "ดาวน์โหลดภาษาท้องถิ่น"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "ภาษาท้องถิ่นพื้นฐาน"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "ข้อความ UI ทั้งหมดจะแสดงในภาษาที่เลือก"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "อัปเดตโดยอัตโนมัติ"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "ดาวน์โหลดการอัปเดตโดยอัตโนมัติไปยังเนมสเปซทั้งหมดที่เปิดใช้งานด้านล่าง"
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "เนมสเปซหลายภาษา"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "เปิดใช้งานหลายภาษาในหน้าเดียวกัน"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "เนมสเปซปัจจุบัน"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "รายชื่อของตำแหน่งที่ถูกเปิดใช้งานหลายภาษา ตําแหน่งที่ตั้งพื้นฐานที่กําหนดไว้ข้างต้นจะถูกรวมเสมอโดยไม่คํานึงถึงการเลือกนี้"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "รหัสภาษาท้องถิ่นจะเป็นคำนำหน้าในทุกรูปแบบหน้า (เช่น /{{langCode}}/ชื่อหน้า)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "ชื่อหน้ามี่ไม่มีรหัสภาษาจะเปลี่ยนทางไปยังเส้นทางหน้าที่กำหนดไว้ข้างต้นโดยอัตโนมัติ"
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "บันทึก"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "ยกเลิก"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "ดาวน์โหลด"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "อัปโหลด"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "ละทิ้ง"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "ล้าง"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "สร้าง"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "แก้ไข"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "ลบ"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "รีเฟรช"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "บันทึกการเปลี่ยนแปลง"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "ดำเนินการ"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "ภาษาเว็บไซต์"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "ดาวน์โหลดการอัปเดตโดยอัตโนมัติเมื่อพร้อมใช้งาน"
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "ข้อมูลเกี่ยวกับระบบของคุณ"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "ข้อมูลโฮสต์"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "เวอร์ชั่นปัจจุบัน"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "เวอร์ชั่นล่าสุด"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "เผยแพร่"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "ระบบปฏิบัติการ"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "ชื่อโฮสต์"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "ซีพียูคอร์"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "หน่วยความจำทั้งหมด"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "ตำแหน่งไดเรกทอรี"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "ตำแหน่งไฟล์กำหนดค่า"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "ใช้แรมไป {{used}} จาก {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "ช่วยสนับสนุนการพัฒนาและการดำเนินงานของ Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "สนับสนุนงานของเรา"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "กระจายคำ"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "บอกเล่าเพื่อนและเพื่อนร่วมงานของคุณเกี่ยวกับความยอดเยี่ยมของ Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "ติดตามเราได้ที่ {{0}}"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "ส่งแนวคิดหรือโหวตให้กับแนวคิดที่เสนอใน {{0}}"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "กระดานขอฟีเจอร์"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "พบบั๊กหรือ? ส่งปัญหาที่ {{0}}"
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "ช่วยแปล Wiki.js ในภาษาของคุณ แจ้งให้เราทราบเมื่อ {{0}}"
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "บริจาค"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "สนับสนุน"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js ยังเป็นส่วนหนึ่งของโครงการ Open Collective ซึ่งเป็นกองทุนโปร่งใสที่มุ่งสู่แหล่งชุมชน คุณสามารถส่งเสริมทางการเงินโดยการบริจาครายเดือนหรือครั้งเดียว:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "เราต้องการความช่วยเหลือจากคุณ ในการปรับปรุงซอฟต์แวร์และเรียกใช้บริการที่เกี่ยวข้องต่างๆ (เช่นโฮสติ้งและเครือข่าย)"
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js เป็นซอฟต์แวร์เสรีโอเพ่นซอร์สที่มอบให้คุณด้วย {{0}} โดย {{1}} และ {{2}}"
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "ผู้มีส่วนร่วม"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "กำลังเร็นเดอร์"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "กรุณารอซักครู่..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "สร้างหน้าสำเร็จแล้ว"
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "เกิดข้อผิดพลาดขณะสร้างหน้า"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "นอกจากนี้คุณสามารถซื้อเสื้อยืด Wiki.js เพื่อสนับสนุนโครงการ:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "ร้านค้า Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "ตกลง"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} สงวนลิขสิทธิ์"
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "หน้านี้ยังไม่มีอยู่"
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "คุณต้องการสร้างทันทีหรือไม่"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "สร้างหน้าใหม่"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "ย้อนกลับ"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "การนำทาง"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "จัดการการนำทางไซต์"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "เพิ่ม"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "ลิงก์"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "เส้นแบ่ง"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "หัวข้อ"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "ป้ายชื่อ"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "ไอคอน"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "ประเภทเป้าหมาย"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "เป้าหมาย"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "เลือกตัวนำทางจากเมนูทางซ้ายมือ"
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}} ที่ไม่มีชื่อ"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "ลิงก์ภายนอก"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "หน้าหลัก"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "การค้นหา"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "แก้ไข {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "ลบ {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "บันทึกตัวนำทางแล้ว"
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "คลิกปุ่มเพิ่มเพื่อเพิ่มตัวนำทางแรกของคุณ"
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "รายการนำทางว่างเปล่า"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "ใช้งาน"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "อีเมล์"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "ยืนยันรหัสผ่าน"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "ชื่อ"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "ลงทะเบียน"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "สร้างบัญชี"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "มีบัญชีอยู่แล้ว? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "เข้าสู่ระบบแทน"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "เข้าสู่ระบบโดยใช้ {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "ลืมรหัสผ่าน?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "หรือเข้าสู่ระบบโดยใช้..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "ยังไม่มีบัญชีใช่หรือไม่ {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "สร้างบัญชี"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "อีเมล / ชื่อผู้ใช้"
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "ป้อนรหัสผ่านที่ถูกต้อง"
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "เข้าสู่ระบบสําเร็จ! กําลังเปลี่ยนเส้นทาง..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "กําลังลงชื่อเข้าใช้..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "การรับรองความถูกต้องไม่พร้อมใช้งาน"
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "กรอกแบบฟอร์มด้านล่างเพื่อสร้างบัญชีของคุณ"
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "รอสักครู่"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "สร้างบัญชีสำเร็จแล้ว!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "กำลังสร้างบัญชี ..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "ไม่มีที่อยู่อีเมล"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "รูปแบบอีเมลไม่ถูกต้อง"
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "ไม่มีรหัสผ่าน"
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "รหัสผ่านสั้นเกินไป"
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "รหัสผ่านทั้งสองไม่ตรงกัน"
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "ชื่อหายไป"
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "ชื่อสั้นเกินไป"
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "ชื่อยาวเกินไป"
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "ยกเลิก"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "รีเซ็ตรหัสผ่าน"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "ป้อนอีเมลของคุณเพื่อรับคำแนะนำในการรีเซ็ตรหัสผ่าน:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "อีเมล"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "กำหนดการตั้งค่าอีเมล"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "การตั้งค่า"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (ไม่จำเป็น)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "ตรวจสอบอีเมลของคุณเพื่อเปิดใช้งานบัญชีของคุณ"
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "อัปเดตหน้าสำเร็จแล้ว"
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "ไม่ได้รับสิทธิ"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "คุณไม่สามารถดูหน้านี้"
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "คุณไม่สามารถดูรหัสต้นฉบับของหน้าได้"
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "คุณไม่สามารถดูประวัติหน้าได้"
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "คุณไม่สามารถแก้ไขหน้าได้"
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "คุณไม่สามารถสร้างหน้าได้"
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "ย้อนกลับ"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "หน้าหลัก"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "ไม่พบสิ่งที่ค้นหา"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "หน้านี้ยังไม่มีอยู่"
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "เข้าสู่ระบบเป็น ..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "สนับสนุนผ่าน Patreon"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "เป็นผู้สนับสนุนผ่าน Patreon (เป้าหมายเพื่อให้ Nicolas Giard ผู้พัฒนาหลักสามารถทำงานเต็มเวลาบน Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "ยินดีต้อนรับสู่วิกิของคุณ!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "มาเริ่มกันเลยและสร้างหน้าหลัก"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "สร้างหน้าหลัก"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "ธง"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "วลอยเจอร์"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "ทำการบริจาคเพียงครั้งเดียวหรือเป็นประจำผ่าน Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "เรายอมรับการบริจาคผ่าน Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "ถ่ายโอนไฟล์แพคเกจภาษา"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "หากคุณไม่ได้เชื่อมต่อกับอินเทอร์เน็ตหรือไม่สามารถดาวน์โหลดไฟล์ภาษาโดยวิธีการข้างบน คุณสามารถถ่ายโอนไฟล์แพคเกจด้วยตนเองโดยการอัปโหลดด้านล่าง"
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "เรียกดู ..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "จัดการ webhooks ไปยังบริการภายนอก"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "ส่งอีเมลทดสอบ"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "ที่อยู่อีเมลของผู้รับ"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "ส่งอีเมล"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "ผู้ส่ง"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "ชื่อผู้ส่ง"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "อีเมลผู้ส่ง"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "การตั้งค่า SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "โฮสต์"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "พอร์ต"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "โดยปกติเป็น 465 (แนะนำ), 587 หรือ 25"
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Secure (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "ควรเปิดใช้งานเฉพาะพอร์ต 465 มิฉะนั้นควรปิด (587 หรือ 25)"
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "ชื่อผู้ใช้"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "รหัสผ่าน"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys ระบุ Mail) ให้ชั้นของการรักษาความปลอดภัยบนอีเมลทั้งหมดที่ส่งจาก Wiki.js โดยให้วิธีการสําหรับผู้รับเพื่อตรวจสอบชื่อโดเมนและให้แน่ใจว่าข้อความถูกต้อง"
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "ใช้ DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "ชื่อโดเมน"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "ตัวเลือกคีย์"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "คีย์ส่วนตัว"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "คีย์ส่วนตัวสําหรับตัวเลือกในรูปแบบ PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "ส่งอีเมลทดสอบเพื่อให้แน่ใจว่าการกำหนดค่า SMTP ของคุณถูกต้อง"
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "บันทึกการกำหนดค่าสำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "เวอร์ชันฐานข้อมูลของคุณไม่ได้รับการสนับสนุนอย่างสมบูรณ์ ฟังก์ชันบางอย่างอาจถูกจํากัด หรือไม่ทํางานตามที่คาดไว้"
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "ข้อมูลระบบถูกรีเฟรชแล้ว"
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "ปรับตั้งค่าการรับรองความถูกต้องวิกิของคุณ"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "กลยุทธ์"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "การตั้งค่าขั้นสูงส่วนกลาง"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "ผู้ชม JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "ผู้ชม URN ที่ใช้ใน JWT ออกเมื่อเข้าสู่ระบบ โดยปกติชื่อโดเมนของคุณ (เช่น urn:โดเมนของคุณ."
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "โทเค็นหมดอายุ"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "ระยะเวลาหมดอายุของโทเค็นจนกว่าจะต่ออายุ (ค่าเริ่มต้น: 30 นาที)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "ระยะเวลาต่ออายุโทเค็น"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "ระยะเวลาหมดอายุของโทเค็นจนกว่าจะต่ออายุ (ค่าเริ่มต้น: 14 วัน)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "รูปเเบบนี้คือ {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "ที่ทำงานอยู่"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "ไม่ใช่ที่ทำงานอยู่"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "และไม่สามารถปิดใช้งานได้"
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "อีเมลทดสอบถูกส่งเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "ปรับเปลี่ยนรูปลักษณ์และความรู้สึกวิกิของคุณ"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "ธีม"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "ธีมมีผลให้แสดงเฉพาะหน้าเนื้อหา ส่วนอื่นๆของเว็บไซต์ (เช่นพื้นที่บรรณาธิการหรือผู้ดูแลระบบ) จะไม่ได้รับผลกระทบ"
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "โหมดมืด"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "ไม่แนะนำสำหรับการเข้าถึง อาจไม่รองรับในทุกธีม"
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "การแทรกโค้ด"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "แทนที่ CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "โค้ด CSS เพื่อฉีดหลังจาก CSS เริ่มต้นของระบบ พิจารณาใช้ธีมที่กำหนดเองหากคุณมีรหัส css จำนวนมาก การฉีดโค้ด CSS มากเกินไปจะทำให้ประสิทธิภาพในการโหลดหน้าเว็บไม่ดี! CSS จะถูกย่อให้เล็กสุดโดยอัตโนมัติ"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "HTML ส่วนหัว"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "โค้ด HTML ที่ใส่จะต้องใช้เเท็กส่วนหัวปิดก่อน"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "การใส่ HTML ส่วนตัว"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "โค้ด HTML ที่ใส่จะต้องใช้เเท็กส่วนตัวปิดก่อน"
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "ดาวน์โหลดธีม"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "ส่วนผู้ดูแลระบบ"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "การกำหนดค่ารูปเเบบ"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "ไม่มีตัวเลือกการกำหนดค่าที่คุณสามารถแก้ไขได้"
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "การลงทะเบียน"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "อนุญาตการลงทะเบียนด้วยตนเอง"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "อนุญาตให้ผู้ใช้ใดๆ ได้รับสิทธิ์เพื่อเข้าถึง Wiki"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "จำกัด เฉพาะโดเมนอีเมลที่ระบุ"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "รายชื่อโดเมนที่ได้รับอนุญาตให้ลงทะเบียน โดเมนบนอีเมลของผู้ใช้ต้องตรงกับโดเมนใดโดเมนหนึ่งเหล่านี้จึงจะเข้าถึงได้"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "กําหนดให้กับกลุ่ม"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "กำหนดผู้ใช้ใหม่ให้กับกลุ่มเหล่านี้โดยอัตโนมัติ"
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "ความปลอดภัย"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "ให้ผู้ใช้ทุกคนใช้การยืนยันตัวตนสองขั้นตอน (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "ผู้ใช้จะต้องตั้งค่า 2FA ในครั้งแรกที่เข้าสู่ระบบและไม่สามารถปิดการใช้งานโดยผู้ใช้"
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "อ้างอิงการกำหนดค่า"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "รูปเเบบบางอย่างอาจต้องการค่าการกำหนดค่าบางอย่างในผู้ให้บริการ สิ่งเหล่านี้มีไว้เพื่ออ้างอิงเท่านั้นและอาจไม่จำเป็นต้องใช้ในกลยุทธ์ปัจจุบัน"
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "คุณต้องตั้งค่า {{siteUrl}} ถูกต้องก่อน! คลิกที่ {{general}} ในแถบด้านข้างซ้าย"
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "เว็บที่อนุญาต"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "ลิ้งเรียกกลับ / เปลี่ยนเส้นทางลิ้ง"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL เข้าสู่ระบบ"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL ออกจากระบบ"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "วิธีการรับรองความถูกต้องของโทเค็นปลายทาง"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "หน้าหลัก"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "เพจใหม่"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "หน้าปัจจุบัน"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "มุมมอง"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "แก้ไข"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "ประวัติ"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "ดูรหัสต้นฉบับ"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "ย้าย / เปลี่ยนชื่อ"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "ลบ"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "เนื้อหา"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "รูปภาพและไฟล์"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "ค้นหา..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "ผู้ดูแลระบบ"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "บัญชีผู้ใช้"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "วิกิของฉัน"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "โปรไฟล์"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "ออกจากระบบ"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "เข้าสู่ระบบ"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "แก้ไขล่าสุดโดย"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "ยังไม่เผยแพร่"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "แก้ไขหน้า"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "สารบัญ"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "บุ๊คมาร์ก"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "แบ่งปัน"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "รูปแบบการพิมพ์"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "ปิด"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "ตั้งค่าการสำรองและซิงค์สำหรับเนื้อหาของคุณ"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "เป้าหมาย"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "สถานะ"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "อัพเดทล่าสุดเมื่อ {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "ความพยายามครั้งสุดท้ายคือ {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "ข้อความแสดงข้อผิดพลาด"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "คุณไม่มีพื้นที่เก็บข้อมูลเป้าหมายที่ใช้งานอยู่"
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "การกำหนดค่าเป้าหมาย"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "ไม่มีตัวเลือกการกำหนดค่าที่คุณสามารถแก้ไขได้"
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "ทิศทางการซิงค์"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "เลือกวิธีจัดการกับการซิงโครไนซ์เนื้อหาสำหรับเป้าหมายหน่วยเก็บข้อมูลนี้"
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Bi-directional"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "ผลักดันให้เป้าหมาย"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "ดึงจากเป้าหมาย"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "ยังไม่รองรับ"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "ในโหมดสองทิศทางเนื้อหาจะถูกดึงจากเป้าหมายการจัดเก็บ เนื้อหาใหม่จะเขียนทับเนื้อหาภายในเครื่อง เนื้อหาใหม่ตั้งแต่การซิงค์ครั้งล่าสุดถูกผลักไปยังเป้าหมายการจัดเก็บ"
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "เนื้อหาถูกส่งไปยังเป้าหมายหน่วยเก็บข้อมูลเสมอเขียนทับเนื้อหาที่มีอยู่ใด ๆ นี่เป็นตัวเลือกที่ปลอดภัยที่สุดสำหรับสถานการณ์การสำรองข้อมูล"
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "เนื้อหาถูกดึงจากเป้าหมายการจัดเก็บเสมอ ตัวเลือกนี้มักจะถูกสงวนไว้สําหรับการนําเข้าเนื้อหาแบบใช้ครั้งเดียว ข้อควรระวังกับตัวเลือกนี้เป็นเนื้อหาท้องถิ่นใด ๆ จะถูกเขียนทับ!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "กำหนดการซิงค์"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "สำหรับเหตุผลด้านประสิทธิภาพเป้าหมายหน่วยเก็บข้อมูลนี้ประสานการเปลี่ยนแปลงตามกำหนดเวลาตามช่วงเวลาแทนที่จะเป็นทุกการเปลี่ยนแปลง กำหนดช่วงเวลาที่ควรทำการซิงโครไนซ์"
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "ปัจจุบันกำหนดให้ทุก {{schedule}}"
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "ค่าเริ่มต้นคือทุก {{schedule}}"
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "การปฏิบัติ"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "รัน"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "กำหนดค่าความสามารถในการค้นหาของ wiki ของคุณ"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "สร้างดัชนีใหม่"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "เครื่องมือค้นหา"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "การกำหนดค่าเครื่องมือค้นหา"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "ไม่มีตัวเลือกการกำหนดค่าที่คุณสามารถแก้ไขได้"
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "รายการเครื่องมือค้นหาถูกรีเฟรชแล้ว"
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "บันทึกการกำหนดค่าเครื่องมือค้นหาเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "สร้างดัชนีใหม่สำเร็จแล้ว"
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "เกิดความผิดพลาดอย่างไม่ได้คาดคิด."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "ผู้ใช้"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "กลุ่ม"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "คุณกำลังใช้งานเวอร์ชันล่าสุด"
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "มีเวอร์ชันใหม่พร้อมใช้งาน: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js เป็นโครงการโอเพนซอร์สเสรี มีหลายวิธีที่คุณสามารถมีส่วนร่วมในโครงการได้"
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "พวกเราต้องการความช่วยเหลือจากคุณ!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "เรียนรู้เพิ่มเติม"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "รายการรูปเเบบถูกรีเฟรชแล้ว"
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "บันทึกการกำหนดค่าการตรวจสอบสิทธิ์สำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "ทั่วไป"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "ไซต์"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "URL แบบเต็มไปยังวิกิของคุณโดยไม่มีเครื่องหมายทับ (เช่น https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "ชื่อเว็บไซต์"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "แสดงในแถบด้านบนและต่อท้ายชื่อเมต้าของหน้าทั้งหมด"
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "โลโก้"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "อัพโหลดโลโก้"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "ล้าง"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "ขอแนะนำให้ใช้ภาพ {{size}} พิกเซลเพื่อผลลัพธ์ที่ดีที่สุด"
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} หรือ {{lastType}} เท่านั้น"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "ลิขสิทธิ์ส่วนท้าย"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "ชื่อ บริษัท / องค์กร"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "ชื่อที่จะใช้เมื่อแสดงประกาศลิขสิทธิ์ในส่วนท้าย เว้นว่างไว้เพื่อซ่อน"
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "รายละเอียดเว็บไซต์"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "คำอธิบายเริ่มต้นเมื่อไม่มีการจัดเตรียมไว้สำหรับหน้า"
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "ค่าเริ่มต้น: Index, Follow นอกจากนี้ยังสามารถตั้งค่าได้ต่อหน้า"
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "พิมพ์อย่างน้อย 2 ตัวอักษรเพื่อเริ่มค้นหา ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "กำลังค้นหา ..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "ไม่มีเพจที่ตรงกับคำค้นหาของคุณ"
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "พบ {{total}} ผลลัพธ์"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "คุณหมายถึง ..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "ปิด"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "คัดลอกลิงค์การค้นหา"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "อ่อนแอมาก"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "อ่อนแอ"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "ปานกลาง"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "แข็งแกร่ง"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "แข็งแกร่งมาก"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "ลบเพจ"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "คุณแน่ใจหรือไม่ว่าคุณต้องการลบหน้า {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "หน้าสามารถถูกคืนค่าจากพื้นผู้ดูแลได้"
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "ค้นหาผู้ใช้"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "ค้นหาผู้ใช้"
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "ทุก ๆ "
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "นาที"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "ชั่วโมง"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "วัน"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "เดือน"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "ปี"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "คุณสมบัติของหน้า"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "ข้อมูลหน้า"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "ชื่อ"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "คําอธิบายอย่างย่อ"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "แสดงบริเวณใต้ชื่อ"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "เส้นทางและการจัดหมวดหมู่"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "ภาษา"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "เส้นทาง"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "อย่ารวมเครื่องหมายทับหรือส่วนท้ายใด ๆ"
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "แท็ก"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "ใช้แท็กเพื่อจัดหมวดหมู่หน้าของคุณและทำให้ง่ายต่อการค้นหา"
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "สถานะเผยแพร่"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "เผยแพร่แล้ว"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "ผู้ใช้ที่มีสิทธิ์ในการเขียนหน้านี้สามารถที่จะมองเห็นหน้าที่ยังไม่เผยแพร่ได้"
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "เผยแพร่เริ่มต้นเมื่อ ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "ทิ้งว่างถ้าไม่มีวันเริ่มเริ่ม"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "เผยแพร่สิ้นสุดใน ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "ปล่อยว่างไว้ถ้าวันที่สิ้นสุด"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "ละทิ้งการเปลี่ยนแปลงที่ไม่ได้บันทึกหรือไม่"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "คุณมีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก คุณแน่ใจหรือไม่ว่าต้องการออกจากโปรแกรมแก้ไขและยกเลิกการแก้ไขใด ๆ ที่คุณทำตั้งแต่บันทึกครั้งสุดท้าย?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "ยกเลิกการเปลี่ยนแปลง"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "คุณต้องการใช้เครื่องมือแก้ไขใดสำหรับหน้านี้"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "สิ่งนี้ไม่สามารถเปลี่ยนแปลงได้เมื่อสร้างหน้าแล้ว"
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "เนื้อหา"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "โฟลเดอร์ใหม่"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "ชื่อโฟลเดอร์"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "ต้องเป็นไปตามโฟลเดอร์ {{namingRules}}"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "กฎการตั้งชื่อ"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "ย้าย"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "เปลี่ยนชื่อ"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "เพิ่มประสิทธิภาพ"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "ดูตัวอย่าง"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "คุณสมบัติ"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "โฟลเดอร์นี้ว่างเปล่า"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} ไฟล์"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "แทรก"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "ชื่อไฟล์"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "ประเภท"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "ขนาดไฟล์"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "เพิ่มแล้ว"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "การกระทํา"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "อัปโหลดเนื้อหา"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "เรียกดูหรือวางไฟล์ที่นี่ ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "ดึงภาพจากระยะไกล"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "การจัดแนวรูปภาพ"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "เปลี่ยนชื่อเนื้อหา"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "ป้อนชื่อใหม่สำหรับเนื้อหานี้:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "ลบเนื้อหา"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "คุณแน่ใจหรือว่าต้องการลบเนื้อหา"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "การกระทำนี้ไม่สามารถยกเลิกได้!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "รีเฟรชรายการสินทรัพย์สำเร็จแล้ว"
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "การอัปโหลดไฟล์ล้มเหลว"
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "สร้างโฟลเดอร์เสร็จเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "เปลี่ยนชื่อเนื้อหาเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "ลบเนื้อหาเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "คุณต้องเลือกไฟล์ที่จะอัพโหลดก่อน!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "ดึงข้อมูล"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "กลับไปที่เครื่องมือแก้ไข"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "ตัวหนา"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "ตัวเอียง"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "ขีดฆ่า"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "หัวเรื่องระดับ {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "ตัวห้อย"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "ตัวยก"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "บล็อกโควท"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "บล็อกโควทสำหรับรายละเอียด"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "บล็อกโควทสำหรับความสำเร็จ"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "บล็อกโควทสำหรับแจ้งเตือน"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "บล็อกโควทสำหรับข้อผิดพลาด"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "รายการที่ไม่เรียงลำดับ"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "รายการเรียงลำดับ"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "โค้ดในบรรทัด"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "แป้นคีย์บอร์ด"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "แถบแนวนอน"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "ซ่อน / แสดงหน้าต่างแสดงตัวอย่าง"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "แทรกลิงก์"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "แทรกเนื้อหา"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "แทรกบล็อก"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "แทรกบล็อกโค้ด"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "แทรกวิดีโอ / เสียง"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "แทรกแผนภาพ"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "แทรกนิพจน์ทางคณิตศาสตร์"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "ตัวช่วยตาราง"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Distraction Free Mode"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "วิธีใช้การจัดรูปแบบมาร์กดาวน์"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "ดูรหัสต้นฉบับของหน้า {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "กลับไปยังมุมมองปกติ"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "ภาษา"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "วิเคราะห์"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "เพิ่มเครื่องมือวิเคราะห์และติดตามลงในวิกิของคุณ"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "ผู้ให้บริการ"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "การกำหนดค่าของผู้ให้บริการ"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "ไม่มีตัวเลือกการกำหนดค่าที่คุณสามารถแก้ไขได้"
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "รีเฟรชรายชื่อผู้ให้บริการเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "บันทึกการกําหนดค่าการวิเคราะห์เรียบร้อยแล้ว"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "เครื่องมือบำรุงรักษาและเบ็ดเตล็ด"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "เครื่องมือ"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "การตรวจสอบสิทธิ์"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "เครื่องมือต่าง ๆ สำหรับการรับรองความถูกต้อง / ผู้ใช้"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "ล้างแคช"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "ล้างแคชของส่วนประกอบต่าง ๆ"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "เปลี่ยนปลายทาง GraphQL สำหรับ Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "นำเข้าข้อมูลจาก Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "โอนย้ายข้อมูลจากการติดตั้งรุ่น 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "telemetry"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "เปิดใช้งาน/ปิดใช้งาน telemetry หรือรีเซ็ตรหัสไคลเอ็นต์"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "ความคิดเห็น"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "เผยแพร่แล้ว"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "ส่วนตัว"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "ทั่วโลก"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "กําลังโหลดหน้า..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "โค้ด"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "ชื่อ"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "ชื่อท้องถิ่น"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "ความพร้อมใช้งาน"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "ดาวน์โหลด"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "เนื้อหา"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "เครื่องมือต่าง ๆ สำหรับหน้า"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "ชุดไอคอน"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "ชุดไอคอนที่ใช้สำหรับการนำทางด้านข้าง"
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "เบราว์เซอร์ของคุณล้าสมัยแล้ว อัปเกรดเป็น {{modernBrowser}}"
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "เบราว์เซอร์ที่ทันสมัย"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "ชื่อ"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "ผู้สร้างสรรค์"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "ดาวน์โหลด"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} เมื่อเพิ่มสไตล์สำหรับเนื้อหาของหน้าคุณต้องกำหนดขอบเขตให้กับ {{cssClass}} การละเว้นสิ่งนี้อาจทำให้เค้าโครงของเครื่องมือแก้ไขผิดพลาด!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ข้อควรระวัง:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "ตัวเลือกธีม"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "ที่ทำงานอยู่"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "ไม่ได้ใช้งาน"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "ยืนยันแล้ว"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "ยังไม่ยืนยัน"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "แก้ไขข้อมูลผู้ใช้"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "ข้อมูลพื้นฐาน"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "อีเมล"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "ชื่อที่แสดง"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "การตรวจสอบสิทธิ์"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "ผู้ให้บริการ"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "รหัสผ่าน"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "เปลี่ยนรหัสผ่าน"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "รหัสผ่านใหม่"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "การยืนยันตัวตนแบบสองขั้นตอน (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "เปิดหรือปิดการยืนยันตัวตนสองขั้นตอน"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "รหัสผู้ให้บริการ"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "กลุ่มผู้ใช้"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "ผู้ใช้นี้ยังไม่ได้รับมอบหมายให้กลุ่มใด ๆ คุณต้องกำหนดอย่างน้อย 1 กลุ่มให้กับผู้ใช้"
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "เลือกกลุ่ม ..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "กำหนด"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "ข้อมูลเมตาเพิ่มเติม"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "ที่ตั้ง"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "ตำแหน่งงาน"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "เขตเวลา"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "อัปเดตผู้ใช้สำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "ผู้ใช้อยู่ในกลุ่มนี้อยู่แล้ว"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "เป้าหมายหน่วยเก็บข้อมูลนี้คือ {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "ที่ทำงานอยู่"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "ไม่ได้ใช้งาน"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "คุณต้องเปิดใช้งานเป้าหมายพื้นที่เก็บข้อมูลนี้และใช้การเปลี่ยนแปลงครั้งก่อนจึงจะสามารถดำเนินการได้"
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "กำหนดรหัสผ่านใหม่"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "คุณต้องกำหนดรหัสผ่านใหม่:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "รหัสผ่านใหม่"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Verify New Password"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "เปลี่ยนรหัสผ่าน"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "กำลังเปลี่ยนรหัสผ่าน..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "หน้าล่าสุด"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "หน้ายอดนิยม"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "รายละเอียด"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "กำหนดเวลา"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "สังคม"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "จำแนกประเภท"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "คุณลักษณะสังคม"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "อนุญาตให้แสดงความคิดเห็น"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "เปิดใช้งานความสามารถในการแสดงความคิดเห็นในหน้านี้"
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "อนุญาตการให้คะแนน"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "แสดงข้อมูลผู้แต่ง"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "แสดงแถบเครื่องมือที่ใช้ร่วมกัน"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "แสดงแถบเครื่องมือพร้อมปุ่มเพื่อแบ่งปันและพิมพ์หน้านี้"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "แสดงผู้เขียนหน้าพร้อมกับเวลาพิมพ์ครั้งล่าสุด"
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "เปิดใช้งานความสามารถในการให้คะแนนในหน้านี้"
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "หรือสร้างมุมมองที่กำหนดเอง"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "เรียกดูตามแท็ก"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "แผนผังเว็บไซต์"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "การดำเนินการกับเพจ"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "ตัวเลือกปัจจุบัน"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "ล้างการเลือก"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "เลือกแท็ก"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "ค้นหาตามผลลัพธ์..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "ภาษา"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "เรียงตาม"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "เลือกแท็กทางซ้ายมือ"
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "กำลังดึงผลลัพธ์ของหน้า ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "ไม่พบหน้าใด ๆ ที่ตรงกับแท็กที่เลือก"
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "ไม่พบหน้าใดๆ ที่ตรงกับตัวกรองที่เลือก"
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "อัพเดทล่าสุดเมื่อ {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "วันที่สร้าง"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "แก้ไขล่าสุด"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "เส้นทาง"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "หัวเรื่อง"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "ภาษาใด ๆ"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "เป็นผู้สนับสนุนผ่าน GitHub Sponsors (เข้าสู่เป้าหมายโดยตรงของ Nicolas Giard ผู้พัฒนาเป้าหมายการทำงานเต็มเวลาบน Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "ร่วมเป็นผู้สนับสนุน"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "แท็ก"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "จัดการการกำหนดค่า SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "ผู้ให้บริการ"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "เลือกใบรับรองที่กำหนดเองหากคุณมีใบรับรองของคุณแล้ว"
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "โดเมน"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "ป้อนโดเมนแบบเต็มที่ชี้ไปที่วิกิของคุณ (เช่น wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "ตัวเลือกก่อนหน้านี้"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "ปิด"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "เริ่มเข้ารหัสเลย"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "ใบรับรองแบบกําหนดเอง"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "พอร์ต"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "พอร์ต HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "พอร์ตที่ไม่ใช่ SSL เซิร์ฟเวอร์จะรับฟังคำขอ HTTP ปกติ 80 หรือ 3000"
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "พอร์ต HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "พอร์ต SSL เซิร์ฟเวอร์จะรับฟังคำขอ HTTPS มักจะ 443"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "เปลี่ยนเส้นทางคำร้องขอ HTTP ไปยัง HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "จะเปลี่ยนเส้นทางคำขอใด ๆ บนพอร์ต HTTP ไปยัง HTTPS โดยอัตโนมัติ"
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "โปรดทราบว่าไฟล์กำหนดค่าของคุณจะต้องสามารถเขียนได้เพื่อที่จะคงอยู่การกำหนดค่าพอร์ต"
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL โลโก้"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "รูปภาพที่จะใช้เป็นโลโก้ สนับสนุนไฟล์ SVG, PNG, JPG ในอัตราส่วนจตุรัส 34x34 พิกเซลหรือใหญ่กว่า คลิกที่ปุ่มด้านขวาเพื่ออัปโหลดภาพใหม่"
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "ลบผู้ใช้หรือไม่?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "ต้องการลบผู้ใช้ชื่อ {{username}} หรือไม่?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "อัปเดตผู้ใช้"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "หมายเหตุว่าคุณไม่สามารถแต่งตั้งผู้ใช้เป็นผู้ดูแลระบบหรือกลุ่มผู้เยี่ยมชมจากแผงควบคุมนี้"
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "โปรดสังเกตว่าคุณไม่สามารถลบผู้ใช้ที่สร้างเนื้อหาไว้แล้ว คุณต้องปิดการทำงานผู้ใช้หรือลบเนื้อหาทั้งหมดที่สร้างโดยผู้ใช้นั้น"
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "สคริปต์"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS จะถูกย่อให้เล็กอัตโนมัติเมื่อบันทึก อย่ารวมแท็กสไตล์โดยรอบเท่านั้นรหัส CSS จริง"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "สามารถมองเห็นได้ทุกคน"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "เลือกกลุ่มที่เห็นได้"
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "เลือกหน้า ..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "โหมดนำทาง"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "แผนผังเว็บไซต์"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "การนำทางแบบคลาสสิค"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "ปรับแต่งการนำทาง"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "เมนูนำทาง + ปุ่มแผนผังเว็บไซต์"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "ไม่มี"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "ปิดการใช้งานการนำทางไซต์"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "ผู้ใช้ยืนยันตัวตนสำเร็จ"
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "ผู้ใช้เปิดใช้งานสำเร็จ"
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "ผู้ใช้ปิดการใช้งานสำเร็จ"
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "ต้องเลือกข้อความก่อน!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "ต่ออายุใบรับรอง"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "สถานะใบรับรอง"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "ใบรับรองหมดอายุ"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "ติดตามผ่านอีเมล"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "สถานะปัจจุบัน"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "เปิด"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "ปิด"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "กำลังต่ออายุใบรับรอง ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "อย่าออกจากหน้านี้"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "ต่ออายุใบรับรองสำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "เปลี่ยนเส้นทาง HTTP ได้ถูกเปลี่ยนแล้ว"
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "หน้าจัดการแท็ก"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "ไม่มีแท็กที่จะแสดง"
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "แก้ไขแท็ก"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "แท็ก"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "ป้ายชื่อ"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "สร้าง {{created}} แล้วและอัปเดตข้อมูตล่าสุดเมื่อ {{updated}}"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "ลบแท็กนี้"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "เลือกแท็กจากรายการทางซ้ายมือ"
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "เพิ่มแท็กลงในหน้าเพื่อเริ่มต้นใช้งาน"
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "แท็กได้รับการรีเฟรชแล้ว"
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "ลบแท็กแล้ว"
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "บันทึกแท็กสำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "ตัวกรอง"
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "ดูหน้าที่เชื่อมโยงมา"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "ลบแท็กหรือไม่"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "คุณแน่ใจหรือว่าต้องการลบแท็ก {{tag}} แท็กจะถูกยกเลิกการเชื่อมโยงจากทุกหน้า"
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "จัดการคีย์เพื่อเข้าถึง API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "เปิดใช้ API แล้ว"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "ปิดการใช้งาน API"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "เปิดใช้งาน API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "ปิดการใช้งาน API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "คีย์ API ใหม่"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "ชื่อ"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "จุดสิ้นสุดของคีย์"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "การหมดอายุ"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "สร้างใหม่แล้ว"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "แก้ไขล่าสุด"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "ถอน"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "ยังไม่มีการสร้างคีย์ API"
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "เพิกถอนคีย์ API หรือไม่"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "คุณแน่ใจหรือไม่ ว่าต้องการเพิกถอนคีย์ {{name}} การกระทำนี้ไม่สามารถยกเลิกได้!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "ถอน"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "รายการคีย์ API ได้รับการรีเฟรช"
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "คีย์ API ถูกเพิกถอนสำเร็จ"
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "คีย์ API ใหม่"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "สร้างคีย์ API สำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "ชื่อหายไปหรือไม่ถูกต้อง"
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "คุณต้องเลือกกลุ่ม"
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "กลุ่ม Guests ไม่สามารถใช้คีย์ API"
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "วัตถุประสงค์ของคีย์นี้"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "ชื่อ"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "การหมดอายุ"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "คุณยังสามารถยกเลิกคีย์ได้ตลอดเวลาโดยไม่คํานึงถึงวันหมดอายุ"
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "ขอบเขตการอนุญาต"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "การเข้าถึงแบบเต็ม"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "หรือ ใช้การอนุญาตกลุ่ม ..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "สร้าง"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "กลุ่ม"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "คีย์ API จะมีสิทธิ์เดียวกันกับกลุ่มที่เลือก"
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 วัน"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 วัน"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 วัน"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 ปี"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 ปี"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "คัดลอกคีย์ที่แสดงด้านล่างเป็น {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "มันจะไม่ถูกแสดงอีกครั้ง"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API ได้ถูกเปิดใช้งานเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API ถูกปิดใช้งานเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "บันทึก"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "ไม่มี"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "ครีเอทีฟคอมมอนส์ แสดงที่มา"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "ครีเอทีฟคอมมอนส์ แสดงที่มา - อนุญาตให้แก้ไข ดัดแปลง ทำซ้ำ"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "ครีเอทีฟคอมมอนส์ แสดงที่มา - ไม่อนุญาตให้แก้ไข ดัดแปลง ทำซ้ำ"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "ครีเอทีฟคอมมอนส์ แสดงที่มา - ห้ามใช่เชิงพาณิชย์"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "สัญญาอนุญาตครีเอทีคอมมอนส์ แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "สัญญาอนุญาตครีเอทีคอมมอนส์ แสดงที่มา-ไม่ใช้เพื่อการค้า-อนุญาตแบบเดียวกัน-ไม่แก้ไขดับแปลง"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "สาธารณะสมบัติ"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "สงวนลิขสิทธิ์"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "สิทธิ์การใช้งานเนื้อหา"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "สัญญาอนุญาตจะแสดงในส่วนท้ายของหน้าเนื้อหาทั้งหมด"
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "เนื้อหาอยู่ภายใต้ {{license}} โดย {{company}}"
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "คุณไม่สามารถดาวโหลดเนื้อหาของหน้านี้ได้"
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "คุณไม่สามารถดาวโหลดเนื้อหาของหน้าในเวอร์ชั่นนี้ได้"
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "คุณไม่สามารถดูรหัสต้นฉบับในรุ่นนี้ของหน้าได้"
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "ดูรหัสต้นฉบับของ {{date}} ของหน้า {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "รหัสเวอร์ชัน {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "กำลังดึงผลลัพธ์ของหน้าหรือไม่"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "คุณแน่ใจหรือไม่ว่าต้องการคืนค่าเนื้อหาของหน้านี้เหมือนเดิมใน {{date}} รุ่นนี้จะถูกคัดลอกที่ด้านบนของประวัติปัจจุบัน ดังนั้นเวอร์ชันที่ใหม่กว่าจะยังคงอยู่"
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "กู้คืน"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "การกู้คืนเวอร์ชันสำเร็จแล้ว!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} ตัวอักษร {{words}} คำ"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "แก้ไขข้อขัดแย้งในการบันทึก"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "ใช้ภายในเครื่อง"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "ใช้ระยะไกล"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "ยกเลิกการเปลี่ยนแปลงในเครื่องและใช้รุ่นล่าสุด"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "ใช้เนื้อหาในแผงด้านซ้าย"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "ดูเวอร์ชั่นล่าสุด"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "หน้านี้ได้รับการบันทึกเวอร์ชันล่าสุดเมื่อ {{date}} โดย {{authorName}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "คุณต้องการทําอะไร"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "ใช้เวอร์ชันภายในเครื่องปัจจุบันของคุณ และละเว้นการเปลี่ยนแปลงล่าสุด"
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "ใช้เวอร์ชันระยะไกล (ล่าสุด) และละทิ้งการเปลี่ยนแปลงของคุณ"
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "เขียนทับด้วยเวอร์ชันระยะไกลหรือไม่"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "คุณแน่ใจหรือไม่ว่าคุณต้องการแทนที่รุ่นปัจจุบันของคุณด้วยเนื้อหาล่าสุด {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "การแก้ไขปัจจุบันของคุณจะหายไป"
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "ยืนยัน"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "รุ่นภายในเครื่อง {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(แก้ไขได้)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(อ่านอย่างเดียว)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "ระยะไกลเวอร์ชัน {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "การแก้ไขปัจจุบันของคุณ มีพื้นฐานมาจากเวอร์ชั่น {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "แก้ไขล่าสุดโดย {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "ชื่อหน้า:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "คำอธิบาย:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "คุณยังไม่ได้บันทึกการแก้ไข คุณแน่ใจว่าคุณอยากจะออกจากเครื่องมือแก้ไขนี้?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "เกิดการแก้ไขชนกัน ผู้ใช้อื่นได้แก้ไขหน้านี้แล้ว"
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "ทำซ้ำ"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "ชื่อที่แสดง"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "ตำแหน่งที่ตั้ง"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "ตำแหน่งงาน"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "เขตเวลา"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "โปรไฟล์"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "ข้อมูลส่วนตัวของฉัน"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "ข้อมูลของฉัน"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "ดูโปรไฟล์สาธารณะ"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "การรับรอง"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "ผู้ให้บริการ"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "เปลี่ยนรหัสผ่าน"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "รหัสผ่านปัจจุบัน"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "รหัสผ่านใหม่"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "ยืนยันรหัสผ่าน"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "กลุ่ม"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "กิจกรรม"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "เข้าร่วมเมื่อ"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "อัพเดตโปรไฟล์ล่าสุดเมื่อ"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "เข้าสู่ระบบล่าสุด"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "สร้างหน้าแล้ว"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "ความคิดเห็นที่โพสต์"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "บันทึกโปรไฟล์เสร็จเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "เปลี่ยนรหัสผ่านเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "ความคิดเห็น"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "รายการของเพจที่ฉันสร้างหรือปรับเปลี่ยนล่าสุด"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "ไม่มีหน้าที่จะแสดง"
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "รายการหน้าถูกรีเฟรชแล้ว"
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "หัวข้อ"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "เส้นทาง"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "สร้างใหม่"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "แก้ไขล่าสุด"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "เข้าสู่ระบบล่าสุด"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "เรียกดู"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "เมนูหลัก"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "ไดเรกทอรีปัจจุบัน"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(root)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "คัดลอกจากสถานที่ ..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "ตำแหน่งที่ตั้งต้นทาง"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "ตําแหน่งที่ตั้งที่รายการการนําทางจะถูกคัดลอกมา"
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "สำเนา"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "เลือกตําแหน่งที่ตั้งที่จะคัดลอกรายการ รายการจะถูกผนวกเข้ากับรายการปัจจุบันของรายการในตําแหน่งที่ตั้งที่ใช้งานอยู่"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "การนำทางแบบคงที่"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "เมนูนำทางคงที่เท่านั้น"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "การกําหนดลักษณะ"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "รูปแบบวันที่"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "ภาษาเริ่มต้น"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "ลักษณะ"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "ไซต์เริ่มต้น"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "โหมดสว่าง"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "โหมดมืด"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "ตรวจสอบใบรับรอง SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "โฮสต์บางแห่งต้องการปิดใช้งานการตรวจสอบใบรับรอง SSL ปล่อยให้เปิดใช้งานเพื่อความปลอดภัยที่เหมาะสม"
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "ลิงก์ภายนอก (หน้าต่างใหม่)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "ความปลอดภัย"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "ขนาดการอัพโหลดสูงสุด"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "ไฟล์สูงสุดต่อการอัพโหลด"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "สามารถอัปโหลดไฟล์ได้กี่ไฟล์ในหนึ่งครั้ง?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "ขนาดสูงสุดสำหรับไฟล์เดียว"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "ไบต์"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "ไฟล์"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "อัปโหลด"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "การตั้งค่าเหล่านี้มีผลกับ Wiki.js เท่านั้น หากคุณใช้ reverse-proxy (เช่น nginx, apache, Cloudflare) คุณต้องเปลี่ยนการตั้งค่าให้ตรงกัน"
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "กำหนดการตั้งค่าความปลอดภัย"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "ส่วนขยาย"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "ติดตั้งส่วนขยายสำหรับฟังก์ชันพิเศษ"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "ผู้ให้บริการ"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "ยินดีต้อนรับสู่วิกิของคุณ!"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "การกำหนดค่า"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "ไม่มีตัวเลือกการกำหนดค่าที่คุณสามารถแก้ไขได้"
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "เนื้อหาใด ๆ (หน้า การอัปโหลด ความคิดเห็น ฯลฯ ) ที่สร้างโดยผู้ใช้รายนี้จะถูกกำหนดใหม่ให้กับผู้ใช้ที่เลือกด้านล่าง ขอแนะนำให้สร้างผู้ใช้เป้าหมายจำลอง (เช่นผู้ใช้ที่ถูกลบ) หากคุณไม่ต้องการให้เนื้อหาถูกกำหนดใหม่ให้กับผู้ใช้ิื่อื่นที่ใช้งานอยู่ในปัจจุบัน"
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "รูปเเบบที่ใช้งานอยู่"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "เพิ่มรูปเเบบ"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "รูปแบบ"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "คุณต้องใส่โค้ดจาวาสคริปต์ด้วยแท็กสคริปต์ HTML"
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "หน้านี้ยังไม่เผยแพร่"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "ความคิดเห็น"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "เขียนความคิดเห็นใหม่ ..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "ชื่อของคุณ"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "ที่อยู่อีเมลของคุณ"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "รูปแบบ Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "แสดงความคิดเห็น"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "กำลังโหลดความคิดเห็น ..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "โพสต์เป็น {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "เป็นคนแรกที่แสดงความคิดเห็น"
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "ยังไม่มีความคิดเห็น"
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "อัพเดทความคิดเห็น"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "ยืนยันการลบ"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "คุณแน่ใจหรือไม่ คุณต้องการที่จะลบข้อคิดเห็นนี้อย่างถาวร"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "การกระทํานี้ไม่สามารถยกเลิกได้!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "แก้ไข {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "โพสต์ความคิดเห็นใหม่สำเร็จแล้ว"
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "ความคิดเห็นว่างเปล่าหรือสั้นเกินไป!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "อัปเดตความคิดเห็นเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "ลบความคิดเห็นสำเร็จแล้ว"
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "สลับการตรวจคำผิด"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "เข้าสู่ระบบ"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "หน้าจอเข้าสู่ระบบ"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "การกําหนดค่า JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "ข้ามหน้าจอเข้าสู่ระบบ"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "ควรถูกเปลี่ยนเส้นทางผู้ใช้โดยอัตโนมัติไปยังตัวให้บริการการรับรองความถูกต้องแรก"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL ของรูปภาพในเบื้องหลังการเข้าสู่ระบบ"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "ระบุภาพที่จะใช้เป็นพื้นหลังการเข้าสู่ระบบ รองรับ PNG และ JPG แนะนำให้ใช้ 1920x1080 ปล่อยว่างไว้เป็นค่าเริ่มต้น คลิกที่ปุ่มด้านขวาเพื่ออัปโหลดภาพใหม่ โปรดทราบว่ากลุ่มแขกต้องมีการเข้าถึงเพื่ออ่านภาพที่เลือก!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "ซ่อนผู้ให้บริการการตรวจสอบสิทธิ์"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "ไม่แสดงผู้ให้บริการการตรวจสอบความถูกต้องท้องถิ่นบนหน้าจอเข้าสู่ระบบ เพิ่มทั้งหมดลงใน URL เพื่อใช้งานชั่วคราว"
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "ความปลอดภัย"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "บังคับใช้ 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "บังคับให้ผู้ใช้ทุกคนใช้การยินยันตัวตนสองขั้นตอน (2FA) เมื่อผู้ใช้ใช้การยืนยันตัวตนผ่านฟอร์มเข้าสู่ระบบ"
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "ดูความคิดเห็น"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "ความคิดเห็นใหม่"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "ความคิดเห็นใหม่"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "คุย"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "แท็ก"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "หน้าที่มีเเท็กตรงกัน"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "กลับสู่ด้านบน"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "ชื่อผู้ใช้"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "ออก"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "ปรับตั้งค่าการรับรองความถูกต้องวิกิของคุณ"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "ชื่อเว็บไซต์มีอักขระที่ไม่ถูกต้อง"
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "บันทึกการกำหนดค่าเว็บไซต์สำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA ถูกปิดใช้งานเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA ถูกเปิดใช้งานเรียบร้อยแล้ว"
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "กำลังร้องขอการรีเซ็ตรหัสผ่าน"
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "ตรวจสอบอีเมลของคุณเพื่อดูคำแนะนำในการรีเซ็ตรหัสผ่าน"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "ใช้งาน"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "ผู้ใช้สามารถเข้าสู่ระบบโดยใช้วิธีการนี้ได้หรือไม่?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "ชื่อที่แสดง"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "ชื่อที่แสดงต่อผู้ใช้สำหรับวิธีการตรวจสอบสิทธิ์นี้"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "เลือกผู้ให้บริการการตรวจสอบสิทธิ์"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "ป้อนข้อมูลประจำตัวของคุณ"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "ลืมรหัสผ่าน"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "ป้อนรหัสความปลอดภัยที่สร้างจากอุปกรณ์ที่เชื่อถือได้ของคุณ:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "ผู้ดูแลระบบของคุณกำหนดให้เปิดใช้งานการรับรองความถูกต้องด้วยสองปัจจัย (2FA) ในบัญชีของคุณ"
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) สแกนรหัส QR ด้านล่างด้วยแอปพลิเคชัน 2FA บนมือถือของคุณ:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) ป้อนรหัสความปลอดภัยที่สร้างจากอุปกรณ์ที่เชื่อถือได้ของคุณ:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "เลือก"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "เลือกตําแหน่งที่ตั้งเพจใหม่"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "ย้าย / เปลี่ยนชื่อตำแหน่งเพจ"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "เลือกหน้า ..."
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "โฟลเดอร์เสมือน"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "หน้า"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "โฟลเดอร์นี้ว่างเปล่า"
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "แปลง"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "แปลงหน้า"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "เลือกตัวแก้ไขที่คุณต้องการใช้ต่อไปสำหรับหน้า {{title}} :"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "เนื้อหาของเพจจะถูกแปลงเป็นรูปแบบของตัวแก้ไขที่เลือกใหม่ โปรดทราบว่าเนื้อหาที่จัดรูปแบบหรือไม่ได้แสดงผลบางส่วนอาจสูญหายไปอันเป็นผลมาจากการแปลง สแนปชอตจะถูกเพิ่มลงในประวัติเพจและสามารถกู้คืนได้ตลอดเวลา"
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "แปลง"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "ผู้ดูแลระบบ"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "ส่งออกไปยังดิสก์"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "สารบัญ"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "สารบัญ"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "ใช้ค่าเริ่มต้นของไซต์"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "ไอคอนปุ่ม"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "ไอคอนที่จะแสดงบนปุ่มแก้ไข ตัวอย่างเช่นใช้ mdi-github เพื่อแสดงไอคอน GitHub"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "URL ของปุ่ม"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "แก้ไขคำสั่งลัด"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "แสดงปุ่มแก้ไข"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "แสดงปุ่มเพื่อแก้ไขหน้าปัจจุบัน"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "บันทึกการกำหนดค่าความคิดเห็นสำเร็จแล้ว"
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

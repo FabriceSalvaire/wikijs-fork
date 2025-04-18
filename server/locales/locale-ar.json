@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "يعمل بواسطة"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "تسجيل الدخول مطلوب"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "البريد الإلكتروني / اسم المستخدم"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "كلمه المرور"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "تسجيل الدخول"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "تسجيل دخول غير صالح"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "البريد الإلكتروني أو كلمة المرور غير صالحة."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "بريد الكتروني للمستخدم غير صالح"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "خطأ في تسجيل الدخول"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "لم يُصرح لك بتسجيل الدخول إلى هذا الموقع حتى الآن."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "محاولات كثيرة!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "لقد أجريت العديد من المحاولات الفاشلة في فترة زمنية قصيرة ، يرجى المحاولة مرة أخرى {{time}} ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "لم يتم العثور علي المستخدم"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "محلي"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "حساب مايكروسوفت"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "فيس بوك"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "التصديق الثونائي"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "رمز الأمان المطلوب:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "التحقق"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "لوحة البيانات"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "العامه"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "اللغة"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "الاحصاءات"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "الثيم"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "المجموعات"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "المستخدمين"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "المصادقة"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "محرر"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "تسجيل"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "تقديم"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "محرك البحث"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "التخزين"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "وصول API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "معلومات النظام"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "المرافق"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "ادوات المطورين"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "ساهم في Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "الإعدادات الرئيسية للويكي الخاص بك"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "معلومات الموقع"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "العلامة التجارية للموقع"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "الموقع"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "المستخدمين"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "وحدات"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "النظام"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "تعيين خيارات التعريب لويكي الخاص بك"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "إعدادات اللغة"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "النطاق متعددة اللغات"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "تنزيل اللغة"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "اللغة الاساسيه"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "سيتم عرض كافة عناصر نص واجهه المستخدم في اللغة المحددة."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "التحديث تلقائيا"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "قم بتنزيل التحديثات تلقائيًا إلى جميع لغات أماكن النطاقات الممكّنة أدناه."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "نطاقات متعددة اللغات"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "تمكين إصدارات لغة متعددة من نفس الصفحة."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "النطاقات النشطة"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "قائمة باللغات التي تم تمكينها لنطاقات متعددة اللغات. سيتم دائمًا تضمين اللغة الأساسية المحددة أعلاه بغض النظر عن هذا الاختيار."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "سيتم بادئة رمز الإعدادات المحلية لجميع المسارات. (على سبيل المثال / {{langCode}} / اسم الصفحة)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "ستتم إعادة توجيه المسارات دون رمز لغة تلقائياً إلى اللغة الأساسية المحددة أعلاه."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "حفظ"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "إلغاء"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "تحميل"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "رفع"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "تجاهل"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "مسح"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "إنشاء"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "تحرير"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "حذف"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "تحديث"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "حفظ التغييرات"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "متابعة"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "لغة الموقع"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "قم تلقائيًا بتنزيل التحديثات لهذه اللغة عندما تصبح متوفرة."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "معلومات عن نظامك"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "معلومات المضيف"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "الإصدار الحالي"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "أحدث إصدار"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "نشر"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "نظام التشغيل"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "اسم المضيف"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "النوى وحدة المعالجة المركزية"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "إجمالي ذاكرة الوصول العشوائي"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "منطقة العمل"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "ملف التكوين"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "استخدام ذاكره الوصول العشوائي: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "ساعد في دعم تطوير وعمليات Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "مول عملنا"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "انشر الكلمة"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "تحدث إلى أصدقائك وزملائك حول مدى روعة Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "تابعنا على {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "قدم فكرة أو صوت على فكرة مقترحة في {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "لوحه طلبات الميزات"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "وجدت خطا؟ أرسل مشكلة في {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "ساعد في ترجمة Wiki.js بلغتك. دعنا نعرف علي {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "قم بالتبرع"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "المساهمة"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "تعد Wiki.js أيضًا جزءًا من مبادرة Open Collective ، وهي صندوق شفاف يتجه نحو موارد المجتمع. يمكنك المساهمة مالياً عن طريق التبرع الشهري أو لمرة واحدة:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "نحن بحاجه إلى مساعدتكم للحفاظ علي تحسين البرمجيات وتشغيل الخدمات المرتبطة المختلفة (مثل استضافه والشبكات)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js عبارة عن برنامج مجاني ومفتوح المصدر تم تقديمه لك مع {{0}} بواسطة {{1}} و {{2}} ."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "المساهمين"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "صفحة"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "تقديم"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "الرجاء الانتظار..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "تم إنشاء الصفحة بنجاح."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "حدث خطا اثناء إنشاء الصفحة"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "يمكنك أيضًا شراء قمصان Wiki.js لدعم المشروع ماليًا:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "متجر Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "موافق"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . كل الحقوق محفوظة."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "هذه الصفحة غير موجودة حتى الآن."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "هل ترغب في إنشائه الآن؟"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "إنشاء صفحة"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "عد"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "التنقل"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "إدارة التنقل في الموقع"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "إضافة"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "الرابط"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "مقسم"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "رأس"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "تسميه"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "رمز"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "نوع الهدف"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "الهدف"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "حدد عنصر التنقل على اليسار."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "بدون عنوان {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "رابط خارجي"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "الصفحة الرئيسية"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "صفحة"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "استعلام بحث"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "تحرير {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "حذف {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "تم حفظ التنقل بنجاح."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "انقر فوق الزر \"إضافة\" لإضافة عنصر التنقل الأول."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "التنقل فارغ"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "تطبيق"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "عنوان بريد الكتروني"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "التحقق من كلمه المرور"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "اسم"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "تسجيل"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "انشئ حساب"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "هل لديك حساب بالفعل ؟ {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "تسجيل الدخول بدلا من ذلك"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "تسجيل الدخول باستخدام {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "هل نسيت كلمه المرور ؟"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "أو تسجيل الدخول باستخدام ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "لا تملك حسابا حتى الآن؟ {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "انشئ حساب"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "ادخل بريد الكتروني/اسم مستخدم صالح."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "ادخل كلمه مرور صالحه."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "تسجيل الدخول بنجاح! إعادة توجيه..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "تسجيل الدخول..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "المصادقة غير متوفرة."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "املأ النموذج أدناه لإنشاء حسابك."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "الرجاء الانتظار"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "تم إنشاء الحساب بنجاح!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "أنشاء حساب..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "عنوان البريد الإلكتروني مفقود"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "عنوان البريد الإلكتروني غير صالح."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "كلمة مرور مفقودة."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "كلمة المرور قصيرة جدا."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "كلمتا المرور غير متطابقتين."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "الاسم مفقود."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "الإسم قصير جدا."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "الاسم طويل جدا."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "إلغاء"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "إعادة تعيين كلمة المرور"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "أدخل عنوان البريد الإلكتروني الخاص بك لتلقي تعليمات إعادة تعيين كلمة المرور الخاصة بك:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "البريد"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "تكوين إعدادات البريد"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "تكوين"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (اختياري)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "تحقق من رسائل البريد الإلكتروني الخاصة بك لتفعيل حسابك."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "تم تحديث الصفحة بنجاح."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "غير المصرح به"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "لا يمكنك عرض هذه الصفحة."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "لا يمكنك عرض مصدر الصفحة."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "لا يمكنك عرض محفوظات الصفحة."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "لا يمكنك تحرير الصفحة."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "لا يمكنك إنشاء الصفحة."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "عد"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "الصفحة الرئيسية"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "لم يتم العثور عليه"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "هذه الصفحة غير موجودة."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "تسجيل الدخول باسم..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "كن راعيا"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "كن داعمًا أو راعيًا عن طريق Patreon (يذهب مباشرةً إلى دعم المطور الرئيسي نيكولاس جيارد بهدف العمل بدوام كامل على Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "مرحبًا بك في الويكي الخاص بك!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "لنبدأ وننشئ الصفحة الرئيسية."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "إنشاء الصفحة الرئيسية"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "أعلام"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "تقديم تبرع لمرة واحدة أو متكرر عبر Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "نحن نقبل التبرعات باستخدام إيثريوم:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "حزمه اللغة الجانبية"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "إذا لم تكن متصلا بالإنترنت أو لم تتمكن من تنزيل الملفات المحلية باستخدام الطريقة المذكورة أعلاه ، يمكنك بدلا من ذلك تحميل الحزم يدويا عن طريق تحميلها أدناه."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "تصفح..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "إدارة webhooks إلى الخدمات الخارجية"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "إرسال بريد الكتروني تجريبي"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "عنوان البريد الكتروني للمستلم"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "إرسال البريد الكتروني"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "المرسل"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "اسم المرسل"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "البريد الكتروني للمرسل"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "إعدادات SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "المضيف"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "منفذ"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "عادة 465 (مستحسن) ، 587 أو 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "آمن (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "يجب تمكينه عند استخدام المنفذ 465 ، وإلا تم إيقاف تشغيله (587 أو 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "اسم المستخدم"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "كلمه المرور"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "يوفر DKIM (البريد المعرف في المجال) طبقه من الأمان علي جميع رسائل البريد الكتروني المرسلة من Wiki.js عن طريق توفير وسائل للمستلمين للتحقق من صحة اسم النطاق وضمان صحة الرسالة."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "استخدم DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "اسم النطاق"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "مفتاح محدد"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "المفتاح الخاص"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "المفتاح الخاص للتحديد بتنسيق PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "إرسال بريد الكتروني اختباري للتاكد من ان إعدادات SMTP الخاص بك يعمل."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "تم حفظ الإعدادات بنجاح."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "إصدار قاعده البيانات الخاصة بك غير معتمد بشكل كامل. قد تكون بعض الوظائف محدوده أو لا تعمل كما هو متوقع."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "تم تحديث معلومات النظام."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "تكوين إعدادات المصادقة لويكي الخاص بك"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "استراتيجيات"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "إعدادات متقدمة عامة"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "جمهور JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "الجمهور URN المستخدمة في JWT الصادرة عند تسجيل الدخول. عادة اسم المجال الخاص بك. (على سبيل المثال urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "انتهاء صلاحيه الرمز"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "فتره انتهاء صلاحيه الرمز  إلى ان يتم تجديده. (الافتراضي: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "فترة تجديد الرمز"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "الحد الأقصى للفترة التي يمكن تجديد الرمز المميز عند انتهائها. (الافتراضي: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "هذه الاستراتيجية هي {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "نشط"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "غير نشط"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "ولا يمكن تعطيله."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "تم إرسال بريد إلكتروني تجريبي بنجاح."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "تعديل شكل ومظهر ويكي الخاص بك"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "الثيم الموقع"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "تؤثر السمات على كيفية عرض صفحات المحتوى. لا تتأثر أقسام الموقع الأخرى (مثل المحرر أو منطقة المسؤول)."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "وضع الظلام"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "غير مستحسن لامكانيه الوصول. قد لا تكون معتمده من قبل كافة الثيمات."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "حقن التعليمات البرمجية"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS Override"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "كود CSS للحقن بعد CSS الافتراضي للنظام. أخذ بعين الإعتبار في استخدام الثيم المخصصة إذا كان لديك كمية كبيرة من رمز المغلق. سيؤدي حقن الكثير من كود CSS إلى ضعف أداء تحميل الصفحة! سيتم تصغير CSS تلقائيًا."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "حقن أعلى HTML"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "تعليمات HTML البرمجية التي سيتم حقنها قبل علامة إغلاق الرأس. عاده للعلامات السكربت."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "حقن HTML الجسم"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "كود HTML ليتم حقنه قبل علامة إغلاق النص مباشرة."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "تحميل ثيمات"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "منطقة الإدارة"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "إعدادات الاستراتيجية"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "لا تحتوي هذه الاستراتيجية على خيارات الإعداد التي يمكنك تعديلها."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "التسجيل"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "السماح للتسجيل الذاتي"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "السماح لأي مستخدم تمت الموافقة عليه بنجاح من قبل الاستراتيجية للوصول إلى ويكي."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "تحديد نطاقات البريد الكتروني المحددة"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "قائمه بالمجالات المصرح لها بالتسجيل. يجب ان يطابق مجال عنوان البريد الكتروني للمستخدم واحده من هذه للحصول علي حق الوصول."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "تعيين إلى المجموعة"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "تعيين مستخدمين جدد إلى هذه المجموعات تلقائيا."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "الأمان"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "إجبار جميع المستخدمين على استخدام المصادقة الثنائية (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "سيُطلب من المستخدمين إعداد 2FA عند تسجيل الدخول لأول مرة ولا يمكن للمستخدم تعطيله."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "مرجع الاعدادات"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "قد تتطلب بعض الاستراتيجيات تعيين بعض قيم التكوين علي الموفر الخاص بك. ويتم توفير هذه الإشارات للرجوع اليها فقط وقد لا تكون هناك حاجه اليها ببموجب الاستراتيجية الحالية."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "يجب عليك تعيين {{siteUrl}} صالح أولاً! انقر على {{general}} في الشريط الجانبي الأيسر."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "أصول ويب المسموح بها"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "رابط رد الاتصال / رابط إعادة توجيه"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "رابط تسجيل الدخول"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "رابط تسجيل الخروج"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "أسلوب مصادقه نقطه نهاية الرمز المميز"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "الصفحة الرئيسية"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "صفحة جديدة"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "الصفحه الحاليه"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "عرض"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "تحرير"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "السجل"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "عرض المصدر"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "نقل / إعادة تسمية"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "حذف"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "الأصول"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "الصور والملفات"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "بحث..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "الإدارة"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "الحساب"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "ويكي"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "الملف الشخصي"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "الخروج"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "تسجيل الدخول"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "آخر تعديل بواسطة"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "غير منشورة"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "تحرير الصفحة"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "جدول المحتويات"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "المرجعية"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "مشاركه"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "تنسيق الطباعة"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "اغلاق"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "صفحة"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "تعيين النسخ الاحتياطي ومزامنة الأهداف للمحتوى الخاص بك"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "أهداف"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "الحالة"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "المزامنة الأخيرة {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "آخر محاولة كانت {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "رسالة الخطا"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "ليس لديك أي هدف تخزين نشط."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "إعدادات الهدف"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "لا يحتوي هذا التخزين المستهدف على خيارات الإعداد يمكنك تعديلها."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "اتجاه المزامنة"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "اختر كيفية معالجة مزامنة المحتوى لهدف التخزين هذا."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "ثنائية الاتجاه"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "الدفع إلى الهدف"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "السحب من الهدف"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "غير معتمد"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "في الوضع ثنائي الاتجاه ، يتم سحب المحتوى أولاً من هدف التخزين. أي محتوى أحدث الكتابة فوق المحتوى المحلي. ثم يتم دفع محتوى جديد منذ آخر مزامنة إلى هدف التخزين ، الكتابة فوق أي محتوى على الهدف إذا كان موجودًا."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "يتم دائما دفع المحتوي إلى هدف التخزين ، والكتابة فوق اي محتوي موجود. هذا هو الخيار الأكثر أمانا لسيناريوهات النسخ الاحتياطي."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "يتم دائمًا سحب المحتوى من هدف التخزين ، الكتابة فوق أي محتوى محلي موجود بالفعل. عادةً ما يكون هذا الخيار محجوزًا لاستيراد المحتوى للاستخدام مرة واحدة. احذر من هذا الخيار حيث سيتم دائمًا الكتابة فوق أي محتوى محلي!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "جدول المزامنة"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "لأسباب تتعلق بالأداء ، يقوم هدف التخزين هذا بمزامنة التغييرات وفقًا لجدول يستند إلى الفاصل الزمني ، بدلاً من كل تغيير. حدد الفترة الزمنية التي يجب أن يحدث فيها التزامن."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "مضبوط حاليًا على كل {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "الافتراضي هو كل {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "الاجراءات"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "تشغيل"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "إعداد قدرات البحث من ويكي الخاص بك"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "إعادة بناء الفهرس"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "محرك البحث"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "إعدادات المحرك"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "لا يحتوي هذا المحرك علي خيارات إعدادات يمكنك تعديلها."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "تم تحديث قائمة محركات البحث."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "تم حفظ إعدادات محرك البحث بنجاح."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "إعادة بناء الفهرس بنجاح."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "حدث خطأ غير متوقع."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "المستخدمين"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "المجموعات"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "أنت تشغل أحدث إصدار."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "يتوفر إصدار جديد: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js هو مشروع مجاني ومفتوح المصدر. هناك عدة طرق يمكنك من خلالها المساهمة في المشروع."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "نحن نحتاج مساعدتك!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "معرفة المزيد"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "تم تحديث قائمة الاستراتيجيات."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "تم حفظ تكوين المصادقة بنجاح."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "العامه"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "عنوان URL للموقع"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "عنوان URL الكامل إلى ويكي الخاص بك ، دون مائل زائده. (علي سبيل المثال https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "عنوان الموقع"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "يتم عرضه في الشريط العلوي ويتم إلحاقه بجميع صفحات العنوان الوصفية."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "شعار"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "تحميل الشعار"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "مسح"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "يوصي باستخدام صوره {{size}} بكسل للحصول علي أفضل النتائج."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} أو {{lastType}} الملفات فقط"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "تذييل حقوق الطبع والنشر"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "اسم الشركة / المؤسسة"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "الاسم الذي يجب استخدامه عند عرض إشعار حقوق النشر في التذييل. اتركه فارغًا للاختباء."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "وصف الموقع"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "الوصف الافتراضي عند عدم تقديم أي صفحة."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "الافتراضي: فهرس ، اتبع. ويمكن أيضا تعيين علي أساس كل صفحه."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "اكتب حرفين على الأقل لبدء البحث ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "البحث ..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "لا توجد صفحات مطابقة لطلب البحث."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "تم العثور على {{total}} نتائج"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "هل تعني..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "اغلاق"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "نسخ رابط البحث"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "ضعيف جدا"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "ضعيف"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "متوسط"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "قوي"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "قوي جدا"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "حذف الصفحة"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "هل أنت متأكد من أنك تريد حذف صفحة {{title}} ؟"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "يمكن استعادة الصفحة من منطقة الإدارة."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "بحث المستخدم"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "البحث عن المستخدمين ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "كل"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "دقيقة (دقائق)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "ساعة (ساعات)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "اليوم /الأيام"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "الشهر /الشهر"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "السنة (السنوات)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "خصائص الصفحة"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "معلومات الصفحة"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "عنوان"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "وصف مختصر"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "يظهر أسفل العنوان"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "المسار والتصنيف"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "اللغة"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "مسار"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "لا تقم بتضمين أي مائلة زائدة أو مائلة."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "العلامات"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "استخدم العلامات لتصنيف صفحاتك وجعلها أسهل في البحث عنها."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "حالة النشر"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "نشر"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "تظل الصفحات غير المنشورة مرئية للمستخدمين الذين لديهم أذونات الكتابة على هذه الصفحة."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "نشر ابتداء من ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "اترك فارغًا بدون تاريخ بدء"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "النشر ينتهي في ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "اتركه فارغًا بدون تاريخ انتهاء"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "تجاهل التغييرات غير المحفوظة؟"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "لديك تغييرات غير محفوظة. هل تريد بالتأكيد ترك المحرر وتجاهل أي تعديلات أجريتها منذ الحفظ الأخير؟"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "تجاهل التغييرات"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "ما هو المحرر الذي تريد استخدامه لهذه الصفحة؟"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "لا يمكن تغييره بمجرد إنشاء الصفحة."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "الأصول"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "مجلد جديد"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "اسم المجلد"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "يجب اتباع مجلد الأصول {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "قواعد التسمية"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "نقل"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "إعادة تسمية"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "تحسين"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "معاينة"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "خصائص"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "مجلد الأصل هذا فارغ."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} الملفات"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "إدراج"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "معرف"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "اسم الملف"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "نوع"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "حجم الملف"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "اضيف"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "الاجراءات"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "تحميل الأصول"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "تصفح أو اسقط الملفات هنا ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "جلب صورة عن بعد"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "محاذاة الصورة"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "إعادة تسمية الأصل"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "أدخل الاسم الجديد لهذا الأصل:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "حذف الأصل"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "هل تريد بالتأكيد حذف الأصل"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "لا يمكن التراجع عن هذا الإجراء!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "تم تحديث قائمة الأصول بنجاح."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "فشل تحميل الملف."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "تم إنشاء مجلد الأصول بنجاح."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "تم إعادة تسمية الأصل بنجاح."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "تم حذف الأصول بنجاح."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "يجب عليك اختيار ملف لتحميله أولاً!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "جلب"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "العودة إلى المحرر"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "غامق"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "مائل"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "يتوسطه خط"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "العنوان {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "أسفل النص"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "أعلى النص"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "كتلة الاقتباس"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "كتلة المعلومات"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "نجاح كتلة الاقتباس"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "تحذير كتلة الاقتباس"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "خطأ كتلة الاقتباس"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "قائمة غير مرتبة"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "قائمة مرتبة"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "الكود المضمن"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "مفتاح لوحة المفاتيح"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "شريط أفقي"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "إخفاء / إظهار جزء المعاينة"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "إدراج رابط"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "إدراج الأصول"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "إدراج كتلة"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "إدراج كتلة التعليمات البرمجية"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "إدراج فيديو / صوت"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "إدراج مخطط"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "إدراج التعبير الرياضية"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "مساعد الجدول"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "وضع التشتت الحرة"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "تعليمات تنسيق Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "عرض مصدر الصفحة {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "العودة إلى طريقة العرض العادية"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "رقم {id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "اللغه"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "تحليلات"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "إضافة أدوات التحليلات والتعقب إلى موقع wiki الخاص بك"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "مقدمي"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "إعدادات المزود"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "لا يحتوي هذا المزود على خيارات إعداد يمكنك تعديلها."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "تم تحديث قائمة بالموفرين بنجاح."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "تم حفظ إعدادات التحليلات بنجاح"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "أدوات الصيانة والأدوات المتنوعة"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "أدوات"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "المصادقة"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "أدوات مختلفة للمصادقة / المستخدمين"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "ذاكرة التخزين المؤقت"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "مسح ذاكرة التخزين المؤقت من مختلف المكونات"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "تغيير نقطة النهاية GraphQL ل Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "استيراد من Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "ترحيل البيانات من تثبيت 1.x السابق"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "القياس"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "تمكين/تعطيل القياس عن بعد أو إعادة تعيين معرف العميل"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "تعليقات"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "نشرت"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "الخاصه"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "عالمي"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "تحميل الصفحة..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "الشفرة"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "اسم"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "الاسم الأصلي"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "توافر"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "تحميل"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "المحتوي"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "أدوات مختلفة للصفحات"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "مجموعة الرموز"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "مجموعة من الرموز لاستخدامها في التنقل في الشريط الجانبي."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "متصفحك قديم. قم بالترقية إلى {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "المتصفح الحديث"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "اسم"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "مؤلف"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "تحميل"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} عند إضافة أنماط لمحتوى الصفحة ، يجب عليك توسيع نطاقها إلى فئة {{cssClass}} . حذف هذا يمكن أن يكسر تصميم المحرر!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "الحذر:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "خيارات الثيم"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "نشط"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "غير نشط"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "التحقق"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "لم يتم التحقق منها"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "تحرير المستخدم"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "رقم {id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "معلومات أساسية"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "البريد الإلكتروني"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "اسم العرض"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "المصادقة"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "مزود"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "كلمه المرور"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "تغيير كلمة المرور"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "كلمة مرور جديدة"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "التصديق الثونائي (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "تبديل 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "معرف المزود"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "مجموعات المستخدمين"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "لم يتم تعيين هذا المستخدم لأي مجموعة حتى الآن. يجب عليك تعيين مجموعة واحدة على الأقل لمستخدم."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "حدد مجموعة..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "تعيين"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "البيانات الوصفية الموسعة"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "الموقع"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "المسمى الوظيفي"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "التوقيت"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "تم تحديث المستخدم بنجاح."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "تم تعيين المستخدم بالفعل لهذه المجموعة!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "هدف التخزين هذا هو {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "نشط"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "غير نشط"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "يجب تمكين هدف التخزين هذا وتطبيق التغييرات قبل أن تتمكن من تشغيل الإجراءات."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "اختر كلمة مرور جديدة"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "يجب اختيار كلمة مرور جديدة:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "كلمة مرور جديدة"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "التحقق من كلمة المرور الجديدة"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "تغيير كلمة المرور"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "تغيير كلمة المرور ..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "الصفحات الأخيرة"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "الصفحات الأكثر شعبية"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "معلومات"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "جدولة"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "اجتماعي"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "التصنيف"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "الميزات الاجتماعية"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "السماح بالتعليقات"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "تمكين قدرات التعليق على هذه الصفحة."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "السماح بالتقييمات"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "عرض معلومات المؤلف"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "عرض شريط أدوات المشاركة"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "إظهار شريط أدوات مع أزرار لمشاركة هذه الصفحة وطباعتها"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "إظهار مؤلف الصفحة مع وقت الإصدار الأخير."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "تمكين قدرات التقيم في هذه الصفحة."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "أو إنشاء طريقة عرض مخصصة؟"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "تصفح حسب العلامات"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "خريطة الموقع"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "إجراءات الصفحة"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "التحديد الحالي"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "مسح التحديد"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "حدد علامة واحدة أو أكثر"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "البحث ضمن النتائج ..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "اللغة"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "ترتيب حسب"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "حدد علامة أو أكثر على اليسار."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "استرداد نتائج الصفحة ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "لا يمكن العثور على أي صفحة تحتوي على العلامات المحددة."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "تعذر العثور على أي صفحة تتوافق مع خيارات التصفية الحالية."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "آخر تحديث {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "تاريخ الإنشاء"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "معرف"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "آخر تعديل"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "مسار"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "عنوان"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "اي"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "تصبح الراعي عن طريق GitHub الرعاة (يذهب مباشرة إلى دعم المطور الرئيسي نيكولا Giard الهدف من العمل بدوام كامل على Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "انضم إلى الرعاة"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "العلامات"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "إدارة تكوين SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "مزود"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "حدد شهادة مخصصة إذا كان لديك شهادة خاصة بك بالفعل."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "نطاق"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "أدخل المجال المؤهل بالكامل الذي يشير إلى ويكي الخاص بك. (على سبيل المثال wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "خيارات الموفر"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "تعطيل"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "شهادة مخصصة"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "منافذ"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "منفذ HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "منفذ غير SSL سيستمع إليه الخادم لطلبات HTTP. عادة 80 أو 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "منفذ HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "منفذ SSL الذي سيستمع إليه الخادم لطلبات HTTPS. عادة 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "إعادة توجيه طلبات HTTP إلى HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "ستقوم تلقائيًا بإعادة توجيه أي طلبات على منفذ HTTP إلى HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "لاحظ أن ملف التكوين يجب أن يكون قابلاً للكتابة حتى يستمر تكوين المنافذ."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "عنوان URL للشعار"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "حدد صورة لاستخدامها كشعار. يتم دعم SVG ، PNG ، JPG ، بمعدل مربع ، 34x34 بكسل أو أكبر. انقر فوق الزر الموجود على اليمين لتحميل صورة جديدة."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "حذف المستخدم؟"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "هل تريد بالتأكيد حذف المستخدم {{username}} ؟"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "تحديث المستخدم"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "لاحظ أنه لا يمكنك تعيين مستخدمين إلى مجموعات المسؤولين أو الضيوف من هذه اللوحة."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "لاحظ أنه لا يمكنك حذف مستخدم أنشأ محتوى بالفعل. يجب عليك بدلاً من ذلك إلغاء تنشيط المستخدم أو حذف كل المحتوى الذي تم إنشاؤه بواسطة هذا المستخدم."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "نصوص"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "سيتم تصغير CSS تلقائيًا عند الحفظ. لا تقم بتضمين علامات النمط المحيط ، فقط كود CSS الفعلي."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "مرئية للجميع"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "مرئي للمجموعات المحددة ..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "اختر الصفحة ..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "وضع التنقل"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "شجرة الموقع"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "الكلاسيكية القائمة على شجرة الملاحة"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "التنقل المخصص"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "قائمة التنقل الثابتة + زر شجرة الموقع"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "لا شيء"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "تعطيل التنقل في الموقع"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "تم التحقق من المستخدم بنجاح."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "تم تنشيط المستخدم بنجاح."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "تم إلغاء تنشيط المستخدم بنجاح."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "يجب تحديد النص أولاً!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "تجديد الشهادة"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "حالة الشهادة"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "انتهاء صلاحية الشهادة"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "البريد الإلكتروني للمشترك"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "الوضع الحالي"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "تشغيل"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "إيقاف"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "تجديد الشهادة ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "لا تترك هذه الصفحة."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "تم تجديد الشهادة بنجاح."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "تم تغيير إعادة توجيه HTTP بنجاح."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "إدارة علامات الصفحة"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "لا توجد علامات لعرضها."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "تحرير العلامة"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "العلامه"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "تسميه"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "تم إنشاؤه {{created}} وآخر تحديث {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "حذف هذه العلامة"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "اختر علامة من القائمة الموجودة على اليسار."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "أضف علامة إلى صفحة لتبدأ."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "تم تحديث العلامات."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "تم حذف العلامة بنجاح."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "تم حفظ العلامة بنجاح."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "تصفيه..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "عرض الصفحات المرتبطة"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "حذف العلامة؟"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "هل أنت متأكد من أنك تريد حذف العلامة {{tag}} ؟ سيتم إلغاء ربط العلامة من جميع الصفحات."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "إدارة المفاتيح للوصول إلى API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "تم تمكين API"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "تم تعطيل API"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "تمكين API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "تعطيل API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "مفتاح API جديد"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "اسم"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "نهاية المفتاح"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "انتهاء الصلاحية"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "انشاء"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "آخر تحديث"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "إلغاء"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "لم يتم إنشاء مفاتيح API بعد."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "إلغاء مفتاح API؟"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "هل أنت متأكد من أنك تريد إلغاء المفتاح {{name}} ؟ لا يمكن التراجع عن هذا الإجراء!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "إلغاء"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "تم تحديث قائمة مفاتيح واجهة برمجة التطبيقات (API)."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "تم إبطال المفتاح بنجاح."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "مفتاح API جديد"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "تم إنشاء مفتاح API بنجاح."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "الاسم مفقود أو غير صالح."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "يجب عليك اختيار مجموعة."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "لا يمكن استخدام مجموعة الضيوف لمفاتيح API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "الغرض من هذا المفتاح"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "اسم"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "انتهاء الصلاحية"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "لا يزال بإمكانك إلغاء المفتاح في أي وقت بغض النظر عن انتهاء الصلاحية."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "نطاقات الإذن"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "الوصول الكامل"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "أو استخدام أذونات المجموعة ..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "انشاء"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "مجموعة"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "سيكون لمفتاح API نفس أذونات المجموعة المحددة."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 يوما"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 يوما"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 يوما"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "سنة واحدة"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 سنوات"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "نسخ المفتاح المبين أدناه كـ {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "لن يتم عرضه مرة أخرى"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "تم تمكين واجهة برمجة التطبيقات (API) بنجاح."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "تم تعطيل واجهة برمجة التطبيقات (API) بنجاح."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "حفظ"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "لا شيء"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "ترخيص Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "ترخيص Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "ترخيص Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "ترخيص Creative Commons Attribution-NonCommercial"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "ترخيص Creative Commons Attribution-NonCommercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "ترخيص Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "الملك العام"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "جميع الحقوق محفوظة"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "ترخيص المحتوى"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "الترخيص المبين في ذيل جميع صفحات المحتوى."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "المحتوى متاح تحت {{license}} ، بواسطة {{company}} ."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "لا يمكنك تنزيل محتوى الصفحة."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "لا يمكنك تنزيل محتوى إصدار الصفحة هذا."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "لا يمكنك عرض مصدر هذا الإصدار من الصفحة."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "عرض المصدر اعتبارًا من {{date}} من الصفحة {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "الإصدار رقم {id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "استعادة نسخة الصفحة؟"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "هل تريد بالتأكيد استعادة محتوى الصفحة هذا كما كان في {{date}} ؟ سيتم نسخ هذا الإصدار في أعلى السجل الحالي. على هذا النحو ، سيتم الاحتفاظ بالإصدارات الأحدث."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "استعاده"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "استعادة إصدار الصفحة بنجاح!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} حرف ، {{words}} كلمة"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "حل حفظ التعارض"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "استخدم محلي"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "استخدام عن بعد"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "تجاهل التغييرات المحلية واستخدم أحدث إصدار"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "استخدم المحتوى في اللوحة اليسرى"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "عرض أحدث إصدار"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "تم حفظ نسخة أحدث من هذه الصفحة بواسطة {{authorName}} ، {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "ماذا تريد أن تفعل؟"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "استخدم نسختك المحلية الحالية وتجاهل أحدث التغييرات."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "استخدم الإصدار البعيد (الأحدث) وتجاهل التغييرات."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "هل تريد الكتابة باستخدام الإصدار البعيد؟"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "هل أنت متأكد من أنك تريد استبدال الإصدار الحالي بأحدث محتوى عن بعد؟ {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "ستفقد تعديلاتك الحالية."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "تاكيد"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "النسخة المحلية {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(قابل للتعديل)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(للقراءة فقط)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "الإصدار البعيد {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "تعديلك الحالي استنادًا على إصدار الصفحة من {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "آخر تحديث {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "عنوان:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "وصف:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "لديك تعديلات غير محفوظة. هل أنت متأكد أنك تريد مغادرة المحرر؟"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "حفظ التعارض! قام مستخدم آخر بتعديل هذه الصفحة بالفعل."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "نسخة مماثلة"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "اسم العرض"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "الموقع"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "المسمى الوظيفي"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "التوقيت"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "الملف الشخصي"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "معلوماتي الشخصية"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "معلوماتي"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "عرض الملف الشخصي العام"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "المصادقة"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "مزود"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "تغيير كلمة المرور"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "كلمة المرور الحالية"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "كلمة مرور جديدة"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "تأكيد كلمة المرور الجديدة"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "المجموعات"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "نشاط"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "تاريخ الانضمام "
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "آخر تحديث للملف الشخصي في"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "آخر تسجيل دخول"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "تم إنشاء الصفحات"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "تم نشر التعليقات"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "تم حفظ الملف الشخصي بنجاح."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "تم تغيير الرقم السري بنجاح."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "تعليقات"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "قائمة الصفحات التي قمت بإنشائها أو تعديلها آخر مرة"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "لا توجد صفحات لعرضها."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "تم تحديث قائمة الصفحات."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "عنوان"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "مسار"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "انشاء"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "آخر تحديث"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "آخر تسجيلات دخول"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "تصفح"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "القائمة الرئيسية"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "الدليل الحالي"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(جذر)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "نسخ من الإعدادات المحلية ..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "لغة المصدر"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "اللغة التي سيتم نسخ عناصر التنقل منها."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "نسخ"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "حدد اللغة التي سيتم نسخ العناصر منها. سيتم إلحاق العناصر بالقائمة الحالية للعناصر في اللغة النشطة."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "التنقل الثابت"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "قائمة التنقل الثابتة فقط"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "التفضيلات"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "تنسيق التاريخ"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "إعدادات الإعدادات المحلية الافتراضية"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "مظهر"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "الموقع الافتراضي"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "ضوء"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "داكن"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "تحقق من شهادة SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "يتطلب بعض المضيفين تعطيل فحص شهادة SSL. ترك تمكين للأمن السليم."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "رابط خارجي (نافذة جديدة)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "الأمان"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "الحد الأقصى لحجم التحميل"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "الحد الأقصى للملفات لكل تحميل"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "كم عدد الملفات التي يمكن تحميلها في دفعة واحدة؟"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "الحجم الأقصى لملف واحد."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "بايت"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "الملفات"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "التحميلات"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "تؤثر هذه الإعدادات فقط على Wiki.js. إذا كنت تستخدم وكيل عكسي (على سبيل المثال nginx ، أباتشي ، Cloudflare) ، يجب عليك أيضًا تغيير إعداداته لتتناسب."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "تكوين إعدادات الأمان"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "ملحقات"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "تثبيت ملحقات لوظائف إضافية"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "مزود"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "إضافة مناقشات إلى صفحات الويكي الخاصة بك"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "إعدادات المزود"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "لا يحتوي هذا المزود على خيارات إعداد يمكنك تعديلها."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "سيتم إعادة تعيين أي محتوى (صفحات ، وتحميلات ، وتعليقات ، وما إلى ذلك) تم إنشاؤه بواسطة هذا المستخدم إلى المستخدم المحدد أدناه. يوصى بإنشاء مستخدم مستهدف وهمي (مثل المستخدم المحذوف) إذا كنت لا تريد إعادة تعيين المحتوى لأي مستخدم نشط حاليًا."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "الاستراتيجيات النشطة"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "إضافة استراتيجية"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "الأنماط"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "يجب إحاطة شفرة جافا سكريبت بعلامات نص HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "لم يتم نشر هذه الصفحة."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "تعليقات"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "اكتب تعليق جديد ..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "اسمك"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "عنوان بريدك الإلكتروني"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "تنسيق ماركداون"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "أضف تعليقا"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "تحميل التعليقات ..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "النشر باسم {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "كن أول من يعلق."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "لا تعليقات حتى الآن."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "تحديث التعليق"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "تأكيد الحذف"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "هل أنت متأكد أنك تريد حذف هذا التعليق نهائيًا؟"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "لا يمكن التراجع عن هذا الإجراء!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "تم تعديل {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "تم نشر تعليق جديد بنجاح."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "التعليق فارغ أو قصير جدًا!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "تم تحديث التعليق بنجاح."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "تم حذف التعليق بنجاح."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "تبديل التدقيق الإملائي"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "تسجيل الدخول"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "شاشة الدخول"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "تكوين JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "تجاوز شاشة تسجيل الدخول"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "يجب أن يتم إعادة توجيه المستخدم تلقائيا إلى أول موفر المصادقة."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "عنوان URL لصورة خلفية تسجيل الدخول"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "حدد صورة لاستخدامها كخلفية تسجيل الدخول. PNG و JPG مدعومان ، 1920x1080 موصى به. اتركه فارغًا للتقصير. انقر فوق الزر الموجود على اليمين لتحميل صورة جديدة. لاحظ أنه يجب أن يكون لدى مجموعة الضيوف حق الوصول للقراءة للصورة المحددة!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "إخفاء موفر المصادقة المحلي"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "لا تظهر موفر المصادقة المحلي على شاشة تسجيل الدخول. أضف ?all إلى URL لاستخدامه مؤقتاً."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "الأمان"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "فرض 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "إجبار جميع المستخدمين على استخدام المصادقة الثنائية عند استخدام موفر المصادقة مع نموذج مستخدم / كلمة مرور."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "عرض المناقشة"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "تعليق جديد"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "محتوى التعليق"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "حديث"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "العلامات"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "الصفحات المطابقة للعلامات"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "العودة إلى أعلى"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "اسم المستخدم"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "خروج"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "تكوين مسار عرض الصفحة"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "عنوان الموقع يحتوي على أحرف غير صالحة."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "تم حفظ تكوين الموقع بنجاح."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "تم تعطيل 2FA بنجاح."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "تم تمكين 2FA بنجاح."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "طلب إعادة تعيين كلمة المرور ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "تحقق من رسائل البريد الإلكتروني للحصول على تعليمات إعادة تعيين كلمة المرور!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "نشط"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "هل يمكن للمستخدمين الدخول باستخدام هذه الاستراتيجية؟"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "اسم العرض"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "العنوان الذي يظهر للمستخدم النهائي لاستراتيجية المصادقة هذه."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "حدد موفر المصادقة"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "أدخل بيانات الاعتماد الخاصة بك"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "نسيت كلمة المرور الخاصة بك"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "أدخل رمز الحماية الذي تم إنشاؤه من جهازك الموثوق:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "لقد طلب المسؤول تمكين المصادقة الثنائية (2FA) على حسابك."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) امسح رمز QR أدناه من تطبيق المصادقة الثنائية على هاتفك المحمول:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) أدخل رمز الحماية الذي تم إنشاؤه من جهازك الموثوق به:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "حدد"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "حدد موقع الصفحة الجديدة"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "نقل / إعادة تسمية موقع الصفحة"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "حدد صفحة"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "المجلدات الافتراضية"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "الصفحات"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "هذا المجلد فارغ."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "تحويل"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "تحويل الصفحة"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "حدد المحرر الذي تريد استخدامه من الآن فصاعداً للصفحة {{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "محتوى الصفحة سيتم تحويله إلى تنسيق المحرر الذي تم اختياره من جديد. لاحظ أنه قد يتم فقد بعض التنسيقات أو المحتوى غير المنسق نتيجة التحويل. سيتم إضافة لقطة إلى سجل الصفحة ويمكن استعادتها في أي وقت."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "حول"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "إدارة"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "تصدير إلى القرص"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "حفظ المحتوى في ملف tarball للنسخ الاحتياطي/الترحيل"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "جدول المحتويات"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "جدول المحتويات"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "استخدم إعدادات الموقع الافتراضية"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "مستويات عناوين جدول المحتويات"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "سيعرض جدول المحتويات العناوين من وإلى المستويات المحددة."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "مستويات عناوين جدول المحتويات الافتراضية"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "سيعرض جدول المحتويات العناوين من وإلى المستويات المحددة بشكل افتراضي"
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "الخادم الذي يعرف اسم المضيف"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "اسم اختياري لإرساله إلى خادم SMTP لتحديد المرسل. اتركه فارغًا لاستخدام اسم المضيف للخادم. لعملاء Google Workspace، يجب أن يكون هذا هو اسم المجال الرئيسي الخاص بك."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "ملحقات الصفحة"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "قائمة مفصولة بفواصل من ملحقات رابط الصفحة التي سيتم التعامل معها كصفحات. على سبيل المثال، إضافة md ستعامل /foobar.md بنفس الطريقة التي تعامل بها /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "اسم زر الموقع"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "اسم الموقع الخارجي الذي سيتم عرضه على زر التحرير. لا تكتب بادئة \"Edit on\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "أيقونة الزر"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "الأيقونة المراد عرضها على زر التحرير. على سبيل المثال، mdi-github لعرض أيقونة GitHub."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "رابط الزر"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "رابط الصفحة على المستودع الخارجي. استخدم خاصية التلميح {filename} حيث يجب تضمين اسم الملف. (على سبيل المثال https://github.com/foo/bar/blob/main/ {filename})"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "تحرير الاختصارات"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "قائمة التحرير السريعة لزر الإجراء العائم"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "إظهار زر الإجراء العائم مع قائمة الوصول السريع في الركن الأيمن أسفل الشاشة"
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "شريط قائمة التحرير"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "إظهار شريط قائمة التحرير"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "إظهار شريط قائمة التحرير في رأس الصفحة"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "إظهار زر التحرير"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "إظهار زر تحرير الصفحة الحالية"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "إظهار زر تحرير خارجي"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "إظهار زر الوصول لمستودع خارجي (GitHub على سبيل المثال) حيث يمكن للمستخدمين تحرير أو تقديم طلب إيداع للصفحة الحالية"
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "التعديل بواسطة {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "تم حفظ إعدادات التعليقات بنجاح"
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "إعادة تعريف نص التذييل"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "اختياريا تجاوز نص التذييل برسالة مخصصة. مفيد إذا لم يكن أي من التراخيص المذكورة أعلاه مناسبا."
+                }
+            ]
+        }
+    }
+}

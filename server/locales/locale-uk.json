@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Працює на"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Необхідно увійти"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Електронна пошта / обліковий запис"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Пароль"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Увійти"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Невірний обліковий запис"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Електронна адреса чи пароль недійсні."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Недійсна електронна адреса користувача"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Помилка входу"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Ваш дозвіл до цього сайту ще не підтверджено."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Занадто багато спроб!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Ви зробили занадто багато невдалих спроб протягом короткого періоду часу, будь ласка, спробуйте ще раз через період {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Користувача не знайдено"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Локальний обліковий запис"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Обліковий запис Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Двофакторна автентифікація"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Код безпеки є обов'язковим:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Перевірити"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Панель управління"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Загальні"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Мова"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Статистика"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Тема"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Групи"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Користувачі"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Аутентифікація"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Редактор"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Вхід"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Візуалізація"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Пошукова система"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Сховище"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Доступ до API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Системна інформація"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Утиліти"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Інструменти розробника"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Зробити внесок у розвиток Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Основні налаштування вашої вікі"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Інформація про веб-сайт"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Брендинг сайту"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Веб-сайт"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Користувачі"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Модулі"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Система"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Встановіть параметри локалізації для вашої вікі"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Налаштування мови"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Простори імен за мовною ознакою"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Завантажити мову"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Основна мова"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Усі текстові елементи інтерфейсу відображатимуться вибраною мовою."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Оновлювати автоматично"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Автоматично завантажувати оновлення для всіх мов, що входять до списку просторів імен."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Простори імен за мовною ознакою"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Вмикає кілька мовних версій однієї сторінки."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Активні простори імен"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Список мов, що використовуються у якості просторів імен. Базова мова, визначена вище, завжди буде включена незалежно від цього списку."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Код мови буде встановлено як префікс до усіх шляхів. (Наприклад /{{langCode}}/назва-сторінки)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Шляхи без коду мови будуть автоматично перенаправлені на основну мову, визначену вище."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Зберегти"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Скасувати"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Завантажити"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Вивантажити"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Скасувати"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Очистити"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Створити"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Редагувати"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Видалити"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Оновити"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Зберегти зміни"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Продовжити"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Локалізація сайту"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Автоматично завантажувати оновлення для цієї мови, коли воно стане доступним."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Інформація про вашу систему"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Інформація про хост"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Поточна версія"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Остання версія"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Опубліковано"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Операційна система"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Ім'я хосту"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Ядра процесора"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Загальна кількість оперативної пам'яті"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Робочий каталог"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Файл конфігурації"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Використання оперативної пам'яті: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Допомога в розробці та роботі Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Профінансуйте нашу роботу"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Поширити слово"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Поговоріть зі своїми друзями та колегами про те, наскільки дивовижною є Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Підписуйтесь на нас у {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Надішліть ідею або проголосуйте за запропоновану на {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "сторінці запитів нових функцій"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Знайшли помилку? Надішліть проблему на {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Допоможіть перекласти Wiki.js вашою мовою. Дайте нам знати у {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Зробити пожертвування"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Внесок"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js також є частиною ініціативи Open Collective, прозорого фонду, який спрямовується на ресурси громади. Ви можете внести фінансовий внесок, зробивши щомісячну або разову пожертву:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Нам потрібна ваша допомога, щоб продовжувати вдосконалювати програмне забезпечення та підтримувати роботу різних пов'язаних з ним сервісів (наприклад, хостинг та мережеві засоби)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js - це безкоштовне програмне забезпечення з відкритим вихідним кодом, доступне вам з {{0}} {{1}} і {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "вкладники"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Сторінка"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Візуалізація"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Зачекайте, будь ласка..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Сторінку успішно створено."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Сталася помилка під час створення сторінки"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Ви також можете придбати футболки Wiki.js для фінансової підтримки проекту:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Магазин Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Всі права захищені."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Ця сторінка ще не існує."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Створити сторінку прямо зараз?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Створити сторінку"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Назад"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Сторінки"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Навігація"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Керувати навігацією по сайту"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Додати"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Посилання"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Роздільник"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Мітка"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Іконка"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Тип посилання"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Ціль"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Виберіть пункт навігації ліворуч."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Без назви {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Зовнішнє посилання"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Головна"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Сторінка"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Пошуковий запит"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Редагувати {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Видалити {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Навігація успішно збережена."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Натисніть кнопку Додати, щоб додати перший елемент навігації."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Навігація порожня"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Застосувати"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Адреса електронної пошти"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Підтвердіть пароль"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Назва"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Реєстрація"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Створити обліковий запис"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "У вас вже є обліковий запис? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Увійти до системи"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Увійти за допомогою {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Забули свій пароль?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "або увійдіть за допомогою ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Ще не зареєстровані? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Створити обліковий запис"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Введіть дійсну адресу електронної пошти / обліковий запис."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Введіть дійсний пароль."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Вхід успішний! Перенаправлення..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Виконується вхід ..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Аутентифікація недоступна."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Заповніть форму нижче для створення свого облікового запису."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Зачекайте, будь ласка"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Обліковий запис успішно створено!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Створення облікового запису..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Відсутня адреса електронної пошти."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Недійсна адреса електронної пошти."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Відсутній пароль."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Пароль занадто короткий."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Обидва паролі не збігаються."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Відсутня назва."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Назва занадто коротка."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Назва занадто довга."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Скасувати"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Скинути пароль"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Введіть свою адресу електронної пошти, щоб отримати інструкції для скидання пароля:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Пошта"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Налаштування параметрів пошти"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Налаштування"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (необов'язково)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Перевірте свою електронну пошту для активації свого облікового запису."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Сторінку успішно оновлено."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Не має прав доступу"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Ви не можете переглянути цю сторінку."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Ви не можете переглянути початковий код сторінки."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Ви не можете переглянути історію сторінки."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Ви не можете редагувати сторінку."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Ви не можете створити сторінку."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Назад"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Головна"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Не знайдено"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Ця сторінка не існує."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Увійти як..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Зробити пожертвування"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Станьте спонсором за допомогою Patreon (безпосередньо йде на підтримку можливості провідного розробника Nicolas Giard працювати над Wiki.js повноцінно)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Ласкаво просимо до вашої вікі!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Нумо почнімо та створимо домашню сторінку."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Створити домашню сторінку"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Прапори"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Зробити одноразове або повторне пожертвування через Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Ми приймаємо пожертвування за допомогою Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Завантаження мовного пакета"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Якщо ви не підключені до Інтернету або не можете завантажити файли мов за допомогою вищевказаного методу, ви можете натомість додати пакети вручну, вивантаживши їх нижче."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Огляд ..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Веб-хуки"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Управління веб-хуками для зовнішніх служб"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Надіслати тестовий електронний лист"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Адреса електронної пошти одержувача"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Надіслати лист"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Відправник"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Ім'я відправника"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Електронна пошта відправника"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Налаштування SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Хост"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Порт"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Зазвичай 465 (рекомендовано), 587 або 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Безпечний (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Повинен бути включений при використанні порту 465, в іншому випадку вимкнено (587 або 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Обліковий запис"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Пароль"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) забезпечує рівень захисту для всіх листів, відправлених з Wiki.js, надаючи надійні засоби для перевірки доменних імен та забезпечення підпорядкованості повідомлень."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Використовуйте DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Доменне ім'я"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Селектор ключа"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Приватний ключ"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Приватний ключ для селектора у форматі PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Надішліть тестовий лист, щоб переконатися, що налаштування SMTP працюють."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Налаштування успішно збережені."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Ваша версія бази даних не повністю підтримується. Деякі функціональні можливості можуть бути обмеженими або не працювати належним чином."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Системна інформація оновлена."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Налаштуйте параметри автентифікації своєї вікі"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Способи авторизації"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Глобальні додаткові налаштування"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "Audience URN, що вказано у JWT-жетоні, який видається після входу. Зазвичай ваше доменне ім’я. (наприклад, urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Термін дії жетона"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Термін придатності жетона до моменту необхідності його поновлення. (за замовчуванням: 30хв)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Період продовження жетона"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Максимальний період часу, протягом якого може бути оновлено жетон з вичерпаним терміном дії. (За замовчуванням: 14дн)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Спосіб авторизації {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "активний"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "не активний"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "і не може бути відключений."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Тестовий лист успішно надіслано."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Змініть зовнішній вигляд вашої вікі"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Тема сайту"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Теми впливають на відображення сторінок вмісту. Це не впливає на інші розділи сайту (наприклад, редактор або область адміністратора)."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Темний режим"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Не рекомендується при вимогах доступності. Може підтримуватися не всіма темами."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Вставка коду"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Перевизначення CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS код для вставки після системного CSS. Рекомендується використовувати користувацькі теми, якщо у вас великий обсяг CSS коду. Вставка великої кількості CSS-коду призведе до зниження продуктивності при завантаженні сторінки! CSS буде автоматично зменшено."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Вставка HTML до тегу Head"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML-код, що вставляється безпосередньо перед закриваючим тегом head. Зазвичай для тегів script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Вставка HTML до тегу Body"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML-код, що вставляється безпосередньо перед закриваючим тегом body."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Завантажити теми"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Адміністративна зона"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Налаштування способу авторизації"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Даний спосіб авторизації не містить налаштувань."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Реєстрація"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Дозволити самостійну реєстрацію"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Дозвольте будь-якому успішно авторизованому користувачу отримати доступ до вікі."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Обмежити певні домени електронної пошти"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Список доменів, дозволених для реєстрації. Домен адреси електронної пошти користувача має відповідати одному з них, щоб отримати доступ."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Призначити в групу"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Автоматично призначати нових користувачів в ці групи."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Безпека"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Змусити всіх користувачів використовувати двофакторну авторизацію"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Користувачі повинні будуть налаштувати двофакторну авторизацію при першому вході в систему, і не зможуть відключити цю опцію."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Довідка по налаштуванню"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Деякі стратегії можуть вимагати встановлення певних значень конфігурації для вашого провайдера. Вони надаються лише для довідки та можуть не бути потрібними для поточної стратегії."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Вам необхідно задати коректний {{siteUrl}} ! Перейдіть в {{general}} в боковому меню."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Дозволені Web Origins"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL-адреса зворотного виклику / URI перенаправлення"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL-адреса входу"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL-адреса виходу"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Метод аутентифікації кінцевої точки жетону"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Головна"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Нова сторінка"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Поточна сторінка"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Перегляд"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Редагувати"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Історія"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Перегляд початкового коду"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Перемістити / Перейменувати"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Видалити"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Файли ресурсів"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Зображення та файли"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Пошук..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Адміністрування"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Обліковий запис"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Моя вікі"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Профіль"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Вихід"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Вхід"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Остання зміна"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Неопубліковано"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Редагувати сторінку"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Зміст"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Закладка"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Поділитися"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Версія для друку"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Закрити"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Сторінка"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Задайте цільові сховища для резервного копіювання та синхронізації вашого контенту"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Цільові сховища"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Статус"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Остання синхронізація {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Остання спроба була {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Повідомлення про помилку"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "У вас немає активного сховища."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Налаштування сховища"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Для цього цільового сховища немає параметрів конфігурації, що можливо змінити."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Напрямок синхронізації"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Виберіть спосіб синхронізації контенту для цільового сховища."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Двонапрямна синхронізація"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Відправити (push) до сховища"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Витягти (pull) зі сховища"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Не підтримується"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "У двонапрямленому режимі контент спочатку витягується (pull) із цільового сховища. Локальний контент перезаписується новішим контентом. Новий контент, створений з моменту останньої синхронізації, потім передається до цільового сховища і перезаписує весь існуючий там контент."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Контент завжди відправляється (push) до цільового сховища, переписуючи будь-який наявний контент. Це найбезпечніший вибір для сценарію резервного копіювання."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Контент завжди витягується (pull) з цільового сховища, замінюючи будь-який контент, що існує локально. Цей вибір зазвичай використовується для одноразового імпорту контенту. Будьте обережні з цією опцією, оскільки будь-який локальний контент завжди буде перезаписаний!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Розклад синхронізації"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "З міркувань продуктивності це цільове сховище синхронізує зміни за інтервалом замість кожної зміни. Визначте, за яким інтервалом має відбутися синхронізація."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Поточні налаштування - кожні {{schedule}}"
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "За замовчуванням - кожні {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Дії"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Запуск"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Налаштуйте пошукові можливості вашої вікі"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Перебудувати індекс"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Пошукова система"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Налаштування пошукової системи"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Обрана пошукова система не містить налаштувань."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Список пошукових систем оновлено."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Конфігурацію пошукової системи успішно збережено."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Індекс успішно перебудовано."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Виникла несподівана помилка."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Сторінки"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Користувачі"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Групи"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Ви використовуєте останню версію."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Доступна нова версія: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js - це безкоштовний проект з відкритим вихідним кодом. Існує декілька шляхів для підтримки проекту."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Нам потрібна ваша допомога!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Дізнатися більше"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Список стратегій оновлено."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Налаштування авторизації успішно збережені."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Загальні налаштування"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL-адреса сайту"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Повна URL-адреса до вашої вікі, без кінцевої косої риски. (наприклад, https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Заголовок сайту"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Відображається у верхній панелі та додається до всіх метазаголовків сторінок."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Логотип"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Вивантажити логотип"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Очистити"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Рекомендується зображення розміром {{size}} пікселів."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Лише {{typeList}} або {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Авторські права в нижньому колонтитулі"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Назва компанії / організації"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Назва, що використовується під час відображення повідомлення про авторське право в нижньому колонтитулі. Залиште порожнім, щоб сховати."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Опис сайту"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Опис за замовчуванням, якщо не задано для сторінки."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Мета-тег Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "За замовчуванням: Index, Follow. Може бути задано окремо для кожної сторінки."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Введіть не менше 2-х символів, щоб почати пошук ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Пошук..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Немає сторінок, що відповідають вашому запиту."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Знайдено {{total}}"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Ви мали на увазі..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Закрити"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Скопіювати пошукове посилання"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Дуже слабкий"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Слабкий"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Середній"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Надійний"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Дуже надійний"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Видалити сторінку"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Ви впевнені, що хочете видалити {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Сторінка може бути відновлена через панель адміністратора."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Пошук користувача"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Пошук користувачів ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Кожні"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Хвилин(и)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Година(и)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "День (дні)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Місяць(і)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Рік(и)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Властивості сторінки"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Інформація про сторінку"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Короткий опис"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Показано під заголовком"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Шлях та категорія"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Мова"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Шлях"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Не включайте початкові чи кінцеві слеші."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Теги"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Використовуйте теги для класифікації сторінок та спрощення їх пошуку."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Статус публікації"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Опубліковано"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Користувачі, які мають дозвіл на зміну цієї сторінки, все ще можуть бачити неопубліковані сторінки."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Відкладена публікація, починаючи з ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Залиште порожнім, щоб опублікувати без затримки"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Тимчасова публікація, що закінчується..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Залиште порожнім, якщо ця публікація є безстроковою"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Скасувати незбережені зміни?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "У вас є незбережені зміни. Ви впевнені, що хочете вийти з редактора і скасувати всі зміни, зроблені після останнього збереження?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Скасувати зміни"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Який редактор ви бажаєте використовувати для цієї сторінки?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Даний вибір неможливо змінити після створення сторінки."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Файли"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Нова папка"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Назва папки"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Назва повинна слідувати правилам іменування папок - {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "правила іменування"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Перемістити"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Перейменувати"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Оптимізувати"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Попередній перегляд"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Властивості"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Папка не містить файлів."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} файлів"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Вставити"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Ім'я файлу"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Тип"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Розмір файлу"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Додано"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Дії"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Вивантажити файли"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Натисніть Огляд або перетягніть файли до цього поля..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Завантажити зображення за посиланням"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Вирівнювання зображення"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Перейменувати файл"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Введіть нове ім'я файлу:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Видалити файл"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Ви впевнені, що хочете видалити файл"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Дана дія не може бути скасована!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Список файлів успішно оновлено."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Помилка вивантаження файлу."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Папку успішно створено."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Файл успішно перейменовано."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Файл успішно видалено."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Спочатку необхідно обрати файл для вивантаження!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Завантажити"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Повернутися до редактора"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Жирний"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Курсив"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Закреслений"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Заголовок {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Підрядковий"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Надрядковий"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Блок цитування"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Блок цитування \"інформація\""
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Блок цитування \"успіх\""
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Блок цитування \"попередження\""
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Блок цитування \"помилка\""
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Невпорядкований список"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Нумерований список"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Вбудований код"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Кнопка клавіатури"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Горизонтальна лінія"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Сховати / Показати панель попереднього перегляду"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Вставити посилання"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Вставити файли"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Вставити модуль"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Вставити код"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Вставити відео / аудіо"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Вставити діаграму"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Вставити математичний вираз"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Помічник по таблицях"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Режим концентрації уваги"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Довідка по розмітці Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Перегляд початкового коду сторінки {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Повернутися до звичайного вигляду"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Мова"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Аналітика"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Додайте аналітику та інструменти відстеження на свою вікі"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Провайдери"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Налаштування провайдера"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Цей провайдер не має параметрів конфігурації, які можна змінити."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Список провайдерів успішно оновлено."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Налаштування аналітики успішно збережені"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Технічне обслуговування та інші інструменти"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Інструменти"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Автентифікація"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Різні інструменти для аутентифікації / користувачів"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Очистити кеш"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Очищення кешу різних компонентів"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Кінцева точка GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Змінити кінцеву точку GraphQL для Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Імпорт з Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Міграція даних з попередньої інсталяції версії 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Телеметрія"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Увімкнути/вимкнути телеметрію або скинути ідентифікатор клієнта"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Коментарі"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Опубліковано"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Приватна"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Глобальна"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Завантаження сторінки..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Код"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Назва"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Рідна назва"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Доступність"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Завантажити"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Зміст"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Різні інструменти для сторінок"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Набір іконок"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Набір іконок для панелі бокової навігації."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Ваш браузер застарів. Будь ласка, завантажте {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "сучасний браузер"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Назва"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Автор"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Завантажити"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Додаючи стилі для змісту сторінки, ви повинні обмежити їх класом {{cssClass}}. Без виконання цього, існує можливість зламати макет редактора!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "УВАГА:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Параметри теми"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Активний"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Неактивний"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Перевірений"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Неперевірений"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Редагувати користувача"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Основна інформація"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Електронна пошта"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Відображуване ім'я"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Аутентифікація"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Постачальник"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Пароль"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Змінити пароль"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Новий пароль"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Двофакторна автентифікація (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Увімкнути/вимкнути 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Ідентифікатор постачальника"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Групи користувачів"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Цей користувач ще не призначений до жодної групи. Ви повинні призначити його хоча б у 1 групу."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Оберіть групу..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Призначити"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Розширені метадані"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Розташування"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Посада"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Часовий пояс"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Користувача успішно оновлено."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Користувача вже призначено до цієї групи!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Стан цільового сховища {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "активний"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "неактивний"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Для можливості виконання дій, необхідно увімкнути це цільове сховище та застосувати зміни"
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Оберіть новий пароль"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Ви повинні обрати новий пароль:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Новий пароль"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Підтвердити новий пароль"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Змінити пароль"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Змінюємо пароль..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Нещодавні сторінки"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Найпопулярніші сторінки"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Інформація"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Планування"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Соціальні функції"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Категоризація"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Соціальні функції"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Дозволити коментарі"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Увімкнути можливість коментування на цій сторінці."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Дозволити рейтинги"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Відображувати інформацію про автора"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Відображати панель інструментів спільного доступу"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Відображення панелі інструментів з кнопками для надання спільного доступу та друку цієї сторінки"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Показувати автора сторінки з часом останнього редагування."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Увімкнути можливості оцінювання на цій сторінці."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "або створити спеціальний перегляд?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Переглянути з тегами"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Карта сайту"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Дії зі сторінкою"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Поточний вибір"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Очистити вибір"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Виберіть один або кілька тегів"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Пошук у результатах..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Мова"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Сортувати по"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Виберіть один або кілька тегів ліворуч."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Отримання сторінки результатів..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Не вдалося знайти жодну сторінку з вибраними тегами."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Не вдалося знайти жодну сторінку, що відповідає поточним параметрам фільтрації."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Востаннє оновлено {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Дата створення"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Остання зміна"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Шлях"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Назва"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Будь-яка"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Станьте спонсором за допомогою GitHub Sponsors (безпосередньо йде на підтримку можливості провідного розробника Nicolas Giard працювати над Wiki.js повноцінно)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Стати спонсором"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Теги"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Керування конфігурацією SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Постачальник"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Виберіть користувацький сертифікат, якщо у вас вже є власний сертифікат."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Домен"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Введіть повний домен, який вказує на вашу вікі. (наприклад, wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Параметри постачальника"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Вимкнуто"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Користувацький сертифікат"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Порти"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP-порт"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Не-SSL-порт, який сервер буде слухати для HTTP-запитів. Зазвичай 80 або 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Порт HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL-порт, який сервер буде слухати для HTTPS-запитів. Зазвичай 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Перенаправлення HTTP-запитів на HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Буде автоматично перенаправлено будь-які запити з HTTP-порту на HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Зауважте, що ваш конфігураційний файл повинен бути доступним для запису, щоб зберегти конфігурацію портів."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL-адреса логотипу"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Вкажіть зображення, яке використовуватиме як логотип. SVG, PNG, JPG підтримуються, у квадратному співвідношенні, 34x34 пікселів або більше. Натисніть кнопку праворуч, щоб вивантажити нове зображення."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Видалити користувача?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Ви дійсно бажаєте видалити користувача {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Оновити користувача"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Зауважте, що ви не можете призначити користувачів на групи адміністраторів чи гостей на цій панелі."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Зауважте, що ви не можете видалити користувача, який вже створив вміст. Натомість потрібно або деактивувати користувача, або видалити весь вміст, створений цим користувачем."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Скрипти"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS автоматично буде мінімізовано після збереження. Не включайте навколишні теги style, лише фактичний код CSS."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Видимо для всіх"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Видимо для обраних груп..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Виберіть сторінку ..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Режим навігації"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Дерево сайту"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Класична деревоподібна навігація"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Користувацька навігація"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Статичне навігаційне меню + Кнопка дерева сайту"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Відсутня"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Вимкнути навігацію по сайту"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Користувача успішно підтверджено."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Користувач успішно активований."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Користувач успішно відключений."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Текст повинен бути обраний першим!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Поновити сертифікат"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Статус сертифіката"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Термін дії сертифіката"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Абонентська електронна пошта"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Поточний стан"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Увімкнути"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Вимкнути"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Поновлення сертифіката ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Не залишайте цю сторінку."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Сертифікат успішно поновлений."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Перенаправлення HTTP успішно змінилось."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Керування мітками сторінок"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Немає тегів для відображення."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Редагувати тег"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Тег"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Мітка"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Створено {{created}} і востаннє оновлено {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Видалити цей тег"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Виберіть тег зі списку ліворуч."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Додайте тег до сторінки, щоб розпочати роботу."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Теги оновлено."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Тег успішно видалено."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Тег успішно збережено."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Фільтр ..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Переглянути пов'язані сторінки"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Видалити тег?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Ви впевнені, що хочете видалити тег {{tag}}? Тег також буде від’єднано від усіх сторінок."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Керування ключами для доступу до API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API увімкнено"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API вимкнено"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Увімкнути API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Вимкнути API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Новий ключ API"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Назва"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Закінчення ключа"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Термін дії"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Створено"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Останнє оновлення"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Відкликати"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Ключі API ще не створено."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Відкликати ключ API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Ви впевнені, що хочете відкликати ключ {name} ? Цю дію не можна скасувати!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Відкликати"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Список ключів API оновлено."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Ключ успішно відкликаний."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Новий ключ API"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Ключ API успішно створений."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Назва відсутня або є неприпустимою."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Необхідно вибрати групу."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Група гостей не може використовувати ключі API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Мета цього ключа"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Назва"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Термін дії"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Ви все одно можете відкликати ключ у будь-який час незалежно від терміну дії."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Області дозволу"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Повний доступ"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "або використати групові дозволи..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Створити"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Група"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Ключ API матиме ті ж дозволи, що й вибрана група."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 днів"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 днів"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 днів"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 рік"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 роки"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Скопіюйте ключ, показаний нижче як {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "це НЕ буде показане знову"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API успішно увімкнуто."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API успішно вимкнено."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Збережено"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Відсутня"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": " Ліцензія Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Ліцензія Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Ліцензія Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Ліцензія Creative Commons Attribution-NonCommercial"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Ліцензія Creative Commons Attribution-NonCommercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Ліцензія Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Суспільне надбання"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Всі права захищені"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Ліцензія на контент"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Ліцензія, показана в нижньому колонтитулі всіх сторінок вмісту."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Вміст доступний відповідно до {{license}}, {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Неможливо завантажити вміст сторінки."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Неможливо завантажити вміст цієї версії сторінки."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Неможливо переглянути джерело цієї версії сторінки."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Перегляд джерела станом на {{date}} сторінки {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Ідентифікатор версії {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Відновити версію сторінки?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Ви дійсно бажаєте відновити вміст цієї сторінки станом на {{date}}? Цю версію буде скопійовано поверх поточної історії. Таким чином, новіші версії все ще будуть збережені."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Відновити"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Версію сторінки успішно відновлено!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} символів, {{words}} слів"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Вирішити конфлікт збереження"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Використовувати локальний вміст"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Використовувати вміст з віддаленого джерела"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Скасування локальних змін і використання останньої версії"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Використовувати вміст на лівій панелі"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Переглянути останню версію"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Новішу версію цієї сторінки було збережено {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Що ви хочете зробити?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Використовувати поточну локальну версію та ігнорувати останні зміни."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Використати версію з віддаленого джерела (останню) та скасувати зміни."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Перезаписати версією з віддаленого джерела?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Ви впевнені, що хочете замінити поточну версію найновішим вмістом з віддаленого джерела? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Ваші поточні зміни будуть втрачені."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Підтвердити"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Локальна версія {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(для редагування)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(лише для читання)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Версія віддаленого джерела {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Ваша поточна редакція на основі версії сторінки від {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Остання правка була від {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Заголовок:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Опис:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "У вас є незбережені зміни. Ви дійсно бажаєте залишити редактор?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Конфлікт збереження! Інший користувач вже змінив цю сторінку."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Дублювати"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Відображуване ім'я"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Розташування"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Посада"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Часовий пояс"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Профіль"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Особиста інформація"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Інформація про мене"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Переглянути публічний профіль"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Аутентифікація"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Постачальник"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Змінити пароль"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Поточний пароль"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Новий пароль"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Підтвердіть новий пароль"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Групи"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Активність"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Приєднався"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Профіль востаннє оновлено"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Останній вхід"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Сторінок створено"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Коментарів опубліковано"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Профіль успішно збережено."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Пароль успішно змінено."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Сторінки"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Коментарі"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Список створених або змінених мною сторінок"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Немає сторінок для відображення."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Список сторінок було оновлено."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Шлях"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Створено"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Останнє оновлення"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Останні входи"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Дерево"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Меню"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Поточний каталог"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(корінь)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Копіювати з мови..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Мова джерела"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Мова, з якої буде скопійовано елементи навігації."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Копіювати"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Оберіть мову, з якої будуть скопійовані елементи. Елементи будуть додані до поточного списку елементів в активній мові."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Статична навігація"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Тільки статичне меню навігації"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Налаштування"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Формат дати"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Мова за замовчуванням"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Зовнішній вигляд"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "За замовчуванням на сайті"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Світла"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Темна"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Перевірити сертифікат SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Деякі хости вимагають відключення перевірки сертифіката SSL. Залиште активованим для належної безпеки."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Зовнішнє посилання (відкривається в новому вікні)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Безпека"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Максимальний розмір вивантаження"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Максимальна кількість файлів для вивантаження"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Скільки файлів можна вивантажити за одну операцію?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Максимальний розмір одного файлу."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "байти"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "файли"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Вивантаження"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Ці налаштування впливають лише на Wiki.js. Якщо ви використовуєте зворотний проксі (наприклад, nginx, apache, Cloudflare), ви також повинні змінити їх настройки, щоб вони співпадали."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Конфігурація параметрів безпеки"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Розширення"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Встановіть розширення для додаткової функціональності"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Модуль"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Додайте дискусії до своїх сторінок"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Конфігурація модуля"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Цей модуль не має параметрів конфігурації, які можна змінити."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Будь-який контент (сторінки, файли, коментарі, тощо), створений цим користувачем, буде призначений користувачу, вибраному нижче. Рекомендується створити фіктивного цільового користувача (наприклад, Deleted User), якщо ви не хочете, щоб вміст було перепризначено будь-якому поточному активному користувачеві."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Активні стратегії"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Додати стратегію"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Стилі"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Ви повинні оточити ваш код JavaScript тегами HTML-скрипту."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Ця сторінка не опублікована."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Коментарі"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Написати новий коментар ..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Ваше ім'я"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Ваша Email адреса"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Формат Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Опублікувати коментар"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Завантаження коментарів ..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Публікація від імені {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Будьте першим, хто залишив коментар."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Коментарів поки немає."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Оновити коментар"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Підтвердити видалення"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Ви дійсно бажаєте остаточно видалити цей коментар?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Цю дію не можна скасувати."
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "змінено {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Коментар успішно розміщено."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Коментар порожній або занадто короткий."
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Коментар був успішно оновлений."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Коментар був успішно видалений."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Увімкнути або вимкнути перевірку правопису"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Вхід"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Екран входу"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Налаштування JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Обхід екрана входу"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Чи повинен користувач автоматично перенаправлятися на перший модуль аутентифікації."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL-адреса фонового зображення для сторінки входу"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Вкажіть зображення, яке буде використовуватися як фон для входу. Підтримуються PNG та JPG. Рекомендований розмір: 1920x1080. Залиште порожнє для використання фону за замовчуванням. Натисніть кнопку праворуч, щоб вивантажити нове зображення. Зауважте, що група гостей повинна мати доступ до обраного зображення!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Сховати місцевого постачальника автентифікації"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Не показувати місцевого постачальника автентифікації на екрані входу. Додати? Все до URL-адреси, щоб тимчасово використовувати його."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Безпека"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Увімкнути/вимкнути 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Примусити всіх користувачів використовувати двофакторну автентифікацію під час використання постачальника автентифікації з формою користувача / пароля."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Переглянути коментарі"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Новий коментар"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Зміст"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Обговорення"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Теги"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Немає сторінок, що відповідають вашому запиту."
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "До початку сторінки"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Ім'я користувача"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Вихід"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Налаштувати конвеєр відображення сторінки."
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Назва сайту містить неприпустимі символи."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Конфігурацію сайту успішно збережено."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "Двофакторна автентифікація успішно вимкнена."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "Двофакторна автентифікація успішно ввімкнена."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Запит на скидання пароля..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "На вашу електронну пошту надіслано листа, щодо скидання пароля до облікового запису!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Активний"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Чи можуть користувачі входити за допомогою цього методу автентифікації?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Відображуване ім'я"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Заголовок, показаний кінцевому користувачеві для цього методу автентифікації."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Оберіть тип аутентифікації"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Введіть дані облікового запису"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Забули пароль?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Введіть код безпеки, згенерований на вашому довіреному пристрої:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Ваш адміністратор вимагає увімкнення двофакторної автентифікації (2FA) у вашому обліковому записі."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Відскануйте QR-код вказаний нижче з мобільного додатку 2FA:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Введіть код безпеки, згенерований на вашому довіреному пристрої:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Виберіть сторінку"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Оберіть розташування нової сторінки"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Дії зі сторінкою"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Виберіть сторінку"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Віртуальні папки"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Сторінки"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Ця тека порожня"
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Конвертувати формат"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Конвертувати формат сторінки"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Виберіть редактор, який ви бажаєте використовувати надалі для сторінки \"{{title}}\":"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Вміст сторінки буде конвертовано у формат обраного редактора. Зауважте, що в результаті перетворення може бути втрачено деяке форматування або вміст. Поточний стан сторінки буде додано до історії, і його можна буде відновити в будь-який час."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Конвертувати"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Перейти до Панелі адміністратора"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Вивантажити на диск"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Збережіть вміст в архіві для резервного копіювання/міграції"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Зміст"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Зміст"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Використовувати налаштування сайту за замовчуванням"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Рівні заголовків змісту"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "У змісті відображатимуться заголовки від і до вибраних рівнів."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Рівні заголовків змісту за замовчуванням"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "У змісті за замовчуванням відображатимуться заголовки від і до вибраних рівнів."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Ім'я хосту, що ідентифікує клієнта"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Додаткове ім'я для надсилання на сервер SMTP для ідентифікації вашої поштової програми. Залиште пустим, щоб використовувати ім'я хоста сервера. Для клієнтів Google Workspace це має бути ваше основне доменне ім'я."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Розширення сторінки"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Список розширень URL-адрес, розділених комами, які розглядатимуться як сторінки. Наприклад, додавання md оброблятиме /foobar.md так само, як /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Кнопка Назва сайту"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Назва зовнішнього сайту для відображення на кнопці редагування. Не включає префікс \"Редагувати\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Значок кнопки"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Піктограма для відображення на кнопці редагування. Наприклад, mdi-github для відображення значка GitHub."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Посилання кнопки"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "URL-адреса сторінки у зовнішньому репозиторії. Використовуйте заповнювач {filename}, де має бути включено ім'я файлу. (наприклад, https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Редагувати Ярлики"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Меню швидкого редагування FAB"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Відображення незакріпленої кнопки редагування (FAB) із меню швидкого набору в нижньому правому куті екрана."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Редагувати панель меню"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Відобразити у панелі меню редагування."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Відобразити заголовок сторінки у меню редагування."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Відобразити кнопку «Редагувати»"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Відобразити кнопку для редагування поточної сторінки."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Відображення зовнішньої кнопки редагування"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Відображати кнопку з посиланням на зовнішній репозиторії (наприклад, GitHub), де користувачі можуть редагувати або надсилати PR для поточної сторінки."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Редагувати {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Конфігурацію коментарів успішно збережено."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Перевизначення тексту нижнього колонтитула"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "За потреби замініть текст нижнього колонтитула власним повідомленням. Корисно, якщо жодна з наведених вище ліцензій не підходить."
+                }
+            ]
+        }
+    }
+}

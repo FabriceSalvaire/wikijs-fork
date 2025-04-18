@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Podržano od strane"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Prijava je potrebna"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Email / Korisničko ime"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Šifra"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Prijava"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Korisnik nije pronađen"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": ""
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": ""
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": ""
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": ""
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Verifikacija"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Kontrolna tabla"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Generalno"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Jezici"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistika"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Tema"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grupe"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Korisnici"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autentifikacija"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Pretraga"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Pohrana"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Glavne postavke vašeg wikija"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Informacije o sajtu"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Brendiranje lokacije"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Stranica"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Korisnici"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Moduli"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Sistem"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Podesite opcije lokalizacije za vaš Wiki.js"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Postavke jezika"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Cijeli sadržaj biti će prikazan na odabranom jeziku."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Aktivni jezici"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Lista jezika omogućenih za višejezično imenovanje prostora. Osnovni jezik definiran gore će biti uključen bez obzira na ovaj izbor."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Kod lokalne šeme će biti dodan na početak svih putanja. (npr. {{langCode}}/ime-stranice)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Spremi"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Otkaži"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Preuzmi"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Uplouduj"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Odbaci"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Očisti"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Kreiraj"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Izmijeni"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Obriši"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Osvježi"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Spasi izmjene"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Nastavi"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Jezik"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Pronašli ste grešku? Pošaljite problem na {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Dajte donaciju"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Doprinosi"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js je također dio inicijative Open Collective, transparentnog fonda koji ide prema resursima zajednice. Možete dati finansijski doprinos mjesečnom ili jednokratnom donacijom:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "kontributori"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Stranica"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Renderujem"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Molimo pričekajte..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Stranica uspješno kreirana."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Došlo je do greške prilikom kreiranja stranice."
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js Shop"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "{{year}}{{company}}. Sva prava zadržana."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Ova stranica ne postoji još uvijek."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Da li želite da kreirate sada?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Kreiraj stranicu"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": ""
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Dodaj"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Dijeljenenik"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Naslov"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Labela"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikona"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Tip odredišta"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Odredište"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Odaberite navigacijski element s lijeve strane."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Neimenovano {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Eksterni link"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Naslovna"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Stranica"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Upit za pretragu"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Izmijeni {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Obriši {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigacija uspješno sačuvana."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Kliknite dugme za dodavanje na vašem prvom navigacijskom elementu."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigacija je prazna"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Prihvati izmjene"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Email adresa"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Potvrdite šifru"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Ime"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Registracija"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Napravite račun"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Već imate račun? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Prijvaite se umjesto"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Prijavi se koristeći {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Zaboravili ste šifru?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "ili prijavite se koristeći..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Nemate račun? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Napravite račun"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": ""
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": ""
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": ""
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": ""
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registering",
+                    "value": ""
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": ""
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": ""
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": ""
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": ""
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": ""
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": ""
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": ""
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": ""
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": ""
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": ""
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": ""
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Stranica uspješno ažurirana."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Nemate autorizaciju"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Ne možete vidjeti ovu stranicu."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": ""
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Ne možete vidjetu historiju stranice."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Ne možete modifikovati ovu stranicu."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Ne možete kreirati ovu stranicu."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Natrag"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Naslovna"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Nije pronađeno"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Ova stranica ne postoji."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Prijavi se kao..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": ""
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": ""
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Ako niste povezani na internet ili ne možete preuzeti lokalne datoteke koristeći gore navedenu metodu, umjesto toga možete ručno učitati pakete bočno otpremanjem ispod."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": ""
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": ""
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Sigurnost"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Prvo morate postaviti važeći {{siteUrl}}! Kliknite na {{general}} u lijevoj bočnoj traci."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": ""
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Naslovna"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Nova stranica"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Trenutna stranica"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Pogledaj"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Izmijeni"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Historija"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Pogledaj izvorno"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Pomjeri / Preimenuj"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Obriši"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Aseti"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Slike i fajlovi"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Pretraga..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administracija"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Račun"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Moja Wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Odjava"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Prijava"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Zadnji put ažurirano od strane"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Neobjavljeno"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Uredi stranicu"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Sadržaj stranice"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Bookmark"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Podijeli"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Printanje"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Status"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Akcije"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Došlo je do neočekivane greške."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Stranice"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Korisnici"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grupe"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Koristite zadnju verziju."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Dostupna nova verzija: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js je besplatan projekat otvorenog koda. Postoji nekoliko načina na koje možete doprinijeti projektu."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Trebamo vašu pomoć!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Više"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Općenito"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL stranice"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Puni URL vašeg wikija, bez kose crte na kraju. (npr. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Naslov stranice"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Prikazuje se u gornjoj traci i dodaje na sve stranice meta naslova."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Upload logotip"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Čisto"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Preporučuje se slika piksela {{size}}} za najbolje rezultate."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} ili {{lastType}} datoteke samo"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Footer autorska prava"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Naziv kompanije / Organizacije"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Ime koje treba koristiti prilikom prikazivanja obaveštenja o autorskim pravima u podnožju. Ostavi prazno da se sakrije."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Opis lokacije"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Podrazumevani opis kada nijedna nije predviđena za stranicu."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta roboti"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Zadano: Indeks, Prati. Može se postaviti i po stranici."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Upišite najmanje 2 karaktera da započnete pretragu..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Pretraživanje..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Nisu pronađene stranice za Vašu pretragu."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Pronađeno {{total}} rezultata"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Da li ste mislili..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Zatvori"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Kopiraj link pretrage"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": ""
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": ""
+                },
+                {
+                    "key": "common:password.average",
+                    "value": ""
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": ""
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Obrisati stranicu"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Da li ste sigurni da želite obrisati stranicu {{title}}"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Ova stranica se može povratiti sa administracije."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": ""
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": ""
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": ""
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": ""
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": ""
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": ""
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": ""
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": ""
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": ""
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": ""
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimiziraj"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Pregled"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Svojstva"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Umetni"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Dobavi"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Pregledanje izvornog sadržaja stranice {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Vrati se na normalni pregled"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Jezik"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Objavljeno"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privatno"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Globalno"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Učitavanje stranice..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Vaš preglednik je zastario. Molimo Vas ažurirajte preglednik na {{modernbrowser}}"
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "moderan preglednik"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Nedavne stranice"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Najpopularnije stranice"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "ili kreirajte novi proizvoljni pregled?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Pregledaj po tagovima"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Mapa stranice"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Akcija za stranice"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Trenutna selekcija"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Očisti selekciju"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Odaberite jedan ili više tagova"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Pretraži unutar rezultata..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Lokal"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Poredaj po"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Odaberite jedan ili više tag sa lijeve strane."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Dobavljamo rezultate..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Nije pronađena stranica sa odabranim tagovima."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Nije pronađena stranica koja odgovara trenutnim opcijama iz filtera."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Posljednje ažuriranje {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Datum kreiranja"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Podljenja izmjena"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": ""
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": ""
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": ""
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL logotipa"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Navedite sliku koju ćete koristiti kao logo. SVG, PNG, JPG su podržani, u kvadratnom odnosu, 34x34 piksela ili veći. Kliknite na dugme sa desne strane da biste uploadovali novu sliku."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Ništa"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Onemogući navigaciju na stranici"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Korisnik je uspješno verifikovan."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Korisnik je uspješno aktiviran."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Korisnik je uspješno deaktiviran."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Tekst mora biti izabran prvi!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Obnovite certifikat"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Status certifikata"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Rok trajanja certifikata"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Email pretplatnika"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Trenutno stanje"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Uključi"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Ugasiti"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Obnavljanje sertifikata..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Ne napuštajte ovu stranicu."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Certifikat je uspješno obnovljen."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP preusmjeravanje je uspješno promijenjeno."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Upravljajte oznakama stranica"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Nema oznaka za prikazati."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Uredi oznaku"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tag"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Labela"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Kreirano {{created}} i posljednji put ažurirano {{updated}}"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Obriši ovaj tag"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Odaberite tag sa liste na lijevoj strani."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Dodajte tag na stranicu da započnete."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tagovi su ažurirani."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Oznaka je uspješno izbrisana."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Oznaka je uspješno sačuvana."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filtriraj..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Pogledajte povezane stranice"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Izbrisati oznaku?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Jeste li sigurni da želite izbrisati oznaku {{tag}}? Oznaka će takođe biti nepovezana sa svim stranicama."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Upravljajte ključevima za pristup API-ju"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API je omogućen"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API onemogućen"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Omogući API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Onemogući API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Završetak ključa"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Istek"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Kreirano"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Posljednji put ažurirano"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Opozovi"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Još uvek nisu generisani API ključevi."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Opozvati API ključ?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Jeste li sigurni da želite zamijeniti svoju trenutnu verziju najnovijim udaljenim sadržajem? {{refEditsLost}}"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Opozovi"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Spisak API ključeva je osvežen."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Ključ je uspješno opozvan."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Novi API ključ"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API ključ je uspješno kreiran."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Ime nedostaje ili je nevažeće."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Morate odabrati grupu."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Grupa gostiju se ne može koristiti za API ključeve."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Svrha ovog ključa"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Ime"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Rok trajanja"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Ključ se može opozvati u bilo koje vrijeme, bez obzira na isteku roka."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Opseg dozvola"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Potpuni pristup"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "ili koristite grupne dozvole..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generiraj"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Grupa"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API ključ će imati iste dozvole kao odabrana grupa."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 dana"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 dana"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 dana"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 godina"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 godine"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Kopirajte ključ prikazan ispod kao {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "NEĆE se ponovo prikazati"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API je uspješno omogućen."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API je uspješno onemogućen."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Sačuvano"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Ništa"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": " Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike licenca"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs licenca"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-Nekomercijalna licenca"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Licenca Creative Commons Attribution-NonCommercial-Share Alike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Attribution-NonCommercial-NoDerivs License"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Javni domen"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Sva prava pridržana"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Licenca za sadržaj"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Licenca prikazana u podnožju svih stranica sa sadržajem."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Sadržaj je dostupan pod {{license}}, od strane {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Ne možete preuzeti sadržaj stranice."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Ne možete preuzeti sadržaj za ovu verziju stranice."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Ne možete pogledati izvor ove verzije stranice."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Pregled izvora kao od {{date}} stranice {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID verzije {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Vratiti verziju stranice?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Jeste li sigurni da želite obnoviti sadržaj ove stranice kao što je bio na {{date}}? Ova verzija će biti kopirana na vrhu trenutne istorije. Kao takav, novije verzije će i dalje biti sačuvane."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Vrati"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Verzija stranice uspješno obnovljena!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} znakova, {{words}} riječi"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Razriješi sukob spremanja"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Koristi lokalno"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Koristite daljinski"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Odbacite lokalne promjene i koristite najnoviju verziju"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Koristite sadržaj na lijevoj ploči"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Pogledajte najnoviju verziju"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Noviju verziju ove stranice je sačuvao {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Šta hoćeš da radiš?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Koristite svoju trenutnu lokalnu verziju i zanemarite najnovije promjene."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Koristite udaljenu verziju (najnoviju) i odbacite promjene."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Prepisati sa udaljenom verzijom?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Jeste li sigurni da želite zamijeniti svoju trenutnu verziju najnovijim udaljenim sadržajem? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Vaše trenutne izmjene će biti izgubljene."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Potvrdi"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Lokalna verzija {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(za uređivanje)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(Samo za čitanje)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Udaljena verzija {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Vaše trenutno uređivanje, na osnovu verzije stranice od {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Posljednji put uredio {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Naslov:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Opis:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Imate nesačuvane izmjene. Jeste li sigurni da želite napustiti urednika?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Sačuvaj konflikt! Drugi korisnik je već izmijenio ovu stranicu."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Dupliranje"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Ime za prikaz"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Lokacija"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Naziv posla"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Vremenska zona"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Moji lični podaci"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Moje informacije"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Pogledaj javni profil"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autentifikacija"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Provajder"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Promijenite lozinku"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Tekuća lozinka"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Nova lozinka"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Potvrdite novu lozinku"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grupe"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktivnosti"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Spojeno"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profil posljednji put ažuriran na"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Zadnja prijava uključena"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Stranice kreirane"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Komentari objavljeni"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profil je uspješno sačuvan."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Lozinka je uspješno promijenjena."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Stranice"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Komentari"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Lista stranica koje sam kreirao ili zadnje izmijenio"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Nema stranica za prikaz."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Spisak stranica je osvežen."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Naslov"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Staza"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Kreiran"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Posljednji put ažurirano"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Zadnje prijave"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Pregledaj"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Glavni meni"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Tekući direktorij"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(korijen)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Kopija sa lokalnog..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Izvorna lokacija"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Lokacija sa koje će se kopirati navigacione stavke."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Kopiraj"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Odaberite lokaciju iz koje će se stavke kopirati. Stavke će biti dodane trenutnoj listi stavki u aktivnom lokalu."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Statična navigacija"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Samo meni statičke navigacije"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Preference"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Format datuma"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Zadana lokacija"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Izgled"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Zadana lokacija"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Svjetlo"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Mračan"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Potvrdite SSL certifikat"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Neki domaćini zahtijevaju da se provjera SSL certifikata onemogući. Ostavite omogućeno radi odgovarajuće sigurnosti."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Vanjska veza (Novi prozor)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Sigurnost"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Maksimalna veličina za učitavanje"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Maksimalni broj datoteka po učitavanju"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Koliko datoteka se može učitati u jednoj grupi?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Maksimalna veličina za jednu datoteku."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bajtova"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "datoteke"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Učitavanja"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Ova podešavanja utiču samo na Wiki.js. Ako koristite reverse-proxy (npr. nginx, apache, Cloudflare), također morate promijeniti njegove postavke da odgovaraju."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Konfigurirajte sigurnosne postavke"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Dodaci"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Instalirajte ekstenzije za dodatnu funkcionalnost"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Provajder"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Dodajte diskusije na svoje wiki stranice"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Konfiguracija provajdera"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Ovaj provajder nema opcije konfiguracije koje možete izmijeniti."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Svaki sadržaj (stranice, upload-ovi, komentari, itd.) koji je kreirao ovaj korisnik bit će ponovno dodijeljen korisniku odabranom ispod. Preporučuje se kreiranje lažnog ciljnog korisnika (npr. Izbrisani korisnik) ako ne želite da se sadržaj ponovo dodijeli bilo kojem trenutno aktivnom korisniku."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Aktivne strategije"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Dodaj strategiju"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stilovi"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Morate okružiti svoj JavaScript kod sa HTML skriptnim oznakama."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Ova stranica nije objavljena."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Komentari"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Napišite novi komentar..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Tvoje ime"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Tvoja e-mail adresa"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Format označavanja"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Objavi komentar"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Učitavanje komentara..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Objavljivanje kao {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Budi prvi koji će komentarisati."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Još nema komentara."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Ažuriraj komentar"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Potvrdite brisanje"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Jeste li sigurni da želite trajno izbrisati ovaj komentar?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Ova akcija se ne može poništiti!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "izmijenjeno {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Novi komentar je uspješno objavljen."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Komentar je prazan ili prekratak!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Komentar je uspješno ažuriran."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Komentar je uspješno obrisan."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Uključite provjeru pravopisa"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Prijava"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Prijava"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT konfiguracija"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Zaobiđite ekran za prijavu"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Treba li korisnik biti automatski preusmjeren na prvog provajdera autentifikacije."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL pozadinske slike za prijavu"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Odredite sliku koju ćete koristiti kao pozadinu za prijavu. Podržani su PNG i JPG, preporučuje se 1920x1080. Ostavite prazno za zadano. Kliknite na dugme sa desne strane da biste učitali novu sliku. Imajte na umu da grupa Gosti moraju imati pristup za čitanje odabrane slike!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Sakrij provajdera lokalne autentikacije"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Ne prikazujte lokalnog provajdera autentifikacije na ekranu za prijavu. Dodajte ?all u URL da ga privremeno koristite."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Sigurnost"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Primijeni 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Prisilite sve korisnike da koriste dvofaktorsku autentifikaciju kada koriste provajdera autentifikacije s obrascem za korisnika/lozinku."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Pogledaj diskusiju"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Novi komentar"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Sadržaj komentara"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Priče"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Oznake"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Stranice koje odgovaraju oznakama"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Povratak na vrh"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Korisničko ime"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Izlaz"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Konfigurirajte cjevovod za prikazivanje stranice"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Naslov stranice sadrži nevažeće znakove."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Konfiguracija sajta uspješno sačuvana."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA je uspješno onemogućen."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA je uspješno omogučena."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Zahtjev za obnovu lozinke..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Provjerite svoju e-poštu za upute za obnovu vaše šifre!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktivan"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Mogu li se korisnici prijaviti koristeći ovu strategiju?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Ime za prikaz"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Naslov koji se prikazuje krajnjem korisniku za ovu strategiju provjere autentičnosti."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Odaberite provajdera autorizacije"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Unesite svoje podatke za prijavu"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Zaboravili ste šifru"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Unesite sigurnosni kod generiran sa vašeg pouzdanog uređaja:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Vaš administrator je zahtijevao dvofaktorsku autentifikaciju (2FA) da bude omogućena na vašem računu."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "Skeniranje QR koda iz mobilne 2FA aplikacije:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Unesite sigurnosni kod generiran sa vašeg pouzdanog uređaja:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Odaberite"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Odaberite lokaciju nove stranice"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Premjesti / Preimenuj lokaciju stranice"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Odaberite stranicu"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtualne fascikle"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Stranice"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Ova fascikla je prazna."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Pretvori"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Konvertuj stranicu"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Odaberite uređivač koji želite koristiti ubuduće za stranicu {{title}} :"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Sadržaj stranice će biti konvertovan u format novoizabranog uređivača. Imajte na umu da neki formatirani ili nerenderirani sadržaj mogu biti izgubljeni kao rezultat konverzije. Snimak će biti dodan u historiju stranice i može se vratiti u bilo koje vrijeme."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Pretvoriti"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administracija"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Izvezi na disk"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Sačuvajte sadržaj u tarball za sigurnosno kopiranje / migraciju"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TOC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Sadržaj"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Koristite zadane postavke stranice"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Nivoi naslova TOC-a"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Tabela sadržaja će prikazati naslove od i do izabranih nivoa."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Zadani nivoi naslova TOC-a"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Sadržaj će podrazumevano prikazati naslove od i do izabranih nivoa."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Ime hosta za identifikaciju klijenta"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Opcionalno ime za slanje SMTP serveru kako bi identifikovali vaš mailer. Ostavite prazno da biste koristili  hostname server. Za korisnike Google Workspace-a, to bi trebalo da bude domena vaše Google Workspace-a."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Dodaci stranice"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Lista URL ekstenzija odvojenih zarezima koje će se tretirati kao stranice. Na primjer, dodavanje md će tretirati /foobar.md isto kao /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Dugme Naziv lokacije"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Naziv eksternog sajta koji će se prikazati na dugmetu za uređivanje. Nemojte uključivati prefiks \"Uredi na\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Ikona dugmeta"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Ikona za prikaz na dugmetu za uređivanje. Na primjer, mdi-github za prikaz GitHub ikone."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "URL dugmeta"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Url do stranice u vanjskom spremištu. Upotrijebite {filename} rezervirano mjesto u koje treba uključiti naziv fajla. (npr. https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Uredi prečice"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB meni za brzo uređivanje"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Prikažite dugme za uređivanje plutajuće akcije (FAB) sa menijem za brzo biranje u donjem desnom uglu ekrana."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Uredi traku menija"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Prikaži traku s izbornikom za uređivanje"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Prikaži izbornik za uređivanje zaglavlja stranice."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Prikaži dugme za uređivanje"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Prikažite dugme za uređivanje trenutne stranice."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Prikaži vanjsko dugme za uređivanje"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Prikažite dugme koje povezuje sa eksternim spremištem (npr. GitHub) gde korisnici mogu uređivati ili poslati PR za trenutnu stranicu."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Uredi na {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Konfiguracija komentara uspješno je sačuvana."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Zamjena teksta u podnožju"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Opcionalno premostite tekst podnožja prilagođenom porukom. Korisno ako nijedna od gore navedenih licenci nije odgovarajuća."
+                }
+            ]
+        }
+    }
+}

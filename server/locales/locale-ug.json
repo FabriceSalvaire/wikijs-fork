@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "قۇۋەتلىگەن"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "تىزىملىتىش زۆرۈر"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "ئېلخەت / ئىشلەتكۈچى نامى"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "مەخپى نۇمۇرى"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "تىزىملىتىش"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "تىزىملىتىش ئىناۋەتسىز"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "ئېلخەت ياكى پارول ئىناۋەتسىز."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "ئېلخەت ئىناۋەتسىز"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "تىزىملىتىش خاتا"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "سىزنىڭ تېخى بۇ تور بىتىگە كىرىش ھوقۇقىڭىز يوق."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "بەك كۆپ ئۇرۇنۇش!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "قىسقا ۋاقىت ئىچىدە بەك كۆپ مەغلۇب بولدىڭىز، {{time}}نى قايتا سىناپ بېقىڭ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "ئىشلەتكۈچى تېپىلمىدى"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "يەرلىك"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "مىكروسوفت ھېساباتى"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure ئاكتىپ مۇندەرىجىسى"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "گۇگل كىملىكى"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "بەتيۈزى"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "گىتخاب"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "سلاك"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP/ ئاكتىپ مۇندەرىجىسى"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "ئىككى فەكتورلۇق دەلىللەش"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "بىخەتەرلىك كودى زۆرۈر:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "دەلىللەڭ"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "باشقۇرۇش بېتى"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "ئادەتتىكى"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "يەرلىكلىك"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "ستاتىستىكا"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "ئۇسلۇب"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "گۇرۇپپىلار"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "ئىشلەتكۈچىلەر"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "دەلىللەش"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "تەھرىرلىگۈچ"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "تىزىمغا كېرىش"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "ئۇلاشتۇرماق"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "ئىزدەش ماتورى"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "ئامبار"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API زىيارىتى"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "سىستېما ئۇچۇرى"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "قۇلايلاشتۇرمىلار"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "ئاچقۇچى قوراللىرى"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Wiki.js گە تۆھپە قوشۇش"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "ۋىكىنىڭ ئاساسىي تەڭشەكلىرى"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "توربەت ئۇچۇرى"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "بىكەت ماركىسى"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "تور بەت"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "ئىشلەتكۈچىلەر"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "مودېللار"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "سىستېما"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "ۋىكىڭىزغا يەرلىكلەشتۈرۈش تاللانمىلىرىنى بەلگىلەڭ"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "يەرلىك تەڭشەكلەر"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "كۆپ تىللىق ئىسىم بوشلۇقى"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "يەرلىكلەشتۈرۈشنى چۈشۈرۈش"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "ئاساسىي يەرلىكلىك"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "بارلىق UI تېكىست ئېلېمېنتلىرى تاللانغان تىلدا كۆرسىتىلىدۇ."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "ئاپتوماتىك يېڭىلاش"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "تۆۋەندە قوزغىتىلغان بارلىق ئىسىم بوشلۇقىدىكى يېڭىلانمىلارنى ئاپتوماتىك چۈشۈرۈڭ."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "كۆپ تىللىق نام بوشلۇقى"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "ئوخشاش بەتنىڭ كۆپ تىللىق نەشىرىنى قوزغىتىڭ."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "ئاكتىپ نام بوشلۇقى"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "كۆپ تىللىق نام بوشلۇقى ئۈچۈن يەرلىك قۇزغىتىلمىلار تىزىملىكى. يۇقىرىدا بېكىتىلگەن ئاساسىي رايون بۇ تاللاشنىڭ قانداق بولۇشىدىن قەتئىينەزەر ھەمىشە ئۆز ئىچىگە ئالىدۇ. "
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "يەرلىك كود بارلىق يوللارنىڭ ئالدىغان قوشۇلىدۇ. (مەسىلەن {{langCode}}\\ بەت نامى)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "يەرلىك كودسىز يوللار ئاپتوماتىك ھالدا يۇقىردا بىكىتىلگەن ئاساسىي يەرلىكە ئاپتۇماتىك نىشانلىنىدۇ. "
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "ساقلاش"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "بىكارقىلىش"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "چۈشۈرۈش"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "يۈكلەش"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "ۋازكەچ"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "تازىلاش"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "قۇرۇش"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "تەھرىلەرش"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "ئۆچۈرۈش"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "يېڭىلاش"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "ئۆزگەرتىشلەرنى ساقلاش"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "داۋاملاشتۇرۇش"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "بىكەت ئورنى"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "يېڭىلانمىلارنى بۇ ئورۇنغا ئاپتوماتىك چۈشۈرۈڭ."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "سىستېمىڭىز ھەققىدىكى ئۇچۇرلار"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "ئاساسىي ماشىنا ئۇچۇرى"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "نۆۋەتتىكى نەشىرى"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "ئاخىرقى نەشىرى"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "نەشىرقىلىنغان"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "مەسغۇلات سىستېمىسى"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "ئاساسىي ماشىنا نامى"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "مەركىزى بىر تەرەپ قىلغۇچ يادرولىرى"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "ئومۇمىي RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "خىزمەت مۇندەرىجىسى"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "سەپلىمە ھۆججىتى"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAM ئىشلىتىلىشى: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "ۋىكىنى ئىچىش ۋە مەشغۇلاتلىرىنى قوللاشقا ياردەم قىلىڭ."
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "خىزمىتىمىزنى مەبلەغ بىلەن تەمىنلەڭ"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "سۆزنى تارقىتىش"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "دوستلىرىڭىز ۋە خىزمەتداشلىرىڭىزغا ئارىشپىدىيانىڭ نەقەدەر قالتىسلىقى توغرىسىدا سۆزلەپ بىرىڭ!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "{{0}}دا بىزگە ئەگىشىڭ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "{{0}} غا تەكلىپ يوللاڭ ياكى تەكلىپكە بىلەت تاشلاڭ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "ئىقتىدار تەلەپ تاختىسى"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "خاتالىق بايقالدى؟ {{0}} غا مەسىلىنى يوللاڭ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "ۋىكىنى ئۆز تىلىڭىزغا تەرجىمە قىلىشقا ياردەم قىلىڭ. بىز بىلەن . {{0}} دا ئالاقە قىلىڭ. "
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "ئىئانە قىلىش"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "تۆھپە قوشۇڭ"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "ۋىكى يەنە ئوچۇق كوللېكتىپ تەشەببۇسىنىڭ بىر قىسمى بولۇپ، جامائەت بايلىقىغا  يۈزلەنگەن سۈزۈك فونىدتۇر. ئايلىق ياكى بىرلا قېتىم ئىئانە قىلىش ئارقىلىق مالىيە جەھەتتىن تۆھپە قوشالايسىز:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "يۇمشاق دېتالنى داۋاملىق ياخشىلاش ۋە مۇناسىۋەتلىك مۇلازىمەتلەرنى (مەسىلەن ساھىبخانلىق قىلىش ۋە تورلاشتۇرۇش) نى داۋاملاشتۇرۇش ئۈچۈن سىزنىڭ ياردىمىڭىزگە موھتاج."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "ۋىكى ھەقسىز ۋە ئوچۇق مەنبەلىك يۇمشاق دېتال بولۇپ، سىزگە   {{1}}  ئارقىلىق  {{2}}  بىلەن   {{3}}   ئېلىپ كىلىدۇ."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "تۆھپىكارلار"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "بەت"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": ""
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "ساقلاپ تۇرۇڭ ..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "بەت مۇۋەپپەقىيەتلىك قۇرۇلدى."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "بەت قۇرۇش جەريانىدا خاتالىق كۆرۈلدى"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "بۇ تۈرنى ئىقتىسادىي جەھەتتىن قوللاش ئۈچۈن ۋىكى مايكىسى سېتىۋالسىڭىزمۇ بولىدۇ:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "ۋىكى دۇكىنى"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "ماقۇل"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . بارلىق ھوقۇق قوغدىلىدۇ."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "بۇ بەت تېخى مەۋجۇت ئەمەس."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "ھازىر قۇرماقچىمۇ؟"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "بەت قۇرۇش"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "قايت"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "بەتلەر"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "يولباشلاش"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "تور بەت يولباشلىغۇچىنى باشقۇرش"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "قوشۇش"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "ئۇلىنىش"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "بۆلگۈچى"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "سەرلەۋھە"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "بەلگە"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "سىنبەلگە"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "نىشان تىپى"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "نىشان"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "سول تەرەپتىن يولباشلىغۇچىنى تاللاڭ."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}}تىمىسىز"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "سىرتقى ئۇلانما "
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "باش بەت"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "بەت"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "ئىزدەش سۇئالى"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "{{kind}}تەھرىرلەش"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "{{kind}} ئۆچۈرۈش"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "يولباشلاش مۇۋاپىقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "قوشۇش بەلگىسىنى بىسىپ تۈنجى يولباشلىغۇچىڭىزنى قوشۇڭ."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "يولباشلاش قۇرۇق"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "ئىلتىماس قىلىش"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "ئېلخەت ئادرېسى"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "پارولنى دەلىلەش"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "ئىسمى"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "تىزىملىتىش"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "ھېساب ئىچىڭ"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": ""
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "ئۇنىڭ ئورنىغا كىرىڭ"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "{{strategy}} نى ئىشلىتىپ كىرىش"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "پارولىڭىزنى ئۇنتۇپ قالدىڭىزمۇ؟"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "ياكى ئىشلىتىپ كىرىڭ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "ھېساباتىڭىز يوقمۇ؟ {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "ھېساب ئىچىڭ"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "ئىناۋەتلىك ئېلخەت / ئىشلەتكۈچى نامىنى كىرگۈزۈڭ."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "ئۈنۈملۈك پارولنى كىرگۈزۈڭ."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "كىرىش مۇۋاپىقىيەتلىك! .... غا يۆتكىلىۋاتىدۇ."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "تىزىملىنىۋاتىدۇ ... "
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "دەلىللەشنى ئىشلەتكىلى بولمايدۇ."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "تۆۋەتندىكى جەۋەلنى تولدۇرۇپ ھېسابىڭىزنى قۇرۇڭ"
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "ساقلاڭ"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "ھېساب مۇۋاپىقىيەتلىك قۇرۇلدى"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "ھېساب ئېچىش"
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "ئېلخەت يوق"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "ئېلخەت ئادرېسى ئىناۋەتسىز"
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "پارول يوق"
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "پارول بەك قىسقا"
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "ئىككى پارول ماس ئەمەس"
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "ئىسىم يوقاپ كەتكەن"
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "ئىسمى بەك قىسقا."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "ئىسمى بەك ئۇزۇن."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "بىكار قىلىش"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "پارولنى ئەسلىگە كەلتۈرۈش"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "ئېلخەت ئادرېسىڭىزنى كىرگۈزۈپ پارولىڭىزنى يېڭىلاش كۆرسەتمىسىنى تاپشۇرۇۋېلىڭ:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "پوچتا يوللانمىسى"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "پوچتا تەڭشەكلىرىنى سەپلەش"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "سەپلىمە"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (ئىختىيارىي)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "ئېلخەتلىرىڭىزنى تەكشۈرۈپ ھېساباتىڭىزنى ئاكتىپلاشتۇرۇڭ."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "بەت ئوڭۇشلۇق يېڭىلاندى."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "رۇخسەتسىز"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "سىز بەتنى كۆرەلمەيسىز."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "سىز بەت مەنبەسىنى كۆرەلمەيسىز."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "سىز بەت تارىخىنى كۆرەلمەيسىز."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "سىز بەتنى تەھرىرلىيەلمەيسىز."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "سىز بەت قۇرالمايسىز."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "قايت"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "باش بەت"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "تېپىلمىدى"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "بۇ بەت مەۋجۇت ئەمەس."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": ".. بولۇپ كىرىش"
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "قوللىغۇچى بولۇڭ"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "پاترېئون ئارقىلىق قوللىغۇچى ياكى قوللىغۇچىغا ئايلىنىڭ (باشلامچى پروگرامما ئاچقۇچى نىكولاس گىئاردنىڭ Wiki.js دا پۈتۈن كۈنلۈك ئىشلەش نىشانىنى بىۋاسىتە قوللايدۇ)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "ۋىكىغا خۇش كەلدىڭىز."
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "باشلايلى ۋە باش بەتنى قۇرايلى"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "باش بەتنى قۇر"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "تۇغلار"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "ئۇزۇن سەپەر"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "PayPal ئارقىلىق بىرلا قېتىم ياكى تەكرار ئىئانە قىلىڭ:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "بىز Ethereum ئارقىلىق ئىئانە قوبۇل قىلىمىز:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "يەرلىك بوغچىنى چۈشۈرۈش"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "... كىزىش"
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "تور ئىلمەكلىرى"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "سىرتقى مۇلازىمىتىر ئۈچۈن تور ئىلمىكىنى باشقۇرۇش"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "سىناق ئېلخەت يوللاش"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "قوبۇل قىلغۇچىنىڭ ئېلخەت ئادرېسى"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "ئېلخەت ئەۋەتىش"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "ئەۋەتكۈچى"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "ئەۋەتكۈچى ئىسمى"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "ئەۋەتكۈچى ئېلخەت"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP تەڭشىكى"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "ساھىبخان"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "پورت"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "ئادەتتە 465 (تەۋسىيە قىلىنىدۇ) ، 587 ياكى 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "بىخەتەر (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "بۇ 465 - نومۇرلۇق پورتنى ئىشلەتكەندە قوزغىتىش كېرەك، بولمىسا ئېتىۋېتىلىدۇ(587 ياكى 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "ئىشلەتكۈچى ئىسمى"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "پارول"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM نى ئىشلىتىڭ"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "تور نامى"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "ئاچقۇچ تاللىغۇچ"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "شەخسىي ئاچقۇچ"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM فورماتىدىكى تاللىغۇچنىڭ شەخسىي ئاچقۇچى"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "سىناق ئېلېكترونلۇق خەت ئەۋەتىپ ، SMTP سەپلىمىسىنىڭ نورمال بولۇشىغا كاپالەتلىك قىلىڭ."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "سەپلىمە مۇۋاپىقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "سىستېما ئۇچۇرى يېڭىلاندى."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "ۋىكىرىڭىزنىڭ دەلىللەش تەڭشەكلىرىنى سەپلەڭ"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "ئىستىراتېگىيەلەر"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT تاماشىبىنلار"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "توكەن مۇددىتى"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "توكىننىڭ ئۈنۈملۈك مۇددىتى ئۇ يىڭىلانغانغا قەدەر. (سۈكۈتتە: 30 مىنۇت)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "توكەن يېڭىلاش دەۋرى"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": " بەلگەنىڭ ۋاقتى توشقاندا يېڭىلىغىلى بولىدىغان ئەڭ يۇقىرى مۇددەت.  (سۈكۈتتە: 14كۈن)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "بۇ تاكتىكا {{state}}{{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "ئاكتىپ"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "ئاكتىپ ئەمەس"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "چەكلەشكە بولمايدۇ."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "سىنىاق ئېلخەت مۇۋاپىقىيەتلىك يوللاندى. "
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "ۋىكىرىڭىزنىڭ كۆرۈنۈشى ۋە تەسراتىنى ئۆزگەرتىڭ"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "بەت ئۇسلۇبى"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "قاراڭغۇ ھالەت"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "زىيارەت قىلىش تەۋسىيە قىلىنمايدۇ. بەلكىم بارلىق ئۇسلۇبلارنىڭ قوللىشىغا ئېرىشەلمەسلىكى مۇمكىن."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "كود ئۇكۇلى"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS قاپلاش"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "باش HTML ئوكۇلى"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "گەۋدە HTML ئوكۇلى"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML كودى يېپىلىش گەۋدىسى بەلگىسىنىڭ ئالدىدا ئوكۇل قىلىنىدۇ."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "ئۇسلۇپلارنى چۈشۈرۈش"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "باشقۇرۇش رايونى"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "ئىستىراتېگىيە سەپلىمىسى"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "بۇ ئىستراتېگىيىنىڭ سىز ئۆزگەرتەلەيدىغان سەپلىمە تاللانمىلىرى يوق."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "تىزىملىتىش"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "ئۆزلۈكىدىن تىزىملىتىشىغا يول قويۇڭ"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "ئىستىراتىگىيىلىك ھوقۇق بېرىلگەن ھەر قانداق ئىشلەتكۈچىنىڭ ۋىكىغا كىرىشىگە يول قويۇڭ."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "كونكرېت ئېلخەت تور نامى بىلەن چەكلىنىش"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "تىزىملاشقا ھوقۇق بېرىلگەن تور نامى تىزىملىكى. زىيارەت قىلىش ئۈچۈن ئىشلەتكۈچىنىڭ ئېلېكترونلۇق خەت ئادرېسى تور نامى  چوقۇم ئۇلارنىڭ بىرىگە ماس كېلىشى كېرەك."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "گۇرۇپىغا تەقسىملەش"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "بۇ توپلارغا يېڭى ئىشلەتكۈچى ئاپتوماتىك تەقسىملىنىدۇ."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "بىخەتەرلىك"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "بارلىق ئىشلەتكۈچىلەرنى ئىككى ئامىللىق دەلىللەش (2FA) ئىشلىتىشكە مەجبۇرلاڭ"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "ئىشلەتكۈچىلەر تۇنجى قېتىم كىرگەندە 2FA نى تەڭشەش تەلەپ قىلىنىدۇ ، ئىشلەتكۈچى ئۇنى چەكلىيەلمەيدۇ."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "سەپلىمە قوللانمىسى"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "بەزى ئىستراتېگىيەلەر تەمىنلىگۈچىڭىزگە بەزى سەپلىمە قىممەتلەرنى تەڭشەشنى تەلەپ قىلىشى مۇمكىن. بۇلار پەقەت پايدىلىنىش ئۈچۈن تەمىنلەنگەن بولۇپ ، نۆۋەتتىكى ئىستراتېگىيەنىڭ ھاجىتى بولماسلىقى مومكىن."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "سىز ئالدى بىلەن ئۈنۈملۈك {{siteUrl}} نى بەلگىلەڭ! سول تەرەپتىكى تىزىملىكتىن {{general}} نى چىكىڭ."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "رۇخسەت قىلىنغان تور مەنبەلىرى"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "نى چاقىرىش URI  / URI نى قايتا يوللاش"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "كىرىش ئادرېسى"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "باشقۇرغۇچىنى دەلىللەش - تىن چىكىنىش ئادرېسى"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "توكىن ئاخىرقى نوقتا كىملىكىنى دەلىلەش ئۇسۇلى"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "باش بەت"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "يېڭى بەت"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "نۆۋەتتىكى بەت"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "كۆرۈش"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "تەھرىرلەش"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "تارىخ"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "مەنبەنى كۆرۈش"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "يۆتكەش / قايتا ئىسىم قىلىش"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "ئۆچۈرۈش"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "مۈلۈكلەر"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "رەسىم ۋە ھۆججەتلەر"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "... ئىزدەش"
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "باشقۇرۇش"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "ھېساب"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "ۋىكىرىم"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "ئارخىپ"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "چېكىنىش"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "كىرىش"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "ئاخىرقى قېتىم تەھرىرلىگەن"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "ئېلان قىلىنمىغان"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "بەت تەھرىرلەش"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "بەت مەزمۇنى"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "خەتكۈچ"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "ھەمبەھىرلەش"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "بېسىش فورماتى"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "تاقاش"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "بەت"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "مەزمۇنلىرىڭىزنى زاپاسلاش ۋە ماسقەدەملەش نىشانىنى بەلگىلەڭ"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "نىشانلار"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "ھالەت"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "ئاخىرقى ماسقەدەملەش{{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "ئاخىرقى ئۇرۇنۇش {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "خاتالىق ئۇچۇرى"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "سىزنىڭ ھېچقانداق ئاكتىپ ساقلاش نىشانىڭىز يوق."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "نىشان سەپلىمىسى"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "بۇ ساقلاش نىشانىدا سىز ئۆزگەرتەلەيدىغان سەپلىمە تاللانمىلىرى يوق."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "ماس قەدەملىك يۆنىلىش"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "بۇ ساقلاش نىشانى ئۈچۈن مەزمۇن ماسقەدەملەشنىڭ قانداق بىر تەرەپ قىلىنىدىغانلىقىنى تاللاڭ."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "قوش يۆنىلىشلىك"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "نىشانغا ئىتتىرىش"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "نىشاندىن تارتىپ چىقىرىش"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "قوللىمايدۇ"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "مەزمۇن ھەمىشە ساقلاش نىشانىغا ئىتتىرىلىدۇ ، مەۋجۇت مەزمۇنلارنى قاپلىۋالىدۇ. بۇ زاپاسلاش سىنارىيەلىرى ئۈچۈن، ئەڭ بىخەتەر تاللاش."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "ماس قەدەم كۈنتەرتىپى"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "ئىقتىدار سەۋەبىدىن ، بۇ ساقلاش نىشانى ھەر بىر ئۆزگىرىشنىڭ ئورنىغا ، ئارىلىقنى ئاساس قىلغان ۋاقىت جەدۋىلىدىكى ئۆزگىرىشلەرنى ماسقەدەملەيدۇ. ماس قەدەمدە قايسى ئارىلىقتا يۈز بېرىدىغانلىقىنى ئېنىقلاڭ."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "نۆۋەتتە ھەر {{schedule}}غا تەڭشەلدى."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "سۈكۈتتىكى ھەر {{schedule}}دۇر."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "ھەركەتلەر"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "ئىجراقىل"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "ۋىكىڭىزنىڭ ئىزدەش ئىقتىدارىنى سەپلەڭ"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "قايتا قۇرۇش كۆرسەتكۈچى"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "ئىزدەش ماتۇرى"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "ماتور سەپلىمىسى"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "بۇ ماتۇرنىڭ سىز ئۆزگەرتەلەيدىغان سەپلىمە تاللانمىلىرى يوق."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "ئىزدەش ماتورلار تىزىملىكى يېڭىلاندى."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "ئىزدەش ماتور سەپلىمىسى مۇۋەپپەقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "ئىندېكسنى قايتا قۇرۇش مۇۋەپپەقىيەتلىك بولدى."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "كۈتۈلمىگەن خاتالىق كۆرۈلدى."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "بەتلەر"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "ئىشلەتكۈچىلەر"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "گۇرۇپپىلار"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "سىز ئەڭ يېڭى نەشرىنى ئىجرا قىلىۋاتىسىز."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "يېڭى نەشرى بار: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "wiki.js بولسا ھەقسىز ۋە ئوچۇق مەنبەلىك تۈر. تۈرگە تۆھپە قوشۇشنىڭ بىر قانچە خىل ئۇسۇلى بار."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "سىزنىڭ يارىمىڭىزگە مۇھتاج"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "تەپسىلاتى"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "ئىستراتېگىيە تىزىملىكى يېڭىلاندى."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "دەلىللەش سەپلىمىسى مۇۋەپپەقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "ئۈنىۋېرسال"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "بەت تورنامى"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "ۋىكىڭىزنى كۆرسىتىپ بېرىدىغان ئۈنۈملۈك تور نامىنى كىرگۈزۈڭ. (مەسىلەن wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "بەت ماۋزۇسى"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "ئۈستىنكى سىتوندا كۆرسىتىلىدۇ ھەمدە بارلىق بەتلەردىكى مەتا ماۋزۇسىغا قوشۇلىدۇ."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "لوگو"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "لوگونى يۈكلەڭ"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "تازىلاڭ"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "ئەڭ ياخشى ئۈنۈمگە ئېرىشىش ئۈچۈن {{size}} پىكسىللىق رەسىم تەۋىسسىيە قىلىنىدۇ."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} ياكى {{lastType}} ھۆججەتلىرىلا"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "بەت ئاستى نەشىر ھوقۇقى"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "شىركەت / تەشكىلات ئىسمى"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "بەت ئاستىغا نەشر ھوقۇقى ئۇقتۇرۇشى كۆرسەتكەندە ئىشلىتىدىغان ئىسىم. يوشۇرۇش ئۈچۈن بوش قويۇڭ."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "بەت چۈشەندۈرۈشى"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "بىر بەت ئۈچۈن ھېچكىم تەمىنلەنمىگەندە سۈكۈتتىكى چۈشەندۈرۈش بولسۇن."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "مېتا ماشىنا ئادەم"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "كۆڭۈلدىكى قىممىتى: كۆرسەتكۈچ ، ئەگىشىش. ھەر بىر بەتنىمۇ تەڭشىگىلى بولىدۇ."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "ئىزدەشنى باشلاش ئۈچۈن كەم دېگەندە 2 ھەرپ كىرگۈزۈڭ ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "ئىزدەۋاتىدۇ..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "سىزنىڭ سۈرۈشتۈرۈشىڭىزگە ماس كېلىدىغان بەت يوق."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}} نەتىجە تېپىلدى"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "... دېمەكچىمۇسىز"
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "تاقاش"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "ئىزدەش ئۇلانمىسىنى كۆچۈرۈڭ"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "بەك ئاجىز"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "ئاجىز"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "ئوتتورھال"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "كۈچلۈك"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "بەك كۈچلۈك"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "بەتنى ئۆچۈرۈش"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "{{title}} بەتنى ئۆچۈرەمسىز؟"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "بەتنى باشقۇرۇش رايونىدىن ئەسلىگە كەلتۈرگىلى بولىدۇ."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "ئىشلەتكۈچىنى ئىزدەش"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "ئىشلەتكۈچىنى ئىزدەش ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "ھەر"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "مىنۇت (لار)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "سائەت(لەر)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "كۈن(لەر)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "ئاي(لەر)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "يىل (لەر)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "بەت خاسلىقى"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "بەت ئۇچۇرى"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "ماۋزۇ"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "قىسقىچە چۈشەندۈرۈش"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "ماۋزۇنىڭ ئاستىدا كۆرسىلگەن"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "يول ۋە تۈرلەش"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "يەرلىكلىك"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "يول"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "ئالدى ياكى كەينىدىكى ھېچقانداق يانتۇ سىزىقنى ئۆز ئىچىگە ئالمايدۇ."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "خەتكۈچلەر"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "خەتكۈچلەرنى ئىشلىتىپ بەتلىرىڭىزنى تۈرگە ئايرىڭ ۋە تېپىشقا قولايلىق يارىتىڭ."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "نەشىر ھالىتى"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "ئىلان قىلىنغان"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "تېخى ئېلان قىلىنمىغان بەتلەر بۇ بەتتە يېزىش ھوقۇقى بار ئابونتلارغا كۆرۈنىدۇ."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "نەشىر ...دىن باشلىنىدۇ. "
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "باشلانمىغان چىسلا ئۈچۈن بوش قالدۇرۇڭ."
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "نەشىر .... دە ئاخىرلىشىدۇ."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "ئاخىرلاشمىغان چىسلا ئۈچۈن بوش قالدۇرۇڭ"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "ساقلانمىغان ئۆزگەرتىشلەرنى ئەمەلدىن قالدۇرامسىز؟"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "ساقلىمىغان ئۆزگەرتىش بار. تەھرىرلىگۈچتىن ئايرىلىپ ، ئالدىنقى قېتىملىق ساقلاشتىن باشلاپ قىلغان ئۆزگەرتىشلەردىن ۋاز كىچەمسىز؟"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "ئۆزگەرتىشنى بىكار قىلىش"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "بۇ بەت ئۈچۈن ئىشلەتمەكچى بولغان تەھرىرلىگۈچنى تاللاڭ.{{title}}"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "بەت قۇرۇلغاندىن كېيىن بۇنى ئۆزگەرتىشكە بولمايدۇ."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "مۈلۈكلەر"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "يېڭى ھۆججەت قىسقۇچ"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "ھۆججەت قىسقۇچ ئىسمى"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "چوقۇم مۈلۈك قىسقۇچقا ئەگىشىڭ {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "ئىسىم قويۇش قائىدىسى"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "يۆتكەڭ"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "ئىسىم ئۆزگەرتىش"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "ئەلالاشتۇرۇش"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "قاراپ چىقىش"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "خاسلىقى"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "بۇ مۈلۈك قىسقۇچ بوش"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} ھۆججەتلەر"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "قىستۇرۇش"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "كىملىك"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "ھۆججەت ئىسمى"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "تۈرى"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "ھۆججەت چوڭلىقى"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "قوشۇلدى"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "ھەركەتلەر"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "مۈلۈك يۈكلەش"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "ھۆججەتلەرنى بۇ يەردىن كۆرۈڭ ياكى چۈشۈرۈڭ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "يىراقتىن رەسىمگە ئېرىشىش"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "رەسىم تۈزسىپى"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "مۈلۈك نامىنى ئۆزگەرتىش"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "بۇ مۈلۈك ئۈچۈن يېڭى نام كىرگۈزۈڭ."
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "مۈلۈكىنى ئۆچۈرۈش"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "راستىنلا مۈلۈكنى ئۆچۈرەمسىز؟"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "بۇ ھەرىكەتنى ئەمەلدىن قالدۇرۇشقا بولمايدۇ!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "مۈلۈك تىزىملىكى مۇۋاپىقىيەتلىك يېڭىلاندى."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "مۈلۈك يۈكلەش مەغلۇب بولدى."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "ھۆججەت قىسقۇچ مۇۋاپىقىيەتلىك قۇرۇلدى."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "ھۆججەت نامى مۇۋاپىقىيەتلىك ئۆزگەرتىلدى. "
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "ھۆججەت مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "ئالدى بىلەن يۈكلەيدىغان ھۆججەتنى تاللاڭ."
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "چاقىرىق"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "تەھرىرلىگۈچكە قايتىش"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "توم"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "يانتۇ"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "ئۈستىدىن سىزىلغان"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "ماۋزۇ {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "نەقىل تەگ"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "نەقىل تەگ ئۇچۇرى"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "نەقىل قىلىش مۇۋاپىقىيەتلىك"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "نەقىل تەگ ئاگاھلاندۇرۇشى"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "نەقىل تەگ خاتالىقى"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "تەرتىپسىز تىزىملىك"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "تەرتىپلىك تىزىملىك"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "قور ئىچىدىكى كود"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "كۇنۇپكا تاختىسى"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "گورىزونتال بالداق"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "ئالدىن كۆرۈش كۆزنىكىنى يوشۇرۇش / كۆرسىتىش"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "ئۇلىنىش قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "مۈلۈك قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "بۆلەك قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "كود قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "سىن / ئاۋاز قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "دىئاگرامما قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "ماتېماتىكا ئىپادىسىنى قىستۇرۇش"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "جەدۋەل ياردەمچىسى"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "چېچىلىشتىن خالىي ھالىتى"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown فورماتىدىن ياردەم"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "{{path}} نىڭ مەنبەسى كۆرۈلىمەكتە   "
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "نورمال كۆرۈنۈشكە قايتىڭ"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "كىملىك {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "تىل"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "ئانالىتكا"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "ۋىكىڭىزغا ئانالىز ۋە ئىز قوغلاش قوراللىرىنى قوشۇڭ"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "تەمىنلىگۈچىلەر"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "تەمىنلىگۈچى سەپلىمىسى"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "بۇ تەمىنلىگۈچىنىڭ سىز ئۆزگەرتەلەيدىغان سەپلىمە تاللاشلىرى يوق."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "تەمىنلگۈچىلەر تىزىملىكى مۇۋاپىقىيەتلىك يېڭىلاندى."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": " ئانالىتكا سەپلىمىسى مۇۋەپپەقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "ئاسراش ۋە ھەر خىل قوراللار"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "قوراللار"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "دەلىللەش"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "دەلىللەنگەن ئىشلەتكۈچىلەر ئۈچۈن ھەرخىل قۇراللار"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "ۋاقىتلىق ساقلانمىلارنى تازىلاش"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "ھەرخىل كومپونونتلەرنىڭ ۋاقىتلىق ساقلانمىلارنى تازىلاش"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL ئاخىرقى نۇقتىسى"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Wiki ئۈچۈن GraphQL ئاخىرقى نۇقتىسىنى ئۆزگەرتىش.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Wiki.js دىن ئەكىرىش 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "ئالدىنقى 1.0 قاچىلاشتىن سانلىق مەلۇماتلارنى يۆتكەڭ"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "يىراقتىن ئۆلچەش تېخنىكىسى"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "تېلېمىتېرنى قوزغىتىش / چەكلەش ياكى خېرىدار كىملىكىنى قايتا ئورنىتىش"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "ئىنكاسلار"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "نەشىرقىلىنغان"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "شەخسىي"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "يەرشارى"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "يۈكلەش بىتى ... "
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "كود"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "ئىسمى"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "يەرلىك ئىسمى"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "ئۈنۈملىكى"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "چۈشۈرۈش"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "مەزمۇن"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "بەتلەر ئۈچۈن ھەرخىل قۇراللار"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "سىنبەلگىلەر"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "يانبالداق يول باشلىغۇچى ئۈچۈن ئىشلىتىدىغان سىنبەلگىلەر"
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "توركۆرگۈڭىزنىڭ ۋاقتى ئۆتتى. {{modernBrowser}}  غا يېڭىلاڭ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "زامانىۋى توركۆرگۈ"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "ئىسمى"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "ئاپتور"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "چۈشۈرۈش"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": " {{caution}} بەت مەزمۇنىغا ئۇسلۇب قوشقاندا ، چوقۇم ئۇلارنى {{cssClass}} كىلاسقا كېڭەيتىشىڭىز كېرەك. بۇنى ئەمەلدىن قالدۇرۇش تەھرىرلىگۈچنىڭ ئورۇنلاشتۇرۇشىنى بۇزۇۋېتىشى مۇمكىن!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "دىققەت قىلىدىغان ئىشلار:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "ئۇسلۇب تاللانمىلار"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "ئاكتىپ"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "ئاكتىپ ئەمەس"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "دەلىللەنگەن"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "دەلىللەنمىگەن"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "ئىشلەتكۈچىنى تەھرىرلەش"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "كىملىك"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "ئادەتتىكى ئۇچۇرلار"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "ئېلخەت"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "كۆرسىتىش نامى"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "دەلىللەش"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "تەمىنلىگۈچى"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "پارول"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "پارولنى ئۆزگەرتىش"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "يېڭى پارول"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "ئىككى ئامىللىق دەلىللەش (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": " 2FA نى ئالماشتۇرۇش"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "تەمىنلىگۈچى كىملىكى"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "ئىشلەتكۈچى گۇرۇپپىلىرى"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "بۇ ئىشلەتكۈچى تېخى ھىچقانداق گۇرۇپپىغا تەقسىملەنمىگەن. ئىشلەتكۈچىنى ھىچ بولمىغاندا بىر گۇرۇپىغا تەقسىملەڭ."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "گۇرۇپپا تاللاش .."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "تەقسىملەش"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "كېڭەيتىلگەن مېتا سانلىق مەلۇمات"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "ئورنى"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "خىزمەت ماۋزۇسى"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "ۋاقىت رايونى"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "ئىشلەتكۈچى مۇۋەپپەقىيەتلىك يېڭىلاندى."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "ئىشلەتكۈچى ئاللىقاچان بۇ گۇرۇپپىغا تەقسىم قىلىنغان!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "بۇ ساقلىغۇچنىڭ نىشانى {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "ئاكتىپ"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "ھەرىكەتسىز"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "مەشغۇلاتنى باشلاشتىن بۇرۇن چوقۇم بۇ ساقلاش نىشانىنى قوزغىتىپ ، ئۆزگەرتىش قوللىنىشىڭىز كېرەك."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "يېڭى پارول تاللاش"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "سىز چوقۇم يېڭى پارول تاللىشىڭىز كېرەك:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "يېڭى پارول"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "يېڭى پارولنى جەزىملەشتۈرۈش"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "پارولنى ئۆزگەرتىش"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "پارول ئۆزگەرتىلىۋاتىدۇ ..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "يېقىنقى بەتلەر"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "ئەڭ ئاۋات بەتلەر"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "ئۇچۇر"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "ۋاقىت جەدۋىلى"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "ئىجتىمائىي"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "تۈرگە ئايرىش"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "ئىجتىمائى ئىقتىدارلار"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "ئىنكاس يېزىشقا يول قويۇڭ"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "بۇ بەتتىكى ئىنكاس ئىقتىدارىنى قوزغىتىڭ."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "باھالاشقا يول قويۇڭ"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "ئاپتورنىڭ ئۇچۇرلىرىنى كۆرسىتىڭ"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "ئورتاقلىشىش قورال ستونىنى كۆرسىتىڭ"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "بۇ بەتنى ئورتاقلىشىش ۋە بېسىش ئۈچۈن كۇنۇپكا تاختىسى بىلەن قورال بالدىقىنى كۆرسىتىڭ"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "بەت ئاپتورنى ئاخىرقى نەشرى بىلەن بىللە كۆرسىتىڭ."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "بۇ بەتتىكى باھالاش ئىقتىدارىنى قوزغىتىڭ."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "ياكى خاس كۆرىنىش ھاسىل قىلامدۇ؟"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "خەتكۈچ بويىچە كۆرۈش"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "تور بەت خەرىتىسى"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "بەت ھەرىكىتى"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "نۆۋەتتىكى تاللانما"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "تاللاشنى تازىلاش"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "بىر ياكى بىر قانچە خەتكۈچنى تاللاش"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "نەتىجە ئىچىدە ئىزدەش..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "ئورۇن"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "بويرۇتماق بويىچە"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "سول تەرەپتىن بىر ياكى كۆپ خەتكۈچلەرنى تاللاڭ."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "بەت نەتىجىسىنى ئەسلىگە كەلتۈرۈش ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "تاللانغان خەتكۈچلەر بىلەن ھېچقانداق بەت تىپىلمىدى."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "نۆۋەتتىكى سۈزۈش تاللاشلىرىغا ماس كېلىدىغان بەتنى تاپالمىدىم."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "ئەڭ ئاخىرقى يېڭىلانغان {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "ئىجادىيەت ۋاقتى"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "كىملىك"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "ئاخىرقى قېتىم ئۆزگەرتىلگەن"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "يول"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "ماۋزۇ"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "ھەرقانداق"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "GitHub قوللىغۇچىلىرى ئارقىلىق قوللىغۇچىغا ئايلىنىڭ (باشلامچى پروگرامما ئاچقۇچى نىكولاس گىئاردنىڭ Wiki.js دا پۈتۈن كۈنلۈك ئىشلەش نىشانىنى بىۋاسىتە قوللايدۇ)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "مەدەتكار بولۇڭ"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "خەتكۈچلەر"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL سەپلىمىسىنى باشقۇرۇش"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "تەمىنلىگۈچى"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "ئۆز كىنىشكىڭىز بولسا خاس كىنىشكىنى تاللاڭ."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "تور نامى"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "ۋىكىڭىزنى كۆرسىتىپ بېرىدىغان تولۇق لاياقەتلىك تور نامىنى كىرگۈزۈڭ. (مەسىلەن wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "تەمىنلىگۈچى تاللانمىلار"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "تاقالغان"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "بىز شىفىرلاندۇرايلى"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "خاس كىنىشكا"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "ئېغىزلار"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP ئېغىزى"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "SSL بولمىغان ئېغىز مۇلازىمېتىر HTTP تەلىپىنى ئاڭلايدۇ. ئادەتتە 80 ياكى  3000 بولىدۇ."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS ئېغىزى"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL پورت مۇلازىمېتىرى HTTPS تەلەپلىرىنى ئاڭلاش ئۈچۈندۇر.  ئادەتتە 443 بولىدۇ. "
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP تەلەپلىرىنى HTTPS غا قايتا يوللاش"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "HTTP پورتتىكى تەلەپلەرنى ئاپتوماتىك ھالدا HTTPS غا يۆتكەيدۇ."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "شۇنىڭغا دىققەت قىلىڭكى ، پورتلار سەپلىمىسىنى داۋاملاشتۇرۇش ئۈچۈن سەپلىمە ھۆججىتىڭىز چوقۇم يېزىلىشى كېرەك."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "لوگو ئادرېسى "
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "لوگو ئۈچۈن ئىشلىتىدىغان رەسىمنى بەلگىلەڭ. 34x34 پىكسىللىق ياكى ئۇنىڭدىن چوڭ بولغان كۇادىرات شەكىللەك SVG, PNG, JPG رەسىملەرنى قوللايدۇ."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "ئىشلەتكۈچىنى ئۆچۈرەمسىز؟"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "ئىشلەتكۈچى {{username}}نى ئۆچۈرەمسىز؟"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "ئىشلەتكۈچىنى يېڭىلاش"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "دىققەت، سىز بۇ ئورۇندىن  ئىشلەتكۈچىنى باشقۇرغۇچىلار ياكى مېھمانلار گۇرۇپپىسىغا تەقسىملىيەلمەيسىز.  "
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "دىققەت قىلىڭ، سىز ئاللاقاچان مەزمۇن يوللىغان ئىشلەتكۈچىنى ئۆچۈرەلمەيسىز. سىزئۇنىڭ ئورنىغا ياكى چوقۇم ئىشلەتكۈچىنى ئاكتىپسىزلاشتۇرىشىڭىز ياكى ئىشلەتكۈچى يوللىغان بارلىق مەزمۇنلارنى ئۆچۈرىشىڭىز كېرەك."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Scripts"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS  ساقلاشقا ئاساسەن ئاپتوماتىك ھالدا كىچىكلەيدۇ. ئەتراپتىكى ئۇسلۇپ تەگنى قوشماڭ، پەقەت ھەقىقى CSS  كودىنىلا قوشۇڭ."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "ھەممەيلەنگە كۆرۈنىدۇ."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "تاللانغان گۇرۇپىلارغا كۆرۈنىدۇ."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "بەت تاللاش"
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "يولباشلاش مودىلى"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "تور بېكەت شەجەرىسى"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "كلاسسىك شەجەر ئاساس قىلىنغان يول باشلاش"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "خاس يول باشلىغۇچى"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "تۇراقلىق يول باشلىغۇچى تىزىملىكى + تور بېكەت شەجەر كۇنۇپكىسى"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "يوق"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "تور بېكەت يول باشلاشنى ئەمەلدىن قالدۇرۇش"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "ئابونت مۇۋەپپەقىيەتلىك دەلىللەندى."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "ئىشلەتكۈچى مۇۋەپپەقىيەتلىك قوزغىتىلدى."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "ئىشلەتكۈچى مۇۋەپپەقىيەتلىك توختىتىلدى."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "تېكىستنى ئاۋۋال تاللاش كېرەك!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "كېنىشكىنى يېڭىلاش"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "كىنىشكا ھالىتى"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "گۇۋاھنامە مۇددىتى"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "مۇشتەرىنىڭ ئېلخېتى"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "نۆۋەتتىكى ھالەت"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "ئاچ"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "تاقىۋەت"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "كېنىشكە يېڭىلىنىۋاتىدۇ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "بۇ بەتتىن ئايرىلماڭ."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "كىنىشكا ئوڭۇشلۇق يېڭىلاندى."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP قايتا نىشانلاش مۇۋەپپەقىيەتلىك ئۆزگەردى."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "بەت خەتكۈچىنى باشقۇرۇش"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "كۆرسىتىشكە تىگىشلىك خەتكۈچ يوق."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "خەتكۈچىنى تەھرىرلەڭ"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "خەتكۈچ"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "بەلگە"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "{{created}}قۇرۇلدى ۋە {{updated}} ئاخىرقى قېتىم يېڭىلاندى."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "بۇ خەتكۈچنى ئۆچۈرۈڭ"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "سول تەرەپتىكى تىزىملىكتىن بىر خەتكۈچ تاللاڭ."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "باشلاش ئۈچۈن بىر بەتكە خەتكۈچ قوشۇڭ."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "خەتكۈچلەر يېڭىلاندى."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "خەتكۈچ مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "خەتكۈچ مۇۋەپپىقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "سۈزگۈچ..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "ئۇلانغان بەتلەرنى كۆرۈش"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "خەتكۈچنى ئۆچۈرەمسىز؟"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "سىز راستىنلا {{tag}} خەتكۈچىنى ئۆچۈرەمسىز؟ خەتكۈچمۇ بارلىق بەتلەردىن ئۇلانمايدۇ."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "API غا كېرىش ئاچقۇچىنى باشقۇرۇش"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API قوزغىتىلدى"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API تاقالدى"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API نى قوزغىتىش"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API نى تاقاش"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "يېڭى API ئاچقۇچى"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "ئىسمى"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "ئاچقۇچ ئاخىرى"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "مۇددىتى توشقان"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "قۇرۇلدى"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "ئاخىرقى قېتىم يېڭىلاندى"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "بىكار قىلىش"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "تېخى  API ئاچقۇچى ھاسىل قىلىنمىدى. "
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API ئاچقۇچىنى بىكار قىلامسىز؟"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "سىز{{name}} ئاچقۇچىنى  بىكار قىلماقچىمۇ؟ بۇ ھەرىكەتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "بىكار قىلىش"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API ئاچقۇچىنىڭ تىزىملىكى يېڭىلاندى"
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "ئاچقۇچ مۇۋەپپەقىيەتلىك ئەمەلدىن قالدۇرۇلدى."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "يېڭى API ئاچقۇچى"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API ئاچقۇچى مۇۋەپپەقىيەتلىك ياسالدى."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "ئىسىم يوقاپ كەتكەن ياكى ئىناۋەتسىز."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "سىز گۇرۇپ تاللىشىڭىز كېرەك. "
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "مېھمانلار گۇرۇپىسى  API  ئاچقۇچىنى ئىشلىتەلمەيدۇ."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "بۇ كۇنۇپكىنىڭ مەقسىتى"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "ئىسمى"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "مۇددىتى توشقان"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "مۇددىتى توشقان بولۇشىدىن قەتئىينەزەر ھەر ۋاقىت ئاچقۇچنى بىكار قىلالايسىز."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "ئىجازەت دائىرىسى"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "تولۇق ھوقۇقلۇق"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "ياكى گۇرۇپا ئىجازەتنامىسىنى ئىشلىتىڭ..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "ھاسىل قىلىش"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "گۇرۇپپا"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API كۇنۇپكىسى تاللانغان گۇرۇپپىغا ئوخشاش ھوقۇققا ئىگە بولىدۇ."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 كۈن"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 كۈن"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 كۇن"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "بىر يىل"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "ئۈچ يىل"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "ئاستىدا {{bold}} دەپ كۆرۈلگەن كونوپكىنى كۆچۈرۈڭ."
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "قايتا كۆرسىتىلمەيدۇ"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API مۇۋەپپەقىيەتلىك قوزغىتىلدى."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API مۇۋەپپەقىيەتلىك ھالدا تاقالدى.."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "ساقلاندى"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "يوق"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "ئىجادىي ئورتاقلىق خاسلىقى ئىجازەتنامىسى"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "ئىجادىي ئورتاقلىق خاسلىقى-  ئورتاقلىشىش ئىجازەتنامىسى"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "ئىجادىي ئورتاقلىق خاسلىقى- ئۆزگەرتمەسلىك ئىجازەتنامىسى"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "ئىجادىي ئورتاقلىق خاسلىقى - غەيرىي سودا-تىجارەت ئىجازەتنامىسى"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "ئىجادىي ئورتاقلىق خاسلىقى- غەيرى سودا-تىجارەت ئورتاقلىشىش ئىجازەتنامىسى"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "ئىجادىي ئورتاقلىق خاسلىقى - غەيرىي سودا-تىجارەت - ئۆزگەرتمەسلىك ئىجازەتنامىسى"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "ئاممىۋى تور ئىسمى"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "نەشىر ھوقۇقى قوغدىلىدۇ."
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "مەزمۇن ئىجازەتنامىسى"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "ئىجازەتنامە بارلىق مەزمۇن بىتىنىڭ ئاستىدا كۆرۈلىدۇ."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "مەزمۇننى {{license}}ئاستىدا  {{company}} تەرىپىدىن ئىشلەتكىلى بولىدۇ."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "بۇ بەتنىڭ مەزمۇنىنى چۈشۈرەلمەيسىز."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "بۇ بەت نۇسخىسىنىڭ مەزمۇنىنى چۈشۈرەلمەيسىز."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "سىز بەتنىڭ بۇ نەشىردىكى مەنبەسىنى كۆرەلمەيسىز."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "{{path}}نىڭ {{date}} كۈنىدىكى مەنبەسى كۆرۈلىمەكتە.."
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "نەشىر كىملىك نۇمۇرى:"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "بەت نەشىرىنى ئەسلىگە كەلتۈرگىلى بولامدۇ؟"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "بۇ بەت مەزمۇنىنى {{date}} چېسلادىكىدەك ئەسلىگە كەلتۈرمەكچىمۇ؟ بۇ نەشرى ھازىرقى تارىخنىڭ ئۈستىگە كۆچۈرۈلىدۇ. بۇنداق بولغاندا ، يېڭى نەشرى يەنىلا ساقلىنىدۇ."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "ئەسلىگە كەلتۈرۈش"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "بەت نەشىرى مۇۋاپىقىيەتىلك ئەسلىگە كەلتۈرۈلدى."
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}}بەلگىلىرى، {{words}} سۆزلەر"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "ساقلاش توقۇنىشىنى ھەل قىلىڭ"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "يەرلىكتىكىنى ئىشلىتىڭ"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "يىراق مۇساپىنى ئىشلىتىڭ"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "يەرلىكتىكى ئۆزگەرتىشنى بىكار قىلىپ، ئاخىرقى نەشىرنى ئىشلىتىڭ"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "سول تەرەپ تاختىدىكى مەزمۇننى ئىشلىىتىڭ"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "ئاخىرقى نەشىرىنى كۆرۈش"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "بەتنىڭ ئەي يېقىنقى ئۆزگەرتىلگەن نەشىرى {{authorName}}{{date}} دا ساقلىغان."
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": " نېمە قىلغۇڭىز بار?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "ھازىرقى يەرلىك نۇسخىسىڭىزنى ئىشلىتىڭ ۋە ئەڭ يېڭى ئۆزگىرىشلەر بىلەن كارىڭىز بولمىسۇن.."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "يىراق مۇساپىلىك نەشىرىنى ئىشلىتىڭ ۋە ئۆزگەرتكىنىڭىزدىن ۋاز كېچىڭ."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "يىراق مۇساپىلىق نەشرى ئارقىلىق قايتا يازامسىز؟"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "ھازىرقى نەشرىڭىزنى ئەڭ يېڭى يىراق مۇساپىلىق مەزمۇنغا ئالماشتۇرۇشنى جەزىملەشتۈرەلەمسىز؟ {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "سىزنىڭ نۆۋەتتىكى تەھرىرلىگىنىڭىز يوقۇلۇپ كېتىشى مومكىن."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "جەزىملەشتۈرۈش"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "يەرلىك نەشىرى"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(تەھرىرلىگىلى بولىدىغان)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(ئوقۇشقىلا بولىدۇ)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "يىراق مۇساپىلىك نەشرى {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "سىزنىڭ نۆۋەتتىكى تەھرىرلىكىڭىز ئاساسلانغان بەت نەشىرى "
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "ئاخىرقى قېتىم تەھرىرلىگەن {{authorName}} {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "ماۋزۇ:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "چۈشەندۈرۈلۈشى:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "سىز تېخى تەھرىلىگەننى ساقلىمىدىڭىز. سىز راستىنلا بۇ تەھررىلەشتىن چىكىنەمسىز؟"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "توقۇنۇشنى ساقلىغىن! باشقا بىر ئىشلەتكۈچى بۇرۇنلا بۇ بەتنى ئۆزگەرتكەن."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "تەكرارلاش"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "كۆرسىتىش نامى"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "ئورنى"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "خىزمەت نامى"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "ۋاقىت رايونى"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "ئارخىپ"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "شەخسى ئۇچۇرىم"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "ئۇچۇرىم"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "ئاشكارا ئارخىپنى كۆرۈش"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "دەلىللەش"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "تەمىنلىگۈچى"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "پارۇل ئۆزگەرتىش"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "نۆۋەتتىكى پارۇل"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "يېڭى پارۇل"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "يېڭى پارۇلنى جەزىملەشتۈرۈش"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "گۇرۇپپىلار"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "پائالىيەت"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "قوشۇلغان"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "ئارخىپ ئاخىرقى قېتىم يېڭىلانغان"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "ئاخىرقى قېتىم كىرگەن ۋاقىت"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "قۇرۇلغان بەتلەر"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "يوللانغان ئىنكاسلار"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "ئارخىپ مۇۋەپپەقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "پارول مۇۋاپىقىيەتلىك ئۆزگەرتىلدى."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "بەتلەر"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "ئىنكاسلار"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "مەن قۇرغان ياكى ئاخىرقى قېتىم تۈزەتكەن بەتلەر تىزىملىكى"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "كۆرسىتىشكە تىگىشلىك بەت يوق."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "بەت تېزىملىكى يېڭىلانغان."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "ماۋزۇ"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "يول"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "قۇرۇلغان"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "ئاخىرقى قېتىم يېڭىلاندى"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "ئاخىرقى قېتىم كىرىش"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "كۆرۈش"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "ئاساسلىق تىزىملىك"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "نۆۋەتتىكى مۇندەرىجە"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(يىلتىز)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "... دىن كەچۈرۈلگەن"
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "مەنبە ئورۇن"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "يول باشلاش تۈرلىرى كۆچۈرۈلگەن جاي."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "كۆچۈرۈش"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "قايسى تۈردىن كۆچۈرۈلىدىغان جاينى تاللاڭ. تۈرلەر نۆۋەتتىكى يەرلىك ئورۇندىكى تۈرلەر تىزىملىكىگە قوشۇلىدۇ."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "تۇراقلىق يول باشلىغۇچى"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "پەقەت مۇقىم يول باشلاش تىزىملىكى"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "قىزىقىشلار"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "چېسلا شەكلى"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "يەرلىك سۈكۈتتىكى قىممەت"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "كۆرۈنۈش"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "تور بىكەتنىڭ سۈكۈتتىكى قىممىتى "
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "يورۇق"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "قاراڭغۇ"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL كىنىشكىسىنى ئېنىقلاش"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "بەزى ماشىنىلار تاقاش ئۈچۈن SSL كىنىشكىسىنى تەلەپ قىلىدۇ. توغرا بىخەتەرلىك ئۈچۈن ئوچۇق قالدۇرۇڭ."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "سىرتقى ئۇلانما (يېڭى كۆزنەك)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "بىخەتەرلىك"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "ئەڭ چوڭ يۈكلەش چوڭلىقى"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "بىر قېتىمدا يۈكلەشكە بولىدىغان ئەڭ جىق ھۆججەتلەر"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "بىر تۈركۈمدە قانچە ھۆججەت يوللىغىلى بولىدۇ؟"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "يالغۇز ھۆججەتنىڭ ئەڭ چوڭ سىغىمى"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "بايىتس"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "ھۆججەتلەر"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "يۈكلەنمىلەر"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "باشقۇرچى بىخەتەرلىكى - يېڭىلانغان ئۇچۇر رامكىسى"
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "بىخەتەرلىك تەڭشەكلىرىنى سەپلەش"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "كېڭەيتمىلەر"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "قوشۇمچە ئىقتىدارلار ئۈچۈن كېڭەيتكۈچى قاچىلاش"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "تەمىنلىگۈچى"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "ۋىكى بىتىڭىزغا مۇنازىرە قوشۇڭ"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "تەمىنلىگۈچى سەپلىمىسى"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "بۇ تەمىنلىگۈچىنىڭ سىز ئۆزگەرتەلەيدىغان سەپلىمە تاللاشلىرى يوق."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "بۇ ئىشلەتكۈچى قۇرغان ھەر قانداق مەزمۇن (بەت ، يوللاش ، باھا قاتارلىقلار) تۆۋەندە تاللانغان ئىشلەتكۈچىگە قايتا تەقسىملىنىدۇ. ئەگەر مەزمۇننىڭ نۆۋەتتىكى ئاكتىپ ئىشلەتكۈچىگە قايتا تەقسىملىنىشىنى خالىمىسىڭىز ، مەۋھۇم نىشان ئىشلەتكۈچى (مەسىلەن ئۆچۈرۈلگەن ئىشلەتكۈچى) قۇرۇش تەۋسىيە قىلىنىدۇ."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "ئاكتىپ تاكتىكىلار"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "تاكتىكا قوشۇڭ"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "ئۇسلۇبلار"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": ".HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": " سىز چوقۇم javascript كودىڭىزنى HTML تەگلىكنىڭ ئىچىگە ئىلىڭ."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "بۇ بەت نەشىر قىلىنمىغان."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "ئىنكاسلار"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "يېڭى ئىنكاس يېزىڭ."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "ئىسمىڭىز"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "ئېلخەت ئادرېسىڭىز"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "بەلگە فورماتى"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "ئىنكاس يوللاش"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "ئىنكاس چۈشىۋاتىدۇ."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "{{name}} دەپ يوللاش"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "تۈنجى بولۇپ ئىنكاس يېزىڭ."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "تېخى ئىنكاس يوق."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "ئىنكاسنى يېڭىلاش"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "ئۆچۈرۈشنى جەزىملەشتۈرۈش"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "بۇ ئىنكاسنى راستىنلا مەڭگۈلۈك ئۆچۈرەمسىز؟"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "بۇ ھەرىكەتنى ئەمەلدىن قالدۇرۇشقاا بولمايدۇ!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "ئۆزگەرتىلگەن {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "يېڭى ئىنكاس مۇۋاپىقىيەتلىك يوللاندى."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "ئىنكاس يوق ياكى بەك قىسقا!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "ئىنكاس مۇۋەپپەقىيەتلىك يېڭىلاندى."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "ئىنكاس مۇۋەپپەقىيەتلىك ئۆچۈرۈلدى."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "ئىملا تەكشۈرۈشنى ئالماشتۇرۇش"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "كىرىش"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "كىرىش ئىكرانى"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT سەپلىمىسى"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "كىرىش ئېكرانىدىن چەتنەپ ئۆتۈش"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "ئىشلەتكۈچى تۇنجى دەلىللەش تەمىنلىگۈچىگە ئاپتوماتىك قايتا نىشانلانسا."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "كىرىش تەگلىك رەسىم ئادرېسى"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "كىرىش تەگلىكىدە ئىشلىتىدىغان رەسىمنى بەلگىلەڭ. PNG ۋە JPG نى قوللايدۇ ، 1920x1080 تەۋسىيە قىلىنىدۇ. سۈكۈتتىكى تەڭشەك ئۈچۈن بوش قالدۇرۇڭ. يېڭى رەسىم يوللاش ئۈچۈن ئوڭ تەرەپتىكى كۇنۇپكىنى بېسىڭ. شۇنىڭغا دىققەت قىلىڭكى ، مېھمانلار گۇرۇپپىسى چوقۇم تاللانغان رەسىمنى ئوقۇيالىشى كېرەك. "
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "يەرلىك دەلىللەش تەمىنلىگۈچىنى يوشۇرۇش"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "كىرىش ئېكرانىدا يەرلىك دەلىللەش تەمىنلىگۈچىنى كۆرسەتمە. ۋاقىتلىق ئىشلىتىش ئۈچۈن ھەممىنى ئادرېسقا قوش."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "بىخەتەرلىك"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA نى ئىجرا قىلىش"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "ئىشلەتكۈچى / پارول جەدۋىلى بىلەن دەلىللەش تەمىنلىگۈچىنى ئىشلەتكەندە بارلىق ئىشلەتكۈچىلەرنى ئىككى ئامىللىق دەلىللەشنى ئىشلىتىشكە زورلاڭ."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": " مۇلاھىزىلەرنى كۆرۈش"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "يېڭى ئىنكاس"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "ئىنكاس مەزمۇنى"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "سۆھبەت"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "خەتكۈچلەر"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "بەتلەرنىڭ ماسكىلىدىغان  خەتكۈچلىرى"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "چوقىغا قايتىش"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "ئىشلەتكۈچى نامى"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "چىكىنىش"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "بەت كۆرسىتىش لىنىيەسىنى سەپلەڭ"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "تور بەت نامى ئىناۋەتسىز ھەرپلەرنى ئۆز ئىچىگە ئالغان."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "بېكەت سەپلىمىسى مۇۋەپپەقىيەتلىك ساقلاندى."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA مۇۋەپپەقىيەتلىك تاقالدى"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA مۇۋەپپىقىيەتلىك ئېچىلدى."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "شىفىرنى قايتا ئۆزگەرتىش تەلەپ قىلىنىۋاتىدۇ ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "ئېلخەتلىرىڭىزدىكى پارولنى يېڭىلاش كۆرسەتمىسىنى تەكشۈرۈڭ!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "ئاكتىپ"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "ئىشلەتكۈچى بۇ ئىستىگىراتىيەنى ئىشلىتىپ كىرەلەمدۇ؟"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "كۆرسىتىش نامى"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "بۇ ماۋزۇ دەلىللەش ئىستراتېگىيىسى ئۈچۈن ئاخىرقى ئىشلەتكۈچىگە كۆرسىتىلگەن."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "دەلىللەش تەمىنلىگۈچىنى تاللاڭ"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "گۇۋاھنامىڭىزنى كىرگۈزۈڭ"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "پارولىڭىزنى ئۇنتۇپ قالدىڭىز"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "ئىشەنچلىك ئۈسكۈنىڭىزدىن ھاسىل بولغان بىخەتەرلىك كودىنى كىرگۈزۈڭ:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "باشقۇرغۇچىڭىز ھېساباتىڭىزدا ئىككى ئامىللىق دەلىللەش (2FA) نى تەلەپ قىلدى."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) تۆۋەندىكى (2FA) قوللىنىشچان پروگراممىڭىزدىن QR كودىنى سايىلەڭ:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) ئىشەنچلىك ئۈسكۈنىڭىزدىن ھاسىل بولغان بىخەتەرلىك كودىنى كىرگۈزۈڭ:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "تاللاش"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "يېڭى بەت ئورنى تاللاش"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "بەت ئورنىنى يۆتكەش / قايتا ئىسىم قىلىش"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "بەت تاللاش"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "مەۋھۇم ھۆججەت قىسقۇچلار"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "بەتلەر"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "بۇ ھۆججەت قىسقۇچ قۇرۇق."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "ئۆزگەرتىش"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "بەتنى ئۆزگەرتىش"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "بۇ بەت ئۈچۈن ئىشلەتمەكچى بولغان تەھرىرلىگۈچنى تاللاڭ.{{title}}"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "بەت مەزمۇنى يېڭى تاللانغان تەھرىرلىگۈچنىڭ فورماتىغا ئايلاندۇرۇلىدۇ. شۇنىڭغا دىققەت قىلىڭكى ، بىر قىسىم فورماتلار ياكى كۆرسىتىلمىگەن مەزمۇنلار ئۆزگەرتىش نەتىجىسىدە يوقاپ كېتىشى مۇمكىن.  تىز تارتىم بەت تارىخىغا قوشۇلىدۇ ۋە خالىغان ۋاقىتتا ئەسلىگە كەلتۈرگىلى بولىدۇ."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "ئۆزگەرتىش"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "باشقۇرۇش"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "دىسكىغا يۆتكەش"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "زاپاسلاش ياكى كۆچۈش ئۈچۈن مەزمۇننى ساقلاش"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TOC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "مۇندەرىجە جەدۋىلى"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "تور بىتىنى سۈكۈتتىكى ھالەتتە ئىشلىتىش"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "سۈكۈتتىكى TOC ماۋزۇ دەرىجىسى"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "مەزمۇن جەدۋىلىدە سۈكۈتتىكى ھالەتتە تاللانغان دەرىجىگە قەدەر ماۋزۇ كۆرسىتىلىدۇ."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "سۈكۈتتىكى TOC ماۋزۇ دەرىجىسى"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "مەزمۇن جەدۋىلىدە سۈكۈتتىكى ھالەتتە تاللانغان دەرىجىگە قەدەر ماۋزۇ كۆرسىتىلىدۇ."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "خېرىدارنى پەرىقلەندۈرىدىغان ئاساسىي ماشىنا ئىسمى"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "خەت ساندۇقىڭىزنى پەرقلەندۈرۈش ئۈچۈن SMTP مۇلازىمېتىرىغا ئەۋەتىدىغان ئىختىيارى ئىسىم. مۇلازىمېتىرنىڭ نامىنى ئىشلىتىش ئۈچۈن بوش قويۇڭ. Google Workspace خېرىدارلىرىغا نىسبەتەن بۇ سىزنىڭ ئاساسلىق تور نامىڭىز بولۇشى كېرەك."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "بەتنىڭ كېڭەيتىلگەن نامى"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "كۇنۇپكا تور بېتى نامى"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "تەھرىرلەش كونۇپكىسىدا كۆرۈنىدىغان سىرتقى بەتنىڭ ئىسمى.  نى ئۆز ئىچىگە ئالمايدۇ. \"دا تەھرىرلەش\""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "كۇنۇپكا سىنبەلگىسى"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "سىنبەلگە تەھرىرلەش كونۇپكىسىدا كۆرۈنسۇن. مەسىلەن ، mdi-github بولسا Github سىنبەلگىسى ئۈستىدە كۆرۈنسۇن. "
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "كۇنۇپكا ئادرېسى"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "سىرتقى مۇندەرىجىدىكى بەتنىڭ ئادرېسى.   {filename} نى ھۆججەت نامىنى ئۆز ئىچىگە ئالغان جاي تۇتقۇغا ئىشلىتىڭ.   (مەسىلەن https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "تېز شەكلىنى تەھرىرلەش"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB تېز تەھرىرلەش تىزىملىكى"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "ئىكراننىڭ ئوڭ ئاستى بۇلۇڭىدا تېز چاقرىش تېزىملىكى ئارقىلىق لەيلىمە ھەركەتنى تەھرىرلەش كونۇپكىسىنى (FAB)  كۆرسىتىش"
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "تەھرىرلەش تتزىملىكى"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "تەھرىرلەش تىزىملىكىنى كۆرسىتىش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "بەت بىشىدا تەھرىرلەش تىزىملىكنى كۆرسىتىش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "تەھرىرلەش كۇنۇپكىسىنى كۆرسىتىش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "نۆۋەتتىكى بەتنى تەھرىرلەش ئۈچۈن كۇنۇپكا كۆرسىتىش."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "سىرتقى تەھرىرلەش كۇنۇپكىسىنى كۆرسىتىش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "{{name}} دا تەھرىرلەش"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "باشقۇرغۇچى ئىنكاسلىرى - سەپلەش مۇۋاپىقىيەتلىك ساقلاندى"
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "بەت ئاستى تېكىستنى قاپلاش"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": " ئىختىيارى ھالدا بەت ئاستى مەزمۇنىنى قاپلىۋېتىڭ. ئەگەر يۇقىردىكى ئىجازەتلەرنىڭ ھېچقايسىسى مۇۋاپىق بولمىغاندا پايدىسى بار. "
+                }
+            ]
+        }
+    }
+}

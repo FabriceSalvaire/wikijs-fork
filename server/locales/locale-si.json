@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Login වෙන්න ඕන"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Email / Username එක"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Password එක"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Log In වෙන්න"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Password එක වරදයි"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "email එක හෝ password එක වරදයි,"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "User Email එක වරදයි"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Login error එකක් තියනවා"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "ගොඩක් පාරක් උත්සහ කරලා වැඩියි! "
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": ""
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "මෙහෙම user කෙනෙක් නැහැ"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Local"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft Account එක"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID එක"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Two Factor Authentication"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Security code එක අවශයි"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Verify කරන්න"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Dashboard"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "පොදු"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Locale එක"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistics"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Theme එක"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "කණ්ඩායම්"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Usersල"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Authentication"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logging වෙනවා"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Render වෙනවා"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Search Engine"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Storage"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API Access එක"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "System එකේ විස්තර"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Utilities"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Developer Tools"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Wiki.js එකට contribute කරන්න"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "ඔයාගේ wiki එකේ ප්‍රධාන settings"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Site එකේ විස්තර"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Site එකේ branding"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Site"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Usersල"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Modules"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "System එක"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Localization options set කරන්න"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Locale Settings"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Multilingual Namespacing"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Locale එක download කරන්න"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Base Locale එක"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "UI text elements ඔක්කොම තෝරගත්ත භාෂාවෙන් පෙන්වනවා."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Automatically update කරන්න"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Enable කරලා තියන ඔක්කොම locale වලට automatically namecpaces updated කරන්න."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Multilingual Namespaces"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "එකම පිටුවේ language versions enable කරන්න."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Active වෙලා තියන Namespaces ටික"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Save කරන්න"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Cancel කරන්න"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Download කරන්න"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Upload කරන්න"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Discard කරන්න"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Clear කරන්න"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "හදන්න"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Edit කරන්න"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Delete කරන්න"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Refresh කරන්න"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Changes ටික save කරන්න"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Proceed කරන්න"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Site Locale එක"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "ඔයාගේ system එකේ විස්තර"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Host එකේ විස්තර"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "දැන් තියන version එක"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "අලුත්ම version එක"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Published කළා"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operating System එක"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Hostname එක"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU Cores ගණන"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "සම්පුර්ණ RAM එක"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Working Directory එක"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Configuration File එක"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Wiki.js development එකට සහ operations වලට උදව් කරන්න"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "අපිට fund කරන්න"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "දන්නා අයට කියන්න"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "feature requests board එක"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Donation එකක් කරන්න"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Contribute කරන්න"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "contributorsල"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "පිටුව"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Render වෙනවා"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "පොඩ්ඩක් ඉන්න..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Page එක සාර්ථකව create වුනා."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "පිටුව හදනකොට ප්‍රශ්නයක් වුනා"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "හරි"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "{{year}}{{company}} සියලුම හිමිකම් ඇවිරිණි."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "මෙහෙම පිටුවක් නැහැ"
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "මේක දැන් හදනවද? "
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "පිටුවක් හදන්න"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "පස්සට යන්න"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "පිටු"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigation"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Site navigation එක manage කරන්න"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "දාන්න"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link එක"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Header එක"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Label එක"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Icon එක"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Target Type එක"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "නමක් නැති {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "External Link එක"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Home"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "පිටුව"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Search Query එක"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Edit කරන්න {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Delete කරන්න {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigation සාර්ථකව save වුනා."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigation එක හිස්"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": ""
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": ""
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": ""
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "නම"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Account එකක් හදන්න"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": ""
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": ""
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": ""
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Password එක අමතක වුනාද? "
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": ""
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "තවම account එක්ක නැද්ද?{{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Account එකක් හදන්න"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "හරි  email / username එකක් දාන්න."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "හරි password  එකක් දාන්න. "
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Sign in වෙනවා..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": ""
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "පොඩ්ඩක් ඉන්න"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Account එක හැදෙනවා..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Email address එකක් නැහැ."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Email address එක වැරදයි."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Passwrod එකක් නැහැ."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Password එක කොට වැඩියි."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Password එක ගැලපෙන්නේ නැහැ."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "නමක් දාල නැහැ."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "නම කොට වැඩයි."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "නම දිග වැඩයි."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Cancel කරන්න"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Password එක reset කරන්න"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Password එක reset කරගන්න ඕන instructions ලබාගන්න email එක ඇතුලත් කරන්න."
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Mail"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Configure mail settings"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Configuration එක"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (අනිවාර්ය නැහැ)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Account එක activate කරගන්න email එක check කරන්න."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Page එක සාර්ථකව update වුනා."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Unauthorized page එක්ක"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "ඔයාට මේ page එක බලන්න බැහැ."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "ඔයාට page source එක බලන්න බැහැ."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "ඔයාට page history එක බලන්න බැහැ."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "ඔයාට මේ page එක edit කරන්න බැහැ."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "ඔයාට මේ page එක හදන්න බැහැ."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "පස්සට යන්න"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Home"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Page TItle එකක් නැහැ"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "මෙහම page එකක් නැහැ."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "විදියට login වෙන්න..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Patron කෙනෙක් වෙන්න"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": ""
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "ඔයාගේ wiki එකට සාධරයෙන් පිළිගන්නවා!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Home page එක හදන්න"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Flags"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "PayPal එකෙන් එකපාරක් හෝ recurring donation එකක් කරන්න: "
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "අපි Ethereum වලින් donations බාරගන්නවා:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Translation package එක sideload කරන්න"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Browse..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "external services වලට තියන webooks manage කරන්න"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Test email එකක් යවන්න"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Recipientගේ email address එක"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Email එක යවන්න"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Sender"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Senderගේ නම"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Senderගේ email එක"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP Settings"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Host"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port එක"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "සාමාන්‍යයෙන් 465 (recommended port එක), 587 හෝ 25 වෙන්නත් පුළුවන්."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Secure (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Username එක"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Password එක"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM පාවිච්චි කරන්න"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domain Name"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Key Selector එක"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Private Key එක"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "සාර්ථකව configuration save වුනා."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": ""
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "System info refresh වුනා."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "මුළු site එකටම අදාළ advanced settings"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token එක Expire වෙනවා"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Token Renewal Period එක"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "active වෙලා"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "Active නැහැ"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "සහ disable කරන්න බැහැ."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Test email එකක් සාර්ථකව යැව්වා."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "ඔබගේ Wiki එකේ පෙනුම වෙනස් කරන්න"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Site Theme එක"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Dark Mode එක"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Code Injection"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS එක Override කරන්න"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head HTML Injection"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML Injection එක"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Themes Download කරන්න"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Administration Area එක"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Strategy Configuration එක"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registration එක"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Self-registration allow කරන්න"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Specific email domains වලට Limit කරන්න"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Register වෙන්න authorize කරලා තියන domain list එක. Userගේ email address එක මේ list එකේ තියන domain එකක් වෙන්න ඕන."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Group එකට Assign කරන්න"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Automatically අලුත් usersල මේ groups වලට assign කරන්න."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Security"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Two-Factor Authentication (2FA) හැම userටම අනිවාර්ය කරන්න"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Configuration Reference එක"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URI එක"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Login URL එක"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Logout URL එක"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token Endpoint එකේ Authentication Method එක"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Home"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "අලුත් පිටුවක්"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "දැන් ඉන්න පිටුව"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "View"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Edit කරන්න"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "History එක"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Source එක පෙන්නන්න"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Move / Rename කරන්න"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Delete කරන්න"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Assets"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Images සහ  Files"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Search කරන්න..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administration"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Account එක"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "මගේ Wiki එක"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profile එක"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Logout වෙන්න"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Login වෙන්න"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "අන්තිමට edit කළේ"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Publish කරපු නැති"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Page එක edit කරන්න"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "පටුන"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Bookmark"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Share කරන්න"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Print Format එක"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Close කරන්න"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "පිටුව"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "ඔබගේ content වලට backup සහ sync කරන්න target එකක් තෝරන්න"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Targets"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "status එක"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "අන්තිමට synchroniz කලේ {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "අන්තිමට උත්සහ කලේ {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Error Message එක"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "ඔබට active storage target කිසිවක් නැහැ."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Target Configuration එක"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "ඔබට වෙනස් කල හැකි storage configuration කිසිවක් නැහැ."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "sync වෙන පැත්ත"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "දෙපැත්තටම"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Target එකට push කරන්න."
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Target එකෙන් pull කරන්න"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Support කරන්නේ නැහැ"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Actions"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Run කරන්න"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "ඔබගේ wiki එකේ search capabilities configure කරන්න"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Search Engine"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "හිතුවේ නැති error එකක් අවා."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "සාමාන්‍ය "
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Site URL එක"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Site එකේ නම"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo එක"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Logo එක upload කරන්න"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Clear කරන්න"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "හොයනවා..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "ඔයා හොයපු query එකට ගැලපෙන පිටු නැහැ"
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Results {{total}} හම්බවුනා "
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "ඔයා කියන්නේ..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Close කරන්න"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Search Link එක copy කරන්න"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "හරිම දුර්වලයි"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "දුර්වලයි"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "සාමාන්‍යයි "
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "හොඳයි"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "ඉතා හොඳයි"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Page එක delete කරන්න"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "{{title}} පිටුව delete කරන්න ඕන කියල sure ද?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "මේ page එක administration area එකෙන් restore කරන්න පුළුවන්."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "userව හොයන්න"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "userව හොයන්න..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "හැම"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "මිනිත්තු"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "පැය"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "දවස්"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "මාස"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "අවුරුදු"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Page Properties"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Page එකේ විස්තර"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Title එක"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Short Description එක"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Title එකට පහලින් පෙන්වන්න"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Path සහ Categorization"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Locale"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Path එක"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Tags"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Publish කරපු එකේ තත්වය"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publish කරපු එක ඉවර වෙනේ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Save නොකරපු වෙනස්කම් අයින් කරන්නද? "
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "වෙනස්කම් අයින් කරන්න"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": ""
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "අලුත් folder එක"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Folder එකේ නම"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Move කරන්න"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Rename කරන්න"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimize කරන්න"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Preview කරන්න"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Properties"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "මේ asset folder එක හිස්."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "දාන්න"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID එක"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Filename එක"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Type එක"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "File Size එක"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "දැම්මා"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Assets upload කරන්න"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Remote Image එක fetch කරන්න"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Asset එක rename කරන්න"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Asset එක delete කරන්න "
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": ""
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Action එක undone කරන්න බැහැ!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Asset list එක සාර්ථකව refresh වුනා."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "File upload එක fail වුනා."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Asset folder එක සාර්ථකව create වුනා."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Asset එක සාර්ථකව rename වුනා."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Asset එක සාර්ථකව delete වුනා."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Upload කරන්න file එක්ක මුලින්ම තෝරාගන්න!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "ගන්න"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "ආපහු Editor එකට යන්න"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Bold"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Italic"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Strikethrough (තනි ඉරකින් කපන්න)"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Heading එක {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Subscript"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Superscript"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote එක"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Blockquote සාර්ථකයි"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Blockquote එකේ ප්‍රශ්නයක්"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Unordered List එක"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Ordered List එක"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Inline Code"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Keyboard Key"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Horizontal Bar එක"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": ""
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Link එකක් දාන්න"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Assets දාන්න"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Block එකක් දාන්න"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Code Block එකක් දාන්න"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Video / Audio එකක් දාන්න"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Diagram එකක් දාන්න"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Math Expression එකක් දාන්න"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Table Helper එක"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Distraction Free Mode එක"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown Formatting වලට උපදෙස්"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Normal View එකට යන්න"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID එක {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "භාෂාව"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analytics"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Providers"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Provider Configuration"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": ""
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Providers list එක සාර්ථකව save වුනා."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analytics configuration සාර්ථකව save වුනා"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Maintenance and අනෙකුත් tools"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Tools"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Authentication"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Cache එක Flush කරන්න"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Wiki.js 1.x එකෙන් import කළා"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Comments"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Published වුනා"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "පුද්ගලික"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Page එක Load වෙමින්..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Code එක"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "නම"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Native නම"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "දකුණේ සිට වමට"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Availability එක"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Download"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Content"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Icon Set එක"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "ඔබේ browswer එක outdated එකක්. {{modernBrowser}} එකට update කරන්න."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "අලුත් browser එකක්"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "නම"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "කර්තෘ"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Download"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Theme Options"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Active"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Verified වෙලා"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Verified වෙලා නැහැ"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Userව Edit කරන්න"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID එක {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "මූලික විස්තර"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Email එක"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "පෙන්වන නම"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Password"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Password එක මාරු කරන්න"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "අලුත් password එක"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Two Factor Authentication (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "2FA වෙනස් කරන්න"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Provider Id එක"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "User Groups"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Group එක Select කරන්න..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Assign කරන්න"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Location එක"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Job Title එක"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Timezone එක"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "සාර්ථකව user update වුනා"
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": ""
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "මේ storage targe එක {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "active"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "active නැහැ"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "අලුත් password එකක් දාන්න"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": ""
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "අලුත් Password එක"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "අලුත් Passwrod එක Verify කරන්න"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Password එක මාරු කරන්න"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Password එක මාරු කරමින්..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": ""
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "විස්තර"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Categorization එක"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Comments Allow කරන්න"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Ratings Allow කරන්න"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Authorගේ විස්තර පෙන්වන්න"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Sharing Toolbar එක පෙන්වන්න"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": ""
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "නැත්නම් custom view එකක් හදන්නද? "
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Tags වලින් Browse කරන්න"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Site Map එක"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Page Actions"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "දැන් select කරලා තියන එක"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Selection එක Clear කරන්න"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Tags එකක් හෝ ඊට වැඩි ප්‍රමාණයක් තෝරන්න"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Results ඇතුලේම හොයන්න..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "දේශිය"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Order කළේ"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": ""
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": " page results එන ගමන්..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": ""
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": ""
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "අන්තිමට updateකළේ {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "හදපු දවස"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID එක"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "අන්තිමට modify කළේ"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Path එක"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Title එක"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "ඕනෑම"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": ""
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Sponsor කෙනෙක් වෙන්න"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Tags"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL configuration manage කරන්න"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Provider"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domain"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Providerගේ Options"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Disable කළා"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Custom Certificate එක"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Ports"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP Port එක"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS Port එක"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP requests HTTPS වලට redirect කරන්න"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "HTTP port එකට එන ඔක්කොම requests ටික HTTPS port එකට automatically redirect කරනවා."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logo URL එක"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Userව අයින් කරන්නද?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "{{username}}ව අයින් කරන්න ඕන බව සහතිකද?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Userව Update කරන්න"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": ""
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Scripts"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS එක"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "හැමෝටම පෙන්වන්න"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "තෝරගත්ත group වලට පෙන්වන්න..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Page එක තෝරන්න..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigation Mode එක"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Site Tree එක"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Classic Tree-based Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Custom Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "එකක්වත් නැත"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Site Navigation Disable කරන්න"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Userව සාර්ථකව verify වුනා."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Userව සාර්ථකව activated වුනා."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Userව සාර්ථකව deactivated වුනා."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "මුලින්ම text එක තෝරාගෙන ඉන්න! "
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Certificate එක අලුත් කරන්න"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Certificate එකේ තත්වය"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Certificate එක expire වෙලා"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Subscriber Email එක"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "දැන් තත්වය"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "On කරන්න"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Off කරන්න"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Certificate එක අලුත් වෙමින්..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "මේ පිටුව close කරන්න එපා."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Certificate එක සාර්ථකව renew වුනා. "
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP Redirection සාර්ථකව වෙනස් වුනා. "
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Page tags manage කරන්න"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "පෙන්වන්න Tags නැහැ."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Tag එක Edit කරන්න"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tag එක"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Label එක"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": ""
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "මේ tag එක අයින් කරන්න"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "වම්පස ඇති ලැයිස්තුවෙන් tag එකක් තෝරන්න."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tags refresh වුනා"
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tag එක සාර්ථකව save වුන."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filter..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Link වෙච්ච පිටු පෙන්වන්න"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Tag එක Delete කරන්නද?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API එක Enable කළා"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API එක Disable කළා"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API එක Enable කරන්න"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API එක Disable කරන්න"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "අලුත් API Key එක"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "API එකේ නම"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "කල් ඉකුත්වීම"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "හැදුවා "
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "අන්තිම Update එක"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "අයින් කරන්න"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "තවම API key එකක් generate කර නොමැත. "
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API Key එක අයින් කරන්නද? "
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "අයින් කරන්න"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Key එක සාර්ථකව අයින් කළා."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "අලුත්  API Key එක"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API key එක  සාර්ථකව හැදුනා."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "නම සඳහන් කර නැත, එහෙම නැත්නම් වලංගු නැත."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "ඔබ group එකක් select කල යුතුයි"
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Guest group එක API keys සඳහා බාවිතා කල නොහැක."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "මේ key එකෙන් කෙරෙන දේ"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "නම"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "කල් ඉකුත්වීම"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Full Access එක"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "නැත්නම් group permissions පාවිච්චි කරන්න..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generate කරන්න"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Group එක"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "දවස් 30 යි"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "දවස් 90 යි"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "දවස් 180 යි"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "අවුරුද්දයි"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "අවුරුදු 3 යි"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "පහලින් තියන key එක මේ විදියට copy කරන {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "ඒක ආපහු පෙන්වන්නේ නැහැ"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API එක සාර්ථකව enable වුනා. "
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API එක සාර්ථකව disable වුනා. "
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Save වුනා"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "එකක්වත් නැහැ"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": " Creative Commons Attribution License එක"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License එක"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": ""
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": ""
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": ""
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": ""
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Public Domain එක"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "සියලුම හිමිකම් ඇවිරිණි"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Content License"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": ""
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "ඔබට page content download කළ නොහැක."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": ""
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Version ID එක {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Page version එක restore කරන්නද?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": ""
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Restore කරන්න"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Page version එක සාර්ථකව restore වුනා!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "අකුරු {{chars}}, වචන {{words}}"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Save Conflict එක Resolve කරන්න"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Local පාවිච්චි කරන්න"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Remote පාවිච්චි කරන්න "
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Local changes discard කරලා අලුත්ම version එක පාවිච්චි කරන්න"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "වම් පැත්තේ panel එකේ content පාවිච්චි කරන්න"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "අලුත්ම Version එක පෙන්වන්න"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": ""
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "ඔබට කරන්න ඕනේ මොකක්ද? "
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": ""
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": ""
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Remote Version එකෙන් Overwrite කරනනද? "
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": ""
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "ඔබගේ දැන් තියන edits නැතිවෙනවා. "
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Confirm කරන්න"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Local Version එක {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(edit කළ හැකි)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(read-only)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Remote Version එක {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": ""
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "අන්තිමට edit කළේ {{authorName}},{{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Title එක:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "විස්තර:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Save නොකරපු edits තියනවා. සහතිකාවම editor එකෙන් අයින් වෙන්න ඕනද? "
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": ""
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplicate එකක්"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "පෙන්වන නම"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Location එක"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Job Title එක"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Timezone එක"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profile එක"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "මගේ පෞද්ගලික විස්තර"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "මගේ විස්තර"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Public Profile එක පෙන්වන්න"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Authentication"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Provider"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Password එක මාරු කරන්න"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "දැන් තියන password එක"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "අලුත් password එක"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "අලුත් password එක verify කරනන්"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Groups"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Activity එක"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Join වුනේ"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "අන්තිමට Profile එක update කලේ"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "අන්තිමට log වුනේ"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Pages හදුනා"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Comments post උනා"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profile එක සාර්ථකව save උනා"
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Password එක සාර්ථකව වෙනස් උනා"
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "පිටු"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "අදහස්"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": ""
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "පෙන්වන්න පිටු නැහැ."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Page list එක refresh උනා"
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Title එක"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Path එක"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "හදලා"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "අන්තිමට Update කලේ "
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "අන්තිම Logins ටික"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Browse කරන්න"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Main Menu එක"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "දැන් ඉන්න Directory එක"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(මුල් පිටුව)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Locale එකෙන් copy කරමින්..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Source Locale එක"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Copy කරන්න"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": ""
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Static Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Static Navigation Menu එක විතරයි"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Preferences"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "දිනය පෙන්වන ක්‍රමය"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Default Locale එක"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Appearance එක"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Site Default එක"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "ලා පැහැ"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "අඳුරු පැහැ"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL Certificate එක Verify කරන්න"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "සමහර hosts ල SSL "
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "External Link ලින්ක් එකක් (අලුත් Window එකක්)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "ආරක්ෂාව"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "උපරිම Upload Size එක"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "එක upload එකකට තියෙන්නේ පුළුවන් උපරිම files ගණන"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "එක batch එකකින් file කීයක් upload කරන්න පුළුවන්ද?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "එක file එකකට තියෙන්නේ පුළුවන් උපරිම size එක. "
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "Files"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Uploads"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": ""
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Security settings configure කරන්න"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Extensions"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "වැඩිපුර functions ගන්න, අමතර extensions install කරන්න"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Provider"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Wiki page එකට discussions එකතු කරන්න"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Provider Configuration එක"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "මෙම provider වෙනස් කළ හැකි කිසිම configuration එකක් ලබාදී නැත."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Active කරලා තියන Strategies"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Strategy එකක් add කරන්න"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Styles"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "ඔබගේ Javascript code එක HTML script tag එකක් ඇතුලේ ලියන්න."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "මේ page එක publish කරලා නැහැ."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Comments"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "අලුත් Comment එකක් ලියමින්..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "ඔබගේ නම"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "ඔබගේ Email Address එක"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown Format එක"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Comment එක Post කරන්න"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Comments Load වෙමින්..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "{{name}} විදියට Posts දාන්න"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "මුල්ම comment එක දාන්න."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "තවම comments ඇවිල්ල නැත"
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Comment එක Update කරන්න"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Delete කරන එක Confirm කරන්න"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "සහතිකවම මෙම comment එක සම්පුර්ණයෙන්ම delete කරන්න ඕනද?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "මේ action එක වෙනස් කරන්න බැහැ"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "{{reldate}}එක modify උනා"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "අලුත් comment එක සාර්ථකව post උනා"
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Comment එක හිස්, නැත්නම් පොඩි වැඩියි!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Comment එක සාර්ථකව update උනා."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Comment එක සාර්ථකව delete උනා"
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Spellcheck එක toggle කරන්න"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "ඇතුල් වෙන්න"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Login Screen එක"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT Configuration"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Login Screen එක bypass කරන්න"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "User ව automatically පලවෙනි authentication provider ට යවනවා."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Login Background Image එකේ URL එක "
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Local Authentication Provider ව hide කරන්න. "
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "ආරක්ෂාව"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA අනිවාර්ය කරන්න "
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Username එකක් සහ password එකක් තියන authentication provider කෙනෙක් පාවිච්චි කරන වෙලාවට හැම user කෙනෙක්ටම Two-Factor Authentication අනිවාර්ය කරන්න. "
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Discussion එක පෙන්වන්න "
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "අලුත් comment එක්ක "
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Comment එකේ Content එක"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "කතා කරන්න"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Tags"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Pages වලට ගැලපෙන tags"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "මුලට යන්න"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Username එක"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "අයින්වෙන්න"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Pipeline එක render වෙන page එක configure කරන්න"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "මෙම titile එකේ invalid chatacters ඇත."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Site configuration එක සාර්ථකව save උනා."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA සාර්ථකව disable කළා."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA සාර්ථකව enable කළා."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Password එක Reset කරන්න ඉල්ලමින්..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Passwrod reset instructions බලන්න, email එක check කරන්න!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Active වෙලා"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "මෙම ක්‍රමය භාවිත කර usersලට log වෙන්න පුළුවන්ද?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "පෙන්වන නම"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Authentication Providerව තෝරන්න "
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "ඔබේ ඇතුල්වීමේ විස්තර ඇතුළත් කරන්න"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Password එක අමතකයි වුනා"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "ඔබගේ trusted device එකකින් ලැබුණු security code එක ඇතුලත් කරන්න:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Administrator විසින් ඔබගේ ගිණුමට Two-Factor Authentication enable කිරීම අනිවාර්ය කර ඇත. "
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) ඔබගේ mobile එකේ 2FA app එකෙන් පල්ලෙහා තියන QR code එක scan කරන්න:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Trusted device එකෙන් ලැබුණු security code එක enter කරන්න:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "තෝරන්න"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "අලුත් Page Location එක තෝරන්න "
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Page Location එක වෙන තැනකට මාරු කරන්න / Rename කරන්න"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "පිටුවක් තෝරන්න"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Virtual Folder එක"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "පිටු"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "මෙම ෆෝල්ඩරය හිස්."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "පරිවර්තනය කරන්න"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "පිටුව පරිවර්තනය කරන්න"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "{{title}}: පිටුව සඳහා ඔබට භාවිතා කිරීමට අවශ්‍ය editor එක තෝරන්න"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "page එකේ content  අලුතින් තෝරාගත් editor එකේ format එකට convert වෙනවා.  Conversion එකේදී සමහර කොටස් නැතිවෙන්න පුළුවන් . පරණ content වල snapshop එකක් page එකේ තියන අතර, එකෙන් පරණ version එකට අපහු යන්න පුළුවන්. "
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Convert කරන්න"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

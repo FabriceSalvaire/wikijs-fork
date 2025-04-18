@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Поддржано од"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Потребно е најавување"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Е-пошта / Корисничко име"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Лозинка"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Логирај Се"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Невалидна најава"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Е-поштата или лозинката се невалидни."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Неважечка корисничка е-пошта"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Грешка во најавување"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Сеуште не сте овластени да се пријавувате на овој сајт."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Премногу обиди!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Направивте премногу неуспешни обиди за краток временски период, обидете се повторно {{time}} ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Корисникот не е пронајден"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Локално"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft Account"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Двофакторна автентикација"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Потребен е безбедносен код:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Потврди"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Dashboard"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "General"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Locale"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistics"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Theme"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Groups"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Users"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Authentication"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logging"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Rendering"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Search Engine"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Storage"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API Access"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "System Info"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Utilities"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Developer Tools"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Contribute to Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Main settings of your wiki"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Site Info"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Site Branding"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Site"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Users"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Modules"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "System"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Set localization options for your wiki"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Locale Settings"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Multilingual Namespacing"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Download Locale"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Base Locale"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Сите UI текстови елементи ќе бидат прикажани на избраниот јазик."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Update Automatically"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Automatically download updates to all namespaced locales enabled below."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Multilingual Namespaces"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Enables multiple language versions of the same page."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Active Namespaces"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "List of locales enabled for multilingual namespacing. The base locale defined above will always be included regardless of this selection."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "The locale code will be prefixed to all paths. (e.g. /{{langCode}}/page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Paths without a locale code will be automatically redirected to the base locale defined above."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Зачувај"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Откажи"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Преземи"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Закачи"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Отфрли"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Исчисти"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Креирај"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Уредување"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Избриши"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Освежи"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Зачувај ги промените"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Продолжете"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Site Locale"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Automatically download updates to this locale as they become available."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Information about your system"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Host Information"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Current Version"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Latest Version"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Published"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Operating System"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Hostname"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU Cores"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Total RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Working Directory"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Configuration File"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAM Usage: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Help support Wiki.js development and operations"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Fund our work"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Spread the word"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Talk to your friends and colleagues about how awesome Wiki.js is!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Follow us on {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Submit an idea or vote on a proposed one on the {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "feature requests board"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Found a bug? Submit an issue on {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Help translate Wiki.js in your language. Let us know on {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Make a donation"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Contribute"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js is also part of the Open Collective initiative, a transparent fund that goes toward community resources. You can contribute financially by making a monthly or one-time donation:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "We need your help to keep improving the software and run the various associated services (e.g. hosting and networking)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js is a free and open-source software brought to you with {{0}} by {{1}} and {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "contributors"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Рендерирање"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Ве молам почекајте..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Страницата е успешно креирана."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Се појави грешка при креирањето на страницата"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "You can also buy Wiki.js t-shirts to support the project financially:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js Shop"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "ДОБРО"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . Сите права се задржани."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Оваа страница сè уште не постои."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Дали би сакале да го создадете сега?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Креирај страница"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Врати се назад"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Pages"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigation"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Manage the site navigation"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Додади"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Divider"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Header"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Label"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Icon"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Target Type"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Target"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Select a navigation item on the left."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Untitled {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "External Link"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Home"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Page"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Search Query"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Edit {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Delete {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigation saved successfully."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Click the Add button to add your first navigation item."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigation is empty"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Зачувај"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Email Address"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Потврдете ја лозинката"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Име"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Регистрирајте се"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Креирај сметка"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Веќе имате профил? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Наместо тоа, најавете се"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Најавете се користејќи {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Ја заборави лозинката?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "или најавете се користејќи..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Сè уште немате сметка? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Направете сметка"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Внесете валидна е-пошта / корисничко име."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Внесете валидна лозинка."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Најавата е успешна! Се пренасочува..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Најавување..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Автентикацијата е недостапна."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Пополнете го формуларот подолу за да ја креирате вашата сметка."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Ве молам почекајте"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Сметката е успешно креирана!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Се создава сметка..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Недостасува адреса на е-пошта."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Е-маил адресата е невалидна."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Недостасува лозинка."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Лозинката е прекратка."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Двете лозинки не се совпаѓаат."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Името недостасува."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Името е прекратко."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Името е предолго."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Откажи"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Ресетирање на лозинката"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Внесете ја вашата е-маил адреса за да ги добиете инструкциите за ресетирање на вашата лозинка:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Mail"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Configure mail settings"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Configuration"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (optional)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Проверете ја вашата е-пошта за да ја активирате вашата сметка."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Страницата е успешно ажурирана."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Неовластено"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Не можете да ја видите оваа страница."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Не можете да го видите изворот на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Не можете да ја видите историјата на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Не можете да ја уредувате страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Не можете да ја креирате страницата."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Врати се назад"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Дома"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Не е пронајден"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Оваа страница не постои."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Најавете се како..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Become a Patron"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Become a backer or sponsor via Patreon (goes directly into supporting lead developer Nicolas Giard's goal of working full-time on Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Добредојдовте во вашето вики!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Ајде да започнеме и да ја креираме почетната страница."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Креирај почетна страница"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Flags"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Make a one-time or recurring donation via Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "We accept donations using Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Sideload Locale Package"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "If you are not connected to the internet or cannot download locale files using the method above, you can instead sideload packages manually by uploading them below."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Пребарајте..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Manage webhooks to external services"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Send a test email"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Recipient Email Address"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Send Email"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Sender"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Име на испраќачот"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Е-пошта на испраќачот"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP поставки"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Хост"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Порта"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Обично 465 (препорачано), 587 или 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Secure (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Should be enabled when using port 465, otherwise turned off (587 or 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Username"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Password"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) provides a layer of security on all emails sent from Wiki.js by providing the means for recipients to validate the domain name and ensure the message authenticity."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Use DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Domain Name"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Key Selector"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Private Key"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Private key for the selector in PEM format"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Send a test email to ensure your SMTP configuration is working."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Configuration saved successfully."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Your database version is not fully supported. Some functionality may be limited or not work as expected."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "System Info has been refreshed."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Configure the authentication settings of your wiki"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Strategies"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Global Advanced Settings"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "Audience URN used in JWT issued upon login. Usually your domain name. (e.g. urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token Expiration"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "The expiration period of a token until it must be renewed. (default: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Token Renewal Period"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "The maximum period a token can be renewed when expired. (default: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "This strategy is {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "active"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "not active"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "and cannot be disabled."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "A test email was sent successfully."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Modify the look & feel of your wiki"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Site Theme"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Themes affect how content pages are displayed. Other site sections (such as the editor or admin area) are not affected."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Dark Mode"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Not recommended for accessibility. May not be supported by all themes."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Code Injection"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS Override"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS code to inject after system default CSS. Consider using custom themes if you have a large amount of css code. Injecting too much CSS code will result in poor page load performance! CSS will automatically be minified."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Head HTML Injection"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML code to be injected just before the closing head tag. Usually for script tags."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML Injection"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML code to be injected just before the closing body tag."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Download Themes"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Administration Area"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Strategy Configuration"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "This strategy has no configuration options you can modify."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registration"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Allow self-registration"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Allow any user successfully authorized by the strategy to access the wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Limit to specific email domains"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "A list of domains authorized to register. The user email address domain must match one of these to gain access."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Assign to group"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Automatically assign new users to these groups."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Security"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Force all users to use Two-Factor Authentication (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Users will be required to setup 2FA the first time they login and cannot be disabled by the user."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Configuration Reference"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Some strategies may require some configuration values to be set on your provider. These are provided for reference only and may not be needed by the current strategy."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "You must set a valid {{siteUrl}} first! Click on {{general}} in the left sidebar."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Allowed Web Origins"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Login URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Logout URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token Endpoint Authentication Method"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Дома"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Нова страница"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Моментална страница"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Погледни"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Уредување"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Историја"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Види го изворот"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Премести / Преименувај"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Избриши"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Асети"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Слики и фајлови"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Пребарај..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Администрација"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Сметка"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Мојот Вики"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Профил"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Одјави се"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Логирај Се"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Последно уредено од"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Необјавена"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Уредете ја страницата"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Содржина на страница"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Зачувај"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Сподели"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Формат за печатење"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Затвори"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Set backup and sync targets for your content"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Targets"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Status"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Last synchronization {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Last attempt was {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Error Message"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "You don't have any active storage target."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Target Configuration"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "This storage target has no configuration options you can modify."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Sync Direction"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Choose how content synchronization is handled for this storage target."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Bi-directional"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Push to target"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Pull from target"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Unsupported"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "In bi-directional mode, content is first pulled from the storage target. Any newer content overwrites local content. New content since last sync is then pushed to the storage target, overwriting any content on target if present."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Content is always pushed to the storage target, overwriting any existing content. This is safest choice for backup scenarios."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Content is always pulled from the storage target, overwriting any local content which already exists. This choice is usually reserved for single-use content import. Caution with this option as any local content will always be overwritten!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Sync Schedule"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "For performance reasons, this storage target synchronize changes on an interval-based schedule, instead of on every change. Define at which interval should the synchronization occur."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Currently set to every {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "The default is every {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Actions"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Run"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Configure the search capabilities of your wiki"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Rebuild Index"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Search Engine"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Engine Configuration"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "This engine has no configuration options you can modify."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "List of search engines has been refreshed."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Search engine configuration saved successfully."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Index rebuilt successfully."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Настана неочекувана грешка."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Pages"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Users"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Groups"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "You are running the latest version."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "A new version is available: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js is a free and open source project. There are several ways you can contribute to the project."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "We need your help!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Learn More"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "List of strategies has been refreshed."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Authentication configuration saved successfully."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "General"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Site URL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Full URL to your wiki, without the trailing slash. (e.g. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Site Title"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Displayed in the top bar and appended to all pages meta title."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Upload Logo"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Clear"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "An image of {{size}} pixels is recommended for best results."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} or {{lastType}} files only"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Footer Copyright"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Company / Organization Name"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Name to use when displaying copyright notice in the footer. Leave empty to hide."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Site Description"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Default description when none is provided for a page."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Default: Index, Follow. Can also be set on a per-page basis."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Напишете најмалку 2 знаци за да започнете со пребарување..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Пребарување..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Нема страници што одговараат на вашето барање."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Најдени се {{total}} резултати"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Дали мислеше..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Затвори"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Копирај го линкот за пребарување"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Многу слаб"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Слаб"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Просечн"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Силен"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Многу јако"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Избришете ја страницата"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Дали сте сигурни дека сакате да ја избришете страницата {{title}} ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Страницата може да се врати од администрацијата."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Барај корисник"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Пребарајте корисници..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Секој"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Минута(и)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Час(ови)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Ден(ови)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Месец(и)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Година(и)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Својства на страницата"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Информации за страницата"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Наслов"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Краток опис"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Прикажано под насловот"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Патот и категоризацијата"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Локалитет"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Пат"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Не вклучувајте никакви водечки или завршувачки црти."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Тагови"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Користете тагови за да ги категоризирате вашите страници и да ги направите полесни за пронаоѓање."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Статус на објавање"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Објавено"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Необјавените страници се уште се видливи за корисниците со дозволи за пишување на оваа страница."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Објавувањето почнува на..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Оставете празно без датум за почеток"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Објавувањето завршува на..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Остави празно без краен датум."
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Отфрли ги незачуваните промени?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Имате незачувани промени. Дали сте сигурни дека сакате да го напуштите уредникот и да ги отфрлите сите измени што сте ги направиле од последното зачувување?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Отфрли ги промените"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Кој уредник сакате да го користите за оваа страница?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Ова не може да се промени откако ќе се креира страницата."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Средства"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Нова папка"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Име на папка"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Мора да ја следите папката со средства {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "правила за именување"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Премести"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Преименувај"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Оптимизирај"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Преглед"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Својства"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Оваа папка со средства е празна."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} датотеки"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Вметнете"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Име на датотека"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Тип"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Големина на датотеката"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Додадено"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Акции"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Поставете средства"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Прелистајте или вметнете датотеки овде..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Преземи далечинска слика"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Порамнување на сликата"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Преименувајте средство"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Внесете го новото име за ова средство:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Избриши средство"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Дали сте сигурни дека сакате да го избришете средството"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Ова дејство не може да се врати!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Списокот со средства е успешно освежен."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Поставувањето на датотеката не успеа."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Папката со средства е успешно создадена."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Средството е успешно преименувано."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Средството е успешно избришано."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Прво мора да изберете датотека за прикачување!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Донеси"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Назад на уредник"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Задебелен"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Италијански"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Прешкртај"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Наслов {{ниво}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Коефициент"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Индекс"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Блокцитат"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Блок за инфо"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Блок за успешно"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Блок за предупредување"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Блок за грешка"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Ненаредена листа"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Наредена листа"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Инлајн код"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Копче на тастатура"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Хоризонтална лента"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Сокриј / Прикажи го панелот за преглед"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Вметнете линк"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Вметнете средства"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Вметнете блок"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Вметнете блок со код"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Вметнете видео / аудио"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Вметнете дијаграм"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Вметнете математички израз"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Помош за табели"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Режим на неодвлекување на вниманието"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Помош за форматирање на Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Се гледа изворот на страницата {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Врати се на нормален приказ"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Јазик"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analytics"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Add analytics and tracking tools to your wiki"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Providers"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Provider Configuration"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "This provider has no configuration options you can modify."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "List of providers refreshed successfully."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Analytics configuration saved successfully"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Maintenance and miscellaneous tools"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Tools"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Authentication"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Various tools for authentication / users"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Flush Cache"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Flush cache of various components"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Change the GraphQL endpoint for Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Import from Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migrate data from a previous 1.x installation"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetry"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Enable/Disable telemetry or reset the client ID"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Comments"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Објавена"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Приватна"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Глобална"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Се вчитува страницата..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Code"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Native Name"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Availability"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Download"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Content"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Various tools for pages"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Icon Set"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Set of icons to use for the sidebar navigation."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Вашиот прелистувач е застарен. Надградете на {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "модерен прелистувач"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Author"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Download"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} When adding styles for page content, you must scope them to the {{cssClass}} class. Omitting this could break the layout of the editor!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "CAUTION:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Theme Options"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Active"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Inactive"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Verified"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Unverified"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Edit User"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Basic Info"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Email"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Display Name"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Authentication"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Provider"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Password"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Change Password"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "New Password"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Two Factor Authentication (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Toggle 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Provider Id"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "User Groups"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "This user is not assigned to any group yet. You must assign at least 1 group to a user."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Select Group..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Assign"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Extended Metadata"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Location"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Job Title"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Timezone"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "User updated successfully."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "User is already assigned to this group!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "This storage target is {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "active"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "inactive"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "You must enable this storage target and apply changes before you can run actions."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Изберете нова лозинка"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Мора да изберете нова лозинка:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Нова лозинка"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Потврдете ја новата лозинка"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Промена на лозинката"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Менување на лозинката..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Recent Pages"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Most Popular Pages"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Инфо"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Закажување"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Социјални"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Категоризација"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Социјални карактеристики"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Дозволи коментари"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Овозможете коментирање на оваа страница."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Дозволи рејтинзи"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Прикажи информации за авторот"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Прикажи ја лентата за споделување"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Прикажи ја лента со алатки со копчиња за споделување и печатење на оваа страница"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Прикажи го авторот на страницата заедно со последното време на изменување."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Овозможи можности за оценување на оваа страница."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "или креирај сопствен приказ?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Пребарај по тагови"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Мапа на сајтот"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Дејства на страницата"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Моментална селекција"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Исчистете го изборот"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Изберете еден или повеќе тагови"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Пребарување во резултатите..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Локалитет"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Сортирај по"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Изберете еден или повеќе ознаки од лево."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Се добиваата резултатите од страницата"
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Не може да се најде ниту една страница со избраните ознаки."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Не може да се најде ниту една страница што одговара на тековните опции за филтрирање."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Последно ажурирано {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Датум на создавање"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ИД"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Последно изменето"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Пат"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Наслов"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Било кој"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Become a sponsor via GitHub Sponsors (goes directly into supporting lead developer Nicolas Giard's goal of working full-time on Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Become a Sponsor"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Tags"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Manage SSL configuration"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Provider"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Select Custom Certificate if you have your own certificate already."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domain"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Enter the fully qualified domain pointing to your wiki. (e.g. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Provider Options"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Disabled"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Custom Certificate"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Ports"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP Port"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Non-SSL port the server will listen to for HTTP requests. Usually 80 or 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS Port"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL port the server will listen to for HTTPS requests. Usually 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Redirect HTTP requests to HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Will automatically redirect any requests on the HTTP port to HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Note that your config file must be writable in order to persist ports configuration."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Logo URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Specify an image to use as the logo. SVG, PNG, JPG are supported, in a square ratio, 34x34 pixels or larger. Click the button on the right to upload a new image."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Delete User?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Are you sure you want to delete user {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Update User"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Note that you cannot assign users to the Administrators or Guests groups from this panel."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Note that you cannot delete a user that already created content. You must instead either deactivate the user or delete all content that was created by that user."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Скрипти"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS автоматски ќе биде минификуван при зачувувањето. Но не ги вклучувај околните стилски ознаки, туку само вистинскиот CSS код."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Visible to everyone"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Visible to select groups..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Select Page..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Navigation Mode"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Site Tree"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Classic Tree-based Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Custom Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Static Navigation Menu + Site Tree Button"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "None"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Disable Site Navigation"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "User has been verified successfully."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "User has been activated successfully."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "User deactivated successfully."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Прво мора да се избере текст!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Renew Certificate"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Certificate Status"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Certificate Expiration"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Subscriber Email"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Current State"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Turn On"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Turn Off"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Renewing Certificate..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Do not leave this page."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Certificate renewed successfully."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP Redirection changed successfully."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Manage page tags"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "No tags to display."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Edit Tag"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tag"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Label"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Created {{created}} and last updated {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Delete this tag"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Select a tag from the list on the left."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Add a tag to a page to get started."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tags have been refreshed."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Tag deleted successfully."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tag has been saved successfully."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filter..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "View Linked Pages"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Delete Tag?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Are you sure you want to delete tag {{tag}}? The tag will also be unlinked from all pages."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Manage keys to access the API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API Enabled"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API Disabled"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Enable API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Disable API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "New API Key"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Key Ending"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Expiration"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Created"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Last Updated"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Revoke"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "No API keys have been generated yet."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Revoke API Key?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Are you sure you want to revoke key {{name}}? This action cannot be undone!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Revoke"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "List of API keys has been refreshed."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "The key has been revoked successfully."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "New API Key"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API key created successfully."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Name is missing or invalid."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "You must select a group."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "The guests group cannot be used for API keys."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Purpose of this key"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Name"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Expiration"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "You can still revoke a key anytime regardless of the expiration."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Permission Scopes"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Full Access"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "or use group permissions..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Генерирајте"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Group"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "The API key will have the same permissions as the selected group."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 days"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 days"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 days"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 year"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 years"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Copy the key shown below as {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "it will NOT be shown again"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API has been enabled successfully."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API has been disabled successfully."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Зачувано"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Никоја"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": " Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs License"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Attribution-NonCommercial-NoDerivs License"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Јавен домен"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Сите права се задржани"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Content License"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "License shown in the footer of all content pages."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Содржината е достапна под {{license}} , од {{company}} ."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Не можете да ја преземете содржината на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Не можете да ја преземете содржината за оваа верзија на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Не можете да го видите изворот на оваа верзија на страницата."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Се гледа изворот од {{date}} на страницата {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID на верзијата {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Да ја вратиме верзијата на страницата?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Дали сте сигурни дека сакате да ја вратите содржината на оваа страница како што беше на {{date}} ? Оваа верзија ќе биде копирана на врвот на тековната историја. Како такви, поновите верзии сè уште ќе бидат зачувани."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Врати"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Верзијата на страницата успешно е вратена!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} знаци, {{words}} зборови"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Реши го конфликтот за зачување"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Користете локални"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Користете далечински"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Отфрлете ги локалните промени и користете ја најновата верзија"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Користете содржина во левиот панел"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Погледнете ја најновата верзија"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Понова верзија на оваа страница е зачувана од {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Што сакате да направите?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Користете ја вашата тековна локална верзија и игнорирајте ги најновите промени."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Користете ја далечинската верзија (најновата) и отфрлете ги вашите промени."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Презапишете со далечинска верзија?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Дали сте сигурни дека сакате да ја замените вашата тековна верзија со најновата далечинска содржина? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Вашите тековни уредувања ќе бидат изгубени."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Потврди"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Локална верзија {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(може да се уредува)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(само за читање)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Далечинска верзија {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Вашето тековно уредување, врз основа на верзијата на страницата од {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Последно уредено од {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Наслов:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Опис:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Имате незачувани уредувања. Дали сте сигурни дека сакате да го напуштите уредникот?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Конфликт во зачувување! Друг корисник веќе ја променил оваа страница."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Дупликат"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Име за прикажување"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Локација"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Наслов на работа"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Временска зона"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Профил"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Мои лични податоци"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Мои информации"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Преглед на јавниот профил"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Автентикација"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Провајдер"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Промена на лозинката"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Моментална лозинка"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Нова лозинка"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Потврдете ја новата лозинка"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Групи"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Активност"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Сте се приклучиле на"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Профилот последен пат е ажуриран на"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Последното најавување е вклучено"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Создадени страници"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Објавени коментари"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Профилот е успешно зачуван."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Лозинката е успешно променета."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Страници"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Коментари"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Список на страници што ги создадов или последен пат ги изменив"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Нема страници за прикажување."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Списокот на страници е освежен."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Наслов"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Патот"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Создаден"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Последно ажурирано"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Last Logins"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Пребарајте"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Главно мени"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Моментална папка"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "Почетна папка"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Copy from locale..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Source Locale"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "The locale from which navigation items will be copied from."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Копирај"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Select the locale from which items will be copied from. Items will be appended to the current list of items in the active locale."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Static Navigation"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Static Navigation Menu Only"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Параметри"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Формат на датум"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Стандардна локација"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Изглед"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Site Default"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Светло"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Темно"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Verify SSL Certificate"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Some hosts requires SSL certificate checking to be disabled. Leave enabled for proper security."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "External Link (New Window)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Security"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Max Upload Size"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Max Files per Upload"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "How many files can be uploaded in a single batch?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "The maximum size for a single file."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "files"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Uploads"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "These settings only affect Wiki.js. If you're using a reverse-proxy (e.g. nginx, apache, Cloudflare), you must also change its settings to match."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Configure security settings"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Extensions"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Install extensions for extra functionality"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Provider"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Add discussions to your wiki pages"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Provider Configuration"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "This provider has no configuration options you can modify."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Any content (pages, uploads, comments, etc.) that was created by this user will be reassigned to the user selected below. It is recommended to create a dummy target user (e.g. Deleted User) if you don't want the content to be reassigned to any current active user."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Active Strategies"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Add Strategy"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Стилови"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Морате да го опкружите вашиот javascript код со HTML скрипт ознаки."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Оваа страница не е објавена."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Коментари"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Напишете нов коментар..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Вашето име"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Твојата е-маил адреса"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown формат"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Остави коментар"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Се вчитуваат коментари..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Објавувате од {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Биди прв да коментираш."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Сè уште нема коментари."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Ажурирај коментар"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Потврди бришење"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Дали сте сигурни дека сакате трајно да го избришете овој коментар?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Ова дејство не може да се врати!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "модифицирано {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Новиот коментар е успешно објавен."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Коментарот е празен или прекраток!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Коментарот беше успешно ажуриран."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Коментарот беше избришан успешно."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Вклучи проверка на правопис"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Login"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Login Screen"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT Configuration"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Bypass Login Screen"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Should the user be redirected automatically to the first authentication provider."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Login Background Image URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Specify an image to use as the login background. PNG and JPG are supported, 1920x1080 recommended. Leave empty for default. Click the button on the right to upload a new image. Note that the Guests group must have read-access to the selected image!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Hide Local Authentication Provider"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Don't show the local authentication provider on the login screen. Add ?all to the URL to temporarily use it."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Security"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Enforce 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Force all users to use Two-Factor Authentication when using an authentication provider with a user / password form."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Погледни дискусија"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Нов коментар"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Коментирај на содржината"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Комуникација"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Тагови"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Pages matching tags"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Врати се на почеток"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Корисничко име"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Излез"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Configure the page rendering pipeline"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Site Title contains invalid characters."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Site configuration saved successfully."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA was disabled successfully."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA was enabled successfully."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Се бара ресетирање на лозинката..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Проверете ja вашata е-пошта за инструкции за ресетирање лозинка!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Active"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Are users able to login using this strategy?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Display Name"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "The title shown to the end user for this authentication strategy."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Изберете Провајдер за автентикација"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Внесете ги вашите информации"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Ја заборави лозинката"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Внесете го безбедносниот код генериран од вашиот доверлив уред:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Your administrator has required Two-Factor Authentication (2FA) to be enabled on your account."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Скенирајте го QR кодот подолу од вашата апликација за мобилни 2FA:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Внесете го безбедносниот код генериран од вашиот доверлив уред:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Изберете"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Изберете нова локација на страницата"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Премести / Преименувај ја локацијата на страницата"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Изберете страница"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Виртуелни папки"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Страници"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Оваа папка е празна."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Конвертирај"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Конвертирај страница"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Изберете го уредникот што сакате да го користите понатаму за страницата {{title}} :"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Содржината на страницата ќе се претвори во формат на новоизбраниот уредник. Забележете дека некои форматирани или неизведени содржини може да се изгубат како резултат на конверзијата. Снимката ќе биде додадена во историјата на страницата и може да се врати во секое време."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Конвертирај"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Администрација"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Export to Disk"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Save content to tarball for backup / migration"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Содржина"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Содржина"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Користи ги основните нагодување на страницата"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Нивоа на наслови на содржината"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Содржината ќе прикажува наслови од и до избраните нивоа."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Default TOC Heading Levels"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "The table of contents will show headings from and up to the selected levels by default."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Client Identifying Hostname"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "An optional name to send to the SMTP server to identify your mailer. Leave empty to use server hostname. For Google Workspace customers, this should be your main domain name."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Page Extensions"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "A comma-separated list of URL extensions that will be treated as pages. For example, adding md will treat /foobar.md the same as /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Button Site Name"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "The name of the external site to display on the edit button. Do not include the \"Edit on\" prefix."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Button Icon"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "The icon to display on the edit button. For example, mdi-github to display the GitHub icon."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Button URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Url to the page on the external repository. Use the {filename} placeholder where the filename should be included. (e.g. https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Edit Shortcuts"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB Quick Edit Menu"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Display the edit floating action button (FAB) with a speed-dial menu in the bottom right corner of the screen."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Edit Menu Bar"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Display Edit Menu Bar"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Display the edit menu bar in the page header."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Display Edit Button"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Display a button to edit the current page."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Display External Edit Button"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Display a button linking to an external repository (e.g. GitHub) where users can edit or submit a PR for the current page."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Уредете на {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Comments configuration saved successfully."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Footer Text Override"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Optionally override the footer text with a custom message. Useful if none of the above licenses are appropriate."
+                }
+            ]
+        }
+    }
+}

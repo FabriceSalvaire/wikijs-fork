@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Creat de"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Conectare obligatorie"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Email / Nume utilizator"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Parolă"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Logare"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Autentificare invalidă"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "E-mailul sau parola nu sunt valide."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "E-mail de utilizator nevalid"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Eroare de conectare"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Nu ați fost încă autorizat să vă autentificați pe acest site."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Prea multe încercări!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Ați făcut prea multe încercări eșuate într-o perioadă scurtă de timp, încercați din nou {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Utilizator nu a fost găsit"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Local"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Cont Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "ID Google"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Autentificarea cu doi factori"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Cod de securitate necesar:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Verifica"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Tablou de bord"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "General"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Localizare"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistici"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Temă"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grupuri"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Utilizatori"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autentificare"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logare"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Redare"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Motor de căutare"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Depozitare"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Acces API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Informație de sistem"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Utilități"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Instrumente de dezvoltare"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Contribuie la Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Setări principale ale wiki-ului"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Informații despre site"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Marcarea site-ului"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Site"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Utilizatori"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Module"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Sistem"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Setați opțiuni de localizare pentru wiki"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Setări locale"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Spațiu multilingv de nume"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Descarcă Locale"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Setări regionale de bază"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Toate elementele de text ale utilizatorului vor fi afișate în limba selectată."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Actualizați automat"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Descărcați automat actualizări la toate locurile spațiale cu nume activate de mai jos."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Spații de nume multilingve"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Activează mai multe versiuni de limbă pentru aceleași pagini."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Spații de nume active"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Listă de locații activate pentru spațierea numelor multilingve. Localizarea de bază definită mai sus va fi întotdeauna inclusă indiferent de această selecție."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Codul local va fi prefixat pe toate căile. (de exemplu / {{langCode}} / nume de pagină)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Căile fără cod local vor fi redirecționate automat către localizarea de bază definită mai sus."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Salvați"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Anulare"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Descarcă"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Încărcați"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Renunță"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Curățați"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Creează"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Editați"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Șterge"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Reîmprospătați"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Salvează modificările"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Continua"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Localizarea site-ului"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Descărcați automat actualizări la această regiune locală, pe măsură ce devin disponibile."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informații despre sistemul dvs."
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Informații despre gazdă"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Versiune curentă"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Ultima versiune"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Publicat"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Sistem de operare"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Numele sistemului gazdă"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Nuclee Procesor"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Toată memoria RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Director de lucru"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Fișier de configurare"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Utilizare RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Ajutați la dezvoltarea și operațiunile Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Finanțează-ne munca"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Împrăștie vestea"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Discutați cu prietenii și colegii dvs. despre cât de minunat este Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Urmăriți-ne pe {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Trimiteți o idee sau votați una propusă pe {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "board-ul solicitări de funcții"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Ați găsit un bug? Trimiteți bug-ul la {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Ajutați să traduceți Wiki.js în limba dvs. Spuneți-ne pe {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Fă o donație"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Contribuie"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js face parte și din inițiativa Open Collective, un fond transparent care se adresează resurselor comunității. Puteți contribui financiar făcând o donație lunară sau o singură dată:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Avem nevoie de ajutorul tău. pentru a îmbunătăți software-ul și pentru a rula diverse servicii asociate (de exemplu, găzduire și rețea)"
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js este un software gratuit și open-source adus de tine cu {{0}} de {{1}} și {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "contribuitori"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Pagină"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Prelucrare"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Vă rog așteptați..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Pagină creată cu succes."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "A apărut o eroare la crearea paginii"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "De asemenea, puteți cumpăra tricouri Wiki.js pentru a susține financiar proiectul:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Magazinul Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . Toate drepturile rezervate."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Această pagină nu există încă."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Ați dori să o creați acum?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Crează pagină"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Întoarce-te"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Pagini"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigare"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Gestionați navigarea pe site"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Adăuga"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Link"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Separator"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Antet"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Eticheta"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Pictogramă"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Tipul de țintă"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Ţintă"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Selectați un articol de navigare din stânga."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Untitled {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Link extern"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Acasă"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Pagină"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Căutare interogare"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Modificați {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Ștergeți {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigarea a fost salvată cu succes."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Dați click pe butonul Adăugare pentru a adăuga primul tau element de navigare."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigarea este goală"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "aplică"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Adresa de email"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Verifică parola"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Nume"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Inregistreaza-te"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Creează un cont"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "ai deja un cont? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Conectați-vă în schimb"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Conectați-vă folosind {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Ti-ai uitat parola?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "sau autentificați-vă cu ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Nu aveți încă un cont? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Creează un cont"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Introduceți un e-mail / nume de utilizator valid."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Introduceți o parolă validă."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Autentificare reușită! Redirecționează ..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Conectare ..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Autentificarea nu este disponibilă."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Completați formularul de mai jos pentru a vă crea contul."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Te rog asteapta"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Contul creat cu succes!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Crearea contului ..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Adresa de e-mail lipsește"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Adresa de email este invalida."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Parcă lipsește."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Parola este prea scurtă."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Ambele parole nu se potrivesc."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Numele lipsește."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Numele este prea scurt."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Numele este prea lung."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Anulare"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Reseteaza parola"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Introdu adresa de e-mail pentru a primi instrucțiunile de resetare a parolei tale:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Mail"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Configurați setările de e-mail"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "configurație"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (opțional)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Verificați-vă e-mailurile pentru a vă activa contul."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Pagina a fost actualizată cu succes."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Neautorizat"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Nu puteți vedea această pagină."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Nu puteți vizualiza sursa paginii."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Nu puteți vizualiza istoricul paginilor."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Nu puteți edita pagina."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Nu puteți crea pagina."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Întoarce-te"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Acasă"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Nu a fost găsit"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Această pagină nu există."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Autentificare ca ..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Deveniți Patron"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Deveniți sponsor prin intermediul Patreon (intră direct în sprijinul obiectivului dezvoltatorului Nicolas Giard de a lucra cu normă întreagă pe Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Bine ați venit pe wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Să începem și să creăm pagina de pornire."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Creați pagina de pornire"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Steaguri"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "voiajor"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Faceți o donație unică sau recurentă prin Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Acceptăm donații folosind Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Încărcare Pachet Localizare"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Dacă nu sunteți conectat la internet sau nu puteți descărca fișierele locale folosind metoda de mai sus, puteți în schimb să încărcați manual pachetele încărcându-le mai jos."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Navigați..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Gestionați accesul web la servicii externe"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Trimiteți un e-mail de testare"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Adresa de e-mail destinatar"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Trimite email"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Expeditor"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Numele expeditorului"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "E-mail expeditor"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Setări SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Gazdă"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "De obicei 465 (recomandat), 587 sau 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Securizat (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Ar trebui să fie activat atunci când utilizați portul 465, dezactivat (587 sau 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Nume de utilizator"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Parolă"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) oferă un nivel de securitate pentru toate e-mailurile trimise de la Wiki.js, furnizând mijloacele destinatarilor pentru a valida numele de domeniu și pentru a asigura autenticitatea mesajului."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Folosiți DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Numele domeniului"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Selector de chei"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Cheie privată"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Cheie privată pentru selecționer în format PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Trimiteți un e-mail de testare pentru a vă asigura că setările SMTP funcționează."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Configurarea a fost salvată cu succes."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Versiunea dvs. de bază de date nu este complet acceptată. Unele funcționalități pot fi limitate sau nu funcționează așa cum este de așteptat."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Informațiile despre sistem au fost actualizate."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Configurați setările de autentificare ale wiki-ului"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Strategii"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Setări avansate globale"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "URN de audiență utilizat în JWT emis la autentificare. De obicei numele dvs. de domeniu. (de exemplu, urna: domeniul.tău.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Expirarea token-ului"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Perioada de expirare a unui token până când trebuie reînnoit. (implicit: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Perioada de reînnoire a token-urilor"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Perioada maximă a unui token poate fi reînnoită atunci când expiră. (implicit: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Această strategie este {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "activ"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "inactiv"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "și nu poate fi dezactivat."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Un e-mail de test a fost trimis cu succes."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Modificați aspectul wiki-ului"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Tema site-ului"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Temele afectează modul în care sunt afișate paginile de conținut. Alte secțiuni de site (cum ar fi editorul sau zona de admin) nu sunt afectate."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Mod Întunecat"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Nu este recomandat pentru accesibilitate. Nu poate fi susținut de toate temele."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Injecție de cod"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Înlocuire CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Cod CSS care trebuie injectat după CSS implicit. Luați în considerare utilizarea temelor personalizate dacă aveți o cantitate mare de cod css. Injectarea unui număr prea mare de cod CSS va duce la performanțe slabe de încărcare a paginii! CSS va fi automat comprimat."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Injecție cap HTML"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Cod HTML care trebuie injectat chiar înainte de eticheta capului de închidere. De obicei pentru etichete script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Injecție HTML corporală"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Cod HTML care trebuie injectat chiar înainte de eticheta corpului de închidere."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Descărcați Teme"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Area administrativă"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Configurarea strategiei"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Această strategie nu are opțiuni de configurare pe care le puteți modifica."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Înregistrare"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Permite auto-înregistrarea"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Permiteți oricărui utilizator autorizat cu succes de strategie să acceseze wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Limitați la anumite domenii de e-mail"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "O listă de domenii autorizate să se înregistreze. Domeniul adresei de e-mail a utilizatorului trebuie să fie potrivită cu una dintre acestea pentru a avea acces."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Atribuie la grup"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Alocați automat utilizatori noi acestor grupuri."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Securitate"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Forțați toți utilizatorii să utilizeze autentificarea cu doi factori (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Utilizatorii vor trebui să configureze 2FA prima dată când se conectează și nu pot fi dezactivate de către utilizator."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Referință de configurare"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Unele strategii pot necesita setarea unor valori de configurare pe furnizorul dumneavoastră. Acestea sunt furnizate doar ca referință și pot să nu fie necesare la strategia actuală."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Trebuie să setați mai întâi un {{siteUrl}} valid! Faceți clic pe {{general}} în bara laterală din stânga."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Origini Web permise"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL de conectare"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL de deconectare"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Metodă de autentificare a punctului central"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Acasă"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Pagina nouă"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Pagina curentă"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Vedere"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Editați"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Istorie"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Vizualizare sursă"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Mutare / redenumire"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Șterge"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Bunuri"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Imagini și fișiere"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Căutare..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administrare"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Cont"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Wiki-ul meu"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Deconectare"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Logare"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Ultima editare făcută de"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Nepublicat"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Editare pagină"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Cuprins"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Semn de carte"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Distribuie"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Format de imprimare"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Închide"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Pagină"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Setați ținte de rezervă și sincronizați pentru conținutul dvs."
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Obiective"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Stare"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Ultima sincronizare {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Ultima încercare a fost {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Mesaj de eroare"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Nu aveți nicio țintă de stocare activă."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Configurare țintă"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Această țintă de stocare nu are opțiuni de configurare pe care le puteți modifica."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Direcția de sincronizare"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Alegeți cum este gestionată sincronizarea conținutului pentru această țintă de stocare."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Bi-direcțională"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Apăsați spre țintă"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Trageți de la țintă"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Neacceptată"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "În modul bidirecțional, conținutul este extras mai întâi de la ținta de stocare. Orice conținut mai nou suprascrie conținutul local. Conținut nou de la ultima sincronizare este apoi împins către ținta de stocare, rescrierea oricărui conținut de pe țintă, dacă este prezent."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Conținutul este întotdeauna împins către ținta de stocare, rescrierea oricărui conținut existent. Aceasta este cea mai sigură alegere pentru scenarii de rezervă."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Conținutul este întotdeauna extras din ținta de stocare, rescrierea oricărui conținut local care există deja. Această alegere este rezervată de obicei pentru importul de conținut de o singură utilizare. Atenție cu această opțiune, deoarece orice conținut local va fi întotdeauna suprascris!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Program de sincronizare"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Din motive de performanță, această țintă de stocare sincronizează modificările pe o programare bazată pe intervale, în loc de fiecare modificare. Definiți la ce interval ar trebui să aibă loc sincronizarea."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "În prezent, este setat la fiecare {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Valoarea implicită este fiecare {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Acţiuni"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Rulă"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Configurați funcțiile de căutare ale wiki-ului"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Reconstrucție index"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Motor de căutare"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Configurarea motorului"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Acest motor nu are opțiuni de configurare pe care le puteți modifica."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Lista motoarelor de căutare a fost actualizată."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Configurația motorului de căutare a fost salvată cu succes."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Indice reconstruit cu succes."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "A apărut o eroare neașteptată."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Pagini"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Utilizatori"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grupuri"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Rulează cea mai recentă versiune."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "O versiune nouă este disponibilă: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js este un proiect gratuit și open source. Există mai multe moduri în care poți contribui la proiect."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Noi avem nevoie de ajutorul tău!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Aflați mai multe"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Lista strategiilor a fost reîmprospătată."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Configurația de autentificare a fost salvată cu succes."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "General"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL-ul site-ului"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Adresa URL completă la wiki, fără tăiere. (de exemplu, https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Titlul Site-ului"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Afișat în bara de sus și anexat la toate titlurile meta."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Siglă"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Încărcați logo-ul"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Golire"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "O imagine cu {{size}} pixeli este recomandată pentru cele mai bune rezultate."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Doar fișiere {{typeList}} sau {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Drept de autor pentru subsol"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Denumirea companiei / organizației"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Nume de utilizat la afișarea notificării privind drepturile de autor în subsol. Lăsați gol să se ascundă."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Descrierea siteului"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Descrierea implicită atunci când nu este oferită niciuna pentru o pagină"
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Roboți"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Implicit: Index, Follow. Poate fi setat și pe pagină."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Introduceți cel puțin 2 caractere pentru a începe să căutați ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Căutarea..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Nu există pagini care să corespundă căutării dvs."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "S-au găsit {{total}} rezultate"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Ai vrut să spui..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Închide"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Copiază linkul de căutare"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Foarte slab"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Slab"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "In medie"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Puternic"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Foarte puternic"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Ștergeți pagina"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Sigur doriți să ștergeți pagina {{title}} ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Pagina poate fi restaurată din zona de administrare."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Căutare utilizator"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Căutați utilizatori ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Fiecare"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Minut (e)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Ora (e)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Ziua (le)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Lună (i)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "An (i)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Proprietăți de pagină"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Informații despre pagină"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Titlu"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Scurtă Descriere"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Afișat sub titlu"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Calea și clasificarea"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Localizare"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Cale"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Nu includeți nicio zgură de direcție sau de finalizare."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Etichete"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Utilizați etichete pentru a vă clasifica paginile și pentru a le face mai ușor de găsit."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Publicarea statului"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Publicat"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Paginile nepublicate pot fi încă văzute de utilizatorii care au permisiuni de scriere pe această pagină."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publicați începând cu ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Lăsați gol pentru nicio dată de început"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publicați încheierea la ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Nu lăsați gol pentru nicio dată de încheiere"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Renunțați la modificările ne salvate?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Aveți modificări salvate. Sunteți sigur că doriți să părăsiți editorul și să aruncați toate modificările pe care le-ați făcut de la ultima salvare?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Renunțați la modificări"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Ce editor doriți să utilizați pentru această pagină?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Aceasta nu poate fi modificată după crearea paginii."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Bunuri"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Folder nou"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Numele fișierului"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Trebuie să urmați folderul de {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "reguli de denumire"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Mută"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Redenumiți"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimizare"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Previzualizare"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Proprietăți"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Acest folder de active este gol."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "fișiere {{count}}"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Introduce"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Nume de fișier"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Tip"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Mărime fișier"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Adăugat"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Acţiuni"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Încărcați active"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Căutați sau eliminați fișierele aici ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Preluare imagine la distanță"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Aliniere imagine"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Redenumiți activ"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Introduceți noul nume pentru acest activ:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Ștergeți materialul"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Sigur doriți să ștergeți activul"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Această acțiune nu poate fi anulată!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Lista activelor actualizate cu succes."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Încărcarea fișierului a eșuat."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Folderul Asset creat cu succes."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Activele redenumite cu succes."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Activul a fost șters cu succes."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Trebuie să alegeți un fișier pentru a încărca mai întâi!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Aduceți"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Înapoi la editor"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Îngroșat"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Cursiv"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Tăiat"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Titlu {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Indice"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Exponent"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Citat bloc"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Info citat bloc"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Citat bloc pentru succes"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Citat bloc pentru avertizare"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Eroare citat bloc"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Lista neordonata"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Lista ordonata"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Cod în linie"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Cheia tastaturii"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Bara orizontala"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Ascunde / Afișează panoul previzualizat"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Insert Link"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Inserați active"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Inserați bloc"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Introduceți blocul de cod"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Introduceți video / audio"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Inserați diagrama"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Inserați expresia matematică"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Ajutor Tabel"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Modul fără distragere"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Ajutor pentru formatarea marcajului"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Vizualizarea sursei paginii {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Înapoi la Vizualizare normală"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Limbă"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analize"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Adăugați analize și instrumente de urmărire la wiki"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Furnizori"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Configurarea furnizorului"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Acest furnizor nu are opțiuni de configurare pe care le puteți modifica."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Lista furnizorilor reînnoită cu succes."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Configurația Analytics a fost salvată cu succes"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Întreținere și instrumente diverse"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Unelte"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Autentificare"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Diverse instrumente pentru autentificare / utilizatori"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Goliți cache-ul"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Goliți cache-ul pentru diverse componente"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Punct acces GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Schimbați punctul acces GraphQL pentru Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Import din Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migrează datele dintr-o instalare anterioară 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetrie"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Activați / Dezactivați telemetria sau resetați ID-ul clientului"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Comentarii"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Publicat"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Privat"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Se încarcă pagina ..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Cod"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Nume"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Nume Nativ"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Disponibilitate"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Descarca"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Conţinut"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Diverse instrumente pentru pagini"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Set de pictograme"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Set de pictograme pentru a fi utilizate pentru navigarea în bara laterală."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Browserul dvs. este învechit. Treceți la un {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "browser modern"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Nume"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Autor"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Descarca"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Când adăugați stiluri pentru conținutul paginii, trebuie să le încadrați la clasa {{cssClass}}. Omiterea acestui lucru ar putea rupe aspectul editorului!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ATENȚIE:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Opțiuni Temă"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Activ"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Inactiv"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Verificat"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Neverificat"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Editare utilizator"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Informații de Bază"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "E-mail"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Numele afișat"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autentificare"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Furnizor"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Parolă"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Schimbare parola"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Parolă nouă"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Autentificare cu Doi Factori (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Comutare 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "ID Furnizor"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Grupuri De Utilizatori"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Acest utilizator nu este asociat încă niciunui grup. Trebuie să asociezi cel puțin 1 grup unui utilizator."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Selectare grup..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Atribuie"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Metadate Extinse"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Locație"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Denumirea funcției"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Fus orar"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Utilizator actualizat cu succes."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Utilizatorul este deja alocat acestui grup!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Această cale de stocare este {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "activ"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "inactiv"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Trebuie să activezi această țintă de stocare și să aplici modificările înainte de a putea executa acțiuni."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Alegeți o nouă parolă"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Trebuie să alegi o nouă parolă:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Parolă nouă"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Verificare parolă nouă"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Schimbare parola"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Schimbarea parolei..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Pagini Recente"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Cele Mai Populare Pagini"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Informaţii"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Programare"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Socializare"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Clasificare"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Caracteristici Socializare"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Permite comentarii"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Activare funcții de comentare pentru această pagină."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Permite Evaluări"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Afișați informațiile despre autor"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Afișare Bară de Instrumente Partajare"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Afișarea unei bare de instrumente cu butoane pentru partajarea și imprimarea acestei pagini"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Afișează autorul paginii împreună cu timpul ultimei editări."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Activare funcții de evaluare pentru această pagină."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "sau creați o vizualizare personalizată?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Căutați după etichete"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Harta site-ului"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Acțiuni Pagină"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Selecția Curentă"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Golire Selecție"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Alege una sau mai multe etichete"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Căutare în rezultate..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Localizare"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Ordonare După"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Alege una sau mai multe etichete din stânga."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Căutare rezultate..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Nu am putut găsi nicio pagină cu etichetele selectate."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Nu s-a găsit nicio pagină care să corespundă opțiunilor curente de filtrare."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Ultima actualizare {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Data Creării"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Ultima modificare"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Cale"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Titlu"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Oricare"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Devino sponsor prin intermediul GitHub Sponsors (intră direct în sprijinul obiectivului dezvoltatorului Nicolas Giard de a lucra cu normă întreagă pentru Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Deveniți Sponsor"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Etichete"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Gestionare Configurație SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Furnizor"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Alege Certificat Personalizat dacă aveți deja propriul certificat."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domeniu"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Introduceți domeniul complet care indică spre wiki. (de exemplu, wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Opțiuni furnizor"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Dezactivat"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Certificat Personalizat"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Porturi"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Port HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Portul non-SSL pe care serverul va asculta pentru solicitări HTTP. De obicei 80 sau 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Port HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Portul SSL pe care serverul îl asculta pentru solicitările HTTPS. De obicei 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Redirecționare solicitări HTTP către HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Va redirecționa automat orice solicitare de pe portul HTTP către HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Rețineți că fișierul de configurare trebuie să fie scris pentru a putea salva configurația porturilor."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL Siglă"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Specifică o imagine pentru a fi utilizată ca logo. SVG, PNG, JPG sunt acceptate, într-un raport pătrat, 34x34 pixeli sau mai mare. Apasă pe butonul din dreapta pentru a încărca o nouă imagine."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Ștergeți utilizatorul?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Sigur doriți să ștergeți utilizatorul {{username}} ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Actualizare Utilizator"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Rețineți că nu aveți posibilitatea să asociați utilizatori grupurilor Administratori sau Oaspeți din acest panou."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Reține că nu poți șterge un utilizator care a creat deja conținut. În schimb, trebuie să dezactivezi utilizatorul sau să ștergi tot conținutul creat de acel utilizator."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Script-uri"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS va fi automat minimizat la salvare. Nu includeți etichetele de stil înconjurătoare, ci doar codul CSS."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Vizibil(ă) pentru toată lumea"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Vizibil(ă) pentru anumite grupuri..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Alegere Pagină..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Mod Navigare"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Arbore Site"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Navigare Clasică Arborescentă"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Navigare Personalizată"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Meniu Navigare Statică + Buton Arbore Site"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Niciunul"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Dezactivare Navigare Site"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Utilizatorul a fost verificat cu succes."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Utilizatorul a fost activat cu succes."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Utilizatorul a fost dezactivat cu succes."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Textul trebuie selectat mai întâi!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Reînnoire Certificat"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Stare Certificat"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Expirare Certificat"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "E-Mail Abonat"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Stare Curentă"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Activare"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Dezactivare"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Reînnoire Certificat..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Nu părăsi această pagină."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Certificat reînnoit cu succes."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Redirecționarea HTTP a fost modificată cu succes."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Gestionare etichetele paginii"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Nu există etichete de afișat."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Modificare Etichetă"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Etichetă"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Etichetă"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Creat(ă) la {{created}} și actualizat(ă) ultima dată la {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Șterge această etichetă"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Alege o etichetă din lista din stânga."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Adăugați o etichetă la o pagină pentru a începe."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Etichetele au fost reîmprospătate."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Etichetă ștearsă cu succes."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Eticheta a fost salvată cu succes."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Filtrare..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Vizualizare Pagini Legate"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Ștergere Etichetă?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Ești sigur că dorești să ștergi eticheta {{tag}}? Eticheta va fi, de asemenea, dezlegată din toate paginile."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Gestionare chei de acces API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API Activat"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API Dezactivat"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Activare API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Dezactivare API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Cheie API Nouă"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Nume"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Cheia Se Încheie Cu"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Expirare"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Creat(ă)"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Ultima Actualizare"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Revocare"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Încă nu au fost generată nicio cheie API."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Revocare cheie API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Ești sigur că dorești revocarea cheii {{name}}? Această acțiune nu poate fi anulată!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Revocare"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Lista de chei API a fost reîmprospătată."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Cheia a fost revocată cu succes."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Cheie API Nouă"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Cheie API creată cu succes."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Numele lipsește sau nu este valid."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Trebuie să alegi un grup."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Grupul de Oaspeți nu poate fi utilizat pentru chei API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Scopul acestei chei"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Nume"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Expirare"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Poți revoca oricând o cheie, indiferent de expirare."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Domenii de Permisiune"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Acces Complet"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "sau utilizează permisiuni de grup..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Generare"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Grup"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Cheia API va avea aceleași permisiuni ca grupul selectat."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 de zile"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 de zile"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 de zile"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 an"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 ani"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Copiază cheia afișată mai jos ca {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "NU va mai fi afișat din nou"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API-ul a fost activat cu succes."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API-ul a fost dezactivat cu succes."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Salvat(ă)"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Niciuna"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Licență Creative Commons Atribuire"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Licență Creative Commons Atribuire-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Licență Creative Commons Atribuire-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Licență Creative Commons Atribuire-NonComercial"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Licență Creative Commons Atribuire-NonComercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Licență Creative Commons Atribuire-NonComercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Domeniu Public"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Toate Drepturile Rezervate"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Licență Conținut"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Licență afișată în subsolul tuturor paginilor de conținut."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Conținutul este disponibil sub {{license}}, de {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Nu poți descărca conținutul paginii."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Nu poți descărca conținutul pentru această versiune a paginii."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Nu poți vizualiza sursa acestei versiuni a paginii."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Vizualizarea sursei de la {{date}} a paginii {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID Versiune {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Restaurare versiune pagină?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Sigur dorești să restaurezi conținutul acestei pagini așa cum a fost la {{date}}? Această versiune va fi copiată în capătul istoricului curent. Ca atare, vor fi păstrate în continuare versiuni mai noi."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Restaurare"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Versiunea paginii a fost restaurată cu succes!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} caractere, {{words}} cuvinte"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Rezolvare Conflict Salvare"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Folosire Versiune Locală"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Folosire Versiune la Distanță"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Renunță la modificările locale și folosește cea mai recentă versiune"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Folosește conținutul din panoul din stânga"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Vizualizare Cea Mai Recentă Versiune"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "O versiune mai recentă a acestei pagini a fost salvată de {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Ce dorești să faci?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Utilizează versiunea locală curentă și ignoră cele mai recente modificări."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Utilizează versiunea de la distanță (cea mai recentă) și renunță la modificări."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Suprascriere cu Versiunea la Distanță?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Ești sigur că dorești să înlocuiești versiunea curentă cu cel mai recent conținut de la distanță? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Modificările tale curente vor fi pierdute."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Confirmare"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Versiune Locală {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(modificabil(ă))"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(doar vizualizare)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Versiune la Distanță {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Editarea curentă, bazată pe versiunea paginii de la {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Ultima modificare de {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Titlu:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Descriere:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Aveți modificări ne-salvate. Sunteți sigur că doriți să părăsiți editorul?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Conflict la salvare! Un alt utilizator a modificat deja această pagină."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplicare"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Nume Afișat"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Locație"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Denumire Funcție"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Fus Orar"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Informațiile mele personale"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Informațiile Mele"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Vizualizare Profil Public"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autentificare"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Furnizor"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Schimbare Parolă"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Parolă Curentă"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Parolă Nouă"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Confirmare Parolă Nouă"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grupuri"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Activitate"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Aderat la"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Ultima actualizare a profilului la"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Ultima autentificare la"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Pagini create"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Comentarii postate"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profil salvat cu succes."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Parolă schimbată cu succes."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Pagini"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Comentarii"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Lista paginilor pe care le-am creat sau am efectuat ultima modificare"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Nu există pagini de afișat."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Lista de pagini a fost actualizată."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Titlu"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Cale"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Creat(ă)"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Ultima Actualizare"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Ultimele Autentificări"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Navigare"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Meniu Principal"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Director Curent"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(rădăcină)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Copiați de la localizarea..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Localizare Sursă"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Localizarea din care vor fi copiate elementele de navigare."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Copiere"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Alegeți localizarea din care vor fi copiate elementele. Elementele vor fi adăugate listei curente de elemente din localizarea activă."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Navigare Statică"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Doar Meniu Navigare Statică"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Preferinţe"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Format Dată"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Localizare Implicită"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Aspect"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Implicit(ă) a(l) Siteului"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Mod Luminos"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Mod Întunecat"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Verificare Certificat SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Unele gazde necesită dezactivarea verificării certificatului SSL. Se lasă activată pentru o securitate adecvată."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Legătură Externă (Fereastră Nouă)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Securitate"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Dimensiune Maximă Încărcare"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Număr Maxim de Fișiere per Încărcare"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Câte fișiere pot fi încărcate într-un singur lot?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Dimensiunea maximă pentru un singur fișier."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "octeţi"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "fișiere"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Încărcări"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Aceste setări afectează numai Wiki.js. Dacă utilizezi un proxy invers (de exemplu nginx, apache, Cloudflare), trebuie să modifici setările sale pentru a se potrivi."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Configurare setări de securitate"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Extensii"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Instala extensii pentru un plus de funcționalitate"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Furnizor"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Adaugă discuții la paginile tale wiki"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Configurare Furnizor"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Acest furnizor nu are opțiuni de configurare ce pot fi modificate."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Orice conținut (pagini, încărcări, comentarii etc.) creat de acest utilizator va fi realocat utilizatorului ales mai jos. Este recomandat să creezi un utilizator țintă fals (de exemplu, Utilizator Șters) dacă nu vrei să fie realocat conținutul nici unui utilizator activ curent."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Strategii Active"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Adăugare Strategie"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stiluri"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Trebuie să înconjurați codul javascript cu etichete de script HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Această pagină nu este publicată."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Comentarii"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Scrie un comentariu nou..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Numele Tău"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Adresa Ta de Email"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Format Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Publicare Comentariu"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Încărcare comentarii ..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Publicare ca {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Fii primul care comentează."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Niciun comentariu încă."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Actualizare Comentariu"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Confirmare Ștergere"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Ești sigur că dorești să ștergi definitiv acest comentariu?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Această acțiune nu poate fi anulată!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "modificat(ă) {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Comentariu nou publicat cu succes."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Comentariul este gol sau prea scurt!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Comentariul a fost actualizat cu succes."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Comentariul a fost șters cu succes."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Comutare Verificare Ortografică"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Autentificare"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Ecran De Autentificare"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Configurare JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Trecere Peste Ecran Autentificare"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Dacă utilizatorul să fie redirecționat automat către primul furnizor de autentificare."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Adresă URL Imagine Fundal"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Specificați o imagine pentru a fi utilizată ca fundal la autentificare. PNG și JPG sunt acceptate, 1920x1080 recomandat. Lasă gol pentru implicit. Apasă pe butonul din dreapta pentru a încărca o nouă imagine. Reține că grupul de Oaspeți trebuie să aibă acces de citire la imaginea selectată!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Ascundere Furnizor Autentificare Locală"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Nu afișa furnizorul local de autentificare pe ecranul de autentificare. Adaugă ?all la adresa URL pentru a o utiliza temporar."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Securitate"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Forțare 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Forțează toți utilizatorii să utilizeze Autentificarea cu Doi Factori atunci când se folosește un furnizor de autentificare cu un formular utilizator / parolă."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Vizualizare Discuție"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Comentariu Nou"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Conținut Comentariu"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Discută"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Etichete"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Pagini care se potrivesc cu etichetele"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Înapoi la început"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Nume de Utilizator"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Ieșire"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Configurare canal de interpretare a paginilor"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Titlul site-ului conține caractere nevalide."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Configurarea site-ului a fost salvată cu succes."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA a fost dezactivat cu succes."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA a fost activat cu succes."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Se solicită resetarea parolei ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Verificați e-mailurile pentru instrucțiuni de resetare a parolei!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Activă"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Utilizatorii se pot autentifica utilizând această strategie?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Numele afișat"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Titlul afișat utilizatorului final pentru această strategie de autentificare."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Selectați un furnizor de autentificare"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Introduceți utilizatorul și parola"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Ai uitat parola"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Introduceți codul de securitate generat de pe dispozitivul dvs. de încredere:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Administratorul a solicitat ca autentificarea în doi pași (2FA) să fie activată în contul dvs."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Scanați codul QR de mai jos din aplicația mobilă 2FA:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Introduceți codul de securitate generat de pe dispozitivul dvs. de încredere:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Selectați"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Selectați locația paginii noi"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Mutați / Redenumiți locația paginii"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Selectați o pagină"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Dosare virtuale"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Pagini"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Acest dosar este gol."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": ""
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

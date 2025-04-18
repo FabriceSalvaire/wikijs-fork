@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Απαιτείται σύνδεση"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Email / Όνομα χρήστη"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Κωδικός"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Σύνδεση"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Αποτυχία εισόδου"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου ή κωδικός"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Μη έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου χρήστη"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Σφάλμα σύνδεσης"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Δεν έχετε εξουσιοδοτηθεί να συνδεθείτε σε αυτόν τον ιστότοπο ακόμα."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Πάρα πολλές απόπειρες!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Έχετε κάνει πολλές αποτυχημένες προσπάθειες σε σύντομο χρονικό διάστημα, δοκιμάστε ξανά {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Ο χρήστης δεν βρέθηκε"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Τοπικός"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Λογαριασμός Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Έλεγχος ταυτότητας δύο παραγόντων"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Απαιτείται κωδικός ασφαλείας:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Επιβεβαίωση"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Ταμπλό"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Γενικά"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Τοποθεσία"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Στατιστικές"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Θέμα"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Ομάδες"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Χρήστες"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Πιστοποίηση"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Επεξεργαστής"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Καταγραφή"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Απόδοση"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Μηχανή αναζήτησης"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Χώρος Αποθήκευσης"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Πρόσβαση API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Πληροφορίες συστήματος"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Βοηθητικά προγράμματα"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Εργαλεία προγραμματιστή"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Συμβάλλετε στο Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Κύριες ρυθμίσεις του Wiki σας"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Πληροφορίες ιστοσελίδας"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Επωνυμία ιστοσελίδας"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Ιστοσελίδα"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Χρήστες"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Ενότητες"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Σύστημα"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Ορισμός επιλογών μετάφρασης για το Wiki σας"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Ρυθμίσεις τοπικών ρυθμίσεων"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Πολύγλωσση ονοματοθεσία"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Λήψη τοπικών ρυθμίσεων"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Βασικές τοπικές ρυθμίσεις"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Όλα τα UI στοιχεία κειμένου θα εμφανίζονται στην επιλεγμένη γλώσσα."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Αυτόματη ενημέρωση"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Αυτόματη λήψη ενημερωμένων εκδόσεων σε όλες τις τοπικές ρυθμίσεις με ονόματα που ενεργοποιούνται παρακάτω."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Πολύγλωσσες ονοματοθεσίες"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Επιτρέπει πολλαπλές γλώσσες εκδόσεις της ίδιας σελίδας."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Ενεργές Ονοματοθεσίες"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Λίστα τοπικών ρυθμίσεων που έχουν ενεργοποιηθεί για πολυγλωσσικά ονόματα. Οι βασικές τοπικές ρυθμίσεις που ορίζονται παραπάνω θα συμπεριλαμβάνονται πάντα ανεξάρτητα από αυτήν την επιλογή."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Ο κωδικός τοπικής ρύθμισης θα προστεθεί σε όλες τις διαδρομές. (π.χ. / / {{langCode}} / όνομα σελίδας)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Οι διαδρομές χωρίς κωδικό τοπικής ρύθμισης θα ανακατευθυνθούν αυτόματα στις βασικές τοπικές ρυθμίσεις που ορίζονται παραπάνω."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Αποθήκευση"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Ακύρωση"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Κατεβάστε"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Ανεβάστε"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Απόρριψη"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Καθάρισε"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Δημιουργία"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Επεξεργασία"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Διαγραφή"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Ανανέωση"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Αποθήκευση αλλαγών"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Προχωρήστε"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Τοπικές ρυθμίσεις ιστοσελίδας"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Αυτόματη λήψη ενημερώσεων σε αυτές τις τοπικές ρυθμίσεις καθώς καθίστανται διαθέσιμες."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Πληροφορίες για το σύστημά σας"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Πληροφορίες κεντρικού υπολογιστή"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Τρέχουσα έκδοση"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Τελευταία έκδοση"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Δημοσιεύθηκε"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Λειτουργικό σύστημα"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Όνομα κεντρικού υπολογιστή"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Πυρήνες CPU"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Συνολική μνήμη RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Κατάλογος εργασίας"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Αρχείο ρύθμισης παραμέτρων"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Χρήση μνήμης RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Βοηθήστε στην υποστήριξη της ανάπτυξης και των λειτουργιών του Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Χρηματοδοτήστε την εργασία μας"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Διέδωσέ το"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Μιλήστε με τους φίλους και τους συναδέλφους σας για το πόσο φοβερό είναι το Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Ακολουθήστε μας στο {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Υποβάλετε μια ιδέα ή ψηφίστε μια προτεινόμενη από την {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "πίνακα αιτημάτων χαρακτηριστικών"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Βρήκατε ένα σφάλμα; Υποβάλετε ένα πρόβλημα στο {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Βοηθήστε στη μετάφραση του Wiki.js στη γλώσσα σας. Ενημερώστε μας στο {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Κάντε μια δωρεά"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Συνέβαλε"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Το Wiki.js αποτελεί επίσης μέρος της πρωτοβουλίας Open Collective, ενός διαφανούς ταμείου που πηγαίνει προς τους κοινοτικούς πόρους. Μπορείτε να συνεισφέρετε οικονομικά με μια δωρεά μηνιαία ή μία φορά:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Χρειαζόμαστε τη βοήθειά σας για να βελτιώσουμε συνεχώς το λογισμικό και να εκτελέσουμε τις διάφορες συναφείς υπηρεσίες (π.χ. παροχή εξυπηρετητή και δικτύωση)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Το Wiki.js είναι ένα δωρεάν και ανοιχτού κώδικα λογισμικό που σας φέρει το {{0}} από το {{1}} και το {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "Συνεισφέροντες"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Σελίδα"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Απόδοση"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Παρακαλώ περιμένετε…"
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Η σελίδα δημιουργήθηκε με επιτυχία."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Παρουσιάστηκε σφάλμα κατά τη δημιουργία της σελίδας"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Μπορείτε επίσης να αγοράσετε μπλουζάκια Wiki.js για να υποστηρίξετε οικονομικά το έργο:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Κατάστημα Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "Εντάξει"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Όλα τα δικαιώματα διατηρούνται."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Αυτή η σελίδα δεν υπάρχει ακόμα."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Θα θέλατε να τη δημιουργήσετε τώρα;"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Δημιουργία σελίδας"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Πήγαινε πίσω"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Σελίδες"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Πλοήγηση"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Διαχείριση της πλοήγησης ιστότοπου"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Προσθέστε"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Σύνδεσμος"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Διαχωριστικό"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Κεφαλίδα"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Επιγραφή"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Εικονίδιο"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Τύπος προορισμού"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Προορισμός"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Επιλέξτε ένα στοιχείο πλοήγησης στα αριστερά."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Χωρίς τίτλο {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Εξωτερικός σύνδεσμος"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Αρχική σελίδα"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Σελίδα"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Ερώτημα αναζήτησης"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Επεξεργασία {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Διαγραφή {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Η πλοήγηση αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Κάντε κλικ στο κουμπί Προσθήκη για να προσθέσετε το πρώτο στοιχείο πλοήγησης."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Η πλοήγηση είναι κενή"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Εφαρμογή"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Επιβεβαίωση κωδικού πρόσβασης"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Όνομα"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Εγγράφου"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Δημιουργία λογαριασμού"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Έχετε ήδη λογαριασμό; {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Σύνδεση αντί"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Σύνδεση χρησιμοποιώντας {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Ξεχάσατε τον κωδικό σας;"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "ή συνδεθείτε χρησιμοποιώντας …"
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Δεν έχετε λογαριασμό ακόμα; {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Δημιουργία λογαριασμού"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Εισαγάγετε μία έγκυρη ηλεκτρονική διεύθυνση / όνομα χρήστη."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Εισαγάγετε έναν έγκυρο κωδικό πρόσβασης."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Επιτυχής σύνδεση! Ανακατεύθυνση …"
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Σύνδεση …"
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Ο έλεγχος ταυτότητας δεν είναι διαθέσιμος."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Συμπληρώστε την παρακάτω φόρμα για να δημιουργήσετε τον λογαριασμό σας."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Παρακαλώ περιμένετε"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Ο λογαριασμός δημιουργήθηκε με επιτυχία!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Δημιουργία λογαριασμού …"
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Λείπει η διεύθυνση ηλεκτρονικού ταχυδρομείου."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Λείπει ο κωδικός πρόσβασης."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Ο κωδικός πρόσβασης είναι πολύ μικρός."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Και οι δύο κωδικοί πρόσβασης δεν ταιριάζουν."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Το όνομα λείπει."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Το όνομα είναι πολύ μικρό."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Το όνομα είναι πολύ μεγάλο."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Ακύρωση"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Επαναφορά κωδικού πρόσβασης"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας για να λάβετε τις οδηγίες για να επαναφέρετε τον κωδικό πρόσβασης:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Ταχυδρομείο"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Ρύθμιση παραμέτρων αλληλογραφίας"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Διαμόρφωση"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (προαιρετικό)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Ελέγξτε τα μηνύματα ηλεκτρονικού ταχυδρομείου σας για να ενεργοποιήσετε τον λογαριασμό σας."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Η σελίδα ενημερώθηκε με επιτυχία."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Μην εξουσιοδοτημένη"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Δεν μπορείτε να δείτε αυτή τη σελίδα."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Δεν μπορείτε να προβάλετε την πηγή σελίδας."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Δεν μπορείτε να δείτε το ιστορικό σελίδας."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Δεν μπορείτε να επεξεργαστείτε τη σελίδα."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Δεν μπορείτε να δημιουργήσετε τη σελίδα."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Πήγαινε πίσω"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Αρχική σελίδα"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Δε βρέθηκε"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Αυτή η σελίδα δεν υπάρχει."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Σύνδεση ως …"
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Γίνετε Patron"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Γίνετε υποστηρικτής ή χορηγός μέσω του Patreon (πηγαίνει κατευθείαν στον στόχο του επικεφαλής προγραμματιστή Nicolas Giard να εργάζεται πλήρους απασχόλησης στο Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Καλώς ήλθατε στο Wiki σας!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Ας ξεκινήσουμε δημιουργώντας την αρχική σελίδα."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Δημιουργία Αρχικής Σελίδας"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Σημαίες"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Κάντε μια μοναδική ή επαναλαμβανόμενη δωρεά μέσω PayPal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Δεχόμαστε δωρεές χρησιμοποιώντας το Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Πακέτο τοπικών ρυθμίσεων"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Εάν δεν είστε συνδεδεμένοι στο διαδίκτυο ή δεν μπορείτε να κάνετε λήψη αρχείων τοπικών ρυθμίσεων χρησιμοποιώντας την παραπάνω μέθοδο, μπορείτε να χρησιμοποιήσετε τα πακέτα με μη αυτόματο τρόπο, ανεβάζοντας τα παρακάτω."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Περιήγηση…"
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Διαχείριση webhooks σε εξωτερικές υπηρεσίες"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Στείλτε ένα δοκιμαστικό μήνυμα ηλεκτρονικού ταχυδρομείου"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Διεύθυνση ηλεκτρονικού ταχυδρομείου παραλήπτη"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Αποστολή ηλεκτρονικού ταχυδρομείου"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Αποστολέας"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Όνομα αποστολέα"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Ηλεκτρονική Διεύθυνση Αποστολέα"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Ρυθμίσεις SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Εξυπηρετητής"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Θύρα"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Συνήθως 465 (συνιστάται), 587 ή 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Ασφαλής (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Θα πρέπει να είναι ενεργοποιημένη όταν χρησιμοποιείτε τη θύρα 465, διαφορετικά απενεργοποιημένο (587 ή 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Όνομα χρήστη"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Κωδικός πρόσβασης"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "Το DKIM (DomainKeys Identified Mail) παρέχει ένα επίπεδο ασφάλειας σε όλα τα μηνύματα ηλεκτρονικού ταχυδρομείου που αποστέλλονται από το Wiki.js παρέχοντας τα μέσα για τους παραλήπτες να επικυρώσουν το όνομα τομέα και να εξασφαλίσουν την αυθεντικότητα του μηνύματος."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Χρήση του DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Όνομα τομέα"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Επιλογέας κλειδιού"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Ιδιωτικό κλειδί"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Ιδιωτικό κλειδί για τον επιλογέα σε μορφή PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Στείλτε ένα δοκιμαστικό μήνυμα ηλεκτρονικού ταχυδρομείου για να διασφαλίσετε ότι η ρύθμιση παραμέτρων SMTP λειτουργεί."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Η διαμόρφωση αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Η έκδοση της βάσης δεδομένων σας δεν υποστηρίζεται πλήρως. Ορισμένες λειτουργίες ενδέχεται να είναι περιορισμένες ή να μη λειτουργούν όπως αναμένεται."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Οι πληροφορίες συστήματος έχουν ανανεωθεί."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Διαμορφώστε τις ρυθμίσεις ελέγχου ταυτότητας του Wiki σας"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Στρατηγικές"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Καθολικές ρυθμίσεις για προχωρημένους"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "Κοινό JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "URN κοινού που χρησιμοποιείται στη JWT που εκδίδεται κατά τη σύνδεση. Συνήθως το όνομα του domain σας. (π.χ. το urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Λήξη διακριτικού"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Η περίοδος λήξης ενός διακριτικού έως ότου πρέπει να ανανεωθεί. (προεπιλογή: 30 λεπτά)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Περίοδος ανανέωσης διακριτικού"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Η μέγιστη περίοδος που μπορεί να ανανεωθεί ένα διακριτικό όταν λήξει. (προεπιλογή: 14 ημέρες)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Αυτή η στρατηγική είναι {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "Ενεργό"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "μη ενεργό"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "και δεν μπορεί να απενεργοποιηθεί."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Ένα δοκιμαστικό μήνυμα ηλεκτρονικού ταχυδρομείου στάλθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Τροποποιήστε την εμφάνιση και την αίσθηση του Wiki σας"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Θέμα ιστότοπου"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Τα θέματα επηρεάζουν την προβολή των σελίδων περιεχομένου. Δεν επηρεάζονται άλλα τμήματα του ιστότοπου (όπως ο τομέας επεξεργασίας ή η περιοχή διαχειριστή)."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Σκοτεινή λειτουργία"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Δε συνιστάται για προσβασιμότητα. Μπορεί να μην υποστηρίζεται από όλα τα θέματα."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Έγχυση Κώδικα"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Παράκαμψη CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Κώδικα CSS για την εισαγωγή μετά την προεπιλεγμένη CSS του συστήματος. Εξετάστε το ενδεχόμενο να χρησιμοποιήσετε προσαρμοσμένα θέματα αν έχετε μεγάλο αριθμό κώδικα CSS. Η έγχυση πάρα πολύ κώδικα CSS θα οδηγήσει σε κακή απόδοση φόρτωσης σελίδας! Το CSS θα είναι αυτόματα αυτόματο."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Έγχυση κεφαλής HTML"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Κωδικός HTML που πρόκειται να εγχυθεί λίγο πριν την ετικέτα της κεφαλής κλεισίματος. Συνήθως για ετικέτες script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Έγχυση σώματος HTML"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Κωδικός HTML που πρόκειται να εγχυθεί λίγο πριν την ετικέτα κλεισίματος σώματος."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Κατεβάστε Θέματα"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Περιοχή διαχείρισης"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Ρύθμιση στρατηγικής"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Αυτή η στρατηγική δεν έχει επιλογές διαμόρφωσης που μπορείτε να τροποποιήσετε."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Εγγραφή"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Να επιτρέπεται η αυτο-εγγραφή"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Να επιτρέπεται σε κάθε χρήστη που έχει εξουσιοδοτηθεί επιτυχώς από τη στρατηγική να έχει πρόσβαση στο Wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Περιορίστε σε συγκεκριμένους τομείς ηλεκτρονικού ταχυδρομείου"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Λίστα τομέων που επιτρέπεται να εγγραφούν. Ο τομέας διεύθυνσης ηλεκτρονικού ταχυδρομείου χρήστη πρέπει να ταιριάζει με ένα από αυτά για να αποκτήσει πρόσβαση."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Αναθέστε στην ομάδα"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Αυτόματη ανάθεση νέων χρηστών σε αυτές τις ομάδες."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Ασφάλεια"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Υποχρεώστε όλους τους χρήστες να χρησιμοποιούν έλεγχο ταυτότητας δύο παραγόντων (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Οι χρήστες θα πρέπει να ρυθμίσουν το 2FA την πρώτη φορά που θα συνδεθούν και δεν μπορεί να απενεργοποιηθεί από το χρήστη."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Αναφορά ρύθμισης παραμέτρων"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Ορισμένες στρατηγικές ενδέχεται να απαιτούν ορισμένες τιμές διαμόρφωσης για τον παροχέα σας. Αυτά παρέχονται μόνο για αναφορά και ενδέχεται να μην απαιτούνται από την τρέχουσα στρατηγική."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Πρέπει πρώτα να ορίσετε ένα έγκυρο {{siteUrl}} ! Κάντε κλικ στο {{general}} στην αριστερή πλαϊνή μπάρα."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Επιτρεπόμενες προελεύσεις Web"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL επαναφοράς κλήσης / URI ανακατεύθυνσης"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Διεύθυνση URL σύνδεσης"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Διεύθυνση URL αποσύνδεσης"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Μέθοδος ελέγχου ταυτότητας τελικού σημείου διακριτικού"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Αρχική σελίδα"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Νέα σελίδα"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Τρέχουσα σελίδα"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Προβολή"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Επεξεργασία"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Ιστορικό"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Προβολή πηγής"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Μετακίνηση / Μετονομασία"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Διαγραφή"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Στοιχεία"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Εικόνες & Αρχεία"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Αναζήτηση…"
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Διαχείριση"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Λογαριασμός"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Το Wiki μου"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Προφίλ"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Αποσύνδεση"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Σύνδεση"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Τελευταία επεξεργασία από"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Αδημοσίευτα"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Επεξεργασία σελίδας"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Πίνακας Περιεχομένων"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Σελιδοδείκτης"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Μοιραστείτε"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Μορφή εκτύπωσης"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Κλείσετε"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Σελίδα"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Ορίστε προορισμούς δημιουργίας αντιγράφων ασφαλείας και συγχρονισμού για το περιεχόμενό σας"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Στόχοι"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Κατάσταση"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Τελευταίος συγχρονισμός {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Η τελευταία προσπάθεια ήταν {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Μήνυμα σφάλματος"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Δεν έχεις ενεργό προορισμό αποθήκευσης."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Διαμόρφωση προορισμού"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Αυτός ο προορισμός χώρου αποθήκευσης δεν έχει επιλογές ρύθμισης παραμέτρων που μπορείτε να τροποποιήσετε."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Κατεύθυνση συγχρονισμού"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Επιλέξτε τον τρόπο χειρισμού του συγχρονισμού περιεχομένου για αυτόν τον προορισμό χώρου αποθήκευσης."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Αμφίδρομος"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Ώθηση στον προορισμό"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Τραβήξτε από τον προορισμό"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Μη υποστηριζόμενη"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Σε αμφίδρομη λειτουργία, το περιεχόμενο αρχικά τραβιέται από τον προορισμό αποθήκευσης. Οποιοδήποτε νεότερο περιεχόμενο αντικαθιστά το τοπικό περιεχόμενο. Το νέο περιεχόμενο από τον τελευταίο συγχρονισμό έπειτα ωθείται στο στόχο αποθήκευσης, αντικαθιστώντας οποιοδήποτε περιεχόμενο στον προορισμό εάν υπάρχει."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Το περιεχόμενο ωθείται πάντοτε στον προορισμό αποθήκευσης, αντικαθιστώντας το υπάρχον περιεχόμενο. Αυτή είναι η ασφαλέστερη επιλογή για σενάρια δημιουργίας αντιγράφων ασφαλείας."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Το περιεχόμενο τραβιέται πάντα από τον προορισμό αποθήκευσης, αντικαθιστώντας οποιοδήποτε τοπικό περιεχόμενο που υπάρχει ήδη. Αυτή η επιλογή συνήθως προορίζεται για την εισαγωγή περιεχομένου μιας χρήσης. Προσοχή με αυτήν την επιλογή, καθώς κάθε τοπικό περιεχόμενο θα αντικατασταθεί πάντα!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Χρονοδιάγραμμα Συγχρονισμού"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Για λόγους απόδοσης, αυτός ο προορισμός χώρου αποθήκευσης συγχρονίζει τις αλλαγές σε ένα χρονοδιάγραμμα βάσει χρονικού διαστήματος, αντί για κάθε αλλαγή. Ορίστε σε ποιο χρονικό διάστημα θα πρέπει να πραγματοποιηθεί ο συγχρονισμός."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Αυτή τη στιγμή ορίζεται σε κάθε {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Η προεπιλογή είναι κάθε {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Ενέργειες"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Εκτελέσετε"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Ρυθμίστε τις δυνατότητες αναζήτησης του Wiki σας"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Αναδόμηση ευρετηρίου"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Μηχανή αναζήτησης"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Διαμόρφωση μηχανής"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Αυτή η μηχανή δεν έχει επιλογές διαμόρφωσης που μπορείτε να τροποποιήσετε."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Η λίστα των μηχανών αναζήτησης έχει ανανεωθεί."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Η διαμόρφωση της μηχανής αναζήτησης αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Το ευρετήριο ξαναχτίστηκε επιτυχώς."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Προέκυψε ένα μη αναμενόμενο σφάλμα."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Σελίδες"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Χρήστες"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Ομάδες"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Εκτελείτε την πιο πρόσφατη έκδοση."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Μια νέα έκδοση είναι διαθέσιμη: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Το Wiki.js είναι ένα έργο ελεύθερου και ανοιχτού κώδικα. Υπάρχουν διάφοροι τρόποι με τους οποίους μπορείτε να συνεισφέρετε στο έργο."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Χρειαζόμαστε τη βοήθειά σας!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Μάθε περισσότερα"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Η λίστα των στρατηγικών έχει ανανεωθεί."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Η ρύθμιση παραμέτρων ελέγχου ταυτότητας αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Γενικά"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Διεύθυνση URL ιστότοπου"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Πλήρης διεύθυνση URL για το Wiki σας, χωρίς την τελική κάθετο. (π.χ. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Τίτλος Ιστοσελίδας"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Εμφανίζεται στην επάνω γραμμή και προσαρτάται στο μετα-τιτλο σε όλες τις σελίδες."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Λογότυπο"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Αποστολή λογότυπου"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Καθάρισε"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Μια εικόνα των {{size}} εικονοστοιχείων συνιστάται για καλύτερα αποτελέσματα."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} ή {{lastType}} αρχεία μόνο"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Υποσέλιδο πνευματικών δικαιωμάτων"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Όνομα εταιρείας / οργανισμού"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Όνομα για χρήση όταν εμφανίζεται ειδοποίηση πνευματικών δικαιωμάτων στο υποσέλιδο. Αφήστε κενό για απόκρυψη."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Περιγραφή ιστοσελίδας"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Προεπιλεγμένη περιγραφή όταν δεν παρέχεται καμία για μια σελίδα."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Μέτα Ρομπότ"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Προεπιλογή: Ευρετήριο, Ακολουθήστε. Μπορεί επίσης να οριστεί ανά σελίδα."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Πληκτρολογήστε τουλάχιστον 2 χαρακτήρες για να ξεκινήσετε την αναζήτηση …"
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Αναζήτηση…"
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Δεν υπάρχουν σελίδες που να ταιριάζουν με το ερώτημά σας."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Βρέθηκαν {{total}} αποτελέσματα"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Μήπως εννοείς…"
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Κλείσετε"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Αντιγραφή συνδέσμου αναζήτησης"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Πολύ αδύναμος"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Αδύναμος"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Μέτριος"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Δυνατός"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Πολύ δυνατός"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Διαγραφή σελίδας"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Είστε βέβαιοι ότι θέλετε να διαγράψετε τη σελίδα {{title}} ;"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Η σελίδα μπορεί να αποκατασταθεί από την περιοχή διαχείρισης."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Αναζήτηση χρήστη"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Αναζήτηση χρηστών …"
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Κάθε"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Λεπτό(ά)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Ώρα(ες)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Ημέρα(ες)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Μήνας (ες)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Έτος(η)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Ιδιότητες σελίδας"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Πληροφορίες σελίδας"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Τίτλος"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Σύντομη περιγραφή"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Εμφανίζεται κάτω από τον τίτλο"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Διαδρομή και κατηγοριοποίηση"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Τοποθεσία"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Διαδρομή"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Μη συμπεριλαμβάνετε αρχικές ή καταληκτικές καθέτους."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Ετικέτες"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Χρησιμοποιήστε ετικέτες για να κατηγοριοποιήσετε τις σελίδες σας και να τις βρείτε πιο εύκολα."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Κατάσταση δημοσίευσης"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Δημοσιεύθηκε"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Οι μη δημοσιευμένες σελίδες εξακολουθούν να εμφανίζονται από τους χρήστες που έχουν δικαιώματα εγγραφής σε αυτήν τη σελίδα."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Δημοσίευση ξεκινώντας …"
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Αφήστε κενό για καμία ημερομηνία έναρξης"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Δημοσίευση που τελειώνει …"
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Αφήστε κενό για καμία ημερομηνία λήξης"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Απόρριψη μη αποθηκευμένων αλλαγών;"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Έχετε μη αποθηκευμένες αλλαγές. Είστε βέβαιοι ότι θέλετε να αφήσετε τον επεξεργαστή και να απορρίψετε τυχόν τροποποιήσεις που κάνατε από την τελευταία αποθήκευση;"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Απορρίψετε τις αλλαγές"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Ποιο πρόγραμμα επεξεργασίας θέλετε να χρησιμοποιήσετε για αυτήν τη σελίδα;"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Αυτό δεν μπορεί να αλλάξει μόλις δημιουργηθεί η σελίδα."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Στοιχεία"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Νέος φάκελος"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Όνομα φακέλου"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Πρέπει να ακολουθήσετε τον φάκελο στοιχείων {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "κανόνες ονοματολογίας"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Μετακίνηση"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Μετονομασία"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Βελτιστοποίηση"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Προεπισκόπηση"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Ιδιότητες"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Αυτός ο φάκελος στοιχείων είναι κενός."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} αρχεία"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Εισάγετε"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "Ταυτότητα"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Όνομα αρχείου"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Τύπος"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Μέγεθος αρχείου"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Προστέθηκε"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Ενέργειες"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Ανέβασμα στοιχείων"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Αναζήτηση ή απόθεση αρχείων εδώ …"
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Λήψη απομακρυσμένης εικόνας"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Ευθυγράμμιση εικόνας"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Μετονομασία στοιχείου"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Εισαγάγετε το νέο όνομα για αυτό το στοιχείο:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Διαγραφή στοιχείου"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Είστε βέβαιοι ότι θέλετε να διαγράψετε το στοιχείο"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Αυτή η πράξη δεν μπορεί να αναιρεθεί!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Η λίστα των στοιχείων ανανεώθηκε με επιτυχία."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Η αποστολή του αρχείου απέτυχε."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Ο φάκελος στοιχείων δημιουργήθηκε με επιτυχία."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Το στοιχείο μετονομάστηκε με επιτυχία."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Το στοιχείο διαγράφηκε επιτυχώς."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Πρέπει να επιλέξετε ένα αρχείο για να το ανεβάσετε πρώτα!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Φέρε"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Επιστροφή στο πρόγραμμα επεξεργασίας"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Τολμηρή"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Πλάγια γραφή"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Διακριτή διαγραφή"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Επικεφαλίδα {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Δείκτης"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Εκθέτης"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Πληροφορίες Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Επιτυχία Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Προειδοποίηση Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Σφάλμα Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Μη ταξινομημένη λίστα"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Ταξινομημένη λίστα"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Ενσωματωμένος κώδικας"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Πλήκτρο πληκτρολογίου"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Οριζόντια μπάρα"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Απόκρυψη / Εμφάνιση παραθύρου προεπισκόπησης"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Εισαγωγή συνδέσμου"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Εισαγωγή στοιχείων"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Εισαγωγή μπλοκ"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Εισαγωγή μπλοκ κώδικα"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Εισαγάγετε βίντεο / ήχο"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Εισαγωγή διαγράμματος"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Εισαγωγή έκφρασης μαθηματικών"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Βοηθός πίνακα"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Λειτουργία χωρίς περισπασμούς"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Βοήθεια για τη μορφοποίηση Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Προβολή πηγής σελίδας {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Επιστροφή στην Κανονική προβολή"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "Αναγνωριστικό {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Γλώσσα"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Αναλυτικά Στοιχεία"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Προσθέστε εργαλεία ανάλυσης και παρακολούθησης στο Wiki σας"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Παροχείς"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Διαμόρφωση παροχέα"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Αυτός ο πάροχος δεν έχει επιλογές διαμόρφωσης που μπορείτε να τροποποιήσετε."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Ο κατάλογος των παροχέων ανανεώθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Η ρύθμιση παραμέτρων των αναλυτικών στοιχείων αποθηκεύτηκε με επιτυχία"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Συντήρηση και διάφορα εργαλεία"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Εργαλεία"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Πιστοποίηση"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Διάφορα εργαλεία για έλεγχο ταυτότητας / χρήστες"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Εκκαθάριση Cache"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Εκκαθάριση cache διαφόρων στοιχείων"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Τελικό σημείο GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Αλλάξτε το τελικό σημείο GraphQL για το Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Εισαγωγή από το Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Μετεγκατάσταση δεδομένων από προηγούμενη εγκατάσταση 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Τηλεμετρία"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Ενεργοποίηση/απενεργοποίηση τηλεμετρίας ή επαναφορά του αναγνωριστικού υπολογιστή-πελάτη"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Σχόλια"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Δημοσιεύθηκε"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Ιδιωτικό"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Καθολική"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Φόρτωση σελίδας …"
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Κωδικός"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Όνομα"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Τοπικό όνομα"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "Δεξιά προς Αριστερά"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Διαθεσιμότητα"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Κατεβάστε"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Περιεχόμενο"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Διάφορα εργαλεία για σελίδες"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Σετ εικονιδίων"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Σύνολο εικονιδίων που θα χρησιμοποιηθούν για την πλευρική πλοήγηση."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Το πρόγραμμα περιήγησης σας είναι ξεπερασμένο. Αναβαθμίστε σε  {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "σύγχρονο πρόγραμμα περιήγησης"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Όνομα"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Συγγραφέας"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Κατεβάστε"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Κατά την προσθήκη στυλ για το περιεχόμενο της σελίδας, πρέπει να τα προσθέσετε στην κλάση {{cssClass}}. Παραλείποντας αυτό θα μπορούσε να σπάσει τη διάταξη του εκδότη!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ΠΡΟΣΟΧΗ:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Επιλογές θέματος"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Ενεργός"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Ανενεργό"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Επαληθεύτηκε"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Ανεπιβεβαίωτος"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Επεξεργασία χρήστη"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "Αναγνωριστικό {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Βασικές πληροφορίες"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Ηλεκτρονική Διεύθυνση"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Εμφανιζόμενο όνομα"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Πιστοποίηση"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Πάροχος"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Κωδικός πρόσβασης"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Άλλαξε κωδικό"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Νέος κωδικός πρόσβασης"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Έλεγχος ταυτότητας δύο παραγόντων (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Εναλλαγή 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Αναγνωριστικό παροχέα"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Ομάδες χρηστών"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Αυτός ο χρήστης δεν έχει εκχωρηθεί σε καμία ομάδα ακόμα. Πρέπει να ορίσετε τουλάχιστον 1 ομάδα σε έναν χρήστη."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Επιλέξτε ομάδα …"
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Αναθέτω"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Εκτεταμένα μεταδεδομένα"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Τοποθεσία"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Τίτλος εργασίας"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Ζώνη ώρας"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Ο χρήστης ενημερώθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Ο χρήστης έχει ήδη αντιστοιχιστεί σε αυτήν την ομάδα!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Αυτός ο στόχος αποθήκευσης είναι {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "Ενεργός"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "Ανενεργό"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Πρέπει να ενεργοποιήσετε αυτόν τον προορισμό αποθήκευσης και να εφαρμόσετε αλλαγές για να μπορέσετε να εκτελέσετε ενέργειες."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Επιλέξτε έναν νέο κωδικό πρόσβασης"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Πρέπει να επιλέξετε έναν νέο κωδικό πρόσβασης:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Νέος κωδικός πρόσβασης"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Επιβεβαίωση νέου κωδικού πρόσβασης"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Άλλαξε κωδικό"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Αλλαγή κωδικού πρόσβασης …"
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Πρόσφατες σελίδες"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Πιο δημοφιλείς σελίδες"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Πληροφορίες"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Προγραμματισμός"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Κοινωνικά"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Κατηγοριοποίηση"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Κοινωνικά χαρακτηριστικά"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Να επιτρέπονται τα σχόλια"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Ενεργοποιήστε τις ικανότητες σχολιασμού σε αυτή τη σελίδα."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Επιτρέψτε τις αξιολογήσεις"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Εμφάνιση πληροφοριών συντάκτη"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Γραμμή εργαλείων προβολής κοινής χρήσης"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Εμφάνιση μιας γραμμής εργαλείων με κουμπιά για να μοιραστείτε και να εκτυπώσετε αυτήν τη σελίδα"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Εμφάνιση του συντάκτη της σελίδας μαζί με την τελευταία ώρα έκδοσης."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Ενεργοποιήστε τις δυνατότητες αξιολόγησης σε αυτή τη σελίδα."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "ή να δημιουργήσετε μια προσαρμοσμένη προβολή;"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Αναζήτηση με ετικέτες"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Χάρτης ιστότοπου"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Ενέργειες σελίδας"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Τρέχουσα επιλογή"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Απαλοιφή επιλογής"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Επιλέξτε μία ή περισσότερες ετικέτες"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Αναζήτηση στα αποτελέσματα …"
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Τοποθεσία"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Ταξινόμηση κατά"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Επιλέξτε μία ή περισσότερες ετικέτες στα αριστερά."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Ανάκτηση αποτελεσμάτων σελίδας …"
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Δεν ήταν δυνατή η εύρεση οποιασδήποτε σελίδας με τις επιλεγμένες ετικέτες."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Δεν ήταν δυνατή η εύρεση σελίδας που να ταιριάζει με τις τρέχουσες επιλογές φιλτραρίσματος."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Τελευταία ενημέρωση {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Ημερομηνία δημιουργίας"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "Ταυτότητα"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Τελευταία τροποποίηση"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Διαδρομή"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Τίτλος"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Οποιαδήποτε"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Γίνε χορηγός μέσω των χορηγών GitHub (πηγαίνει κατευθείαν στο στόχο του επικεφαλής προγραμματιστή Nicolas Giard, να εργάζεται με πλήρες ωράριο στο Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Γίνετε χορηγός"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Ετικέτες"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Διαχειριστείτε τη διαμόρφωση SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Πάροχος"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Επιλέξτε προσαρμοσμένο πιστοποιητικό, αν έχετε ήδη το δικό σας πιστοποιητικό."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Τομέας"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Εισαγάγετε τον πλήρως προσδιορισμένο domain που οδηγεί στο Wiki σας. (π.χ. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Επιλογές παροχέα"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Απενεργοποιημένη"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Προσαρμοσμένο πιστοποιητικό"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Θύρες"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Θύρα HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Μη θύρα SSL στην οποία ο διακομιστής θα ακούσει για αιτήσεις HTTP. Συνήθως 80 ή 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Θύρα HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Θύρα SSL στην οποία ο διακομιστής θα ακούσει για αιτήσεις HTTPS. Συνήθως 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Ανακατεύθυνση αιτημάτων HTTP στο HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Θα ανακατευθύνει αυτόματα τυχόν αιτήματα στη θύρα HTTP στο HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Σημειώστε ότι το αρχείο ρυθμίσεών σας πρέπει να είναι εγγράψιμο για να διατηρήσει τη διαμόρφωση των θυρών."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Διεύθυνση URL λογότυπου"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Καθορίστε μια εικόνα που θα χρησιμοποιηθεί ως λογότυπο. SVG, PNG, JPG υποστηρίζονται, σε τετραγωνικό λόγο, 34x34 εικονοστοιχεία ή μεγαλύτερα. Κάντε κλικ στο κουμπί στα δεξιά για να ανεβάσετε μια νέα εικόνα."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Διαγραφή χρήστη;"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Είστε σίγουρος ότι θέλετε να διαγράψετε το χρήστη {{username}};"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Ενημέρωση χρήστη"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Σημειώστε ότι δεν μπορείτε να εκχωρήσετε στους χρήστες, οι Διαχειριστές ή οι Επισκέπτες ομάδες από αυτό το πάνελ."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Σημειώστε ότι δεν μπορείτε να διαγράψετε έναν χρήστη που έχει ήδη δημιουργήσει περιεχόμενο. Πρέπει να απενεργοποιήσετε τον χρήστη ή να διαγράψετε όλο το περιεχόμενο που δημιουργήθηκε από αυτόν τον χρήστη."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Σενάρια"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "Το CSS θα ελαχιστοποιηθεί αυτόματα κατά την αποθήκευση. Μην συμπεριλάβετε ετικέτες HTML, μόνο τον κώδικα CSS."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Ορατό σε όλους"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Ορατό για την επιλογή ομάδων …"
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Επιλέξτε Σελίδα …"
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Λειτουργία πλοήγησης"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Δέντρο ιστοτόπου"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Κλασική πλοήγηση με βάση το δέντρο"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Προσαρμοσμένη πλοήγηση"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Στατικό Μενού Πλοήγησης + Κουμπί Δέντρο Ιστοτόπου"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Κανένας"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Απενεργοποίηση πλοήγησης ιστότοπου"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Ο χρήστης έχει επαληθευτεί με επιτυχία."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Ο χρήστης έχει ενεργοποιηθεί με επιτυχία."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Ο χρήστης απενεργοποιήθηκε με επιτυχία."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Πρέπει πρώτα να επιλέξετε κείμενο!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Ανανέωση πιστοποιητικού"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Κατάσταση πιστοποιητικού"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Λήξη πιστοποιητικού"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Email Συνδρομητή"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Τρέχουσα Κατάσταση"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Ενεργοποιήστε"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Απενεργοποιήστε"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Ανανέωση πιστοποιητικού…"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Μην αφήνετε αυτήν τη σελίδα."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Το πιστοποιητικό ανανεώθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Η ανακατεύθυνση HTTP άλλαξε με επιτυχία."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Διαχείριση ετικετών σελίδας"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Δεν υπάρχουν ετικέτες για εμφάνιση."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Επεξεργασία ετικέτας"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Ετικέτα"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Επιγραφή"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Δημιουργήθηκε {{created}} και ενημερώθηκε τελευταία {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Διαγράψτε αυτήν την ετικέτα"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Επιλέξτε μια ετικέτα από τη λίστα στα αριστερά."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Προσθέστε μια ετικέτα σε μια σελίδα για να ξεκινήσετε."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Οι ετικέτες έχουν ανανεωθεί."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Η ετικέτα διαγράφηκε επιτυχώς."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Η ετικέτα αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Φίλτρο…"
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Προβολή συνδεδεμένων σελίδων"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Διαγραφή ετικέτας;"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Είστε βέβαιοι ότι θέλετε να διαγράψετε μια ετικέτα {{tag}} ; Η ετικέτα θα αποσυνδεθεί επίσης από όλες τις σελίδες."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Διαχειριστείτε τα κλειδιά για να αποκτήσετε πρόσβαση στο API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "Το API είναι ενεργοποιημένο"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "Το API είναι απενεργοποιημένο"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Ενεργοποίηση API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Απενεργοποιήστε το API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Νέο κλειδί API"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Όνομα"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Λήξη κλειδιού"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Λήξη"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Δημιουργήθηκε"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Τελευταία ενημέρωση"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Ανακαλώ"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Κανένα κλειδί API δεν έχει παραχθεί ακόμα."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Ανάκληση κλειδιού API;"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Είστε βέβαιοι ότι θέλετε να ανακαλέσετε το κλειδί {{name}} ; Αυτή η πράξη δεν μπορεί να αναιρεθεί!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Ανακαλώ"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Η λίστα των κλειδιών API έχει ανανεωθεί."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Το κλειδί έχει ακυρωθεί με επιτυχία."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Νέο κλειδί API"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Το κλειδί API δημιουργήθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Το όνομα λείπει ή είναι άκυρο."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Πρέπει να επιλέξετε μια ομάδα."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Η ομάδα επισκεπτών δεν μπορεί να χρησιμοποιηθεί για κλειδιά API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Σκοπός αυτού του κλειδιού"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Όνομα"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Λήξη"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Μπορείτε να ανακαλέσετε ένα κλειδί οποτεδήποτε ανεξάρτητα από τη λήξη."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Εμβέλειες δικαιωμάτων"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Πλήρης πρόσβαση"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "ή να χρησιμοποιήσετε δικαιώματα ομάδας …"
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Δημιουργήσει"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Ομάδα"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Το κλειδί API θα έχει τα ίδια δικαιώματα με την επιλεγμένη ομάδα."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 ημέρες"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 ημέρες"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 ημέρες"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 χρόνος"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 χρόνια"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Αντιγράψτε το κλειδί που φαίνεται παρακάτω ως {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "Δε θα εμφανιστεί ξανά"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "Το API ενεργοποιήθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "Το API έχει απενεργοποιηθεί με επιτυχία."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Αποθηκεύτηκε"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Καμία"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Άδεια παραχώρησης Creative Commons"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike Άδεια"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs Άδεια"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-Noncommercial Άδεια"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike Άδεια"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Άδεια Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Δημόσιος τομέας"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Όλα τα δικαιώματα διατηρούνται"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Άδεια Περιεχομένου"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Άδεια που εμφανίζεται στο υποσέλιδο όλων των σελίδων περιεχομένου."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Το περιεχόμενο είναι διαθέσιμο στη {{license}}, από {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Δεν μπορείτε να κάνετε λήψη του περιεχομένου της σελίδας."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Δεν μπορείτε να κατεβάσετε το περιεχόμενο για αυτήν την έκδοση σελίδας."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Δεν μπορείτε να δείτε την πηγή αυτής της έκδοσης της σελίδας."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Προβολή πηγής από {{date}} της σελίδας {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Αναγνωριστικό έκδοσης {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Επαναφορά της σελίδας;"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Είστε βέβαιοι ότι θέλετε να επαναφέρετε αυτό το περιεχόμενο σελίδας όπως ήταν στις {{date}} ; Αυτή η έκδοση θα αντιγραφεί στην κορυφή του τρέχοντος ιστορικού. Ως εκ τούτου, θα διατηρηθούν ακόμα νεότερες εκδόσεις."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Επαναφορά"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Έκδοση σελίδας αποκαταστάθηκε με επιτυχία!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} Χαρακτήρες, {{words}} Λέξεις"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Επίλυση διένεξης αποθήκευσης"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Χρήση τοπικών"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Χρήση απομακρυσμένου"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Απορρίψτε τις τοπικές αλλαγές και χρησιμοποιήστε την τελευταία έκδοση"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Χρησιμοποιήστε περιεχόμενο στο αριστερό πλαίσιο"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Προβολή τελευταίας έκδοσης"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Μια πιο πρόσφατη έκδοση αυτής της σελίδας αποθηκεύτηκε από {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Τι θέλετε να κάνετε;"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Χρησιμοποιήστε την τρέχουσα τοπική έκδοση και αγνοήστε τις τελευταίες αλλαγές."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Χρησιμοποιήστε την απομακρυσμένη έκδοση (πιο πρόσφατη) και απορρίψτε τις αλλαγές σας."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Αντικατάσταση με απομακρυσμένη έκδοση;"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Είστε βέβαιοι ότι θέλετε να αντικαταστήσετε την τρέχουσα έκδοση σας με το πιο πρόσφατο απομακρυσμένο περιεχόμενο; {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Οι τρέχουσες τροποποιήσεις σας θα χαθούν."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Επιβεβαιώσετε"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Τοπική έκδοση {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(επεξεργάσιμο)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(μόνο για ανάγνωση)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Απομακρυσμένη έκδοση {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Η τρέχουσα επεξεργασία σας, με βάση την έκδοση σελίδας από {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Τελευταία επεξεργασία από {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Τίτλος:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Περιγραφή:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Έχετε μη αποθηκευμένες αλλαγές. Είστε βέβαιοι ότι θέλετε να αφήσετε τον επεξεργαστή και να απορρίψετε τυχόν τροποποιήσεις που κάνατε από την τελευταία αποθήκευση;"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Σύγκρουση αποθήκευσης! Ένας άλλος χρήστης έχει ήδη τροποποιήσει αυτή τη σελίδα."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Αντίγραφο"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Εμφανιζόμενο όνομα"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Τοποθεσία"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Τίτλος εργασίας"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Ζώνη ώρας"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Προφίλ"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Οι προσωπικές μου πληροφορίες"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Οι πληροφορίες μου"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Προβολή δημόσιου προφίλ"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Πιστοποίηση"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Πάροχος"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Άλλαξε κωδικό"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Τρέχων κωδικός πρόσβασης"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Νέος κωδικός πρόσβασης"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Επιβεβαιώστε τον καινούριο σας κωδικό"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Ομάδες"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Δραστηριότητα"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Έγινε μέλος στις"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Το προφίλ ενημερώθηκε τελευταία φορά στις"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Τελευταία σύνδεση στις"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Σελίδες που δημιουργήθηκαν"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Τα σχόλια δημοσιεύτηκαν"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Το προφίλ αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Ο κωδικός άλλαξε επιτυχώς."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Σελίδες"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Σχόλια"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Λίστα σελίδων που δημιούργησα ή τροποποίησα τελευταία φορά"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Δεν υπάρχουν σελίδες για εμφάνιση."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Η λίστα σελίδων ανανεώθηκε."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Τίτλος"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Διαδρομή"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Δημιουργήθηκε"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Τελευταία ενημέρωση"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Τελευταίες συνδέσεις"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Περιήγηση"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Κυρίως Μενού"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Τρέχων κατάλογος"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(ρίζα)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Αντιγραφή από τις τοπικές ρυθμίσεις …"
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Τοπικές πηγές"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Οι τοπικές ρυθμίσεις από τις οποίες θα αντιγραφούν τα στοιχεία πλοήγησης."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Αντίγραφο"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Επιλέξτε τις τοπικές ρυθμίσεις από τις οποίες θα αντιγραφούν τα στοιχεία. Τα στοιχεία θα προσαρτηθούν στην τρέχουσα λίστα στοιχείων στην ενεργή τοποθεσία."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Στατική πλοήγηση"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Μόνο Μενού Στατικής Πλοήγησης"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Προτιμήσεις"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Μορφή ημερομηνίας"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Προεπιλογή τοπικών ρυθμίσεων"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Εμφάνιση"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Προεπιλογή ιστότοπου"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Ανοιχτόχρωμο"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Σκοτεινό"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Επαληθεύστε το πιστοποιητικό SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Ορισμένοι κεντρικοί υπολογιστές απαιτούν την απενεργοποίηση του ελέγχου πιστοποιητικού SSL. Αφήστε την ενεργοποιημένη για σωστή ασφάλεια."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Εξωτερικός σύνδεσμος (Νέο παράθυρο)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Ασφάλεια"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Μέγιστο μέγεθος μεταφόρτωσης"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Μέγιστα αρχεία ανά μεταφόρτωση"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Πόσα αρχεία μπορούν να μεταφορτωθούν σε μία παρτίδα;"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Το μέγιστο μέγεθος για ένα μόνο αρχείο."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "αρχεία"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Μεταφορτώσεις"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Αυτές οι ρυθμίσεις επηρεάζουν μόνο το Wiki.js. Εάν χρησιμοποιείτε έναν αντίστροφο διακομιστή μεσολάβησης (π.χ. nginx, apache, Cloudflare), πρέπει επίσης να αλλάξετε τις ρυθμίσεις του ώστε να ταιριάζουν."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Διαμορφώστε τις ρυθμίσεις ασφαλείας"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Επεκτάσεις"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Εγκαταστήστε επεκτάσεις για επιπλέον λειτουργικότητα"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Πάροχος"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Προσθέστε συζητήσεις στις σελίδες σας στο Wiki"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Διαμόρφωση παρόχου"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Αυτός ο παροχέας δε διαθέτει επιλογές διαμόρφωσης που μπορείτε να τροποποιήσετε."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Οποιοδήποτε περιεχόμενο (σελίδες, μεταφορτώσεις, σχόλια κ.λ.π.) που δημιουργήθηκε από αυτόν το χρήστη θα εκχωρηθεί εκ νέου στο χρήστη που έχει επιλεγεί παρακάτω. Συνιστάται να δημιουργήσετε έναν εικονικό χρήστη προορισμού (π.χ. Διαγραμμένος χρήστης) εάν δε θέλετε το περιεχόμενο να εκχωρηθεί εκ νέου σε οποιονδήποτε τρέχοντα ενεργό χρήστη."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Ενεργές στρατηγικές"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Προσθήκη στρατηγικής"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Στυλ"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Πρέπει να περιβάλλετε τον κώδικα javascript με ετικέτες HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Αυτή η σελίδα δεν έχει δημοσιευτεί."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Σχόλια"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Γράψτε ένα νέο σχόλιο..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Το όνομα σου"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Η διεύθυνση ηλεκτρονικού ταχυδρομείου σας"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Μορφή Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Αναρτήστε σχόλιο"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Φόρτωση σχολίων..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Δημοσίευση ως {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Γίνε ο πρώτος που θα σχολιάσει."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Κανένα σχόλιο ακόμα."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Ενημέρωση σχολίου"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Επιβεβαίωση διαγραφής"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Είστε βέβαιοι ότι θέλετε να διαγράψετε οριστικά αυτό το σχόλιο;"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Αυτή η πράξη δεν μπορεί να αναιρεθεί!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "τροποποιήθηκε {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Το νέο σχόλιο δημοσιεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Το σχόλιο είναι κενό ή πολύ σύντομο!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Το σχόλιο ενημερώθηκε με επιτυχία."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Το σχόλιο διαγράφηκε με επιτυχία."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Εναλλαγή ορθογραφικού ελέγχου"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Σύνδεση"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Οθόνη σύνδεσης"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Ρύθμιση παραμέτρων JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Παράκαμψη οθόνης σύνδεσης"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Επιλέξτε εάν ο χρήστης θα ανακατευθύνεται αυτόματα στην πρώτη υπηρεσία παροχής ελέγχου ταυτότητας."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Διεύθυνση URL εικόνας φόντου σύνδεσης"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Καθορίστε μια εικόνα που θα χρησιμοποιηθεί ως φόντο σύνδεσης. PNG και JPG υποστηρίζονται, 1920x1080 συνιστάται. Αφήστε το κενό για προεπιλογή. Κάντε κλικ στο κουμπί στα δεξιά για να ανεβάσετε μια νέα εικόνα. Σημειώστε ότι η ομάδα Guests πρέπει να έχει πρόσβαση ανάγνωσης στην επιλεγμένη εικόνα!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Απόκρυψη τοπικού παρόχου ελέγχου ταυτότητας (Local Authentication Provider)"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Να μην εμφανίζεται η τοπική υπηρεσία παροχής ελέγχου ταυτότητας στην οθόνη σύνδεσης. Προσθέσατε το ?all στο URL για να τη χρησιμοποιήσετε προσωρινά."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Ασφάλεια"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Επιβολή 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Υποχρεώστε όλους τους χρήστες να χρησιμοποιούν έλεγχο ταυτότητας δύο παραγόντων (Two-Factor Authentication) κατά τη χρήση ενός παρόχου ελέγχου ταυτότητας με φόρμα χρήστη / κωδικού πρόσβασης."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Προβολή συζήτησης"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Νέο σχόλιο"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Περιεχόμενο σχολίου"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Συζήτηση"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Ετικέτες"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Σελίδες που ταιριάζουν με ετικέτες"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Επιστροφή στην κορυφή"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Όνομα χρήστη"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Έξοδος"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Διαμορφώστε τη διαδικασία απεικόνισης της σελίδας"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Ο τίτλος του ιστότοπου περιέχει μη έγκυρους χαρακτήρες."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Η ρύθμισης του ιστότοπου αποθηκεύτηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "Το 2FA απενεργοποιήθηκε με επιτυχία."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "Το 2FA ενεργοποιήθηκε με επιτυχία."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Αίτημα επαναφοράς κωδικού πρόσβασης..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Ελέγξτε τα email σας για οδηγίες επαναφοράς κωδικού πρόσβασης!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Ενεργό"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Μπορούν οι χρήστες να συνδεθούν χρησιμοποιώντας αυτήν τη στρατηγική;"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Εμφανιζόμενο Όνομα"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Ο τίτλος που εμφανίζεται στον τελικό χρήστη για αυτήν τη στρατηγική ελέγχου ταυτότητας."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Επιλέξτε Πάροχος Ελέγχου Ταυτότητας"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Εισαγάγετε τα διαπιστευτήριά σας"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Ξεχάσατε τον κωδικό σας"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Εισαγάγετε τον κωδικό ασφαλείας που δημιουργήθηκε από την αξιόπιστη συσκευή σας:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Ο διαχειριστής σας απαίτησε να ενεργοποιηθεί ο έλεγχος ταυτότητας δύο παραγόντων (2FA) στον λογαριασμό σας."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Σαρώστε τον παρακάτω κωδικό QR από την εφαρμογή 2FA του κινητού σας:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Εισαγάγετε τον κωδικό ασφαλείας που δημιουργήθηκε από την αξιόπιστη συσκευή σας:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Επιλέξτε"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Επιλογή Νέας Θέσης Σελίδας"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Μετακίνηση / Μετονομασία Τοποθεσίας Σελίδας"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Επιλέξτε Σελίδα"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Εικονικοί Φάκελλοι"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Σελίδες"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Αυτός ο φάκελος είναι άδειος."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Μετατροπή"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Μετατροπή Σελίδας"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Επιλέξτε τον επεξεργαστή που θέλετε να χρησιμοποιήσετε στη συνέχεια για τη σελίδα {{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Το περιεχόμενο της σελίδας θα μετατραπεί στη μορφή του πρόσφατα επιλεγμένου επεξεργαστή. Λάβετε υπόψη ότι κάποιο περιεχόμενο μορφοποίησης ή μη απόδοσης ενδέχεται να χαθεί ως αποτέλεσμα της μετατροπής. Ένα στιγμιότυπο θα προστεθεί στο ιστορικό της σελίδας και μπορεί να αποκατασταθεί ανά πάσα στιγμή."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Μετατροπή"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Διαχείριση"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Εξαγωγή σε δίσκο"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Πίνακας περιεχομένων"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Χρησιμοποιήστε τις προεπιλογές τοποθεσίας"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Ο πίνακας περιεχομένων θα εμφανίζει επικεφαλίδες από και μέχρι τα επιλεγμένα επίπεδα."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Ο πίνακας περιεχομένων θα εμφανίζει εξ ορισμού επικεφαλίδες από και μέχρι τα επιλεγμένα επίπεδα."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Επεκτάσεις σελίδας"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

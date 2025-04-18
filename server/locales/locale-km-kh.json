@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "ដំណើរការដោយ"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "តម្រូវឱ្យចូល"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "អ៊ីមែល / ឈ្មោះអ្នកប្រើ"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "ពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "ចូល"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "ការចូលមិនត្រឹមត្រូវ"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "អ៊ីមែល ឬពាក្យសម្ងាត់មិនត្រឹមត្រូវទេ។"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "អ៊ីមែលអ្នកប្រើប្រាស់មិនត្រឹមត្រូវ"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "កំហុសក្នុងការចូល"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "អ្នកមិនទាន់ត្រូវបានអនុញ្ញាតឱ្យចូលគេហទំព័រនេះនៅឡើយទេ។"
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "ប៉ុនប៉ងច្រើនពេក!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "អ្នក​បាន​ព្យាយាម​បរាជ័យ​ច្រើន​ពេក​ក្នុង​រយៈ​ពេល​ខ្លី​មួយ សូម​ព្យាយាម​ម្ដង​ទៀត {{time}} ។"
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "រកមិនឃើញអ្នកប្រើប្រាស់ទេ។"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "មូលដ្ឋាន"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "គណនី Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "ហ្វេសប៊ុក"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "ស្លេក"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / ថតសកម្ម"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "ការផ្ទៀងផ្ទាត់កត្តាពីរ"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "លេខកូដសុវត្ថិភាពចាំបាច់៖"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "ផ្ទៀង​ផ្ទាត់"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "ផ្ទាំងគ្រប់គ្រង"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "ទូទៅ"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "ទីតាំងគេហទំព័រ"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "ស្ថិតិ"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "ប្រធានបទ"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "ក្រុម"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "អ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "កម្មវិធីនិពន្ធ"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "កំណត់ហេតុ"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "ការបង្ហាញ"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "ម៉ាស៊ីន​ស្វែងរក"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "ការផ្ទុក"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "ការចូលប្រើ API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "ព័ត៌មានប្រព័ន្ធ"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "ឧបករណ៍ប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "ឧបករណ៍អភិវឌ្ឍន៍"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "រួមចំណែកដល់ Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "ការកំណត់សំខាន់នៃវិគីរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "ព័ត៌មានគេហទំព័រ"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "យីហោគេហទំព័រ"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "គេហទំព័រ"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "អ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "ម៉ូឌុល"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "ប្រព័ន្ធ"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "វិគី.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "កំណត់ជម្រើសនៃការធ្វើមូលដ្ឋានីយកម្មសម្រាប់វិគីរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "ទីតាំងគេហទំព័រ"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "ការដាក់ឈ្មោះពហុភាសា"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "ទាញយក Locale"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "មូលដ្ឋានមូលដ្ឋាន"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "ធាតុអត្ថបទ UI ទាំងអស់នឹងត្រូវបានបង្ហាញជាភាសាដែលបានជ្រើសរើស។"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "ធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិ"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "ទាញយកការអាប់ដេតដោយស្វ័យប្រវត្តិទៅកាន់មូលដ្ឋាននេះ នៅពេលដែលវាមាន។"
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "ចន្លោះឈ្មោះពហុភាសា"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "បើកដំណើរការកំណែភាសាច្រើននៃទំព័រដូចគ្នា។"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "ចន្លោះឈ្មោះពហុភាសា"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "បញ្ជីនៃមូលដ្ឋានត្រូវបានបើកសម្រាប់ការដាក់ឈ្មោះពហុភាសា។ មូលដ្ឋានមូលដ្ឋានដែលបានកំណត់ខាងលើនឹងត្រូវបានរួមបញ្ចូលជានិច្ចដោយមិនគិតពីការជ្រើសរើសនេះ។"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "លេខកូដមូលដ្ឋាននឹងត្រូវបានបញ្ចូលទៅគ្រប់ផ្លូវទាំងអស់។ (ឧទាហរណ៍ / {{langCode}} /page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "ផ្លូវដែលគ្មានលេខកូដមូលដ្ឋាននឹងត្រូវបានបញ្ជូនបន្តដោយស្វ័យប្រវត្តិទៅកាន់មូលដ្ឋានមូលដ្ឋានដែលបានកំណត់ខាងលើ។"
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "រក្សាទុក"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "បោះបង់"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "ទាញយក"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "ផ្ទុកឡើង"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "បោះបង់"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "ច្បាស់"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "បង្កើត"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "កែសម្រួល"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "លុប"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "ធ្វើ​ឱ្យ​ស្រស់ស្អាត"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "រក្សាទុកការផ្លាស់ប្តូរ"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "ដំណើរការ"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "ទីតាំងគេហទំព័រ"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "ទាញយកការអាប់ដេតដោយស្វ័យប្រវត្តិទៅកាន់មូលដ្ឋាននេះ នៅពេលដែលវាមាន។"
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "ព័ត៌មានអំពីប្រព័ន្ធរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "ព័ត៌មានបង្ហោះ"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "កំណែបច្ចុប្បន្ន"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "ជំនាន់​ចុងក្រោយ"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "បោះពុម្ពផ្សាយ"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "ប្រព័ន្ធ​ប្រតិបត្តិការ"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "ឈ្មោះម៉ាស៊ីន"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU Cores"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "RAM សរុប"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "បញ្ជីការងារ"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "ឯកសារកំណត់រចនាសម្ព័ន្ធ"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "ការប្រើប្រាស់ RAM៖ {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "ជួយគាំទ្រដល់ការអភិវឌ្ឍន៍ និងប្រតិបត្តិការ Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "មូលនិធិការងាររបស់យើង"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "ផ្សព្វផ្សាយពាក្យ"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "និយាយជាមួយមិត្តភ័ក្តិ និងសហការីរបស់អ្នកអំពី Wiki.js អស្ចារ្យប៉ុណ្ណា!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "តាមពួកយើងនៅលើ {{0}} ។"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "ដាក់ស្នើគំនិត ឬបោះឆ្នោតលើសំណើមួយនៅលើ {{0}} ។"
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "បន្ទះស្នើសុំមុខងារ"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "រកឃើញកំហុស? ដាក់ស្នើបញ្ហានៅលើ {{0}} ។"
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "ជួយបកប្រែ Wiki.js ជាភាសារបស់អ្នក។ អនុញ្ញាតឱ្យពួកយើងដឹងនៅលើ {{0}} ។"
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "១. ធ្វើវិភាគទាន"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "រួមចំណែក"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js ក៏ជាផ្នែកមួយនៃគំនិតផ្តួចផ្តើម Open Collective ដែលជាមូលនិធិតម្លាភាពដែលឆ្ពោះទៅរកធនធានសហគមន៍។ អ្នកអាចចូលរួមចំណែកផ្នែកហិរញ្ញវត្ថុដោយការបរិច្ចាគប្រចាំខែ ឬម្តង"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "យើងត្រូវការជំនួយរបស់អ្នកដើម្បីបន្តកែលម្អកម្មវិធី និងដំណើរការសេវាកម្មដែលពាក់ព័ន្ធផ្សេងៗ (ឧទាហរណ៍ បង្ហោះ និងបណ្តាញ)។"
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js គឺជាកម្មវិធីឥតគិតថ្លៃ និងប្រភពបើកចំហដែលនាំមកជូនអ្នកជាមួយ {{0}} ដោយ {{1}} និង {{2}} ។"
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "អ្នករួមចំណែក"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "ទំព័រ"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "ការបង្ហាញ"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "សូមរង់ចាំ..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "ទំព័រត្រូវបានបង្កើតដោយជោគជ័យ។"
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "កំហុសបានកើតឡើងនៅពេលបង្កើតទំព័រ"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "អ្នកក៏អាចទិញអាវយឺត Wiki.js ដើម្បីគាំទ្រគម្រោងហិរញ្ញវត្ថុ៖"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "ហាង Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "យល់ព្រម"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} ។ រក្សា​រ​សិទ្ធ​គ្រប់យ៉ាង។"
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "ទំព័រនេះមិនទាន់មាននៅឡើយទេ។"
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "តើអ្នកចង់បង្កើតវាឥឡូវនេះទេ?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "បង្កើតទំព័រ"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "ត្រឡប់​ក្រោយ"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "ទំព័រជាច្រើន"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "ណាវីហ្គេតសិន"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "គ្រប់គ្រង ណាវិហ្គេសិន (Navigation) គេហទំព័រ"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "បន្ថែម"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "តំណភ្ជាប់"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "ការបែងចែក"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "បឋមកថា"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "ស្លាក​សញ្ញា"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "រូបតំណាង"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "ប្រភេទគោលដៅ"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "គោលដៅ"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "ជ្រើសរើសធាតុរុករកនៅខាងឆ្វេង។"
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "គ្មានចំណងជើង {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "តំណភ្ជាប់ខាងក្រៅ"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "ផ្ទះ"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "ទំព័រ"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "ស្វែងរក សំណួរ"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "កែសម្រួល {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "លុប {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "ការរុករកត្រូវបានរក្សាទុកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "ចុចប៊ូតុង បន្ថែម ដើម្បីបន្ថែមធាតុរុករកដំបូងរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "ការរុករកគឺទទេ"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "អនុវត្ត"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "អ៊ីមែល / ឈ្មោះអ្នកប្រើ"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "ឈ្មោះ"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "ចុះឈ្មោះ"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "បង្កើត​គណនី"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "មានគណនីរួចហើយ? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "ចូលជំនួសវិញ។"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "ចូលប្រើ {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "ភ្លេចពាក្យសម្ងាត់របស់អ្នក?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "ឬចូលប្រើ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "អត់ ទាន់ មាន គណនី នៅ ឡើយ ទេ? {{តំណភ្ជាប់}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "បង្កើត​គណនី"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "បញ្ចូលអ៊ីមែល / ឈ្មោះអ្នកប្រើត្រឹមត្រូវ។"
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "បញ្ចូលពាក្យសម្ងាត់ត្រឹមត្រូវ។"
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "ចូលដោយជោគជ័យ! កំពុងបញ្ជូនបន្ត..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "ចូល..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "ការផ្ទៀងផ្ទាត់គឺមិនមានទេ។"
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "បំពេញទម្រង់ខាងក្រោមដើម្បីបង្កើតគណនីរបស់អ្នក។"
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "សូមរង់ចាំ"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "គណនីបានបង្កើតដោយជោគជ័យ!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "កំពុង​បង្កើត​គណនី..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "ខ្វះអាសយដ្ឋានអ៊ីមែល។"
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "អាសយដ្ឋានអ៊ីមែលមិនត្រឹមត្រូវទេ។"
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "ខ្វះពាក្យសម្ងាត់។"
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "ពាក្យសម្ងាត់ខ្លីពេក។"
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "ពាក្យសម្ងាត់ទាំងពីរមិនត្រូវគ្នាទេ។"
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "ឈ្មោះខ្វះ។"
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "ឈ្មោះខ្លីពេក។"
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "ឈ្មោះវែងពេក។"
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "បោះបង់"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "កំណត់ពាក្យសម្ងាត់ឡើងវិញ"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "បញ្ចូលអាសយដ្ឋានអ៊ីមែលរបស់អ្នក ដើម្បីទទួលបានការណែនាំដើម្បីកំណត់ពាក្យសម្ងាត់របស់អ្នកឡើងវិញ៖"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "មែល"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "កំណត់រចនាសម្ព័ន្ធការកំណត់មែល"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "ការកំណត់​រចនាសម្ព័ន្ធ"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (ជាជម្រើស)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "ពិនិត្យអ៊ីមែលរបស់អ្នក ដើម្បីដំណើរការគណនីរបស់អ្នក។"
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "ទំព័រដើម updated ដោយជោគជ័យ."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "គ្មានការអនុញ្ញាត"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "អ្នកមិនអាចមើលទំព័រនេះបានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "អ្នកមិនអាចមើលប្រភពទំព័របានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "អ្នកមិនអាចមើលប្រវត្តិទំព័របានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "អ្នកមិនអាចកែសម្រួលទំព័របានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "អ្នកមិនអាចបង្កើតទំព័របានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "ត្រឡប់​ក្រោយ"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "ផ្ទះ"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "រក​មិន​ឃើញ"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "ទំព័រនេះមិនមានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "ចូលជា..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "ក្លាយជាអ្នកឧបត្ថម្ភ"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "ក្លាយជាអ្នកគាំទ្រ ឬអ្នកឧបត្ថម្ភតាមរយៈ Patreon (ចូលដោយផ្ទាល់ទៅក្នុងការគាំទ្រដល់គោលដៅរបស់អ្នកអភិវឌ្ឍន៍នាំមុខ Nicolas Giard ក្នុងការធ្វើការពេញម៉ោងនៅលើ Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "សូមស្វាគមន៍មកកាន់វីគីរបស់អ្នក!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "ចូរចាប់ផ្តើម និងបង្កើតទំព័រដើម។"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "បង្កើតទំព័រដើម"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "ទង់ជាតិ"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "អ្នកធ្វើដំណើរ"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "ធ្វើការបរិច្ចាគម្តង ឬម្តងហើយម្តងទៀតតាមរយៈ Paypal៖"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "យើងទទួលយកការបរិច្ចាគដោយប្រើ Ethereum៖"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "កញ្ចប់ Sideload Locale"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "ប្រសិនបើអ្នកមិនបានភ្ជាប់ទៅអ៊ីនធឺណិត ឬមិនអាចទាញយកឯកសារមូលដ្ឋានដោយប្រើវិធីខាងលើទេ អ្នកអាចជំនួសកញ្ចប់ sideload ដោយដៃដោយផ្ទុកពួកវាខាងក្រោម។"
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "រុករក..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "គ្រប់គ្រង webhooks ទៅកាន់សេវាកម្មខាងក្រៅ"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "ផ្ញើអ៊ីមែលសាកល្បង"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "អាសយដ្ឋានអ៊ីមែលអ្នកទទួល"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "ផ្ញើអ៊ីមែល"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "អ្នកផ្ញើ"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "ឈ្មោះអ្នកផ្ញើ"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "អ្នកផ្ញើអ៊ីមែល"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "ការ កំណត់ SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "ម្ចាស់ផ្ទះ"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "ច្រក"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "ជាធម្មតា 465 (បានណែនាំ), 587 ឬ 25 ។"
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "សុវត្ថិភាព (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "គួរតែត្រូវបានបើកនៅពេលប្រើច្រក 465 បើមិនដូច្នេះទេត្រូវបានបិទ (587 ឬ 25) ។"
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "ឈ្មោះ​អ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "ពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) ផ្តល់នូវស្រទាប់សុវត្ថិភាពលើអ៊ីមែលទាំងអស់ដែលបានផ្ញើពី Wiki.js ដោយផ្តល់មធ្យោបាយសម្រាប់អ្នកទទួលដើម្បីធ្វើសុពលភាពឈ្មោះដែន និងធានានូវភាពត្រឹមត្រូវនៃសារ។"
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "ប្រើ DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "ឈ្មោះដែន"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "អ្នក ជ្រើស រើស សោ"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "សោឯកជន"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "សោឯកជនសម្រាប់អ្នកជ្រើសរើសក្នុងទម្រង់ PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "ផ្ញើ អ៊ីមែល សាកល្បង ដើម្បី ធានា ថា ការ កំណត់ រចនា សម្ព័ន្ធ SMTP របស់ អ្នក កំពុង ដំណើរ ការ ។"
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធត្រូវបានរក្សាទុកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "កំណែមូលដ្ឋានទិន្នន័យរបស់អ្នកមិនត្រូវបានគាំទ្រពេញលេញទេ។ មុខងារមួយចំនួនអាចមានកម្រិត ឬមិនដំណើរការដូចការរំពឹងទុក។"
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "ព័ត៌មានប្រព័ន្ធត្រូវបានធ្វើឱ្យស្រស់ស្អាត។"
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "ការកំណត់ផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវនៃវិគីរបស់អ្នក"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "យុទ្ធសាស្ត្រ"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "ការកំណត់កម្រិតខ្ពស់សកល"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "ទស្សនិកជន JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "ទស្សនិកជន URN ដែលប្រើក្នុង JWT ចេញនៅពេលចូល។ ជាធម្មតាឈ្មោះដែនរបស់អ្នក។ (ឧទាហរណ៍ urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "ការផុតកំណត់នៃ Token"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "រយៈ ពេល ផុត កំណត់ នៃ ការ ធ្វើ Token រហូត ដល់ វា ត្រូវ តែ ធ្វើ ឡើង វិញ ។ (default: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "រយៈពេលបន្ត Token"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "រយៈពេល អតិបរមា ដែល Token អាច ត្រូវ បាន ធ្វើ ឡើង វិញ នៅ ពេល ផុត កំណត់ ។ (default: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "យុទ្ធសាស្ត្រនេះគឺ {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "សកម្ម"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "មិនសកម្ម"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "និងមិនអាចបិទបានទេ។"
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "អ៊ីមែលសាកល្បងត្រូវបានផ្ញើដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "កែប្រែរូបរាង និងអារម្មណ៍នៃវីគីរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "គេហទំព័រ ស្បែក"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "ស្បែក(theme) ប៉ះពាល់ ដល់ របៀប ដែល ទំព័រ មាតិកា ត្រូវ បាន បង្ហាញ  ។ ផ្នែកវិបសាយផ្សេងទៀត (ដូចជាអ្នកកែសម្រួលឬតំបន់ admin) មិនត្រូវបានប៉ះពាល់ទេ។"
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "របៀបងងឹត"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "មិនត្រូវបានណែនាំសម្រាប់ភាពងាយស្រួល។ ប្រហែលជាមិនត្រូវបានគាំទ្រដោយប្រធានបទទាំងអស់។"
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "ការចាក់លេខកូដ"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS Override"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "កូដ CSS ដើម្បីចាក់បន្ទាប់ពី CSS លំនាំដើមរបស់ប្រព័ន្ធ។ ពិចារណាប្រើស្បែកផ្ទាល់ខ្លួន ប្រសិនបើអ្នកមានលេខកូដ css ច្រើន។ បញ្ចូល​កូដ CSS ច្រើនពេក​នឹង​នាំ​ឱ្យ​ដំណើរការ​ផ្ទុក​ទំព័រ​ខ្សោយ! CSS នឹងត្រូវបានបង្រួមដោយស្វ័យប្រវត្តិ។"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "ការចាក់បញ្ចូល HTML"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "កូដ HTML ដែលត្រូវចាក់មុនស្លាកក្បាលបិទ។ ជាធម្មតាសម្រាប់ស្លាកស្គ្រីប។"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "ការចាក់ HTML រាងកាយ"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "កូដ HTML ដែល​ត្រូវ​ចាក់​នៅ​មុន​ស្លាក​តួ​បិទ។"
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "ទាញយក ប្រធានបទ"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "តំបន់រដ្ឋបាល"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធយុទ្ធសាស្ត្រ"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "យុទ្ធសាស្ត្រនេះមិនមានជម្រើសកំណត់រចនាសម្ព័ន្ធដែលអ្នកអាចកែប្រែបានទេ។"
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "ការចុះឈ្មោះ"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "អនុញ្ញាត ឲ្យ មាន ការ ចុះ ឈ្មោះ ដោយ ខ្លួន ឯង"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "អនុញ្ញាតឲ្យអ្នកប្រើប្រាស់ណាម្នាក់បានអនុញ្ញាតដោយជោគជ័យដោយយុទ្ធសាស្ត្រដើម្បីចូលប្រើវិគី។"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "កំណត់ចំពោះដែនអ៊ីមែលជាក់លាក់"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "បញ្ជីនៃដែនដែលត្រូវបានអនុញ្ញាតឱ្យចុះឈ្មោះ។ ដែនអាសយដ្ឋានអ៊ីមែលរបស់អ្នកប្រើត្រូវតែផ្គូផ្គងមួយក្នុងចំណោមទាំងនេះដើម្បីទទួលបានសិទ្ធិចូលប្រើ។"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "ចាត់តាំងក្រុម"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "កំណត់អ្នកប្រើប្រាស់ថ្មីដោយស្វ័យប្រវត្តិទៅក្រុមទាំងនេះ។"
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "សន្តិសុខ"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "បង្ខំអ្នកប្រើប្រាស់ទាំងអស់ឱ្យប្រើការផ្ទៀងផ្ទាត់ពីរកត្តា (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "អ្នក​ប្រើ​នឹង​ត្រូវ​បាន​តម្រូវ​ឱ្យ​ដំឡើង 2FA ជា​លើក​ដំបូង​ដែល​ពួក​គេ​ចូល ហើយ​មិន​អាច​ត្រូវ​បាន​បិទ​ដោយ​អ្នក​ប្រើ​។"
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធយោង"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "យុទ្ធសាស្ត្រខ្លះអាចទាមទារកំណត់តម្លៃរចនាសម្ព័ន្ធ ដើម្បីកំណត់លើការផ្តល់ឲ្យអ្នក។ ទាំងនេះត្រូវបានផ្តល់ជូនសម្រាប់ជាឯកសារយោងតែប៉ុណ្ណោះ ហើយប្រហែលជាមិនត្រូវការដោយយុទ្ធសាស្រ្តបច្ចុប្បន្នទេ។"
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "អ្នកត្រូវកំណត់សុពលភាព {{siteUrl}} ជាមុនសិន! ចុចលើ {{general}} នៅក្នុង របារចំហៀងខាងឆ្វេង។"
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "ប្រភពដើមគេហទំព័រដែលបានអនុញ្ញាត"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "ហៅត្រឡប់ URL / ប្តូរទិស URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "ចូល URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "ចេញ URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "វិធីសាស្រ្តផ្ទៀងផ្ទាត់ចំណុចបញ្ចប់ Token"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "ផ្ទះ"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "ទំព័រថ្មី។"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "ទំព័រ​បច្ចុប្បន្ន"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "មើល"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "កែសម្រួល"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "ប្រវត្តិសាស្ត្រ"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "មើលប្រភព"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "ផ្លាស់ទី / ប្តូរឈ្មោះ"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "លុប"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "ផ្ទុកធាតុច្រើន"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "រូបភាព & ឯកសារ"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "ស្វែងរក..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "រដ្ឋបាល"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "គណនី"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "វីគីរបស់ខ្ញុំ"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "ប្រវត្តិរូប"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "ចាកចេញ"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "ចូល"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "កែសម្រួលចុងក្រោយដោយ"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "មិនបានផ្សព្វផ្សាយ"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "កែសម្រួលទំព័រ"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "ទំព័រមាតិកា"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "ចំណាំ"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "ចែករំលែក"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "ទ្រង់ទ្រាយបោះពុម្ព"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "បិទ"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "ទំព័រ"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "កំណត់កការរក្សាទុក និងសមកាលកម្មគោលដៅសម្រាប់មាតិការបស់អ្នក។"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "គោលដៅ"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "ស្ថានភាព"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "ការធ្វើសមកាលកម្មចុងក្រោយ {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "ការព្យាយាមចុងក្រោយគឺ {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "សារ កំហុស"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "អ្នកមិនមានគោលដៅផ្ទុកសកម្មណាមួយទេ។"
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "ការកំណត់គោលដៅ"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "គោលដៅផ្ទុកនេះមិនមានជម្រើសកំណត់រចនាសម្ព័ន្ធដែលអ្នកអាចកែប្រែបានទេ។"
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "ទិសដៅសមកាលកម្ម"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "ជ្រើស របៀប ដែល ការ ធ្វើ សមកាលកម្ម មាតិកា ត្រូវ បាន ដោះស្រាយ សម្រាប់ គោលដៅ ផ្ទុក នេះ ។"
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "ទ្វេទិស"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "រុញទៅគោលដៅ"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "ទាញចេញពីគោលដៅ"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "មិនគាំទ្រ"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "នៅក្នុងរបៀបទ្វេទិស មាតិកាដំបូងត្រូវបានទាញចេញពីគោលដៅផ្ទុក។ មាតិកាថ្មីណាមួយសរសេរជាន់លើមាតិកាក្នុងស្រុក។ មាតិកាថ្មីចាប់តាំងពីការធ្វើសមកាលកម្មចុងក្រោយបន្ទាប់មកត្រូវបានរុញទៅគោលដៅផ្ទុក ដោយសរសេរជាន់លើមាតិកាណាមួយនៅលើគោលដៅប្រសិនបើមានវត្តមាន។"
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "មាតិកាតែងតែត្រូវបានរុញទៅគោលដៅផ្ទុក ដោយសរសេរជាន់លើមាតិកាដែលមានស្រាប់។ នេះគឺជាជម្រើសដែលមានសុវត្ថិភាពបំផុតសម្រាប់សេណារីយ៉ូបម្រុងទុក។"
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "មាតិកាតែងតែត្រូវបានទាញចេញពីគោលដៅផ្ទុក ដោយសរសេរជាន់លើមាតិកាមូលដ្ឋានណាមួយដែលមានរួចហើយ។ ជម្រើសនេះជាធម្មតាត្រូវបានបម្រុងទុកសម្រាប់ការនាំចូលមាតិកាដែលប្រើតែមួយដង។ សូមប្រយ័ត្នជាមួយជម្រើសនេះ ព្រោះខ្លឹមសារក្នុងស្រុកណាមួយនឹងត្រូវបានសរសេរជាន់លើជានិច្ច!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "កាលវិភាគ Sync"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "សម្រាប់ហេតុផលប្រតិបត្តិការ គោលដៅផ្ទុកនេះធ្វើសមកាលកម្មការផ្លាស់ប្តូរនៅលើកាលវិភាគផ្អែកលើចន្លោះពេល ជំនួសឱ្យរាល់ការផ្លាស់ប្តូរ។ កំណត់​ចន្លោះ​ពេល​ណា​ដែល​ការ​ធ្វើ​សមកាលកម្ម​កើតឡើង។"
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "បច្ចុប្បន្ន កំណត់ ទៅ គ្រប់ {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "លំនាំដើមគឺរាល់ {{schedule}} ។"
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "សកម្មភាព"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "រត់"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "កំណត់រចនាសម្ព័ន្ធសមត្ថភាពស្វែងរកនៃវីគីរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "បង្កើតសន្ទស្សន៍ឡើងវិញ"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "ម៉ាស៊ីន​ស្វែងរក"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធម៉ាស៊ីន"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "ម៉ាស៊ីន នេះ គ្មាន ជម្រើស កំណត់ រចនា សម្ព័ន្ធ ដែល អ្នក អាច កែប្រែ បាន ទេ ។"
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "បញ្ជីម៉ាស៊ីនស្វែងរកត្រូវបានធ្វើឱ្យស្រស់ស្អាត។"
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "ស្វែងរកការកំណត់រចនាសម្ព័ន្ធម៉ាស៊ីនដែលបានរក្សាទុកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Index ត្រូវបានស្ថាបនាឡើងវិញដោយជោគជ័យ។"
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "កំហុសដែលមិនបានរំពឹងទុកបានកើតឡើង។"
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "ទំព័រ"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "អ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "ក្រុម"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "អ្នកកំពុងដំណើរការកំណែចុងក្រោយបំផុត។"
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "មានកំណែថ្មី៖ {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js គឺជាគម្រោងប្រភពឥតគិតថ្លៃនិងបើកចំហ។ មាន វិធី ជា ច្រើន ដែល អ្នក អាច រួម ចំណែក ក្នុង គម្រោង នេះ ។"
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "យើងត្រូវការជំនួយរបស់អ្នក!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "ស្វែង​យល់​បន្ថែម"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "បញ្ជីយុទ្ធសាស្រ្តត្រូវបានធ្វើឱ្យស្រស់ឡើងវិញ។"
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "ការ​កំណត់​រចនាសម្ព័ន្ធ​ការ​ផ្ទៀងផ្ទាត់​ត្រូវ​បាន​រក្សា​ទុក​ដោយ​ជោគជ័យ។"
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "ទូទៅ"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL គេហទំព័រ"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "URL ពេញលេញទៅកាន់វិគីរបស់អ្នក ដោយគ្មានសញ្ញាបន្តបន្ទាប់។ (ឧទាហរណ៍ https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "ចំណងជើង​វែ​ប​សាយ"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "បង្ហាញនៅក្នុងរបារកំពូល និងបន្ថែមទៅចំណងជើងមេតានៃទំព័រទាំងអស់។"
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "និមិត្តសញ្ញា"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "បង្ហោះឡូហ្គោ"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "ច្បាស់"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "រូបភាពនៃ {{size}} pixels ត្រូវបានណែនាំសម្រាប់លទ្ធផលល្អបំផុត។"
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} ឬ {{lastType}} ប៉ុណ្ណោះ។"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "រក្សាសិទ្ធិបាតកថា"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "ឈ្មោះក្រុមហ៊ុន / អង្គការ"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "ឈ្មោះដែលត្រូវប្រើនៅពេលបង្ហាញការជូនដំណឹងអំពីការរក្សាសិទ្ធិនៅក្នុងបាតកថា។ ទុកឱ្យទទេដើម្បីលាក់។"
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "ការពិពណ៌នាគេហទំព័រ"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "ការពណ៌នាលំនាំដើមនៅពេលដែលមិនមានផ្តល់ជូនសម្រាប់ទំព័រមួយ។"
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "លំនាំដើម៖ សន្ទស្សន៍ ធ្វើតាម។ ក៏អាចត្រូវបានកំណត់នៅលើមូលដ្ឋានក្នុងមួយទំព័រ។"
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "វាយ យ៉ាងតិច ២ តួ ដើម្បី ចាប់ផ្តើម ស្វែងរក ..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "កំពុងស្វែងរក..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "គ្មានទំព័រដែលត្រូវនឹងសំណួររបស់អ្នកទេ។"
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "រកឃើញលទ្ធផល {{total}}"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "តើអ្នកចង់មានន័យថា..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "បិទ"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "ចម្លងតំណស្វែងរក"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "ខ្សោយ​ណាស់"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "ខ្សោយ"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "មធ្យម"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "ខ្លាំង"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "ខ្លាំង​ណាស់"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "លុបទំព័រ"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "តើអ្នកប្រាកដថាអ្នកចង់លុបទំព័រ {{title}}ដែរឬទេ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "ទំព័រអាចត្រូវបានស្ដារឡើងវិញពីតំបន់រដ្ឋបាល។"
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "ស្វែងរកអ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "ស្វែងរកអ្នកប្រើប្រាស់..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "រាល់"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "នាទី(s)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "ម៉ោង(s)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "ថ្ងៃ(s)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "ខែ(s)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "ឆ្នាំ(s)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "ទំព័រលក្ខណៈសម្បត្តិ"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "ទំព័រព័ត៌មាន"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "ចំណងជើង"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "ការពិពណ៌នាខ្លីៗ"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "បង្ហាញនៅខាងក្រោមចំណងជើង"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "ផ្លូវ & ប្រភេទ"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "ទីតាំង"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "ផ្លូវ"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "កុំរាប់បញ្ចូលស្លាកសញ្ញានាំមុខ ឬនៅពីក្រោយ។"
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "ស្លាក"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "ប្រើស្លាកដើម្បីចាត់ថ្នាក់ទំព័ររបស់អ្នក និងធ្វើឱ្យពួកគេកាន់តែងាយស្រួលក្នុងការស្វែងរក។"
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "តំបន់បោះពុម្ពផ្សាយ"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "បោះពុម្ពផ្សាយ"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "ទំព័រ ដែល មិន ទាន់ បាន បោះ ពុម្ព នៅ តែ អាច មើល ឃើញ ចំពោះ អ្នក ប្រើប្រាស់ ដែល មាន ការ អនុញ្ញាត សរសេរ នៅ លើ ទំព័រ នេះ ។"
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "បោះផ្សាយ​ចាប់​ពី​ថ្ងៃ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "ទុកទទេសម្រាប់ថ្ងៃចាប់ផ្តើម"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "កាបោះផ្សាយ​បញ្ចប់​នៅ​..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "ទុក​ទទេ​សម្រាប់​គ្មាន​កាលបរិច្ឆេទ​បញ្ចប់"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "បោះបង់ការផ្លាស់ប្តូរដែលមិនបានរក្សាទុក?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "អ្នកមានការផ្លាស់ប្ដូរដែលមិនបានរក្សាទុក។ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ចាក​ចេញ​ពី​កម្មវិធី​កែ​សម្រួល ហើយ​បោះបង់​ការ​កែប្រែ​ណា​មួយ​ដែល​អ្នក​បាន​ធ្វើ​តាំង​ពី​ការ​រក្សា​ទុក​លើក​ចុង​ក្រោយ?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "បោះបង់ការផ្លាស់ប្តូរ"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "តើអ្នកចង់ប្រើកម្មវិធីប្រភេទមួយណាសម្រាប់ទំព័រនេះ?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "នេះ មិន អាច ផ្លាស់ប្ដូរ បាន ទេ នៅ ពេល ទំព័រ ត្រូវ បាន បង្កើត "
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "ផ្ទុកធាតុច្រើន"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "ថតថ្មី"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "ឈ្មោះថត"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "ត្រូវតែធ្វើតាមថតឯកសារ {{namingRules}} ។"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "ច្បាប់ដាក់ឈ្មោះ"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "ផ្លាស់ទី"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "ប្តូរឈ្មោះ"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "ធ្វើឱ្យប្រសើរ"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "មើលជាមុន"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "លក្ខណៈ សម្បត្តិ"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "ថតផ្ទុកធាតុ ទទេ"
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "ឯកសារ {{count}}"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "បញ្ចូល"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "លេខសម្គាល់"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "ឈ្មោះ​ឯកសារ"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "ប្រភេទ"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "ទំហំឯកសារ"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "បាន បន្ថែម"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "សកម្មភាព"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "ផ្ទុក Assets"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "រកមើល ឬ ទម្លាក់ ឯកសារ នៅ ទីនេះ..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "ទាញយករូបភាពពីចម្ងាយ"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "ការតម្រឹមរូបភាព"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "ប្តូរឈ្មោះ Asset"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "បញ្ចូលឈ្មោះថ្មីសម្រាប់ធាតុនេះ៖"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "លុប Asset"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ លុប asset"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "បញ្ជី asset បាន ធ្វើ ឲ្យ មាន ភាព ស្រស់ ស្អាត ដោយ ជោគជ័យ ។"
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "ការបង្ហោះឯកសារបានបរាជ័យ។"
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "ថត Asset បាន បង្កើត ឡើង ដោយ ជោគជ័យ ។"
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Asset ត្រូវបានប្តូរឈ្មោះដោយជោគជ័យ។"
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Asset បាន លុប ចោល ដោយ ជោគជ័យ ។"
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "អ្នក ត្រូវ តែ ជ្រើស ឯកសារ ដើម្បី បង្ហោះ ជា មុន សិន !"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "យក"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "ត្រឡប់ទៅ កម្មវិធីនិពន្ធ វិញ"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "ដិត"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "ទ្រេត"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "គូសខ្វែង"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "ចំណងជើង {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "អក្សរកាត់"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "អក្សរធំ"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "ព័ត៌មាន Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "ជោគជ័យ Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "ការ ព្រមាន Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "កំហុស Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "បញ្ជីដែលមិនបានបញ្ជាទិញ"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "លំដាប់បញ្ជី"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "កូដក្នុងជួរ"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "គ្រាប់ចុចក្តារចុច"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "របារផ្ដេក"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "លាក់/បង្ហាញផ្ទាំងមើលជាមុន"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "បញ្ចូលតំណ"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "ផ្ទុកធាតុច្រើន"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "បញ្ចូលប្លុក"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "បញ្ចូលប្លុកកូដ"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "បញ្ចូលវីដេអូ / អូឌីយ៉ូ"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "បញ្ចូលដ្យាក្រាម"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "បញ្ចូលកន្សោមគណិតវិទ្យា"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "អ្នកជំនួយតារាង"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "ម៉ូដគ្មានការរំខាន"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "ជំនួយក្នុងការធ្វើទ្រង់ទ្រាយ Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "ការមើលប្រភពនៃទំព័រ {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "ត្រឡប់ទៅទិដ្ឋភាពធម្មតាវិញ។"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "លេខសម្គាល់ {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "ភាសា"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "វិភាគ"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "បន្ថែមឧបករណ៍វិភាគ និងតាមដានទៅវិគីរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "អ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធអ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "អ្នកផ្តល់សេវានេះមិនមានជម្រើសកំណត់រចនាសម្ព័ន្ធដែលអ្នកអាចកែប្រែបានទេ។"
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "បញ្ជីអ្នកផ្តល់សេវាត្រូវបានផ្ទុកឡើងវិញដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធវិភាគត្រូវបានរក្សាទុកដោយជោគជ័យ"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "ថែទាំ និងឧបករណ៍ផ្សេងៗ"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "ឧបករណ៍"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "ឧបករណ៍ផ្សេងៗសម្រាប់ការផ្ទៀងផ្ទាត់ / អ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Flush Cache"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "សម្អាតឃ្លាំងសម្ងាត់នៃសមាសធាតុផ្សេងៗ"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "ផ្លាស់ប្តូរ GraphQL endpoint សម្រាប់ Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "នាំចូលពី Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "ផ្ទេរទិន្នន័យពីការដំឡើង 1.x ពីមុន"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "តេឡេម៉ែត្រ"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "បើក/បិទ តេឡេម៉ែត្រ ឬកំណត់លេខសម្គាល់អតិថិជនឡើងវិញ"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "មតិយោបល់"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "បោះពុម្ពផ្សាយ"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "ឯកជន"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "សកល"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "កំពុង​ផ្ទុក​ទំព័រ..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "កូដ"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "ឈ្មោះ"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "ឈ្មោះដើម"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "ភាពអាចរកបាន"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Download"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "មាតិកា"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "ឧបករណ៍ផ្សេងៗសម្រាប់ទំព័រ"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "ការ កំណត់ រូប តំណាង"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "សំណុំរូបតំណាងដែលត្រូវប្រើសម្រាប់ការរុករករបារចំហៀង។"
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "កម្មវិធីរុករកតាមអ៊ីនធឺណិតរបស់អ្នកហួសសម័យហើយ។ ដំឡើងកំណែទៅជា {{modernBrowser}} ។"
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "កម្មវិធីរុករកទំនើប"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "ឈ្មោះ"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "អ្នកនិពន្ធ"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "ទាញយក"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} នៅពេលបន្ថែមរចនាប័ទ្មសម្រាប់មាតិកាទំព័រ អ្នកត្រូវតែកំណត់ពួកវាទៅថ្នាក់ {{cssClass}} ។ ការ​លុប​ចោល​នេះ​អាច​បំបែក​ប្លង់​អ្នក​និពន្ធ​!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ការប្រុងប្រយ័ត្ន៖"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "ជម្រើសប្រធានបទ"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "សកម្ម"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "អសកម្ម"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "ផ្ទៀងផ្ទាត់"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "មិនបានផ្ទៀងផ្ទាត់"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "កែសម្រួលអ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "លេខសម្គាល់ {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "ព័ត៌មានមូលដ្ឋាន"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "អ៊ីមែល"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "ឈ្មោះ បង្ហាញ"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "អ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "ពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "ផ្លាស់ប្តូរពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "ពាក្យសម្ងាត់​ថ្មី"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "ការផ្ទៀងផ្ទាត់កត្តាពីរ (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "បិទ/បើក 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "លេខសម្គាល់អ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "បណ្តុំក្រុម"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "អ្នក​ប្រើ​នេះ​មិន​ត្រូវ​បាន​កំណត់​ទៅ​ក្រុម​ណា​មួយ​នៅ​ឡើយ​ទេ។ អ្នកត្រូវតែកំណត់ក្រុមយ៉ាងហោចណាស់ 1 ដល់អ្នកប្រើប្រាស់។"
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "ជ្រើសរើសក្រុម..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "ចាត់តាំង"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "មេតាដេតាដែលបានពង្រីក"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "ទីតាំង"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "ចំណងជើងការងារ"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "ល្វែងម៉ោង"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "អ្នកប្រើប្រាស់បានធ្វើបច្ចុប្បន្នភាពដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "អ្នកប្រើប្រាស់ត្រូវបានចាត់តាំងឱ្យក្រុមនេះរួចហើយ!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "គោលដៅផ្ទុកនេះគឺ {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "សកម្ម"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "អសកម្ម"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "អ្នក ត្រូវ តែ អនុញ្ញាត គោលដៅ ផ្ទុក នេះ ហើយ អនុវត្ត ការ ផ្លាស់ប្ដូរ មុន ពេល អ្នក អាច ដំណើរការ សកម្មភាព។"
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "ជ្រើស ពាក្យ សម្ងាត់ ថ្មី"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "អ្នកត្រូវតែជ្រើសរើសពាក្យសម្ងាត់ថ្មី៖"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "ពាក្យសម្ងាត់​ថ្មី"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់ថ្មី។"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "ផ្លាស់ប្តូរពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "កំពុងផ្លាស់ប្តូរពាក្យសម្ងាត់..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "ទំព័រថ្មីៗ"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "ទំព័រពេញនិយមបំផុត។"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "ព័ត៌មាន"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "កាលវិភាគ"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "បណ្តាញសង្គម"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "ការចាត់ថ្នាក់"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "បណ្តាញសង្គម"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "អនុញ្ញាត ឲ្យ មាន មតិ យោបល់"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "សូមបើកការអធិប្បាយអំពីសមត្ថភាពនៅលើទំព័រនេះ។"
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "អនុញ្ញាតឲ្យមាន ការវាយតម្លៃ"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "បង្ហាញព័ត៌មានអ្នកនិពន្ធ"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "បង្ហាញរបារឧបករណ៍ចែករំលែក"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "បង្ហាញ របារ ឧបករណ៍ ដែល មាន ប៊ូតុង ដើម្បី ចែកចាយ និង បោះពុម្ព ទំព័រ នេះ"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "បង្ហាញអ្នកនិពន្ធទំព័រ រួមជាមួយនឹងពេលវេលាបោះពុម្ពចុងក្រោយ។"
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "បើកសមត្ថភាពវាយតម្លៃនៅលើទំព័រនេះ។"
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "ឬបង្កើតទិដ្ឋភាពផ្ទាល់ខ្លួន?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "រកមើលតាមស្លាក"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "ផែនទីគេហទំព័រ"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "សកម្មភាពទំព័រ"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "ការជ្រើសរើសបច្ចុប្បន្ន"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "ជម្រះការជ្រើសរើស"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "ជ្រើសរើសស្លាកមួយ ឬច្រើន។"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "ស្វែងរកក្នុងលទ្ធផល..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "ទីតាំង"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "បញ្ជាទិញដោយ"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "ជ្រើសរើសស្លាកមួយ ឬច្រើននៅខាងឆ្វេង។"
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "កំពុងទាញយកលទ្ធផលទំព័រ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "រកមិនឃើញទំព័រណាមួយដែលមានស្លាកដែលបានជ្រើសរើសទេ។"
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "រកមិនឃើញទំព័រណាមួយដែលត្រូវនឹងជម្រើសតម្រងបច្ចុប្បន្នទេ។"
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "អាប់ដេតចុងក្រោយ {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "កាលបរិច្ឆេទ​បង្កើត"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "កែប្រែចុងក្រោយ"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "ផ្លូវ"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "ចំណងជើង"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "ណាមួយ"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "ក្លាយជាអ្នកឧបត្ថម្ភតាមរយៈ GitHub Sponsors (ចូលទៅគាំទ្រដោយផ្ទាល់ទៅលើគោលដៅដឹកនាំរបស់ Developer Nicolas Giard ក្នុងការងារពេញម៉ោងលើវិគី.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "ក្លាយជាអ្នកឧបត្ថម្ភ"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "ស្លាក"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "ស្រទាប់សុវត្តិភាពការបញ្ចូន"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "គ្រប់គ្រងការកំណត់រចនាសម្ព័ន្ធ ស្រទាប់សុវត្តិភាព"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "អ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "ជ្រើសរើសវិញ្ញាបនបត្រផ្ទាល់ខ្លួន ប្រសិនបើអ្នកមានវិញ្ញាបនបត្រផ្ទាល់ខ្លួនរបស់អ្នករួចហើយ។"
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "ដែន"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "បញ្ចូល ដែន ដែល មាន គុណ សម្បត្តិ ពេញលេញ ដែល ចង្អុល ទៅ wiki របស់ អ្នក ។ (ឧ. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "ជម្រើសអ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "ត្រូវបានបិទ"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "សូម អ៊ិនគ្រីប"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "វិញ្ញាបនបត្រផ្ទាល់ខ្លួន"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "ច្រក"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "ច្រក HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "ច្រកមិនមែន SSL ដែលម៉ាស៊ីនមេនឹងស្តាប់សំណើ HTTP ។ ជាធម្មតា 80 ឬ 3000 ។"
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "ច្រក HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "ច្រក SSL ដែលម៉ាស៊ីនមេនឹងស្តាប់សំណើ HTTPS ។ ជាធម្មតា 443 ។"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "ប្តូរទិសសំណើ HTTP ទៅ HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "នឹង តម្រង់ ទិស ដោយ ស្វ័យ ប្រវត្តិ នូវ សំណើ ណា មួយ នៅ លើ ច្រក HTTP ទៅ កាន់ HTTPS។"
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "ចំណាំថាឯកសារកំណត់រចនាសម្ព័ន្ធរបស់អ្នកត្រូវតែអាចសរសេរបាន ដើម្បីបន្តការកំណត់រចនាសម្ព័ន្ធច្រក។"
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "និមិត្តសញ្ញា URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "បញ្ជាក់រូបភាពដើម្បីប្រើជា logo។ SVG, PNG, JPG ត្រូវបានគាំទ្រ, នៅក្នុងសមាមាត្រការ៉េ, 34x34 pixels ឬធំជាងនេះ. ចុច ប៊ូតុង នៅ ខាង ស្ដាំ ដើម្បី បង្ហោះ រូបភាព ថ្មី ។"
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "លុប​អ្នក​ប្រើ?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "តើអ្នកប្រាកដថាចង់លុបអ្នកប្រើប្រាស់ {{username}} ទេ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "ធ្វើបច្ចុប្បន្នភាពអ្នកប្រើប្រាស់"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "ចំណាំថាអ្នកមិនអាចចាត់តាំងអ្នកប្រើប្រាស់ទៅអ្នកគ្រប់គ្រងឬក្រុមភ្ញៀវពីបន្ទះនេះបានទេ។"
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "ចំណាំថាអ្នកមិនអាចលុបអ្នកប្រើដែលបានបង្កើតមាតិការួចទៅហើយ។ អ្នក ត្រូវ តែ ធ្វើ ឲ្យ អ្នក ប្រើ អសកម្ម ឬ លុប មាតិកា ទាំងអស់ ដែល ត្រូវ បាន បង្កើត ឡើង ដោយ អ្នក ប្រើ នោះ ។"
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "ស្គ្រីប"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS នឹង ត្រូវ បាន បែង ចែក ដោយ ស្វ័យ ប្រវត្តិ នៅ ពេល សន្សំ សំចៃ ។ កុំបញ្ចូលស្លាករចនាប័ទ្មជុំវិញ, មានតែកូដ CSS ពិតប្រាកដ."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "អាច មើល ឃើញ មនុស្ស គ្រប់ គ្នា"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "មើលឃើញដើម្បីជ្រើសរើសក្រុម..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "ជ្រើសរើសទំព័រ..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "ណាវីហ្គេតសិន ម៉ូដ"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "មែកធាងគេហទំព័រ"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "ក្លាសិច មែកធាងមូលដ្នាន Navitation"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "កែប្រែ ណាវីហ្គេតសិន"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Navigateion ម៉ឺនុយ ឋិតិវន្ត + ប៊ូតុងមែកធាងគេហទំព័រ"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "គ្មាន"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "បិទការរុករកគេហទំព័រ"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "អ្នកប្រើប្រាស់ត្រូវបានផ្ទៀងផ្ទាត់ដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "អ្នកប្រើប្រាស់ត្រូវបានធ្វើឱ្យសកម្មដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "អ្នកប្រើប្រាស់បានបិទដំណើរការដោយជោគជ័យ។"
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "អត្ថបទ ត្រូវ តែ ជ្រើស ដំបូង !"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "បន្តវិញ្ញាបនបត្រ"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "ស្ថានភាពវិញ្ញាបនបត្រ"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "វិញ្ញាបនបត្រផុតកំណត់"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "អ៊ីមែលអ្នកជាវ"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "រដ្ឋបច្ចុប្បន្ន"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "បើក"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "បិទ"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "បន្ត​វិញ្ញាបនបត្រ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "កុំចាកចេញពីទំព័រនេះ។"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "វិញ្ញាបនបត្របានបន្តដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP Redirection បានផ្លាស់ប្តូរដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "គ្រប់គ្រងស្លាកទំព័រ"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "គ្មានស្លាកដែលត្រូវបង្ហាញ។"
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "កែសម្រួល Tag"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "ស្លាក"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "ស្លាក​សញ្ញា"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "បានបង្កើត {{created}} និងចុងក្រោយបំផុត {{updated}} ។"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "លុប ស្លាក នេះ"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "ជ្រើសរើស tag មួយពីបញ្ជីនៅខាងឆ្វេង។"
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "បន្ថែម tag ទៅទំព័រដើម្បីចាប់ផ្តើម។"
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tags ត្រូវបានធ្វើឱ្យស្រស់។"
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Tag បាន លុប ចោល ដោយ ជោគជ័យ ។"
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tag ត្រូវបានរក្សាទុកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "តម្រង..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "មើលទំព័រដែលភ្ជាប់"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "លុប Tag?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "តើអ្នកប្រាកដថាចង់លុបស្លាក {{tag}} ទេ? ស្លាកក៏នឹងត្រូវបានផ្តាច់ចេញពីទំព័រទាំងអស់ផងដែរ។"
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "គ្រប់គ្រងសោដើម្បីចូលប្រើ API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API ត្រូវបានបើក"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API ត្រូវបានបិទ"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "បើកដំណើរការ API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "បិទ API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "សោ API ថ្មី។"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "ឈ្មោះ"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "គន្លឹះ បញ្ចប់"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "ផុតកំណត់"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "បានបង្កើត"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "ទាន់សម័យចុងក្រោយ"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "ដកហូត"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "មិន​ទាន់​មាន​សោ API ត្រូវ​បាន​បង្កើត​នៅ​ឡើយ​ទេ។"
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "ដកហូត API Key?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "តើអ្នកប្រាកដថាចង់ដកសោ {{name}} ទេ? សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "ដកហូត"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "បញ្ជីនៃសោ API ត្រូវបានធ្វើឱ្យស្រស់ ស្អាត។"
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "សោត្រូវបានដកហូតដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "សោ API ថ្មី។"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API key បាន បង្កើត ឡើង ដោយ ជោគជ័យ ។"
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "ឈ្មោះបាត់ ឬមិនត្រឹមត្រូវ។"
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "អ្នកត្រូវតែជ្រើសរើសក្រុម។"
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "ក្រុមភ្ញៀវមិនអាចប្រើសម្រាប់សោ API បានទេ។"
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "គោលបំណងនៃគន្លឹះនេះ"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "ឈ្មោះ"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "ផុតកំណត់"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "អ្នក នៅ តែ អាច ដក ហូត គន្លឹះ នៅ ពេល ណា ក៏ បាន ដោយ មិន គិត ពី ការ ផុត កំណត់ នោះ ទេ ។"
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "វិសាលភាពអនុញ្ញាត"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "ការចូលប្រើពេញលេញ"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "ឬប្រើការអនុញ្ញាតជាក្រុម..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "បង្កើត"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "ក្រុម"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "សោ API នឹង មាន ការ អនុញ្ញាត ដូច គ្នា នឹង ក្រុម ដែល បាន ជ្រើស រើស ។"
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 ថ្ងៃ។"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 ថ្ងៃ។"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 ថ្ងៃ។"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 ឆ្នាំ"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 ឆ្នាំ។"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "ចម្លងគន្លឹះដែលបង្ហាញខាងក្រោមជា {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "វា នឹង មិន ត្រូវ បាន បង្ហាញ ម្តង ទៀត ទេ"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API ត្រូវបានបើកដំណើរការដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API ត្រូវបានបិទដោយជោគជ័យ។"
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "បានរក្សាទុក"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "គ្មាន"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "អាជ្ញាប័ណ្ណ Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "អាជ្ញាប័ណ្ណ Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "អាជ្ញាប័ណ្ណ Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "ដែនសាធារណៈ"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "រក្សា​រ​សិទ្ធ​គ្រប់យ៉ាង"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "អាជ្ញាប័ណ្ណមាតិកា"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "អាជ្ញាប័ណ្ណដែលបានបង្ហាញនៅក្នុងជើងទំព័រមាតិកាទាំងអស់។"
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "ខ្លឹមសារមាននៅក្រោម {{license}} ដោយ {{company}} ។"
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "អ្នកមិនអាចទាញយកមាតិកាទំព័របានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "អ្នកមិនអាចទាញយកខ្លឹមសារសម្រាប់កំណែទំព័រនេះបានទេ។"
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "អ្នកមិនអាចមើលប្រភពនៃកំណែនៃទំព័រនេះបានទេ។"
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "កំពុងមើលប្រភពនៅ {{date}} នៃទំព័រ {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "លេខសម្គាល់កំណែ {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "ស្ដារកំណែទំព័រឡើងវិញ?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "តើ​អ្នក​ប្រាកដ​ជា​ចង់​ស្ដារ​មាតិកា​ទំព័រ​នេះ​ដូច​ដែល​វា​មាន​នៅ​ថ្ងៃ {{date}} ទេ? កំណែនេះនឹងត្រូវបានចម្លងនៅលើកំពូលនៃប្រវត្តិបច្ចុប្បន្ន។ ដូច្នេះ កំណែថ្មីជាងនេះ នឹងនៅតែត្រូវបានរក្សាទុក។"
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "ស្ដារឡើងវិញ"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "កំណែទំព័រត្រូវបានស្ដារឡើងវិញដោយជោគជ័យ!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} តួអក្សរ, {{words}} ពាក្យ"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "ដោះស្រាយការរក្សាទុកជាន់គ្នា"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "មូលដ្ឋាន (local)"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "ប្រើពីចម្ងាយ (remote)"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "បោះបង់ការផ្លាស់ប្តូរមូលដ្ឋាននិងប្រើកំណែចុងក្រោយបំផុត"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "ប្រើមាតិកានៅក្នុងបន្ទះ(Panel) ខាងឆ្វេង"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "មើលកំណែចុងក្រោយបំផុត។"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "កំណែថ្មីនៃទំព័រនេះត្រូវបានរក្សាទុកដោយ {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "តើ​អ្នក​ចង់​ធ្វើអ្វី?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "ប្រើកំណែមូលដ្ឋានបច្ចុប្បន្នរបស់អ្នក ហើយមិនអើពើនឹងការផ្លាស់ប្តូរចុងក្រោយបង្អស់។"
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "ប្រើកំណែពីចម្ងាយ (ចុងក្រោយបំផុត) ហើយបោះបង់ការផ្លាស់ប្តូររបស់អ្នក។"
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "សរសេរជាន់លើជាមួយកំណែពីចម្ងាយ?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "តើអ្នកប្រាកដថាចង់ជំនួសកំណែបច្ចុប្បន្នរបស់អ្នកជាមួយនឹងមាតិកាពីចម្ងាយចុងក្រោយបំផុតមែនទេ? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "ការកែសម្រួលបច្ចុប្បន្នរបស់អ្នកនឹងត្រូវបាត់បង់។"
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "បញ្ជាក់"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "កំណែក្នុងស្រុក {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(អាចកែបាន)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(អាច​បាន​តែ​អាន)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "កំណែពីចម្ងាយ {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "ការកែសម្រួលបច្ចុប្បន្នរបស់អ្នក ដោយផ្អែកលើកំណែទំព័រពី {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "កែសម្រួលចុងក្រោយដោយ {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "ចំណងជើង៖"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "ការពិពណ៌នា៖"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "អ្នកមានការកែសម្រួលដែលមិនបានរក្សាទុក។ តើអ្នកប្រាកដថាចង់ចាកចេញពីអ្នកកែសម្រួលទេ?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "រក្សាទុកជម្លោះ! អ្នកប្រើប្រាស់ផ្សេងទៀតបានកែប្រែទំព័រនេះរួចហើយ។"
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "ស្ទួន"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "ឈ្មោះបង្ហាញ"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "ទីតាំង"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "ចំណងជើងការងារ"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "ល្វែងម៉ោង"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "ប្រវត្តិរូប"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "ព័ត៌មានផ្ទាល់ខ្លួនរបស់ខ្ញុំ"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "ព័ត៌មានរបស់ខ្ញុំ"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "មើលប្រវត្តិរូបសាធារណៈ"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "អ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "ផ្លាស់ប្តូរពាក្យសម្ងាត់"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "លេខសំងាត់​បច្ចុប្បន្ន"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "ពាក្យសម្ងាត់​ថ្មី"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "បញ្ជាក់​លេខសំងាត់​ថ្មី"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "ក្រុម"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "សកម្មភាព"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "បានចូលរួម"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "ប្រវត្តិរូបដែលបានធ្វើបច្ចុប្បន្នភាពចុងក្រោយនៅលើ"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "ចូលចុងក្រោយ"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "ទំព័រត្រូវបានបង្កើតឡើង"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "មតិដែលបានបង្ហោះ"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "ប្រវត្តិរូបត្រូវបានរក្សាទុកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "បានផ្លាស់ប្តូរពាក្យសម្ងាត់ដោយជោគជ័យ។"
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "ទំព័រ"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "មតិយោបល់"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "បញ្ជីទំព័រដែលខ្ញុំបានបង្កើត ឬកែប្រែចុងក្រោយ"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "គ្មានទំព័រដែលត្រូវបង្ហាញ។"
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "បញ្ជីទំព័រត្រូវបានធ្វើឱ្យស្រស់។"
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "ចំណងជើង"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "ផ្លូវ"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "បានបង្កើត"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "ទាន់សម័យចុងក្រោយ"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "ការចូលចុងក្រោយ"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "រុករក"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "បញ្ជី​ដើម"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "ថតបច្ចុប្បន្ន"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(ឫស)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "ចម្លងពីមូលដ្ឋាន..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "ប្រភព មូលដ្ឋាន"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "ទីតាំងដែលធាតុរុករកនឹងត្រូវបានចម្លងពី។"
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "ចម្លង"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "ជ្រើសរើសមូលដ្ឋានពីធាតុណាដែលនឹងត្រូវបានចម្លងពី។ ធាតុនឹងត្រូវបានបន្ថែមទៅបញ្ជីបច្ចុប្បន្ននៃធាតុនៅក្នុងមូលដ្ឋានសកម្ម។"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "ការ រុករក Static"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "ម៉ឺនុយរុករកឋិតិវន្តតែប៉ុណ្ណោះ"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "ចំណូលចិត្ត"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "ទម្រង់កាលបរិច្ឆេទ"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "មូលដ្ឋានលំនាំដើម"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "រូបរាង"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "គេហទំព័រលំនាំដើម"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "ពន្លឺ"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "ងងឹត"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "ផ្ទៀងផ្ទាត់វិញ្ញាបនបត្រ SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "ម៉ាស៊ីនមួយចំនួនតម្រូវឱ្យពិនិត្យវិញ្ញាបនបត្រ SSL ដើម្បីបិទ។ បើកដំណើរការទុកសម្រាប់សុវត្ថិភាពត្រឹមត្រូវ។"
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "តំណភ្ជាប់ខាងក្រៅ (បង្អួចថ្មី)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "សន្តិសុខ"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "ទំហំផ្ទុកឡើងអតិបរមា"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "ឯកសារអតិបរមាក្នុងមួយបង្ហោះ"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "តើអាចផ្ទុកឯកសារបានប៉ុន្មានក្នុងមួយបាច់?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "ទំហំអតិបរមាសម្រាប់ឯកសារតែមួយ។"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "បៃ"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "ឯកសារ"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "ផ្ទុកឡើង"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "ការកំណត់ទាំងនេះប៉ះពាល់តែ Wiki.js ប៉ុណ្ណោះ។ ប្រសិនបើអ្នកកំពុងប្រើប្រូកស៊ីបញ្ច្រាស (ឧទាហរណ៍ nginx, apache, Cloudflare) អ្នកក៏ត្រូវផ្លាស់ប្តូរការកំណត់របស់វាឱ្យត្រូវគ្នា។"
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "កំណត់រចនាសម្ព័ន្ធការកំណត់សុវត្ថិភាព"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "ផ្នែកបន្ថែម"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "ដំឡើងផ្នែកបន្ថែមសម្រាប់មុខងារបន្ថែម"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "អ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "បន្ថែមការពិភាក្សាទៅកាន់ទំព័រវិគីរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធអ្នកផ្តល់សេវា"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "អ្នកផ្តល់សេវានេះមិនមានជម្រើសកំណត់រចនាសម្ព័ន្ធដែលអ្នកអាចកែប្រែបានទេ។"
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "មាតិកាណាមួយ (ទំព័រ ការបង្ហោះ មតិយោបល់។ វាត្រូវបានផ្ដល់អនុសាសន៍ឱ្យបង្កើតអ្នកប្រើប្រាស់គោលដៅអត់ចេះសោះ (ឧ. អ្នកប្រើប្រាស់ដែលបានលុប) ប្រសិនបើអ្នកមិនចង់ឱ្យមាតិកាត្រូវបានចាត់តាំងឡើងវិញទៅអ្នកប្រើប្រាស់សកម្មបច្ចុប្បន្នណាមួយ។"
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "យុទ្ធសាស្ត្រសកម្ម"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "បន្ថែម យុទ្ធសាស្ត្រ"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "រចនាប័ទ្ម"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "អ្នក ត្រូវ តែ ឡោមព័ទ្ធ កូដ javascript របស់ អ្នក ជាមួយ ស្លាក script HTML ។"
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "ទំព័រនេះមិនត្រូវបានផ្សព្វផ្សាយទេ។"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "មតិយោបល់"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "សរសេរមតិថ្មី..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "ឈ្មោះ"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "អ៊ីមែល / ឈ្មោះអ្នកប្រើ"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "ទម្រង់ Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "ប្រកាសមតិ"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "កំពុងផ្ទុកមតិ..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "បង្ហោះជា {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "ធ្វើជាអ្នកបញ្ចេញមតិមុនគេ។"
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "មិនទាន់មានយោបល់នៅឡើយទេ។"
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "ធ្វើបច្ចុប្បន្នភាពមតិ"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "បញ្ជាក់ការលុប"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "តើអ្នកប្រាកដថាចង់លុបមតិយោបល់នេះជារៀងរហូតទេ?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "បានកែប្រែ {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "មតិថ្មីត្រូវបានបង្ហោះដោយជោគជ័យ។"
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "មតិគឺទទេ ឬខ្លីពេក!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "មតិត្រូវបានអាប់ដេតដោយជោគជ័យ។"
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "មតិត្រូវបានលុបដោយជោគជ័យ។"
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "បិទ/បើកការពិនិត្យអក្ខរាវិរុទ្ធ"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "ចូល"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "អេក្រង់ចូល"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធ JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "រំលងអេក្រង់ចូល"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "អ្នកគួរប្រើដោយស្វ័យប្រវត្តិទៅកាន់ការផ្ទៀងផ្ទាត់ដំបូង។"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "ចូល ទៅ ក្នុង Background Image URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "បញ្ជាក់រូបភាពដើម្បីប្រើជាផ្ទៃខាងក្រោយនៃការចូល(login)។ PNG និង JPG ត្រូវបានគាំទ្រ 1920x1080 ត្រូវបានណែនាំ។ ទុកទទេសម្រាប់លំនាំដើម។ ចុចប៊ូតុងនៅខាងស្តាំដើម្បីផ្ទុករូបភាពថ្មី។ ចំណាំថាក្រុមភ្ញៀវត្រូវតែមានសិទ្ធិអានរូបភាពដែលបានជ្រើសរើស!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "ជ្រើសរើសអ្នកផ្តល់ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "កុំបង្ហាញអ្នកផ្តល់ការផ្ទៀងផ្ទាត់មូលដ្ឋាននៅលើអេក្រង់ចូល។ បន្ថែម ?ឲ្យទាំងអស់ទៅ URL ដើម្បីប្រើវាជាបណ្ដោះអាសន្ន។"
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "សន្តិសុខ"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "អនុវត្ត 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "បង្ខំ ឲ្យ អ្នក ប្រើ ទាំងអស់ ប្រើ ប្រាស់ Two-Factor Authentication នៅ ពេល ប្រើ ប្រាស់ កម្មវិធី ផ្ដល់ ភាព ត្រឹមត្រូវ ជាមួយ ទម្រង់ user / password។"
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "មើលការពិភាក្សា"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "មតិថ្មី"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "មាតិកា មតិ យោបល់"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "និយាយ"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "ស្លាក"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "ទំព័រដែលត្រូវគ្នានឹងស្លាក"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "ត្រឡប់ទៅកំពូល វិញ"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "អ៊ីមែល / ឈ្មោះអ្នកប្រើ"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "ចេញ"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "កំណត់រចនាសម្ព័ន្ធបំពង់បង្ហាញទំព័រ"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "ចំណងជើងគេហទំព័រមានតួអក្សរមិនត្រឹមត្រូវ។"
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "ការកំណត់រចនាសម្ព័ន្ធគេហទំព័រត្រូវបានរក្សាទុកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA ត្រូវបានបិទដោយជោគជ័យ។"
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA ត្រូវបានបើកដោយជោគជ័យ។"
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "កំពុងស្នើសុំកំណត់ពាក្យសម្ងាត់ឡើងវិញ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "ពិនិត្យ មើល អ៊ីមែល របស់ អ្នក សម្រាប់ សេចក្ដី ណែនាំ កំណត់ ពាក្យ សម្ងាត់ ឡើង វិញ !"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "សកម្ម"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "តើអ្នកប្រើប្រាស់អាចចូលដោយប្រើយុទ្ធសាស្ត្រនេះបានទេ?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "ឈ្មោះបង្ហាញ"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "ចំណងជើងដែលបង្ហាញដល់អ្នកប្រើប្រាស់ចុងក្រោយសម្រាប់យុទ្ធសាស្ត្រផ្ទៀងផ្ទាត់នេះ។"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "ជ្រើសរើសអ្នកផ្តល់ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "បញ្ចូលព័ត៌មានបញ្ជាក់អត្តសញ្ញាណរបស់អ្នក"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "ភ្លេចពាក្យសម្ងាត់របស់អ្នក"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "បញ្ចូលលេខកូដសុវត្ថិភាពដែលបានបង្កើតពីឧបករណ៍ដែលអ្នកទុកចិត្ត៖"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "អ្នកគ្រប់គ្រងរបស់អ្នកបានទាមទារការផ្ទៀងផ្ទាត់ពីរកត្តា (2FA) ដើម្បីបើកនៅលើគណនីរបស់អ្នក។"
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "១) ស្កេនលេខកូដ QR ខាងក្រោមពីកម្មវិធី 2FA ក្នុង​ទូរស័ព្ទ​ចល័ត​របស់អ្នក៖"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "២) បញ្ចូលលេខកូដសុវត្ថិភាពដែលបានបង្កើតពីឧបករណ៍ដែលអ្នកទុកចិត្ត៖"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "ជ្រើសរើស"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "ជ្រើសរើសទីតាំងទំព័រថ្មី"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "ផ្លាស់ទី / ប្តូរឈ្មោះទីតាំងទំព័រ"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "ជ្រើសរើសទំព័រ"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "ប្រអប់​ឯកសារ​និម្មិត"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "ទំព័រ"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "ប្រអប់​ឯកសារ​នេះ​គឺ​ទទេ។"
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "បម្លែង"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "បម្លែងទំព័រ"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "ជ្រើសរើសកម្មវិធីនិពន្ធដែលអ្នកចង់ប្រើទៅមុខសម្រាប់ទំព័រ {{title}} :"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "ទំព័រមាតិកា  នឹង ត្រូវ បាន បម្លែង ទៅ ជា ទ្រង់ទ្រាយ នៃ កម្មវិធី និពន្ធ ដែល បាន ជ្រើស ថ្មី។ សូម កត់ សម្គាល់ ថា មាតិកា ដែល បាន ធ្វើ ការបម្លែងទ្រង់ទ្រាយ ឬ មិន បាន បង្ហាញ មួយ ចំនួន អាច នឹង ត្រូវ បាត់ បង់ ជា លទ្ធផល នៃ ការ បម្លែង ។ហើយ រូប ថត នឹង ត្រូវ បាន បន្ថែម ទៅ ក្នុង ទំព័រប្រវត្តិ  និង អាច ស្តារ ឡើង វិញ នៅ ពេល ណា ក៏ បាន ។"
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "បម្លែង"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "រដ្ឋបាល"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "នាំចេញទៅឌីស"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "រក្សា ទុក មាតិកា ទៅ tarball សម្រាប់ រក្សាទុក (backup)  / ផ្ទេរ (migration)"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TOC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "តារាងមាតិកា"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "ប្រើលំនាំដើមគេហទំព័រ"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "កម្រិត ក្បាល លំនាំ ដើម TOC"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "តារាង នៃ មាតិកា នឹង បង្ហាញ ពី ក្បាល និង រហូត ដល់ កម្រិត ដែល បាន ជ្រើស ដោយ លំនាំ ដើម។"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "កម្រិត ក្បាល លំនាំ ដើម TOC"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "តារាង នៃ មាតិកា នឹង បង្ហាញ ពី ក្បាល និង រហូត ដល់ កម្រិត ដែល បាន ជ្រើស ដោយ លំនាំ ដើម។"
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "ក្លាយអិនកំណត់ឈ្មោះម៉ាស៊ីន"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "ជម្រើសនៃការដាក់ឈ្មោះ(optional) ដើម្បី ផ្ញើ ទៅ ម៉ាស៊ីន SMTP ដើម្បី កំណត់ អត្តសញ្ញាណ សំបុត្រ របស់ អ្នក ។ ទុក ឲ្យ ទទេ ដើម្បី ប្រើ server hostname ។ សម្រាប់អតិថិជន Google Workspace នេះគួរតែជាឈ្មោះដែនចម្បងរបស់អ្នក។"
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "ទំព័រផ្នែកបន្ថែម"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "បញ្ជី ដែល បំបែក ដោយ comma នៃ URL extensions ដែល នឹង ត្រូវ បាន ចាត់ ទុក ថា ជា ទំព័រ ។ ឧទាហរណ៍ ការ បន្ថែម md នឹង ព្យាបាល /foobar.md ដូច គ្នា នឹង /foobar។"
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "ប៊ូតុងឈ្មោះគេហទំព័រ"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "ឈ្មោះ របស់ តំបន់ ខាង ក្រៅ (external site )ដើម្បី បង្ហាញ នៅ លើ ប៊ូតុង កែ សម្រួល (Edit Button)  ។ កុំបញ្ចូល \"Edit on\" ។"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "ប៊ូតុងឈ្មោះគេហទំព័រ"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "រូបតំណាង ដើម្បី បង្ហាញ នៅ លើ ប៊ូតុង កែសម្រួល (Edit button) ។ ឧទាហរណ៍ mdi-github ដើម្បី បង្ហាញ រូប តំណាង GitHub ។"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "ប៊ូតុង URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Url ទៅទំព័រនៅលើឃ្លាំងខាងក្រៅ(external repository)។ ប្រើកន្លែងដាក់ {filename} ដែលឈ្មោះឯកសារគួរតែត្រូវបានរួមបញ្ចូល។ (ឧទាហរណ៍ https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "កែសម្រួលផ្លូវកាត់"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB ម៉ឺនុយកែសម្រួលរហ័ស "
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "បង្ហាញប៊ូតុង កែសម្រួលសកម្មភាពអណ្តែត (FAB) ជាមួយនឹងspeed-dial នៅជ្រុងខាងក្រោមខាងស្តាំនៃអេក្រង់។"
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "កែសម្រួលរបារម៉ឺនុយរបារ"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "បង្ហាញម៉ឺនុយរបារកែសម្រួល"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "បង្ហាញម៉ឺនុយរបារ កែសម្រួលក្បាលទំព័រ"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "បង្ហាញប៊ូតុងកែសម្រួល"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "បង្ហាញប៊ូតុង ដើម្បីកែសម្រួលទំព័របច្ចុប្បន្ន"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "បង្ហាញប៊ូតុងកែសម្រួលខាងក្រៅ"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "បង្ហាញប៊ូតុងដែលភ្ជាប់ទៅឃ្លាំងខាងក្រៅ (ឧ. GitHub) ដែលអ្នកប្រើប្រាស់អាចកែសម្រួល ឬបញ្ជូន PR សម្រាប់ទំព័របច្ចុប្បន្ន។"
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "កែសម្រួលនៅលើ {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

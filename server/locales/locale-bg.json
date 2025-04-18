@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Изпълнява се от"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Изисква се влизане"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Имейл / Потребителско име"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Парола"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Влизане"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Невалидно влизане"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Имейлът или паролата са невалидни."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Невалиден потребителски имейл"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Грешка при влизане"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Все още не сте упълномощени да влизате в този сайт."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Твърде много опити!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Направили сте твърде много неуспешни опита за кратък период от време, моля, опитайте отново след {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Потребителят не е намерен"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Местен"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Майкрософт профил"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure aктивна директория"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google идентификатор"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Активна директория"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Двуфакторно удостоверяване"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Изисква се код за защита:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Провери"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Табло"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Общи"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Език"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Статистика"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Тема"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Групи"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Потребители"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Удостоверяване"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Редактор"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Влизане"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Изобразяване"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Търсачка"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Хранилище"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Достъп до API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Системна информация"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Разни"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Инструменти за разработчици"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Допринасeте към Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Основни настройки на вашето Wiki"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Информация за сайта"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Марка на сайта"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Сайт"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Потребители"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Модули"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Система"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Конфигурирайте настройките за локализация за вашето Wiki"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Настройки на езиковата променлива"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Многоезичност"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Изтегляне на езикова променлива"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Базова езикова променлива"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Всички текстови елементи на потребителския интерфейс ще бъдат показвани на избрания език."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Автоматично актуализиране"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Автоматично изтегляне на актуализациите на всички активни езици, посочени по-долу."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Многоезичност"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Включва няколко езикови версии на една и съща страница."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Активни езици"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Списък от езици, разрешени за многоезични страници. Основният език, посочен по-горе, винаги ще бъде включен, независимо от този избор."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Локалният код ще бъде префиксиран към всички пътища. (напр. / {{langCode}} / име на страница)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Пътища без езикова променлива ще бъдат автоматично пренасочени към базовата езикова променлива, дефинирана по-горе."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Запазване"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Отмяна"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Изтегляне"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Качване"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Отхвърляне"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Изчистване"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Създаване"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Редактиране"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Изтриване"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Обновяване"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Запазване на промените"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Продължи"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Езикова променлива на сайта"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Изтегляй автоматично актуализациите на този език, когато станат достъпни."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Информация за вашата система"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Информация за хоста"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Текуща версия"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Последна версия"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Публикувана"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Операционна система"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Хост"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Процесорни ядра"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Обем на оперативната памет"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Работна директория"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Конфигурационен файл"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Използванa оперативна памет (RAM): {{used}}/{{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Помогнете на разработката и управлението на Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Финансирайте нашата работа"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Разпространете"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Говорете с вашите приятели и колеги за това колко страхотно е Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Следвайте ни на {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Изпратете идея или гласувайте за предложена на {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "място за функционални заявки"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Намерихте бъг? Изпратете ни описание на {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Помогнете за превода на Wiki. js на вашия език. Уведомете ни за {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Направи дарение"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Допринеси"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js също е част от инициативата „Отворен колектив“, прозрачен фонд, който се насочва към ресурсите на общността. Можете да допринесете финансово, като направите месечно или еднократно дарение:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Имаме нужда от вашата помощ, за да продължим да подобряваме софтуера и да стартираме различни свързани услуги (напр. хостинг и работа в мрежа)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki. js е безплатен софтуер с отворен код, който е доставен до вас с {{0}} от {{1}} и {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "сътрудници"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Изобразяване"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Моля, изчакайте..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Страницата е създадена успешно."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Възникна грешка при създаването на страницата"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Можете също така да закупите тениски на Wiki.js, за да подкрепите финансово проекта:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Магазин Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . Всички права запазени."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Тази страница все още не съществува."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Искате ли да я създадете сега?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Създаване на страница"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Назад"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Страници"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Навигация"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Управление на навигацията в сайта"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Добави"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Връзка"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Разделител"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Заглавен"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Етикет"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Икона"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Тип на целта"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Цел"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Изберете навигационен елемент отляво."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Без заглавие {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Външна връзка"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Начало"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Заявка за търсене"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Редактиране {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Изтриване {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Навигацията бе запазена успешно."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Щракнете върху бутона Добави, за да добавите първия си навигационен елемент."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Навигацията е празна"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Приложи"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Имейл адрес"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Потвърждаване на парола"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Име"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Регистрирайте се"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Създаване на профил"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Вече имате профил? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Влез като..."
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Влезте с помощта на {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Забравена парола?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "или влезте с помощта на ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Все още нямате профил? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Създаване на профил"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Въведете валиден имейл / потребителско име."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Въведете валидна парола."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Вход успешен! Пренасочване..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Влизане ..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Автентификацията е недостъпна."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Попълнете формуляра по-долу, за да създадете профила си."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Моля, изчакайте"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Профилът е създаден успешно!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Създаване на профил..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Липсващ имейл адрес."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Имейл адресът е невалиден."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Липсваща парола."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Паролата е твърде кратка."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Двете пароли не съвпадат."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Името липсва."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Името е твърде кратко."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Името е твърде дълго."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Отмени"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Нулиране на парола"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Въведете своя имейл адрес, за да получите инструкциите за нулиране на паролата си:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Поща"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Конфигуриране на настройките за поща"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Конфигурация"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (незадължително)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Проверете имейлите си, за да активирате профила си."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Страницата е актуализирана успешно."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Неоторизиран"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Не можете да видите тази страница."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Не можете да видите източника на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Не можете да преглеждате хронологията на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Не можете да редактирате страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Не можете да създадете страницата."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Назад"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Начало"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Не е намерено"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Тази страница не съществува."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Влез като..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Станете спонсор"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Станете спонсор чрез Patreon (подкрепете директно водещия разработчик Nicolas Giard да работи на пълно работно време в Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Добре дошли във вашето Wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Нека започнем и да създадем началната страница."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Създаване на начална страница"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Знамена"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Вояджър"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Направете еднократно или регулярно дарение чрез Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Приемаме Ethereum дарения:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Пакет езикови променливи за странично зареждане"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Ако не сте свързани към интернет или не може да изтеглите езикови файлове с помощта на метода по-горе, можете да го направите ръчно по-долу."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Преглед..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Управление на webhooks към външни услуги"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Изпращане на тестов имейл"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Имейл адрес на получателя"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Изпращане на имейл"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Подател"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Име на подателя"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Имейл на подателя"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP настройки"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Домакин"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Порт"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Обикновено 465 (препоръчва се), 587 или 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Сигурен (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Трябва да бъде активирана, когато използвате порт 465, в противен случай изключен е (587 или 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Потребителско име"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Парола"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) осигурява слой за сигурност на всички имейли, изпратени от Wiki.js, като предоставя на получателите средства да валидират името на домейна и да гарантират автентичността на съобщението."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Използвайте DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Име на домейн"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Селектор на ключове"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Частен ключ"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Частен ключ за селектора в PEM формат"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Изпращане на тестов имейл, за да се уверите, че конфигурацията на SMTP работи."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Конфигурацията е запазена успешно."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Версията на вашата база данни не се поддържа изцяло. Някои функции могат да бъдат ограничени или да не работят както се очаква."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Информацията за системата е обновена."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Конфигурирайте настройките за автентификация на вашето Wiki"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Стратегии"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Глобални разширени настройки"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT аудитория"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "URN аудитория, използвана в JWT, издадена при влизане. Обикновено името на вашия домейн. (напр. urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Изтичане на токен"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Срокът на валидност на токен, преди да трябва да бъде подновен. (по подразбиране: 30 мин)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Период на подновяване на токен"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Максималният период, в който маркерът може да бъде подновен, когато е изтекъл. (по подразбиране: 14 дни)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Тази стратегия е {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "активен"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "неактивен"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "и не може да бъде деактивиран."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Тестовият имейл беше изпратен успешно."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Променете външния вид и усещането на вашето Wiki"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Тема на сайта"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Темите влияят върху начина на изобразяване на страниците със съдържание. Други секции на сайта (като например областта на или на администриране) не са засегнати."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Тъмен режим"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Не се препоръчва за достъпност. Може да не се поддържа от всички теми."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Инжектиране на код"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS заместване"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS код за инжектиране след CSS кода по подразбиране на системата. Препоръчително е използването на персонализирани теми, в случай че имате голямо количество код. Инжектирането на твърде много CSS код ще доведе до бавно зареждането на страницата! CSS кодът автоматично ще бъде минимизиран."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Инжектиране на HTML в head тага"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML код, който трябва да се инжектира точно преди затварящия head таг. Обикновено са скриптове."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Инжектиране на HTML в body тага"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML код, който трябва да се инжектира точно преди затварящия body таг."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Изтегляне на теми"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Административна област"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Конфигурация на стратегията"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Тази стратегия няма конфигурационни опции, които можете да модифицирате."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Регистрация"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Позволяване на саморегистрация"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Разрешете на всеки потребител, успешно упълномощен от стратегията, да получи достъп до Wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Ограничете се до конкретни имейл домейни"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Списък на домейни, упълномощени да се регистрират. Домейнът на потребителския имейл адрес трябва да съответства на един от тях, за да получи достъп."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Присвояване към група"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Автоматично присвояване на нови потребители към тези групи."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Сигурност"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Принудете всички потребители да използват двуфакторна автентификация (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Потребителите ще трябва да инсталират двуфакторна автентификация при първото си влизане и няма да могат да я изключат."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Референтна конфигурация"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Някои стратегии може да изискват някои конфигурационни стойности да бъдат зададени на вашия доставчик. Те се предоставят само за справка и може да не са необходими в настоящата стратегия."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Първо трябва да зададете валиден {{siteUrl}}! Кликнете върху {{general}} в лявата странична лента."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Позволени Мрежови Източници"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL адрес за обратно повикване / URI за пренасочване"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Входен URL адрес"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Изходен URL адрес"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Метод за автентификация с токен и крайна точка"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Начало"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Нова страница"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Текуща страница"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Разгледай"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Редактиране"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "История"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Виж източника"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Преместване / Преименуване"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Изтрий"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Активи"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Изображения и Файлове"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Търсене..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Администрация"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Сметка"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Моето Wiki"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Профил"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Изход"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Вход"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Последно редактирана от"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Непубликувана"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Редактиране на страница"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Съдържание на страницата"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Bookmark"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Сподели"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Формат за печат"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Затвори"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Задаване на хранилища за архивиране и синхронизиране на вашето съдържание"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Хранилища"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Статус"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Последна синхронизация в {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Последният опит беше в {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Съобщение за грешка"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Не разполагате с никакви активни хранилища."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Конфигурация на хранилището"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Това хранилище няма конфигурирационни опции, които можете да модифицирате."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Посока на синхронизация"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Изберете как да се обработва синхронизирането на съдържанието за това хранилище."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Двупосочна"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Подайте към хранилището"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Изтеглете от хранилището"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Не се поддържа"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "В двупосочен режим съдържанието първо се изтегля от хранилището. Всяко ново съдържание замества локалното съдържание. След това новото съдържание постъпило след последното синхронизиране се подава към хранилището, като замества всяко налично в хранилището съдържание."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Съдържанието винаги се подава към хранилището, като замества всяко съществуващо съдържание. Това е най-безопасният избор при сценарии за архивиране."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Съдържанието винаги се изтегля от хранилището, като замества всяко локално съдържание, което вече съществува. Този избор обикновено е запазен за импортиране на съдържание и еднократна употреба. Внимание с тази опция, тъй като локално съдържание винаги ще бъде заменено!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "График за синхронизация"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "За подобряване на ефективността, това хранилище синхронизира промените на база график, а не при всяка промяна. Определете на какъв интервал трябва да се извършва синхронизацията."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "В момента е зададен на всеки {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "По подразбиране е всеки {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Действия"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Стартиране"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Конфигурирайте възможностите за търсене на вашето Wiki"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Възстанови индекса"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Търсачка"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Конфигурация на търсачката"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Тази търсачка няма конфигурационни опции, които можете да модифицирате."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Списъкът с търсачките бе обновен."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Конфигурацията на търсачката е записана успешно."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Индексът е възстановен успешно."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Възникна неочаквана грешка."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Страници"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Потребители"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Групи"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Използвате последната версия."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Налична е нова версия: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js е безплатен проект с отворен код. Има няколко начина да допринесете за него."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Нуждаем се от помощта ви!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Научете повече"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Списъкът със стратегии е обновен."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Настройкаta за проверка на автентичността е успешно записана."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Общи"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL адрес на сайта"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Пълен URL адрес към вашето Wiki, без наклонена черта. (напр. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Заглавие на сайта"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Показва се в горната лента и се добавя към мета заглавието на всички страници."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Лого"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Качване на лого"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Изчисти"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "За най-добри резултати се препоръчва изображение на с размер от {{size}} пиксела."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} или {{lastType}} файли само"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Авторско право в долен колонтитул"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Име на фирма/организация"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Име, което да използвате, когато показвате известие за авторски права в долния колонтитул. Оставете празно, за да се скрие."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Описание на сайта"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Описание по подразбиране, когато за страница не е предоставено такова."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Мета роботи"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "По подразбиране: индекс, следване. Може да се зададе и на базата на страница."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Въведете поне 2 знака, за да започнете търсенето..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Търсене..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Няма страници, съответстващи на вашето търсене."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Намерени са {{total}} резултата"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Имахте предвид..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Затвори"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Копиране на връзката за търсене"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Много слаба"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Слаба"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Средна"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Силна"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Много силна"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Изтриване на страницата"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Сигурни ли сте, че искате да изтриете страница {{title}} ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Страницата може да бъде възстановена от административната област."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Търсене на потребител"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Търсене на потребители..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Всеки"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Минута(и)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Час(а)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Ден(Дни)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Месец(и)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Година(и)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Свойства на страница"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Информация за страницата"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Заглавие"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Кратко описание"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Показва се под заглавието"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Път и Категоризация"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Локация"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Път"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Не включвайте начални или крайни наклонени черти."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Етикети"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Използвайте етикети, за да категоризирате страниците си и да ги направите по-лесни за намиране."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Състояние на публикуване"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Публикувана"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Непубликуваните страници все още могат да се видят от потребители, които имат право за писане на тях."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Публикуването започва от ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Оставете празно за липса на начална дата"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Публикуването завършва на ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Оставете празно за липса на крайна дата"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Да се отхвърлят ли незапазените промени?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Имате незапазени промени. Наистина ли искате да напуснете редактора и да отхвърлите всички модификации, които сте направили след последното записване?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Отхвърляне на промените"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Кой редактор искате да използвате за тази страница?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Това не може да се промени, след като страницата бъде създадена."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Активи"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Нова папка"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Име на папка"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Трябва да следвате папката с активи {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "правила за именуване"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Преместване"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Преименувате"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Оптимизиране"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Преглед"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Свойства"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Тази папка с активи е празна."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} файлове"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Вмъкване"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "Идентификатор"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Име на файл"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Тип"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Размер на файла"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Добавен"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Действия"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Качване на активи"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Потърсете или пуснете файловете тук..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Извличане на отдалечено изображение"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Подравняване на изображението"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Преименуване на актив"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Въведете новото име за този актив:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Изтриване на актив"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Сигурни ли сте, че искате да изтриете активът"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Това действие не може да бъде отменено!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Списъкът с активи бе успешно обновен."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Файлът не бе качен успешно."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Папката с активи е създадена успешно."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Активът е преименуван успешно."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Активът е изтрит успешно."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Първо трябва да изберете файл, който да качите!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Донасяне"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Обратно към редактора"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Изпъкващ"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Курсив"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Зачеркване"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Заглавие {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Долен индекс"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Горен индекс"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Текстов блок"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Информационен блок"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Блокът за успех"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Предупредителен блок"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Блок за грешка"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Неподреден списък"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Подреден списък"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Вмъкнат код"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Клавиатурен клавиш"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Хоризонтална лента"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Скриване/Показване на екрана за визуализация"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Вмъкване на връзка"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Вмъкване на активи"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Вмъкване на блок"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Вмъкване на кодов блок"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Вмъкване на видео/аудио"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Вмъкване на диаграма"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Вмъкване на математически израз"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Помощник за таблица"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Режим без разсейване"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Помощ при форматиране на Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Показване източника на страница {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Връщане към нормалния изглед"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Език"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Анализ"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Добавете инструменти за анализи и проследяване към уикито си"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Доставчици"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Конфигуриране на доставчик"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Този доставчик няма опции конфигурирационни опции, които можете да модифицирате."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Списъкът на доставчиците бе обновен успешно."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Анализационната конфигурация бе записана успешно"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Поддръжка и различни инструменти"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Инструменти"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Автентификация"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Различни инструменти за автентификация / потребители"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Изчистване на кеша"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Изчистване на кеша на различни компоненти"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Контактна точка на GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Променете контактната точка на GraphQL за Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Импортиране от Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Мигриране на данни от предишна инсталация 1. x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Телеметрия"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Активиране / деактивиране на телеметрията или нулиране на идентификатора на клиента"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Коментари"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Публикувана"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Частна"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Глобална"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Зареждане на страница..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Код"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Име"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Родно име"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Наличност"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Изтегляне"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Съдържание"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Различни инструменти за страници"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Набор икони"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Набор от икони, които да се използват за навигацията в страничната лента."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Браузърът ви е остарял. Надградете до {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "модерен браузър"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Име"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Автор"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Изтегляне"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Когато добавяте стилове за съдържание на страница, трябва да ги добавите към класа {{cssClass}}. Пропускането на това може да наруши оформлението на редактора!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ВНИМАНИЕ:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Опции за тема"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Активен"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "неактивен"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Проверен"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Непроверен"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Редактиране на потребителя"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Основна информация"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Електронна поща"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Публично име"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Автентификация"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Доставчик"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Парола"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Промяна на паролата"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Нова парола"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Двуфакторна автентификация (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Превключване на 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Идентификационен номер на доставчика"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Потребителски групи"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Този потребител все още не е присвоен на никоя група. Трябва да присвоите поне 1 група на потребителя."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Избор на група..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Присвояване"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Разширени метаданни"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Местоположение"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Длъжност"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Часова зона"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Потребителят е актуализиран успешно."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Потребителят вече е присвоен на тази група!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Това хранилище е {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "активен"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "неактивен"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Трябва да разрешите тази цел за съхранение и да приложите промените, преди да можете да изпълнявате действия."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Изберете нова парола"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Трябва да изберете нова парола:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Нова парола"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Потвърдете новата парола"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Промяна на паролата"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Паролата се променя..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Последни страници"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Най-популярни страници"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Информация"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Планиране"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Социални"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Категоризация"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Социални функции"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Разрешаване на коментари"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Активиране на възможност за коментиране на страницата."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Разрешаване на оценки"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Показване на информация за автора"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Показване на лентата с инструменти за споделяне"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Показване на бутони за споделяне и отпечатване на страницата"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Показване на автора на страницата заедно с времето на последната редакция."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Активиране на възможностите за оценка на тази страница."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "или създайте персонализиран изглед?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Преглед по маркери"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Карта на сайта"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Действия на страницата"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Текуща селекция"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Изчистване на селекцията"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Изберете един или повече маркери"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Търсене в резултатите..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Локация"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Подредени по"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Изберете един или повече маркери отляво."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Извличане на резултати от страницата..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Не може да се намери страница с избраните маркери."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Не може да се намери страница, съответстваща на текущите опции за филтриране."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Последна актуализация {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Дата на създаване"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "Идентификатор"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Последно модифициран"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Път"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Заглавие"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Всяка"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Станете спонсор чрез GitHub Sponsors (подкрепете директно водещия разработчик Nicolas Giard да работи на пълно работно време в Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Станете спонсор"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Етикети"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Управление на SSL конфигурацията"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Доставчик"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Изберете Потребителски Сертификат ако вече имате собствен сертификат"
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Домейн"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Въведете напълно квалифицирания домейн към вашето Wiki. (напр. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Опции за доставчика"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Забранен"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Нека шифроваме"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Потребителски сертификат"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Портове"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP Порт"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Не-SSL порт, който сървърът ще слуша за HTTP заявки. Обикновено 80 или 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS Порт"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL порт, който сървърът ще слуша за HTTPS заявки. Обикновено 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Пренасочване на HTTP заявки към HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Автоматично ще пренасочи всички заявки на HTTP порта към HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Имайте предвид, че конфигурационният файл трябва да може да бъде записан, за да се запазят настройките на портовете."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL адрес на лого"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Задайте изображение, което да се използва като лого. Поддържат се SVG, PNG, JPG в квадратно съотношение, размер 34x34 пиксела или по-голям. Щракнете върху бутона вдясно, за да качите ново изображение."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Да се изтрие ли потребителят?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Наистина ли искате да изтриете потребител {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Актуализиране на потребителя"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Обърнете внимание, че не можете да присвоявате потребители към групите Администратори или Гости от този панел."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Обърнете внимание, че не можете да изтриете потребител, който вече е създал съдържание. Вместо това трябва да деактивирате потребителя или да изтриете цялото съдържание, създадено от него."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Скриптове"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS ще бъде автоматично минифициран при записването. Не включвайте околните етикети за стил, само действителния CSS код."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Видима за всички"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Видима за избрани групи..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Изберете страница ..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Режим на навигация"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Дърво на сайта"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Класическа навигация, базирана на дърво"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Потребителска навигация"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Статично меню за навигация + бутон дърво на сайта"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Нито един"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Деактивиране на навигацията в сайта"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Потребителят е проверен успешно."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Потребителят е активиран успешно."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Потребителят е деактивиран успешно."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Първо трябва да бъде избран текст!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Подновяване на сертификат"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Статус на сертификата"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Срок на валидност на сертификата"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Имейл на абонат"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Текущо състояние"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Включване"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Изключване"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Подновяване на сертификат..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Не напускайте страницата."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Сертификатът е подновен успешно."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP пренасочването е променено успешно."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Управление на етикети за страници"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Няма етикети за показване."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Редакция на етикет"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Етикет"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Етикет"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Създаден на {{created}} и последно актуализиран на {{updated}}"
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Изтриване на този етикет"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Изберете етикет от списъка вляво."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Добавете етикет към страница, за да започнете."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Етикетите са обновени."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Етикетът е изтрит успешно."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Етикетът е записан успешно."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Филтър..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Преглед на свързани страници"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Да се изтрие ли етикета?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Наистина ли искате да изтриете етикет {{tag}}? Той ще бъде също така разкачен от всички страници."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Управление на ключове за достъп до API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API е активиран"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API е деактивиран"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Активиране на API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Деактивиране на API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Нов API ключ"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Име"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Край на ключа"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Изтичане"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Създаден"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Последна актуализация"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Отмяна"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Все още не са генерирани API ключове."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Да се отмени ли API ключът?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Сигурни ли сте, че искате да отмените ключ {{name}}? Това действие е необратимо!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Отмяна"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Списъкът с API ключове е обновен."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Ключът бе отменен успешно."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Нов API ключ"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API ключът е създаден успешно."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Името липсва или е невалидно."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Трябва да изберете група."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Групите Гости не може да се използва за API ключове."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Предназначение на ключа"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Име"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Изтичане"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Вие може да отмените ключа по всяко време, независимо от срока на изтичането му."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Обхват на правата"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Пълен достъп"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "или използвайте правата на групата..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Генериране"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Група"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API ключът ще има същите правакато избраната група."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 дни"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 дни"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 дни"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 година"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 години"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Копиране на показания по-долу ключ като {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "няма да бъде показан отново"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API е активиран успешно."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API е деактивиран успешно."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Записана"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Няма"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Лиценз Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Лиценз Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Лиценз Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Лиценз Creative Commons Attribution-NonCommercial"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Лиценз Creative Commons Attribution-NonCommercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Лиценз Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Обществена собственост"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Всички права запазени"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Лиценз на съдържанието"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Лиценз, показан в долния колонтитул на всички страници със съдържание."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Съдържанието е налично под {{license}}, от {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Не можете да изтеглите съдържанието на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Не можете да изтеглите съдържанието за тази версия на страницата."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Не можете да видите източника на тази версия на страницата."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Преглед на изгледа на страница {{path}} от {{date}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID на версия {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Възстановяване на версията на страницата?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Наистина ли искате да възстановите съдържанието на страницата, както е било на {{date}}? Тази версия ще бъде копирана в началото на текущата хронология. Като по-новите версии ще бъдат запазени."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Възстановяване"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Версията на страницата е възстановена успешно!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} символа, {{words}} думи"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Разрешаване на конфликтът при запис"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Използване на език"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Използване на отдалечената"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Отхвърляне на локалните промени и използване на последната версия"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Използвайте съдържание в левия панел"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Преглед на последната версия"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "По-нова версия на тази страница е записана от {{authorName}} на {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Какво искате да направите?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Използвайте текущата си локална версия и игнорирайте последните промени."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Използвайте отдалечената версия (последната) и отхвърлете промените."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Да се презапише ли с отдалечената версия?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Наистина ли искате да замените текущата версия с последното отдалечено съдържание? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Текущите ви редакции ще бъдат загубени."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Потвърждаване"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Локална версия {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(може да се редактира)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(само за четене)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Отдалечена версия {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Текущата ви редакция, базирана на версията на страницата от {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Последно редактирана от {{authorName}} на {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Заглавие:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Описание:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Имате незаписани промени. Наистина ли искате да излезете от редактора?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Конфликт при записването! Друг потрбител вече е променил страницата."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Дублиране"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Показвано име"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Местоположение"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Длъжност"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Часова зона"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Профил"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Моята лична информация"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Моята информация"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Преглед на публичен профил"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Удостоверяване"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Доставчик"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Смяна на паролата"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Текуща парола"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Нова парола"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Потвърждаване на новата парола"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Групи"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Дейност"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Присъединен на"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Профилът е актуализиран последно на"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Последно влизане на"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Създадени страници"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Коментарите са публикувани"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Профилът бе запазен успешно."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Паролата бе променена успешно."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Страници"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Коментари"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Списък със страниците, които съм създал или последно променял"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Няма страници за показване."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Списъкът на страниците е обновен."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Заглавие"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Път"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Създадена"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Последна актуализация"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Последни влизания"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Преглед"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Основно меню"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Текуща директория"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(корен)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Копиране от език..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Език на източника"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Езикът, от който ще се копират навигационните елементи."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Копиране"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Изберете език, от който бъдат копирани елементите. Те ще бъдат приложени към текущия списък в активния език."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Статична навигация"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Само статично меню за навигация"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Предпочитания"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Формат на датата"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Според езика"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Външния вид"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Подразбиращо се за сайта"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Светъл"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Тъмен"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Проверка на SSL сертификат"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Някои хостове изискват проверка на SSL сертификата да бъде забранена. Оставете опцията активна за по-висока сигурност."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Външна връзка (нов прозорец)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Сигурност"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Максимален размер на качването"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Максимум файлове на качване"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Колко файла могат да бъдат качени в една партида?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Максималният размер за един файл."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "байта"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "файлове"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Качвания"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Тези настройки засягат само Wiki.js. Ако използвате обратен прокси (напр. Nginx, apache, Cloudflare), трябва също да промените настройките му, за да съвпадат."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Конфигурирайте настройките за защита"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Разширения"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Инсталирайте разширения за допълнителна функционалност"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Доставчик"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Добавете дискусии към вашите wiki страници"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Конфигурация на доставчика"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Този доставчик няма опции за конфигурирация, които можете да модифицирате."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Всяко съдържание (страници, качвания, коментари и т.н.), създадено от този потребител, ще бъде възложено на потребителя, избран по-долу. Препоръчително е да създадете фиктивен целеви потребител (напр. Изтрит потребител), ако не искате съдържанието да бъде възложено на всеки активен потребител."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Активни стратегии"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Добавете стратегия"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Стилове"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Трябва да оградите javascript кода си с HTML script тагове."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Тази страница не е публикувана."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Коментари"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Напишете нов коментар..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Вашето име"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Вашият имейл адрес"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown формат"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Публикувай коментар"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Зареждане на коментарите..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Публикуване като {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Бъдете първите, които ще оставят коментар."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Все още няма коментари."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Актуализиране на коментар"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Потвърдете изтриването"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Сигурни ли сте, че искате да изтриете този коментар за постоянно?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Това действие не може да бъде отменено!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "модифициран {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Новият коментар е публикуван успешно."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Коментарът е празен или твърде кратък!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Коментарът бе актуализиран успешно."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Коментарът бе изтрит успешно."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Превключване на проверка на правописа"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Вход"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Екран за вход"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT конфигурация"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Пропускайте екрана за вход"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Трябва ли потребителят автоматично да бъде пренасочен към първия доставчик на удостоверяване?"
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL на фоново изображение при вход"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Задайте изображение, което да се използва като фон за вход. Поддържат се PNG и JPG, препоръчва се размер 1920x1080. Оставете празно за изображение по подразбиране. Щракнете върху бутона вдясно, за да качите ново изображение. Имайте предвид, че групата гости трябва да има достъп за четене до избраното изображение!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Скриване на местния доставчик на удостоверяване"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Да не се показва локалния доставчик на удостоверяване на екрана за влизане. Добавете ?all към URL адреса, за да го използвате временно."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Сигурност"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Принудитрелно използване на 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Принудете всички потребители да използват двуфакторно удостоверяване при използване на  доставчик на удостоверяване с формуляр за потребител / парола."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Преглед на дискусията"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Нов коментар"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Съдържание на коментарите"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Разговор"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Етикети"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Страници, съответстващи на етикети"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Връщане към началото"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Потребителско име"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Изход"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Конфигурирайте конвейера за изобразяване на страницата"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Заглавието на сайта съдържа невалидни знаци."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Конфигурацията на сайта бе записана успешно."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA беше деактивирано успешно."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FА беше активиранo успешно."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Заявляване на възстановяване на паролата..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Проверете имейлите си за инструкции за нулиране на паролата!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Активен"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Могат ли потребителите да влизат в системата, използвайки тази стратегия?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Показвано име"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Заглавието, показано на крайния потребител за тази стратегия за удостоверяване."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Изберете доставчик на удостоверяване"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Въведете Вашите идентификационни данни"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Забравена парола"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Въведете кода за защита, генериран от Вашето надеждно устройство."
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Администраторът Ви изисква двуфакторно удостоверяване (2FA) да бъде активирано на Вашия акаунт."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Сканирайте QR кода по-долу от мобилното 2FA приложение:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Въведете защитният код, генериран от Вашето надеждно устройство:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Изберете"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Изберете ново местоположение на страницата"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Преместете / Преименувайте местоположението на страницата"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Изберете страница"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Виртуални папки"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Страници"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Тази папка е празна."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Преобразуване"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Преобразуване на страницата"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Изберете редактора, който искате да използвате за напред за страницата"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Съдържанието на страницата ще бъде преобразувано във формата на новоизбрания редактор. Обърнете внимание, че част от форматирането или неизобразеното съдържание може да се загуби в резултат на преобразуването. Моментна снимка ще бъде добавена към хронологията на страницата и може да бъде възстановена по всяко време."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Преобразуване"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Администриране"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Експортиране на диск"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Запазете съдържанието в един файл за архивиране / мигриране"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Съдържание"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Съдържание"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Използвайте настройките по подразбиране на сайта"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Нива на заглавията на съдържание"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Съдържанието ще покаже заглавия от и до избраните нива."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Нива на заглавия на съдържанието по подразбиране"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Съдържанието ще показва заглавия от и до избраните нива по подразбиране."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Име на хост, идентифициращо клиента"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Незадължително име, което да изпратите на SMTP сървъра, за да идентифицирате вашия имейл. Оставете празно, за да използвате името на сървъра. За клиентите на Google Workspace това трябва да е името на основния ви домейн."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Разширения на страницата"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Разделен със запетаи списък с URL разширения, които ще се третират като страници. Например добавянето на md ще третира /foobar.md по същия начин като /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Бутон Име на сайта"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Името на външния сайт за показване на бутона за редактиране. Не включвайте префикса „Редактиране на“."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Икона на бутон"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Иконата, която да се покаже на бутона за редактиране. Например, mdi-github за показване на иконата на GitHub."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "URL адрес на бутона"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Url към страницата във външното хранилище. Използвайте запазената дума {filename}, където трябва да бъде включено името на файла. (напр. https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Редактиране на преки пътища"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "ПБР Меню за бързо редактиране"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Покажете плаващия бутон за редактиране (ПБР) с меню за бързо набиране в долния десен ъгъл на екрана."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Лента с менюта за редактиране"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Показване на лентата с менюта за редактиране"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Показване на лентата с менюта за редактиране в горния колонтитул на страницата."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Показване на бутона за редактиране"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Показване на бутон за редактиране на текущата страница."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Показване на външен бутон за редактиране"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Показване на бутон, свързващ външно хранилище (напр. GitHub), където потребителите могат да редактират или изпращат PR за текущата страница."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Редактиране на"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Конфигурацията на коментарите е запазена успешно."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Замяна на текст в долния колонтитул"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "По желание заменете текста в долния колонтитул с персонализирано съобщение. Полезно, ако никой от горните лицензи не е подходящ."
+                }
+            ]
+        }
+    }
+}

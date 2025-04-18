@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Cumhachtaithe ag"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Logáil isteach riachtanach"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Ríomhphost / Ainm Úsáideora"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Pasfhocal"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Logáil Isteach"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Logáil Isteach Neamhbhailí"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Tá an ríomhphost nó an pasfhocal neamhbhailí."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Ríomhphost Úsáideora Neamhbhailí"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Earráid logáil isteach"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Níl cead agat logáil isteach ar an suíomh seo fós."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "An iomarca iarrachtaí!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Tá an iomarca iarrachtaí ar theip orthu déanta agat i dtréimhse ghearr ama, bain triail eile as {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Úsáideoir gan aimsiú"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Áitiúil"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Microsoft Account"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Eolaire Gníomhach"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Fíordheimhniú Dhá Fhachtóir"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Cód slándála riachtanach:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Fíoraigh"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Deais"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Ginearálta"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Logánach"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Staitisticí"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Téama"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grúpaí"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Úsáideoirí"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Fíordheimhniú"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Eagarthóir"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logáil"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Rindreáil"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Inneall Cuardaigh"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Stóráil"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Rochtain API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Eolas faoin gCóras"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Fóntais"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Uirlisí Forbróirí"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Cuir le Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Príomhshocruithe do vicí"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Eolas Suíomh"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Brandáil Suímh"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Suíomh"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Úsáideoirí"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Modúil"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Córas"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Socraigh roghanna logánaithe do do vicí"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Socruithe Logánta"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Spásáil Ainmneacha Ilteangacha"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Íosluchtaigh Logánach"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Logánach Bunúsach"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Taispeánfar gach eilimint téacs Chomhéadain sa teanga roghnaithe."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Nuashonraigh go huathoibríoch"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Íoslódálann nuashonruithe go huathoibríoch chuig gach logán spásálaithe atá cumasaithe thíos."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Ainmneacha Ilteangacha"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Cumasaíonn sé leaganacha éagsúla teanga den leathanach céanna."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Ainmneacha Gníomhacha"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Liosta logánta cumasaithe le haghaidh spásáil ainmneacha ilteangach. Áireofar i gcónaí an bunáit atá sainmhínithe thuas beag beann ar an rogha seo."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Déanfar an cód locale a réamhshocrú do gach cosán. (m.sh. /{{langCode}}/page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Déanfar cosáin gan cód locale a atreorú go huathoibríoch chuig an mbunáit atá sainithe thuas."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Sábháil"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Cealaigh"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Íosluchtaigh"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Uaslódáil"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Caith amach"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Glan"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Cruthaigh"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Cuir in eagar"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Scrios"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Athnuaigh"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Sábháil Athruithe"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Lean ar aghaidh"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Logánach an tSuímh"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Íoslódáil nuashonruithe don logán seo go huathoibríoch de réir mar a bhíonn siad ar fáil."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Eolas faoi do chóras"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Eolas Óstach"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Leagan Reatha"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Leagan is déanaí"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Foilsithe"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Córas Oibriúcháin"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Óstainm"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Croíthe CPU."
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "RAM iomlán"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Eolaire Oibre"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Comhad Cumraíochta"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Úsáid RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Cabhraigh le tacú le forbairt agus le hoibríochtaí Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Ár gcuid oibre a mhaoiniú"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Scaip an focal"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Labhair le do chairde agus le do chomhghleacaithe faoi cé chomh iontach is atá Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Lean muid ar {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Cuir isteach smaoineamh nó vótáil ar cheann atá molta ar an {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "bord iarratais gné"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Aimsíodh fabht? Cuir ceist isteach ar {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Cabhraigh le Wiki.js a aistriú i do theanga. Cuir sinn ar an eolas ar {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Déan síntiús"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Cur le"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Tá Wiki.js mar chuid den tionscnamh Open Collective freisin, ciste trédhearcach a théann i dtreo acmhainní pobail. Féadfaidh tú ranníocaíocht airgeadais a dhéanamh trí dheontas míosúil nó aonuaire a dhéanamh:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Teastaíonn do chabhair uainn chun leanúint ar aghaidh ag feabhsú na mbogearraí agus chun na seirbhísí gaolmhara éagsúla a rith (m.sh. óstáil agus líonrú)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Is bogearraí saor in aisce agus foinse oscailte é Wiki.js a thugtar chugat le {{0}} le {{1}} agus {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "ranníocóirí"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Leathanach"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Rindreáil"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Fan le do thoil..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Cruthaíodh leathanach go rathúil."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Tharla earráid agus an leathanach á chruthú"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Is féidir leat t-léinte Wiki.js a cheannach freisin chun tacú leis an tionscadal ó thaobh airgeadais de:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Siopa Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "Ceart go leor"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Gach ceart ar cosaint."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Níl an leathanach seo ann fós."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Ar mhaith leat é a chruthú anois?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Cruthaigh Leathanach"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Téigh ar ais"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Leathanaigh"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Nascleanúint"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Bainistigh nascleanúint an tsuímh"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Cuir"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Nasc"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Roinnteoir"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Ceanntásc"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Lipéad"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Deilbhín"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Cineál Sprioc"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Sprioc"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Roghnaigh mír nascleanúna ar thaobh na láimhe clé."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Gan teideal {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Nasc Seachtrach"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Baile"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Leathanach"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Iarratas Cuardaigh"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Cuir {{kind}} in eagar"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Scrios {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "D'éirigh leis an nascleanúint a shábháil."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Cliceáil ar an gcnaipe Cuir leis chun do chéad mhír loingseoireachta a chur leis."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Tá an loingseoireacht folamh"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Cuir iarratas isteach"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Seoladh Ríomhphoist"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Fíoraigh Pasfhocal"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Ainm"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Clár"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Cruthaigh cuntas"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "An bhfuil cuntas agat cheana féin? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Logáil isteach ina áit"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Logáil isteach ag úsáid {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Dearmad déanta agat ar do phasfhocal?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "nó logáil isteach ag úsáid ..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Níl cuntas agat fós? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Cruthaigh cuntas"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Cuir isteach seoladh ríomhphoist/ainm úsáideora bailí."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Cuir isteach pasfhocal bailí."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "D'éirigh le logáil isteach! Á atreorú..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Ag síniú Isteach..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Níl fíordheimhniú ar fáil."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Líon isteach an fhoirm thíos chun do chuntas a chruthú."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Fan le do thoil"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Cuntas cruthaithe go rathúil!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Cuntas á chruthú..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Seoladh ríomhphoist ar iarraidh."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Tá an seoladh ríomhphoist neamhbhailí."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Focal faire ar iarraidh."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Tá pasfhocal ró-ghearr."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Ní hionann an dá phasfhocal."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Tá an t-ainm ar iarraidh."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Tá an t-ainm ró-ghearr."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Tá an t-ainm ró-fhada."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Cealaigh"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Athshocraigh Pasfhocal"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Cuir isteach do sheoladh ríomhphoist chun na treoracha a fháil chun do phasfhocal a athshocrú:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Ríomhphost"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Cumraigh socruithe ríomhphoist"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Cumraíocht"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (roghnach)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Seiceáil do ríomhphoist chun do chuntas a ghníomhachtú."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "D'éirigh leis an leathanach a nuashonrú."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Neamhúdaraithe"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Ní féidir leat féachaint ar an leathanach seo."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Ní féidir leat féachaint ar fhoinse an leathanaigh."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Ní féidir leat féachaint ar stair an leathanaigh."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Ní féidir leat an leathanach a chruthú."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Ní féidir leat an leathanach a chruthú."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Téigh Ar Ais"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Baile"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Gan Aimsiú"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Níl an leathanach seo ann."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Logáil Isteach Mar..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Bí i do Phátrún"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Bí i do thacadóir nó mar urraitheoir trí Patreon (téann sé go díreach isteach ag tacú le sprioc an phríomhfhorbróra Nicolas Giard oibriú go lánaimseartha ar Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Fáilte romhat chuig do wiki!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Cuirimis tús leis agus cruthaímid an leathanach baile."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Cruthaigh Leathanach Baile"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Bratacha"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Déan síntiús aonuaire nó athfhillteach trí Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Glacaimid le síntiúis trí úsáid a bhaint as Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Pacáiste Sideload Locale"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Mura bhfuil tú nasctha leis an idirlíon nó mura bhfuil tú in ann comhaid locale a íoslódáil ag baint úsáide as an modh thuas, is féidir leat pacáistí a sideload de láimh trína uaslódáil thíos."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Brabhsáil..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Crúcaí gréasáin"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Bainistigh cuaillí gréasáin chuig seirbhísí seachtracha"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Seol ríomhphost tástála"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Seoladh Ríomhphoist an Faighteora"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Seol Ríomhphost"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Seoltóir"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Ainm an tSeoltóra"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Ríomhphost Seoltóra"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Socruithe SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Óstach"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Calafort"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "465 (molta), 587 nó 25 de ghnáth."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Slán (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Ba chóir é a chumasú agus port 465 in úsáid, murach é sin múchta (587 nó 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Ainm úsáideora"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Pasfhocal"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "Soláthraíonn DKIM (DomainKeys Aitheanta Mail) sraith slándála ar gach ríomhphost a sheoltar ó Wiki.js trí mhodhanna a sholáthar d’fhaighteoirí chun an t-ainm fearainn a bhailíochtú agus barántúlacht na teachtaireachta a chinntiú."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Úsáid DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Ainm Fearainn"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Roghnóir Eochracha"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Eochair Phríobháideach"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Eochair phríobháideach don roghnóir i bhformáid PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Seol ríomhphost tástála chun a chinntiú go bhfuil do chumraíocht SMTP ag obair."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Sábháladh an chumraíocht."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Ní thacaítear go hiomlán le do leagan bunachar sonraí. D’fhéadfadh feidhmiúlacht áirithe a bheith teoranta nó nach n-oibreoidh sí mar a bheifí ag súil leis."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Athnuadh Faisnéis an Chórais."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Cumraigh socruithe fíordheimhnithe do vicí"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Straitéisí"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Ardsocruithe Domhanda"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "Lucht Féachana JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "URN an lucht éisteachta a úsáideadh i JWT eisithe ar logáil isteach. De ghnáth d’ainm fearainn. (m.sh. urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Éaga Comhartha"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Tréimhse éaga an chomhartha go dtí go gcaithfear é a athnuachan. (réamhshocraithe: 30n)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Tréimhse Athnuachana Comhartha"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "An uastréimhse is féidir chomhartha a athnuachan nuair a théann sé in éag. (réamhshocraithe: 14 lá)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Tá an straitéis seo {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "gníomhach"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "nach bhfuil gníomhach"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "agus ní féidir iad a dhíchumasú."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Seoladh ríomhphost tástála go rathúil."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Athraigh cuma agus mothú do vicí"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Téama an tSuímh"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Bíonn tionchar ag téamaí ar an gcaoi a dtaispeántar leathanaigh ábhair. Ní dhéantar difear do rannóga eile an tsuímh (amhail an t-eagarthóir nó an limistéar riaracháin)."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Mód Dorcha"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Ní mholtar le haghaidh inrochtaineachta. Seans nach dtacaíonn gach téama leis."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Instealladh Cóid"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Sáraigh CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Cód CSS le instealladh tar éis réamhshocraithe an chórais CSS. Smaoinigh ar théamaí saincheaptha a úsáid má tá líon mór cód css agat. Má chuirtear an iomarca cód CSS isteach beidh drochfheidhmíocht luchtaithe leathanach ann! Déanfar CSS a íoslaghdú go huathoibríoch."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Instealladh HTML Ceann"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Cód HTML le instealladh díreach roimh an chlib ceann deiridh. De ghnáth le haghaidh clibeanna scripte."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Instealladh HTML Coirp"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Cód HTML le hinstealladh díreach roimh an chlib deiridh coirp."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Íosluchtaigh Téamaí"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Réimse Riaracháin"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Cumraíocht Straitéise"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Níl aon roghanna cumraíochta ag an straitéis seo is féidir leat a mhodhnú."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Clárú"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Ceadaigh féinchlárú"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Ceadaigh d’aon úsáideoir atá údaraithe go rathúil ag an straitéis rochtain a fháil ar an vicí."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Teorainn le fearainn ríomhphoist ar leith"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Liosta de na fearainn atá údaraithe chun clárú. Caithfidh fearann ​​an seoladh ríomhphoist úsáideora a bheith mar aon le ceann amháin díobh seo chun rochtain a fháil."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Sann don ghrúpa"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Sann úsáideoirí nua go huathoibríoch do na grúpaí seo."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Slándáil"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Cuir iallach ar gach úsáideoir Fíordheimhniú Dhá Fhachtóir (2FA) a úsáid"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Beidh ar úsáideoirí 2FA a shocrú an chéad uair a logálann siad isteach agus ní féidir leis an úsáideoir é a dhíchumasú."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Tagairt Chumraíochta"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "D'fhéadfadh go mbeadh gá le roinnt luachanna cumraíochta a shocrú ar do sholáthraí i straitéisí áirithe. Is le haghaidh tagartha amháin a chuirtear iad seo ar fáil agus b’fhéidir nach mbeidh gá leo faoin straitéis reatha."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Caithfidh tú {{siteUrl}} bailí a shocrú ar dtús! Cliceáil ar {{general}} sa bharra taoibh ar chlé."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Bunús Gréasáin Ceadaithe"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL aisghlao / URI Atreoraithe"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL logáil isteach"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL logáil amach"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Modh Fíordheimhnithe Críochphointe Comhartha"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Baile"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Leathanach Nua"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Leathanach Reatha"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Amharc"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Cuir in eagar"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Stair"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Amharc ar Foinse"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Bog / Athainmnigh"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Scrios"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Sócmhainní"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Íomhánna & Comhaid"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Cuardach..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Riarachán"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Cuntas"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Mo Vicí"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Próifíl"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Logáil amach"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Logáil isteach"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Ar deireadh curtha in eagar ag"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Gan foilsiú"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Cuir Leathanach in Eagar"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Ábhar an Leathanaigh"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Leabharmharc"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Comhroinn"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Formáid Priontála"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Dún"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Leathanach"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Socraigh spriocanna cúltaca agus sioncronaithe do d'inneachar"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Spriocanna"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Stádas"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "An sioncronú deireanach {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Ba é {{time}} an iarracht dheireanach"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Teachtaireacht Earráid"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Níl aon sprioc stórála gníomhach agat."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Cumraíocht Sprioc"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Níl aon roghanna cumraíochta ag an sprioc stórála seo is féidir leat a mhodhnú."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Treo Sioncronaithe"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Roghnaigh conas a láimhseáiltear sioncrónú ábhair don sprioc stórála seo."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Déthreo"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Brúigh chuig an sprioc"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Tarraing ón sprioc"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Gan tacaíocht"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Sa mhodh déthreoch, tarraingítear an t-ábhar ar dtús ón sprioc stórála. Forscríobhann aon ábhar níos nuaí ábhar áitiúil. Brúitear inneachar nua ón sioncronú deiridh ansin chuig an sprioc stórála, agus forscríobhtar aon inneachar de réir sprice más ann dó."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Brúitear an t-ábhar go dtí an sprioc stórála i gcónaí, agus déantar aon ábhar atá ann cheana a fhorscríobh. Is é seo an rogha is sábháilte le haghaidh cásanna cúltaca."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Baintear ábhar as an sprioc stórála i gcónaí, agus forscríobhtar aon ábhar áitiúil atá ann cheana féin. De ghnáth cuirtear an rogha seo in áirithe d’allmhairiú ábhair aonúsáide. Bí cúramach leis an rogha seo mar déanfar aon ábhar áitiúil a fhorscríobh i gcónaí!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Sceideal Sioncronaithe"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Ar chúiseanna feidhmíochta, déanann an sprioc stórála seo athruithe a shioncronú ar sceideal bunaithe ar eatramh, seachas ar gach athrú. Sainmhínigh cén t-eatramh ar cheart don sioncronú tarlú."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Socraithe do gach {{schedule}} faoi láthair."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Is é an réamhshocrú gach {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Gníomhartha"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Rith"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Cumraigh cumais chuardaigh do vicí"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Innéacs atógáil"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Inneall Cuardaigh"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Cumraíocht Inneall"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Níl aon roghanna cumraíochta ag an inneall seo is féidir leat a mhodhnú."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Tá liosta na n-inneall cuardaigh athnuaite."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "D'éirigh le cumraíocht inneall cuardaigh a shábháil."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Innéacs atógadh go rathúil."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Tharla earráid gan choinne."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Leathanaigh"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Úsáideoirí"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grúpaí"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Tá an leagan is déanaí á rith agat."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Tá leagan nua ar fáil: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Is tionscadal foinse oscailte saor in aisce é Wiki.js. Tá roinnt bealaí inar féidir leat cur leis an tionscadal."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Teastaíonn do chabhair uainn!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Tuilleadh Eolais"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Tá liosta de na straitéisí athnuachan."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "D'éirigh le cumraíocht an fhíordheimhnithe a shábháil."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Ginearálta"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL an tSuímh"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "URL iomlán chuig do vicí, gan an tslais rianaithe. (m.sh. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Teideal an tSuímh"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Ar taispeáint sa bharra barr agus ceangailte le gach leathanach meititeideal."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Lógó"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Uaslódáil lógó"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Glan"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Moltar íomhá de {{size}} picteilín le haghaidh na dtorthaí is fearr."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Comhaid {{typeList}} nó {{lastType}} amháin"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Cóipcheart Footer"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Ainm na Cuideachta / Eagraíocht"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Ainm le húsáid agus fógra cóipchirt á thaispeáint sa bhuntásc. Fág folamh a cheilt."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Cur síos ar an Suíomh"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Cur síos réamhshocraithe nuair nach gcuirtear aon cheann ar fáil do leathanach."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Meta robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Réamhshocrú: Innéacs, Lean. Is féidir é a shocrú freisin ar bhonn in aghaidh an leathanaigh."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Clóscríobh ar a laghad 2 charachtar chun tús a chur leis an gcuardach..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Ag cuardach..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Níl aon leathanach ag teacht le do cheist."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Aimsíodh {{total}} torthaí"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "An raibh i gceist agat..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Dún"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Cóipeáil Nasc Cuardaigh"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "An-lag"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Lag"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Meán"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Láidir"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "An-láidir"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Scrios Leathanach"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "An bhfuil tú cinnte gur mhaith leat leathanach {{title}} a scriosadh?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Is féidir an leathanach a athchóiriú ón limistéar riaracháin."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Cuardaigh Úsáideoir"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Cuardaigh Úsáideoirí..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Gach"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Nóiméad(ta)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Uair(anta)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Lá(ethanta)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Mí(onna)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Bliain(ta)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Airíonna Leathanach"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Eolas Leathanach"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Teideal"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Cur síos gairid"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Taispeántar thíos an teideal"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Conair & Catagóiriú"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Logánach"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Cosán"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Ná cuir san áireamh aon slaise tosaigh nó rian."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Clibeanna"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Bain úsáid as clibeanna chun do leathanaigh a chatagóiriú agus chun iad a dhéanamh níos éasca iad a aimsiú."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Stát Foilsitheoireachta"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Foilsithe"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Tá leathanaigh neamhfhoilsithe fós le feiceáil ag úsáideoirí a bhfuil ceadanna scríofa acu ar an leathanach seo."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Foilsigh ag tosú ar..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Fág folamh gan aon dáta tosaithe"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Foilsigh dar críoch ar..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Fág folamh gan aon dáta deiridh"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "An bhfuil fonn ort na hAthruithe gan Sábháil a Chaitheamh?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Tá athruithe gan sábháil agat. An bhfuil tú cinnte gur mhaith leat an t-eagarthóir a fhágáil agus aon athruithe a rinne tú ón sábháil dheireanach a chaitheamh ar shiúl?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Caith Athruithe"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Cén eagarthóir ar mhaith leat a úsáid don leathanach seo?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Ní féidir é seo a athrú nuair a chruthaítear an leathanach."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Sócmhainní"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Fillteán Nua"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Ainm an Fhillteáin"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Ní mór an fillteán sócmhainní {{namingRules}} a leanúint."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "rialacha ainmniúcháin"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Bog"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Athainmnigh"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optamaigh"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Réamhamharc"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Airíonna"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Tá an fillteán sócmhainní seo folamh."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} comhad"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Cuir isteach"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "Comhartha Aitheantais"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Ainm comhaid"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Cineál"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Méid an Chomhaid"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Curtha leis"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Gníomhartha"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Uaslódáil Sócmhainní"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Brabhsáil nó Buail comhaid anseo..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Faigh Cianíomhá"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Ailíniú Íomhá"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Athainmnigh Sócmhainn"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Cuir isteach ainm nua na sócmhainne seo:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Scrios Sócmhainn"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "An bhfuil tú cinnte gur mhaith leat sócmhainn a scriosadh"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Ní féidir an gníomh seo a chealú!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "D'éirigh le hathnuachan an liosta sócmhainní."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Theip ar uaslódáil an chomhaid."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Fillteán sócmhainní cruthaithe go rathúil."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Athainmníodh sócmhainn go rathúil."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Scriosadh an tsócmhainn go rathúil."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Caithfidh tú comhad a roghnú le huaslódáil ar dtús!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Faigh"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Ar ais go Eagarthóir"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Trom"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Iodálach"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Stailc tríd"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Ceannteideal {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Síntiús"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Forscríbhinn"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blocluachan"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Eolas Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Blockquote Rath"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Blockquote rabhaidh"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Earráid Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Liosta Neamhordaithe"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Liosta Ordaithe"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Cód Inlíne"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Eochair Mhéarchláir"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Barra Cothrománach"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Folaigh / Taispeáin Pane Réamhamhairc"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Ionsáigh Nasc"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Cuir isteach Sócmhainní"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Ionsáigh Bloc"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Ionsáigh Cód Bloc"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Ionsáigh Fís / Fuaim"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Ionsáigh Léaráid"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Ionsáigh Slonn Mata"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Cúntóir Tábla"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Modh saor in aisce seachráin"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Cabhair le Formáidiú Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Ag féachaint ar fhoinse an leathanaigh {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Fill ar Amharc Gnáth"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "Aitheantas {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Teanga"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Anailísíocht"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Cuir uirlisí anailíse agus rianaithe le do vicí"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Soláthraithe"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Cumraíocht Soláthraí"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Níl aon roghanna cumraíochta ag an soláthraí seo is féidir leat a mhodhnú."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "D'éirigh le hathnuachan an liosta soláthraithe."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "D'éirigh le cumraíocht Analytics a shábháil"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Uirlisí cothabhála agus ilghnéitheacha"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Uirlisí"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Fíordheimhniú"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Uirlisí éagsúla le haghaidh fíordheimhnithe / úsáideoirí"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Cache Sruthlaithe"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Taisce flush de chomhpháirteanna éagsúla"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Críochphointe GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Athraigh críochphointe GraphQL do Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Iompórtáil ó Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Aistrigh sonraí ó shuiteáil 1.x roimhe seo"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Teiliméadracht"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Cumasaigh/Díchumasaigh teiliméadracht nó athshocraigh ID an chliaint"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Tuairimí"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Foilsithe"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Príobháideach"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Domhanda"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Leathanach á Luchtú..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Cód"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Ainm"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Ainm Dúchais"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Infhaighteacht"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Íosluchtaigh"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Ábhar"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Uirlisí éagsúla le haghaidh leathanaigh"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Socraigh Deilbhín"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Sraith deilbhíní le húsáid le haghaidh nascleanúint an bharra taoibh."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Tá do bhrabhsálaí as dáta. Uasghrádaigh go {{modernBrowser}}."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "brabhsálaí nua-aimseartha"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Ainm"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Údar"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Íosluchtaigh"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{rabhadh}} Agus stíleanna á gcur isteach agat le haghaidh ábhar leathanaigh, ní mór duit iad a scóipeáil chuig an rang {{cssClass}}. D’fhéadfadh sé seo leagan amach an eagarthóra a bhriseadh!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "AIRE:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Roghanna Téama"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Gníomhach"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Neamhghníomhach"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Fíoraithe"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Neamhfhíoraithe"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Cuir Úsáideoir in Eagar"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "Aitheantas {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Eolas Bunúsach"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Ríomhphost"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Ainm Taispeána"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Fíordheimhniú"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Soláthraí"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Pasfhocal"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Athraigh Pasfhocal"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Pasfhocal Nua"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Fíordheimhniú Dhá Fhachtóir (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Scoránaigh 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Aitheantas Soláthraí"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Grúpaí Úsáideoirí"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Níl an t-úsáideoir seo sannta d'aon ghrúpa fós. Ní mór duit 1 ghrúpa ar a laghad a shannadh d'úsáideoir."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Roghnaigh Grúpa..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Sann"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Meiteashonraí Breisithe"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Suíomh"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Teideal Poist"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Crios ama"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "D'éirigh leis an úsáideoir a nuashonrú."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Tá an t-úsáideoir sannta don ghrúpa seo cheana féin!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Is é {{state}} an sprioc stórála seo"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "gníomhach"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "neamhghníomhach"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Ní mór duit an sprioc stórála seo a chumasú agus athruithe a chur i bhfeidhm sular féidir leat gníomhartha a rith."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Roghnaigh pasfhocal nua"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Caithfidh tú pasfhocal nua a roghnú:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Pasfhocal Nua"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Fíoraigh Pasfhocal Nua"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Athraigh Pasfhocal"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Focal faire á athrú..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Leathanaigh Déanaí"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Leathanaigh is Coitianta"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Eolas"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Sceidealú"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Sóisialta"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Catagóiriú"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Gnéithe Sóisialta"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Ceadaigh Tuairimí"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Cumasaigh cumais tráchtaireachta ar an leathanach seo."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Ceadaigh Rátálacha"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Taispeáin Eolas Údair"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Barra Uirlisí Roinnte Taispeána"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Taispeáin barra uirlisí le cnaipí chun an leathanach seo a roinnt agus a phriontáil"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Taispeáin údar an leathanaigh mar aon leis an am eagrán deiridh."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Cumasaigh cumais rátála ar an leathanach seo."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "nó cruthaigh radharc saincheaptha?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Brabhsáil ag Clibeanna"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Léarscáil an tSuímh"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Gníomhartha Leathanach"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Roghnú Reatha"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Glan Roghnú"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Roghnaigh clib amháin nó níos mó"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Cuardaigh laistigh de thorthaí..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Logánta"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Ordú Le"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Roghnaigh clib amháin nó níos mó ar chlé."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Torthaí leathanaigh á n-aisghabháil..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Níorbh fhéidir aon leathanach a aimsiú leis na clibeanna roghnaithe."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Níorbh fhéidir aon leathanach a aimsiú a thagann leis na roghanna scagtha reatha."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Nuashonraithe {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Dáta Cruthaithe"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "Comhartha Aitheantais"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Athraithe Deiridh"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Cosán"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Teideal"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Ar bith"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Bí i d’urraitheoir trí Urraitheoirí GitHub (tugtar go díreach isteach chun tacú le sprioc an phríomhfhorbróra Nicolas Giard oibriú go lánaimseartha ar Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Bí i do Urraitheoir"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Clibeanna"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Bainistigh cumraíocht SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Soláthraí"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Roghnaigh Teastas Saincheaptha má tá do theastas féin agat cheana féin."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Fearann"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Cuir isteach an fearann láncháilithe atá dírithe ar do vicí. (m.sh. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Roghanna Soláthraí"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Díchumasaithe"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "A ligean ar Criptigh"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Teastas Saincheaptha"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Calafoirt"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Calafort HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Calafort neamh-SSL a éistfidh an freastalaí le haghaidh iarratais HTTP. De ghnáth 80 nó 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Calafort HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Calafort SSL a éistfidh an freastalaí le haghaidh iarratais HTTPS. 443 de ghnáth."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Iarratais HTTP a atreorú chuig HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Déanfar aon iarratais ar an gcalafort HTTP a atreorú go huathoibríoch chuig HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Tabhair faoi deara go gcaithfidh do chomhad cumraíochta a bheith in-scríofa chun cumraíocht na gcalafoirt a chaomhnú."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL an lógó"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Sonraigh íomhá le húsáid mar an lógó. Tacaítear le SVG, PNG, JPG, i gcóimheas cearnach, 34x34 picteilín nó níos mó. Cliceáil an cnaipe ar dheis chun íomhá nua a uaslódáil."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Scrios Úsáideoir?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "An bhfuil tú cinnte gur mhaith leat {{username}} úsáideora a scriosadh?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Úsáideoir Nuashonraigh"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Tabhair faoi deara nach féidir leat úsáideoirí a shannadh do na grúpaí Riarthóirí nó Aíonna ón bpainéal seo."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Tabhair faoi deara nach féidir leat úsáideoir a chruthaigh ábhar cheana féin a scriosadh. Ina ionad sin, ní mór duit an t-úsáideoir a dhíghníomhachtú nó gach ábhar a chruthaigh an t-úsáideoir sin a scriosadh."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Scripteanna"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "Déanfar CSS a íoslaghdú go huathoibríoch nuair a shábháiltear é. Ná cuir san áireamh na clibeanna stíle máguaird, ach an cód CSS iarbhír."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Infheicthe ag gach duine"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Le feiceáil chun grúpaí a roghnú..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Roghnaigh Leathanach..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Mód Nascleanúna"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Crann an tSuímh"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Nascleanúint Clasaiceach Crannbhunaithe"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Nascleanúint an Chustaim"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Roghchlár Nascleanúna Statach + Cnaipe Crann an tSuímh"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Dada"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Díchumasaigh Nascleanúint Suímh"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "D'éirigh leis an úsáideoir a fhíorú."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "D'éirigh leis an úsáideoir a ghníomhachtú."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "D'éirigh leis an úsáideoir a dhíghníomhachtú."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Ní mór an téacs a roghnú ar dtús!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Teastas Athnuaigh"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Stádas Teastais"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Éaga Teastais"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Ríomhphost síntiúsóra"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Staid Reatha"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Cas air"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Múch"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Teastas Athnuachana..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Ná fág an leathanach seo."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "D'éirigh le hathnuachan an deimhnithe."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "D'éirigh le HTTP Atreorú."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Bainistigh clibeanna leathanaigh"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Gan clibeanna le taispeáint."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Cuir Clib in Eagar"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Chlib"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Lipéad"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Cruthaíodh {{created}} agus nuashonraíodh {{updated}} an uair dheireanach."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Scrios an chlib seo"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Roghnaigh clib ón liosta ar chlé."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Cuir clib le leathanach chun tús a chur leis."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Athnuadh clibeanna."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Scriosadh an chlib go rathúil."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Sábháladh an chlib go rathúil."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Scagaire..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Féach ar Leathanaigh Nasctha"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Scrios Clib?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "An bhfuil tú cinnte gur mhaith leat an chlib {{tag}} a scriosadh? Déanfar an chlib a dhínascadh ó gach leathanach freisin."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Bainistigh eochracha chun rochtain a fháil ar an API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API Cumasaithe"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API Díchumasaithe"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Cumasaigh API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Díchumasaigh API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Eochair API Nua"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Ainm"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Críoch Eochrach"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Dul in éag"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Cruthaithe"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Nuashonraithe Deiridh"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Aisghair"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Níor gineadh aon eochracha API fós."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "An bhfuil fonn ort Eochair API a chúlghairm?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "An bhfuil tú cinnte gur mhaith leat eochair {{name}} a chúlghairm? Ní féidir an gníomh seo a chealú!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Cúlghair"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Athnuadh liosta eochracha API."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Tá an eochair cúlghairthe go rathúil."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Eochair API Nua"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Cruthaíodh eochair API go rathúil."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Tá an t-ainm in easnamh nó neamhbhailí."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Caithfidh tú grúpa a roghnú."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Ní féidir an grúpa aíonna a úsáid le haghaidh eochracha API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Cuspóir an eochair seo"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Ainm"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Dul in éag"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Is féidir leat eochair a chúlghairm fós ag am ar bith beag beann ar an dul in éag."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Scóipeanna Ceada"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Rochtain Iomlán"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "nó úsáid ceadanna grúpa..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Gin"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Grúpa"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Beidh na ceadanna céanna ag an eochair API agus atá ag an ngrúpa roghnaithe."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 lá"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 lá"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 lá"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 bhliain"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 bliana"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Cóipeáil an eochair a thaispeántar thíos mar {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "NÍ thaispeánfar arís é"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "Tá an API cumasaithe go rathúil."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "D'éirigh leis an API a dhíchumasú."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Shábháil"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Dada"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Ceadúnas Attribution Creative Commons"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Ceadúnas Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Ceadúnas Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-Ceadúnas Neamhthráchtála"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Ceadúnas Creative Commons Attribution-Neamhthráchtála-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Ceadúnas Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Fearann Poiblí"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Gach ceart ar cosaint"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Ceadúnas Ábhar"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Taispeántar ceadúnas i mbuntásca gach leathanaigh ábhair."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Tá inneachar ar fáil faoin {{license}}, ag {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Ní féidir leat ábhar an leathanaigh a íoslódáil."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Ní féidir leat an t-ábhar don leagan leathanach seo a íoslódáil."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Ní féidir leat foinse an leagain seo den leathanach a fheiceáil."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Ag féachaint ar an bhfoinse ón {{date}} de leathanach {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Aitheantas leagain {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Athchóirigh leagan an leathanaigh?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "An bhfuil tú cinnte gur mhaith leat ábhar an leathanaigh seo a aischur mar a bhí sé ar {{date}}? Déanfar an leagan seo a chóipeáil ar bharr na staire reatha. Mar sin, caomhnófar leaganacha níos nuaí fós."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Athchóirigh"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "D'éirigh le leagan an leathanaigh a athchóiriú!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{ chars}} chars, {{words}} focail"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Réitigh Sábháil Coinbhleachta"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Úsáid Áitiúil"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Úsáid cianda"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Caith amach athruithe áitiúla agus bain úsáid as an leagan is déanaí"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Úsáid ábhar sa phainéal ar chlé"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Féach ar an leagan is déanaí"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Shábháil {{authorName}}, {{date}} leagan níos déanaí den leathanach seo"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Cad ba mhaith leat a dhéanamh?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Bain úsáid as do leagan áitiúil reatha agus déan neamhaird de na hathruithe is déanaí."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Bain úsáid as an gcianleagan (is déanaí) agus caith amach do chuid athruithe."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Forscríobh le Leagan cianda?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "An bhfuil tú cinnte gur mhaith leat an t-inneachar cianda is déanaí a chur in ionad do leagan reatha? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Caillfear do chuid athruithe reatha."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Deimhnigh"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Leagan Logánta {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(in eagar)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(inléite amháin)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Leagan cianda {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "D'eagarthóireacht reatha, bunaithe ar leagan an leathanaigh ó {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Ar deireadh curtha in eagar ag {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Teideal:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Cur síos:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Tá athruithe gan sábháil agat. An bhfuil tú cinnte gur mhaith leat an t-eagarthóir a fhágáil?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Sábháil coimhlint! D'athraigh úsáideoir eile an leathanach seo cheana féin."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Dúblach"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Ainm Taispeána"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Suíomh"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Teideal Poist"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Crios ama"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Próifíl"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Mo chuid faisnéise pearsanta"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Mo Eolas"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Féach ar Phróifíl Phoiblí"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Fíordheimhniú"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Soláthraí"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Athraigh Pasfhocal"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Pasfhocal Reatha"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Pasfhocal Nua"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Deimhnigh Pasfhocal Nua"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grúpaí"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Gníomhaíocht"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Chuaigh ar"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Nuashonraíodh an phróifíl ar"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Logáil isteach is déanaí ar"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Leathanaigh cruthaithe"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Tuairimí postáilte"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "D'éirigh leis an bpróifíl a shábháil."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "D'éirigh le hathrú pasfhocal."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Leathanaigh"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Tuairimí"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Liosta de na leathanaigh a chruthaigh mé nó a d'athraigh mé go deireanach"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Gan leathanaigh le taispeáint."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Athnuadh an liosta leathanach."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Teideal"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Cosán"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Cruthaithe"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Nuashonraithe Deiridh"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Na Logálacha Deireanacha"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Brabhsáil"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Príomh-Roghchlár"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Eolaire Reatha"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(fréamh)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Cóipeáil ó logánach..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Foinse Locale"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "An logán óna ndéanfar míreanna nascleanúna a chóipeáil."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Cóip"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Roghnaigh an locale óna ndéanfar na míreanna a chóipeáil. Cuirfear míreanna i gceangal leis an liosta míreanna reatha sa logán gníomhach."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Nascleanúint Statach"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Roghchlár Nascleanúna Statach amháin"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Roghanna"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Formáid Dáta"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Réamhshocrú Logánta"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Dealramh"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Réamhshocrú Suíomh"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Solas"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Dorcha"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Fíoraigh Deimhniú SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Teastaíonn seiceáil teastais SSL ó roinnt óstach chun a bheith díchumasaithe. Saoire cumasaithe le haghaidh slándála cuí."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Nasc Seachtrach (Fuinneog Nua)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Slándáil"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Uasmhéid Uaslódála"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Max Comhaid le haghaidh Uaslódáil"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Cé mhéad comhad is féidir a uaslódáil i mbaisc amháin?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "An t-uasmhéid le haghaidh comhad amháin."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bearta"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "comhaid"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Uaslódálacha"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Ní dhéanann na socruithe seo ach difear do Wiki.js. Má tá seachfhreastalaí droim ar ais á úsáid agat (m.sh. nginx, apache, Cloudflare), ní mór duit a shocruithe a athrú chun meaitseáil a dhéanamh."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Cumraigh socruithe slándála"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Eisínteachtaí"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Suiteáil síntí le haghaidh feidhmiúlacht bhreise"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Soláthraí"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Cuir plé le do leathanaigh vicí"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Cumraíocht Soláthraí"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Níl aon roghanna cumraíochta ag an soláthraí seo is féidir leat a mhodhnú."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Déanfar aon ábhar (leathanaigh, uaslódála, nótaí tráchta, etc.) a chruthaigh an t-úsáideoir seo a athshannadh don úsáideoir a roghnaíodh thíos. Moltar spriocúsáideoir caocha a chruthú (m.sh. Úsáideoir Scriosta) mura dteastaíonn uait go ndéanfaí an t-ábhar a athshannadh d’aon úsáideoir gníomhach reatha."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Straitéisí Gníomhacha"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Cuir Straitéis leis"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Stíleanna"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Caithfidh tú do chód javascript a chur timpeall le clibeanna script HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Níl an leathanach seo foilsithe."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Tuairimí"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Scríobh trácht nua..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Do Ainm"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Do Sheoladh Ríomhphoist"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Formáid Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Post Trácht"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Tráchtanna á lódáil..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Ag postáil mar {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Bí ar an gcéad duine a dhéanfaidh trácht."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Gan trácht go fóill."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Trácht Nuashonraithe"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Deimhnigh Scrios"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "An bhfuil tú cinnte gur mhaith leat an nóta tráchta seo a scriosadh go buan?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Ní féidir an gníomh seo a chealú!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "modhnaithe {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Postáil nóta tráchta nua go rathúil."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Tá an trácht folamh nó ró-ghearr!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "D'éirigh leis an nóta tráchta a nuashonrú."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "D'éirigh leis an nóta tráchta a scriosadh."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Scoránaigh Seiceáil Litrithe"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Logáil isteach"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Scáileán Logáil Isteach"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Cumraíocht JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Seachbhóthar Scáileán Logála Isteach"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Ar cheart an t-úsáideoir a atreorú go huathoibríoch chuig an gcéad soláthraí fíordheimhnithe."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Logáil isteach URL Íomhá Chúlra"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Sonraigh íomhá le húsáid mar chúlra logáil isteach. Tugtar tacaíocht do PNG agus JPG, 1920x1080 molta. Fág folamh le haghaidh réamhshocraithe. Cliceáil an cnaipe ar dheis chun íomhá nua a uaslódáil. Tabhair faoi deara go gcaithfidh rochtain léite a bheith ag an ngrúpa Aíonna ar an íomhá roghnaithe!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Folaigh an Soláthraí Fíordheimhnithe Áitiúil"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Ná taispeáin an soláthraí fíordheimhnithe áitiúil ar an scáileán logála isteach. Cuir ?all leis an URL chun é a úsáid go sealadach."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Slándáil"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA a fhorfheidhmiú"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Cuir iallach ar gach úsáideoir Fíordheimhniú Dhá Fhachtóir a úsáid agus soláthraí fíordheimhnithe á úsáid aige a bhfuil foirm úsáideora / pasfhocail aige."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Féach ar Plé"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Trácht Nua"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Ábhar Tráchta"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Caint"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Clibeanna"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Leathanaigh a mheaitseálann clibeanna"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Fill ar ais go barr"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Ainm úsáideora"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Scoir"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Cumraigh an phíblíne rindreála leathanaigh"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Tá carachtair neamhbhailí i dTeideal an tSuímh."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "D'éirigh le cumraíocht an tsuímh a shábháil."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "Díchumasaíodh 2FA go rathúil."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "Cumasaíodh 2FA go rathúil."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Athshocrú pasfhocail á iarraidh..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Seiceáil do ríomhphoist le haghaidh treoracha athshocrú pasfhocail!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Gníomhach"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "An bhfuil úsáideoirí in ann logáil isteach ag baint úsáide as an straitéis seo?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Ainm Taispeána"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "An teideal a thaispeántar don úsáideoir deiridh don straitéis fíordheimhnithe seo."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Roghnaigh Soláthraí Fíordheimhnithe"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Cuir isteach do dhintiúir"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Dearmad ar do phasfhocal"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Cuir isteach an cód slándála a ghintear ó do ghléas iontaofa:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "D'éiligh do riarthóir Fíordheimhniú Dhá-Fachtóir (2FA) a chumasú ar do chuntas."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Scan an cód QR thíos ó d'fheidhmchlár soghluaiste 2FA:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Cuir isteach an cód slándála a ghintear ó do ghléas iontaofa:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Roghnaigh"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Roghnaigh Suíomh Leathanach Nua"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Bog / Athainmnigh Suíomh Leathanach"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Roghnaigh Leathanach"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Fillteáin Fíorúla"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Leathanaigh"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Tá an fillteán seo folamh."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Tiontaigh"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Tiontaigh Leathanach"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Roghnaigh an t-eagarthóir is mian leat a úsáid amach anseo don leathanach {{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Tiontófar ábhar an leathanaigh go formáid an eagarthóra nua-roghnaithe. Tabhair faoi deara go bhféadfadh go gcaillfí roinnt formáidithe nó ábhar neamh-rinneáilte mar thoradh ar an chomhshó. Cuirfear pictiúr le stair an leathanaigh agus is féidir é a athchóiriú am ar bith."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Tiontaigh"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Riarachán"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Easpórtáil go Diosca"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Sábháil ábhar go tarball le haghaidh cúltaca / imirce"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TOC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Clár na nÁbhar"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Úsáid Réamhshocruithe Suíomh"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Leibhéil Ceannteidil TOC"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "Taispeánfaidh an clár ábhair ceannteidil ó na leibhéil roghnaithe agus suas go dtí na leibhéil roghnaithe."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Leibhéil Ceannteidil TOC réamhshocraithe"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "Taispeánfaidh an clár ábhar ceannteidil ó na leibhéil roghnaithe agus suas go dtí na leibhéil roghnaithe de réir réamhshocraithe."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Óstainm Cliant a Aithint"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Ainm roghnach le seoladh chuig an bhfreastalaí SMTP chun do sheoltóir a aithint. Fág folamh chun óstainm freastalaí a úsáid. I gcás custaiméirí Google Workspace, ba cheart gurb é seo do phríomhainm fearainn."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Eisínteachtaí Leathanaigh"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Liosta de na síntí URL atá scartha le camóga agus a chaithfear leo mar leathanaigh. Mar shampla, má chuirtear md leis, déileálfaidh /foobar.md mar an gcéanna le /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Ainm an tSuímh Cnaipe"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Ainm an tsuímh sheachtraigh le taispeáint ar an gcnaipe eagarthóireachta. Ná cuir an réimír \"Cuir in Eagar\" san áireamh."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Deilbhín Cnaipe"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "An deilbhín atá le taispeáint ar an gcnaipe eagarthóireachta. Mar shampla, mdi-github chun an deilbhín GitHub a thaispeáint."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "URL cnaipe"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "URL chuig an leathanach ar an stór seachtrach. Úsáid an sealbhóir áit {filename} áit ar cheart ainm an chomhaid a chur san áireamh. (m.sh. https://github.com/foo/bar/blob/main/{filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Cuir Aicearraí in Eagar"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Roghchlár Mear Eagar FAB"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Taispeáin an cnaipe eagarthóireachta ar ghníomhaíocht snámh (FAB) le roghchlár diailithe luais sa chúinne ag bun ar dheis an scáileáin."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Cuir Barra Roghchláir in Eagar"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Taispeáin Barra Roghchláir in Eagar"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Taispeáin an barra roghchláir eagarthóireachta i gceanntásc an leathanaigh."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Taispeáin Cnaipe Eagar"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Taispeáin cnaipe chun an leathanach reatha a chur in eagar."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Taispeáin Cnaipe Eagar Seachtrach"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Taispeáin cnaipe a nascann le stór seachtrach (m.sh. GitHub) inar féidir le húsáideoirí PR a chur in eagar nó a chur isteach don leathanach reatha."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Cuir in eagar ar {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "D'éirigh le cumraíocht na nótaí tráchta a shábháil."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Sárú Téacs Buntásc"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "Roghnach sáraigh an buntéacs le teachtaireacht saincheaptha. Úsáideach mura bhfuil aon cheann de na ceadúnais thuas oiriúnach."
+                }
+            ]
+        }
+    }
+}

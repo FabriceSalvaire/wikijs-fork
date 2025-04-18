@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "ساخته شده به وسیله"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "ورود الزامیست!"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "ایمیل/شناسه کاربری"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "گذرواژه"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "ورود"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "شناسه کاربری نادرست"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "آدرس ایمیل یا گذرواژه نادرست است."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "آدرس ایمیل نامعتبر"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "خطا در ورود"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "هنوز اجازه ورود به وبسایت به شما داده نشده است."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "تلاش‌های ناموفق زیاد!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "شما در مدت زمان کوتاهی تلاشهای ناموفق بسیاری کرده‌اید. لطفا مجددا بعد از {{time}} امتحان کنید."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "کاربر پیدا نشد"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "محلی"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "حساب مایکروسافت"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "شناسه Google"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "احراز هویت دو مرحله ای"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "کد امنیتی مورد نیاز:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "بررسی"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "داشبورد"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "عمومی"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "محلی"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "آمار"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "تم"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "گروه ها"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "کاربران"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "احراز هویت"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "ویرایشگر"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "ورود به سیستم"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "تفسیر"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "موتور جستجو"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "فضای ذخیره سازی"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "دسترسی به API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "اطلاعات سامانه"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "ابزارها"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "ابزارهای توسعه دهندگان"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "همکاری با Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "تنظیمات اصلی ویکی"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "اطلاعات سایت"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "نام تجاری سایت"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "سایت"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "کاربران"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "ماژول ها"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "سیستم"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "ویکی جی اس"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "تنظیم گزینه های بومی سازی برای ویکی"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "تنظیمات محلی"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "فضای نام چندزبانه"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "دانلود زبان های محلی"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "زبان سایت"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "تمام عناصر متن UI به زبان انتخاب شده نمایش داده می شوند."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "به روز رسانی به صورت خودکار"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": " به صورت اتوماتیک تمامی بروزرسانی‌های فضای نام انتخاب شده در زیر دریافت شود."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "فضای نامهای چند زبانگی"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "نسخه چند زبانه را بر روی صفحه فعال میکند."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "فضاهای نام فعال"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "لیست کد های محلی فعال شده برای چند زبانگی، کد انتخاب شده در بالا بهصورت پیشفرض انتخاب شده میماند."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "کد محلی برای همه مسیرها پیشوند است. (به عنوان مثال / {{langCode}} / نام صفحه)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "مسیرهای فاقد کد محلی به طور خودکار به محلی که در بالا تعریف شده هدایت می شوند."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "ذخیره"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "لغو"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "دانلود"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "بارگذاری"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "دور انداختن"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "پاک کردن"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "ایجاد"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "ویرایش"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "حذف"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "تازه کردن"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "ذخیره تغییرات"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "ادامه دهید"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "زبان سایت"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "وقتی بروزرسانی میسر بود، به صورت خودکار بروزرسانی فایل های محلی صورت پذیرد."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "اطلاعات مربوط به سیستم شما"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "اطلاعات میزبان"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "نسخه فعلی"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "آخرین نسخه"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "منتشر شده"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "سیستم عامل"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "نام میزبان"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "هسته های CPU"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "کل RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "دایرکتوری کاری"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "فایل پیکربندی"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "استفاده از RAM: {{used}}/{{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "به پشتیبانی و توسعه Wiki.js کمک کنید"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "کار ما را تأمین کنید"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "گسترش کلمه"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "با دوستان و همکارانتان در مورد عملکرد عالی Wiki.js صحبت کنید!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "ما را در {{0}} دنبال کنيد."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "ارسال ایده یا رای دادن به یک پیشنهاد در {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "تخته درخواست ویژگی"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "اشکالی پیدا کردید؟ ارسال موضوع در {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "به ترجمه Wiki.js به زبان خود کمک کنید. به ما در {{0}} اطلاع دهید."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "کمک مالی"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "مشارکت"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js بخشی از یک ابتکار جمعی و شفاف است که به سمت منابع اجتماعی پیش میرود. شما هم میتوانید با کمک های مالی یکباره و یا ماهانه خود با ما مشارکت داشته باشید."
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "ما به کمک شما برای حفظ بهبود نرم افزار و اجرای خدمات مختلف مرتبط (به عنوان مثال میزبانی و شبکه) نیاز داریم."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki. js یک نرم افزار آزاد و متن باز است که با {{0}} توسط {{0}} و {{0}} تولید شده است."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "مشارکت کنندگان"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "صفحه"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "در حال رندر"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "لطفاً منتظر بمانید..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "صفحه با موفقیت ایجاد شد."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "خطایی در حین ایجاد صفحه رخ داد"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "همچنین می توانید برای حمایت مالی از این طرح ، تی شرت های Wiki.js را خریداری کنید:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "فروشگاه Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "باشه"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{شرکت}}. کلیه حقوق محفوظ است."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "این صفحه هنوز وجود ندارد."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "آیا می خواهید اکنون آن را ایجاد کنید؟"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "ایجاد صفحه"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "بازگشت"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "ناوبری"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "مدیریت ناوبری سایت"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "اضافه کردن"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "لینک"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "تقسیم کننده"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "سرتیتر"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "برچسب"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "آیکون"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "نوع هدف"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "هدف"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "یک مورد ناوبری را در سمت چپ انتخاب کنید."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}} بدون عنوان"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "لینک خارجی"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "خانه"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "صفحه"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "عبارت جستجو"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "ویرایش {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "حذف {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "ناوبری با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "برای افزودن اولین مورد ناوبری خود ، روی دکمه اضافه کردن، کلیک کنید."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "ناوبری خالی است"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "اعمال"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "آدرس ایمیل"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "تائید رمز عبور"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "نام"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "ثبت نام"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "ایجاد یک حساب کاربری"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "در حال حاضر یک حساب کاربری دارید ؟ {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "ورود به جای"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "ورود با استفاده از {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "رمز ورود خود را فراموش کرده اید?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "یا ورود با استفاده از..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "هنوز حساب کاربری ندارید ؟ {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "ایجاد یک حساب کاربری"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "یک ایمیل / نام کاربری معتبر وارد کنید."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "یک رمز عبور معتبر وارد کنید."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "ورود موفقیت آمیز بود! در حال تغییر مسیر ..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "در حال وارد شدن..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "احراز هویت در دسترس نیست."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "برای ایجاد حساب خود ، فرم زیر را پر کنید."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "لطفاً منتظر بمانید"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "حساب با موفقیت ایجاد شد!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "ایجاد حساب کاربری..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "آدرس ایمیل را وارد کنید."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "آدرس ایمیل نامعتبر است."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "رمز عبور را وارد کنید."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "رمز عبور بسیار کوتاه است."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "هر دو کلمه عبور مطابقت ندارند."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "نام راوارد کنید."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "نام خیلی کوتاه است."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "نام بسیار طولانی است."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "لغو"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "تنظیم مجدد رمز عبور"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "برای دریافت دستورالعمل های بازنشانی رمز عبور خود، آدرس ایمیل خود را وارد کنید:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "ایمیل"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "پیکربندی تنظیمات ایمیل"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "پیکربندی"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (اختیاری)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "برای فعال کردن حساب خود ایمیل های خود را بررسی کنید."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "صفحه با موفقیت به روز شد."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "غیر مجاز"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "شما نمی توانید این صفحه را ببینید."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "شما نمی توانید منبع صفحه را مشاهده نمایید."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "شما نمی توانید تاریخچه صفحه را ببینید."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "شما نمی توانید صفحه را ویرایش کنید."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "شما نمی توانید صفحه را ایجاد کنید."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "برگرد"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "خانه"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "یافت نشد"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "این صفحه وجود ندارد."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "ورود به عنوان ..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "تبدیل به یک حامی شوید"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "از طریق Patreon پشتیبان یا حامی مالی شوید (به طور مستقیم به  نیکولاس جیارد، سرپرست توسعه دهنده گان  برای کار تمام وقت در Wiki.js استفاده میشود)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "به ویکی خودتان خوش آمدید!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "شروع و ساختن صفحه اصلی"
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "ایجاد صفحه اصلی"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "پرچم ها"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "ویجر"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "کمک مالی یک باره یا تکراری را از طریق Paypal ایجاد کنید."
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "ما کمکهای مالی را با استفاده از اتریوم می پذیریم."
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "بسته محلی sideload"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "اگر به اینترنت متصل نیستید و نمی توانید فایلهای محلی را با استفاده از روش فوق بارگیری کنید ، می توانید با بارگذاری آنها در زیر ، بسته های جانبی را به صورت دستی بارگیری کنید."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "مرور..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "وب قلاب"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "مدیریت webhook ها به سرویس‌های خارجی"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "ارسال یک ایمیل آزمایشی"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "آدرس ایمیل گیرنده"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "ارسال ایمیل"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "فرستنده"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "نام فرستنده"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "ایمیل فرستنده"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "تنظیمات SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "میزبان"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "پورت"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "معمولا ۴۶۵ (توصیه می شود) ، ۵۸۷ یا 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "امنیت (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "هنگام استفاده از پورت 465 باید فعال شود ، در غیر این صورت باید خاموش باشد  (587 یا 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "نام کاربری"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "رمز عبور"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (کلید های دامنه شناسایی ایمیل) با فراهم کردن ابزاری برای گیرندگان برای تأیید نام دامنه و اطمینان از صحت پیام ، لایه ای از امنیت در تمام ایمیل های ارسال شده از Wiki.js را فراهم می کند."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "استفاده از DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "نام دامنه"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "انتخابگر کلید"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "کلید خصوصی"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "کلید خصوصی برای انتخاب، در فرمت PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "برای اطمینان از عملکرد پیکربندی SMTP ، یک ایمیل آزمایشی ارسال کنید."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "پیکربندی با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "نسخه پایگاه داده شما به طور کامل پشتیبانی نمی شود. برخی از قابلیت ها ممکن است محدود باشند یا به عنوان انتظار کار نکنند."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "اطلاعات سیستم تجدید شده است."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "تنظیمات تأیید اعتبار ویکی خود را پیکربندی کنید"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "استراتژی ها"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "تنظیمات پیشرفته کلی"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "مخاطبان JWT"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "مخاطبان URN استفاده شده در JWT که پس از ورود به سیستم صادر شده اند. معمولاً نام دامنه شما (به عنوان مثال urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "انقضا توکن"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "دوره انقضا یک نشانه تا زمانی که باید تمدید شود. (به طور پیش فرض: 30 دقیقه)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "دوره تمدید توکن"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "حداکثر مدت زمانی که یک توکن به پایان رسیده، قابل تمدید است. (مقدار پیش فرض: 14 روز)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "استراتژی {{state}} {{locked}} است"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "فعال"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "غیر فعال"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "و نمی توان آن را غیر فعال کرد."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "یک ایمیل آزمایشی با موفقیت ارسال شد."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "تغییر ظاهر ویکی شما"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "قالب سایت"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "تم ها بر نحوه نمایش محتویات صفحات تاثیر می گذارند. بخش های دیگر سایت (مانند ویرایشگر یا منطقه مدیریت) تحت تاثیر قرار نمی گیرند."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "حالت تاریک"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "برای دسترسی توصیه نمی شود. ممکن است توسط همه تم ها پشتیبانی نشود."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "تزریق کد"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS نادیده گرفتن"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "کد CSS قابل تزریق بعد از کد های Css پیشفرض. اگر حجم Css های مورد ساتفاده شما زیاد است استفاده از یک تم شخصی سازی شده پیشنهاد میشود. همچنین تزریق کد css به مقدار زیاد باعث کاهش کارایی صفحات شما میشود."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "تزریق HTML  به HEAD"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "کد HTML  قابل تزریق قبل از بسته شدن تگ Head ، معمولاً برای تگ های اسکریپت استفاده میشود"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "تزریق HTML  به Body"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "کد HTML قابل تزریق قبل از بسته شدن بدنه اصلی."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "دانلود تم ها"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "بخش مدیریت"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "پیکربندی استراتژی"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "این استراتژی دارای گزینه های پیکربندی قابل تغییر برای شما نستیت."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "ثبت نام"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "اجازه ثبت نام خودکار"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "اجازه دسترسی به ویکی، به هر کاربری که با استراتژی موفق به احراز هویت شده است."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "محدود کردن به دامنه های ایمیل خاص"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "فهرستی از دامنه های مجاز برای ثبت نام. دامنه آدرس ایمیل کاربر باید با یکی از این ها برای به دست آوردن دسترسی مطابقت داشته باشد."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "اختصاص به گروه"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "به طور خودکار کاربران جدید را به این گروه ها اختصاص دهید."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "امنیت"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "مجبور کردن تمامی کاربران به استفاده از احراز هویت دو مرحله ای"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "برای اولین بار که کاربر وارد سیستم میشود، باید تنظیمات احراز هویت دو مرحله این را انجام دهد و این نمیتواند توسط کاربر غیر فعال شود."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "مرجع پیکربندی"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "برخی از استراتژی ها ممکن است نیاز به برخی از مقادیر پیکربندی در ارائه دهنده شما داشته باشند. این فقط برای مرجع ارائه شده و ممکن است توسط استراتژی فعلی مورد نیاز نباشد."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "شما ابتدا باید یک {{siteUrl}} معتبر را ست کنید. برای اینکار روی منوی {{general}} در نوار ابزار کنار کلیک کنید."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "ریشه‌های مجاز وب"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "آدرس تماس برگردان / آدرس تغییر مسیر"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "آدرس ورود"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "آدرس خروج"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "روش احراز هویت Token Endpoint"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "خانه"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "صفحه جدید"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "صفحه کنونی"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "نمایش"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "ویرایش"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "تاریخچه"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "مشاهده منبع"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "انتقال / تغییر نام"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "حذف"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "دارایی ها"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "تصاویر و فایل ها"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "جستجو..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "مدیریت"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "حساب کاربری"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "ویکی من"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "پروفایل من"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "خروج"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "ورود"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "آخرین ویرایش توسط"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "منتشر نشده"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "ویرایش صفحه"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "محتویات صفحه"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "نشانه کردن"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "به اشتراک گذاری"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "فرمت چاپ"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "بستن"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "صفحه"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "منابع پشتیبان گیری و همگام سازی را برای محتوای خود تنظیم کنید."
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "منابع"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "وضعیت"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "آخرین همگام سازی در {{time}} بود."
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "آخرین تلاش در {{time}} بود."
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "پیغام خطا"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "شما هیچ منبع ذخیره‌سازی فعال ندارید."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "پیکربندی هدف"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "این منبع ذخیر سازی هیچ گونه تنظیمات پیکربندی قابل تغییر توسط شما را ندارد."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "جهت همگام سازی"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "انتخاب کنید که چگونه همگام سازی محتوا برای این منبع ذخیره‌سازی به کار گرفته شود."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "دو طرفه"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "ذخیره در هدف"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "واکشیدن از هدف"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "پشتیبانی نشده"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "در حالت دوطرفه، ابتدا محتوی از فضای ذخیره‌سازی واکشی می‌شود. هر مطلب جدیدتر بازنویسی خواهد شد. همچنین مطالب جدید از زمان همگام سازی قبلی نیز در فضای ذخیره‌سازی، بازنویسی میشوند."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "محتوی همیشه در فضای ذخیره‌سازی، ذخیره میشود و همه ی فایل‌های موجود را بازنویسی می‌کند. این امن ترین سناریو برای تهیه فایل‌های پشتیبان است."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "محتوی همیشه از فضای ذخیره سازی واکشی می شود و بر روی فایل های موجود که از قبل وجود داشته اند بازنویسی می شود. این گزنه معمولاً برای استفاده از محتوای تک استفاده میباشد. مد نظر داشته باشید که همیشه محتوی کنونی جایگزین خواهد شد."
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "برنامه همگام سازی"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "برای بهبود کارایی، این منبع ذخیره‌سازی، تغییرات را در بازه‌های زمانی همگام سازی میکند نه به ازای هر تغییر. تعیین کنید که در چه بازه‌های زمانی همگام سازی صورت گیرد."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "در حال حاضر بر روی هر {{schedule}} تنظیم شده است."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "پیش فرض بر روی هر {{schedule}} است."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "اقدامات"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "اجرا کن"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "پیکربندی قابلیت های جستجو ویکی شما"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "بازسازی شاخص"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "موتور جستجوی"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "پیکربندی موتور"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "این موتور هیچ گونه پیکر بندی ندارد که شما بتوانید آن ها را تنظیم کنید."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "فهرست موتورهای جستجو تازه شده است."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "پیکربندی موتور جستجو با موفقیت ذخیره شد"
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "شخص‌ها با موفقیت بازسازی شد."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "یک خطای غیر منتظره رخ داده است."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "کاربران"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "گروه ها"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "شما آخرین نسخه را اجرا می کنید."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "نسخه جدید موجود است: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js یک پروژه رایگان و منبع آزاد است. راه های مختلفی برای کمک شما به پروژه وجود دارد."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "ما به کمک شما نیاز داریم!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "بیشتر بدانید"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "فهرست استراتژی های تجدید شده است."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "پیکربندی تأیید اعتبار با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "عمومی"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "آدرس سایت"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "آدرس کامل به ویکی شما ، بدون اسلش در انتها. (به عنوان مثال https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "عنوان سایت"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "نمایش در نوار بالا و اضافه کردن به متای تمام صفحات."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "لوگو"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "آپلود لوگو"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "پاک کردن"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "برای گرفتن بهترین نتایج یک تصویر با ابعاد {{size}} پیشنهاد می‌شود."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "فقط فایل های {{typeList}} یا {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "پاورقی کپی رایت"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "نام شرکت / سازمان"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "نام برای استفاده به عنوان کپی رایت در پاورقی. برای مخفی کردن خالی بگذارید."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "توضیحات سایت"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "توضیحات پیش فرض برای زمانی که هیچ کدام برای یک صفحه ارائه شده است."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "ربات های متا"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "پیش فرض: شاخص گذاری، دنبال کردن. همچنین می توانید بر اساس هر صفحه تنظیم کنید."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "برای شروع جستجو حداقل 2 کاراکتر را تایپ کنید..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "جستجوکردن..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "هیچ صفحه مطابق با جستار شما یافت نشد."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}} نتیجه یافت شد."
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "آیا منظور شما..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "بستن"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "کپی کردن لینک جستجو"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "بسیار ضعیف"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "ضعیف"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "میانگین"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "قوی"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "بسیار قوی"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "حذف صفحه"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "آیا مطمئنید که می خواهید صفحه {{title}} را حذف کنید ؟"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "صفحه را می توان از پنل مدیریتی بازگرداند."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "جستجوی کاربر"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "جستجوی کاربران..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "هر"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "دقیقه (ها)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "ساعت (ها)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "روز (ها)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "ماه (ها)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "سال (ها)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "ويژگيهای صفحه"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "اطلاعات صفحه"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "عنوان"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "توضیح کوتاه"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "نشان داده شده در زیر عنوان"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "مسیر و طبقه بندی"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "محلی"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "مسیر"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "به ابتدا و انتها هیچ اسلشی (/) اضافه نکنید."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "برچسب ها"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "از برچسب ها برای دسته بندی صفحات خود استفاده کنید و آنها را برای پیدا کردن آسان تر کنید."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "وضعیت انتشار"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "منتشر شده"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "صفحات منتشر نشده هنوز هم می توانند توسط کاربران دارای مجوز نوشتن در این صفحه مشاهده شوند."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "شروع انتشار در..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "برای رفع محدودیت، تاریخ شروع را خالی بگذارید."
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "پایان انتشار در ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "برای رفع محدودیت زمانی، تاریخ انتها را خالی بگذارید."
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "آیا میخواهید تغییرات ذخیره نشده را دور بیاندازید؟"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "شما تغییرات ذخیره نشده دارید آیا مطمئن هستید که میخواهید ویرایشگر را ترک کنید و هرگونه تغییراتی را که از آخرین ذخیرهسازی انجام داده اید، نادیده بگیرید؟"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "لغو تغییرات"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "برای این صفحه از کدام ویرایشگر میخواهید استفاده کنید؟"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "تا زمانیکه که صفحه ایجاد نشود نمیتوان این را تغییر داد."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "دارایی ها"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "پوشه جدید"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "نام پوشه"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "باید دنبال پوشه دارایی {{namingRules}} را دنبال کنید."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "قوانین نامگذاری"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "حرکت"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "تغییر نام"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "بهینه سازی"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "پیش نمایش"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "خواص"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "این پوشه دارایی خالی است."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} فایل"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "درج"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "شناسه"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "نام فایل"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "نوع"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "حجم فایل"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "اضافه شده"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "اقدامات"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "آپلود دارایی ها"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "برای بارگذاری و یا مرور فایل، فایل را اینجا رها کنید"
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "واکشی تصویر از راه دور"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "تراز تصویر"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "تغییر نام دارایی"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "نام جدید برای این دارائی را وارد کنید:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "حذف دارایی"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "آیا مطمئنید که می خواهید دارائی را حذف کنید؟"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "این عمل نمیتواند ناتمام بماند."
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "فهرست دارایی ها با موفقیت تجدید شد."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "بارگذاری فایل انجام نشد."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "پوشه دارائی با موفقیت ایجاد شد."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "دارایی با موفقیت تغییر نام داد."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "دارایی با موفقیت حذف شد."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "شما ابتدا باید یک فایل برای آپلود انتخاب نمایید!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "واکشی"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "بازگشت به ویرایشگر"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "پررنگ"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "مایل"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "خط خورده"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "سرفصل {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "زیرنویس"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "بالانویس"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "نقل قول"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "نقل قول اطلاعات"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "نقل قول موفقیت"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "نقل قول هشدار"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "نقل قول خطا"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "لیست نامرتب"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "لیست مرتب"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "کد درون خطی"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "کلید صفحه کلید"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "نوار افقی"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "نمایش / عدم نمایش پنجره پیش نمایش"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "درج پیوند"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "درج دارائی ها"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "درج بلوک"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "درج قطعه کد"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "درج ویدئو / صوتی"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "درج نمودار"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "درج عبارت ریاضی"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "کمکی جدول"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "حالت حواس پرتی"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "راهنمای قالببندی"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "مشاهده منبع صفحه {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "بازگشت به نمای عادی"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "شناسه {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "زبان"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "آنالیز"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "اضافه کردن ابزارهای تجزیه تحلیل و نظارت به ویکی شما"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "ارائه دهندگان"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "پیکربندی ارائه دهنده"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "این ارائه دهنده هیچ گزینه پیکربندی برای ویرایش ندارد."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "فهرست ارائه دهندگان با موفقیت به روز شد."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "پیکربندی تجزیه و تحلیل با موفقیت ذخیره شد"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "ابزارهای تعمیر و نگهداری"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "ابزارها"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "احراز هویت"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "ابزارهای مختلف برای احراز هویت / کاربران"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "ذخیره کردن حافظه پنهان"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "ذخیره‌سازی حافظه پنهان استفاده شده توسط اجزای مختلف"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "نقطه پایانی Graph point"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "تغییر نقطه پایانی GraphQL برای Wiki.js "
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "وارد کردن از Wiki.js نسخه 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "انتقال داده‌ها از نصب قبلی، نسخه 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "تله متری"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "فعال / غیر فعال کردن تله متری یا تنظیم مجدد شناسه مشتری"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "نظرات"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "منتشر شده"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "خصوصی"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "جهانی"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "در حال بارگذاری صفحه..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "کد"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "نام"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "نام اصلی"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "true"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "دسترسی"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "دانلود"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "محتوا"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "ابزارهای مختلف برای صفحات"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "مجموعه آیکون"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "مجموعه ای از آیکون‌های قابل استفاده برای نوار ناوبری کناری."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "مرورگر شما قدیمی است. لطفاً مرورگر خود را به یک {{modernBrowser}} ارتقا دهید."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "مرورگر مدرن و بروزرسانی شده"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "نام"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "نویسنده"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "دانلود"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} هنگام اضافه کردن استایل برای محتوای صفحه، شما باید به آنها کلاس {{cssClass}} را بدهید. اجتناب از این می‌تواند باعث بهم ریختگی ویرایشگر شود!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "هشدار:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "تنظیمات قالب"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "فعال"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "غیرفعال"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "تأیید شده"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "تایید نشده"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "ویرایش کاربر"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "شناسه {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "اطلاعات پایه"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "ایمیل"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "نام نمایشی"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "احراز هویت"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "سرویس دهنده"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "کلمه عبور"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "تغییر کلمه عبور"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "کلمه عبور جدید"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "احراز هویت دو مرحله ای"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "تغییر به احراز هویت دومرحله ای"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "شناسه سرویس دهنده"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "گروههای کاربر"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "این کاربر هنوز به هیچ گروهی اختصاص ندارد. شما باید حداقل 1 گروه را به کاربر اختصاص دهید."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "انتخاب گروه..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "اختصاص دادن"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "فراداده بزرگ"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "مکان"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "عنوان کار"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "منطقه زمانی"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "اطلاعات کاربر با موفقیت بروزرسانی شد."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "کاربر قبلاً به این گروه اختصاص داده شده است!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "این محل ذخیره سازی {{state}} می باشد"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "فعال"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "غیرفعال"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "برای این که بتوانید تغییرات ایجاد کنید ابتدا باید محل ذخیره سازی را فعال نمایید."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "یک کلمه عبور جدید انتخاب نمایید."
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "شما باید کلمه عبور خود را تعویض نمایید."
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "کلمه عبور جدید"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "تایید کلمه عبور جدید"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "تغییر کلمه عبور"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "در حال تغییر کلمه عبور ..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "آخرین صفحات"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "محبوبترین صفحات"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "اطلاعات"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "برنامه ریزی"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "اجتماعی"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "دسته بندی"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "ویژگی های شبکه های اجتماعی"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "اجازه ارسال نظر"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "فعال سازی رتبه دهی در این صفحه."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "اجازه رتبه دهی"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "نمایش اطلاعات نویسنده"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "نمایش ابزار اشتراک گذاری"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "نمایش دکمه های اشتراک گذاری."
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "نمایش نام نویسنده به همراه آخرین زمان ویرایش."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "فعال سازی رتبه دهی در این صفحه."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "یا ایجاد نمای سفارشی؟"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "جستجو در تگ ها"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "نقشه سایت"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "ویرایش صفحه"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "انتخاب جاری"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "ریست کردن انتخاب ها"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "یک یا چند تگ انتخاب نمایید"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "جستجو در نتایج"
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "محلی"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "مرتب سازی براساس"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "یک یا چند تگ را انتخاب نمایید"
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "بازیابی نتایج صفحه ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "هیچ صفحه ای با برچسب های انتخاب شده یافت نشد."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "هیچ صفحه ای مطابق با گزینه های فعلی فیلتر یافت نشد."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "آخرین ویرایش"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "تاریخ ایجاد"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "شناسه"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "آخرین ویرایش"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "مسیر"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "عنوان"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "هر"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "از طریق GitHub پشتیبان یا حامی مالی شوید (به طور مستقیم به  نیکولاس جیارد، سرپرست توسعه دهنده گان  برای کار تمام وقت روی Wiki.js در ارتباط باشید)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "تنبدیل به حامی شوید"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "برچسب ها"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "مدیریت تنظیمات ssl"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "سرویس دهنده"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "در صورتی که گواهی سفارشی دارید آن را وارد کنید."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "نام دامنه"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "آدرس کامل دامنه خود را که ویکی در آن قرار دارد را بدون اسلش وارد کنید (برای مثال : wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "تنظیمات پیکربندی"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "غیرفعال"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "رمزگذاری کردن"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "سفارشی سازی گواهی"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "پورت ها"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "پورت HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "درگاه غیر SSL که سرور به درخواست های HTTP گوش می دهد. معمولاً 80 یا 3000 است."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "پورت HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "امن ساختن پورت سرور باعث می شود سرور تنها به درخواست های امن پاسخ دهد ، معمولا روی پورت 443"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "انتقال تمای درخواست های HTTP به HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "به صورت خودکار تمامی درخواست های HTTP به HTTPS انتقال خواهند یافت."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "توجه داشته باشید که فایل کانفیگ شما باید حتما قابل نوشتن باشد تا تنظیمات به درستی اعمال شود."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "آدرس لوگو"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "یک تصویر برای لوگو وارد کنید ، تصویر باید با یکی از فرمت های SVG , PNG , JPG و در اندازه 34*34 پیکسل باشد. برای آپلود تصویر جدید رو دکمه زیر کلیک کنید."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "حذف کاربر؟"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "آیا مطمئن هستید که میخواهید حساب کاربری {{username}} حذف شود؟"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "ویرایش کاربر"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "توجه داشته باشید که در این صفحه نمی توانید کاربران را به گروه های مدیران یا مهمانان اختصاص دهید."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "توجه داشته باشید که نمی توانید کاربرانی را که قبلاً محتوا ایجاد کرده اند حذف کنید. شما باید کاربر را غیرفعال کنید یا تمام محتوای ایجاد شده توسط آن کاربر را حذف کنید."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "اسکریپت"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS پس از ذخیره به طور خودکار کوچک‌سازی می‌شود. از تگ‌های style در قبل و بعد استفاده نکنید و فقط کد CSS را بنویسید."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "قابل نمایش برای همه"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "قابل مشاهده برای گروه..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "انتخاب صفحه..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "حالت ناوبری"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "درخت سایت"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "ناوبری مبتنی بر درخت کلاسیک"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "ناوبری سفارشی"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "منوی ناوبری استاتیک + دکمه درخت سایت"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "هیچ"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "غیر فعال کردن منوی سایت"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "کاربر با موفقیت تایید شد."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "کاربر با موفقیت فعال شد."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "کاربر با موفقیت غیرفعال شد."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "ابتدا باید متن انتخاب شود!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "تمدید گواهینامه"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "وضعیت گواهی"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "انقضای گواهی"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "ایمیل مشترک"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "وضعیت فعلی"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "روشن"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "خاموش"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "در حال تمدید گواهینامه..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "این صفحه را ترک نکنید."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "گواهی با موفقیت تمدید شد."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP Redirection با موفقیت تغییر یافت."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "مدیریت برچسب های صفحه"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "هیچ برچسبی برای نمایش وجود ندارد."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "ویرایش برچسب"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "برچسب"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "برچسب"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "ایجاد شده در {{created}} و آخرین به روز رسانی در {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "حذف این برچسب"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "برچسب را از لیست سمت چپ انتخاب کنید."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "برای شروع یک برچسب به یک صفحه اضافه کنید."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "برچسب ها دوباره بارگذاری شدند."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "برچسب با موفقیت حذف شد."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "برچسب با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "فیلتر..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "مشاهده صفحات مرتبط"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "حذف برچسب؟"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "آیا مطمئن هستید که می خواهید برچسب {{tag}} را حذف کنید؟ این برچسب همچنین از همه صفحات حذف خواهد شد."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "مدیریت کلید دسترسی به API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API فعال شد"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API غیرفعال شد"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "فعال کردن API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "غیرفعال کردن API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "کلید API جدید"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "نام"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "پایان دادن به کلید"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "انقضاء"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "ایجاد شده"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "اخرین به روز رسانی"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "لغو"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "هنوز هیچ کلید API ایجاد نشده است."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "کلید API را لغو کنید؟"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "آیا مطمئن هستید که می خواهید کلید {{name}} را لغو کنید؟ این اقدام قابل برگشت نیست."
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "لغو"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "لیست کلیدهای API دوباره بارگذاری شد."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "کلید با موفقیت ابطال شد."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "کلید API جدید"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "کلید API با موفقیت ایجاد شد."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "نام موجود نیست یا نامعتبر است."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "شما باید یک گروه را انتخاب کنید."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "گروه مهمان ها نمی توانند برای کلیدهای API استفاده شوند."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "هدف از این کلید"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "نام"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "انقضاء"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "شما هنوز هم می توانید یک کلید را در هر زمان و بدون در نظر گرفتن انقضا باطل کنید."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "محدوده‌های مجوز"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "دسترسی کامل"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "یا استفاده از مجوزهای گروه..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "تولید"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "گروه"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "کلید API دارای مجوزهای مشابه با گروه انتخاب شده است."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 روز"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 روز"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 روز"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 سال"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 سال"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "کلید نشان داده شده پاینن تحت عنوان {{bold}} را کپی کنید"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "دوباره نشان داده نمی‌شود"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API با موفقیت فعال شد."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API با موفقیت غیرفعال شد."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "ذخیره شد"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "هیچ"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "مجوز Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs License"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Attribution-NonCommercial-NoDerivs License"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "دامنه عمومی"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "کلیه حقوق محفوظ است"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "مجوز محتوا"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "نشان دادن مجوز در پاورقی تمام صفحات محتوا."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "محتوا تحت مجوز{{license}} ، توسط {{company}} موجود است."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "شما نمی توانید محتوای صفحه را دانلود کنید."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "شما نمی توانید محتوای این نسخه صفحه را دانلود کنید."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "شما نمی توانید منبع این نسخه از صفحه را مشاهده کنید."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "مشاهده منبع از {{date}} از صفحه {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "شناسه {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "بازیابی نسخه صفحه ؟"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "آیا مطمئن هستید که می خواهید محتوای صفحه را آنگونه که در {{date}} بود ، بازیابی کنید؟ این نسخه در بالای تاریخ کنونی کپی می شود. به همین ترتیب ، نسخه های جدیدتر همچنان حفظ می شوند."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "بازگرداندن"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "نسخه صفحه با موفقیت بازیابی شد!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} کاراکتر {{words}} کلمه"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "حل اختلاف"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "استفاده محلی"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "استفاده از راه دور"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "از تغییرات فعلی صرفنظر کن و از آخرین نسخه استفاده کن"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "از محتوا پانل سمت چپ استفاده کنید"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "مشاهده آخرین نسخه"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "نسخه جدیدتر این صفحه توسط {{authorName}}، {{date}} saved ذخیره شده است"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "شما می‌خواهید چه کاری انجام دهید؟"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "از نسخه فعلی استفاده کن و آخرین تغییرات را نادیده بگیر."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "از نسخه راه دور (جدیدترین) استفاده کن و تغییرات را نادیده بگیر."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "رونویسی با نسخه از راه دور؟"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "آیا مطمئن هستید که می‌خواهید نسخه فعلی خود را با جدیدترین محتوای از راه دور جایگزین کنید؟ {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "ویرایش‌های فعلی شما از بین می‌رود."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "تایید"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "نسخه محلی {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(قابل ویرایش)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(فقط خواندنی)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "نسخه از راه دور {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "ویرایش فعلی شما، بر اساس نسخه صفحه از {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "آخرین ویرایش توسط {{authorName}}، {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "عنوان:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "توضیحات:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "شما تغییرات ذخیره نشده دارید آیا مطمئن هستید که میخواهید ویرایشگر را ترک کنید و هرگونه تغییراتی را که از آخرین ذخیره‌سازی انجام داده اید، نادیده بگیرید؟"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "عدم ذخیره ! کاربر دیگری در حال حاضر این صفحه را تغییر داده است."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "کپی کردن"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "نام نمایشی"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "محل"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "عنوان شغلی"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "منطقه زمانی"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "مشخصات"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "اطلاعات شخصی من"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "اطلاعات من"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "نمایش مشخصات عمومی"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "احراز هویت"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "ارائه دهنده"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "تغییر رمز عبور"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "رمز عبور فعلی"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "رمز عبور جدید"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "تکرار رمز عبور جدید"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "گروه‌ها"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "فعالیت"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "پیوستن در"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "آخرین بروز رسانی در"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "آخرین ورود در"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "صفحات ایجاد شد"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "نظرات ارسال شد"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "پروفایل با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "رمز عبور با موفقیت تغییر کرد"
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "نظرات"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "لیست صفحاتی که توسط من ایجاد و یا ویرایش شده است"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "هیچ صفحه ای برای نمایش وجود ندارد"
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "لیست صفحه تازه شد."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "عنوان"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "مسیر"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "ایجاد شده"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "اخرین به روز رسانی"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "آخرین ورود"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "فهرست"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "منوی اصلی"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "پوشه کنونی"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "ریشه"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "کپی از زبان ..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "زبان منبع"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "زبانی که از آن موارد ناوبری کپی می‌شود."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "کپی"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "زبانی را که میخواهید موارد از آن کپی شوند انتخاب کنید. موارد به لیست فعلی موارد موجود در زبان فعال اضافه خواهند شد."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "مدیریت ناوبری سایت"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "فقط منوی استاتیک"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "تنظیمات"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "فرمت تاریخ"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "زبان پیش فرض"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "ظاهر"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "پیش فرض"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "حالت روشن"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "حالت تاریک"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "تایید گواهی SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "برخی از میزبان‌ها نیاز دارند تا گواهینامه SSL غیر فعال باشد. برای امنیت بهتر فعال کنید."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "پیوند خارجی (پنجره جدید)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "امنیت"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "حداکثر اندازه بارگذاری"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "حداکثر فایل در هر آپلود"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "چند پرونده را می توان در یک بار بارگذاری کرد؟"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "حداکثر اندازه برای یک فایل واحد."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "بایت"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "فایل"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "آپلود"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "این تنظیمات فقط مربوط به Wiki.js میباشد. اگر از reverse-proxy استفاده می‌کنید (به عنوان مثال nginx، apache، Cloudflare)، باید تنظیمات آن را هماهنگ کنید."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "پیکربندی تنظیمات امنیتی"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "برنامه‌های افزودنی"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "افزونه‌ها را برای عملکرد اضافی نصب کنید"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "ارائه دهنده"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "اضافه کردن بحث به صفحات ویکی"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "پیکربندی ارائه دهنده"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "این ارائه دهنده هیچ گزینه پیکربندی برای ویرایش ندارد."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "هر محتوایی (صفحه‌ها، بارگذاری‌ها، نظرات و غیره) که این کاربر ایجاد کرده‌است به کاربر انتخاب‌شده در زیر منسوب می‌شود.\nپیشنهاد می‌شود یک کاربر ساختگی (مثلاً با نام «کاربر پاک‌شده») بسازید اگر نمی‌خواهید آن محتواها به کاربر واقعی‌ای منسوب شود."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "استراتژی‌های فعال"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "افزودن استراتژی"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "سبک‌ها"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "اچ‌تی‌ام‌ال"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "شما باید کد javascript خود را با برچسب‌های اسکریپت HTML احاطه کنید."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "این صفحه منتشر نشده است"
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "نظرات"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "یک نظر جدید بنویسید..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "اسم شما"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "آدرس ایمیل شما"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "فرمت Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "ارسال نظر"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "بارگذاری نظرات..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "در حال ارسال به عنوان {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "اولین نفری باشید که نظر می‌دهید."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "هنوز نظری ارسال نشده است."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "بروز رسانی نظر"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "تایید حذف"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "آیا مطمئن هستید که می‌خواهید این نظر را برای همیشه حذف کنید؟"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "این عمل قابل بازگشت نیست !"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "اصلاح شده {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "نظر جدید با موفقیت ارسال شد"
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "نظر خالی است یا خیلی کوتاه!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "نظر با موفقیت به روز شد."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "نظر با موفقیت حذف شد."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "فعال کردن چک کردن غلط املایی"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "ورود"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "صفحه ورود"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "پیکربندی JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "دور زدن صفحه ورود"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "آیا کاربر باید به طور خودکار به اولین ارائه دهنده احراز هویت هدایت شود."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "آدرس تصویر پس‌زمینهٔ صفحهٔ ورود"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "یک تصویر برای پس‌زمینهٔ صفحهٔ ورود انتخاب کنید. فرمت‌های PNG و JPG پشتیبانی می‌شود و دقت ۱۹۲۰ در ۱۰۸۰ پیشنهاد می‌شود.\nبرای استفاده از تصویر پیش‌فرض خالی بگذارید. روی دکمهٔ سمت چپ کلیک کنید تا تصویر جدیدی آپلود کنید. دقت کنید که گروه مهمان (کاربرهای احرازهویت نشده) باید دسترسی خواندن تصویر انتخاب‌شده را داشته‌باشند."
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "مخفی کردن ارائه دهنده احراز هویت محلی"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "روش احراز هویت محلی را در صفحهٔ ورود نشان نده. برای استفادهٔ موقت ؟همه را به آدرس اضافه کن."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "امنیت"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "اجباری کردن تایید هویت دومرحله ای"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "هرکاربری که از روش احراز هویت نام کاربری / گذرواژه استفاده می‌کند را مجبور کن از احراز هویت دوعاملی استفاده کند."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "مشاهده بحث"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "نظر جدید"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "محتوای نظر"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "بحث"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "برچسب‌ها"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "صفحات مطابق با برچسب‌ها"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "بازگشت به بالای صفحه"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "نام کاربری"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "خروج"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "روند رندر صفحه را پیکربندی کنید"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "عنوان سایت دارای کاراکترهای نادرست است."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "تنظیمات سایت با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "تایید هویت دو مرحله ای با موفقیت غیر فعال شد."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "تایید هویت دو مرحله ای با موفقیت فعال شد."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "درخواست بازنشانی رمز عبور ..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "ایمیل‌های خود را برای دستورالعمل بازنشانی رمز عبور بررسی کنید."
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "فعال"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "آیا این روش فعال است و کاربران می‌توانند از آن استفاده کنند؟"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "نام نمایشی"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "عنوانی که به کاربر نهایی برای این روش احراز هویت نشان داده می‌شود."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "انتخاب ارائه دهنده احراز هویت"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "اطلاعات حساب خود راوارد نمائید"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "رمز ورود خود را فراموش کرده اید؟"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "کد امنیتی تولید شده توسط دستگاه مورد اعتماد خود را وارد کنید:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "ادمین درخواست فعال سازی احراز هویت ۲ مرحله ای (2FA) را برروی اکانت شما دارد."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "توسط برنامه 2FA دستگاه خود کد QR زر را اسکن کنید:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) کد امنیتی ایجاد شده توسط دستگاه مورد اعتماد خود را وارد کنید:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "انتخاب کنید"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "انتخاب مکان صفحه جدید"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "انتقال / تغییر نام مکان صفحه"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "یک صفحه را انتخاب کنید"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "پوشه‌های مجازی"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "صفحات"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "این پوشه خالی است."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "تبدیل"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "تبدیل صفحه"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "نوع ویرایشگری را که می‌خواهید صفحه {{title}} از آن استفاده کند، انتخاب کنید:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "محتوای صفحه به قالب ویرایشگر تازه انتخاب شده تبدیل خواهد شد. توجه داشته باشید که برخی از قالب بندی یا محتوای غیر رندر شده ممکن است در نتیجه تبدیل از دست برود. یک نسخه از وضعیت کنونی به تاریخچه صفحه اضافه خواهد شد و می‌تواند در هر زمان برای بازگردانی استفاده شود."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "تبدیل کن"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "مدیریت"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "خروجی به هارد دیسک"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "ذخیره محتوا با Tarball برای پشتیبان گیری/مهاجرت"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "فهرست مطالب"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "از پیش فرض سایت استفاده کنید"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "پسوندهای صفحه"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "ویرایش میانبرها"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "نوار منوی ویرایش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "نمایش نوار منوی ویرایش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "نمایش منوی ویرایش در سربرگ صفحه."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "نمایش دکمه ویرایش"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "نمایش یک دکمه برای ویرایش صفحه‌ی فعلی."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "نمایش دکمه‌ی ویرایش خارجی"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "نمایش دکمه‌ای که به یک مخزن خارجی (به عنوان مثال GitHub) پیوند می‌دهد که در آن کاربران می‌توانند یک PR را برای صفحه فعلی ویرایش یا ارسال کنند."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "ویرایش {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "پیکربندی نظرات با موفقیت ذخیره شد."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "دوباره نویسی متن پاورقی"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "اگر هیچکدام از مجوزهای فوق مناسب نبود، می‌توانید به صورت اختیاری، متن پاورقی را با یک پیام سفارشی جایگزین کنید."
+                }
+            ]
+        }
+    }
+}

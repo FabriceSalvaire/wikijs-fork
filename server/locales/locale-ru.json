@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Powered by"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Требуется войти"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Адрес электронной почты / Имя пользователя"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Пароль"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Войти"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Неверный логин"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Неверный адрес электронной почты или пароль"
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Недействительный адрес электронной почты пользователя"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Ошибка входа"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Ваша регистрация на сайте ещё не подтверждена."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Слишком много попыток!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Вы сделали слишком много неудачных попыток за короткий период времени. Пожалуйста, попробуйте снова {{time}}."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Пользователь не найден"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Локальная"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Учетная запись Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Двухфакторная аутентификация"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Требуется код безопасности:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Подтвердить"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Панель управления"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Общие настройки"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Язык"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Статистика"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Тема"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Группы"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Пользователи"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Авторизация"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Редактор"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Журналы"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Рендеринг"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Поисковая система"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Хранилище"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Доступ к API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Системная информация"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Утилиты"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Инструменты разработчика"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Внесите вклад в развитие Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Основные настройки вашей вики"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Информация о сайте"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Брендирование сайта"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Сайт"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Пользователи"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Модули"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Система"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Настройте параметры локализации для вашей вики"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Настройки локали"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Многоязычные страницы"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Скачать язык"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Основной язык"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Все текстовые элементы пользовательского интерфейса будут отображаться на выбранном языке."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Обновлять автоматически"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Автоматически скачивать обновления для всех локалей, включенных ниже."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Многоязычные страницы"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Включает несколько языковых версий одной и той же страницы."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Активные локали"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Список языков, включенных для многоязычных страниц. Язык по умолчанию, заданный выше, всегда будет включен независимо от данного выбора."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Код локали будет добавлен ко всем путям (например, /{{langCode}}/название-страницы)."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Ссылки без кода локализации будут автоматически перенаправлены на язык по умолчанию, заданный выше."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Сохранить"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Отмена"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Скачать"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Загрузить"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Отменить"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Очистить"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Создать"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Редактировать"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Удалить"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Обновить"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Сохранить изменения"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Продолжить"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Язык сайта"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Автоматически загружать обновления этой локали по мере их поступления."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Информация о вашей системе"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Информация об узле"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Текущая версия"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Последняя версия"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Опубликовано"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Операционная система"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Имя узла"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Ядер процессора"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Всего ОЗУ"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Рабочий каталог"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Файл конфигурации"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Использование ОЗУ: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Помогите поддержать разработку и операции Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Профинансируйте нашу работу"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Поделиться"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Расскажите друзьям и коллегам о том, как крута Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Подпишитесь на нас в {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Предложите идею или проголосуйте за существующую на {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "странице запроса новых функций"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Нашли ошибку? Сообщите о ней на {{0}}."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Помогите перевести Wiki.js на Ваш язык. Дайте нам знать на {{0}}."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Сделать пожертвование"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Поддержите"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js также является частью инициативы Open Collective, прозрачного фонда, который направляется на ресурсы сообщества. Вы можете внести финансовый вклад, сделав ежемесячное или разовое пожертвование:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Нам нужна ваша помощь, чтобы продолжать совершенствовать программное обеспечение и запускать различные сопутствующие услуги (например, хостинг и работа в сети)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js - это бесплатное программное обеспечение с открытым исходным кодом, созданное с {{0}} в {{1}} при содействии {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "нас поддерживают"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Рендеринг"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Пожалуйста, подождите..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Страница создана успешно."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Произошла ошибка при создании страницы"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Для поддержания проекта Вы можете приобрести футболки Wiki.js:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Магазин Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "{{year}} {{company}}. Все права защищены."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Эта страница ещё не существует."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Создать страницу прямо сейчас?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Создать страницу"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Назад"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Страницы"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Навигация"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Управление навигацией по сайту"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Добавить"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Ссылка"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Разделитель"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Текст"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Иконка"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Тип ссылки"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Ссылка"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Выберите элемент навигации слева."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}} без названия"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Внешняя ссылка"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Главная"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Поисковый запрос"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "{{kind}}: редактирование"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Удалить"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Навигация успешно сохранена."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Нажмите на кнопку Добавить для добавления первого элемента навигации."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Навигация пуста"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Применить"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Адрес электронной почты"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Подтвердите пароль"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Название"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Регистрация"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Создать учётную запись"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Уже есть учётная запись? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Войти в систему"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Войти с помощью {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Забыли пароль?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "или войдите с помощью..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Нет учётной записи? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Создать учётную запись"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Введите действительный адрес электронной почты / имя пользователя."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Введите действительный пароль."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Успешный вход в систему! Переадресация..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Выполняется вход..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Аутентификация недоступна."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Заполните форму ниже для создания учётной записи."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Пожалуйста, подождите"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Учётная запись успешно создана!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Создаём учётную запись..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Отсутствует адрес электронной почты."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Адрес электронной почты недействителен."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Отсутствует пароль."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Пароль слишком короткий."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Пароли не совпадают."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Имя отсутствует."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Имя слишком короткое."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Имя слишком длинное."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Отмена"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Сбросить пароль"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Введите свой адрес электронной почты для получения инструкций по сбросу пароля:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Почта"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Настроить параметры почты"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Настройка"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (опционально)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Проверьте входящую электронную почту для активации вашей учётной записи."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Страница успешно обновлена."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Вы не авторизованы"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Вы не можете просматривать эту страницу."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Вы не можете просматривать исходный код страницы."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Вы не можете просматривать историю страницы."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Вы не можете редактировать страницу."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Вы не можете создать страницу."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Назад"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Главная"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Не найдено"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Эта страница не существует."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Войти как..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Сделать пожертвование"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Станьте спонсором через Patreon (средства идут на поддержку ведущего разработчика Nicolas Giard, работающего полный рабочий день на Wiki.js)."
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Добро пожаловать в вики!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Давайте начнём и создадим домашнюю страницу."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Создать домашнюю страницу"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Флаги"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Сделайте одноразовое или повторяющееся пожертвование через Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Мы принимаем пожертвования с помощью Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Загрузка локали"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Если вы не подключены к интернету или не можете загрузить файлы локали описанным выше способом, здесь можно загрузить файлы вручную."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Обзор..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Вебхуки"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Управление вебхуками для внешних сервисов"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Отправить тестовое письмо по электронной почте"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Адрес электронной почты получателя"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Отправить письмо"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Отправитель"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Имя отправителя"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Электронная почта отправителя"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Настройки SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Узел"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Порт"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Обычно 465 (рекомендуется), 587 или 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Безопасный (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Должно быть включено при использовании порта 465, в противном случае выключено (587 или 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Имя пользователя"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Пароль"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) обеспечивает безопасность для всех писем, отправленных с Wiki.js, предоставляя получателям средства для проверки доменного имени и обеспечения подлинности сообщения."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Использовать DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Доменное имя"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Key Selector"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Private Key"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Private key для селектора в формате PEM"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Отправить тестовое письмо для проверки работоспособности конфигурации SMTP"
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Настройки успешно сохранены."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Ваша версия базы данных не полностью поддерживается. Некоторые функции могут быть ограничены или работать не так, как ожидалось."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Системная информация обновлена."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Настройте параметры авторизации в вики"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Способы авторизации"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Глобальные расширенные настройки"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "URN-адрес авторизации с помощью JSON Web Token (JWT). Обычно используется ваше доменное имя (например, urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Срок действия токена"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Срок действия токена до следующего продления. (по умолчанию: 30мин)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Период продления токена"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Максимальный период времени, в течение которого токен с истекшим сроком действия может быть продлён. (по умолчанию: 14дн)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Способ авторизации {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "активен"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "не активен"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "и не может быть отключен."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Тестовое письмо успешно отправлено."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Измените внешний вид вашей вики"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Тема сайта"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Темы влияют на отображение страниц вики. Другие разделы сайта (например, редактор или панель администратора) не затрагиваются."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Тёмный режим"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Не рекомендуется для удобства просмотра. Может не поддерживаться темой."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Внедрение кода"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Переопределение CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "CSS код для внедрения после системного CSS. Рекомендуется использовать пользовательские темы CSS, если у вас большой объем внедряемого CSS кода. Внедрение большого количества CSS-кода приведет к снижению производительности при загрузке страницы! CSS будет автоматически уменьшен."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Внедрение в HTML <head>"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML-код для внедрения непосредственно перед закрывающим тегом head. Обычно используется для тегов script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Внедрение в HTML <body>"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "HTML-код для внедрения непосредственно перед закрывающим тегом body."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Скачать темы"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Администрирование"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Настройка способа авторизации"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Данный способ авторизации не содержит редактируемых настроек."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Регистрация"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Разрешить самостоятельную регистрацию"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Разрешить любому пользователю, успешно авторизованному данным способом, доступ к вики."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Ограничить указанными почтовыми доменами"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Электронная почта должна быть на одном из перечисленных доменов, чтобы пользователь мог самостоятельно зарегистрироваться."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Назначить в группу"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Автоматически назначать новых пользователей в эти группы."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Безопасность"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Все пользователи обязаны использовать двухфакторную аутентификацию (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Пользователи обязаны настроить двухфакторную аутентификацию (2FA) при первом входе в систему, и не смогут отключить данную опцию."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Справка по конфигурации"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Некоторые способы авторизации могут требовать дополнительных настроек на стороне вашего провайдера. Они предоставлены исключительно для справки и могут не потребоваться в текущей конфигурации."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Вам необходимо задать корректный {{siteUrl}} ! Перейдите в {{general}} в левой боковой панели."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Разрешенные Web Origins"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL-адрес входа"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL-адрес выхода"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Метод проверки подлинности Token Endpoint"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Главная"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Новая страница"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Текущая страница"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Просмотр"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Редактировать"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "История изменений"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Просмотр исходного кода"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Переместить / Переименовать"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Удалить"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Файлы"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Изображения и файлы"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Поиск..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Администрирование"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Учётная запись"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Моя вики"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Профиль"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Выход"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Вход"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Последнее изменение"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Не опубликовано"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Редактировать страницу"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Содержание"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "В закладки"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Поделиться"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Версия для печати"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Закрыть"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Страница"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Задайте репозитории для резервного копирования и синхронизации вашего контента"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Репозитории"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Статус"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Последняя синхронизация {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Последняя попытка была {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Сообщение об ошибке"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "У вас нет активного репозитория."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Настройки репозитория"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Данный репозиторий не содержит доступных для изменения настроек."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Направление синхронизации"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Выберите способ синхронизации данных для указанного репозитория."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Двунаправленная синхронизация"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Отправить (push) в репозиторий"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Извлечь (pull) из репозитория"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Не поддерживается"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "В двунаправленном режиме контент сначала извлекается (pull) из репозитория и перезаписывает локальные данные. Новый контент, созданный с момента последней синхронизации, затем передается в репозиторий и перезаписывает все существующее там содержимое."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Контент всегда отправляется (push) в репозиторий, перезаписывая все существующее там содержимое. Данная опция является наиболее безопасной для резервного копирования."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Контент всегда извлекается (pull) из репозитория, перезаписывая весь существующий локальный контент. Данная опция обычно используется для одноразового импорта данных. Будьте осторожны с данной опцией, поскольку весь локальный контент будет перезаписан!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Расписание синхронизации"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "По соображениям производительности, синхронизация изменений с хранилищем производится по заданному расписанию, а не по каждому изменению. Определите интервал периодической синхронизации."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Текущая настройка - каждые {{schedule}}"
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "По умолчанию - каждые {{schedule}}."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Действия"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Запуск"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Настройте поисковые возможности вашей вики"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Перестроить индекс"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Поисковая система"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Настройки поисковой системы"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Выбранная поисковая система не содержит настроек."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Список поисковых систем обновлен."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Настройки поисковой системы успешно сохранены."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Индекс успешно перестроен."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Произошла непредвиденная ошибка."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Страницы"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Пользователи"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Группы"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Вы используете последнюю версию."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Доступна новая версия: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js - это бесплатный проект с открытым исходным кодом. Вы можете внести свой вклад в проект несколькими способами."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Нам нужна ваша помощь!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Узнать больше"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Список способов авторизации обновлен."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Настройки авторизации успешно сохранены."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Общие настройки"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL-адрес сайта"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Полный URL-адрес вашей Вики, без слэша в конце (например, https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Заголовок сайта"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Отображается в верхней панели и добавляется ко всем мета-заголовкам страниц."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Логотип"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Загрузить логотип"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Очистить"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Рекомендуется изображение размером {{size}} пикселей."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Только файлы {{typeList}} или {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Авторские права в нижнем колонтитуле"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Название компании / организации"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Название, отображаемое в авторских правах в нижнем колонтитуле. Оставьте пустым, чтобы скрыть."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Описание сайта"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Описание по умолчанию, если не задано для страницы."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Мета-тег Robots"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "По умолчанию: Index, Follow. Может быть задано отдельно для каждой страницы."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Введите 2 или более символа, чтобы начать поиск..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Поиск..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Нет страниц, соответствующих вашему запросу."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Найдено {{total}}"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Вы имели в виду..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Закрыть"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Скопировать поисковую ссылку"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Очень слабый"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Слабый"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Средний"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Надежный"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Очень надежный"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Удалить страницу"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Вы уверены, что хотите удалить {{title}}?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Страница может быть восстановлена через панель администратора."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Поиск пользователя"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Поиск пользователей..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Каждые"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Минут(ы)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Час(ы)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Дни"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Месяц(ы)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Год(ы)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Свойства страницы"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Информация о странице"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Краткое описание"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Показано под заголовком"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Путь и категория"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Язык"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Путь"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Не включайте косые черты (слэши)."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Теги"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Используйте теги для классификации страниц и упрощения их поиска."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Статус публикации"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Опубликовано"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Неопубликованные страницы могут быть просмотрены пользователями, что имеют права на изменение этих страниц."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Публикация начинается с..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Оставьте пустым, чтобы опубликовать без задержки"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Публикация заканчивается..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Оставьте пустым, если эта публикация бессрочная"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Отменить несохраненные изменения?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "У вас есть несохраненные изменения. Вы уверены, что хотите выйти из редактора и отменить все изменения, сделанные после последнего сохранения?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Отменить изменения"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Какой редактор вы хотите использовать для этой страницы?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Данный выбор невозможно изменить после создания страницы."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Файлы"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Новая папка"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Название папки"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Должно соответствовать правилам именования папок {{namingRules}}."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "правила именования"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Переместить"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Переименовать"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Оптимизировать"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Предпросмотр"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Свойства"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Эта папка активов пуста."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} файлов"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Вставить"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Имя файла"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Тип"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Размер файла"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Добавлен"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Действия"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Загрузить файлы"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Нажмите Обзор или перетащите файлы сюда..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Загрузить изображение по ссылке"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Выравнивание изображения"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Переименовать актив"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Введите новое имя для этого актива:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Удалить актив"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Вы уверены, что хотите удалить актив"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Данное действие не может быть отменено!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Список активов успешно обновлен."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Не удалось загрузить файл."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Папка активов успешно создана."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Актив успешно переименован."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Актив успешно удален."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Сначала выберите файл для загрузки!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Скачать"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Вернуться в редактор"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Жирный"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Курсив"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Зачеркнутый"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Заголовок {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Подстрочный"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Надстрочный"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Цитата"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Цитата информационная"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Цитата успешно"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Цитата предупреждение"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Цитата ошибка"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Маркированный список"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Нумерованный список"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Встроенный код"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Кнопка клавиатуры"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Горизонтальная черта"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Скрыть / Показать панель предпросмотра"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Вставить ссылку"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Вставить файлы"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Вставить модуль"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Вставить код"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Вставить видео / аудио"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Вставить диаграмму"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Вставить математическое выражение"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Помощник по таблицам"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Режим концентрации внимания"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Справка по разметке Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Просмотр исходного кода страницы {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Вернуться к обычному виду"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Язык"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Аналитика"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Добавьте аналитику и инструменты отслеживания на свою вики"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Провайдеры"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Настройки провайдера"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "У этого провайдера нет изменяемых параметров конфигурации."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Список провайдеров успешно обновлен."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Настройки аналитики успешно сохранены"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Обслуживание и прочие инструменты"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Инструменты"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Аутентификация"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Различные инструменты для аутентификации / пользователей"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Очистить кэш"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Очистка кеша различных компонентов"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Конечная точка GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Изменить конечную точку GraphQL для Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Импорт из Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Перенос данных с предыдущей установки 1.x"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Телеметрия"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Включить / отключить телеметрию или сбросить ID клиента"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Комментарии"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Опубликовано"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Частная"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Глобальная"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Загрузка страницы..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Код"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Название"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Родное название"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "Справа налево"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Доступность"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Скачать"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Содержание"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Различные инструменты для страниц"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Набор иконок"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Набор иконок для использования в боковой панели навигации."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Ваш браузер устарел. Обновите до {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "современного браузера"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Название"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Автор"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Скачать"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Все переопределения стилей для содержимого страницы необходимо заключать в класс {{cssClass}}. Игнорирование данного требования может испортить верстку редактора!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "ВНИМАНИЕ:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Параметры темы"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Активный"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Неактивный"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Подтвержденный"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Неподтвержденный"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Редактировать пользователя"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Основные сведения"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Электронная почта"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Отображаемое имя"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Аутентификация"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Пароль"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Сменить пароль"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Новый пароль"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Двухфакторная аутентификация (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Включить двухфакторную  аутентификацию (2FA)"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "ID Провайдера"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Группы пользователей"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Этот пользователь еще не назначен ни в одну группу. Пользователю необходимо назначить не менее 1 группы."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Выберите группу..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Назначить"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Расширенные метаданные"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Расположение"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Должность"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Часовой пояс"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Пользователь успешно обновлен."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Пользователь уже назначен в эту группу!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Целевое хранилище {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "активно"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "не активно"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Вы должны включить целевое хранилище и применить изменения, прежде чем сможете выполнять действия."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Выберите новый пароль"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Вы должны выбрать новый пароль:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Новый пароль"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Подтверждение пароля"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Сменить пароль"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Смена пароля..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Недавние страницы"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Самые популярные страницы"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Информация"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Планирование"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Социальные сети"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Категоризация"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Социальные функции"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Разрешить комментарии"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Включите возможность комментирования на этой странице."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Разрешить рейтинги"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Отображать информацию об авторе"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Отображать панель обмена"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Показывать панель инструментов с кнопками обмена и печати этой страницы"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Показывать автора страницы вместе с датой последнего изменения."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Включите возможность оценки этой страницы."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "или создать пользовательский вид?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Обзор по тегам"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Карта сайта"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Действия на странице"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Текущий выбор"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Очистить выбор"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Выберите один или несколько тегов"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Поиск по результатам..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Язык"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Сортировать по"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Выберите один или несколько тегов слева."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Получение результатов со страницы..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Не удалось найти страницы с выбранными тегами."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Не удалось найти страницы, соответствующие текущим настройкам фильтрации."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Последнее обновление {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Дата создания"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Последнее изменение"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Путь"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Любой"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Стать спонсором через GitHub Sponsors (средства идут в поддержку ведущего разработчика Николаса Джарда, чтобы он мог работать над Wiki.js полный рабочий день)."
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Стать спонсором"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Теги"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Управление конфигурацией SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Выберите собственный сертификат, если он у вас уже есть."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Домен"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Введите полный домен, указывающий на вашу вики. (например, wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Параметры провайдера"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Отключено"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Пользовательский сертификат"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Порты"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP-порт"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Не SSL-порт, который будет прослушиваться сервером для HTTP-запросов. Обычно 80 или 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Порт HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL-порт, который будет прослушиваться сервером на предмет HTTPS-запросов. Обычно 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Перенаправить HTTP-запросы на HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Автоматически перенаправлять все HTTP запросы на HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Обратите внимание, что конфигурационный файл должен быть доступен для записи, чтобы сохранять конфигурацию портов."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL логотипа"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Укажите изображение для использования в качестве логотипа. Поддерживаются квадратные SVG, PNG и JPG, размером от 34x34 пикселей и больше. Нажмите кнопку справа, чтобы загрузить новое изображение."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Удалить пользователя?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Вы уверены, что хотите удалить пользователя {{username}}?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Обновить пользователя"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Обратите внимание, что на этой панели нельзя назначать пользователей в группы «Администраторы» или «Гости»."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Обратите внимание, что вы не можете удалить пользователя, который уже создал контент. Вместо этого вы должны либо деактивировать пользователя, либо удалить весь контент, созданный этим пользователем."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Сценарии"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS будет автоматически уменьшена после сохранения."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Видят все"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Видят только следующие группы..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Выберите страницу..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Режим навигации"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Дерево сайта"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Классическая древовидная навигация"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Пользовательская навигация"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Статическое навигационное меню + кнопка дерева сайта"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Пусто"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Отключить навигацию по сайту"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Пользователь успешно прошел проверку."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Пользователь успешно активирован."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Пользователь успешно деактивирован."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Сначала выделите текст!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Обновить сертификат"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Статус сертификата"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Срок действия сертификата"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Электронная почта подписчика"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Текущее состояние"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Включить"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Выключить"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Обновление сертификата ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Не покидайте эту страницу."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Сертификат успешно обновлен."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Перенаправление HTTP успешно изменено."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Управление тегами страницы"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Нет тегов для отображения."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Редактировать тег"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Тег"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Ярлык"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Создан {{created}} и последний раз обновлялся {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Удалить этот тег"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Выберите тег из списка слева."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Добавьте тег на страницу, чтобы начать работу."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Теги были обновлены."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Тег успешно удален."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Тег успешно сохранен."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Фильтр..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Просмотр связанных страниц"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Удалить тег?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Вы уверены, что хотите удалить тег {{tag}} ? Тег также будет удален со всех страниц."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Управление ключами для доступа к API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API включено"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API отключено"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Включить API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Отключить API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Новый ключ API"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Имя"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Окончание ключа"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Срок действия"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Создан"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Последнее обновление"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Отозвать"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Ключи API еще не созданы."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Отозвать ключ API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Вы уверены, что хотите отозвать ключ {{name}} ? Это действие не может быть отменено!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Отозвать"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Список ключей API обновлен."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Ключ был успешно отозван."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Новый ключ API"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Ключ API создан успешно."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Имя отсутствует или недействительно."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Вы должны выбрать группу."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Группа гостей не может использоваться для ключей API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Назначение этого ключа"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Имя"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Срок действия"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Вы все еще можете отозвать ключ в любое время, независимо от истечения срока действия."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Области разрешения"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Полный доступ"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "или используйте групповые разрешения ..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Сгенерировать"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Группа"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Ключ API будет иметь те же разрешения, что и выбранная группа."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 дней"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 дней"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 дней"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 год"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 года"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Скопируйте указанный ниже ключ как {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "он НЕ будет показан снова"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API был успешно включен."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API был успешно отключен."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Сохранено"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Отсутствует"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Лицензия Creative Commons Attribution"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Лицензия Creative Commons - Некоммерческая лицензия на право осуществления некоммерческой деятельности"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Лицензия Creative Commons - Некоммерческая лицензия на право осуществления некоммерческой деятельности"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Лицензия Creative Commons - Некоммерческая лицензия на право осуществления некоммерческой деятельности"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Лицензия Creative Commons - Некоммерческая лицензия на право осуществления некоммерческой деятельности"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Лицензия Creative Commons - Некоммерческая лицензия на право осуществления некоммерческой деятельности"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Всеобщее достояние"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Все права защищены"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Лицензия на содержимое"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Лицензия отображается в нижнем колонтитуле всех страниц контента."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Содержимое доступно в соответствии с {{license}}, от {{company}}."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Вы не можете скачать содержимое страницы."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Вы не можете скачать содержимое для этой версии страницы."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Вы не можете просмотреть исходный код этой версии страницы."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Просмотр исходного кода страницы {{path}} на {{date}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID версии {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Восстановить версию страницы?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Вы уверены, что хотите восстановить эту страницу на {{date}}? Эта версия будет скопирована поверх текущей. Таким образом, новые версии будут сохранены."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Восстановить"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Версия страницы успешно восстановлена!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} символов, {{words}} слов"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Исправить конфликт сохранения"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Использовать локальную"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Использовать удаленную"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Отменить изменения и использовать последнюю версию "
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Использовать содержимое на левой панели"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Просмотреть последнюю версию"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Более свежая версия этой страницы была сохранена пользователем {{authorName}}, {{date}}."
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Что вы хотите сделать?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Использовать вашу текущую версию и игнорировать последние изменения."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Использовать удаленную версию (последнее) и отменить текущие изменения."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Заменить удаленной версией?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Вы уверены, что хотите заменить вашу текущую версию на последнюю версию удаленного контента? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Ваши текущие изменения будут потеряны."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Подтвердить"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Локальная версия {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(редактируемо)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(только для чтения)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Удаленная версия {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Ваше текущее изменение, основанное на версии страницы от {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Последнее изменение: {{authorName}}, {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Заголовок:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Описание:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "У вас есть несохраненные изменения. Вы уверены, что хотите покинуть редактор?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Конфликт сохранения! Другой пользователь уже изменил эту страницу."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Дублировать"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Отображаемое имя"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Расположение"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Должность"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Часовой пояс"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Профиль"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Моя личная информация"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Моя информация"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Просмотреть публичный профиль"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Аутентификация"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Сменить пароль"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Текущий пароль"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Новый пароль"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Подтверждение пароля"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Группы"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Активность"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Присоединился"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Последнее обновление профиля"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Последний вход в систему"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Страницы созданы"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Опубликованных комментариев"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Профиль успешно сохранен."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Пароль успешно изменен."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Страницы"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Комментарии"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Список страниц, которые я создал(-а) или изменял(-а)"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Нет страниц для отображения."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Список страниц был обновлен."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Заголовок"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Путь"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Создан"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Последнее обновление"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Последние входы"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Обзор"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Главное меню"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Текущий каталог"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(корень)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Копировать из локали..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Выбрать язык"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Язык, из которого будут скопированы элементы навигации."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Копировать"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Выберите язык, из которого хотите скопировать элементы. Они будут добавлены в список элементов текущего языка."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Статическая навигация"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Только статическое меню навигации"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Настройки"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Формат даты"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Язык по умолчанию"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Внешний вид"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Сайт по умолчанию"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Светлый режим"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Темный режим"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Проверить SSL-сертификат"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Некоторые узлы требуют отключения проверки сертификатов SSL. Оставьте включенным для лучшей безопасности."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Внешняя ссылка (Новое окно)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Безопасность"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Максимальный размер для загрузки"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Максимум файлов для загрузки"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Сколько файлов можно загрузить за один раз?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Максимальный размер для одного файла."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "байты"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "файлы"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Загрузки"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Эти настройки влияют только на Wiki.js. Если вы используете обратный прокси-сервер (например, nginx, apache, Cloudflare), вы также должны изменить его настройки для соответствия."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Настроить параметры безопасности"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Расширения"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Установить расширения для дополнительной функциональности"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Добавить обсуждения на страницы вики"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Конфигурация провайдера"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "У этого провайдера нет изменяемых параметров конфигурации."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Любые материалы, созданные текущим пользователем (страницы, загрузки, комментарии и т.д.), будут назначены пользователю, выбранному далее. Рекомендуем создать служебную учетную запись (пример: Deleted User), если не хотите назначать материалы активным пользователям."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Активные стратегии"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Добавить стратегию"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Стили"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Вы должны окружить свой код на javascript тегами HTML-скрипта."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Эта страница не опубликована."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Комментарии"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Написать новый комментарий..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Ваше имя"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Ваш электронный адрес"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Формат Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Оставьте комментарий"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Загрузка комментариев..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Публикуется как {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Оставьте первый комментарий."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Комментариев пока нет."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Обновить Комментарий"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Подтверждение удаления"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Вы уверены что хотите навсегда удалить этот комментарий?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Это действие не может быть отменено!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "изменено {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Новый комментарий успешно опубликован."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Комментарий пустой или слишком короткий!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Комментарий был успешно обновлен."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Комментарий был успешно удален."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Переключить проверку орфографии"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Вход"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Экран входа"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Конфигурация JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Пропустить экран входа"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Автоматически перенаправлять пользователя к первому провайдеру аутентификации минуя экран входа."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL фонового изображения для входа"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Изображение для использования в качестве фона входа. Поддерживаются PNG и JPG, рекомендуется размер 1920x1080. Оставьте поле пустым чтобы использовать изображение по-умолчанию. Нажмите кнопку справа чтобы загрузить новое изображение. Обратите внимание что группа «Guests» должна иметь право на чтение выбранного изображения!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Скрыть поставщика локальной аутентификации"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Не отображать локального поставщика аутентификации на экране входа. Допишите ?all в конце URL, если потребуется обойти эту настройку."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Безопасность"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Принудительная двухфакторная аутентификация (2FA)"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Принудить всех пользователей использовать двухфакторную аутентификацию при использовании поставщика аутентификации с формой пользователя/пароля."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Перейти"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Новый комментарий"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Содержание комментария"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Обсуждение"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Теги"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Страницы, соответствующие тегам"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Вернуться наверх"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Имя пользователя"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Выход"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Настройка конвейера рендеринга страницы"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Название сайта содержит недопустимые символы."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Конфигурация сайта успешно сохранена."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "Двухфакторная аутентификация успешно отключена."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "Двухфакторная аутентификация успешно включена."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Запрос сброса пароля..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Проверьте электронную почту на наличие инструкций по сбросу пароля!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Активно"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Могут ли пользователи входить в систему используя данную стратегию?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Отображаемое имя"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Название, отображаемое конечному пользователю для этого способа аутентификации."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Выберите поставщика аутентификации"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Введите учетные данные"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Забыли пароль?"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Введите код безопасности, созданный на вашем доверенном устройстве:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Ваш администратор потребовал, чтобы для вашей учетной записи была включена двухфакторная аутентификация (2FA)."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Отсканируйте приведенный ниже QR-код из своего мобильного приложения 2FA:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Введите код безопасности, созданный на вашем доверенном устройстве:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Выбрать"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Выберите новое расположение страницы"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Переместить / переименовать расположение страницы"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Выберите страницу"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Виртуальные папки"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Страницы"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Папка пуста."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Конвертировать"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Конвертировать страницу"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Выберите редактор, в который вы хотите преобразовать страницу {{title}}:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Содержимое страницы будет преобразовано в выбранный редактор. Обратите внимание, что часть форматирования или неотображаемый контент могут быть потеряны в результате преобразования. Резервная копия будет сохранена в истории изменений страницы и может быть восстановлена в любое время."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Конвертировать"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Администрирование"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Сохранить на диск"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Сохранить содержимое в архив для резервирования / миграции"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Содержание"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Содержание"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "Используйте настройки сайта по умолчанию"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "Уровни заголовков содержания"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "В содержании будут показаны заголовки от выбранных уровней и выше."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "Уровни заголовков содержания по умолчанию"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "По умолчанию в содержании будут отображаться заголовки от выбранных уровней и выше."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "Идентификация клиента по имени хоста"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "Необязательное имя для отправки на SMTP-сервер для идентификации вашей почтовой программы. Оставьте пустым, чтобы использовать имя хоста сервера. Для клиентов Google Workspace это должно быть вашим основным доменным именем."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "Расширения страниц"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "Разделенный запятыми список расширений URL-адресов, которые будут рассматриваться как страницы. Например, добавление md будет лечить /foobar.md то же самое, что и /foobar."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "Отображаемое имя кнопки"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "Имя внешнего сайта, которое будет отображаться на кнопке редактирования. Не включайте префикс \"Редактировать на\"."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Иконка кнопки"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "Значок, отображаемый на кнопке. Например, mdi-github для отображения значка GitHub."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "URL-адрес кнопок"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "Ссылка на страницу во внешнем хранилище. Используйте {filename}, где имя документа должно быть указано. (например, https://github.com/foo/bar/blob/main/{filename})."
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Кнопка \"Редактировать страницу\""
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "Редактировать страницу"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "Отобразите кнопку \"Редактировать страницу\" в меню быстрого набора в правом нижнем углу экрана."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "Редактировать строку меню"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "Отображение панели меню редактирования"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "Отображение строки меню редактирования в заголовке страницы."
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Показать кнопку \"Редактировать\""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "Показать кнопку \"Редактировать\" на текущей странице."
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "Отображение кнопки редактирования"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "Отображение кнопки со ссылкой на внешний репозиторий (например, GitHub), где пользователи могут редактировать или отправлять отзыв для текущей страницы."
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Редактирование на {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "Конфигурация комментариев успешно сохранена."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "Переопределение текста нижнего колонтитула"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "При желании переопределите текст нижнего колонтитула с помощью пользовательского сообщения. Полезно, если ни одна из вышеуказанных лицензий не подходит."
+                }
+            ]
+        }
+    }
+}

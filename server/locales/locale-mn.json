@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Бүтээсэн"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Нэвтрэх шаардлагатай"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Э-мэйл / хэрэглэгчийн нэр"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Нууц үг"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Нэвтрэх"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Хүчингүй нэвтрэлт"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Э-мэйл эсвэл нууц үг буруу байна."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Хэрэглэгчийн эмэйл буруу байна"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Нэвтрэлтийн алдаа"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Та энэ сайтад нэвтрэх эрх хараахан аваагүй байна."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Хэт олон оролдлого!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Та богино хугацаанд хэт олон удаа амжилтгүй оролдлого хийсэн тул {{time}} хугацааны дараа дахин оролдоно уу."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Хэрэглэгч олдсонгүй"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Локал"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Майкрософтын данс"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Гүүглэ бүртгэл"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Фэйсбүүк бүртгэл"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Two Factor баталгаажуулалт"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Аюулгүйн код шаардлагатай:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "ХХХХХ"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Баталгаажуулах"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Хянах самбар"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Ерөнхий"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Хэл"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Статистик"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Загвар"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Бүлэг"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Хэрэглэгч"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Баталгаажуулалт"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Засварлагч"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Нэвтрэх"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Дүрслэл"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Хайлтын систем"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Хадгалалт"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API хандалт"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Системийн мэдээлэл"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Хэрэгсэл"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Хөгжүүлэгчийн хэрэгсэл"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Wiki.js-д хувь нэмэр оруулна уу"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Викигийн үндсэн тохиргоо"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Сайтын мэдээлэл"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Сайтын брэнд"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Сайт"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Хэрэглэгч"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Модуль"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Систем"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Викигээ нутагшуулах сонголтыг тохируулна уу"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Хэлний тохиргоо"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Олон хэлний нэрийн муж"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Хэл татаж авах"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Үндсэн хэл"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Бүх UI бичвэрийг сонгосон хэлээр харуулах болно."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Автоматаар шинэчлэх"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Доор идэвхжүүлсэн бүх нэрийн мужид шинэчлэлтүүдийг автоматаар татаж авах."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Олон хэлний талбар"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Нэг хуудасны олон хэл дээрх хувилбарыг идэвхжүүлэх."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Идэвхтэй нэрийн муж"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Олон хэлний нэрийн мужид идэвхжүүлсэн хэлний жагсаалт. Энэ сонголтоос үл хамааран дээр тодорхойлсон үндсэн локал үргэлж орно."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Локал кодын бүх замд угтвар орно. (жишээ нь / {{langCode}} / хуудасны нэр)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Локал кодгүй замыг дээр тодорхойлсон үндсэн хэл рүү автоматаар чиглүүлнэ."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Хадгалах"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Цуцлах"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Татаж авах"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Байршуулах"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Цуцлах"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Арилгах"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Үүсгэх"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Засварлах"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Устгах"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Сэргээх"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Өөрчлөлтүүдийг хадгалах"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Үргэлжлүүлэх"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Сайтын хэл"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Шинэчлэлтүүд бэлэн болмогц энэ локальд автоматаар татаж авах."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Таны системийн талаархи мэдээлэл"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Хостын мэдээлэл"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Идэвхтэй төлөв"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Сүүлийн хувилбар"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Нийтэлсэн"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Үйлдлийн систем"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Хостын нэр"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU цөм"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Нийт санах ой"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Ажлын лавлах"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "Тохиргооны файл"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Санах ойн хэрэглээ: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Wiki.js-ийн хөгжүүлэлт, үйл ажиллагааг дэмжихэд тусална уу"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Бидний ажлыг санхүүжүүлнэ үү"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Үг түгээх"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Wiki.js ямар гайхалтай болохыг найз нөхөд, хамт ажиллагсадтайгаа ярилцаарай!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Биднийг {{0}} дээр дагана уу."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "{{0}} дээр санаагаа илгээнэ үү эсвэл санал болгосон дээр нь саналаа өгөөрэй."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "функц хүсэлтийн самбар"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Алдаа олсон уу? {{0}} дээр асуудлыг илгээнэ үү."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Wiki.js-ийг өөрийн хэлээр орчуулахад тусална уу. {{0}} дээр бидэнд мэдэгдээрэй."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Хандивлах"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Нэмэрлэх"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js нь Нээлттэй хамтын санаачилгын нэг хэсэг бөгөөд олон нийтийн нөөцөд чиглэсэн ил тод сан юм. Та сар бүр эсвэл нэг удаагийн хандив өгөх замаар санхүүгийн хувьд хувь нэмрээ оруулах боломжтой:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Програм хангамжийг сайжруулж, холбогдох янз бүрийн үйлчилгээг (жишээлбэл, хостинг, сүлжээ) ажиллуулахад бидэнд тусламж хэрэгтэй байна."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js бол {{0}} {{1}} болон {{2}} аас авчирсан үнэгүй, нээлттэй эхийн програм хангамж юм."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "Хандивлагч"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Дүрслэл"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Түр хүлээнэ үү..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Хуудсыг амжилттай үүсгэлээ."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Хуудсыг үүсгэх явцад алдаа гарав"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Төслийг санхүүгийн хувьд дэмжихийн тулд та Wiki.js подволк худалдаж авах боломжтой:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js дэлгүүр"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Бүх эрх хуулиар хамгаалагдсан."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Энэ хуудас хараахан байхгүй байна."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Та үүсгэхийг хүсч байна уу?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Хуудас үүсгэх"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Буцах"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Жолоодлого"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Сайтын жолоодлогыг удирдах"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Нэмэх"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Холбоос"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Хуваагч"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Толгой"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Бичээс"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Айкон"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Товын төрөл"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Тов"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Зүүн талд буй жолоодлогын элементийг сонгоно уу."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "Гарчиггүй {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Гадаад холбоос"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Эхлэл"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Хайлтын хүсэлт"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "{{kind}} засах"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "{{kind}} устгах"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Жолоодлогыг амжилттай хадгалав."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Анхны жолоодлогын элемент нэмэхийн тулд Нэмэх товчийг дарна уу."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Жолоодлого хоосон"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Өөрчлөлтийг оруулах"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Э-мэйл хаяг"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Нууц үгээ баталгаажуулах"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Нэр"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Бүртгүүлэх"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Бүртгэл үүсгэх"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Данстай юу? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Оронд нь нэвтрэх"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "{{strategy}} ашиглан нэвтрэх"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Нууц үгээ мартсан?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "эсвэл ашиглан нэвтрэх..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Одоохондоо данс байхгүй юу? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Бүртгэл үүсгэх"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Зөв эмэйл / хэрэглэгчийн нэр оруулна уу."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Хүчинтэй нууц үг оруулна уу."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Нэвтрэлт амжилттай! Чиглүүлж байна..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Нэвтэрч байна..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Баталгаажуулалт алга байна."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Бүртгэлээ үүсгэхийн тулд доорх маягтыг бөглөнө үү."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Түр хүлээнэ үү"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Бүртгэл амжилттай үүслээ!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Бүртгэл үүсгэж байна..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Эмэйл хаяг алга байна."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Эмэйл хаяг хүчингүй байна."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Нууц үг алга байна."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Нууц үг хэт богино байна."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Хоёр нууц үг таарахгүй байна."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Нэр алга байна."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Нэр хэтэрхий богино байна."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Нэр хэтэрхий урт байна."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Цуцлах"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Нууц үгээ солих"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Нууц үгээ шинэчлэх зааврыг авах эмэйл хаягаа оруулна уу."
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Э-Мэйл"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Шууданг тохируулах"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Тохиргоо"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (заавал биш)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Бүртгэлээ идэвхжүүлэхийн тулд эмэйлээ шалгана уу."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Хуудсыг амжилттай шинэчиллээ."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Зөвшөөрөлгүй"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Та энэ хуудсыг харах боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Та хуудасны эх сурвалжийг харах боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Та хуудасны түүхийг харах боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Та хуудсыг засах боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Та хуудас үүсгэх боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Буцах"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Нүүр хуудас"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Олдсонгүй"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Хуудас олдсонгүй"
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Дараах сонголтоор нэвтрэх ..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Ивээн тэтгэгч болох"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Патреоноор дамжуулан дэмжигч эсвэл ивээн тэтгэгч болоорой (ахлах хөгжүүлэгч Николас Жиардын Wiki.js сайтад бүтэн цагаар ажиллах зорилгыг шууд дэмжих болно)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Вики хуудсанд тавтай морилно уу!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Эхлээд нүүр хуудсыг бүтээцгээе."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Нүүр хуудас үүсгэх"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Далбаа"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Вояжер"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Paypal-ээр дамжуулан нэг удаагийн эсвэл давтамжтай хандив өргөх:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Бид Ethereum ашиглан хандив хүлээн авдаг."
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Хажуугаар ачаалах хэлний багц"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Хэрэв та интернетэд холбогдоогүй эсвэл дээр дурдсан аргыг ашиглан хэлний файлыг татаж авах боломжгүй бол багцыг доор ачаалах замаар гараар ачаалах боломжтой."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Нэгжих..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhooks"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Гадаад үйлчилгээний webhooks-г удирдах"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Туршилтын имэйл илгээх"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Хүлээн авагчийн эмэйл хаяг"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Э-мэйл илгээх"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Илгээгч"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Илгээгчийн нэр"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Илгээгч эмэйл"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP тохиргоо"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Хост"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Порт"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Ихэвчлэн 465 (санал болгосон), 587 эсвэл 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Аюулгүй (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "465 порт ашиглах үед идэвхжүүлсэн байх ёстой, эс бөгөөс унтраана (587 эсвэл 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Хэрэглэгчийн нэр"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Нууц үг"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) нь Wiki.js-ээс илгээсэн бүх имэйлийн аюулгүй байдлын түвшинг хангаж, хүлээн авагчдад домэйн нэрийг баталгаажуулах, мессежийн жинхэнэ эсэхийг баталгаажуулах боломжийг олгодог."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM хэрэглэх"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Домэйн нэр"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Түлхүүр сонгогч"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Хувийн түлхүүр"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM форматаар сонгогчдод зориулсан хувийн түлхүүр"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Таны SMTP тохиргоо ажиллаж байгааг баталгаажуулахын тулд тестийн эмэйл илгээнэ үү."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Тохиргоог амжилттай хадгаллаа."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Таны өгөгдлийн сангийн хувилбарыг бүрэн дэмждэггүй. Зарим функцууд хязгаарлагдмал эсвэл хүлээгдэж байсны дагуу ажиллахгүй байж болно."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Системийн мэдээллийг шинэчиллээ."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Викинийхээ нэвтэрлт баталгаажуулах тохиргоог тохируулна уу"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Стратеги"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Глобал Нарийвчилсан Тохиргоо"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "JWT-д ашигласан Audience URN нэвтрэх үед гаргасан. Ихэвчлэн таны домэйн нэр. (жишээлбэл, urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token-ийн хугацаа дуусах"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Токенийг шинэчлэх хүртэлх хугацаа. (өгөгдмөл: 30м)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Токен шинэчлэх хугацаа"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Токений хугацаа дуусахад сунгаж болох хамгийн дээд хугацаа. (өгөгдмөл: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Энэ стратеги нь {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "идэвхтэй"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "идэвхтэй биш"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "ба хаах боломжгүй."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Туршилтын эмэйлийг амжилттай илгээсэн."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Викигийнхээ дүр төрх, мэдрэмжийг өөрчил"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Сайтын загвар"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Загвар нь агуулгын хуудсыг хэрхэн харуулахад нөлөөлдөг. Бусад сайтын хэсгүүд (засварлагч эсвэл админ муж гэх мэт) нөлөөлөхгүй."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Харанхуй"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Хандалтын хувьд ашиглахыг зөвлөдөггүй. Бүх загвараар дэмжигдэхгүй байж магадгүй юм."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Кодын тарилга"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS-ийг дарах"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Системийн өгөгдмөл CSS-ийн араас тарих CSS код. Хэрэв танд их хэмжээний CSS код байгаа бол өөрийн загварыг ашиглах талаар бодож үзээрэй. CSS кодыг хэт их тарьснаар хуудас ачаалах чадвар муу болно! CSS-ийг автоматаар багасгана."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "HTML тарилгын толгой"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "head tag хаагдахаас өмнөхөн оруулах HTML код. Ихэнхдээ script tag-н хувьд."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML тарилга"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Хаалтын body таагийн өмнөхөн тарих HTML код."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Загвар татаж авах"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Захиргаа"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Стратегийн тохиргоо"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Энэ стратеги нь өөрчлөх боломжтой тохиргооны сонголтгүй байна."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Бүртгэл"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Өөрийгөө бүртгүүлэхийг зөвшөөрөх"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Стратегийн дагуу амжилттай эрх олгогдсон аливаа хэрэглэгчид вики руу нэвтрэхийг зөвшөөр."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Тодорхой эмэйлийн домэйныг хязгаарлах"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Бүртгүүлэх эрх бүхий домэйнүүдийн жагсаалт. Хэрэглэгчийн эмэйлийн хаягийн домэйн нь эдгээрийн аль нэгтэй нь тохирч байх ёстой."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Бүлэгт хуваарилах"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Эдгээр бүлэгт шинэ хэрэглэгчдийг автоматаар хуваарилах."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Аюулгүй байдал"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Бүх хэрэглэгчийг Two-Factor Authentication (2FA) ашиглахыг албадах"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Хэрэглэгчид анх нэвтрэхдээ 2FA тохиргоог хийх шаардлагатай бөгөөд хэрэглэгчид өөрсдөө үүнийг идэвхгүй болгож чадахгүй."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Тохиргооны лавлагаа"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Зарим стратегиуд таны провайдер дээр тохиргооны зарим утга оноохыг шаардаж магадгүй юм. Эдгээрийг зөвхөн лавлагааны зорилгоор өгсөн бөгөөд одоогийн стратегид шаардлагагүй байж магадгүй юм."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Та эхлээд хүчинтэй {{siteUrl}} тохируулах ёстой! Зүүн талын самбарын {{general}} дээр дарна уу."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Зөвшөөрөх Web Origins"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "Callback URL / Redirect URI"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "Нэвтрэх URL"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "Гарах URL"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Token Endpoint Authentication Method"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Нүүр хуудас"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Шинэ Хуудас"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Одоогийн хуудас"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Харах"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Засварлах"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Түүх"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Эх үүсвэрийг харах"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Зөөх / нэр солих"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Устгах"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Ассет"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Зураг ба файлууд"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Хайлт ..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Захиргаа"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Account"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Миний Вики"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Профайл"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Гарах"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Нэвтрэх"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Хамгийн сүүлд зассан"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Нийтэлээгүй"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Хуудсыг засах"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Товьёг"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Хавчуурга"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Хуваалцах"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Хэвлэх Формат"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Хаах"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Агуулгынхаа нөөц, синхрончлолын товыг тохируулна уу"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Тов"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Төлөв"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Сүүлийн тэнцвэржүүлэлт {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Сүүлийн оролдлого {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Алдааны зурвас"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Танд идэвхтэй хадгалагч байхгүй байна."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Товын тохиргоо"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Энэ хадгалах санд таны өөрчлөх тохиргооны сонголт байхгүй байна."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Тэнцвэржүүлэх чиглэл"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Энэ товлосон хадгалагчийн хувьд агуулгын синхрончлолыг хэрхэн зохицуулахаа сонгоно уу."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Хоёр чиглэлтэй"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Зорилт руу түлхэх"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Зорилтотоос татах"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Дэмжигдээгүй"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Хоёр чиглэлтэй горимд агуулгыг эхлээд хадгалагч товоос татаж авдаг. Аливаа шинэ агуулга нь хэлний агуулгыг дарж бичдэг. Хамгийн сүүлд синхрончлогдсоноос хойшхи шинэ агуулгыг хадгалалтын бай руу түлхэж, хэрэв байгаа бол товлосон агуулга дээр дарж бичнэ."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Агуулга товлосон хадгалагч руу үргэлж орж, одоо байгаа бүх агуулгыг дарж бичдэг. Энэ бол нөөц хувилбаруудын хувьд хамгийн найдвартай сонголт юм."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Агуулга хадгалагч товоос үргэлж гарч ирдэг бөгөөд аль хэдийн байгаа хэлний агуулгыг дарж бичдэг. Энэ сонголтыг ихэвчлэн нэг удаагийн агуулга импортлоход зориулж хадгалдаг. Хэлний аливаа агуулгыг үргэлж дарж бичих тул энэ сонголтыг анхаарна уу!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Тэнцвэржүүлэх хуваарь"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Хурдны шалтгаанаар энэхүү хадгалах тов нь өөрчлөлт бүрт бус харин интервалд суурилсан хуваарьт өөрчлөлтийг синхрончилдог. Синхрончлол аль интервалд байх ёстойг тодорхойл."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "{{schedule}} бүрт оноосон байна."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "{{schedule}} бүрт өгөгдмөл."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Үйлдэл"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Ажиллуулах"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Викигийнхээ хайлтын боломжийг тохируулна уу"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Индексийг дахин үүсгэх"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Хайлтын систем"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Машины тохиргоо"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Энэ системд таны өөрчлөх боломжтой тохиргооны сонголт алга."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Хайлтын системийн жагсаалтыг шинэчилсэн."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Хайлтын системийн тохиргоог амжилттай хадгаллаа."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Индексийг амжилттай үүсгэлээ."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Гэнэтийн алдаа гарсан байна."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Хэрэглэгч"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Бүлэг"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Та сүүлийн хувилбарыг хэрэглэж байна."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Шинэ хувилбар гарсан байна: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js бол үнэгүй, нээлттэй эхийн төсөл юм. Төсөлд хувь нэмрээ оруулах хэд хэдэн арга байдаг."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Бидэнд таны тусламж хэрэгтэй!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Дэлгэрэнгүй"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Стратегийн жагсаалтыг шинэчиллээ."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Баталгаажуулалтын тохиргоог амжилттай хадгаллаа."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Ерөнхий"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "Сайтын URL"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "Вики URL-аа налуугүй оруул. (жишээ нь https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Сайтын гарчиг"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Дээд талын мөрөнд гарч, бүх хуудасны мета гарчигт хавсаргана."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Лого"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Лого ачаалах"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Арилгах"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Хамгийн сайн үр дүнд хүрэхийн тулд {{size}} хэмжээг зөвлөж байна."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Зөвхөн {{typeList}} эсвэл {{lastType}} файлууд"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Хөлийн зохиогчийн эрх"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Компани / Байгууллагын нэр"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Хөл хэсэгт зохиогчийн эрхийн мэдэгдлийг үзүүлэхэд ашиглах нэр. Нуух бол хоосон орхино уу."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Сайтын тайлбар"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Хуудсанд юу ч өгөөгүй тохиолдолд оруулах өгөгдмөл тайлбар."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Мета робот"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Өгөгдмөл: Индекс, Дагах. Нэг хуудсанд зориулан тохируулах боломжтой."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Хайлтыг эхлүүлэхийн тулд дор хаяж 2 тэмдэгт оруулна уу."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Хайж байна ..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Таны хайлтад тохирох хуудас олдсонгүй."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}} үр дүн олдсон"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Та үүнийг хэлж байна уу ..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Хаах"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Хайлтын холбоосыг хуулах"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Маш сул"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Сул"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Дундаж"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Хүчтэй"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Маш хүчтэй"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Хуудас устгах"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Та {{title}} хуудсыг устгахдаа итгэлтэй байна уу?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Энэ хуудсыг админ хэсгээс сэргээж болно."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Хэрэглэгч хайх"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Хэрэглэгчдийг хайх ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Бүх"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Минут"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Цаг"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Өдөр"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Сар"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Он"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Хуудасны лавлагаа"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Хуудасны мэдээлэл"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Гарчиг"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Товч тайлбар:"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Гарчгийн доор харуулах"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Зам ба ангилал"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Хэл"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Зам"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Эхний эсвэл сүүлчийн налууг бүү оруул."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Шошго"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Хуудсаа ангилж, хайж олоход хялбар болгохын тулд шошго ашиглана уу."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Нийтлэх төлөв"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Нийтэлсэн"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Хэвлээгүй хуудсууд энэ хуудсанд бичих зөвшөөрөлтэй хэрэглэгчдэд харагдсаар байна."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Нийтэлнэ үү..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Эхлэх огноогүй бол хоосон орхино уу"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Дуусахаар нийтэлнэ үү..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Дуусах огноогүй бол хоосон орхино уу"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Хадгалаагүй өөрчлөлтүүдийг хаях уу?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Танд хадгалагдаагүй өөрчлөлтүүд байна. Та засварлагчаа орхиж, сүүлчийн хадгалалтаас хойш хийсэн өөрчлөлтөө устгахыг хүсэж байгаадаа итгэлтэй байна уу?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Өөрчлөлтийг цуцлах"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Та энэ хуудсанд ямар засварлагч ашиглахыг хүсч байна вэ?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Хуудсыг үүсгэсний дараа үүнийг өөрчлөх боломжгүй."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Ассет"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Шинэ хавтас"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Хавтасны нэр"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Ассетын хавтас {{namingRules}} дагах ёстой."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "нэрлэх дүрэм"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Зөөх"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Дахин нэрлэх"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Оновчтой болгох"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Урьдчилж харах"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Лавлагаа"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Энэ ассетын хавтас хоосон байна."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} файл"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Оруулах"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Файлын нэр"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Төрөл"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Файлын хэмжээ"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Нэмэгдсэн"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Үйлдэл"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Ассетыг ачаалах"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Файлуудыг эндээс нэгжих эсвэл буулгах..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Алсын зургийг татах"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Зургийн зэрэгцүүлэлт"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Ассетын нэрийг өөрчлөх"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Энэ ассетын шинэ нэрийг оруулна уу:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Ассетыг устгах"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Ассетаа устгахдаа итгэлтэй байна уу?"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Энэ үйлдлийг буцаах боломжгүй!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Ассетыг амжилттай сэргээв."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Файл ачаалж чадсангүй."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Ассетын хавтас амжилттай үүсэв."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Ассетын нэрийг амжилттай солив."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Ассетыг амжилттай устгалаа."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Эхлээд ачаалах файлыг сонгох ёстой!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Авах"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Засварлагч руу буцах"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Тод"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Ташуу"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Дарах"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Гарчиг {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Subscript"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Superscript"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Info Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Success Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Warning Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Error Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Жагсаалт"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Тоочилт"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Мөр код"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Гарын товчлуур"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Хэвтээ самбар"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Урьдчилан харах самбарыг нуух / харуулах"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Холбоос оруулах"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Ассет оруулах"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Блок оруулах"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Кодын блок оруулах"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Видео / аудио оруулах"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Диаграм оруулах"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Математикийн илэрхийлэл оруулах"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Table Helper"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Distraction Free Mode"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Markdown форматлах тусламж"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "{{path}} хуудасны эх кодыг үзэж байна"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Энгийн харагдац руу буцах"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "Дугаар {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Хэл"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Аналитик"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Вики дээрээ аналитик болон хянах хэрэгслүүдийг нэмж оруулах"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Провайдерын тохиргоо"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Энэ провайдерт таны өөрчлөх боломжтой тохиргоо алга."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Провайдерын жагсаалтыг амжилттай сэргээв."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Аналитик тохиргоог амжилттай хадгалав"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Засвар үйлчилгээ ба бусад хэрэгслүүд"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Хэрэгсэл"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Баталгаажуулалт"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Баталгаажуулалт / хэрэглэгчдэд зориулсан янз бүрийн хэрэгслүүд"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Кэшийг цэвэрлэх"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Төрөл бүрийн бүрэлдэхүүний кэшийг цэвэрлэх"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL Endpoint"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Wiki.js-ийн GraphQL төгсгөлийг өөрчлөх"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Wiki.js 1.x-с импортлох"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Өмнөх 1.x суулгацын өгөгдлийг нааш шилжүүлэх"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Телеметр"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Телеметрийг идэвхжүүлэх / идэвхгүйжүүлэх эсвэл үйлчлүүлэгчийн дугаарыг дахин тохируулах"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Сэтгэгдэл"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Нийтэлсэн"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Хувийн"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Глобал"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Хуудсыг ачаалж байна ..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Код"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Нэр"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Уугуул нэр"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Бэлэн байдал"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Татац"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Агуулга"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Хуудасны янз бүрийн хэрэгсэл"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Айконууд"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Хажуугийн жолоодлогод ашиглах айконууд."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Таны хөтөч хуучирсан байна. {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "орчин үеийн хөтөч"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Нэр"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Зохиогч"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Татаж авах"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Хуудасны агуулгын загвар нэмэх бол {{cssClass}} ангид оруулах ёстой. Үүнийг орхих нь засварлагчийн байршлыг эвдэж магадгүй юм!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "АНХААР:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Загварын тохиргоо"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Идэвхтэй"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Идэвхгүй"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Баталгаажсан"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Баталгаажаагүй"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Хэрэглэгчийг засах"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Үндсэн мэдээлэл"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Э-мэйл"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Харагдах нэр"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Баталгаажуулалт"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Сервер"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Нууц үг"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Нууц үгээ солих"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Шинэ нууц үг"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Two Factor Authentication (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "2FA-г сэлгэх"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Провайдер ID"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Хэрэглэгчийн бүлэг"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Энэ хэрэглэгчийг одоогоор аль нэг бүлэгт ороогүй байна. Та хэрэглэгчид дор хаяж 1 бүлэг хуваарилах ёстой."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Бүлгийг сонгоно уу..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Олгох"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Өргөтгөсөн мета өгөгдөл"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Байршил"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Албан тушаал"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Цагийн бүс"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Хэрэглэгч амжилттай шинэчиллээ."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Хэрэглэгч энэ бүлэгт аль хэдийн орсон байна!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Энэ хадгалах сангийн тов нь {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "идэвхтэй"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "идэвхгүй"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Та үйлдлийг эхлүүлэхээсээ өмнө хадгалагчийн товыг идэвхжүүлж, өөрчлөх шаардлагатай."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Шинэ нууц үг сонгох"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Та шинэ нууц үг сонгох ёстой:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "Шинэ нууц үг"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Шинэ нууц үгээ баталгаажуулна уу"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Нууц үгээ солих"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Нууц үгийг сольж байна..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Шинэ хуудсууд"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Хамгийн идэвхтэй хуудсууд"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Мэдээлэл"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Хуваарь"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Соошл"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Ангилал"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Соошлын функц"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Сэтгэгдэл зөвшөөрөх"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Энэ хуудсанд сэтгэгдэл боломжийг идэвхжүүл."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Үнэлгээ зөвшөөрөх"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Зохиогчийн мэдээллийг харуулах"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Хуваалцах самбарыг харуулах"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Энэ хуудсыг хуваалцах, хэвлэх товчлууруудтай хэрэгслийн самбарыг харуул"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Хуудасны зохиогчийг сүүлчийн засварын хугацаатай хамт харуул."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Энэ хуудсыг үнэлэх боломжийг идэвхжүүл."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "эсвэл хэвшмэл харагдац үүсгэх үү?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Шошгоор нэгжих"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Сайтын бүтэц"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Хуудасны үйлдлүүд"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Идэвхтэй сонголт"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Сонголтыг арилгах"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Ядаж нэг шошго сонгоно уу"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Үр дүнгээс хайх..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Хэл"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Эрэмбэ"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Зүүн талаас нэг буюу хэд хэдэн шошгыг сонгоно уу."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Хуудасны үр дүнг татаж байна..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Сонгосон шошготой хуудас олдсонгүй."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Одоогийн шүүлтүүрийн сонголттой тохирох хуудас олдсонгүй."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Шинэчилсэн {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Үүсгэсэн"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Зассан"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Зам"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Гарчиг"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Ямар ч"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "GitHub ивээн тэтгэгчээр дамжуулан ивээн тэтгэгч болоорой."
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Ивээн тэтгэгч болох"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Шошго"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL тохиргоог удирдах"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Хэрэв та өөрийн гэрчилгээтэй бол Custom Certificate-ийг сонгоно уу."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Домэйн"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Өөрийн вики руу заах бүтэн домэйныг оруулна уу. (жишээ нь wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Провайдерын тохиргоо"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Идэвхгүй"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Өөрийн гэрчилгээ"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Порт"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP порт"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "SSL бус портоор сервер HTTP хүсэлтийг сонсоно. Ихэвчлэн 80 эсвэл 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS порт"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Сервер HTTPS хүсэлтийг сонсох SSL порт. Ихэвчлэн 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP хүсэлтийг HTTPS руу дамжуулах"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "HTTP порт дээрх аливаа хүсэлтийг HTTPS руу автоматаар дамжуулах болно."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Портын тохиргоог үргэлжлүүлэхийн тулд таны тохиргооны файлыг бичих боломжтой байх ёстойг анхаарна уу."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "Логоны URL"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Лого болгон ашиглах зургийг зааж өгнө. SVG, PNG, JPG нь 34х34 пиксел ба түүнээс дээш квадрат харьцаагаар дэмжигддэг. Шинэ зураг ачаалахын тулд баруун талд байгаа товч дээр дарна уу."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Хэрэглэгчийг устгах уу?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "{{username}} хэрэглэгчийг устгахдаа итгэлтэй байна уу?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Хэрэглэгчийг шинэчлэх"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Та энэ самбараас администратор эсвэл зочин бүлэгт хэрэглэгч оруулах боломжгүй гэдгийг анхаарна уу."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Та аль хэдийн агуулга үүсгэсэн хэрэглэгчийг устгах боломжгүй гэдгийг анхаарна уу. Үүний оронд та хэрэглэгчийг идэвхгүйжүүлэх эсвэл тухайн хэрэглэгчийн бүтээсэн бүх агуулгыг устгах хэрэгтэй."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Скрипт"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "Хадгалсны дараа CSS-ийг автоматаар багасгах болно. Хаших <style> таагуудыг бус зөвхөн бодит CSS кодыг оруулаарай."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Бүх хүнд харагдана"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Сонгосон бүлэгт харагдана..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Хуудсыг сонгоно уу..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Жолоодлогын горим"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Сайтын мод"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Модонд суурилсан сонгодог жолоодлого"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Захиалгат жолоодлого"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Статик жолооны цэс + сайтын мод товч"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Хоосон"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Сайтын жолоодлогыг хаах"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Хэрэглэгчийг амжилттай баталгаажууллаа."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Хэрэглэгчийг идэвхжсэн."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Хэрэглэгчийг идэвхгүйжүүлэв."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Эхлээд бичвэрийг сонгох шаардлагатай!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Гэрчилгээг шинэчлэх"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Гэрчилгээний төлөв"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Гэрчилгээний дуусах хугацаа"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Захиалагчийн имэйл"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Одоогийн төлөв"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Асаах"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Хаах"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Гэрчилгээг шинэчилж байна..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Энэ хуудсыг орхиж болохгүй."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Гэрчилгээ амжилттай шинэчлэгдлээ."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP чиглүүлэлт амжилттай өөрчлөгдсөн."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Хуудасны шошгыг удирдах"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Харуулах шошго алга"
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Шошгыг засах"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Шошго"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Бичээс"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Үүссэн {{created}} бөгөөд шинэчлэгдсэн {{updated}}."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Энэ шошгыг устгах"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Зүүн талаас нэг шошго сонгоно уу."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Эхлэхийн тулд хуудсанд шошго нэмнэ үү."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Шошгуудыг шинэчиллээ."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Шошгыг амжилттай устгалаа."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Шошгыг амжилттай хадгаллаа."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Шүүлтүүр ..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Холбогдсон хуудсуудыг үзэх"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Шошгыг устгах уу?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "{{tag}} устгахдаа итгэлтэй байна уу? Шошгыг бүх хуудаснаас салгах болно."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "API-д нэвтрэх түлхүүрүүдийг удирдана уу"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API идэвхжсэн"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API идэвхгүйжсэн"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API-г идэвхжүүлэх"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API-г идэвхгүйжүүлэх"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Шинэ API түлхүүр"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Нэр"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Түлхүүрийн төгсгөл"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Дуусах хугацаа"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Үүсгэсэн"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Шинэчилсэн"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Цуцлах"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Одоохондоо API түлхүүр үүсгээгүй байна."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API түлхүүрийг цуцлах уу?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "{{name}} түлхүүрийг цуцлахдаа итгэлтэй байна уу? Энэ үйлдлийг буцаах боломжгүй!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Цуцлах"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API түлхүүрийн жагсаалтыг шинэчлэв."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Түлхүүрийг амжилттай цуцлав."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Шинэ API түлхүүр"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API түлхүүрийг амжилттай үүсгэлээ."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Нэр байхгүй эсвэл хүчингүй байна."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Та бүлэг сонгох ёстой."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Зочин бүлгийг API түлхүүрт ашиглах боломжгүй."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Энэ түлхүүрийн зорилго"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Нэр"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Дуусах хугацаа"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Та хугацаа дуусахаас үл хамааран хүссэн үедээ түлхүүрийг хүчингүй болгож болно."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Зөвшөөрлийн цар хүрээ"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Бүрэн хандалт"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "эсвэл бүлгийн зөвшөөрлийг хэрэглэх..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Үүсгэх"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Бүлэг"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "API түлхүүр нь сонгосон бүлэгтэй ижил зөвшөөрөлтэй байх болно."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 хоног"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 хоног"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 хоног"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 жил"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 жил"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Доор {{bold}} түлхүүрийг хуулах"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "үүнийг дахин харуулахгүй"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API амжилттай идэвхжсэн."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API амжилттай идэвхгүй боллоо."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Хадгалсан"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Хоосон"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Creative Commons Attribution License"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Creative Commons Attribution-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Creative Commons Attribution-NoDerivs License"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Creative Commons Attribution-NonCommercial License"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Creative Commons Attribution-NonCommercial-ShareAlike License"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Creative Commons Attribution-NonCommercial-NoDerivs License"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Олон нийтийн домэйн"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Бүх эрх хуулиар хамгаалагдсан"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Агуулгын лиценз"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Бүх агуулгын хуудасны хөл хэсэгт үзүүлэх лиценз."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Агуулга {{company}}-ийн {{license}}-тэй."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Та хуудасны агуулгыг татаж авах боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Та энэ хуудасны хувилбарыг татаж авах боломжгүй."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Та хуудасны энэ хувилбарыг үзэх боломжгүй байна"
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "{{path}} хуудасны эх кодыг {{date}}-р үзэж байна."
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "Хувилбар дугаар {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Хуудасны хувилбарыг сэргээх үү?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "{{date}} байгаа байдлаар нь сэргээхийг хүсч байна уу? Энэ хувилбарыг одоогийн түүх дээрээс хуулбарлах болно. Ийм байдлаар шинэ хувилбарууд хадгалагдах болно."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Сэргээх"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Хуудасны хувилбарыг амжилттай сэргээлээ."
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} тэмдэгт, {{words}} үг"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Зөрчилдөөнийг арилгах"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Локалыг хэрэглэ"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Алсынхыг хэрэглэ"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Локал өөрчлөлтөөс татгалзаж, хамгийн сүүлийн хувилбарыг хэрэглэх"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Зүүн самбар дээрх агуулгыг ашиглана уу"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Сүүлийн хувилбарыг харах"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Тус хуудасны илүү шинэ хувилбарыг {{authorName}} , {{date}} хадгаллаа."
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "Та юу хийхийг хүсэж байна?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Алсын өөрчлөлтийг үл тоож, одоогийн локал хувилбараа авах."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Алсын хувилбарыг (сүүлийн хувилбар) аваад локал өөрчлөлтөө хаях."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Алсын хувилбараар дарж бичих үү?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Та одоогийн хувилбараа хамгийн сүүлийн алсын агуулгаар солих гэж байгаадаа итгэлтэй байна уу? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Таны одоогийн засварууд хаягдах болно."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Бататгах"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Локал хувилбар {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(засах боломжтой)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(зөвхөн унших)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Алсын хувилбар {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Таны энэ засвар {{date}} өдрийн хувилбар дээр суурилж байна."
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "{{authorName}} {{date}}-д зассан"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Гарчиг:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Тайлбар:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Танд хадгалагдаагүй засварууд байна. Та засварлагчаас гарахыг хүсч байгаадаа итгэлтэй байна уу?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Зөрчилдөөнийг аврах! Өөр нэг хэрэглэгч энэ хуудсыг аль хэдийн өөрчилсөн байна."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Хуулбарлах"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Харагдах нэр"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Байршил"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Албан тушаал"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Цагийн бүс"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Профайл"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Хувийн мэдээлэл"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Миний мэдээлэл"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Олон нийтийн профайлыг үзэх"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Баталгаажуулалт"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Нууц үгээ солих"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Одоогийн нууц үг"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Шинэ нууц үг"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Шинэ нууц үг баталгаажуулах"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Бүлэг"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Идэвхи"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Элссэн"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Шинэчилсэн огноо"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Нэвтэрсэн огноо"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Үүсгэсэн хуудас"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Бичсэн сэтгэгдэл"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Профайлыг амжилттай хадгаллаа."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Нууц үг амжилттай өөрчлөгдлөө."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Сэтгэгдэл"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Миний үүсгэсэн эсвэл өөрчилсөн хуудасны жагсаалт"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Харуулах хуудас алга."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Хуудасны жагсаалтыг шинэчилсэн."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Гарчиг"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Зам"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Үүсгэсэн"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Шинэчилсэн"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Нэвтэрсэн"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Нэгжих"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Үндсэн цэс"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Одоогийн лавлах"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(үндэс)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Хэлнээс хуулах..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Эх хэл"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Жолоодлогын элементийг хуулж авчрах хэл."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Хуулах"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Элементийг хуулах газрыг сонго. Элементүүдийг идэвхтэй жагсаалтад нэмж оруулах болно."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Статик жолоодлого"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Зөвхөн статик жолооны цэс"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Тохиргоо"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Огнооны формат"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Хэлний өгөгдмөл утга"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Гадаад төрх"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Сайтын өгөгдмөл утга"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Гэрэлтэй"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Харанхуй"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL гэрчилгээг баталгаажуулах"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Зарим хостууд SSL сертификатыг идэвхгүй болгохыг шаарддаг. Аюулгүй байдлыг хангах үүднээс идэвхжүүлсэн хэвээр үлдээнэ үү."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Гадаад холбоос (Шинэ цонх)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Аюулгүй байдал"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Ачаалах файлын дээд хэмжээ"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Нэг ачаалалт дахь файлын тоон хязгаар"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Нэг багцад хэдэн файл ачаалах боломжтой вэ?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Нэг файлын дээд хэмжээ."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "байт"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "файлууд"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Ачаалсан файлууд"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Эдгээр тохиргоо нь зөвхөн Wiki.js-д хамаатай. Хэрэв та урвуу прокси ашиглаж байгаа бол (жишээ нь nginx, apache, Cloudflare), тохиргоог нь тааруулах ёстой."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Аюулгүй байдлыг тохируулах"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Өргөтгөл"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Нэмэлт үйл ажиллагаанд зориулж өргөтгөл суулгах"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Провайдер"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Вики хуудсан дээрээ хэлэлцүүлэг нэмэх"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Провайдерын тохиргоо"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Энэ провайдерт таны өөрчлөх боломжтой тохиргоо алга."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Энэ хэрэглэгчийн үүсгэсэн аливаа агуулгыг (хуудас, байршуулалт, сэтгэгдэл гэх мэт) доор сонгосон хэрэглэгчид дахин оноох болно. Хэрэв та агуулгыг одоогийн идэвхтэй хэрэглэгчид дахин оноохыг хүсэхгүй бол хуурмаг зорилтот хэрэглэгч (жишээлбэл устгасан хэрэглэгч) үүсгэхийг зөвлөж байна."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Идэвхтэй стратеги"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Стратеги нэмэх"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Загвар"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Та HTML скрипт таагтай javascript кодоо хаах ёстой."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Энэ хуудас нийтлэгдээгүй байна."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Сэтгэгдэл"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Шинэ сэтгэгдэл бичих..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Таны нэр"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Таны эмэйл хаяг"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Markdown формат"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Сэтгэгдэл бичих"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Сэтгэгдлийг ачаалж байна..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "{{name}} нийтлэх"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Эхний сэтгэгдлийг бичээрэй."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Одоогоор сэтгэгдэл алга байна."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Сэтгэгдлийг засах"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Устгахыг баталгаажуулна уу"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Энэ сэтгэгдлийг бүрмөсөн устгахдаа итгэлтэй байна уу?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Энэ үйлдлийг буцаах боломжгүй!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "өөрчлөгдсөн {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Сэтгэгдлийг амжилттай илгээлээ."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Сэтгэгдэл хоосон эсвэл хэт богино байна!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Сэтгэгдлийг амжилттай заслаа."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Сэтгэгдлийг амжилттай устгалаа."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Алдаа шалгуур"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Нэвтрэх"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Нэвтрэх хуудас"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT тохиргоо"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Нэвтрэх дэлгэцийг тойрч гарах"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Хэрэглэгчийг анхны нэвтрэлт танилт руу автоматаар чиглүүлэх ёстой."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "Нэвтрэх хуудасны арын зургийн URL"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Нэвтрэх цонхны арын дэвсгэр болгон ашиглах зургийг тодорхойлно уу. PNG ба JPG-г 1920x1080 зөвлөж байна. Өгөгдмөлөөр хоосон орхино уу. Шинэ зураг ачаалахын тулд баруун талд байгаа товч дээр дарна уу. Сонгосон зураг зочид бүлэгт унших хандалттай байх ёстойг анхаарна уу!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Локалаар нэвтрэхийг далдлах"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Нэвтрэх дэлгэц дээр локал баталгаажуулалтын провайдерыг бүү харуул. Үүнийг түр ашиглахын тулд URL-д ?all гэж нэмнэ үү."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Аюулгүй байдал"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA-г хэрэгжүүлэх"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Хэрэглэгч / нууц үгийн маягт бүхий нэвтрэлт танилтын провайперыг ашиглахдаа бүх хэрэглэгчдийг Two-Factor Authentication ашиглахыг албадах."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Хэлэлцүүлгийг үзэх"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Шинэ сэтгэгдэл"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Сэтгэгдлийн агуулга"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Яриа"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Шошго"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Шошготой тохирох хуудаснууд"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Эхлэлд очих"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Хэрэглэгчийн нэр"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Гарах"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Хуудасны үзүүлэх горимыг тохируулах"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Сайтын гарчигт хүчингүй тэмдэгт орсон байна."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Сайтын тохиргоог амжилттай хадгаллаа."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA амжилттай идэвхгүй болсон."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA амжилттай идэвхжсэн."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Нууц үгээ шинэчлэхийг хүсэж байна..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Нууц үгээ шинэчлэх заавар бүхий имэйлээ шалгана уу!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Идэвхтэй"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Энэ стратегийг ашиглан хэрэглэгчид нэвтрэх боломжтой юу?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Харагдах нэр"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Энэ баталгаажуулалтын хувьд хэрэглэгчид харагдах гарчих"
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Нэвтрэх серверээ сонгох"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Нэвтрэх мэдээллээ оруулна"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Нууц үгээ мартсан"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Итгэмжлэгдсэн төхөөрөмжөөс үүсгэсэн аюулгүйн кодыг оруулна уу:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Таны администратор таны дансан Two-Factor баталгаажуулалтыг (2FA) идэвхжүүлэхийг шаардсан."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) Гар утасны 2FA програмаас доорхи QR кодыг ширвэх:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Таны итгэмжлэгдсэн төхөөрөмжөөс үүсгэсэн аюулгүйн кодыг оруулна уу:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Сонгох"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Хуудасны шинэ байрлалыг сонгох"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Хуудасны байрлалыг өөрчлөх"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Хуудас сонгох"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Виртуал хавтас"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Хуудас"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Хавтас хоосо байна."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Хөрвүүлэх"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Хуудсыг хөрвүүлэх"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "{{title}} хуудасны хувьд ашиглах засварлагчаа сонгоно уу:"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Хуудасны агуулгыг шинээр сонгогдсон засварлагчийн формат руу хөрвүүлэх болно. Хөрвүүлэлтийн үр дүнд зарим формат эсвэл үзэгдээгүй агуулга алдагдаж болзошгүйг анхаарна уу. Хуудасны түүхийг хадгалах тул хүссэн үедээ сэргээх боломжтой."
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Хөрвүүлэх"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": ""
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": ""
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}

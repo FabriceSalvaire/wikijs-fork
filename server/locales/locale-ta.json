@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "இதன் மூலம் இயக்கப்படுகிறது"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "உள்நுழைவு தேவை"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "மின்னஞ்சல் / பயனர் பெயர்"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "கடவுச்சொல்"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "உள்நுழை"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "செல்லுபடியாகாத உள்நுழைவு"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "மின்னஞ்சல் அல்லது கடவுச்சொல் செல்லுபடியாகாது."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "செல்லுபடியாகாத பயனர் மின்னஞ்சல்"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "உள்நுழைவு பிழை"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "இந்தத் தளத்தில் உள்நுழைய நீங்கள் இன்னும் அங்கீகரிக்கப்படவில்லை."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "பல முயற்சிகள்!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "நீங்கள் ஒரு குறுகிய காலத்தில் பல தோல்வி முயற்சிகளை செய்துள்ளீர்கள், மீண்டும் முயற்சிக்கவும் {{time}} ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "பயனர் கிடைக்கவில்லை"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "உள்ளூர்"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "மைக்ரோசாப்ட் கணக்கு"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "அசூர் ஆக்டிவ் டைரக்டரி"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "கூகுள் ஐடி"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "முகநூல்"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "கிட்ஹப் (GitHub)"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "ஸலாக் (Slack)"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / செயலில் உள்ள அடைவு"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "இரு காரணி அங்கீகாரம்"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "பாதுகாப்பு குறியீடு தேவை:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "அஅஅஅஅஅஅ"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "சரிபார்க்கவும்"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "முதன்மைப் பலகை"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "பொது"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "மொழியிடம்"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "புள்ளிவிவரங்கள்"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "தீம்"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "குழுக்கள்"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "பயனர்கள்"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "அங்கீகாரம்"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "பதிப்பாசிரியர்"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "பதிவு செய்தல்"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "வழங்குதல்"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "தேடுபொறி"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "சேமிப்பகம்"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "API அணுகல்"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "கணினி தகவல்"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "பயன்பாடுகள்"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "டெவலப்பர் கருவிகள்"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Wiki.js இல் பங்களிக்கவும்"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "உங்கள் விக்கியின் முக்கிய அமைப்புகள்"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "தள தகவல்"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "தள பிராண்டிங்"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "தளம்"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "பயனர்கள்"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "தொகுதிகள்"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "சாதனம்"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "உங்கள் விக்கிக்கான மொழியிட விருப்பங்களை அமைக்கவும்"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "மொழியிட அமைப்புகள்"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "பன்மொழி பெயர்வெளியாக்கம்"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "பதிவிறக்கு மொழியிடம்"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "அடிப்படை மொழியிடம்"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "அனைத்து UI உரை கூறுகளும் தேர்ந்தெடுக்கப்பட்ட மொழியில் காட்டப்படும்."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "தானாக புதுப்பிக்கவும்"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "கீழே இயக்கப்பட்டுள்ள அனைத்து பெயர் இடைவெளி உள்ள மொழிகளுக்கும் தானாகவே புதுப்பிப்புகளைப் பதிவிறக்கவும்."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "பன்மொழி பெயர்வெளிகள்"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "ஒரே பக்கத்தின் பல மொழி பதிப்புகளை இயக்குகிறது."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "செயலில் உள்ள பெயர்வெளிகள்"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "பன்மொழி பெயர் இடைவெளிக்காக இயக்கப்பட்ட மொழிகளின் பட்டியல். இந்தத் தேர்வைப் பொருட்படுத்தாமல் மேலே வரையறுக்கப்பட்ட அடிப்படை மொழி எப்போதும் சேர்க்கப்படும்."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "மொழி குறியீடு அனைத்து பாதைகளிலும் முன்னொட்டாக இருக்கும். (எ.கா. / {{langCode}} /page-name)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "மொழி குறியீடு இல்லாத பாதைகள் மேலே வரையறுக்கப்பட்ட அடிப்படை மொழிக்கு தானாகவே திருப்பி விடப்படும்."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "சேமி"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "ரத்து செய்"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "பதிவிறக்கு"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "பதிவேற்றவும்"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "நிராகரி"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "நீக்கு"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "உருவாக்கு"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "தொகு"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "அழி"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "புதுப்பிப்பு"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "மாற்றங்களைச் சேமி"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "தொடரவும்"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "தள மொழியிடம்"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "இந்த மொழிக்கான புதுப்பிப்புகள் கிடைக்கும்போது தானாகவே பதிவிறக்கவும்."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "உங்கள் சாதனம் பற்றிய தகவல்"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "ஹோஸ்ட் தகவல்"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "நடப்பு பதிப்பு"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "சமீபத்திய பதிப்பு"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "வெளியிடப்பட்டது"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "இயங்குதளம்"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "ஹோஸ்ட் பெயர்"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "CPU கோர்கள்"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "மொத்த RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "செயல்பாட்டு கோப்பகம்"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "உள்ளமைவு கோப்பு"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "RAM பயன்பாடு: {{used}}/{{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Wiki.js மேம்பாடு மற்றும் செயல்பாடுகளை ஆதரிக்க உதவுங்கள்"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "எங்கள் வேலைக்கு நிதியளிக்கவும்"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "வார்த்தையை பரப்புங்கள்"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Wiki.js எவ்வளவு அற்புதமானது என்பதைப் பற்றி உங்கள் நண்பர்கள் மற்றும் சக ஊழியர்களிடம் பேசுங்கள்!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "{{0}} இல் எங்களைப் பின்தொடரவும்."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "{{0}} இல் ஒரு யோசனையைச் சமர்ப்பிக்கவும் அல்லது முன்மொழியப்பட்ட ஒன்றில் வாக்களிக்கவும்."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "அம்ச கோரிக்கைகள் பலகை"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "பிழை கண்டுபிடிக்கப்பட்டதா? {{0}} இல் சிக்கலைச் சமர்ப்பிக்கவும்."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Wiki.js ஐ உங்கள் மொழியில் மொழிபெயர்க்க உதவுங்கள். {{0}} இல் எங்களுக்குத் தெரியப்படுத்தவும்."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "நன்கொடை செலுத்தவும்"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "பங்களி"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js ஆனது திறந்த கூட்டு முயற்சியின் ஒரு பகுதியாகும், இது சமூக வளங்களை நோக்கிச் செல்லும் ஒரு வெளிப்படையான நிதியாகும். மாதாந்திர அல்லது ஒருமுறை நன்கொடை அளிப்பதன் மூலம் நீங்கள் நிதிப் பங்களிப்பு செய்யலாம்:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "மென்பொருளை மேம்படுத்தவும், தொடர்புடைய பல்வேறு சேவைகளை இயக்கவும் (எ.கா. ஹோஸ்டிங் மற்றும் நெட்வொர்க்கிங்) உங்கள் உதவி எங்களுக்குத் தேவை."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js என்பது {{0}} உடன் { {{1}} மற்றும் {{2}} } மூலம் உங்களிடம் கொண்டு வரப்பட்ட ஒரு இலவச மற்றும் திறந்த மூல மென்பொருளாகும்."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "பங்களிப்பாளர்கள்"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "பக்கம்"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "வழங்குதல்"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "தயவு செய்து காத்திருக்கவும்..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "பக்கம் வெற்றிகரமாக உருவாக்கப்பட்டது."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "பக்கத்தை உருவாக்கும்போது பிழை ஏற்பட்டது"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "திட்டத்திற்கு நிதி உதவி செய்ய Wiki.js டி-ஷர்ட்களையும் வாங்கலாம்:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Wiki.js கடை"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "சரி"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}} . அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "இந்தப் பக்கம் இன்னும் இல்லை."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "இப்போது அதை உருவாக்க விரும்புகிறீர்களா?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "பக்கத்தை உருவாக்கு"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "பின் செல்"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "பக்கங்கள்"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "வழிசெலுத்தல்"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "தள வழிசெலுத்தலை நிர்வகிக்கவும்"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "சேர்"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "இணைப்பு"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "பிரிப்பான்"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "தலைப்பு"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "லேபிள்"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "உருவம்"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "இலக்கு வகை"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "இலக்கு"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "இடதுபுறத்தில் வழிசெலுத்தல் உருப்படியைத் தேர்ந்தெடுக்கவும்."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "தலைப்பிடப்படாத {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "வெளிப்புற இணைப்பு"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "முகப்பு"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "பக்கம்"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "தேடல் வினவல்"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "திருத்து {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "{{kind}} ஐ நீக்கு"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "வழிசெலுத்தல் வெற்றிகரமாகச் சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "உங்கள் முதல் வழிசெலுத்தல் உருப்படியைச் சேர்க்க சேர் பொத்தானைக் கிளிக் செய்யவும்."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "வழிசெலுத்தல் காலியாக உள்ளது"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "பயன்படுத்து"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "மின்னஞ்சல் முகவரி"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "கடவுச்சொல் சரிபார்க்கவும்"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "பெயர்"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "பதிவுசெய்"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "ஒரு கணக்கை உருவாக்க"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "ஏற்கனவே ஒரு கணக்கு உள்ளதா? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "அதற்குப் பதிலாக உள்நுழைக"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "{{strategy}} பயன்படுத்தி உள்நுழைக"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "உங்கள் கடவுச்சொல்லை மறந்து விட்டீர்களா?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "அல்லது பயன்படுத்தி உள்நுழையவும்..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "இன்னும் கணக்கு இல்லையா? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "ஒரு கணக்கை உருவாக்கு"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "செல்லுபடியாகும் மின்னஞ்சல் / பயனர்பெயரை உள்ளிடவும்."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "செல்லுபடியாகும் கடவுச்சொல்லை உள்ளிடவும்."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "உள்நுழைவு வெற்றி! திசைதிருப்புகிறது..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "உள்நுழைகிறது..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "அங்கீகாரம் கிடைக்கப்பெறவில்லை."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "உங்கள் கணக்கை உருவாக்கக் கீழே உள்ள படிவத்தை நிரப்பவும்."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "தயவுசெய்து காத்திருக்கவும்"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "கணக்கு வெற்றிகரமாக உருவாக்கப்பட்டது!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "கணக்கை உருவாக்குகிறது..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "மின்னஞ்சல் முகவரியை காணவில்லை."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "மின்னஞ்சல் முகவரி செல்லுபடியாகாது."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "கடவுச்சொல்லை காணவில்லை."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "கடவுச்சொல் மிகவும் சிறியது."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "இரண்டு கடவுச்சொற்களும் பொருந்தவில்லை."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "பெயர் இல்லை."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "பெயர் மிகவும் சிறியது."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "பெயர் மிக நீளமாக உள்ளது."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "ரத்து செய்"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "கடவுச்சொல்லை மீட்டமைக்க"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "உங்கள் கடவுச்சொல்லை மீட்டமைப்பதற்கான வழிமுறைகளைப் பெற உங்கள் மின்னஞ்சல் முகவரியை உள்ளிடவும்:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "அஞ்சல்"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "அஞ்சல் அமைப்புகளை உள்ளமைக்கவும்"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "உள்ளமைவு"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (விரும்பினால்)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "உங்கள் கணக்கைச் செயல்படுத்த உங்கள் மின்னஞ்சல்களைச் சரிபார்க்கவும்."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "பக்கம் வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "அங்கீகரிக்கப்படாதது"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "நீங்கள் இந்தப் பக்கத்தைப் பார்க்க முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "நீங்கள் பக்க மூலத்தைப் பார்க்க முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "நீங்கள் பக்க வரலாற்றைப் பார்க்க முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "நீங்கள் பக்கத்தை திருத்த முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "நீங்கள் பக்கத்தை உருவாக்க முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "பின் செல்"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "முகப்பு"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "கிடைக்கவில்லை"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "இந்தப் பக்கம் இல்லை."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "இவ்வாறு உள்நுழை..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Patron ஆகுங்கள்"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Patreon வழியாக ஆதரவாளராகவோ அல்லது வழங்குபவராகவோ ஆகுங்கள் (wiki.js ல் முழுநேர வேலை செய்யும் முன்னணி மேம்பாட்டாளர் நிக்கோலஸ் ஜியார்டின் இலக்கை நேரடியாக ஆதரிக்கிறது)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "உங்கள் விக்கிக்கு வரவேற்கிறோம்!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "முதலில் முகப்பு பக்கத்தை உருவாக்குவதுலிருந்நு தொடங்குவோம்."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "முகப்பு பக்கத்தை உருவாக்கு"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "குறிகள்"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "நீர்ப்பயணம் புரிவோர்"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Paypal மூலம் ஒரு முறை அல்லது தொடர்ச்சியான நன்கொடையை வழங்கவும்:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Ethereum ஐப் பயன்படுத்தி நன்கொடைகளை ஏற்றுக்கொள்கிறோம்:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "மொழியிட தொகுப்பைப் பின்னேற்றவம்"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "நீங்கள் இணையத்துடன் இணைக்கப்படவில்லை என்றால் அல்லது மேலே உள்ள முறையைப் பயன்படுத்தி உள்ளூர் கோப்புகளைப் பதிவிறக்க முடியாவிட்டால், அதற்குப் பதிலாகக் கீழே பதிவேற்றுவதன் மூலம் தொகுப்புகளைக் கைமுறையாகப் பதிவேற்றலாம்."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "உலாவுக..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "வெப்ஹூக்ஸ்"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "வெளிப்புற சேவைகளுக்கான வெப்ஹூக்குகளை நிர்வகிக்கவும்"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "ஒரு சோதனை மின்னஞ்சல் அனுப்பவும்"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "பெறுநர் மின்னஞ்சல் முகவரி"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "மின்னஞ்சல் அனுப்பு"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "அனுப்புநர்"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "அனுப்புநர் பெயர்"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "அனுப்புநர் மின்னஞ்சல்"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "SMTP அமைப்புகள்"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "ஹோஸ்ட்"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "முணையம்"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "பொதுவாக 465 (பரிந்துரைக்கப்பட்டது), 587 அல்லது 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "பாதுகாப்பான (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "முணையம் 465 ஐப் பயன்படுத்தும் போது இயக்கப்பட்டிருக்க வேண்டும், இல்லையெனில் அணைக்கப்படும் (587 அல்லது 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "பயனர் பெயர்"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "கடவுச்சொல்"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) ஆனது Wiki.js இலிருந்து அனுப்பப்படும் அனைத்து மின்னஞ்சல்களுக்கும் ஒரு அடுக்கு பாதுகாப்பை வழங்குகிறது, பெறுநர்களுக்கு டொமைன் பெயரைச் சரிபார்ப்பதற்கும் செய்தியின் நம்பகத்தன்மையை உறுதி செய்வதற்கும் வழிகளை வழங்குகிறது."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "DKIM ஐப் பயன்படுத்து"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "டொமைன் பெயர்"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "முக்கிய தேர்வாளர்"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "தனிப்பட்ட விசை"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "PEM வடிவத்தில் தேர்வாளருக்கான தனிப்பட்ட விசை"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "உங்கள் SMTP உள்ளமைவு செயல்படுவதை உறுதிசெய்ய சோதனை மின்னஞ்சலை அனுப்பவும்."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "உள்ளமைவு வெற்றிகரமாக சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "உங்கள் தரவுத்தள பதிப்பு முழுமையாக ஆதரிக்கப்படவில்லை. சில செயல்பாடுகள் குறைவாக இருக்கலாம் அல்லது எதிர்பார்த்தபடி செயல்படாமல் இருக்கலாம்."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "கணினி தகவல் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "உங்கள் விக்கியின் அங்கீகார அமைப்புகளை உள்ளமைக்கவும்"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "உத்திகள்"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "அனைத்திட மேம்பட்ட அமைப்புகள்"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT பார்வையாளர்கள்"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "உள்நுழைந்தவுடன் வழங்கப்பட்ட JWT இல் பயன்படுத்தப்படும் பார்வையாளர்களின் URN. பொதுவாக உங்கள் டொமைன் பெயர். (எ.கா. urn:your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "டோக்கன் காலாவதி"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "டோக்கன் புதுப்பிக்கப்பட வேண்டும் வரை அதன் காலாவதி காலம். (இயல்புநிலை: 30 நிமிடங்கள்)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "டோக்கன் புதுப்பித்தல் காலம்"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "டோக்கன் காலாவதியாகும்போது புதுப்பிக்கப்படும் அதிகபட்ச காலம். (இயல்புநிலை: 14 நாட்கள்)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "இந்த உத்தி {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "செயலில்"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "செயலில் இல்லை"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "மற்றும் முடக்க முடியாது."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "சோதனை மின்னஞ்சல் வெற்றிகரமாக அனுப்பப்பட்டது."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "உங்கள் விக்கியின் தோற்றத்தையும் உணர்வையும் மாற்றவும்"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "தள தீம்"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "உள்ளடக்கப் பக்கங்கள் எவ்வாறு காட்டப்படுகின்றன என்பதை தீம்கள் பாதிக்கின்றன. பிற தளப் பிரிவுகள் (தொகுப்பிப்பான் அல்லது நிர்வாகப் பகுதி போன்றவை) பாதிக்கப்படாது."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "இருள் பயன்முறை"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "அணுகலுக்கு பரிந்துரைக்கப்படவில்லை. அனைத்து தீம்களும் ஆதரிக்கப்படாமல் இருக்கலாம்."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "நிரல் ஊசி"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "CSS மேலெழுதுதல்"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "கணினி இயல்புநிலை CSSக்குப் பிறகு உட்செலுத்துவதற்கு CSS குறியீடு. உங்களிடம் அதிக அளவு css குறியீடு இருந்தால் தனிப்பயன் தீம்களைப் பயன்படுத்தவும். அதிக CSS குறியீட்டை உட்செலுத்துவது மோசமான பக்க சுமை செயல்திறனை விளைவிக்கும்! CSS தானாகவே குறைக்கப்படும்."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "தலை HTML ஊசி (Head HTML Injection)"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "HTML குறியீடு மூடும் தலை குறிச்சொல்லுக்குச் சற்று முன் செலுத்தப்பட வேண்டும். வழக்கமாக ஸ்கிரிப்ட் குறிச்சொற்களுக்கு."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Body HTML ஊசி"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "மூடும் body குறிச்சொல்லுக்குச் சற்று முன் HTML குறியீடு உட்செலுத்தப்படும்."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "தீம்களைப் பதிவிறக்கவும்"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "நிர்வாகப் பகுதி"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "உத்தி கட்டமைப்பு"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "இந்த உத்தியில் நீங்கள் மாற்றக்கூடிய உள்ளமைவு விருப்பங்கள் இல்லை."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "பதிவு"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "சுய பதிவை அனுமதிக்கவும்"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "விக்கியை அணுகுவதற்கு உத்தியால் அங்கீகரிக்கப்பட்ட எந்தப் பயனரையும் அனுமதிக்கவும்."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "குறிப்பிட்ட மின்னஞ்சல் களங்களுக்கு வரம்பு"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "பதிவு செய்ய அங்கீகரிக்கப்பட்ட டொமைன்களின் பட்டியல். அணுகலைப் பெற, பயனர் மின்னஞ்சல் முகவரி டொமைன் இவற்றில் ஒன்றைப் பொருத்த வேண்டும்."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "குழுவிற்கு ஒதுக்குங்கள்"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "இந்தக் குழுக்களுக்குத் தானாகவே புதிய பயனர்களை ஒதுக்கவும்."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "பாதுகாப்பு"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "அனைத்து பயனர்களையும் இரு காரணி அங்கீகாரத்தைப் (2FA) பயன்படுத்துமாறு கட்டாயப்படுத்தவும்"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "பயனர்கள் முதல் முறையாக உள்நுழையும்போது 2FA ஐ அமைக்க வேண்டும் மேலும் இதைப் பயனரால் முடக்க முடியாது."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "உள்ளமைவு ஒப்பீடு"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "சில உத்திகளுக்கு உங்கள் வழங்குநரில் சில உள்ளமைவு மதிப்புகள் அமைக்கப்பட வேண்டியிருக்கலாம். இவை குறிப்புக்காக மட்டுமே வழங்கப்படுகின்றன, தற்போதைய மூல உத்திகளால் தேவைப்படாத இருக்கலாம்."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "முதலில் செல்லுபடியாகும் {{siteUrl}} அமைக்க வேண்டும்! இடது பக்கப்பட்டியில் {{general}} என்பதைக் கிளிக் செய்யவும்."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "அனுமதிக்கப்பட்ட இணைய மூலங்கள்"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "திரும்ப அழைக்கும் உரலி (URL) / திருப்பிவிடும் தள முகவரி (URI)"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "உள்நுழை உரலி (URL)"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "வெளியேறு உரலி (URL)"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "டோக்கன் எண்ட்பாயிண்ட் அங்கீகார முறை"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "முகப்பு"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "புதிய பக்கம்"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "தற்போதைய பக்கம்"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "காண்க"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "தொகு"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "வரலாறு"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "மூலத்தைப் பார்"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "அழி"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "அழி"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "சொத்துக்கள்"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "படங்கள் & கோப்புகள்"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "தேடு..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "நிர்வாகம்"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "கணக்கு"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "என் விக்கி"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "சுயவிவரம்"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "வெளியேறு"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "உள்நுழை"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "கடைசியாகத் திருத்தியது"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "வெளியிடப்படாதது"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "பக்கத்தைத் திருத்து"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "பக்க உள்ளடக்கம்"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "புத்தகக்குறி"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "பகிர்"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "அச்சு வடிவம்"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "மூடு"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "பக்கம்"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "உங்கள் உள்ளடக்கத்திற்கான காப்புப்பிரதி மற்றும் ஒத்திசைவு இலக்குகளை அமைக்கவும்"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "இலக்குகள்"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "நிலை"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "கடைசி ஒத்திசைவு {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "கடைசி முயற்சி {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "பிழை செய்தி"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "உங்களிடம் செயலில் உள்ள சேமிப்பக இலக்கு எதுவும் இல்லை."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "இலக்கு உள்ளமைவு"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "இந்த சேமிப்பக இலக்கில் நீங்கள் திருத்தக்கூடிய உள்ளமைவு விருப்பங்கள் எதுவும் இல்லை."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "ஒத்திசைவு திசை"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "இந்த சேமிப்பக இலக்குக்கு உள்ளடக்க ஒத்திசைவு எவ்வாறு கையாளப்படுகிறது என்பதைத் தேர்வுசெய்யவும்."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "இரு திசை"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "இலக்குக்கு தள்ளு"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "இலக்கிலிருந்து இழுக்கவும்"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "ஆதரிக்கப்படவில்லை"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "இரு திசை பயன்முறையில், சேமிப்பக இலக்கிலிருந்து உள்ளடக்கம் முதலில் இழுக்கப்படும். எந்தவொரு புதிய உள்ளடக்கமும் உள்ளூர் உள்ளடக்கத்தை மேலெழுதும். கடைசியாக ஒத்திசைத்ததிலிருந்து புதிய உள்ளடக்கம் பின்னர் சேமிப்பக இலக்குக்கு தள்ளப்பட்டு, இலக்கில் ஏதேனும் உள்ளடக்கம் இருந்தால் மேலெழுதும்."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "உள்ளடக்கம் எப்பொழுதும் சேமிப்பக இலக்கிற்கு தள்ளப்படுகிறது, ஏற்கனவே உள்ள உள்ளடக்கத்தை மேலெழுதும். காப்புப்பிரதி காட்சிகளுக்கு இது பாதுகாப்பான தேர்வாகும்."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "உள்ளடக்கம் எப்போதும் சேமிப்பக இலக்கிலிருந்து இழுக்கப்படும், ஏற்கனவே உள்ள எந்த உள்ளூர் உள்ளடக்கத்தையும் மேலெழுதும். இந்தத் தேர்வு பொதுவாக ஒற்றைப் பயன்பாட்டு உள்ளடக்க இறக்குமதிக்காக ஒதுக்கப்படும். எந்த உள்ளூர் உள்ளடக்கமும் எப்பொழுதும் மேலெழுதப்படும் என்பதால் இந்த விருப்பத்தில் எச்சரிக்கையாக இருங்கள்!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "ஒத்திசைவு அட்டவணை"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "செயல்திறன் காரணங்களுக்காக, இந்த சேமிப்பக இலக்கு ஒவ்வொரு மாற்றத்திற்கும் பதிலாக இடைவெளி அடிப்படையிலான அட்டவணையில் மாற்றங்களை ஒத்திசைக்கிறது. எந்த இடைவெளியில் ஒத்திசைவு நிகழ வேண்டும் என்பதை வரையறுக்கவும்."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "தற்போது ஒவ்வொரு {{schedule}} க்கு அமைக்கப்பட்டுள்ளது ."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "இயல்புநிலை ஒவ்வொரு {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "செயல்கள்"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "செயல்படுத்து"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "உங்கள் விக்கியின் தேடல் திறன்களை உள்ளமைக்கவும்"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "பொருளடக்கத்தை மீண்டும் உருவாக்கு"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "தேடுபொறி"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "எஞ்சின் உள்ளமைவு"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "இந்த என்ஜினில் நீங்கள் மாற்றக்கூடிய உள்ளமைவு விருப்பங்கள் எதுவும் இல்லை."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "தேடுபொறிகளின் பட்டியல் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "தேடுபொறி உள்ளமைவு வெற்றிகரமாகச் சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "பொருளடக்கம் வெற்றிகரமாக மீண்டும் கட்டமைக்கப்பட்டது."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "எதிர் பாராத பிழை ஏற்பட்டு விட்டது."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "பக்கங்கள்"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "பயனர்கள்"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "குழுக்கள்"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "நீங்கள் சமீபத்திய பதிப்பை இயக்குகிறீர்கள்."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "ஒரு புதிய பதிப்பு கிடைக்கிறது: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js ஒரு இலவச மற்றும் திறந்த மூல திட்டமாகும். திட்டத்திற்கு நீங்கள் பங்களிக்க பல வழிகள் உள்ளன."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "உங்களின் உதவி எங்களுக்குத் தேவை!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "மேலும் அறிக"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "உத்திகளின் பட்டியல் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "அங்கீகரிப்பு உள்ளமைவு வெற்றிகரமாகச் சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "பொது"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "தள உரலி (URL)"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "பின்தொடரும் சாய்க்கோடு இல்லாமல், உங்கள் விக்கிக்கு முழு URL. (எ.கா. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "தளத்தின் தலைப்பு"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "மேல் பட்டியில் காட்டப்பட்டு, எல்லா பக்கங்களின் மெட்டா தலைப்பிலும் சேர்க்கப்பட்டது."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "குறிப்படம்"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "குறிப்படத்தைப் பதிவேற்று"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "நீக்கு"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "சிறந்த முடிவுகளுக்கு {{size}} பிக்சல்கள் கொண்ட படம் பரிந்துரைக்கப்படுகிறது."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "{{typeList}} அல்லது {{lastType}} கோப்புகள் மட்டும்"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "அடிக்குறிப்பு பதிப்புரிமை"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "நிறுவனம் / அமைப்பின் பெயர்"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "அடிக்குறிப்பில் பதிப்புரிமை அறிவிப்பைக் காண்பிக்கும்போது பயன்படுத்த வேண்டிய பெயர். மறைக்கக் காலியாக விடவும்."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "தள விளக்கம்"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "ஒரு பக்கத்திற்கு விளக்கம் எதுவும் வழங்கப்படாதபோது இயல்புநிலை விளக்கம்."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "மெட்டா ரோபோக்கள்"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "இயல்புநிலை: பொருளறி, பின்பற்று (Index, Follow). ஒரு பக்க அடிப்படையிலும் அமைக்கலாம்."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "தேடலைத் தொடங்க குறைந்தது இரண்டு எழுத்துகளை உள்ளிடவும்..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "தேடுகிறது..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "உங்கள் வினவலுடன் எந்தப் பக்கமும் பொருந்தவில்லை."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "{{total}} முடிவுகள் கிடைத்தன"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "நீங்கள் இதைச் சொன்னீர்களா..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "மூடு"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "தேடல் இணைப்பை நகலெடுக்கவும்"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "மிகவும் பலவீனமாக"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "பலவீனமான"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "சராசரி"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "வலுவான"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "மிகவும் வலுவான"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "பக்கத்தை நீக்கு"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "{{title}} பக்கத்தை நிச்சயமாக நீக்க விரும்புகிறீர்களா?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "நிர்வாகப் பகுதியிலிருந்து பக்கத்தை மீட்டெடுக்கலாம்."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "தேடல் பயனர்"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "பயனர்களைத் தேடு..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "ஒவ்வொரு"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "நிமிடம்(கள்)"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "மணி(கள்)"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "நாள்(கள்)"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "மாதம்(கள்)"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "ஆண்டு(கள்)"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "பக்க பண்புகள்"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "பக்க தகவல்"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "தலைப்பு"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "குறுகிய விளக்கம்"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "தலைப்பின் கீழே காட்டப்பட்டுள்ளது"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "பாதை & வகைப்படுத்தல்"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "மொழியிடம்"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "பாதை"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "எந்த முன்னணி அல்லது பின்தங்கிய சாய்வுகளையும் சேர்க்க வேண்டாம்."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "குறிச்சொற்கள்"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "உங்கள் பக்கங்களை வகைப்படுத்தவும், அவற்றை எளிதாகக் கண்டறியவும் குறிச்சொற்களைப் பயன்படுத்தவும்."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "வெளியீட்டு நிலை"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "வெளியிடப்பட்டது"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "இந்தப் பக்கத்தில் எழுத அனுமதி உள்ள பயனர்களுக்கு வெளியிடப்படாத பக்கங்கள் இன்னும் தெரியும்."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "முதல் வெளியிடு..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "தொடக்க தேதி இல்லாமல் காலியாக விடவும்"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "வெளியீட்டு முடிவடைகிறது..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "இறுதி தேதி இல்லாமல் காலியாக விடவும்"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "சேமிக்கப்படாத மாற்றங்களை நிராகரிக்கவா?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "உங்களிடம் சேமிக்கப்படாத மாற்றங்கள் உள்ளன. தொகுப்பானை விட்டு வெளியேறி, கடைசியாகச் சேமித்ததில் இருந்து நீங்கள் செய்த மாற்றங்களை நிராகரிக்க விரும்புகிறீர்களா?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "மாற்றங்களை புறக்கணி"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "இந்தப் பக்கத்திற்கு எந்த திருத்தியை நீங்கள் பயன்படுத்த விரும்புகிறீர்கள்?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "பக்கம் உருவாக்கப்பட்டவுடன் இதை மாற்ற முடியாது."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "சொத்துக்கள்"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "புதிய கோப்புறை"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "கோப்புறை பெயர்"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "{{namingRules}} சொத்துக் கோப்புறையைப் பின்பற்ற வேண்டும்."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "பெயரிடும் விதிகள்"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "நகர்த்து"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "மறுபெயரிடு"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "மேம்படுத்து"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "முன்னோட்டம்"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "பண்புகள்"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "இந்தச் சொத்து கோப்புறை காலியாக உள்ளது."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} கோப்புகள்"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "செருகு"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ஐடி"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "கோப்புப்பெயர்"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "கோப்பின் அளவு"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "கோப்பின் அளவு"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "சேர்க்கப்பட்டது"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "செயல்கள்"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "சொத்துகளைப் பதிவேற்று"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "இங்கே கோப்புகளை உலாவவும் அல்லது கைவிடவும்..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "தொலைதூர படத்தை எடு"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "பட சீரமைப்பு"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "சொத்தை மறுபெயரிடவும்"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "இந்தச் சொத்தின் புதிய பெயரை உள்ளிடவும்:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "சொத்தை நீக்கு"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "நீங்கள் சொத்தை நிச்சயமாக நீக்க விரும்புகிறீர்களா"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "இந்தச் செயலை மீள்விக்க முடியாது!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "சொத்துகளின் பட்டியல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "கோப்பு பதிவேற்றம் தோல்வியடைந்தது."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "சொத்து கோப்புறை வெற்றிகரமாக உருவாக்கப்பட்டது."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "சொத்து வெற்றிகரமாக மறுபெயரிடப்பட்டது."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "சொத்து வெற்றிகரமாக நீக்கப்பட்டது."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "பதிவேற்ற முதலில் ஒரு கோப்பைத் தேர்ந்தெடுக்க வேண்டும்!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "கொணரு"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "தொகுப்பிப்பானுக்குத் திரும்பு"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "தடித்தது"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "சாய்வெழுத்து"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "நடுக்கோடிட்டு அடி"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "தலைப்பு {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "சப்ஸ்கிரிப்ட்"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "சூப்பர்ஸ்கிரிப்ட்"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "தொகுதி மேற்கோள்"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "தகவல் மேற்கோள்"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "வெற்றி மேற்கோள்"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "எச்சரிக்கை மேற்கோள்"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "பிழை மேற்கோள்"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "வரிசைப்படுத்தப்படாத பட்டியல்"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "வரிசைப்படுத்தப்பட்ட பட்டியல்"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "உள்வரி நிரல்"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "விசைப்பலகை விசை"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "கிடைமட்ட பட்டை"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "முன்னோட்ட பலகத்தை மறை / காட்டு"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "இணைப்பைச் செருகு"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "சொத்துக்களை செருகு"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "தொகுதியைச் செருகு"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "நிரல் தொகுப்பைச் செருகு"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "வீடியோ / ஆடியோவை செருகு"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "வரைபடத்தைச் செருகு"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "கணித வெளிப்பாட்டைச் செருகு"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "அட்டவணை உதவி"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "கவனச்சிதறல் இல்லாத பயன்முறை"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "மார்க்டவுன் வடிவமைப்பு உதவி"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "{{path}} பக்கத்தின் மூலம் பார்க்கப்படுகிறது"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "சாதாரண காட்சிக்குத் திரும்பு"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ஐடி {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "மொழி"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "பகுப்பாய்வு"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "உங்கள் விக்கியில் பகுப்பாய்வு மற்றும் கண்காணிப்பு கருவிகளைச் சேர்க்கவும்"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "வழங்குபவர்கள்"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "வழங்குநர் உள்ளமைவு"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "இந்த வழங்குநர் நீங்கள் மாற்றியமைக்க கூடிய எந்த உள்ளமைவு தேர்வுகளையும் கொண்டிருக்கவில்லை"
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "வழங்குநர்களின் பட்டியல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "பகுப்பாய்வு உள்ளமைவு வெற்றிகரமாக சேமிக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "பராமரிப்பு மற்றும் இதர கருவிகள்"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "கருவிகள்"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "அங்கீகாரம்"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "அங்கீகாரம் / பயனர்களுக்கான பல்வேறு கருவிகள்"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "கேச்சியை (cache) நீக்கு"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "பல்வேறு கூறுகளின் கேச்சியை (cache) நீக்கவும்"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "GraphQL முடிவுப்புள்ளி"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Wiki.jsக்கான GraphQL முடிவுப்புள்ளியை மாற்றவும்"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Wiki.js 1.x இலிருந்து இறக்குமதி செய்யவும்"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "முந்தைய 1.x நிறுவலிலிருந்து தரவை நகர்த்தவும்"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "டெலிமெட்ரி"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "டெலிமெட்ரியை இயக்கவும்/முடக்கவும் அல்லது கிளையன்ட் ஐடியை மீட்டமைக்கவும்"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "கருத்துரைகள்"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "வெளியிடப்பட்டது"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "தனிமை"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "உலகளாவியவை"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "பக்கத்தை ஏற்றுகிறது..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "குறியீடு"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "பெயர்"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "சொந்தப் பெயர்"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "வலதிலிருந்து இடது"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "கிடைக்கும் தன்மை"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "பதிவிறக்கு"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "உள்ளடக்கம்"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "பக்கங்களுக்கான பல்வேறு கருவிகள்"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "படவுரு அமை"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "பக்கப்பட்டி வழிசெலுத்தலுக்குப் பயன்படுத்த வேண்டிய ஐகான்களின் தொகுப்பு."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "உங்கள் உலாவி காலாவதியானது. {{modernBrowser}} க்கு மேம்படுத்தவும்."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "நவீன உலாவி"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "பெயர்"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "ஆக்கியோர்"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "பதிவிறக்கு"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} பக்க உள்ளடக்கத்திற்கான நடைகளைச் சேர்க்கும் போது, அவற்றை {{cssClass}} வகுப்பிற்கு நீங்கள் பார்க்க வேண்டும். இதைத் தவிர்ப்பது தொகுப்பிப்பானின் அமைப்பை உடைக்கக்கூடும்!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "முன்மதி:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "தீம் விருப்பங்கள்"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "செயலில்"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "செயலில் இல்லை"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "சரிபார்க்கப்பட்டது"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "சரிபார்க்கப்படவில்லை"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "பயனரைத் திருத்து"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ஐடி {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "அடிப்படை தகவல்"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "மின்னஞ்சல்"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "காட்சி பெயர்"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "அங்கீகாரம்"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "வழங்குநர்"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "கடவுச்சொல்"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "கடவுச்சொல்லை மாற்று"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "புதிய கடவுச்சொல்"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "இரு காரணி அங்கீகாரம் (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "2FA ஐ நிலைமாற்று"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "வழங்குநர் ஐடி"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "பயனர் குழுக்கள்"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "இந்தப் பயனர் இதுவரை எந்தக் குழுவிற்கும் ஒதுக்கப்படவில்லை. ஒரு பயனருக்குக் குறைந்தபட்சம் ஒரு குழுவை நீங்கள் ஒதுக்க வேண்டும்."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "குழுவைத் தேர்ந்தெடு..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "ஒதுக்கு"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "விரிவாக்கப்பட்ட மெட்டாடேட்டா"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "இடம்"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "வேலை தலைப்பு"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "நேர மண்டலம்"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "பயனர் வெற்றிகரமாகப் புதுப்பிக்கப்பட்டார்."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "இந்தக் குழுவிற்கு பயனர் ஏற்கனவே ஒதுக்கப்பட்டுள்ளார்!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "இந்தச் சேமிப்பக இலக்கு {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "செயலில்"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "செயலில் இல்லை"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "செயல்களை இயக்கும் முன், இந்தச் சேமிப்பக இலக்கை இயக்கி, மாற்றங்களைப் பயன்படுத்த வேண்டும்."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "புதிய கடவுச்சொல்லை தேர்வு செய்யவும்"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "நீங்கள் ஒரு புதிய கடவுச்சொல்லை தேர்வு செய்ய வேண்டும்:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "புதிய கடவுச்சொல்"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "புதிய கடவுச்சொல்லை சரிபார்க்கவும்"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "கடவுச்சொல்லை மாற்று"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "கடவுச்சொல்லை மாற்றுகிறது..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "சமீபத்திய பக்கங்கள்"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "மிகவும் பிரபலமான பக்கங்கள்"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "தகவல்"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "திட்டமிடல்"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "சமூக"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "வகைப்படுத்தல்"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "சமூக அம்சங்கள்"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "கருத்துரைகளை அனுமதி"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "இந்தப் பக்கத்தில் கருத்து தெரிவிக்கும் திறன்களைச் செயல்படுத்து."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "மதிப்பீடுகளை அனுமதி"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "ஆசிரியர் தகவலைக் காட்டு"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "பகிர்தல் கருவிப்பட்டியை காட்டு"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "இந்தப் பக்கத்தைப் பகிரவும் அச்சிடவும் பொத்தான்கள் கொண்ட கருவிப்பட்டியைக் காட்டு"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "கடந்த பதிப்பு நேரத்துடன் பக்கத்தின் ஆசிரியரையும் காட்டு."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "இந்தப் பக்கத்தில் மதிப்பீட்டு திறன்களை இயக்கவும்."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "அல்லது தனிப்பயன் காட்சியை உருவாக்கவா?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "குறிச்சொற்கள்மூலம் உலாவு"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "தள வரைபடம்"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "பக்க செயல்கள்"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "தற்போதைய தேர்வு"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "தேர்வை அழிக்கவும்"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "ஒன்று அல்லது அதற்கு மேற்பட்ட குறிச்சொற்களைத் தேர்ந்தெடுக்கவும்"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "முடிவுகளுக்குள் தேடு..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "மொழியிடம்"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "வரிசை படுத்து"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "இடதுபுறத்தில் ஒன்று அல்லது அதற்கு மேற்பட்ட குறிச்சொற்களைத் தேர்ந்தெடுக்கவும்."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "பக்க முடிவுகளை மீட்டெடுக்கிறது..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "தேர்ந்தெடுக்கப்பட்ட குறிச்சொற்களைக் கொண்ட எந்தப் பக்கத்தையும் கண்டுபிடிக்க முடியவில்லை."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "தற்போதைய வடிகட்டுதல் விருப்பங்களுடன் பொருந்தக்கூடிய எந்தப் பக்கத்தையும் கண்டுபிடிக்க முடியவில்லை."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "கடைசியாகப் புதுப்பிக்கப்பட்டது {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "உருவாக்கிய தேதி"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ஐடி"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "கடைசியாக மாற்றப்பட்டது"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "பாதை"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "தலைப்பு"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "ஏதேனும்"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "கிட்ஹப் ஸ்பான்சர்கள் மூலம் வழங்குபவராகுங்கள் (விக்கி.ஜேஸில் முழுநேர வேலை செய்யும் முன்னணி டெவலப்பர் நிக்கோலஸ் ஜியார்டின் இலக்கை நேரடியாக ஆதரிக்கிறது)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "வழங்குபவராகுங்கள்"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "குறிச்சொற்கள்"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "SSL உள்ளமைவை நிர்வகிக்கவும்"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "வழங்குநர்"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "உங்களிடம் ஏற்கனவே உங்கள் சொந்த சான்றிதழ் இருந்தால் தனிப்பயன் சான்றிதழைத் தேர்ந்தெடுக்கவும்."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "டொமைன்"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "உங்கள் விக்கியைச் சுட்டிக்காட்டும் முழு தகுதி வாய்ந்த டொமைனை உள்ளிடவும். (எ.கா. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "வழங்குநர் விருப்பங்கள்"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "முடக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "லெட்ஸ் என்கிரிப்ட் (Let's Encrypt)"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "தனிப்பயன் சான்றிதழ்"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "முணையங்கள்"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "HTTP முணையம்"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "SSL அல்லாத முணையம் சேவையகம் HTTP கோரிக்கைகளுக்குக் கேட்கும். பொதுவாக 80 அல்லது 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "HTTPS முணையம்"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "SSL முணைய சேவையகம் HTTPS கோரிக்கைகளைக் கேட்கும். பொதுவாக 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "HTTP கோரிக்கைகளை HTTPSக்கு திருப்பிவிடவும்"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "HTTP முணையத்தில் உள்ள எந்தக் கோரிக்கைகளையும் HTTPS க்கு தானாகவே திருப்பிவிடும்."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "முணையங்கள் உள்ளமைவைத் தொடர உங்கள் உள்ளமைவுக் கோப்பு எழுதக்கூடியதாக இருக்க வேண்டும் என்பதை நினைவில் கொள்க."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "குறிப்பட உரலி"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "குறிப்படத்தை பயன்படுத்த ஒரு படத்தைக் குறிப்பிடவும். SVG, PNG, JPG ஆகியவை சதுர விகிதத்தில், 34x34 பிக்சல்கள் அல்லது பெரியதாக ஆதரிக்கப்படுகின்றன. புதிய படத்தைப் பதிவேற்ற வலது புறத்தில் உள்ள பொத்தானைக் கிளிக் செய்யவும்."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "பயனரை நீக்கவா?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "{{username}} பயனரை நிச்சயமாக நீக்க விரும்புகிறீர்களா?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "பயனர் புதுப்பி"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "இந்தப் பலகத்திலிருந்து நிர்வாகிகள் அல்லது விருந்தினர் குழுக்களுக்குப் பயனர்களை ஒதுக்க முடியாது என்பதை நினைவில் கொள்க."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "ஏற்கனவே உள்ளடக்கத்தை உருவாக்கிய பயனரை உங்களால் நீக்க முடியாது என்பதை நினைவில் கொள்க. அதற்குப் பதிலாக நீங்கள் பயனரைச் செயலிழக்கச் செய்ய வேண்டும் அல்லது அந்தப் பயனரால் உருவாக்கப்பட்ட அனைத்து உள்ளடக்கத்தையும் நீக்க வேண்டும்."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "ஸ்கிரிப்டுகள்"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "சேமித்தவுடன் CSS தானகவே குறைப்பு செய்யப்படும். சுற்றியுள்ள காட்சியமைப்புக் குறிச்சொற்களைச் சேர்க்க வேண்டாம், உண்மையான CSS குறியீடு மட்டும் சேர்க்கவும்."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "அனைவருக்கும் தெரியும்"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "தேர்ந்தெடுக்கப்பட்ட குழுக்களுக்குத் தெரியும்..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "பக்கத்தைத் தேர்ந்தெடு..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "வழிசெலுத்தல் முறை"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "தள மரம்"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "கிளாசிக் மரம் சார்ந்த வழிசெலுத்தல்"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "தனிப்பயன் வழிசெலுத்தல்"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "நிலையான வழிசெலுத்தல் பட்டியல் + தள மரம் பொத்தான்"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "எதுவுமில்லை"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "தள வழிசெலுத்தலை முடக்கு"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "பயனர் வெற்றிகரமாகச் சரிபார்க்கப்பட்டார்."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "பயனர் வெற்றிகரமாகச் செயல்படுத்தப்பட்டார்."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "பயனர் வெற்றிகரமாகச் செயலிழப்பு செய்யப்பட்டார்."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "உரை முதலில் தேர்ந்தெடுக்கப்பட வேண்டும்!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "சான்றிதழைப் புதுப்பி"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "சான்றிதழ் நிலை"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "சான்றிதழ் காலாவதி"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "சந்தாதாரர் மின்னஞ்சல்"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "தற்போதைய நிலை"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "இயக்கு"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "அணைத்திடு"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "சான்றிதழைப் புதுப்பிக்கிறது..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "இந்தப் பக்கத்தை விட்டு வெளியேற வேண்டாம்."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "சான்றிதழ் வெற்றிகரமாகப் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "HTTP திசைதிருப்பல் வெற்றிகரமாக மாற்றப்பட்டது."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "பக்க குறிச்சொற்களை நிர்வகிக்கவும்"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "காட்ட குறிச்சொற்கள் இல்லை."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "குறிச்சொல்லைத் திருத்து"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "குறிச்சொல்"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "லேபிள்"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "உருவாக்கப்பட்டது {{created}} மற்றும் கடைசியாகப் புதுப்பிக்கப்பட்டது {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "இந்தக் குறிச்சொல்லை நீக்கு"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "இடது புறத்தில் உள்ள பட்டியலிலிருந்து ஒரு குறிச்சொல்லைத் தேர்ந்தெடுக்கவும்."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "தொடங்குவதற்கு, பக்கத்தில் ஒரு குறிச்சொல்லைச் சேர்க்கவும்."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "குறிச்சொற்கள் புதுப்பிக்கப்பட்டன."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "குறிச்சொல் வெற்றிகரமாக நீக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "குறிச்சொல் வெற்றிகரமாகச் சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "வடிகட்டி..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "இணைக்கப்பட்ட பக்கங்களைக் காண்க"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "குறிச்சொல்லை நீக்கவா?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "{{tag}} குறிச்சொல்லை நிச்சயமாக நீக்க விரும்புகிறீர்களா? குறிச்சொல் அனைத்து பக்கங்களிலிருந்தும் துண்டிக்கப்படும்."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "API ஐ அணுக விசைகளை நிர்வகிக்கவும்"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API இயக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API முடக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "API ஐ இயக்கு"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "API ஐ முடக்கு"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "புதிய API விசை"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "பெயர்"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "விசை முடிவு"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "காலாவதி"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "உருவாக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "கடைசியாகப் புதுப்பிக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "திரும்பப் பெறு"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "இதுவரை API விசைகள் எதுவும் உருவாக்கப்படவில்லை."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "API விசையைத் திரும்பப்பெறவா?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "{{name}} விசையை நிச்சயமாகத் திரும்பப் பெற விரும்புகிறீர்களா? இந்தச் செயலைச் செயல்தவிர்க்க முடியாது!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "திரும்பப் பெறு"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "API விசைகளின் பட்டியல் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "விசை வெற்றிகரமாகத் திரும்பப் பெறப்பட்டது."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "புதிய API விசை"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "API விசை வெற்றிகரமாக உருவாக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "பெயர் விடுபட்டுள்ளது அல்லது தவறானது."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "நீங்கள் ஒரு குழுவைத் தேர்ந்தெடுக்க வேண்டும்."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "விருந்தினர்கள் குழுவை API விசைகளுக்குப் பயன்படுத்த முடியாது."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "இந்த விசையின் நோக்கம்"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "பெயர்"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "காலாவதி"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "காலாவதியைப் பொருட்படுத்தாமல் எப்போது வேண்டுமானாலும் நீங்கள் விசையைத் திரும்பப் பெறலாம்."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "அனுமதி நோக்கங்கள்"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "முழு அணுகல்"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "அல்லது குழு அனுமதிகளைப் பயன்படுத்தவும்..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "உருவாக்கு"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "குழு"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "தேர்ந்தெடுக்கப்பட்ட குழுவில் உள்ள அதே அனுமதிகளை API விசையும் கொண்டிருக்கும்."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 நாட்கள்"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 நாட்கள்"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 நாட்கள்"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 ஆண்டு"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 ஆண்டுகள்"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "கீழே காட்டப்பட்டுள்ள விசையை {{bold}} ஆக நகலெடுக்கவும்"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "அது மீண்டும் காட்டப்படாது"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API வெற்றிகரமாக இயக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API வெற்றிகரமாக முடக்கப்பட்டது."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "சேமிக்கப்பட்டது"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "எதுவுமில்லை"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "கிரியேட்டிவ் காமன்ஸ் பண்புக்கூறு உரிமம் ( CC-BY)"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "கிரியேட்டிவ் காமன்ஸ் பண்புக்கூறு-ShareAlike உரிமம் (CC-BY-SA)"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "கிரியேட்டிவ் காமன்ஸ் பண்புக்கூறு-NoDerivs உரிமம் (CC-BY-ND)"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "கிரியேட்டிவ் காமன்ஸ் பண்புக்கூறு-வணிகம் சாரா உரிமம் (CC-BY-NC)"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "கிரியேட்டிவ் காமன்ஸ் பண்புக்கூறு-வணிகமற்ற-பகிர்வு உரிமம் (CC-BY-NC-SA)"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "கிரியேட்டிவ் காமன்ஸ் பண்புக்கூறு-வணிகம் சாராத-NoDerivs உரிமம் (CC-BY-NC-ND)"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "பொதுமை (Public Domain)"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "உள்ளடக்க உரிமம்"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "அனைத்து உள்ளடக்கப் பக்கங்களின் அடிக்குறிப்பில் உரிமம் காட்டப்பட்டுள்ளது."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "உள்ளடக்கம் {{license}} இன் கீழ், {{company}} இடமிருந்து கிடைக்கிறது."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "பக்க உள்ளடக்கத்தை நீங்கள் பதிவிறக்க முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "இந்தப் பக்கத்தின் பதிப்பிற்கான உள்ளடக்கத்தை நீங்கள் பதிவிறக்க முடியாது."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "பக்கத்தின் இந்தப் பதிப்பின் மூலத்தை உங்களால் பார்க்க முடியாது."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "மூலத்தை {{date}} பக்கத்தின் {{path}} ஆகப் பார்க்கிறது"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "பதிப்பு ஐடி {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "பக்க பதிப்பை மீட்டெடுக்கவா?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "இந்தப் பக்க உள்ளடக்கத்தை {{date}} அன்று இருந்ததைப் போலவே மீட்டெடுக்க விரும்புகிறீர்களா? தற்போதைய வரலாற்றின் மேல் இந்தப் பதிப்பு நகலெடுக்கப்படும். எனவே, புதிய பதிப்புகள் இன்னும் பாதுகாக்கப்படும்."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "மீட்டெடு"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "பக்க பதிப்பு வெற்றிகரமாக மீட்டெடுக்கப்பட்டது!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} எழுத்துக்கள், {{words}} சொற்கள்"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "சேமிப்பு முரணைத் தீர்க்கவும்"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "அகநிலையை பயன்படுத்து"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "தொலைநிலையை பயன்படுத்து"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "அக மாற்றங்களைப் புறக்கணி மற்றும் சமீபத்திய பதிப்பைப் பயன்படுத்தவும்"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "இடது பலகத்தில் உள்ளடக்கத்தைப் பயன்படுத்து"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "சமீபத்திய பதிப்பைக் காண்க"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "இந்தப் பக்கத்தின் மிகச் சமீபத்திய பதிப்பு {{authorName}} ஆல், {{date}} அன்று சேமிக்கப்பட்டது"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "நீங்கள் என்ன செய்ய விரும்புகிறீர்கள்?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "உங்கள் தற்போதைய உள்ளூர் பதிப்பைப் பயன்படுத்தவும் மற்றும் சமீபத்திய மாற்றங்களைப் புறக்கணிக்கவும்."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "தொலைநிலை பதிப்பை (சமீபத்தியது) பயன்படுத்தி, உங்கள் மாற்றங்களைப் புறக்கணிக்கவும்."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "தொலைதூர பதிப்புடன் மேலெழுதவா?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "உங்கள் தற்போதைய பதிப்பைச் சமீபத்திய தொலைநிலை உள்ளடக்கத்துடன் மாற்றவதில் உறுதியாக உள்ளீர்களா? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "உங்கள் தற்போதைய திருத்தங்கள் இழக்கப்படும்."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "உறுதிப்படுத்து"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "உள்ளூர் பதிப்பு {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(திருத்தக்கூடியது)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(படிக்க மட்டும்)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "தொலைநிலை பதிப்பு {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "உங்கள் தற்போதைய திருத்தம், {{date}} இலிருந்து பக்கப் பதிப்பை அடிப்படையாகக் கொண்டது"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "கடைசியாகத் திருத்தியது {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "தலைப்பு:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "விளக்கவுரை:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "உங்களிடம் சேமிக்கப்படாத திருத்தங்கள் உள்ளன. தொகுப்பிப்பானை விட்டு வெளியேற விரும்புகிறீர்களா?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "சேமிப்பு முரண்! மற்றொரு பயனர் ஏற்கனவே இந்தப் பக்கத்தை மாற்றியுள்ளார்."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "போலி நகல்"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "காட்சி பெயர்"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "இடம்"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "வேலை தலைப்பு"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "நேர மண்டலம்"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "சுயவிவரம்"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "எனது தனிப்பட்ட தகவல்"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "எனது தகவல்"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "பொது சுயவிவரத்தைக் காண்"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "அங்கீகாரம்"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "வழங்குநர்"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "கடவுச்சொல்லை மாற்று"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "தற்போதைய கடவுச்சொல்"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "புதிய கடவுச்சொல்"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "புதிய கடவு சொல்லை உறுதி செய்"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "குழுக்கள்"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "செயல்பாடு"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "இதில் இணைந்தது"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "சுயவிவரம் கடைசியாகப் புதுப்பிக்கப்பட்டது"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "கடைசியாக உள்நுழைந்தது"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "உருவாக்கப்பட்ட பக்கங்கள்"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "இடப்பட்ட கருத்துரைகள்"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "சுயவிவரம் வெற்றிகரமாகச் சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "கடவுச்சொல் வெற்றிகரமாக மாற்றப்பட்டது."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "பக்கங்கள்"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "கருத்துரைகள்"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "நான் உருவாக்கிய அல்லது கடைசியாக மாற்றியமைக்கப்பட்ட பக்கங்களின் பட்டியல்"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "காண்பிக்க பக்கங்கள் இல்லை."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "பக்க பட்டியல் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "தலைப்பு"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "பாதை"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "உருவாக்கப்பட்டது"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "கடைசியாகப் புதுப்பிக்கப்பட்டது"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "கடைசி உள்நுழைவுகள்"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "உலாவவு"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "முதன்மை பட்டியல்"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "நடப்பு கோப்பகம்"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(வேர்)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "மொழியிடத்திலிருந்து நகலெடு..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "மூல மொழியிடம்"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "வழிசெலுத்தல் உருப்படிகள் நகலெடுக்கப்படும் மொழியிடம்."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "நகலெடு"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "உருப்படிகள் நகலெடுக்கப்படும் மொழியிடத்தைத் தேர்ந்தெடுக்கவும். செயல்பாட்டில் உள்ள உருப்படிகளின் தற்போதைய உருப்படி பட்டியலில் இயக்கத்தில் உள்ள மொழியிடத்தில் சேர்க்கப்படும்."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "நிலையான வழிசெலுத்தல்"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "நிலையான வழிசெலுத்தல் மெனு மட்டும்"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "விருப்ப தேர்வுகள்"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "தேதி வடிவம்"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "இயல்புநிலை மொழியிடம்"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "தோற்றம்"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "தள இயல்புநிலை"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "வெளிச்சம்"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "இருள்"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "SSL சான்றிதழைச் சரிபார்க்கவும்"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "சில ஹோஸ்ட்களுக்கு SSL சான்றிதழ் சரிபார்ப்பை முடக்க வேண்டும். சரியான பாதுகாப்பிற்காக இயக்கத்திலேயே வைக்கவும்."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "வெளிப்புற இணைப்பு (புதிய சாளரம்)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "பாதுகாப்பு"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "அதிகபட்ச பதிவேற்ற அளவு"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "ஒரு பதிவேற்றத்திற்கு அதிகபட்ச கோப்புகள்"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "ஒரு தொகுப்பில் எத்தனை கோப்புகளைப் பதிவேற்ற முடியும்?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "ஒரு கோப்பிற்கான அதிகபட்ச அளவு."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "பைட்டுகள்"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "கோப்புகள்"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "பதிவேற்றங்கள்"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "இந்த அமைப்புகள் Wiki.jsஐ மட்டுமே பாதிக்கும். நீங்கள் ரிவர்ஸ்-ப்ராக்ஸியைப் பயன்படுத்துகிறீர்கள் என்றால் (எ.கா. nginx, apache, Cloudflare), நீங்கள் அதன் அமைப்புகளையும் பொருந்துமாறு மாற்ற வேண்டும்."
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "பாதுகாப்பு அமைப்புகளை உள்ளமைக்கவும்"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "நீட்டிப்புகள்"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "கூடுதல் செயல்பாட்டிற்கு நீட்டிப்புகளை நிறுவவும்"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "வழங்குநர்"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "உங்கள் விக்கிப் பக்கங்களில் விவாதங்களைச் சேர்க்கவும்"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "வழங்குநர் உள்ளமைவு"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "இந்த வழங்குநர் நீங்கள் மாற்றியமைக்க கூடிய எந்த உள்ளமைவு தேர்வுகளையும் கொண்டிருக்கவில்லை"
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "இந்தப் பயனரால் உருவாக்கப்பட்ட எந்த உள்ளடக்கமும் (பக்கங்கள், பதிவேற்றங்கள், கருத்துகள் போன்றவை) கீழே தேர்ந்தெடுக்கப்பட்ட பயனருக்கு மீண்டும் ஒதுக்கப்படும். தற்போதைய செயலில் உள்ள பயனருக்கு உள்ளடக்கம் மறுஒதுக்கீடு செய்யப்படுவதை நீங்கள் விரும்பவில்லை என்றால், போலி இலக்குப் பயனரை (எ.கா. நீக்கப்பட்ட பயனர்) உருவாக்கப் பரிந்துரைக்கப்படுகிறது."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "செயலில் உள்ள உத்திகள்"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "உத்தியைச் சேர்க்கவும்"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "காட்சி விதங்கள்"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "உங்கள் ஜாவாஸ்கிரிப்ட் நிரலை HTML-ன் script குறிச்சொற்களுக்கு இடையிலிட வேண்டும்."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "இந்தப் பக்கம் வெளியிடப்படவில்லை."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "கருத்துரைகள்"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "ஒரு புதிய கருத்துரையை எழுது..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "உங்கள் பெயர்"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "உங்கள் மின்னஞ்சல் முகவரி"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "மார்க்டவுன் வடிவமைப்பு"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "கருத்துரையை இடுகையிடு"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "கருத்துரைகளை ஏற்றுகிறது..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "{{name}} ஆக இடுகையிடு"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "கருத்திடும் முதல் நபராக இருங்கள்."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "இன்னும் கருத்துரை இல்லை."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "கருத்துரையைப் புதுப்பி"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "நீக்குவதை உறுதிப்படுத்தவும்"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "இந்தக் கருத்துரையை நிரந்தரமாக நீக்குவதில் உறுதியாக உள்ளீர்களா?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "இந்தச் செயலை மீள்விக்க முடியாது!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "மாற்றப்பட்டது {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "புதிய கருத்துரை வெற்றிகரமாக வெளியிடப்பட்டது."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "கருத்து காலியாக அல்லது மிகவும் சிறியதாக உள்ளது!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "கருத்துரை வெற்றிகரமாகப் புதுப்பிக்கப்பட்டது."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "கருத்துரை வெற்றிகரமாக நீக்கப்பட்டது."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "எழுத்துப்பிழை சரிபார்ப்பை நிலைமாற்று"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "உள்நுழை"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "உள்நுழைவு திரை"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "JWT உள்ளமைவு"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "உள்நுழைவுத் திரையை கடந்து செல்லவும்"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "பயனர் தானாகவே முதல் அங்கீகார வழங்குநருக்குத் திருப்பி விடப்பட வேண்டுமா."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "உள்நுழைவு பின்னணி பட உரலி (URL)"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "உள்நுழைவு பின்னணியாகப் பயன்படுத்த ஒரு படத்தைக் குறிப்பிடவும். PNG மற்றும் JPG ஆதரிக்கப்படுகிறது, 1920x1080 பரிந்துரைக்கப்படுகிறது. இயல்புநிலைக்கு காலியாக விடவும். புதிய படத்தைப் பதிவேற்ற வலது புறத்தில் உள்ள பொத்தானைக் கிளிக் செய்யவும். தேர்ந்தெடுக்கப்பட்ட படத்தை விருந்தினர்கள் குழு படிக்க அணுக வேண்டும் என்பதை நினைவில் கொள்க!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "உள்ளூர் அங்கீகார வழங்குநரை மறை"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "உள்நுழைவுத் திரையில் உள்ளூர் அங்கீகார வழங்குநரைக் காட்ட வேண்டாம். தற்காலிகமாகப் பயன்படுத்த அனைத்தையும் உரலியில் (URL) சேர்க்கவும்."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "பாதுகாப்பு"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "2FA ஐச் செயல்படுத்தவும்"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "பயனர் / கடவுச்சொல் படிவத்துடன் அங்கீகார வழங்குநரைப் பயன்படுத்தும் போது, இரு காரணி அங்கீகாரத்தைப் பயன்படுத்தும்படி அனைத்துப் பயனர்களையும் கட்டாயப்படுத்தவும்."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "விவாதத்தைப் பார்க்கவும்"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "புதிய கருத்துரை"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "கருத்துரை உள்ளடக்கம்"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "உரையாடு"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "குறிச்சொற்கள்"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "குறிச்சொற்களுக்குப் பொருந்தும் பக்கங்கள்"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "மேலே திரும்பிச் செல்"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "பயனர் பெயர்"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "வெளியேறு"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "பக்கமாக்கல் குழாயை உள்ளமைக்கவும்"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "தளத்தின் தலைப்பில் செல்லுபடியாகாத எழுத்துகள் உள்ளன."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "தள உள்ளமைவு வெற்றிகரமாகச் சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA வெற்றிகரமாக முடக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA வெற்றிகரமாக இயக்கப்பட்டது."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "கடவுச்சொல் மீட்டமைப்பைக் கோருகிறது..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "கடவுச்சொல் மீட்டமைப்பு வழிமுறைகளை உங்கள் மின்னஞ்சல்களில் பார்க்கவும்!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "செயலில்"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "இந்த உத்தியைப் பயன்படுத்தி பயனர்கள் உள்நுழைய முடியுமா?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "காட்சி பெயர்"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "இந்த அங்கீகார உத்திக்கான இறுதிப் பயனருக்குக் காட்டப்படும் தலைப்பு."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "அங்கீகார வழங்குநரைத் தேர்ந்தெடுக்கவும்"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "உங்களது நம்பிக்கைச்சான்றுகளை உள்ளிடவும்"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "உங்களது கடவுச்சொல் மறந்துவிட்டது"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "உங்கள் நம்பகமான சாதனத்திலிருந்து உருவாக்கப்பட்ட பாதுகாப்புக் குறியீட்டை உள்ளிடவும்:"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "உங்கள் நிர்வாகி உங்களது கணக்கை இயக்க இரு காரணி அங்கிகாரத்தை (2FA) தேவைப்படுத்தியுள்ளார்"
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1) உங்கள் மொபைல் 2FA பயன்பாட்டிலிருந்து கீழே உள்ள QR குறியீட்டை ஸ்கேன் செய்யவும்:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) உங்கள் நம்பகமான சாதனத்திலிருந்து உருவாக்கப்பட்ட பாதுகாப்புக் குறியீட்டை உள்ளிடவும்:"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "தேர்ந்தெடு"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "புதிய பக்க இருப்பிடத்தைத் தேர்ந்தெடு"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "பக்க இருப்பிடத்தை நகர்த்து/ மறுபெயரிடு"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "ஒரு பக்கத்தைத் தேர்ந்தெடு"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "மெய்நிகர் கோப்புறைகள்"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "பக்கங்கள்"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "இந்தக் கோப்புறை காலியாக உள்ளது."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "உருமாற்று"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "பக்கத்தை உருமாற்று"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "{{title}} பக்கத்தில் பயன்படுத்தி முன்னோக்கிச் செல்ல நீங்கள் விரும்பும் தொகுப்பிப்பானை தேர்ந்தெடுக்கவும்"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "இந்தப் பக்கம் புதிதாகத் தேர்ந்தெடுக்கப்பட்ட தொகுப்பிப்பானின் வடிவமைப்பிற்கு மாற்றப்படும். மாற்றத்தின் விளைவாக வடிவமைத்தல் அல்லது மாற்றப்படாத உள்ளடக்கங்களை இழக்க நேரிடலாம்"
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "உருமாற்று"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "நிர்வாகம்"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "வட்டுக்கு ஏற்றுமதி செய்"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "காப்புப்பிரதி அல்லது இடம்பெயர்வுக்காக உள்ளடக்கங்களை டார்பாலில் சேமி"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "TOC"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "பொருளடக்கம்"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": "தள இயல்புநிலைகளைப் பயன்படுத்து"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": "TOC தலைப்பு நிலைகள்"
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": "பொருளடக்க அட்டவணை தேர்ந்தெடுக்கப்பட்ட மட்டங்களிலிருந்தும் மேலேயும் தலைப்புகளைக் காண்பிக்கும்."
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": "இயல்புநிலை TOC தலைப்பு நிலைகள்"
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": "பொருளடக்க அட்டவணை முன்னிருப்பாகத் தேர்ந்தெடுக்கப்பட்ட நிலைகளிலிருந்து தலைப்புகள்வரை காண்பிக்கும்."
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": "கிளையண்ட் ஹோஸ்ட்பெயரை அடையாளம் காணுதல்"
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": "உங்கள் அஞ்சலை அடையாளம் காண SMTP சேவையகத்திற்கு அனுப்ப ஒரு விருப்பப் பெயர். சேவையக புரவலன் பெயரைப் பயன்படுத்தக் காலியாக விடவும். Google பணிநிர்வாக வாடிக்கையாளர்களுக்கு, இது உங்கள் முதன்மை டொமைன் பெயராக இருக்க வேண்டும்."
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": "பக்க நீட்டிப்புகள்"
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": "பக்கங்களாகக் கருதப்படும் URL நீட்டிப்புகளின் காற்புள்ளி-பிரிக்கப்பட்ட பட்டியல். எடுத்துக்காட்டாக, md ஐச் சேர்ப்பது /foobar.md/foobar-ஐப் போலவே சிகிச்சையளிக்கும்."
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": "பொத்தான் தளத்தின் பெயர்"
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": "திருத்து பொத்தானில் காண்பிக்க வேண்டிய வெளிப்புற தளத்தின் பெயர். \"இயக்கு\" முன்னொட்டை சேர்க்க வேண்டாம்."
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "பொத்தான் படவுரு"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": "திருத்து பொத்தானில் காண்பிக்க வேண்டிய படவுரு. எடுத்துக்காட்டாக, Mdi-github GitHub படவுருவை காண்பிக்க."
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "பொத்தான் உரலி"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": "வெளிப்புற களஞ்சியத்தில் உள்ள பக்கத்திற்கான உரலி. கோப்புப் பெயர் சேர்க்கப்பட வேண்டிய இடத்தில் {filename} ஒதுக்கிடத்தைப் பயன்படுத்தவும். (எ.கா. https://github.com/foo/bar/blob/main/ {filename} )"
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "குறுக்குவழிகளைத் திருத்து"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": "FAB விரைவு திருத்து பட்டியல்"
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": "திரையின் கீழ் வலது மூலையில் வேகத் தட்டச்சு பட்டியுடன் திருத்து மிதக்கும் செயல் பொத்தானை (FAB) காண்பி."
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": "பட்டியல் பட்டியைத் திருத்து"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": "திருத்து பட்டியல் பட்டியைக் காண்பி"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": "பக்க தலைப்பில் திருத்து பட்டியல் பட்டியைக் காட்டு"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "திருத்து பொத்தானைக் காண்பி"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": "தற்போதைய பக்கத்தைத் திருத்தவதற்கான பொத்தானைக் காண்பி"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": "வெளிப்புறத் திருத்து பொத்தானைக் காண்பி"
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": "பயனர்கள் பொது உறவுகளைத் தற்போதைய பக்கத்தில் திருத்தவதற்கான அல்லது சமர்பிப்பதற்கான வெளிப்புற களஞ்சியத்துடன் இணைக்கும் பொத்தானைக் காண்பி"
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "{{name}} ல் திருத்து"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": "கருத்துகள் உள்ளமைவு வெற்றிகரமாக சேமிக்கப்பட்டது."
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": "அடிக்குறிப்பு மேலெழுதல்"
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": "தேவைப்பட்டால், நீங்கள் விரும்பும் செய்தியுடன் அடிக்குறிப்பு உரையை மாற்றவும். மேலே உள்ள உரிமங்கள் எதுவும் பொருத்தமானதாக இல்லாவிட்டால் பயனுள்ளதாக இருக்கும்."
+                }
+            ]
+        }
+    }
+}

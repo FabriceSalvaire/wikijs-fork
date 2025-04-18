@@ -1,0 +1,3756 @@
+{
+    "data": {
+        "localization": {
+            "strings": [
+                {
+                    "key": "common:footer.poweredBy",
+                    "value": "Didukung oleh"
+                },
+                {
+                    "key": "auth:loginRequired",
+                    "value": "Login dibutuhkan"
+                },
+                {
+                    "key": "auth:fields.emailUser",
+                    "value": "Email / Nama Pengguna"
+                },
+                {
+                    "key": "auth:fields.password",
+                    "value": "Kata Sandi"
+                },
+                {
+                    "key": "auth:actions.login",
+                    "value": "Log In"
+                },
+                {
+                    "key": "auth:errors.invalidLogin",
+                    "value": "Login Tidak Valid"
+                },
+                {
+                    "key": "auth:errors.invalidLoginMsg",
+                    "value": "Email atau kata sandi tidak valid."
+                },
+                {
+                    "key": "auth:errors.invalidUserEmail",
+                    "value": "Email Pengguna Tidak Valid"
+                },
+                {
+                    "key": "auth:errors.loginError",
+                    "value": "Kesalahan login"
+                },
+                {
+                    "key": "auth:errors.notYetAuthorized",
+                    "value": "Anda belum diizinkan login ke situs ini."
+                },
+                {
+                    "key": "auth:errors.tooManyAttempts",
+                    "value": "Terlalu banyak upaya!"
+                },
+                {
+                    "key": "auth:errors.tooManyAttemptsMsg",
+                    "value": "Anda telah melakukan terlalu banyak upaya yang gagal dalam waktu singkat, silakan coba lagi {{time}} ."
+                },
+                {
+                    "key": "auth:errors.userNotFound",
+                    "value": "Pengguna tidak ditemukan"
+                },
+                {
+                    "key": "auth:providers.local",
+                    "value": "Lokal"
+                },
+                {
+                    "key": "auth:providers.windowslive",
+                    "value": "Akun Microsoft"
+                },
+                {
+                    "key": "auth:providers.azure",
+                    "value": "Azure Active Directory"
+                },
+                {
+                    "key": "auth:providers.google",
+                    "value": "Google ID"
+                },
+                {
+                    "key": "auth:providers.facebook",
+                    "value": "Facebook"
+                },
+                {
+                    "key": "auth:providers.github",
+                    "value": "GitHub"
+                },
+                {
+                    "key": "auth:providers.slack",
+                    "value": "Slack"
+                },
+                {
+                    "key": "auth:providers.ldap",
+                    "value": "LDAP / Active Directory"
+                },
+                {
+                    "key": "auth:tfa.title",
+                    "value": "Autentikasi Dua Faktor"
+                },
+                {
+                    "key": "auth:tfa.subtitle",
+                    "value": "Diperlukan kode keamanan:"
+                },
+                {
+                    "key": "auth:tfa.placeholder",
+                    "value": "XXXXXX"
+                },
+                {
+                    "key": "auth:tfa.verifyToken",
+                    "value": "Verifikasi"
+                },
+                {
+                    "key": "admin:dashboard.title",
+                    "value": "Dasbor"
+                },
+                {
+                    "key": "admin:general.title",
+                    "value": "Umum"
+                },
+                {
+                    "key": "admin:locale.title",
+                    "value": "Bahasa"
+                },
+                {
+                    "key": "admin:stats.title",
+                    "value": "Statistik"
+                },
+                {
+                    "key": "admin:theme.title",
+                    "value": "Tema"
+                },
+                {
+                    "key": "admin:groups.title",
+                    "value": "Grup"
+                },
+                {
+                    "key": "admin:users.title",
+                    "value": "Pengguna"
+                },
+                {
+                    "key": "admin:auth.title",
+                    "value": "Autentikasi"
+                },
+                {
+                    "key": "admin:editor.title",
+                    "value": "Editor"
+                },
+                {
+                    "key": "admin:logging.title",
+                    "value": "Logging"
+                },
+                {
+                    "key": "admin:rendering.title",
+                    "value": "Rendering"
+                },
+                {
+                    "key": "admin:search.title",
+                    "value": "Mesin Pencari"
+                },
+                {
+                    "key": "admin:storage.title",
+                    "value": "Penyimpanan"
+                },
+                {
+                    "key": "admin:api.title",
+                    "value": "Akses API"
+                },
+                {
+                    "key": "admin:system.title",
+                    "value": "Info Sistem"
+                },
+                {
+                    "key": "admin:utilities.title",
+                    "value": "Utilitas"
+                },
+                {
+                    "key": "admin:dev.title",
+                    "value": "Alat Pengembang"
+                },
+                {
+                    "key": "admin:contribute.title",
+                    "value": "Berkontribusi ke Wiki.js"
+                },
+                {
+                    "key": "admin:general.subtitle",
+                    "value": "Pengaturan utama wiki anda"
+                },
+                {
+                    "key": "admin:general.siteInfo",
+                    "value": "Info Situs"
+                },
+                {
+                    "key": "admin:general.siteBranding",
+                    "value": "Pencitraan Situs"
+                },
+                {
+                    "key": "admin:nav.site",
+                    "value": "Situs"
+                },
+                {
+                    "key": "admin:nav.users",
+                    "value": "Pengguna"
+                },
+                {
+                    "key": "admin:nav.modules",
+                    "value": "Modul"
+                },
+                {
+                    "key": "admin:nav.system",
+                    "value": "Sistem"
+                },
+                {
+                    "key": "admin:dashboard.subtitle",
+                    "value": "Wiki.js"
+                },
+                {
+                    "key": "admin:locale.subtitle",
+                    "value": "Tetapkan opsi bahasa untuk wiki anda"
+                },
+                {
+                    "key": "admin:locale.settings",
+                    "value": "Pengaturan Bahasa"
+                },
+                {
+                    "key": "admin:locale.namespacing",
+                    "value": "Penempatan Nama Multibahasa"
+                },
+                {
+                    "key": "admin:locale.downloadTitle",
+                    "value": "Unduh Bahasa"
+                },
+                {
+                    "key": "admin:locale.base.labelWithNS",
+                    "value": "Dasar Lokal"
+                },
+                {
+                    "key": "admin:locale.base.hint",
+                    "value": "Semua elemen teks UI akan ditampilkan dalam bahasa yang dipilih."
+                },
+                {
+                    "key": "admin:locale.autoUpdate.label",
+                    "value": "Perbarui Secara Otomatis"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hintWithNS",
+                    "value": "Secara otomatis mengunduh pembaruan ke semua ruang nama yang diaktifkan di bawah ini."
+                },
+                {
+                    "key": "admin:locale.namespaces.label",
+                    "value": "Ruang Nama Multibahasa"
+                },
+                {
+                    "key": "admin:locale.namespaces.hint",
+                    "value": "Mengaktifkan beberapa versi bahasa pada halaman yang sama."
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.label",
+                    "value": "Ruang Nama Aktif"
+                },
+                {
+                    "key": "admin:locale.activeNamespaces.hint",
+                    "value": "Daftar bahasa yang diaktifkan untuk ruang nama multibahasa. Bahasa dasar yang didefinisikan di atas akan selalu dimasukkan, tanpa memperhatikan pilihan ini."
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.title",
+                    "value": "Semua jalur akan diawali dengan kode bahasa. (mis. /{{langCode}}/nama-halaman)"
+                },
+                {
+                    "key": "admin:locale.namespacingPrefixWarning.subtitle",
+                    "value": "Jalur tanpa kode bahasa akan secara otomatis diarahkan ke bahasa dasar yang ditentukan di atas."
+                },
+                {
+                    "key": "common:actions.save",
+                    "value": "Simpan"
+                },
+                {
+                    "key": "common:actions.cancel",
+                    "value": "Batal"
+                },
+                {
+                    "key": "common:actions.download",
+                    "value": "Unduh"
+                },
+                {
+                    "key": "common:actions.upload",
+                    "value": "Unggah"
+                },
+                {
+                    "key": "common:actions.discard",
+                    "value": "Buang"
+                },
+                {
+                    "key": "common:actions.clear",
+                    "value": "Hapus"
+                },
+                {
+                    "key": "common:actions.create",
+                    "value": "Buat"
+                },
+                {
+                    "key": "common:actions.edit",
+                    "value": "Edit"
+                },
+                {
+                    "key": "common:actions.delete",
+                    "value": "Hapus"
+                },
+                {
+                    "key": "common:actions.refresh",
+                    "value": "Segarkan"
+                },
+                {
+                    "key": "common:actions.saveChanges",
+                    "value": "Simpan Perubahan"
+                },
+                {
+                    "key": "common:actions.proceed",
+                    "value": "Lanjutkan"
+                },
+                {
+                    "key": "admin:locale.base.label",
+                    "value": "Bahasa Situs"
+                },
+                {
+                    "key": "admin:locale.autoUpdate.hint",
+                    "value": "Secara otomatis mengunduh pembaruan ke bahasa ini saat tersedia."
+                },
+                {
+                    "key": "admin:system.subtitle",
+                    "value": "Informasi tentang sistem anda"
+                },
+                {
+                    "key": "admin:system.hostInfo",
+                    "value": "Informasi Host"
+                },
+                {
+                    "key": "admin:system.currentVersion",
+                    "value": "Versi Sekarang"
+                },
+                {
+                    "key": "admin:system.latestVersion",
+                    "value": "Versi Terbaru"
+                },
+                {
+                    "key": "admin:system.published",
+                    "value": "Diterbitkan"
+                },
+                {
+                    "key": "admin:system.os",
+                    "value": "Sistem Operasi"
+                },
+                {
+                    "key": "admin:system.hostname",
+                    "value": "Nama Host"
+                },
+                {
+                    "key": "admin:system.cpuCores",
+                    "value": "Core CPU"
+                },
+                {
+                    "key": "admin:system.totalRAM",
+                    "value": "Jumlah RAM"
+                },
+                {
+                    "key": "admin:system.workingDirectory",
+                    "value": "Direktori Kerja"
+                },
+                {
+                    "key": "admin:system.configFile",
+                    "value": "File Konfigurasi"
+                },
+                {
+                    "key": "admin:system.ramUsage",
+                    "value": "Penggunaan RAM: {{used}} / {{total}}"
+                },
+                {
+                    "key": "admin:contribute.subtitle",
+                    "value": "Bantu dukung pengembangan dan operasi Wiki.js"
+                },
+                {
+                    "key": "admin:contribute.fundOurWork",
+                    "value": "Danai pekerjaan kami"
+                },
+                {
+                    "key": "admin:contribute.spreadTheWord",
+                    "value": "Sebarkan berita"
+                },
+                {
+                    "key": "admin:contribute.talkToFriends",
+                    "value": "Bicaralah dengan teman dan kolega anda tentang betapa hebatnya Wiki.js!"
+                },
+                {
+                    "key": "admin:contribute.followUsOnTwitter",
+                    "value": "Ikuti kami di {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdea",
+                    "value": "Kirim ide atau pilih yang diajukan pada {{0}}."
+                },
+                {
+                    "key": "admin:contribute.submitAnIdeaLink",
+                    "value": "papan permintaan fitur"
+                },
+                {
+                    "key": "admin:contribute.foundABug",
+                    "value": "Menemukan bug? Kirim masalah pada {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.helpTranslate",
+                    "value": "Bantu menerjemahkan Wiki.js dalam bahasa anda. Beri tahu kami di {{0}} ."
+                },
+                {
+                    "key": "admin:contribute.makeADonation",
+                    "value": "Beri sumbangan"
+                },
+                {
+                    "key": "admin:contribute.contribute",
+                    "value": "Berkontribusi"
+                },
+                {
+                    "key": "admin:contribute.openCollective",
+                    "value": "Wiki.js juga merupakan bagian dari inisiatif Open Collective, sebuah dana transparan yang digunakan untuk sumber daya masyarakat. Anda dapat berkontribusi secara finansial dengan memberikan sumbangan bulanan atau satu kali:"
+                },
+                {
+                    "key": "admin:contribute.needYourHelp",
+                    "value": "Kami membutuhkan bantuan anda untuk terus meningkatkan perangkat lunak dan menjalankan berbagai layanan terkait (mis. hosting dan jaringan)."
+                },
+                {
+                    "key": "admin:contribute.openSource",
+                    "value": "Wiki.js adalah perangkat lunak sumber terbuka dan gratis yang diberikan kepada anda dengan {{0}} oleh {{1}} dan {{2}}."
+                },
+                {
+                    "key": "admin:contribute.openSourceContributors",
+                    "value": "kontributor"
+                },
+                {
+                    "key": "editor:page",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "editor:save.processing",
+                    "value": "Merender"
+                },
+                {
+                    "key": "editor:save.pleaseWait",
+                    "value": "Tunggu sebentar..."
+                },
+                {
+                    "key": "editor:save.createSuccess",
+                    "value": "Halaman berhasil dibuat."
+                },
+                {
+                    "key": "editor:save.error",
+                    "value": "Terjadi kesalahan saat membuat halaman"
+                },
+                {
+                    "key": "admin:contribute.tshirts",
+                    "value": "Anda juga dapat membeli kaos Wiki.js untuk mendukung proyek ini secara finansial:"
+                },
+                {
+                    "key": "admin:contribute.shop",
+                    "value": "Toko Wiki.js"
+                },
+                {
+                    "key": "common:actions.ok",
+                    "value": "OK"
+                },
+                {
+                    "key": "common:footer.copyright",
+                    "value": "© {{year}} {{company}}. Semua hak dilindungi."
+                },
+                {
+                    "key": "common:newpage.title",
+                    "value": "Halaman ini belum ada."
+                },
+                {
+                    "key": "common:newpage.subtitle",
+                    "value": "Apakah anda ingin membuatnya sekarang?"
+                },
+                {
+                    "key": "common:newpage.create",
+                    "value": "Buat Halaman"
+                },
+                {
+                    "key": "common:newpage.goback",
+                    "value": "Kembali"
+                },
+                {
+                    "key": "admin:pages.title",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "admin:navigation.title",
+                    "value": "Navigasi"
+                },
+                {
+                    "key": "admin:navigation.subtitle",
+                    "value": "Kelola navigasi situs"
+                },
+                {
+                    "key": "common:actions.add",
+                    "value": "Tambah"
+                },
+                {
+                    "key": "admin:navigation.link",
+                    "value": "Tautan"
+                },
+                {
+                    "key": "admin:navigation.divider",
+                    "value": "Pembagi"
+                },
+                {
+                    "key": "admin:navigation.header",
+                    "value": "Header"
+                },
+                {
+                    "key": "admin:navigation.label",
+                    "value": "Label"
+                },
+                {
+                    "key": "admin:navigation.icon",
+                    "value": "Ikon"
+                },
+                {
+                    "key": "admin:navigation.targetType",
+                    "value": "Jenis Target"
+                },
+                {
+                    "key": "admin:navigation.target",
+                    "value": "Target"
+                },
+                {
+                    "key": "admin:navigation.noSelectionText",
+                    "value": "Pilih item navigasi di sebelah kiri."
+                },
+                {
+                    "key": "admin:navigation.untitled",
+                    "value": "{{kind}} Tanpa Judul"
+                },
+                {
+                    "key": "admin:navigation.navType.external",
+                    "value": "Tautan Eksternal"
+                },
+                {
+                    "key": "admin:navigation.navType.home",
+                    "value": "Rumah"
+                },
+                {
+                    "key": "admin:navigation.navType.page",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "admin:navigation.navType.searchQuery",
+                    "value": "Permintaan Pencarian"
+                },
+                {
+                    "key": "admin:navigation.edit",
+                    "value": "Edit {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.delete",
+                    "value": "Hapus {{kind}}"
+                },
+                {
+                    "key": "admin:navigation.saveSuccess",
+                    "value": "Navigasi berhasil disimpan."
+                },
+                {
+                    "key": "admin:navigation.noItemsText",
+                    "value": "Klik tombol Tambah untuk menambahkan item navigasi pertama anda."
+                },
+                {
+                    "key": "admin:navigation.emptyList",
+                    "value": "Navigasi kosong"
+                },
+                {
+                    "key": "common:actions.apply",
+                    "value": "Terapkan"
+                },
+                {
+                    "key": "auth:fields.email",
+                    "value": "Alamat Email"
+                },
+                {
+                    "key": "auth:fields.verifyPassword",
+                    "value": "Verifikasi Kata Sandi"
+                },
+                {
+                    "key": "auth:fields.name",
+                    "value": "Nama"
+                },
+                {
+                    "key": "auth:actions.register",
+                    "value": "Daftar"
+                },
+                {
+                    "key": "auth:registerTitle",
+                    "value": "Buat sebuah akun"
+                },
+                {
+                    "key": "auth:switchToLogin.text",
+                    "value": "Sudah memiliki akun? {{link}}"
+                },
+                {
+                    "key": "auth:switchToLogin.link",
+                    "value": "Login saja"
+                },
+                {
+                    "key": "auth:loginUsingStrategy",
+                    "value": "Login menggunakan {{strategy}}"
+                },
+                {
+                    "key": "auth:forgotPasswordLink",
+                    "value": "Lupa kata sandi anda?"
+                },
+                {
+                    "key": "auth:orLoginUsingStrategy",
+                    "value": "atau login menggunakan..."
+                },
+                {
+                    "key": "auth:switchToRegister.text",
+                    "value": "Belum punya akun? {{link}}"
+                },
+                {
+                    "key": "auth:switchToRegister.link",
+                    "value": "Buat akun"
+                },
+                {
+                    "key": "auth:invalidEmailUsername",
+                    "value": "Masukkan email / nama pengguna yang valid."
+                },
+                {
+                    "key": "auth:invalidPassword",
+                    "value": "Masukkan kata sandi yang valid."
+                },
+                {
+                    "key": "auth:loginSuccess",
+                    "value": "Login Sukses! Mengarahkan..."
+                },
+                {
+                    "key": "auth:signingIn",
+                    "value": "Memuat..."
+                },
+                {
+                    "key": "auth:genericError",
+                    "value": "Autentikasi tidak tersedia."
+                },
+                {
+                    "key": "auth:registerSubTitle",
+                    "value": "Isi formulir di bawah ini untuk membuat akun anda."
+                },
+                {
+                    "key": "auth:pleaseWait",
+                    "value": "Mohon tunggu"
+                },
+                {
+                    "key": "auth:registerSuccess",
+                    "value": "Akun berhasil dibuat!"
+                },
+                {
+                    "key": "auth:registering",
+                    "value": "Membuat akun..."
+                },
+                {
+                    "key": "auth:missingEmail",
+                    "value": "Alamat email tidak ada."
+                },
+                {
+                    "key": "auth:invalidEmail",
+                    "value": "Alamat email tidak valid."
+                },
+                {
+                    "key": "auth:missingPassword",
+                    "value": "Kata sandi tidak ada."
+                },
+                {
+                    "key": "auth:passwordTooShort",
+                    "value": "Kata sandi terlalu pendek."
+                },
+                {
+                    "key": "auth:passwordNotMatch",
+                    "value": "Kedua kata sandi tidak cocok."
+                },
+                {
+                    "key": "auth:missingName",
+                    "value": "Nama tidak ada."
+                },
+                {
+                    "key": "auth:nameTooShort",
+                    "value": "Nama terlalu pendek."
+                },
+                {
+                    "key": "auth:nameTooLong",
+                    "value": "Nama terlalu panjang."
+                },
+                {
+                    "key": "auth:forgotPasswordCancel",
+                    "value": "Batal"
+                },
+                {
+                    "key": "auth:sendResetPassword",
+                    "value": "Setel Ulang Kata Sandi"
+                },
+                {
+                    "key": "auth:forgotPasswordSubtitle",
+                    "value": "Masukkan alamat email anda untuk menerima petunjuk untuk mengatur ulang kata sandi anda:"
+                },
+                {
+                    "key": "admin:mail.title",
+                    "value": "Mail"
+                },
+                {
+                    "key": "admin:mail.subtitle",
+                    "value": "Mengonfigurasi setelan email"
+                },
+                {
+                    "key": "admin:mail.configuration",
+                    "value": "Konfigurasi"
+                },
+                {
+                    "key": "admin:mail.dkim",
+                    "value": "DKIM (opsional)"
+                },
+                {
+                    "key": "auth:registerCheckEmail",
+                    "value": "Periksa email anda untuk mengaktifkan akun anda."
+                },
+                {
+                    "key": "editor:save.updateSuccess",
+                    "value": "Halaman berhasil diperbarui."
+                },
+                {
+                    "key": "common:unauthorized.title",
+                    "value": "Tidak Sah"
+                },
+                {
+                    "key": "common:unauthorized.action.view",
+                    "value": "Anda tidak dapat melihat halaman ini."
+                },
+                {
+                    "key": "common:unauthorized.action.source",
+                    "value": "Anda tidak dapat melihat sumber halaman."
+                },
+                {
+                    "key": "common:unauthorized.action.history",
+                    "value": "Anda tidak dapat melihat riwayat halaman."
+                },
+                {
+                    "key": "common:unauthorized.action.edit",
+                    "value": "Anda tidak dapat mengedit halaman."
+                },
+                {
+                    "key": "common:unauthorized.action.create",
+                    "value": "Anda tidak dapat membuat halaman."
+                },
+                {
+                    "key": "common:unauthorized.goback",
+                    "value": "Kembali"
+                },
+                {
+                    "key": "common:notfound.gohome",
+                    "value": "Beranda"
+                },
+                {
+                    "key": "common:notfound.title",
+                    "value": "Tidak Ditemukan"
+                },
+                {
+                    "key": "common:notfound.subtitle",
+                    "value": "Halaman ini tidak ada."
+                },
+                {
+                    "key": "common:unauthorized.login",
+                    "value": "Login Sebagai..."
+                },
+                {
+                    "key": "admin:contribute.becomeAPatron",
+                    "value": "Menjadi Pelanggan"
+                },
+                {
+                    "key": "admin:contribute.patreon",
+                    "value": "Menjadi sponsor melalui GitHub Sponsors (langsung mendukung tujuan pengembang utama Nicolas Giard untuk bekerja penuh waktu di Wiki.js)"
+                },
+                {
+                    "key": "common:welcome.title",
+                    "value": "Selamat datang di wiki anda!"
+                },
+                {
+                    "key": "common:welcome.subtitle",
+                    "value": "Mari kita mulai dan membuat beranda."
+                },
+                {
+                    "key": "common:welcome.createhome",
+                    "value": "Buat Halaman Beranda"
+                },
+                {
+                    "key": "admin:dev.flags.title",
+                    "value": "Bendera"
+                },
+                {
+                    "key": "admin:dev.graphiql.title",
+                    "value": "GraphiQL"
+                },
+                {
+                    "key": "admin:dev.voyager.title",
+                    "value": "Voyager"
+                },
+                {
+                    "key": "admin:contribute.paypal",
+                    "value": "Buat sumbangan satu kali atau berulang melalui Paypal:"
+                },
+                {
+                    "key": "admin:contribute.ethereum",
+                    "value": "Kami menerima donasi menggunakan Ethereum:"
+                },
+                {
+                    "key": "admin:locale.sideload",
+                    "value": "Paket Sideload Locale"
+                },
+                {
+                    "key": "admin:locale.sideloadHelp",
+                    "value": "Jika Anda tidak terhubung ke internet atau tidak dapat mengunduh file lokal menggunakan metode di atas, Anda dapat melakukan sideload paket secara manual dengan mengunggahnya di bawah."
+                },
+                {
+                    "key": "common:actions.browse",
+                    "value": "Jelajahi..."
+                },
+                {
+                    "key": "admin:webhooks.title",
+                    "value": "Webhook"
+                },
+                {
+                    "key": "admin:webhooks.subtitle",
+                    "value": "Kelola webhook ke layanan eksternal"
+                },
+                {
+                    "key": "admin:mail.test",
+                    "value": "Kirim email percobaan"
+                },
+                {
+                    "key": "admin:mail.testRecipient",
+                    "value": "Alamat Email Penerima"
+                },
+                {
+                    "key": "admin:mail.testSend",
+                    "value": "Kirim Email"
+                },
+                {
+                    "key": "admin:mail.sender",
+                    "value": "Pengirim"
+                },
+                {
+                    "key": "admin:mail.senderName",
+                    "value": "Nama pengirim"
+                },
+                {
+                    "key": "admin:mail.senderEmail",
+                    "value": "Email Pengirim"
+                },
+                {
+                    "key": "admin:mail.smtp",
+                    "value": "Pengaturan SMTP"
+                },
+                {
+                    "key": "admin:mail.smtpHost",
+                    "value": "Host"
+                },
+                {
+                    "key": "admin:mail.smtpPort",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:mail.smtpPortHint",
+                    "value": "Biasanya 465 (disarankan), 587 atau 25."
+                },
+                {
+                    "key": "admin:mail.smtpTLS",
+                    "value": "Aman (TLS)"
+                },
+                {
+                    "key": "admin:mail.smtpTLSHint",
+                    "value": "Harus diaktifkan saat menggunakan port 465, jika tidak dimatikan (587 atau 25)."
+                },
+                {
+                    "key": "admin:mail.smtpUser",
+                    "value": "Username"
+                },
+                {
+                    "key": "admin:mail.smtpPwd",
+                    "value": "Kata Sandi"
+                },
+                {
+                    "key": "admin:mail.dkimHint",
+                    "value": "DKIM (DomainKeys Identified Mail) memberikan lapisan keamanan pada semua email yang dikirim dari Wiki.js dengan menyediakan sarana bagi penerima untuk memvalidasi nama domain dan memastikan keaslian pesan."
+                },
+                {
+                    "key": "admin:mail.dkimUse",
+                    "value": "Gunakan DKIM"
+                },
+                {
+                    "key": "admin:mail.dkimDomainName",
+                    "value": "Nama domain"
+                },
+                {
+                    "key": "admin:mail.dkimKeySelector",
+                    "value": "Pemilih Kunci"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKey",
+                    "value": "Kunci Pribadi"
+                },
+                {
+                    "key": "admin:mail.dkimPrivateKeyHint",
+                    "value": "Kunci pribadi untuk pemilih dalam format PEMilih"
+                },
+                {
+                    "key": "admin:mail.testHint",
+                    "value": "Kirim email uji untuk memastikan konfigurasi SMTP Anda berfungsi."
+                },
+                {
+                    "key": "admin:mail.saveSuccess",
+                    "value": "Konfigurasi berhasil disimpan."
+                },
+                {
+                    "key": "admin:system.dbPartialSupport",
+                    "value": "Versi database Anda tidak sepenuhnya didukung. Beberapa fungsi mungkin terbatas atau tidak berfungsi seperti yang diharapkan."
+                },
+                {
+                    "key": "admin:system.refreshSuccess",
+                    "value": "Info Sistem telah disegarkan."
+                },
+                {
+                    "key": "admin:auth.subtitle",
+                    "value": "Konfigurasi pengaturan autentikasi wiki anda"
+                },
+                {
+                    "key": "admin:auth.strategies",
+                    "value": "Strategi"
+                },
+                {
+                    "key": "admin:auth.globalAdvSettings",
+                    "value": "Pengaturan Lanjutan Global"
+                },
+                {
+                    "key": "admin:auth.jwtAudience",
+                    "value": "JWT Audience"
+                },
+                {
+                    "key": "admin:auth.jwtAudienceHint",
+                    "value": "Audience URN digunakan di JWT yang diterbitkan saat login. Biasanya nama domain Anda. (mis. urn: your.domain.com)"
+                },
+                {
+                    "key": "admin:auth.tokenExpiration",
+                    "value": "Token Kedaluwarsa"
+                },
+                {
+                    "key": "admin:auth.tokenExpirationHint",
+                    "value": "Masa kedaluwarsa token hingga harus diperbarui. (standar: 30m)"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriod",
+                    "value": "Periode Pembaruan Token"
+                },
+                {
+                    "key": "admin:auth.tokenRenewalPeriodHint",
+                    "value": "Periode maksimum sebuah token dapat diperbarui ketika kadaluwarsa. (bawaan: 14d)"
+                },
+                {
+                    "key": "admin:auth.strategyState",
+                    "value": "Strategi ini {{state}} {{locked}}"
+                },
+                {
+                    "key": "admin:auth.strategyStateActive",
+                    "value": "aktif"
+                },
+                {
+                    "key": "admin:auth.strategyStateInactive",
+                    "value": "tidak aktif"
+                },
+                {
+                    "key": "admin:auth.strategyStateLocked",
+                    "value": "dan tidak dapat dinonaktifkan."
+                },
+                {
+                    "key": "admin:mail.sendTestSuccess",
+                    "value": "Email uji berhasil dikirim."
+                },
+                {
+                    "key": "admin:theme.subtitle",
+                    "value": "Ubah tampilan & nuansa wiki Anda"
+                },
+                {
+                    "key": "admin:theme.siteTheme",
+                    "value": "Tema Situs"
+                },
+                {
+                    "key": "admin:theme.siteThemeHint",
+                    "value": "Tema mempengaruhi bagaimana halaman konten ditampilkan. Bagian situs lain (seperti editor atau admin area) tidak terpengaruh."
+                },
+                {
+                    "key": "admin:theme.darkMode",
+                    "value": "Mode Gelap"
+                },
+                {
+                    "key": "admin:theme.darkModeHint",
+                    "value": "Tidak direkomendasikan untuk aksesibilitas. Mungkin tidak didukung oleh semua tema."
+                },
+                {
+                    "key": "admin:theme.codeInjection",
+                    "value": "Injeksi Kode"
+                },
+                {
+                    "key": "admin:theme.cssOverride",
+                    "value": "Penimpaan CSS"
+                },
+                {
+                    "key": "admin:theme.cssOverrideHint",
+                    "value": "Kode CSS untuk dimasukkan setelah CSS default sistem. Pertimbangkan untuk menggunakan tema khusus jika Anda memiliki banyak kode css. Menyuntikkan terlalu banyak kode CSS akan menghasilkan kinerja pemuatan halaman yang buruk! CSS secara otomatis akan diminimalkan."
+                },
+                {
+                    "key": "admin:theme.headHtmlInjection",
+                    "value": "Injeksi Head HTML"
+                },
+                {
+                    "key": "admin:theme.headHtmlInjectionHint",
+                    "value": "Kode HTML yang akan disuntikkan tepat sebelum tag head penutup. Biasanya untuk tag script."
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjection",
+                    "value": "Injeksi Body HTML"
+                },
+                {
+                    "key": "admin:theme.bodyHtmlInjectionHint",
+                    "value": "Kode HTML yang akan disuntikkan tepat sebelum tag body penutup."
+                },
+                {
+                    "key": "admin:theme.downloadThemes",
+                    "value": "Unduh Tema"
+                },
+                {
+                    "key": "admin:adminArea",
+                    "value": "Area Administrasi"
+                },
+                {
+                    "key": "admin:auth.strategyConfiguration",
+                    "value": "Konfigurasi Strategi"
+                },
+                {
+                    "key": "admin:auth.strategyNoConfiguration",
+                    "value": "Strategi ini tidak memiliki opsi konfigurasi yang dapat anda modifikasi."
+                },
+                {
+                    "key": "admin:auth.registration",
+                    "value": "Registrasi"
+                },
+                {
+                    "key": "admin:auth.selfRegistration",
+                    "value": "Izinkan pendaftaran sendiri"
+                },
+                {
+                    "key": "admin:auth.selfRegistrationHint",
+                    "value": "Izinkan setiap pengguna berhasil diotorisasi oleh strategi untuk mengakses wiki."
+                },
+                {
+                    "key": "admin:auth.domainsWhitelist",
+                    "value": "Batasi untuk domain email tertentu"
+                },
+                {
+                    "key": "admin:auth.domainsWhitelistHint",
+                    "value": "Daftar domain yang diotorisasi untuk mendaftar. Domain alamat email pengguna harus cocok dengan salah satunya untuk mendapatkan akses."
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroups",
+                    "value": "Tetapkan ke grup"
+                },
+                {
+                    "key": "admin:auth.autoEnrollGroupsHint",
+                    "value": "Tetapkan pengguna baru ke grup ini secara otomatis."
+                },
+                {
+                    "key": "admin:auth.security",
+                    "value": "Keamanan"
+                },
+                {
+                    "key": "admin:auth.force2fa",
+                    "value": "Paksa semua pengguna untuk menggunakan Two-Factor Authentication (2FA)"
+                },
+                {
+                    "key": "admin:auth.force2faHint",
+                    "value": "Pengguna akan diminta untuk mengatur 2FA saat pertama kali mereka masuk dan tidak dapat dinonaktifkan oleh pengguna."
+                },
+                {
+                    "key": "admin:auth.configReference",
+                    "value": "Referensi Konfigurasi"
+                },
+                {
+                    "key": "admin:auth.configReferenceSubtitle",
+                    "value": "Beberapa strategi mungkin memerlukan beberapa nilai konfigurasi untuk disetel pada penyedia anda. Ini disediakan untuk referensi saja dan mungkin tidak diperlukan oleh strategi saat ini."
+                },
+                {
+                    "key": "admin:auth.siteUrlNotSetup",
+                    "value": "Anda harus menetapkan {{siteUrl}} yang valid terlebih dahulu! Klik {{general}} di sidebar kiri."
+                },
+                {
+                    "key": "admin:auth.allowedWebOrigins",
+                    "value": "Asal Web yang Diizinkan"
+                },
+                {
+                    "key": "admin:auth.callbackUrl",
+                    "value": "URL Panggilan Balik / URI Pengalihan"
+                },
+                {
+                    "key": "admin:auth.loginUrl",
+                    "value": "URL Login"
+                },
+                {
+                    "key": "admin:auth.logoutUrl",
+                    "value": "URL Logout"
+                },
+                {
+                    "key": "admin:auth.tokenEndpointAuthMethod",
+                    "value": "Metode Otentikasi Titik Akhir Token"
+                },
+                {
+                    "key": "common:header.home",
+                    "value": "Beranda"
+                },
+                {
+                    "key": "common:header.newPage",
+                    "value": "Halaman Baru"
+                },
+                {
+                    "key": "common:header.currentPage",
+                    "value": "Halaman Saat Ini"
+                },
+                {
+                    "key": "common:header.view",
+                    "value": "Lihat"
+                },
+                {
+                    "key": "common:header.edit",
+                    "value": "Edit"
+                },
+                {
+                    "key": "common:header.history",
+                    "value": "Riwayat"
+                },
+                {
+                    "key": "common:header.viewSource",
+                    "value": "Lihat Sumber"
+                },
+                {
+                    "key": "common:header.move",
+                    "value": "Pindahkan / Ganti Nama"
+                },
+                {
+                    "key": "common:header.delete",
+                    "value": "Hapus"
+                },
+                {
+                    "key": "common:header.assets",
+                    "value": "Aset"
+                },
+                {
+                    "key": "common:header.imagesFiles",
+                    "value": "Gambar & Berkas"
+                },
+                {
+                    "key": "common:header.search",
+                    "value": "Cari..."
+                },
+                {
+                    "key": "common:header.admin",
+                    "value": "Administrasi"
+                },
+                {
+                    "key": "common:header.account",
+                    "value": "Akun"
+                },
+                {
+                    "key": "common:header.myWiki",
+                    "value": "Wiki Saya"
+                },
+                {
+                    "key": "common:header.profile",
+                    "value": "Profil"
+                },
+                {
+                    "key": "common:header.logout",
+                    "value": "Logout"
+                },
+                {
+                    "key": "common:header.login",
+                    "value": "Login"
+                },
+                {
+                    "key": "common:page.lastEditedBy",
+                    "value": "Terakhir diedit oleh"
+                },
+                {
+                    "key": "common:page.unpublished",
+                    "value": "Tidak diterbitkan"
+                },
+                {
+                    "key": "common:page.editPage",
+                    "value": "Edit Halaman"
+                },
+                {
+                    "key": "common:page.toc",
+                    "value": "Daftar Isi"
+                },
+                {
+                    "key": "common:page.bookmark",
+                    "value": "Bookmark"
+                },
+                {
+                    "key": "common:page.share",
+                    "value": "Bagikan"
+                },
+                {
+                    "key": "common:page.printFormat",
+                    "value": "Format Cetak"
+                },
+                {
+                    "key": "common:actions.close",
+                    "value": "Tutup"
+                },
+                {
+                    "key": "common:actions.page",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "admin:storage.subtitle",
+                    "value": "Tetapkan target pencadangan dan sinkronisasi untuk konten Anda"
+                },
+                {
+                    "key": "admin:storage.targets",
+                    "value": "Target"
+                },
+                {
+                    "key": "admin:storage.status",
+                    "value": "Status"
+                },
+                {
+                    "key": "admin:storage.lastSync",
+                    "value": "Sinkronisasi terakhir {{time}}"
+                },
+                {
+                    "key": "admin:storage.lastSyncAttempt",
+                    "value": "Upaya terakhir adalah {{time}}"
+                },
+                {
+                    "key": "admin:storage.errorMsg",
+                    "value": "Pesan eror"
+                },
+                {
+                    "key": "admin:storage.noTarget",
+                    "value": "Anda tidak memiliki target penyimpanan aktif."
+                },
+                {
+                    "key": "admin:storage.targetConfig",
+                    "value": "Konfigurasi Target"
+                },
+                {
+                    "key": "admin:storage.noConfigOption",
+                    "value": "Target penyimpanan ini tidak memiliki opsi konfigurasi yang dapat Anda ubah."
+                },
+                {
+                    "key": "admin:storage.syncDirection",
+                    "value": "Arah Sinkronisasi"
+                },
+                {
+                    "key": "admin:storage.syncDirectionSubtitle",
+                    "value": "Pilih bagaimana sinkronisasi konten ditangani untuk target penyimpanan ini."
+                },
+                {
+                    "key": "admin:storage.syncDirBi",
+                    "value": "Dua arah"
+                },
+                {
+                    "key": "admin:storage.syncDirPush",
+                    "value": "Dorong ke target"
+                },
+                {
+                    "key": "admin:storage.syncDirPull",
+                    "value": "Tarik dari target"
+                },
+                {
+                    "key": "admin:storage.unsupported",
+                    "value": "Tidak didukung"
+                },
+                {
+                    "key": "admin:storage.syncDirBiHint",
+                    "value": "Dalam mode dua arah, konten pertama-tama ditarik dari target penyimpanan. Konten yang lebih baru menimpa konten lokal. Konten baru sejak sinkronisasi terakhir kemudian didorong ke target penyimpanan, menimpa konten apa pun pada target jika ada."
+                },
+                {
+                    "key": "admin:storage.syncDirPushHint",
+                    "value": "Konten selalu didorong ke target penyimpanan, menimpa konten apa pun yang ada. Ini adalah pilihan teraman untuk skenario pencadangan."
+                },
+                {
+                    "key": "admin:storage.syncDirPullHint",
+                    "value": "Konten selalu ditarik dari target penyimpanan, menimpa konten lokal yang sudah ada. Pilihan ini biasanya disediakan untuk impor konten sekali pakai. Hati-hati dengan opsi ini karena konten lokal apa pun akan selalu ditimpa!"
+                },
+                {
+                    "key": "admin:storage.syncSchedule",
+                    "value": "Jadwal Sinkronisasi"
+                },
+                {
+                    "key": "admin:storage.syncScheduleHint",
+                    "value": "Untuk alasan kinerja, target penyimpanan ini menyinkronkan perubahan pada jadwal berbasis interval, bukan pada setiap perubahan. Tentukan pada interval berapa sinkronisasi harus dilakukan."
+                },
+                {
+                    "key": "admin:storage.syncScheduleCurrent",
+                    "value": "Saat ini disetel untuk setiap {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.syncScheduleDefault",
+                    "value": "Standar-nya adalah setiap {{schedule}} ."
+                },
+                {
+                    "key": "admin:storage.actions",
+                    "value": "Tindakan"
+                },
+                {
+                    "key": "admin:storage.actionRun",
+                    "value": "Lari"
+                },
+                {
+                    "key": "admin:search.subtitle",
+                    "value": "Konfigurasikan kemampuan pencarian wiki Anda"
+                },
+                {
+                    "key": "admin:search.rebuildIndex",
+                    "value": "Buat Ulang Indeks"
+                },
+                {
+                    "key": "admin:search.searchEngine",
+                    "value": "Mesin pencarian"
+                },
+                {
+                    "key": "admin:search.engineConfig",
+                    "value": "Konfigurasi Mesin"
+                },
+                {
+                    "key": "admin:search.engineNoConfig",
+                    "value": "Mesin ini tidak memiliki opsi konfigurasi yang bisa Anda ubah."
+                },
+                {
+                    "key": "admin:search.listRefreshSuccess",
+                    "value": "Daftar mesin telusur telah diperbarui."
+                },
+                {
+                    "key": "admin:search.configSaveSuccess",
+                    "value": "Konfigurasi mesin telusur berhasil disimpan."
+                },
+                {
+                    "key": "admin:search.indexRebuildSuccess",
+                    "value": "Indeks berhasil dibangun kembali."
+                },
+                {
+                    "key": "common:error.unexpected",
+                    "value": "Terjadi kesalahan tak terduga."
+                },
+                {
+                    "key": "admin:dashboard.pages",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "admin:dashboard.users",
+                    "value": "Pengguna"
+                },
+                {
+                    "key": "admin:dashboard.groups",
+                    "value": "Grup"
+                },
+                {
+                    "key": "admin:dashboard.versionLatest",
+                    "value": "Anda menjalankan versi terbaru."
+                },
+                {
+                    "key": "admin:dashboard.versionNew",
+                    "value": "Versi baru tersedia: {{version}}"
+                },
+                {
+                    "key": "admin:dashboard.contributeSubtitle",
+                    "value": "Wiki.js adalah proyek sumber terbuka dan gratis. Ada beberapa cara anda dapat berkontribusi pada proyek."
+                },
+                {
+                    "key": "admin:dashboard.contributeHelp",
+                    "value": "Kami membutuhkan bantuan anda!"
+                },
+                {
+                    "key": "admin:dashboard.contributeLearnMore",
+                    "value": "Pelajari Lebih Lanjut"
+                },
+                {
+                    "key": "admin:auth.refreshSuccess",
+                    "value": "Daftar strategi telah diperbarui."
+                },
+                {
+                    "key": "admin:auth.saveSuccess",
+                    "value": "Konfigurasi autentikasi berhasil disimpan."
+                },
+                {
+                    "key": "admin:general.general",
+                    "value": "Umum"
+                },
+                {
+                    "key": "admin:general.siteUrl",
+                    "value": "URL Situs"
+                },
+                {
+                    "key": "admin:general.siteUrlHint",
+                    "value": "URL lengkap ke wiki anda, tanpa garis miring. (mis. https://wiki.example.com)"
+                },
+                {
+                    "key": "admin:general.siteTitle",
+                    "value": "Judul Situs"
+                },
+                {
+                    "key": "admin:general.siteTitleHint",
+                    "value": "Ditampilkan di bilah atas dan ditambahkan ke semua judul meta halaman."
+                },
+                {
+                    "key": "admin:general.logo",
+                    "value": "Logo"
+                },
+                {
+                    "key": "admin:general.uploadLogo",
+                    "value": "Unggah Logo"
+                },
+                {
+                    "key": "admin:general.uploadClear",
+                    "value": "Bersih"
+                },
+                {
+                    "key": "admin:general.uploadSizeHint",
+                    "value": "Gambar berukuran {{size}} piksel disarankan untuk hasil terbaik."
+                },
+                {
+                    "key": "admin:general.uploadTypesHint",
+                    "value": "Hanya berkas {{typeList}} atau {{lastType}}"
+                },
+                {
+                    "key": "admin:general.footerCopyright",
+                    "value": "Hak Cipta Footer"
+                },
+                {
+                    "key": "admin:general.companyName",
+                    "value": "Nama Perusahaan / Organisasi"
+                },
+                {
+                    "key": "admin:general.companyNameHint",
+                    "value": "Nama yang akan digunakan saat menampilkan pemberitahuan hak cipta di footer. Biarkan kosong untuk disembunyikan."
+                },
+                {
+                    "key": "admin:general.siteDescription",
+                    "value": "Deskripsi Situs"
+                },
+                {
+                    "key": "admin:general.siteDescriptionHint",
+                    "value": "Deskripsi bawaan jika tidak ada yang disediakan untuk halaman."
+                },
+                {
+                    "key": "admin:general.metaRobots",
+                    "value": "Robot Meta"
+                },
+                {
+                    "key": "admin:general.metaRobotsHint",
+                    "value": "Bawaan: Index, Follow. Dapat juga diatur untuk setiap halaman."
+                },
+                {
+                    "key": "common:header.searchHint",
+                    "value": "Ketik setidaknya 2 karakter untuk mulai mencari..."
+                },
+                {
+                    "key": "common:header.searchLoading",
+                    "value": "Mencari..."
+                },
+                {
+                    "key": "common:header.searchNoResult",
+                    "value": "Tidak ada halaman yang cocok dengan kueri anda."
+                },
+                {
+                    "key": "common:header.searchResultsCount",
+                    "value": "Ditemukan {{total}} hasil"
+                },
+                {
+                    "key": "common:header.searchDidYouMean",
+                    "value": "Apakah yang anda maksud..."
+                },
+                {
+                    "key": "common:header.searchClose",
+                    "value": "Tutup"
+                },
+                {
+                    "key": "common:header.searchCopyLink",
+                    "value": "Salin Tautan Pencarian"
+                },
+                {
+                    "key": "common:password.veryWeak",
+                    "value": "Sangat Lemah"
+                },
+                {
+                    "key": "common:password.weak",
+                    "value": "Lemah"
+                },
+                {
+                    "key": "common:password.average",
+                    "value": "Rata-Rata"
+                },
+                {
+                    "key": "common:password.strong",
+                    "value": "Kuat"
+                },
+                {
+                    "key": "common:password.veryStrong",
+                    "value": "Sangat Kuat"
+                },
+                {
+                    "key": "common:page.delete",
+                    "value": "Hapus Halaman"
+                },
+                {
+                    "key": "common:page.deleteTitle",
+                    "value": "Anda yakin ingin menghapus halaman {{title}} ?"
+                },
+                {
+                    "key": "common:page.deleteSubtitle",
+                    "value": "Halaman dapat dipulihkan dari area administrasi."
+                },
+                {
+                    "key": "common:user.search",
+                    "value": "Cari Pengguna"
+                },
+                {
+                    "key": "common:user.searchPlaceholder",
+                    "value": "Cari Pengguna ..."
+                },
+                {
+                    "key": "common:duration.every",
+                    "value": "Setiap"
+                },
+                {
+                    "key": "common:duration.minutes",
+                    "value": "Menit"
+                },
+                {
+                    "key": "common:duration.hours",
+                    "value": "Jam"
+                },
+                {
+                    "key": "common:duration.days",
+                    "value": "Hari"
+                },
+                {
+                    "key": "common:duration.months",
+                    "value": "Bulan"
+                },
+                {
+                    "key": "common:duration.years",
+                    "value": "Tahun"
+                },
+                {
+                    "key": "editor:props.pageProperties",
+                    "value": "Properti Halaman"
+                },
+                {
+                    "key": "editor:props.pageInfo",
+                    "value": "Info Halaman"
+                },
+                {
+                    "key": "editor:props.title",
+                    "value": "Judul"
+                },
+                {
+                    "key": "editor:props.shortDescription",
+                    "value": "Deskripsi Singkat"
+                },
+                {
+                    "key": "editor:props.shortDescriptionHint",
+                    "value": "Ditampilkan di bawah judul"
+                },
+                {
+                    "key": "editor:props.pathCategorization",
+                    "value": "Path & Kategorisasi"
+                },
+                {
+                    "key": "editor:props.locale",
+                    "value": "Bahasa"
+                },
+                {
+                    "key": "editor:props.path",
+                    "value": "Path"
+                },
+                {
+                    "key": "editor:props.pathHint",
+                    "value": "Jangan menyertakan garis miring di depan atau di belakang."
+                },
+                {
+                    "key": "editor:props.tags",
+                    "value": "Tag"
+                },
+                {
+                    "key": "editor:props.tagsHint",
+                    "value": "Gunakan tag untuk mengkategorikan halaman Kamu dan membuatnya lebih mudah ditemukan."
+                },
+                {
+                    "key": "editor:props.publishState",
+                    "value": "Status Penerbitan"
+                },
+                {
+                    "key": "editor:props.publishToggle",
+                    "value": "Diterbitkan"
+                },
+                {
+                    "key": "editor:props.publishToggleHint",
+                    "value": "Halaman yang tidak diterbitkan masih dapat dilihat oleh pengguna dengan izin menulis di halaman ini."
+                },
+                {
+                    "key": "editor:props.publishStart",
+                    "value": "Publikasikan mulai ..."
+                },
+                {
+                    "key": "editor:props.publishStartHint",
+                    "value": "Biarkan kosong jika tidak ada tanggal mulai"
+                },
+                {
+                    "key": "editor:props.publishEnd",
+                    "value": "Publikasikan yang diakhiri pada ..."
+                },
+                {
+                    "key": "editor:props.publishEndHint",
+                    "value": "Biarkan kosong jika tidak ada tanggal akhir"
+                },
+                {
+                    "key": "editor:unsaved.title",
+                    "value": "Buang Perubahan yang Belum Disimpan?"
+                },
+                {
+                    "key": "editor:unsaved.body",
+                    "value": "Kamu memiliki perubahan yang belum disimpan. Apakah Kamu yakin ingin keluar dari editor dan membuang modifikasi yang Kamu buat sejak penyimpanan terakhir?"
+                },
+                {
+                    "key": "common:actions.discardChanges",
+                    "value": "Buang Perubahan"
+                },
+                {
+                    "key": "editor:select.title",
+                    "value": "Editor mana yang ingin Anda gunakan untuk halaman ini?"
+                },
+                {
+                    "key": "editor:select.cannotChange",
+                    "value": "Ini tidak dapat diubah setelah halaman dibuat."
+                },
+                {
+                    "key": "editor:assets.title",
+                    "value": "Aset"
+                },
+                {
+                    "key": "editor:assets.newFolder",
+                    "value": "Folder Baru"
+                },
+                {
+                    "key": "editor:assets.folderName",
+                    "value": "Nama Folder"
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRules",
+                    "value": "Harus mengikuti folder aset {{namingRules}} ."
+                },
+                {
+                    "key": "editor:assets.folderNameNamingRulesLink",
+                    "value": "aturan penamaan"
+                },
+                {
+                    "key": "common:actions.move",
+                    "value": "Pindahkan"
+                },
+                {
+                    "key": "common:actions.rename",
+                    "value": "Ganti Nama"
+                },
+                {
+                    "key": "common:actions.optimize",
+                    "value": "Optimalkan"
+                },
+                {
+                    "key": "common:actions.preview",
+                    "value": "Pratinjau"
+                },
+                {
+                    "key": "common:actions.properties",
+                    "value": "Properti"
+                },
+                {
+                    "key": "editor:assets.folderEmpty",
+                    "value": "Folder aset ini kosong."
+                },
+                {
+                    "key": "editor:assets.fileCount",
+                    "value": "{{count}} berkas"
+                },
+                {
+                    "key": "common:actions.insert",
+                    "value": "Masukkan"
+                },
+                {
+                    "key": "editor:assets.headerId",
+                    "value": "ID"
+                },
+                {
+                    "key": "editor:assets.headerFilename",
+                    "value": "Nama berkas"
+                },
+                {
+                    "key": "editor:assets.headerType",
+                    "value": "Tipe"
+                },
+                {
+                    "key": "editor:assets.headerFileSize",
+                    "value": "Ukuran Berkas"
+                },
+                {
+                    "key": "editor:assets.headerAdded",
+                    "value": "Ditambahkan"
+                },
+                {
+                    "key": "editor:assets.headerActions",
+                    "value": "Tindakan"
+                },
+                {
+                    "key": "editor:assets.uploadAssets",
+                    "value": "Unggah Aset"
+                },
+                {
+                    "key": "editor:assets.uploadAssetsDropZone",
+                    "value": "Telusuri atau Letakkan berkas di sini..."
+                },
+                {
+                    "key": "editor:assets.fetchImage",
+                    "value": "Ambil Gambar Jarak Jauh"
+                },
+                {
+                    "key": "editor:assets.imageAlign",
+                    "value": "Penjajaran Gambar"
+                },
+                {
+                    "key": "editor:assets.renameAsset",
+                    "value": "Ganti Nama Aset"
+                },
+                {
+                    "key": "editor:assets.renameAssetSubtitle",
+                    "value": "Masukkan nama baru untuk aset ini:"
+                },
+                {
+                    "key": "editor:assets.deleteAsset",
+                    "value": "Hapus Aset"
+                },
+                {
+                    "key": "editor:assets.deleteAssetConfirm",
+                    "value": "Apakah anda yakin ingin menghapus aset"
+                },
+                {
+                    "key": "editor:assets.deleteAssetWarn",
+                    "value": "Tindakan ini tidak bisa dibatalkan!"
+                },
+                {
+                    "key": "editor:assets.refreshSuccess",
+                    "value": "Daftar aset berhasil disegarkan."
+                },
+                {
+                    "key": "editor:assets.uploadFailed",
+                    "value": "Pengunggahan berkas gagal."
+                },
+                {
+                    "key": "editor:assets.folderCreateSuccess",
+                    "value": "Folder aset berhasil dibuat."
+                },
+                {
+                    "key": "editor:assets.renameSuccess",
+                    "value": "Aset berhasil diubah namanya."
+                },
+                {
+                    "key": "editor:assets.deleteSuccess",
+                    "value": "Aset berhasil dihapus."
+                },
+                {
+                    "key": "editor:assets.noUploadError",
+                    "value": "Kamu harus memilih file untuk diunggah terlebih dahulu!"
+                },
+                {
+                    "key": "common:actions.fetch",
+                    "value": "Ambil"
+                },
+                {
+                    "key": "editor:backToEditor",
+                    "value": "Kembali ke Editor"
+                },
+                {
+                    "key": "editor:markup.bold",
+                    "value": "Bold"
+                },
+                {
+                    "key": "editor:markup.italic",
+                    "value": "Miring"
+                },
+                {
+                    "key": "editor:markup.strikethrough",
+                    "value": "Dicoret"
+                },
+                {
+                    "key": "editor:markup.heading",
+                    "value": "Tajuk {{level}}"
+                },
+                {
+                    "key": "editor:markup.subscript",
+                    "value": "Subskrip"
+                },
+                {
+                    "key": "editor:markup.superscript",
+                    "value": "Superskrip"
+                },
+                {
+                    "key": "editor:markup.blockquote",
+                    "value": "Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteInfo",
+                    "value": "Info Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteSuccess",
+                    "value": "Blockquote Sukses"
+                },
+                {
+                    "key": "editor:markup.blockquoteWarning",
+                    "value": "Peringatan Blockquote"
+                },
+                {
+                    "key": "editor:markup.blockquoteError",
+                    "value": "Kesalahan Blockquote"
+                },
+                {
+                    "key": "editor:markup.unorderedList",
+                    "value": "Daftar Tidak Berurutan"
+                },
+                {
+                    "key": "editor:markup.orderedList",
+                    "value": "Daftar Berurutan"
+                },
+                {
+                    "key": "editor:markup.inlineCode",
+                    "value": "Kode Sebaris"
+                },
+                {
+                    "key": "editor:markup.keyboardKey",
+                    "value": "Tombol Keyboard"
+                },
+                {
+                    "key": "editor:markup.horizontalBar",
+                    "value": "Bilah Horizontal"
+                },
+                {
+                    "key": "editor:markup.togglePreviewPane",
+                    "value": "Sembunyikan / Tampilkan Panel Pratinjau"
+                },
+                {
+                    "key": "editor:markup.insertLink",
+                    "value": "Sisipkan Tautan"
+                },
+                {
+                    "key": "editor:markup.insertAssets",
+                    "value": "Sisipkan Aset"
+                },
+                {
+                    "key": "editor:markup.insertBlock",
+                    "value": "Sisipkan Blok"
+                },
+                {
+                    "key": "editor:markup.insertCodeBlock",
+                    "value": "Sisipkan Blok Kode"
+                },
+                {
+                    "key": "editor:markup.insertVideoAudio",
+                    "value": "Sisipkan Video / Audio"
+                },
+                {
+                    "key": "editor:markup.insertDiagram",
+                    "value": "Sisipkan Diagram"
+                },
+                {
+                    "key": "editor:markup.insertMathExpression",
+                    "value": "Sisipkan Ekspresi Matematika"
+                },
+                {
+                    "key": "editor:markup.tableHelper",
+                    "value": "Pembantu Tabel"
+                },
+                {
+                    "key": "editor:markup.distractionFreeMode",
+                    "value": "Mode Bebas Gangguan"
+                },
+                {
+                    "key": "editor:markup.markdownFormattingHelp",
+                    "value": "Bantuan Pemformatan Markdown"
+                },
+                {
+                    "key": "common:page.viewingSource",
+                    "value": "Melihat sumber halaman {{path}}"
+                },
+                {
+                    "key": "common:page.returnNormalView",
+                    "value": "Kembali ke Tampilan Normal"
+                },
+                {
+                    "key": "common:page.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "common:header.language",
+                    "value": "Bahasa"
+                },
+                {
+                    "key": "admin:analytics.title",
+                    "value": "Analisis"
+                },
+                {
+                    "key": "admin:analytics.subtitle",
+                    "value": "Tambahkan alat analisis dan pelacakan ke wiki anda"
+                },
+                {
+                    "key": "admin:analytics.providers",
+                    "value": "Penyedia"
+                },
+                {
+                    "key": "admin:analytics.providerConfiguration",
+                    "value": "Konfigurasi Penyedia"
+                },
+                {
+                    "key": "admin:analytics.providerNoConfiguration",
+                    "value": "Penyedia ini tidak memiliki opsi konfigurasi yang dapat anda modifikasi."
+                },
+                {
+                    "key": "admin:analytics.refreshSuccess",
+                    "value": "Daftar penyedia berhasil disegarkan."
+                },
+                {
+                    "key": "admin:analytics.saveSuccess",
+                    "value": "Konfigurasi analisis berhasil disimpan"
+                },
+                {
+                    "key": "admin:utilities.subtitle",
+                    "value": "Pemeliharaan dan alat lain-lain"
+                },
+                {
+                    "key": "admin:utilities.tools",
+                    "value": "Alat"
+                },
+                {
+                    "key": "admin:utilities.authTitle",
+                    "value": "Autentikasi"
+                },
+                {
+                    "key": "admin:utilities.authSubtitle",
+                    "value": "Berbagai alat untuk otentikasi / pengguna"
+                },
+                {
+                    "key": "admin:utilities.cacheTitle",
+                    "value": "Hapus Cache"
+                },
+                {
+                    "key": "admin:utilities.cacheSubtitle",
+                    "value": "Hapus cache dari berbagai komponen"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointTitle",
+                    "value": "Titik Akhir GraphQL"
+                },
+                {
+                    "key": "admin:utilities.graphEndpointSubtitle",
+                    "value": "Ubah titik akhir GraphQL untuk Wiki.js"
+                },
+                {
+                    "key": "admin:utilities.importv1Title",
+                    "value": "Impor dari Wiki.js 1.x"
+                },
+                {
+                    "key": "admin:utilities.importv1Subtitle",
+                    "value": "Migrasikan data dari instalasi 1.x sebelumnya"
+                },
+                {
+                    "key": "admin:utilities.telemetryTitle",
+                    "value": "Telemetri"
+                },
+                {
+                    "key": "admin:utilities.telemetrySubtitle",
+                    "value": "Aktifkan / Nonaktifkan telemetri atau setel ulang ID klien"
+                },
+                {
+                    "key": "admin:comments.title",
+                    "value": "Komentar"
+                },
+                {
+                    "key": "common:page.published",
+                    "value": "Diterbitkan"
+                },
+                {
+                    "key": "common:page.private",
+                    "value": "Pribadi"
+                },
+                {
+                    "key": "common:page.global",
+                    "value": "Global"
+                },
+                {
+                    "key": "common:page.loading",
+                    "value": "Memuat Halaman..."
+                },
+                {
+                    "key": "admin:locale.code",
+                    "value": "Kode"
+                },
+                {
+                    "key": "admin:locale.name",
+                    "value": "Nama"
+                },
+                {
+                    "key": "admin:locale.nativeName",
+                    "value": "Nama Asli"
+                },
+                {
+                    "key": "admin:locale.rtl",
+                    "value": "RTL"
+                },
+                {
+                    "key": "admin:locale.availability",
+                    "value": "Ketersediaan"
+                },
+                {
+                    "key": "admin:locale.download",
+                    "value": "Unduh"
+                },
+                {
+                    "key": "admin:utilities.contentTitle",
+                    "value": "Konten"
+                },
+                {
+                    "key": "admin:utilities.contentSubtitle",
+                    "value": "Berbagai alat untuk halaman"
+                },
+                {
+                    "key": "admin:theme.iconset",
+                    "value": "Kumpulan Ikon"
+                },
+                {
+                    "key": "admin:theme.iconsetHint",
+                    "value": "Kumpulan ikon yang digunakan untuk navigasi sidebar."
+                },
+                {
+                    "key": "common:outdatedBrowserWarning",
+                    "value": "Browser Anda sudah usang. Tingkatkan ke {{modernBrowser}} ."
+                },
+                {
+                    "key": "common:modernBrowser",
+                    "value": "browser modern"
+                },
+                {
+                    "key": "admin:theme.downloadName",
+                    "value": "Nama"
+                },
+                {
+                    "key": "admin:theme.downloadAuthor",
+                    "value": "Penulis"
+                },
+                {
+                    "key": "admin:theme.downloadDownload",
+                    "value": "Unduh"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarning",
+                    "value": "{{caution}} Saat menambahkan gaya untuk konten halaman, Anda harus memasukkannya ke kelas {{cssClass}} . Menghilangkan ini dapat merusak tata letak editor!"
+                },
+                {
+                    "key": "admin:theme.cssOverrideWarningCaution",
+                    "value": "HATI HATI:"
+                },
+                {
+                    "key": "admin:theme.options",
+                    "value": "Opsi Tema"
+                },
+                {
+                    "key": "admin:users.active",
+                    "value": "Aktif"
+                },
+                {
+                    "key": "admin:users.inactive",
+                    "value": "Tidak Aktif"
+                },
+                {
+                    "key": "admin:users.verified",
+                    "value": "Diverifikasi"
+                },
+                {
+                    "key": "admin:users.unverified",
+                    "value": "Belum Diverifikasi"
+                },
+                {
+                    "key": "admin:users.edit",
+                    "value": "Edit Pengguna"
+                },
+                {
+                    "key": "admin:users.id",
+                    "value": "ID {{id}}"
+                },
+                {
+                    "key": "admin:users.basicInfo",
+                    "value": "Info Dasar"
+                },
+                {
+                    "key": "admin:users.email",
+                    "value": "Email"
+                },
+                {
+                    "key": "admin:users.displayName",
+                    "value": "Nama Tampilan"
+                },
+                {
+                    "key": "admin:users.authentication",
+                    "value": "Autentikasi"
+                },
+                {
+                    "key": "admin:users.authProvider",
+                    "value": "Penyedia"
+                },
+                {
+                    "key": "admin:users.password",
+                    "value": "Kata Sandi"
+                },
+                {
+                    "key": "admin:users.changePassword",
+                    "value": "Ganti Kata Sandi"
+                },
+                {
+                    "key": "admin:users.newPassword",
+                    "value": "Kata Sandi Baru"
+                },
+                {
+                    "key": "admin:users.tfa",
+                    "value": "Otentikasi Dua Faktor (2FA)"
+                },
+                {
+                    "key": "admin:users.toggle2FA",
+                    "value": "Alihkan 2FA"
+                },
+                {
+                    "key": "admin:users.authProviderId",
+                    "value": "Id Penyedia"
+                },
+                {
+                    "key": "admin:users.groups",
+                    "value": "Grup Pengguna"
+                },
+                {
+                    "key": "admin:users.noGroupAssigned",
+                    "value": "Pengguna ini belum ditetapkan ke grup mana pun. Anda harus menetapkan setidaknya 1 grup untuk satu pengguna."
+                },
+                {
+                    "key": "admin:users.selectGroup",
+                    "value": "Pilih Grup..."
+                },
+                {
+                    "key": "admin:users.groupAssign",
+                    "value": "Tetapkan"
+                },
+                {
+                    "key": "admin:users.extendedMetadata",
+                    "value": "Metadata yang Diperluas"
+                },
+                {
+                    "key": "admin:users.location",
+                    "value": "Lokasi"
+                },
+                {
+                    "key": "admin:users.jobTitle",
+                    "value": "Jabatan"
+                },
+                {
+                    "key": "admin:users.timezone",
+                    "value": "Zona Waktu"
+                },
+                {
+                    "key": "admin:users.userUpdateSuccess",
+                    "value": "Pengguna berhasil diperbarui."
+                },
+                {
+                    "key": "admin:users.userAlreadyAssignedToGroup",
+                    "value": "Pengguna sudah ditugaskan ke grup ini!"
+                },
+                {
+                    "key": "admin:storage.targetState",
+                    "value": "Target penyimpanan ini adalah {{state}}"
+                },
+                {
+                    "key": "admin:storage.targetStateActive",
+                    "value": "aktif"
+                },
+                {
+                    "key": "admin:storage.targetStateInactive",
+                    "value": "tidak aktif"
+                },
+                {
+                    "key": "admin:storage.actionsInactiveWarn",
+                    "value": "Anda harus mengaktifkan target penyimpanan ini dan menerapkan perubahan sebelum Anda dapat menjalankan tindakan."
+                },
+                {
+                    "key": "auth:changePwd.subtitle",
+                    "value": "Pilih kata sandi baru"
+                },
+                {
+                    "key": "auth:changePwd.instructions",
+                    "value": "Kamu harus memilih kata sandi baru:"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordPlaceholder",
+                    "value": "kata sandi baru"
+                },
+                {
+                    "key": "auth:changePwd.newPasswordVerifyPlaceholder",
+                    "value": "Verifikasi Kata Sandi Baru"
+                },
+                {
+                    "key": "auth:changePwd.proceed",
+                    "value": "Ubah Kata Sandi"
+                },
+                {
+                    "key": "auth:changePwd.loading",
+                    "value": "Mengubah kata sandi ..."
+                },
+                {
+                    "key": "admin:dashboard.recentPages",
+                    "value": "Halaman Terbaru"
+                },
+                {
+                    "key": "admin:dashboard.mostPopularPages",
+                    "value": "Halaman Paling Populer"
+                },
+                {
+                    "key": "editor:props.info",
+                    "value": "Info"
+                },
+                {
+                    "key": "editor:props.scheduling",
+                    "value": "Penjadwalan"
+                },
+                {
+                    "key": "editor:props.social",
+                    "value": "Sosial"
+                },
+                {
+                    "key": "editor:props.categorization",
+                    "value": "Kategorisasi"
+                },
+                {
+                    "key": "editor:props.socialFeatures",
+                    "value": "Fitur Sosial"
+                },
+                {
+                    "key": "editor:props.allowComments",
+                    "value": "Izinkan Komentar"
+                },
+                {
+                    "key": "editor:props.allowCommentsHint",
+                    "value": "Aktifkan fitur berkomentar di halaman ini."
+                },
+                {
+                    "key": "editor:props.allowRatings",
+                    "value": "Izinkan Pemberian Peringkat"
+                },
+                {
+                    "key": "editor:props.displayAuthor",
+                    "value": "Tampilkan Infomasi Penulis"
+                },
+                {
+                    "key": "editor:props.displaySharingBar",
+                    "value": "Tampilkan Bilah Alat Berbagi"
+                },
+                {
+                    "key": "editor:props.displaySharingBarHint",
+                    "value": "Tampilkan tombol pada toolbar untuk membagikan dan mencetak halaman ini"
+                },
+                {
+                    "key": "editor:props.displayAuthorHint",
+                    "value": "Tampilkan nama penulis halamn bersama dengan waktu perubahan terakhir."
+                },
+                {
+                    "key": "editor:props.allowRatingsHint",
+                    "value": "Aktifkan fitur memberikan peringkat di halaman ini."
+                },
+                {
+                    "key": "editor:select.customView",
+                    "value": "atau membuat tampilan sendiri?"
+                },
+                {
+                    "key": "common:header.browseTags",
+                    "value": "Jelajahi berdasarkan Tag"
+                },
+                {
+                    "key": "common:header.siteMap",
+                    "value": "Peta Situs"
+                },
+                {
+                    "key": "common:header.pageActions",
+                    "value": "Tindakan Halaman"
+                },
+                {
+                    "key": "tags:currentSelection",
+                    "value": "Pilihan saat ini"
+                },
+                {
+                    "key": "tags:clearSelection",
+                    "value": "Hilangkan Pilihan"
+                },
+                {
+                    "key": "tags:selectOneMoreTags",
+                    "value": "Pilih satu atau lebih tag"
+                },
+                {
+                    "key": "tags:searchWithinResultsPlaceholder",
+                    "value": "Hasil Pencarian ..."
+                },
+                {
+                    "key": "tags:locale",
+                    "value": "Lokal"
+                },
+                {
+                    "key": "tags:orderBy",
+                    "value": "Diurutkan berdasarkan"
+                },
+                {
+                    "key": "tags:selectOneMoreTagsHint",
+                    "value": "Pilih satu atau beberapa tag di sebelah kiri."
+                },
+                {
+                    "key": "tags:retrievingResultsLoading",
+                    "value": "Menampilkan hasil ..."
+                },
+                {
+                    "key": "tags:noResults",
+                    "value": "Tidak dapat menemukan halaman dengan tag yang dipilih."
+                },
+                {
+                    "key": "tags:noResultsWithFilter",
+                    "value": "Tidak dapat menemukan halaman yang cocok dengan opsi pemfilteran saat ini."
+                },
+                {
+                    "key": "tags:pageLastUpdated",
+                    "value": "Terakhir Diperbarui {{date}}"
+                },
+                {
+                    "key": "tags:orderByField.creationDate",
+                    "value": "Tanggal Pembuatan"
+                },
+                {
+                    "key": "tags:orderByField.ID",
+                    "value": "ID"
+                },
+                {
+                    "key": "tags:orderByField.lastModified",
+                    "value": "Terakhir Diubah"
+                },
+                {
+                    "key": "tags:orderByField.path",
+                    "value": "Path"
+                },
+                {
+                    "key": "tags:orderByField.title",
+                    "value": "Judul"
+                },
+                {
+                    "key": "tags:localeAny",
+                    "value": "Apa saja"
+                },
+                {
+                    "key": "admin:contribute.github",
+                    "value": "Menjadi sponsor melalui GitHub Sponsors (langsung mendukung tujuan pengembang utama Nicolas Giard untuk bekerja penuh waktu di Wiki.js)"
+                },
+                {
+                    "key": "admin:contribute.becomeASponsor",
+                    "value": "Menjadi Sponsor"
+                },
+                {
+                    "key": "admin:tags.title",
+                    "value": "Tag"
+                },
+                {
+                    "key": "admin:ssl.title",
+                    "value": "SSL"
+                },
+                {
+                    "key": "admin:ssl.subtitle",
+                    "value": "Kelola konfigurasi SSL"
+                },
+                {
+                    "key": "admin:ssl.provider",
+                    "value": "Penyedia"
+                },
+                {
+                    "key": "admin:ssl.providerHint",
+                    "value": "Pilih Sertifikat Kustom jika anda sudah memiliki sertifikat anda sendiri."
+                },
+                {
+                    "key": "admin:ssl.domain",
+                    "value": "Domain"
+                },
+                {
+                    "key": "admin:ssl.domainHint",
+                    "value": "Masukkan FQDN (domain yang sepenuhnya memenuhi syarat) yang menunjuk ke wiki anda. (mis. wiki.example.com)"
+                },
+                {
+                    "key": "admin:ssl.providerOptions",
+                    "value": "Opsi Penyedia"
+                },
+                {
+                    "key": "admin:ssl.providerDisabled",
+                    "value": "Nonaktif"
+                },
+                {
+                    "key": "admin:ssl.providerLetsEncrypt",
+                    "value": "Let's Encrypt"
+                },
+                {
+                    "key": "admin:ssl.providerCustomCertificate",
+                    "value": "Sertifikat Khusus"
+                },
+                {
+                    "key": "admin:ssl.ports",
+                    "value": "Port"
+                },
+                {
+                    "key": "admin:ssl.httpPort",
+                    "value": "Port HTTP"
+                },
+                {
+                    "key": "admin:ssl.httpPortHint",
+                    "value": "Port non-SSL yang akan didengarkan server untuk permintaan HTTP. Biasanya 80 atau 3000."
+                },
+                {
+                    "key": "admin:ssl.httpsPort",
+                    "value": "Port HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpsPortHint",
+                    "value": "Port SSL yang akan didengarkan server untuk permintaan HTTPS. Biasanya 443."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirect",
+                    "value": "Alihkan permintaan HTTP ke HTTPS"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectHint",
+                    "value": "Secara otomatis akan mengalihkan setiap permintaan pada port HTTP ke HTTPS."
+                },
+                {
+                    "key": "admin:ssl.writableConfigFileWarning",
+                    "value": "Perhatikan bahwa file konfig anda harus dapat ditulis untuk mempertahankan konfigurasi port."
+                },
+                {
+                    "key": "admin:general.logoUrl",
+                    "value": "URL Logo"
+                },
+                {
+                    "key": "admin:general.logoUrlHint",
+                    "value": "Tentukan gambar yang akan digunakan sebagai logo. Format yang didukung adalah SVG, PNG, JPG, dalam rasio persegi, 34x34 piksel atau lebih besar. Klik tombol di sebelah kanan untuk mengunggah gambar baru."
+                },
+                {
+                    "key": "admin:users.deleteConfirmTitle",
+                    "value": "Hapus Pengguna?"
+                },
+                {
+                    "key": "admin:users.deleteConfirmText",
+                    "value": "Anda yakin ingin menghapus pengguna {{username}} ?"
+                },
+                {
+                    "key": "admin:users.updateUser",
+                    "value": "Perbarui Pengguna"
+                },
+                {
+                    "key": "admin:users.groupAssignNotice",
+                    "value": "Perhatikan bahwa anda tidak dapat menetapkan pengguna ke grup Administrator atau Tamu dari panel ini."
+                },
+                {
+                    "key": "admin:users.deleteConfirmForeignNotice",
+                    "value": "Perhatikan bahwa anda tidak dapat menghapus pengguna yang sudah membuat konten. Sebaliknya anda harus menonaktifkan pengguna atau menghapus semua konten yang dibuat oleh pengguna itu."
+                },
+                {
+                    "key": "editor:props.scripts",
+                    "value": "Skrip"
+                },
+                {
+                    "key": "editor:props.css",
+                    "value": "CSS"
+                },
+                {
+                    "key": "editor:props.cssHint",
+                    "value": "CSS secara otomatis akan diminimalkan setelah disimpan. Jangan menyertakan tag gaya di sekitarnya, hanya kode CSS yang sebenarnya."
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.all",
+                    "value": "Dapat dilihat oleh semua orang"
+                },
+                {
+                    "key": "admin:navigation.visibilityMode.restricted",
+                    "value": "Terlihat untuk memilih grup ..."
+                },
+                {
+                    "key": "admin:navigation.selectPageButton",
+                    "value": "Pilih Halaman..."
+                },
+                {
+                    "key": "admin:navigation.mode",
+                    "value": "Mode Navigasi"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.title",
+                    "value": "Pohon Situs"
+                },
+                {
+                    "key": "admin:navigation.modeSiteTree.description",
+                    "value": "Navigasi Berbasis Pohon Klasik"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.title",
+                    "value": "Navigasi Khusus"
+                },
+                {
+                    "key": "admin:navigation.modeCustom.description",
+                    "value": "Menu Navigasi Statis + Tombol Pohon Situs"
+                },
+                {
+                    "key": "admin:navigation.modeNone.title",
+                    "value": "Tidak Ada"
+                },
+                {
+                    "key": "admin:navigation.modeNone.description",
+                    "value": "Nonaktifkan Navigasi Situs"
+                },
+                {
+                    "key": "admin:users.userVerifySuccess",
+                    "value": "Pengguna telah berhasil diverifikasi."
+                },
+                {
+                    "key": "admin:users.userActivateSuccess",
+                    "value": "Pengguna telah berhasil diaktifkan."
+                },
+                {
+                    "key": "admin:users.userDeactivateSuccess",
+                    "value": "Pengguna berhasil dinonaktifkan."
+                },
+                {
+                    "key": "editor:markup.noSelectionError",
+                    "value": "Teks harus dipilih terlebih dahulu!"
+                },
+                {
+                    "key": "admin:ssl.renewCertificate",
+                    "value": "Perpanjang Sertifikat"
+                },
+                {
+                    "key": "admin:ssl.status",
+                    "value": "Status Sertifikat"
+                },
+                {
+                    "key": "admin:ssl.expiration",
+                    "value": "Sertifikat Kedaluwarsa"
+                },
+                {
+                    "key": "admin:ssl.subscriberEmail",
+                    "value": "Email Pelanggan"
+                },
+                {
+                    "key": "admin:ssl.currentState",
+                    "value": "Status Saat Ini"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOn",
+                    "value": "Nyalakan"
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectTurnOff",
+                    "value": "Matikan"
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingTitle",
+                    "value": "Memperpanjang Sertifikat ..."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateLoadingSubtitle",
+                    "value": "Jangan tinggalkan halaman ini."
+                },
+                {
+                    "key": "admin:ssl.renewCertificateSuccess",
+                    "value": "Sertifikat berhasil diperpanjang."
+                },
+                {
+                    "key": "admin:ssl.httpPortRedirectSaveSuccess",
+                    "value": "Pengalihan HTTP berhasil diubah."
+                },
+                {
+                    "key": "admin:tags.subtitle",
+                    "value": "Kelola tag halaman"
+                },
+                {
+                    "key": "admin:tags.emptyList",
+                    "value": "Tidak ada tag untuk ditampilkan."
+                },
+                {
+                    "key": "admin:tags.edit",
+                    "value": "Edit Tag"
+                },
+                {
+                    "key": "admin:tags.tag",
+                    "value": "Tag"
+                },
+                {
+                    "key": "admin:tags.label",
+                    "value": "Label"
+                },
+                {
+                    "key": "admin:tags.date",
+                    "value": "Dibuat {{created}} dan terakhir diperbarui {{updated}} ."
+                },
+                {
+                    "key": "admin:tags.delete",
+                    "value": "Hapus tag ini"
+                },
+                {
+                    "key": "admin:tags.noSelectionText",
+                    "value": "Pilih tag dari daftar di sebelah kiri."
+                },
+                {
+                    "key": "admin:tags.noItemsText",
+                    "value": "Tambahkan tag ke halaman untuk memulai."
+                },
+                {
+                    "key": "admin:tags.refreshSuccess",
+                    "value": "Tag telah disegarkan."
+                },
+                {
+                    "key": "admin:tags.deleteSuccess",
+                    "value": "Tag berhasil dihapus."
+                },
+                {
+                    "key": "admin:tags.saveSuccess",
+                    "value": "Tag berhasil disimpan."
+                },
+                {
+                    "key": "admin:tags.filter",
+                    "value": "Saring..."
+                },
+                {
+                    "key": "admin:tags.viewLinkedPages",
+                    "value": "Lihat Halaman Tertaut"
+                },
+                {
+                    "key": "admin:tags.deleteConfirm",
+                    "value": "Hapus Tag?"
+                },
+                {
+                    "key": "admin:tags.deleteConfirmText",
+                    "value": "Kamu yakin ingin menghapus tag {{tag}} ? Tag juga akan dibatalkan tautannya dari semua halaman."
+                },
+                {
+                    "key": "admin:api.subtitle",
+                    "value": "Kelola kunci untuk mengakses API"
+                },
+                {
+                    "key": "admin:api.enabled",
+                    "value": "API Diaktifkan"
+                },
+                {
+                    "key": "admin:api.disabled",
+                    "value": "API Dinonaktifkan"
+                },
+                {
+                    "key": "admin:api.enableButton",
+                    "value": "Aktifkan API"
+                },
+                {
+                    "key": "admin:api.disableButton",
+                    "value": "Nonaktifkan API"
+                },
+                {
+                    "key": "admin:api.newKeyButton",
+                    "value": "Kunci API Baru"
+                },
+                {
+                    "key": "admin:api.headerName",
+                    "value": "Nama"
+                },
+                {
+                    "key": "admin:api.headerKeyEnding",
+                    "value": "Penutupan Kunci"
+                },
+                {
+                    "key": "admin:api.headerExpiration",
+                    "value": "Kadaluarsa"
+                },
+                {
+                    "key": "admin:api.headerCreated",
+                    "value": "Dibuat"
+                },
+                {
+                    "key": "admin:api.headerLastUpdated",
+                    "value": "Terakhir Diperbarui"
+                },
+                {
+                    "key": "admin:api.headerRevoke",
+                    "value": "Mencabut"
+                },
+                {
+                    "key": "admin:api.noKeyInfo",
+                    "value": "Belum ada kunci API yang dihasilkan."
+                },
+                {
+                    "key": "admin:api.revokeConfirm",
+                    "value": "Cabut Kunci API?"
+                },
+                {
+                    "key": "admin:api.revokeConfirmText",
+                    "value": "Anda yakin ingin mencabut kunci {{name}} ? Tindakan ini tidak bisa dibatalkan!"
+                },
+                {
+                    "key": "admin:api.revoke",
+                    "value": "Mencabut"
+                },
+                {
+                    "key": "admin:api.refreshSuccess",
+                    "value": "Daftar kunci API telah diperbarui."
+                },
+                {
+                    "key": "admin:api.revokeSuccess",
+                    "value": "Kunci berhasil dicabut."
+                },
+                {
+                    "key": "admin:api.newKeyTitle",
+                    "value": "Kunci API Baru"
+                },
+                {
+                    "key": "admin:api.newKeySuccess",
+                    "value": "Kunci API berhasil dibuat."
+                },
+                {
+                    "key": "admin:api.newKeyNameError",
+                    "value": "Nama tidak ada atau tidak valid."
+                },
+                {
+                    "key": "admin:api.newKeyGroupError",
+                    "value": "Kamu harus memilih grup."
+                },
+                {
+                    "key": "admin:api.newKeyGuestGroupError",
+                    "value": "Grup tamu tidak dapat digunakan untuk kunci API."
+                },
+                {
+                    "key": "admin:api.newKeyNameHint",
+                    "value": "Tujuan dari kunci ini"
+                },
+                {
+                    "key": "admin:api.newKeyName",
+                    "value": "Nama"
+                },
+                {
+                    "key": "admin:api.newKeyExpiration",
+                    "value": "Kadaluarsa"
+                },
+                {
+                    "key": "admin:api.newKeyExpirationHint",
+                    "value": "Anda masih dapat mencabut kunci kapan saja terlepas dari kedaluwarsa."
+                },
+                {
+                    "key": "admin:api.newKeyPermissionScopes",
+                    "value": "Cakupan Izin"
+                },
+                {
+                    "key": "admin:api.newKeyFullAccess",
+                    "value": "Akses penuh"
+                },
+                {
+                    "key": "admin:api.newKeyGroupPermissions",
+                    "value": "atau gunakan izin grup..."
+                },
+                {
+                    "key": "common:actions.generate",
+                    "value": "Menghasilkan"
+                },
+                {
+                    "key": "admin:api.newKeyGroup",
+                    "value": "Grup"
+                },
+                {
+                    "key": "admin:api.newKeyGroupHint",
+                    "value": "Kunci API akan memiliki izin yang sama dengan grup yang dipilih."
+                },
+                {
+                    "key": "admin:api.expiration30d",
+                    "value": "30 hari"
+                },
+                {
+                    "key": "admin:api.expiration90d",
+                    "value": "90 hari"
+                },
+                {
+                    "key": "admin:api.expiration180d",
+                    "value": "180 hari"
+                },
+                {
+                    "key": "admin:api.expiration1y",
+                    "value": "1 tahun"
+                },
+                {
+                    "key": "admin:api.expiration3y",
+                    "value": "3 tahun"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarn",
+                    "value": "Salin kunci yang ditunjukkan di bawah ini sebagai {{bold}}"
+                },
+                {
+                    "key": "admin:api.newKeyCopyWarnBold",
+                    "value": "itu TIDAK akan ditampilkan lagi"
+                },
+                {
+                    "key": "admin:api.toggleStateEnabledSuccess",
+                    "value": "API telah berhasil diaktifkan."
+                },
+                {
+                    "key": "admin:api.toggleStateDisabledSuccess",
+                    "value": "API telah berhasil dinonaktifkan."
+                },
+                {
+                    "key": "editor:save.saved",
+                    "value": "Disimpan"
+                },
+                {
+                    "key": "common:license.none",
+                    "value": "Tidak ada"
+                },
+                {
+                    "key": "common:license.ccby",
+                    "value": "Lisensi Atribusi Creative Commons"
+                },
+                {
+                    "key": "common:license.ccbysa",
+                    "value": "Lisensi Creative Commons Attribution-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbynd",
+                    "value": "Lisensi Creative Commons Attribution-NoDerivs"
+                },
+                {
+                    "key": "common:license.ccbync",
+                    "value": "Lisensi Atribusi-NonKomersial Creative Commons"
+                },
+                {
+                    "key": "common:license.ccbyncsa",
+                    "value": "Lisensi Creative Commons Attribution-NonCommercial-ShareAlike"
+                },
+                {
+                    "key": "common:license.ccbyncnd",
+                    "value": "Lisensi Creative Commons Attribution-NonCommercial-NoDerivs"
+                },
+                {
+                    "key": "common:license.cc0",
+                    "value": "Domain Publik"
+                },
+                {
+                    "key": "common:license.alr",
+                    "value": "Seluruh Hak Cipta"
+                },
+                {
+                    "key": "admin:general.contentLicense",
+                    "value": "Lisensi Konten"
+                },
+                {
+                    "key": "admin:general.contentLicenseHint",
+                    "value": "Lisensi ditampilkan di bagian bawah semua halaman konten."
+                },
+                {
+                    "key": "common:footer.license",
+                    "value": "Konten tersedia di bawah {{license}} , oleh {{company}} ."
+                },
+                {
+                    "key": "common:unauthorized.action.download",
+                    "value": "Anda tidak dapat mengunduh konten halaman."
+                },
+                {
+                    "key": "common:unauthorized.action.downloadVersion",
+                    "value": "Anda tidak dapat mengunduh konten untuk versi halaman ini."
+                },
+                {
+                    "key": "common:unauthorized.action.sourceVersion",
+                    "value": "Anda tidak dapat melihat sumber versi halaman ini."
+                },
+                {
+                    "key": "common:page.viewingSourceVersion",
+                    "value": "Melihat sumber pada {{date}} dari halaman {{path}}"
+                },
+                {
+                    "key": "common:page.versionId",
+                    "value": "ID Versi {{id}}"
+                },
+                {
+                    "key": "history:restore.confirmTitle",
+                    "value": "Pulihkan versi halaman?"
+                },
+                {
+                    "key": "history:restore.confirmText",
+                    "value": "Apakah Anda yakin ingin mengembalikan konten halaman ini seperti pada {{date}} ? Versi ini akan disalin di atas riwayat saat ini. Dengan demikian, versi yang lebih baru masih akan dipertahankan."
+                },
+                {
+                    "key": "history:restore.confirmButton",
+                    "value": "Mengembalikan"
+                },
+                {
+                    "key": "history:restore.success",
+                    "value": "Versi halaman berhasil dipulihkan!"
+                },
+                {
+                    "key": "editor:ckeditor.stats",
+                    "value": "{{chars}} karakter, {{words}} kata"
+                },
+                {
+                    "key": "editor:conflict.title",
+                    "value": "Menyelesaikan Konflik Simpan"
+                },
+                {
+                    "key": "editor:conflict.useLocal",
+                    "value": "Gunakan Lokal"
+                },
+                {
+                    "key": "editor:conflict.useRemote",
+                    "value": "Gunakan Remote"
+                },
+                {
+                    "key": "editor:conflict.useRemoteHint",
+                    "value": "Buang perubahan lokal dan gunakan versi terbaru"
+                },
+                {
+                    "key": "editor:conflict.useLocalHint",
+                    "value": "Gunakan konten di panel kiri"
+                },
+                {
+                    "key": "editor:conflict.viewLatestVersion",
+                    "value": "Tampilkan Versi Terbaru"
+                },
+                {
+                    "key": "editor:conflict.infoGeneric",
+                    "value": "Versi yang lebih baru dari halaman ini disimpan oleh {{authorName}} , {{date}}"
+                },
+                {
+                    "key": "editor:conflict.whatToDo",
+                    "value": "apa yang mau kamu lakukan?"
+                },
+                {
+                    "key": "editor:conflict.whatToDoLocal",
+                    "value": "Gunakan versi lokal Anda saat ini dan abaikan perubahan terbaru."
+                },
+                {
+                    "key": "editor:conflict.whatToDoRemote",
+                    "value": "Gunakan versi jarak jauh (terbaru) dan buang perubahanmu."
+                },
+                {
+                    "key": "editor:conflict.overwrite.title",
+                    "value": "Timpa dengan Versi Jarak Jauh?"
+                },
+                {
+                    "key": "editor:conflict.overwrite.description",
+                    "value": "Apakah Kamu yakin ingin mengganti versi Kamu saat ini dengan konten jarak jauh terbaru? {{refEditsLost}}"
+                },
+                {
+                    "key": "editor:conflict.overwrite.editsLost",
+                    "value": "Perubahan terbaru anda akan hilang."
+                },
+                {
+                    "key": "common:actions.confirm",
+                    "value": "Konfirmasi"
+                },
+                {
+                    "key": "editor:conflict.localVersion",
+                    "value": "Versi Lokal {{refEditable}}"
+                },
+                {
+                    "key": "editor:conflict.editable",
+                    "value": "(dapat diedit)"
+                },
+                {
+                    "key": "editor:conflict.readonly",
+                    "value": "(hanya-baca)"
+                },
+                {
+                    "key": "editor:conflict.remoteVersion",
+                    "value": "Versi jarak jauh {{refReadOnly}}"
+                },
+                {
+                    "key": "editor:conflict.leftPanelInfo",
+                    "value": "Perubahan Anda saat ini, berdasarkan versi halaman dari {{date}}"
+                },
+                {
+                    "key": "editor:conflict.rightPanelInfo",
+                    "value": "Terakhir diubah oleh{{authorName}},{{date}}"
+                },
+                {
+                    "key": "editor:conflict.pageTitle",
+                    "value": "Judul:"
+                },
+                {
+                    "key": "editor:conflict.pageDescription",
+                    "value": "Deskripsi:"
+                },
+                {
+                    "key": "editor:unsavedWarning",
+                    "value": "Kamu memiliki hasil edit yang belum disimpan. Kamu yakin ingin keluar dari editor?"
+                },
+                {
+                    "key": "editor:conflict.warning",
+                    "value": "Simpan konflik! Pengguna lain telah mengubah halaman ini."
+                },
+                {
+                    "key": "common:header.duplicate",
+                    "value": "Duplikat"
+                },
+                {
+                    "key": "profile:displayName",
+                    "value": "Nama Tampilan"
+                },
+                {
+                    "key": "profile:location",
+                    "value": "Lokasi"
+                },
+                {
+                    "key": "profile:jobTitle",
+                    "value": "Jabatan"
+                },
+                {
+                    "key": "profile:timezone",
+                    "value": "Zona waktu"
+                },
+                {
+                    "key": "profile:title",
+                    "value": "Profil"
+                },
+                {
+                    "key": "profile:subtitle",
+                    "value": "Info pribadi saya"
+                },
+                {
+                    "key": "profile:myInfo",
+                    "value": "Info Saya"
+                },
+                {
+                    "key": "profile:viewPublicProfile",
+                    "value": "Lihat Profil Publik"
+                },
+                {
+                    "key": "profile:auth.title",
+                    "value": "Autentikasi"
+                },
+                {
+                    "key": "profile:auth.provider",
+                    "value": "Penyedia"
+                },
+                {
+                    "key": "profile:auth.changePassword",
+                    "value": "Ubah Kata Sandi"
+                },
+                {
+                    "key": "profile:auth.currentPassword",
+                    "value": "Kata Sandi Saat Ini"
+                },
+                {
+                    "key": "profile:auth.newPassword",
+                    "value": "Kata Sandi Baru"
+                },
+                {
+                    "key": "profile:auth.verifyPassword",
+                    "value": "Konfirmasi Kata Sandi Baru"
+                },
+                {
+                    "key": "profile:groups.title",
+                    "value": "Grup"
+                },
+                {
+                    "key": "profile:activity.title",
+                    "value": "Aktivitas"
+                },
+                {
+                    "key": "profile:activity.joinedOn",
+                    "value": "Bergabung pada"
+                },
+                {
+                    "key": "profile:activity.lastUpdatedOn",
+                    "value": "Profil terakhir diperbarui pada"
+                },
+                {
+                    "key": "profile:activity.lastLoginOn",
+                    "value": "Login terakhir pada"
+                },
+                {
+                    "key": "profile:activity.pagesCreated",
+                    "value": "Halaman dibuat"
+                },
+                {
+                    "key": "profile:activity.commentsPosted",
+                    "value": "Komentar diposting"
+                },
+                {
+                    "key": "profile:save.success",
+                    "value": "Profil berhasil disimpan."
+                },
+                {
+                    "key": "profile:auth.changePassSuccess",
+                    "value": "Kata sandi berhasil diubah."
+                },
+                {
+                    "key": "profile:pages.title",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "profile:comments.title",
+                    "value": "Komentar"
+                },
+                {
+                    "key": "profile:pages.subtitle",
+                    "value": "Daftar halaman yang saya buat atau modifikasi terakhir"
+                },
+                {
+                    "key": "profile:pages.emptyList",
+                    "value": "Tidak ada halaman untuk ditampilkan."
+                },
+                {
+                    "key": "profile:pages.refreshSuccess",
+                    "value": "Daftar halaman telah di-refresh."
+                },
+                {
+                    "key": "profile:pages.headerTitle",
+                    "value": "Judul"
+                },
+                {
+                    "key": "profile:pages.headerPath",
+                    "value": "Path"
+                },
+                {
+                    "key": "profile:pages.headerCreatedAt",
+                    "value": "Dibuat pada"
+                },
+                {
+                    "key": "profile:pages.headerUpdatedAt",
+                    "value": "Terakhir Diperbarui"
+                },
+                {
+                    "key": "admin:dashboard.lastLogins",
+                    "value": "Login Terakhir"
+                },
+                {
+                    "key": "common:sidebar.browse",
+                    "value": "Telusuri"
+                },
+                {
+                    "key": "common:sidebar.mainMenu",
+                    "value": "Menu Utama"
+                },
+                {
+                    "key": "common:sidebar.currentDirectory",
+                    "value": "Direktori Saat Ini"
+                },
+                {
+                    "key": "common:sidebar.root",
+                    "value": "(akar)"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocale",
+                    "value": "Salin dari lokal..."
+                },
+                {
+                    "key": "admin:navigation.sourceLocale",
+                    "value": "Sumber Lokal"
+                },
+                {
+                    "key": "admin:navigation.sourceLocaleHint",
+                    "value": "Lokal tempat item navigasi akan disalin."
+                },
+                {
+                    "key": "common:actions.copy",
+                    "value": "Salin"
+                },
+                {
+                    "key": "admin:navigation.copyFromLocaleInfoText",
+                    "value": "Pilih lokal dimana item akan disalin. Item akan ditambahkan ke daftar item saat ini di lokal aktif."
+                },
+                {
+                    "key": "admin:navigation.modeStatic.title",
+                    "value": "Navigasi Statis"
+                },
+                {
+                    "key": "admin:navigation.modeStatic.description",
+                    "value": "Menu Navigasi Statis Saja"
+                },
+                {
+                    "key": "profile:preferences",
+                    "value": "Preferensi"
+                },
+                {
+                    "key": "profile:dateFormat",
+                    "value": "Format Tanggal"
+                },
+                {
+                    "key": "profile:localeDefault",
+                    "value": "Default Lokal"
+                },
+                {
+                    "key": "profile:appearance",
+                    "value": "Penampilan"
+                },
+                {
+                    "key": "profile:appearanceDefault",
+                    "value": "Situs Bawaan"
+                },
+                {
+                    "key": "profile:appearanceLight",
+                    "value": "Terang"
+                },
+                {
+                    "key": "profile:appearanceDark",
+                    "value": "Gelap"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSL",
+                    "value": "Verifikasi Sertifikat SSL"
+                },
+                {
+                    "key": "admin:mail.smtpVerifySSLHint",
+                    "value": "Beberapa host membutuhkan pemeriksaan sertifikat SSL untuk dinonaktifkan. Biarkan diaktifkan untuk keamanan yang tepat."
+                },
+                {
+                    "key": "admin:navigation.navType.externalblank",
+                    "value": "Tautan Eksternal (Jendela Baru)"
+                },
+                {
+                    "key": "admin:security.title",
+                    "value": "Keamanan"
+                },
+                {
+                    "key": "admin:security.maxUploadSize",
+                    "value": "Ukuran Unggahan Maksimal"
+                },
+                {
+                    "key": "admin:security.maxUploadBatch",
+                    "value": "Maksimum File per Unggahan"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchHint",
+                    "value": "Berapa banyak file yang dapat diunggah dalam satu batch?"
+                },
+                {
+                    "key": "admin:security.maxUploadSizeHint",
+                    "value": "Ukuran maksimum untuk satu file."
+                },
+                {
+                    "key": "admin:security.maxUploadSizeSuffix",
+                    "value": "bytes"
+                },
+                {
+                    "key": "admin:security.maxUploadBatchSuffix",
+                    "value": "files"
+                },
+                {
+                    "key": "admin:security.uploads",
+                    "value": "Unggahan"
+                },
+                {
+                    "key": "admin:security.uploadsInfo",
+                    "value": "Pengaturan ini hanya mempengaruhi Wiki.js. Jika kamu memakai reverse-proxy (misalnya nginx, apache, Cloudflare), kamu harus merubah setelannya agar sesuai"
+                },
+                {
+                    "key": "admin:security.subtitle",
+                    "value": "Konfigurasi Pengaturan Keamanan"
+                },
+                {
+                    "key": "admin:extensions.title",
+                    "value": "Ekstensi"
+                },
+                {
+                    "key": "admin:extensions.subtitle",
+                    "value": "Pasang ekstensi untuk fungsionalitas tambahan"
+                },
+                {
+                    "key": "admin:comments.provider",
+                    "value": "Penyedia"
+                },
+                {
+                    "key": "admin:comments.subtitle",
+                    "value": "Tambahkan diskusi ke halaman wiki anda"
+                },
+                {
+                    "key": "admin:comments.providerConfig",
+                    "value": "Konfigurasi Penyedia"
+                },
+                {
+                    "key": "admin:comments.providerNoConfig",
+                    "value": "Penyedia ini tidak memiliki opsi konfigurasi yang dapat anda modifikasi."
+                },
+                {
+                    "key": "admin:users.deleteConfirmReplaceWarn",
+                    "value": "Setiap konten (halaman, upload, komentar, dll.) yang dibuat oleh pengguna ini akan dialihkan ke pengguna yang dipilih di bawah ini. Direkomendasikan untuk membuat pengguna target tiruan (mis. Pengguna yang Dihapus) jika anda tidak ingin konten dipindahkan ke pengguna aktif mana pun saat ini."
+                },
+                {
+                    "key": "admin:auth.activeStrategies",
+                    "value": "Strategi Aktif"
+                },
+                {
+                    "key": "admin:auth.addStrategy",
+                    "value": "Tambahkan Strategi"
+                },
+                {
+                    "key": "editor:props.styles",
+                    "value": "Styles"
+                },
+                {
+                    "key": "editor:props.html",
+                    "value": "HTML"
+                },
+                {
+                    "key": "editor:props.htmlHint",
+                    "value": "Anda harus mengelilingi kode javascript anda dengan tag script HTML."
+                },
+                {
+                    "key": "common:page.unpublishedWarning",
+                    "value": "Halaman ini tidak dipublikasikan."
+                },
+                {
+                    "key": "common:comments.title",
+                    "value": "Komentar"
+                },
+                {
+                    "key": "common:comments.newPlaceholder",
+                    "value": "Tulis komentar baru..."
+                },
+                {
+                    "key": "common:comments.fieldName",
+                    "value": "Nama Anda"
+                },
+                {
+                    "key": "common:comments.fieldEmail",
+                    "value": "Alamat Email Anda"
+                },
+                {
+                    "key": "common:comments.markdownFormat",
+                    "value": "Format Markdown"
+                },
+                {
+                    "key": "common:comments.postComment",
+                    "value": "Posting Komentar"
+                },
+                {
+                    "key": "common:comments.loading",
+                    "value": "Memuat komentar..."
+                },
+                {
+                    "key": "common:comments.postingAs",
+                    "value": "Posting sebagai {{name}}"
+                },
+                {
+                    "key": "common:comments.beFirst",
+                    "value": "Jadilah yang pertama berkomentar."
+                },
+                {
+                    "key": "common:comments.none",
+                    "value": "Belum ada komentar."
+                },
+                {
+                    "key": "common:comments.updateComment",
+                    "value": "Perbarui Komentar"
+                },
+                {
+                    "key": "common:comments.deleteConfirmTitle",
+                    "value": "Konfirmasi Hapus"
+                },
+                {
+                    "key": "common:comments.deleteWarn",
+                    "value": "Apa kamu yakin mau menghapus komentar ini secara permanen?"
+                },
+                {
+                    "key": "common:comments.deletePermanentWarn",
+                    "value": "Tindakan ini tidak bisa dibatalkan!"
+                },
+                {
+                    "key": "common:comments.modified",
+                    "value": "diubah pada {{reldate}}"
+                },
+                {
+                    "key": "common:comments.postSuccess",
+                    "value": "Komentar baru berhasil diposting."
+                },
+                {
+                    "key": "common:comments.contentMissingError",
+                    "value": "Komentar kosong atau terlalu pendek!"
+                },
+                {
+                    "key": "common:comments.updateSuccess",
+                    "value": "Komentar berhasil diperbarui."
+                },
+                {
+                    "key": "common:comments.deleteSuccess",
+                    "value": "Komentar berhasil dihapus."
+                },
+                {
+                    "key": "editor:markup.toggleSpellcheck",
+                    "value": "Toggle Cek Ejaan"
+                },
+                {
+                    "key": "admin:security.login",
+                    "value": "Masuk"
+                },
+                {
+                    "key": "admin:security.loginScreen",
+                    "value": "Layar Login"
+                },
+                {
+                    "key": "admin:security.jwt",
+                    "value": "Konfigurasi JWT"
+                },
+                {
+                    "key": "admin:security.bypassLogin",
+                    "value": "Lewati Layar Login"
+                },
+                {
+                    "key": "admin:security.bypassLoginHint",
+                    "value": "Haruskah pengguna diarahkan secara otomatis ke penyedia autentikasi pertama."
+                },
+                {
+                    "key": "admin:security.loginBgUrl",
+                    "value": "URL Gambar Latar Belakang Login"
+                },
+                {
+                    "key": "admin:security.loginBgUrlHint",
+                    "value": "Tentukan gambar untuk digunakan sebagai latar belakang login. PNG dan JPG didukung, disarankan 1920x1080. Biarkan kosong untuk gambar bawaan. Klik tombol di sebelah kanan untuk mengunggah gambar baru. Perhatikan bahwa grup Tamu harus memiliki akses baca ke gambar yang dipilih!"
+                },
+                {
+                    "key": "admin:security.hideLocalLogin",
+                    "value": "Sembunyikan Penyedia Autentikasi Lokal"
+                },
+                {
+                    "key": "admin:security.hideLocalLoginHint",
+                    "value": "Jangan tampilkan penyedia autentikasi lokal di layar login. Tambahkan ?all ke URL untuk sementara menggunakannya."
+                },
+                {
+                    "key": "admin:security.loginSecurity",
+                    "value": "Keamanan"
+                },
+                {
+                    "key": "admin:security.enforce2fa",
+                    "value": "Paksa penggunaan 2FA"
+                },
+                {
+                    "key": "admin:security.enforce2faHint",
+                    "value": "Paksa semua pengguna untuk menggunakan Autentikasi Dua Faktor saat menggunakan penyedia autentikasi dengan formulir pengguna / kata sandi."
+                },
+                {
+                    "key": "common:comments.viewDiscussion",
+                    "value": "Lihat Diskusi"
+                },
+                {
+                    "key": "common:comments.newComment",
+                    "value": "Komentar Baru"
+                },
+                {
+                    "key": "common:comments.fieldContent",
+                    "value": "Konten Komentar"
+                },
+                {
+                    "key": "common:comments.sdTitle",
+                    "value": "Berbicara"
+                },
+                {
+                    "key": "common:page.tags",
+                    "value": "Tags"
+                },
+                {
+                    "key": "common:page.tagsMatching",
+                    "value": "Tag yang cocok dengan halaman"
+                },
+                {
+                    "key": "common:actions.returnToTop",
+                    "value": "Kembali ke atas"
+                },
+                {
+                    "key": "auth:fields.username",
+                    "value": "Nama pengguna"
+                },
+                {
+                    "key": "common:actions.exit",
+                    "value": "Keluar"
+                },
+                {
+                    "key": "admin:rendering.subtitle",
+                    "value": "Konfigurasi pipeline rendering halaman"
+                },
+                {
+                    "key": "admin:general.siteTitleInvalidChars",
+                    "value": "Judul Situs berisi karakter yang tidak valid."
+                },
+                {
+                    "key": "admin:general.saveSuccess",
+                    "value": "Konfigurasi situs berhasil disimpan."
+                },
+                {
+                    "key": "admin:users.userTFADisableSuccess",
+                    "value": "2FA berhasil dinonaktifkan."
+                },
+                {
+                    "key": "admin:users.userTFAEnableSuccess",
+                    "value": "2FA berhasil diaktifkan."
+                },
+                {
+                    "key": "auth:forgotPasswordLoading",
+                    "value": "Meminta pengaturan ulang kata sandi..."
+                },
+                {
+                    "key": "auth:forgotPasswordSuccess",
+                    "value": "Periksa email anda untuk instruksi pengaturan ulang kata sandi!"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabled",
+                    "value": "Aktif"
+                },
+                {
+                    "key": "admin:auth.strategyIsEnabledHint",
+                    "value": "Apakah pengguna dapat masuk menggunakan strategi ini?"
+                },
+                {
+                    "key": "admin:auth.displayName",
+                    "value": "Nama Tampilan"
+                },
+                {
+                    "key": "admin:auth.displayNameHint",
+                    "value": "Judul yang ditampilkan kepada pengguna untuk strategi autentikasi ini."
+                },
+                {
+                    "key": "auth:selectAuthProvider",
+                    "value": "Pilih Penyedia Autentikasi"
+                },
+                {
+                    "key": "auth:enterCredentials",
+                    "value": "Masukkan kredensial anda"
+                },
+                {
+                    "key": "auth:forgotPasswordTitle",
+                    "value": "Lupa kata sandi anda"
+                },
+                {
+                    "key": "auth:tfaFormTitle",
+                    "value": "Masukan kode keamanan yang muncul dari perangkatmu"
+                },
+                {
+                    "key": "auth:tfaSetupTitle",
+                    "value": "Administrator Anda telah mewajibkan Otentikasi Dua Faktor (2FA) untuk diaktifkan di akun Anda."
+                },
+                {
+                    "key": "auth:tfaSetupInstrFirst",
+                    "value": "1)  Pindai kode QR dibawah dengan aplikasi 2FA perangkatmu:"
+                },
+                {
+                    "key": "auth:tfaSetupInstrSecond",
+                    "value": "2) Masukan kode keamanan yang muncul di perangkatmu"
+                },
+                {
+                    "key": "common:actions.select",
+                    "value": "Pilih"
+                },
+                {
+                    "key": "common:pageSelector.createTitle",
+                    "value": "Pilih Lokasi Halaman Baru"
+                },
+                {
+                    "key": "common:pageSelector.moveTitle",
+                    "value": "Pindah / Ganti Nama Lokasi Halaman"
+                },
+                {
+                    "key": "common:pageSelector.selectTitle",
+                    "value": "Pilih Halaman"
+                },
+                {
+                    "key": "common:pageSelector.virtualFolders",
+                    "value": "Folder Virtual"
+                },
+                {
+                    "key": "common:pageSelector.pages",
+                    "value": "Halaman"
+                },
+                {
+                    "key": "common:pageSelector.folderEmptyWarning",
+                    "value": "Folder ini kosong."
+                },
+                {
+                    "key": "common:header.convert",
+                    "value": "Konversi"
+                },
+                {
+                    "key": "common:page.convert",
+                    "value": "Konversi halaman"
+                },
+                {
+                    "key": "common:page.convertTitle",
+                    "value": "Pilih editor yang ingin Anda gunakan untuk halaman selanjutnya{{title}}"
+                },
+                {
+                    "key": "common:page.convertSubtitle",
+                    "value": "Konten pada halaman ini akan dikonversi ke format terbaru pada editor yang sudah dipilih. Perlu diingat bahwa format atau konten yang tidak dirender akan hilang pada hasil konversi. Tangkapan layar akan ditambahkan pada jejak perubahan halaman D dapat dikembalikan "
+                },
+                {
+                    "key": "common:actions.convert",
+                    "value": "Konversi"
+                },
+                {
+                    "key": "common:welcome.goadmin",
+                    "value": "Administrasi"
+                },
+                {
+                    "key": "admin:utilities.exportTitle",
+                    "value": "Ekspor ke Disk"
+                },
+                {
+                    "key": "admin:utilities.exportSubtitle",
+                    "value": "Simpan konten ke tarball untuk pencadangan / migrasi"
+                },
+                {
+                    "key": "editor:props.toc",
+                    "value": "Daftar Isi"
+                },
+                {
+                    "key": "editor:props.tocTitle",
+                    "value": "Daftar Isi"
+                },
+                {
+                    "key": "editor:props.tocUseDefault",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "editor:props.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevels",
+                    "value": ""
+                },
+                {
+                    "key": "admin:theme.tocHeadingLevelsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:mail.smtpNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensions",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.pageExtensionsHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalName",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalNameHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalIcon",
+                    "value": "Tombol Ikon"
+                },
+                {
+                    "key": "admin:general.editMenuExternalIconHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrl",
+                    "value": "Tombol URL"
+                },
+                {
+                    "key": "admin:general.editMenuExternalUrlHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editShortcuts",
+                    "value": "Edit Pintasan"
+                },
+                {
+                    "key": "admin:general.editFab",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editFabHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.editMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBar",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBarHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtn",
+                    "value": "Tampilkan Tombol Edit"
+                },
+                {
+                    "key": "admin:general.displayEditMenuBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtn",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.displayEditMenuExternalBtnHint",
+                    "value": ""
+                },
+                {
+                    "key": "common:page.editExternal",
+                    "value": "Ubah {{name}}"
+                },
+                {
+                    "key": "admin:comments.configSaveSuccess",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverride",
+                    "value": ""
+                },
+                {
+                    "key": "admin:general.footerOverrideHint",
+                    "value": ""
+                }
+            ]
+        }
+    }
+}
