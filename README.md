@@ -31,16 +31,11 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
    For dev mode use `yarn dev`, see also `yarn watch`
 1. Install [Vue DevTools](https://devtools.vuejs.org) browser extension (Chrome, Firefox)
 
-# Upgrades
+# Package Upgrades
 
 - [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
 - [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated and printed a warning.
 - [Katex](https://katex.org) was upgraded to the latest to enhance the Math support.
-
-# Modifications
-
-- To make page creation workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
-- The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
 
 ## Known Issues
 
@@ -49,7 +44,12 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
   See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083).
   A workaround is to use `--ignore-optional` for Yarn.
 
-# Further upgrades
+# Modifications
+
+- To make page creation workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
+- The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
+
+# Further Upgrades
 
 **Notice that**
 - `yarn.lock` is a castle of cards !
