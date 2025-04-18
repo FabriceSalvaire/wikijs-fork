@@ -77,4 +77,46 @@ LanguageTool doesn't work with CodeMirror.
 
 - [Yarn](https://yarnpkg.com)
 
-  [CLI](https://classic.yarnpkg.com/en/docs/cli/)
+  [CLI](https://classic.yarnpkg.com/en/docs/cli)
+</br>
+
+- [Apollo GraphQL](https://www.apollographql.com/)
+- [Babel](https://babeljs.io)
+  compile ECMAScript 2015+
+- [Cheerio](https://cheerio.js.org)
+  Parsing and manipulating HTML and XML
+- [Hammer.JS](https://hammerjs.github.io/)
+  Gesture made by touch, mouse and pointerEvents
+- [js-cookie](https://github.com/js-cookie/js-cookie)
+- [Knex.js](https://knexjs.org)
+  SQL Query Builder
+- [Lodash](https://lodash.com)
+- [markdown-it](https://github.com/markdown-it/markdown-it)
+- [Mermaid](https://mermaid.js.org)
+  Diagramming and charting tool
+- [Moment.js](https://momentjs.com)
+
+  [Moment Timezone](https://momentjs.com/timezone)
+  Date
+- [Objection.js](https://vincit.github.io/objection.js)
+  ORM
+- [Prism](https://prismjs.com)
+  Syntax highlighter
+- [Pug](https://pugjs.org/api/getting-started.html)
+  Template engine
+- [punycode](https://github.com/mathiasbynens/punycode.js)
+  Punycode converter that fully complies to RFC 3492 and RFC 5891
+- [simple-git](https://github.com/steveukx/git-js)
+- [Vue.js](https://v2.vuejs.org/v2/guide)
+- [Vuex](https://vuex.vuejs.org)
+  State management
+
+  [Getting Started | Vuex](https://vuex.vuejs.org/guide/#the-simplest-store)
+- [vuex-pathify](https://davestewart.github.io/vuex-pathify)
+- [vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)
+  Persist and rehydrate a Vuex state between page reloads
+  (**Archived** and UNUSED ???)
+- [Vuetify](https://v2.vuetifyjs.com/en)
+  Material Design Framework for Vue.js
+- [vuetify-loader](https://github.com/vuetifyjs/vuetify-loader)
+  Webpack plugin
