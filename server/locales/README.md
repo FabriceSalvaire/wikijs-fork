@@ -1,3 +1,27 @@
+# Notes
+
+Locales are fetched by server from GraphQL endpoint https://graph.requarks.io/ and stored in the database.
+
+```
+query ($code: String!) {
+  localization {
+    strings(code: $code) {
+    key
+    value
+}}}
+```
+
+```
+{
+"code": "en"
+}
+```
+
+See source
+- `localization.js`
+
+# Original README
+
 ## IMPORTANT
 
 Localization files are not stored into files!
