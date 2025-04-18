@@ -1,8 +1,31 @@
 This repository contains a custom [Wiki.js](https://github.com/requarks/wiki) fork featuring some upgrades and modifications.
 
-**NOTICE THAT ANY SUPPORT IS PROVIDED BUT ANY USEFUL PR IS WELCOME**
+> [!IMPORTANT]
+> NOTICE THAT ANY SUPPORT IS PROVIDED
+> BUT ANY USEFUL PR IS WELCOME OR TALK ABOUT MAINTAINING V2
 
-# Build
+# Changelog vs V2
+
+## Package Upgrades
+
+- [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
+- [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated and printed a warning.
+- [Katex](https://katex.org) was upgraded to the latest to enhance the Math support.
+
+### Known Issues
+
+- [ssh2](https://github.com/mscdex/ssh2) has an optional dependencies, `cpu_features`, that fails to build and make noises.
+
+  See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083).
+  A workaround is to use `--ignore-optional` for Yarn.
+
+## Modifications
+
+- To make page creation workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
+- The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
+
+
+# Build Process
 
 If you don't want to use a Docker image, the build process works on Linux Fedora 41.
 
@@ -31,25 +54,24 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
    For dev mode use `yarn dev`, see also `yarn watch`
 1. Install [Vue DevTools](https://devtools.vuejs.org) browser extension (Chrome, Firefox)
 
-# Package Upgrades
 
-- [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
-- [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated and printed a warning.
-- [Katex](https://katex.org) was upgraded to the latest to enhance the Math support.
+# Further Modification Ideas
 
-## Known Issues
+- Markdown editor : key to add `</br>`
+- Insert Link : insert the page title instead of its slug
+- Insert Link Modal : Expand current folder and scroll to it (notice the modal is only destroyed when we leave the editor).
+</br>
 
-- [ssh2](https://github.com/mscdex/ssh2) has an optional dependencies, `cpu_features`, that fails to build and make noises.
+**Short list of PR to review**
+- [fix: open newtab when using middle mouse button in tag overview by rtpt-romankarwacik · Pull Request #7143 · requarks/wiki](https://github.com/requarks/wiki/pull/7143)
+- [back link support by yrong · Pull Request #2507 · requarks/wiki](https://github.com/requarks/wiki/pull/2507)
+- [Support generating sitemap for SEO by lawrenceching · Pull Request #6778 · requarks/wiki](https://github.com/requarks/wiki/pull/6778)
+- [feat: markdown editer support paste image by myml · Pull Request #5441 · requarks/wiki](https://github.com/requarks/wiki/pull/5441)
+- [feat:introduced graphql createFolderWithId, get all folders and deleteFolder by kornelj · Pull Request #6727 · requarks/wiki](https://github.com/requarks/wiki/pull/6727)
+- [Add support for markdown wikilinks (aka piped links) by Mexator · Pull Request #7319 · requarks/wiki](https://github.com/requarks/wiki/pull/7319)
 
-  See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083).
-  A workaround is to use `--ignore-optional` for Yarn.
 
-# Modifications
-
-- To make page creation workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
-- The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
-
-# Further Upgrades
+# Further Package Upgrades
 
 **Notice that**
 - `yarn.lock` is a castle of cards !
@@ -78,7 +100,12 @@ It seems `**` breaks the editor, the page live preview is blank.
 
 LanguageTool doesn't work with CodeMirror.
 
-# Links
+## MDI
+
+- [RELEASED - Version 6.1.95 - Breaking Changes · Issue #5409 · Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign/issues/5409)
+
+
+# Dependencies Links
 
 - [Yarn](https://yarnpkg.com)
 
@@ -125,3 +152,14 @@ LanguageTool doesn't work with CodeMirror.
   Material Design Framework for Vue.js
 - [vuetify-loader](https://github.com/vuetifyjs/vuetify-loader)
   Webpack plugin
+
+
+# Interresting Package Links
+
+- [Monaco Editor](https://microsoft.github.io/monaco-editor)
+
+  VS Code editor so should ba as bad as it...
+  LanguageTool support ???
+
+ [purocean/monaco-spellchecker](https://github.com/purocean/monaco-spellchecker/)
+  Demo is not so convincing...
