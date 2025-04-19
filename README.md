@@ -1,5 +1,7 @@
 This repository contains a custom [Wiki.js](https://github.com/requarks/wiki) fork featuring some upgrades and modifications.
 
+Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Giard](https://github.com/ngpixel).  At the same time, the current version V2 was unfortunately mostly frozen as it is.  It is a pity, because for example, it was faster to update Katex than to figure out why it was not rendering correctly.  I know for a Wiki audience that a lot of peoples are begging for free supports... But it deserves Wiki.js to be maintained by a more collaborative effort.  There is any doubt we can try to continue to maintain the V2.  So why ?  Is JS framework's API too unstable ?  Do we need to restart from scratch due to the actual limitations ?  Is there a funding problem ?
+
 > [!IMPORTANT]
 > **NOTICE THAT ANY SUPPORT IS PROVIDED**
 >
@@ -22,9 +24,12 @@ This repository contains a custom [Wiki.js](https://github.com/requarks/wiki) fo
 
 ## Modifications
 
-- To make page creation workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
-- The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
-
+- **Page Creation**
+  - To make workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
+  - The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
+- **Markdown Editor**
+  - Set the Emacs [keymap](https://codemirror.net/5/doc/manual.html#keymaps) for CodeMirror
+  - Set a shortcut `Ctrl-Enter` to insert at cursor `</br>`
 
 # Build Process
 
