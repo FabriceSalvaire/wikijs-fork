@@ -34,7 +34,7 @@
                   template(v-if='info.sslProvider === `letsencrypt` && info.httpsPort > 0')
                     v-list-item
                       v-list-item-avatar
-                        v-icon.indigo.white--text mdi-application
+                        v-icon.indigo.white--text mdi-application-outline
                       v-list-item-content
                         v-list-item-title {{ $t(`admin:ssl.domain`) }}
                         v-list-item-subtitle {{ info.sslDomain }}

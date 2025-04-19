@@ -14,6 +14,7 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
 - [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
 - [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated and printed a warning.
 - [Katex](https://katex.org) was upgraded to the latest to enhance the Math support.
+- [@mdi/js - npm](https://www.npmjs.com/package/@mdi/js) was upgraded to the latest. Telegram icon was replaced by a SVG from [SimpleIcons](https://simpleicons.org/?q=telegram)
 
 ### Known Issues
 
@@ -104,11 +105,6 @@ It seems `**` breaks the editor, the page live preview is blank.
 ### CodeMirror
 
 LanguageTool doesn't work with CodeMirror.
-
-### MDI
-
-- [RELEASED - Version 6.1.95 - Breaking Changes · Issue #5409 · Templarian/MaterialDesign](https://github.com/Templarian/MaterialDesign/issues/5409)
-
 
 # Framework Notes
 

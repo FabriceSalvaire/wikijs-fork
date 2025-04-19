@@ -98,7 +98,7 @@
                               v-list-item-content {{$t('common:actions.edit')}}
                             v-list-item(@click='', disabled)
                               v-list-item-avatar(size='24')
-                                v-icon(color='purple') mdi-flash-circle
+                                v-icon(color='purple') mdi-lightning-bolt-circle
                               v-list-item-content {{$t('common:actions.optimize')}}
                           v-list-item(@click='openRenameDialog')
                             v-list-item-avatar(size='24')

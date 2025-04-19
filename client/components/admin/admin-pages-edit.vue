@@ -33,7 +33,7 @@
             v-list(dense, nav)
               v-list-item(:href='`/` + page.locale + `/` + page.path')
                 v-list-item-icon
-                  v-icon(color='indigo') mdi-text-subject
+                  v-icon(color='indigo') mdi-text-long
                 v-list-item-title View
               v-list-item(:href='`/e/` + page.locale + `/` + page.path')
                 v-list-item-icon
@@ -91,7 +91,7 @@
       v-flex(xs12, lg6)
         v-card.animated.fadeInUp
           v-toolbar(color='primary', dense, dark, flat)
-            v-icon.mr-2 mdi-text-subject
+            v-icon.mr-2 mdi-text-long
             span Properties
           v-list.py-0(two-line, dense)
             v-list-item

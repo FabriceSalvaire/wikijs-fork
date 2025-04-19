@@ -16,7 +16,8 @@
       v-icon(color='grey', small) mdi-reddit
       v-list-item-title.px-3 Reddit
     v-list-item(@click='openSocialPop(`https://t.me/share/url?url=` + encodeURIComponent(url) + `&text=` + encodeURIComponent(title))')
-      v-icon(color='grey', small) mdi-telegram
+      //- v-icon(color='grey', small) mdi-telegram
+      img(src='/_assets/svg/telegram.svg', alt='Telegram', style='width: 14px')
       v-list-item-title.px-3 Telegram
     v-list-item(@click='openSocialPop(`https://twitter.com/intent/tweet?url=` + encodeURIComponent(url) + `&text=` + encodeURIComponent(title))')
       v-icon(color='grey', small) mdi-twitter

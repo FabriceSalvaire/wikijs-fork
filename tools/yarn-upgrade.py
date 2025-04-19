@@ -7,6 +7,7 @@ import subprocess
 from datetime import datetime
 
 def upgrade(name: str, semver: str) -> None:
+    # Fixme: dev
     # print(name, semver)
     cmd = f'yarn upgrade --ignore-optional {name}@{semver}'
     print()
@@ -26,11 +27,14 @@ def upgrades(packages: dict) -> None:
 
 packages = {
     # To solve postcss config issue
+    # dev
     #! "postcss": "^8.1.0",   # 8.5.3
     #! "postcss-loader": "4.x",   # 4.3.0
 
     # upgrade
-    "katex": "0.16.22",
+    #! "katex": "0.16.22",
+
+    "@mdi/font": "7.4.47",
 }
 
 # for name, semver in packages.items():

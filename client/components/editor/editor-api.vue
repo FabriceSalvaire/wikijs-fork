@@ -13,7 +13,8 @@
             v-list-item-icon: v-icon mdi-code-braces
             v-list-item-title Endpoints
           v-list-item.mt-3.animated.fadeInLeft.wait-p4s(value='models')
-            v-list-item-icon: v-icon mdi-buffer
+            //- mdi-buffer was remove in 6.1.95
+            v-list-item-icon: v-icon mdi-library
             v-list-item-title Models
           v-list-item.mt-3.animated.fadeInLeft.wait-p5s(value='auth')
             v-list-item-icon: v-icon mdi-lock

@@ -68,7 +68,7 @@
                     v-list-item-subtitle {{ info.ramTotal }}
                 v-list-item
                   v-list-item-avatar
-                    v-icon.blue-grey.white--text mdi-iframe-outline
+                    v-icon.blue-grey.white--text mdi-application-brackets-outline
                   v-list-item-content
                     v-list-item-title {{ $t('admin:system.workingDirectory') }}
                     v-list-item-subtitle {{ info.workingDirectory }}

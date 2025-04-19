@@ -34,7 +34,7 @@ def _init() -> dict:
                 new = left[3:]
                 # print(f'{name} -> {new}   @{version}')
             elif action == 'removed':
-                left = left.replace('- Use', '').replace('(use', '').replace(')', '').strip()
+                new = left.replace('- Use', '').replace('(use', '').replace(')', '').strip()
                 # print(f'{name} ~> "{left}"   @{version}')
             if action != 'updated':
                 if name in mdi_changes:
