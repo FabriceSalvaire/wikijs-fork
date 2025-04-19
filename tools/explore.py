@@ -9,13 +9,15 @@ import json
 
 ####################################################################################################
 
-def yield_source(source_path: Path) -> Iterator[Path]:
+def yield_source(source_path: Path, suffixes: list[str] = ('.js', '.vue')) -> Iterator[Path]:
     for dir in ('client', 'server'):
         for root, dirs, filenames in source_path.joinpath(dir).walk():
             for _ in filenames:
                 path = Path(root) / _
-                if path.suffix in ('.js', '.vue'):
+                if path.suffix in suffixes:
                     yield path
+
+####################################################################################################
 
 def yield_import(source_path: Path) -> Iterator[tuple[Path, Path, str]]:
     for path in yield_source(source_path):
@@ -106,7 +108,7 @@ def yield_import(source_path: Path) -> Iterator[tuple[Path, Path, str]]:
 
 ####################################################################################################
 
-def dump_imports(json_file: Path) -> None:
+def dump_imports(source_path: Path, json_file: Path) -> None:
     complex_imports = {}
     external_imports = {}
     internal_imports = {}
@@ -151,37 +153,85 @@ def dump_imports(json_file: Path) -> None:
 
 ####################################################################################################
 
+def explore_dependencies(source_path: Path):
+    imports_json_file = Path('imports.json')
+    dump_imports(source_path, imports_json_file)
+    imports = json.loads(imports_json_file.read_text())
+
+    package_json_file = source_path.joinpath('package.json')
+    package_json = json.loads(package_json_file.read_text())
+    dependencies = package_json['dependencies']
+
+    external_imports = imports['external']
+    print('Dependency not imported:')
+    for dependency in dependencies:
+        if dependency not in external_imports:
+            print(' '*2 + dependency)
+    print()
+    print('Import not found:')
+    node_modules_path = source_path.joinpath('node_modules')
+    # node_modules = [_.name for _ in node_modules_path.iterdir()]
+    NODE_LIBS = (
+        'crypto',
+        'fs',
+        'http',
+        'https',
+        'os',
+        'path',
+        'stream',
+        'zlib',
+    )
+    for dependency, files in external_imports.items():
+        if dependency not in NODE_LIBS and not node_modules_path.joinpath(dependency).exists():
+            print(' '*2 + dependency)
+            print(' '*6 + str(files))
+
+####################################################################################################
+
+def lookup_mdi(source_path: Path):
+    icon_names = set()
+    for path in yield_source(source_path, ('.vue',)):
+        with open(path, 'r', encoding='utf8') as fh:
+            for line in fh:
+                line = line.strip()
+                # strip comment
+                _ = line.rfind('//')
+                if _ != -1:
+                    line = line[:_].rstrip()
+                MDI = 'mdi-'
+                _ = line.find(MDI)
+                if _ != -1:
+                    # print(line)
+                    left = line[_+4:]
+                    name = MDI
+                    complex = False
+                    for c in left:
+                        if c == '{':
+                            complex = True
+                        elif complex:
+                            if c == '}':
+                                break
+                        else:
+                            if c in (' \'"]'):
+                                break
+                        name += c
+                    name = name[len(MDI):]
+                    icon_names.add(name)
+
+    from mdi import MDI_CHANGES
+    # pprint(MDI_CHANGES)
+    print('To be fixed:')
+    for _ in sorted(icon_names):
+        # print(_)
+        if _ in MDI_CHANGES:
+            print(' ', MDI_CHANGES[_])
+        if '{' in _:
+            print(f'  ??? {_}')
+
+####################################################################################################
+
 source_path = Path(__file__).parents[1]
 # print(f"Root Source: {source_path}")
 
-imports_json_file = Path('imports.json')
-dump_imports(imports_json_file)
-imports = json.loads(imports_json_file.read_text())
-
-package_json_file = source_path.joinpath('package.json')
-package_json = json.loads(package_json_file.read_text())
-dependencies = package_json['dependencies']
-
-external_imports = imports['external']
-print('Dependency not imported:')
-for dependency in dependencies:
-    if dependency not in external_imports:
-        print(' '*2 + dependency)
-print()
-print('Import not found:')
-node_modules_path = source_path.joinpath('node_modules')
-# node_modules = [_.name for _ in node_modules_path.iterdir()]
-NODE_LIBS = (
-    'crypto',
-    'fs',
-    'http',
-    'https',
-    'os',
-    'path',
-    'stream',
-    'zlib',
-)
-for dependency, files in external_imports.items():
-    if dependency not in NODE_LIBS and not node_modules_path.joinpath(dependency).exists():
-        print(' '*2 + dependency)
-        print(' '*6 + str(files))
+# explore_dependencies(source_path)
+lookup_mdi(source_path)
