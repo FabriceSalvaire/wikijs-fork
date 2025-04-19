@@ -189,6 +189,7 @@ def explore_dependencies(source_path: Path):
 ####################################################################################################
 
 def lookup_mdi(source_path: Path):
+    """Check MDI Icons"""
     icon_names = set()
     for path in yield_source(source_path, ('.vue',)):
         with open(path, 'r', encoding='utf8') as fh:
@@ -224,8 +225,8 @@ def lookup_mdi(source_path: Path):
     for _ in sorted(icon_names):
         # print(_)
         if _ in MDI_CHANGES:
-            print(' ', MDI_CHANGES[_])
-        if '{' in _:
+            print(f'  {_} {MDI_CHANGES[_]}')
+        elif '{' in _:
             print(f'  ??? {_}')
 
 ####################################################################################################
