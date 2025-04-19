@@ -166,6 +166,13 @@
 </template>
 
 <script>
+// Elements
+//  editor-markdown-toolbar
+//  editor-markdown-sidebar
+//  editor-markdown-sysbar
+//  editor-markdown-editor
+//  editor-markdown-preview
+
 import _ from 'lodash'
 import { get, sync } from 'vuex-pathify'
 import markdownHelp from './markdown/help.vue'
@@ -327,8 +334,9 @@ plantuml.init(md, {})
 // ========================================
 // KATEX
 // ========================================
+// Fixme: show error
 
-const macros = {}
+const macros = {}   // could be useful in settings
 md.inline.ruler.after('escape', 'katex_inline', katexHelper.katexInline)
 md.renderer.rules.katex_inline = (tokens, idx) => {
   try {
@@ -416,6 +424,7 @@ export default {
 
   // ----------------------------------------------------------------------------
   watch: {
+    // ---------------------------------------------
     previewShown (newValue, oldValue) {
       if (newValue && !oldValue) {
         this.$nextTick(() => {
@@ -426,6 +435,7 @@ export default {
       }
     },
 
+    // ---------------------------------------------
     spellModeActive (newValue, oldValue) {
       if (newValue) {
         this.$nextTick(() => {
@@ -437,6 +447,7 @@ export default {
 
   // ----------------------------------------------------------------------------
   methods: {
+    // ---------------------------------------------
     toggleModal(key) {
       this.activeModal = (this.activeModal === key) ? '' : key
       this.helpShown = false
@@ -477,6 +488,7 @@ export default {
       linesMap = []
       // this.$store.set('editor/content', newContent)
       this.processMarkers(this.cm.firstLine(), this.cm.lastLine())
+      // update live rendering
       this.previewHTML = DOMPurify.sanitize(md.render(newContent), {
         ADD_TAGS: ['foreignObject']
       })
@@ -710,6 +722,7 @@ export default {
 
     // ---------------------------------------------
     insertLinkHandler ({ locale, path }) {
+      // Fixme: insert title
       const lastPart = _.last(path.split('/'))
       this.insertAtCursor({
         content: siteLangs.length > 0 ? `[${lastPart}](/${locale}/${path})` : `[${lastPart}](/${path})`
