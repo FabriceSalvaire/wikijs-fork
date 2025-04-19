@@ -9,16 +9,16 @@ import json
 
 ####################################################################################################
 
-def yield_source(root_source: Path) -> Iterator[Path]:
+def yield_source(source_path: Path) -> Iterator[Path]:
     for dir in ('client', 'server'):
-        for root, dirs, filenames in root_source.joinpath(dir).walk():
+        for root, dirs, filenames in source_path.joinpath(dir).walk():
             for _ in filenames:
                 path = Path(root) / _
                 if path.suffix in ('.js', '.vue'):
                     yield path
 
-def yield_import(root_source: Path) -> Iterator[tuple[Path, Path, str]]:
-    for path in yield_source(root_source):
+def yield_import(source_path: Path) -> Iterator[tuple[Path, Path, str]]:
+    for path in yield_source(source_path):
         # print(path)
         local_dirs = [_.name for _ in path.parent.iterdir() if _.is_dir()]
         # if dirs:
@@ -45,6 +45,7 @@ def yield_import(root_source: Path) -> Iterator[tuple[Path, Path, str]]:
                             raise ValueError(line)
                         module = line[_+1:].strip()
                 else:
+                    # Node.js import
                     _ = line.find('require(')
                     if _ != -1:
                         module = line[_+8:]
@@ -73,68 +74,114 @@ def yield_import(root_source: Path) -> Iterator[tuple[Path, Path, str]]:
                     first = module.parts[0]
                     # print(first)
                     if first in ('.', '..') or module.suffix in ('.vue',):
-                        module = path.parent.joinpath(module).resolve().relative_to(root_source)
+                        module = path.parent.joinpath(module).resolve().relative_to(source_path)
                         type_ = 'internal'
-                    if first in local_dirs or first in ('gql',):
-                        module = root_source.joinpath('client', 'graph').joinpath(module).relative_to(root_source)
+                    elif first in ('gql',):
+                        module = source_path.joinpath('client', 'graph').joinpath(module).relative_to(source_path)
                         type_ = 'internal'
+                    # if first in local_dirs or first in ('gql',):
+                    #     module = source_path.joinpath('client', 'graph').joinpath(module).relative_to(source_path)
+                    #     type_ = 'internal'
+                    else:
+                        def check_exists(suffix: str = '') -> bool:
+                            nonlocal module
+                            nonlocal type_
+                            _ = str(module)
+                            if suffix and not _.endswith(suffix):
+                                _ += '.js'
+                            _ = path.parent.joinpath(_)
+                            if _.exists():
+                                module = _.relative_to(source_path)
+                                type_ = 'internal'
+                        if not check_exists('.js'):
+                            check_exists()
+                        # else server/modules/logging
                     module_ = str(module)
                     if '{' in module_ or '(' in module_:
                         type_ = 'complex'
                         # print(path)
                         # print(' '*4 + oline)
                         # print(' '*4 + module_)
-                    yield (path.relative_to(root_source), module, type_)
+                    yield (path.relative_to(source_path), module, type_)
 
 ####################################################################################################
 
-root_source = Path(__file__).parents[1]
-# print(f"Root Source: {root_source}")
+def dump_imports(json_file: Path) -> None:
+    complex_imports = {}
+    external_imports = {}
+    internal_imports = {}
+    for path, module, type_ in yield_import(source_path):
+        # print(f'{path}  ->  {module}   {is_external}')
+        module_ = str(module)
+        match type_:
+            case 'complex':
+                imports = complex_imports
+            case 'external':
+                imports = external_imports
+            case 'internal':
+                imports = internal_imports
+        imports.setdefault(module_, set())
+        imports[module_].add(str(path))
 
-complex_imports = {}
-external_imports = {}
-internal_imports = {}
-for path, module, type_ in yield_import(root_source):
-    # print(f'{path}  ->  {module}   {is_external}')
-    module_ = str(module)
-    match type_:
-        case 'complex':
-            imports = complex_imports
-        case 'external':
-            imports = external_imports
-        case 'internal':
-            imports = internal_imports
-    imports.setdefault(module_, set())
-    imports[module_].add(str(path))
+    # def print_imports(imports: dict) -> None:
+    #     for module in sorted(imports.keys()):
+    #         print(module)
+    #         for _ in imports[module]:
+    #             print(' '*4 + _)
+    # print_imports(imports)
 
-def dump_imports(imports: dict) -> None:
-    for module in sorted(imports.keys()):
-        print(module)
-        for _ in imports[module]:
-            print(' '*4 + _)
+    def custom_json(obj):
+        if isinstance(obj, set):
+            return sorted(obj)
+        raise TypeError(f'Cannot serialize object of {type(obj)}')
 
-# # pprint(imports)
-# imports = internal_imports
-# imports = external_imports
-# imports = complex_imports
-# dump_imports(imports)
-
-def custom_json(obj):
-    if isinstance(obj, set):
-        return sorted(obj)
-    raise TypeError(f'Cannot serialize object of {type(obj)}')
-
-imports = {
-    'complex': complex_imports,
-    'external': external_imports,
-    'internal': internal_imports,
-}
-JSON_FILE = 'imports.json'
-with open(JSON_FILE, 'w', encoding='utf8') as fh:
-    json.dump(
-        imports,
-        fh,
-        default=custom_json,
-        sort_keys=True,
-        indent=4,
+    imports = {
+        'complex': complex_imports,
+        'external': external_imports,
+        'internal': internal_imports,
+    }
+    json_file.write_text(
+        json.dumps(
+            imports,
+            default=custom_json,
+            sort_keys=True,
+            indent=4,
+        )
     )
+
+####################################################################################################
+
+source_path = Path(__file__).parents[1]
+# print(f"Root Source: {source_path}")
+
+imports_json_file = Path('imports.json')
+dump_imports(imports_json_file)
+imports = json.loads(imports_json_file.read_text())
+
+package_json_file = source_path.joinpath('package.json')
+package_json = json.loads(package_json_file.read_text())
+dependencies = package_json['dependencies']
+
+external_imports = imports['external']
+print('Dependency not imported:')
+for dependency in dependencies:
+    if dependency not in external_imports:
+        print(' '*2 + dependency)
+print()
+print('Import not found:')
+node_modules_path = source_path.joinpath('node_modules')
+# node_modules = [_.name for _ in node_modules_path.iterdir()]
+NODE_LIBS = (
+    'crypto',
+    'fs',
+    'http',
+    'https',
+    'os',
+    'path',
+    'stream',
+    'zlib',
+)
+for dependency, files in external_imports.items():
+    if dependency not in NODE_LIBS and not node_modules_path.joinpath(dependency).exists():
+        print(' '*2 + dependency)
+        print(' '*6 + str(files))

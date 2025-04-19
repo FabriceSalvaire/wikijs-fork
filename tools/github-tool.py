@@ -15,8 +15,6 @@ ROOT_SOURCE = Path(__file__).parents[1]
 PR_DIR = ROOT_SOURCE.joinpath('pr')
 PULLS_JSON_FILE = PR_DIR.joinpath('pulls.json')
 
-REPOSITORY_NAME = 'requarks/wiki'
-
 ####################################################################################################
 
 class Account:
@@ -28,28 +26,25 @@ class Account:
 
     ##############################################
 
-    def login(self):
+    def login(self) -> None:
         if self._github is None:
             token_path = Path(__file__).parent.joinpath('.github-token')
-            # ('~/.github-token).expanduser()
-            # with open(token_path, 'r') as f:
-            #     token = f.readline().strip()
             token = token_path.read_text().strip()
             self._github = Github(login_or_token=token)
 
     ##############################################
 
     @property
-    def github(self):
+    def github(self) -> Github:
         return self._github
 
 ####################################################################################################
 
-def get_repo():
+def github_login(repository_name: str):
     account = Account()
     account.login()
     g = account.github
-    repo = g.get_repo(REPOSITORY_NAME)
+    repo = g.get_repo(repository_name)
     return repo
 
 ####################################################################################################
@@ -79,7 +74,7 @@ def cleanup_pulls(data: dict) -> None:
 
 ####################################################################################################
 
-def dump_pull_request(dump_json: bool = True) -> None:
+def dump_pull_request(repo, dump_json: bool = True) -> None:
     pulls_json = {}
 
     pulls = repo.get_pulls(state='open', sort='created', base='main')
@@ -114,8 +109,10 @@ def dump_pull_request(dump_json: bool = True) -> None:
 
 ####################################################################################################
 
-repo = get_repo()
-dump_pull_request()
+
+REPOSITORY_NAME = 'requarks/wiki'
+repo = github_login(REPOSITORY_NAME)
+dump_pull_request(repo, dump_json=False)
 
 # issues = repo.get_issues()
 # for _ in issues:
