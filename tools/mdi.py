@@ -1,6 +1,6 @@
 ####################################################################################################
 
-"""MDI Changelog
+"""This module implements a Pythonic translation of the Changelog of @mdi/font aka MDI aka Material Design Icons
 """
 
 ####################################################################################################

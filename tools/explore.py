@@ -1,5 +1,13 @@
 #! /usr/bin/env python3
 
+"""This module implements a JS/Vue source code explorer.
+
+It features
+- A tool to explore imports in the source code and match them with `package.json` dependencies.
+- A tool to upgrade `@mdi/font` package aka MDI aka Material Design Icons:
+  lookup for mdi icons in the source code and check for upgrade using the changelog.
+"""
+
 ####################################################################################################
 
 from pprint import pprint

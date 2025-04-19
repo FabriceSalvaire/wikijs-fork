@@ -62,6 +62,17 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
 1. Install [Vue DevTools](https://devtools.vuejs.org) browser extension (Chrome, Firefox)
 
 
+# Dev Tools
+
+This repository contains these tools (written in Python or Bash):
+- a tool to explore imports in the source code and match them with `package.json` dependencies
+- a tool to upgrade `@mdi/font` package: lookup for mdi icons in the source code and check for upgrade using the changelog
+- a tool to fetch PR from github
+- a tool to apply `yarn add / upgrade`
+- a Bash shell script to build the project
+- a tool to rsync on the server
+
+
 # Further Modification Ideas
 
 - Insert Link : insert the page title instead of its slug
