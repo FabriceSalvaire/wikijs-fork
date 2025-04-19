@@ -182,6 +182,9 @@ import DOMPurify from 'dompurify'
 import CodeMirror from 'codemirror'
 import 'codemirror/lib/codemirror.css'
 
+// Keymap
+import 'codemirror/keymap/emacs.js'
+
 // Language
 import 'codemirror/mode/markdown/markdown.js'
 
@@ -811,7 +814,9 @@ export default {
       allowDropFileTypes: ['image/jpg', 'image/png', 'image/svg', 'image/jpeg', 'image/gif'],
       direction: siteConfig.rtl ? 'rtl' : 'ltr',
       foldGutter: true,
-      gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter']
+      gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+      // https://codemirror.net/5/keymap/emacs.js
+      keyMap: 'emacs'  // Fixme: should be a profile setting
     })
     this.cm.setValue(this.$store.get('editor/content'))
     this.cm.on('change', c => {
@@ -858,6 +863,21 @@ export default {
       this.setHeaderLine(lvl - 1)
       return false
     })
+
+    _.set(keyBindings, `${CtrlKey}-Enter`, c => {
+      this.insertAtCursor({
+        content: '</br>'
+      })
+      return false
+    })
+
+    _.set(keyBindings, `${CtrlKey}-Alt-W`, c => {
+      // this command is buggy
+      console.log('killRegion')
+      this.cm.execCommand('killRegion')
+      return false
+    })
+
     this.cm.setOption('extraKeys', keyBindings)
 
     this.cm.on('inputRead', this.autocomplete)
