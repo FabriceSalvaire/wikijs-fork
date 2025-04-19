@@ -1,0 +1,169 @@
+diff --git a/server/models/pages.js b/server/models/pages.js
+index 16f5b2f14f..171da85e17 100644
+--- a/server/models/pages.js
++++ b/server/models/pages.js
+@@ -170,6 +170,15 @@ module.exports = class Page extends Model {
+     return pageHelper.injectPageMetadata(this)
+   }
+ 
++  /**
++   * Page with metadata for storing on disk
++   *
++   * @returns {string} Page Contents with Injected Metadata
++   */
++  storageContent() {
++    return this.injectMetadata() + '\n'
++  }
++
+   /**
+    * Get the page's file extension based on content type
+    *
+diff --git a/server/modules/storage/azure/storage.js b/server/modules/storage/azure/storage.js
+index f7320146f4..63dccf38e2 100644
+--- a/server/modules/storage/azure/storage.js
++++ b/server/modules/storage/azure/storage.js
+@@ -41,14 +41,14 @@ module.exports = {
+   async created (page) {
+     WIKI.logger.info(`(STORAGE/AZURE) Creating file ${page.path}...`)
+     const filePath = getFilePath(page, 'path')
+-    const pageContent = page.injectMetadata()
++    const pageContent = page.storageContent()
+     const blockBlobClient = this.container.getBlockBlobClient(filePath)
+     await blockBlobClient.upload(pageContent, pageContent.length, { tier: this.config.storageTier })
+   },
+   async updated (page) {
+     WIKI.logger.info(`(STORAGE/AZURE) Updating file ${page.path}...`)
+     const filePath = getFilePath(page, 'path')
+-    const pageContent = page.injectMetadata()
++    const pageContent = page.storageContent()
+     const blockBlobClient = this.container.getBlockBlobClient(filePath)
+     await blockBlobClient.upload(pageContent, pageContent.length, { tier: this.config.storageTier })
+   },
+@@ -134,7 +134,7 @@ module.exports = {
+         transform: async (page, enc, cb) => {
+           const filePath = getFilePath(page, 'path')
+           WIKI.logger.info(`(STORAGE/AZURE) Adding page ${filePath}...`)
+-          const pageContent = pageHelper.injectPageMetadata(page)
++          const pageContent = page.storageContent()
+           const blockBlobClient = this.container.getBlockBlobClient(filePath)
+           await blockBlobClient.upload(pageContent, pageContent.length, { tier: this.config.storageTier })
+           cb()
+diff --git a/server/modules/storage/disk/storage.js b/server/modules/storage/disk/storage.js
+index 1c3a7c40db..c24c9a8ab9 100644
+--- a/server/modules/storage/disk/storage.js
++++ b/server/modules/storage/disk/storage.js
+@@ -52,7 +52,7 @@ module.exports = {
+       fileName = `${page.localeCode}/${fileName}`
+     }
+     const filePath = path.join(this.config.path, fileName)
+-    await fs.outputFile(filePath, page.injectMetadata(), 'utf8')
++    await fs.outputFile(filePath, page.storageContent(), 'utf8')
+   },
+   async updated(page) {
+     WIKI.logger.info(`(STORAGE/DISK) Updating file [${page.localeCode}] ${page.path}...`)
+@@ -61,7 +61,7 @@ module.exports = {
+       fileName = `${page.localeCode}/${fileName}`
+     }
+     const filePath = path.join(this.config.path, fileName)
+-    await fs.outputFile(filePath, page.injectMetadata(), 'utf8')
++    await fs.outputFile(filePath, page.storageContent(), 'utf8')
+   },
+   async deleted(page) {
+     WIKI.logger.info(`(STORAGE/DISK) Deleting file [${page.localeCode}] ${page.path}...`)
+@@ -142,7 +142,7 @@ module.exports = {
+           }
+           WIKI.logger.info(`(STORAGE/DISK) Dumping page ${fileName}...`)
+           const filePath = path.join(this.config.path, fileName)
+-          await fs.outputFile(filePath, pageHelper.injectPageMetadata(page), 'utf8')
++          await fs.outputFile(filePath, page.storageContent(), 'utf8')
+           cb()
+         }
+       })
+diff --git a/server/modules/storage/git/storage.js b/server/modules/storage/git/storage.js
+index c023c7e87f..629acfd2b5 100644
+--- a/server/modules/storage/git/storage.js
++++ b/server/modules/storage/git/storage.js
+@@ -250,7 +250,7 @@ module.exports = {
+       fileName = `${page.localeCode}/${fileName}`
+     }
+     const filePath = path.join(this.repoPath, fileName)
+-    await fs.outputFile(filePath, page.injectMetadata(), 'utf8')
++    await fs.outputFile(filePath, page.storageContent(), 'utf8')
+ 
+     await this.git.add(`./${fileName}`)
+     await this.git.commit(`docs: create ${page.path}`, fileName, {
+@@ -269,7 +269,7 @@ module.exports = {
+       fileName = `${page.localeCode}/${fileName}`
+     }
+     const filePath = path.join(this.repoPath, fileName)
+-    await fs.outputFile(filePath, page.injectMetadata(), 'utf8')
++    await fs.outputFile(filePath, page.storageContent(), 'utf8')
+ 
+     await this.git.add(`./${fileName}`)
+     await this.git.commit(`docs: update ${page.path}`, fileName, {
+@@ -426,7 +426,7 @@ module.exports = {
+           }
+           WIKI.logger.info(`(STORAGE/GIT) Adding page ${fileName}...`)
+           const filePath = path.join(this.repoPath, fileName)
+-          await fs.outputFile(filePath, pageHelper.injectPageMetadata(page), 'utf8')
++          await fs.outputFile(filePath, page.storageContent(), 'utf8')
+           await this.git.add(`./${fileName}`)
+           cb()
+         }
+diff --git a/server/modules/storage/s3/common.js b/server/modules/storage/s3/common.js
+index c34e245109..b95d980756 100644
+--- a/server/modules/storage/s3/common.js
++++ b/server/modules/storage/s3/common.js
+@@ -65,12 +65,12 @@ module.exports = class S3CompatibleStorage {
+   async created(page) {
+     WIKI.logger.info(`(STORAGE/${this.storageName}) Creating file ${page.path}...`)
+     const filePath = getFilePath(page, 'path')
+-    await this.s3.putObject({ Key: filePath, Body: page.injectMetadata() }).promise()
++    await this.s3.putObject({ Key: filePath, Body: page.storageContent() }).promise()
+   }
+   async updated(page) {
+     WIKI.logger.info(`(STORAGE/${this.storageName}) Updating file ${page.path}...`)
+     const filePath = getFilePath(page, 'path')
+-    await this.s3.putObject({ Key: filePath, Body: page.injectMetadata() }).promise()
++    await this.s3.putObject({ Key: filePath, Body: page.storageContent() }).promise()
+   }
+   async deleted(page) {
+     WIKI.logger.info(`(STORAGE/${this.storageName}) Deleting file ${page.path}...`)
+@@ -139,7 +139,7 @@ module.exports = class S3CompatibleStorage {
+         transform: async (page, enc, cb) => {
+           const filePath = getFilePath(page, 'path')
+           WIKI.logger.info(`(STORAGE/${this.storageName}) Adding page ${filePath}...`)
+-          await this.s3.putObject({ Key: filePath, Body: pageHelper.injectPageMetadata(page) }).promise()
++          await this.s3.putObject({ Key: filePath, Body: page.storageContent() }).promise()
+           cb()
+         }
+       })
+diff --git a/server/modules/storage/sftp/storage.js b/server/modules/storage/sftp/storage.js
+index e1f99af40b..4ede0dd506 100644
+--- a/server/modules/storage/sftp/storage.js
++++ b/server/modules/storage/sftp/storage.js
+@@ -47,13 +47,13 @@ module.exports = {
+     WIKI.logger.info(`(STORAGE/SFTP) Creating file ${page.path}...`)
+     const filePath = getFilePath(page, 'path')
+     await this.ensureDirectory(filePath)
+-    await this.sftp.writeFile(path.posix.join(this.config.basePath, filePath), page.injectMetadata())
++    await this.sftp.writeFile(path.posix.join(this.config.basePath, filePath), page.storageContent())
+   },
+   async updated(page) {
+     WIKI.logger.info(`(STORAGE/SFTP) Updating file ${page.path}...`)
+     const filePath = getFilePath(page, 'path')
+     await this.ensureDirectory(filePath)
+-    await this.sftp.writeFile(path.posix.join(this.config.basePath, filePath), page.injectMetadata())
++    await this.sftp.writeFile(path.posix.join(this.config.basePath, filePath), page.storageContent())
+   },
+   async deleted(page) {
+     WIKI.logger.info(`(STORAGE/SFTP) Deleting file ${page.path}...`)
+@@ -124,7 +124,7 @@ module.exports = {
+           const filePath = getFilePath(page, 'path')
+           WIKI.logger.info(`(STORAGE/SFTP) Adding page ${filePath}...`)
+           await this.ensureDirectory(filePath)
+-          await this.sftp.writeFile(path.posix.join(this.config.basePath, filePath), pageHelper.injectPageMetadata(page))
++          await this.sftp.writeFile(path.posix.join(this.config.basePath, filePath), page.storageContent())
+           cb()
+         }
+       })

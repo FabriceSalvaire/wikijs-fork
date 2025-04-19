@@ -1,0 +1,13 @@
+diff --git a/dev/containers/Dockerfile b/dev/containers/Dockerfile
+index 36a777f881..2a7be50d9e 100644
+--- a/dev/containers/Dockerfile
++++ b/dev/containers/Dockerfile
+@@ -5,7 +5,7 @@ FROM node:18
+ LABEL maintainer "requarks.io"
+ 
+ RUN apt-get update && \
+-    apt-get install -y bash curl git python make g++ nano openssh-server gnupg && \
++    apt-get install -y bash curl git python3-pip make g++ nano openssh-server gnupg && \
+     mkdir -p /wiki
+ 
+ WORKDIR /wiki

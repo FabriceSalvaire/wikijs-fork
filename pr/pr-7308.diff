@@ -1,0 +1,936 @@
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+index dc1a054c6c..75e3a44780 100644
+--- a/.vscode/settings.json
++++ b/.vscode/settings.json
+@@ -8,7 +8,7 @@
+     "vue"
+   ],
+   "editor.codeActionsOnSave": {
+-    "source.fixAll.eslint": true
++    "source.fixAll.eslint": "explicit"
+   },
+   "i18n-ally.localesPaths": [
+     "server/locales"
+diff --git a/client/components/admin/admin-theme.vue b/client/components/admin/admin-theme.vue
+index b5cd0e59d1..eb357c6c20 100644
+--- a/client/components/admin/admin-theme.vue
++++ b/client/components/admin/admin-theme.vue
+@@ -51,7 +51,6 @@
+                     persistent-hint
+                     :hint='$t(`admin:theme.darkModeHint`)'
+                     )
+-
+               v-card.mt-3.animated.fadeInUp.wait-p1s
+                 v-toolbar(color='primary', dark, dense, flat)
+                   v-toolbar-title.subtitle-1 {{$t(`admin:theme.options`)}}
+@@ -65,32 +64,16 @@
+                     persistent-hint
+                     hint='Select whether the table of contents is shown on the left, right or not at all.'
+                     )
++                  v-range-slider(
++                    prepend-icon='mdi-menu-open'
++                    label='Heading Levels in ToC'
++                    v-model='tocRange'
++                    :min='1'
++                    :max='6'
++                    :tick-labels='["H1", "H2", "H3", "H4", "H5", "H6"]'
++                    hint='Select which levels of the toc are displayed.'
++                  )
+             v-flex(lg6 xs12)
+-              //- v-card.animated.fadeInUp.wait-p2s
+-              //-   v-toolbar(color='teal', dark, dense, flat)
+-              //-     v-toolbar-title.subtitle-1 {{$t('admin:theme.downloadThemes')}}
+-              //-     v-spacer
+-              //-     v-chip(label, color='white', small).teal--text coming soon
+-              //-   v-data-table(
+-              //-     :headers='headers',
+-              //-     :items='themes',
+-              //-     hide-default-footer,
+-              //-     item-key='value',
+-              //-     :items-per-page='1000'
+-              //-   )
+-              //-     template(v-slot:item='thm')
+-              //-       td
+-              //-         strong {{thm.item.text}}
+-              //-       td
+-              //-         span {{ thm.item.author }}
+-              //-       td.text-xs-center
+-              //-         v-progress-circular(v-if='thm.item.isDownloading', indeterminate, color='blue', size='20', :width='2')
+-              //-         v-btn(v-else-if='thm.item.isInstalled && thm.item.installDate < thm.item.updatedAt', icon)
+-              //-           v-icon.blue--text mdi-cached
+-              //-         v-btn(v-else-if='thm.item.isInstalled', icon)
+-              //-           v-icon.green--text mdi-check-bold
+-              //-         v-btn(v-else, icon)
+-              //-           v-icon.grey--text mdi-cloud-download
+ 
+               v-card.animated.fadeInUp.wait-p2s
+                 v-toolbar(color='primary', dark, dense, flat)
+@@ -150,6 +133,10 @@ export default {
+       config: {
+         theme: 'default',
+         darkMode: false,
++        tocDepth: {
++          min: 1,
++          max: 2
++        },
+         iconset: '',
+         tocPosition: 'left',
+         injectCSS: '',
+@@ -160,6 +147,18 @@ export default {
+     }
+   },
+   computed: {
++    tocRange: {
++      get() {
++        var range = [this.config.tocDepth.min, this.config.tocDepth.max]
++        return range
++      },
++      set(value) {
++        this.config.tocDepth = {
++          min: parseInt(value[0]),
++          max: parseInt(value[1])
++        }
++      }
++    },
+     darkMode: sync('site/dark'),
+     headers() {
+       return [
+@@ -213,6 +212,7 @@ export default {
+             theme: this.config.theme,
+             iconset: this.config.iconset,
+             darkMode: this.darkMode,
++            tocDepth: this.config.tocDepth,
+             tocPosition: this.config.tocPosition,
+             injectCSS: this.config.injectCSS,
+             injectHead: this.config.injectHead,
+diff --git a/client/components/editor.vue b/client/components/editor.vue
+index 7cd577b112..8ccb5d429f 100644
+--- a/client/components/editor.vue
++++ b/client/components/editor.vue
+@@ -145,6 +145,10 @@ export default {
+       type: Number,
+       default: 0
+     },
++    tocOptions: {
++      type: String,
++      default: ''
++    },
+     checkoutDate: {
+       type: String,
+       default: new Date().toISOString()
+@@ -172,7 +176,9 @@ export default {
+         tags: '',
+         title: '',
+         css: '',
+-        js: ''
++        js: '',
++        tocDepth: 0,
++        useDefaultTocDepth: false
+       }
+     }
+   },
+@@ -191,6 +197,8 @@ export default {
+         this.path !== this.$store.get('page/path'),
+         this.savedState.title !== this.$store.get('page/title'),
+         this.savedState.description !== this.$store.get('page/description'),
++        this.savedState.tocDepth !== this.$store.get('page/tocDepth@min') + (this.$store.get('page/tocDepth@max') * 10),
++        this.savedState.useDefaultTocDepth !== this.$store.get('page/useDefaultTocDepth'),
+         this.savedState.tags !== this.$store.get('page/tags'),
+         this.savedState.isPublished !== this.$store.get('page/isPublished'),
+         this.savedState.publishStartDate !== this.$store.get('page/publishStartDate'),
+@@ -224,9 +232,15 @@ export default {
+     this.$store.set('page/title', this.title)
+     this.$store.set('page/scriptCss', this.scriptCss)
+     this.$store.set('page/scriptJs', this.scriptJs)
+-
+     this.$store.set('page/mode', 'edit')
+ 
++    const tocOptions = JSON.parse(Buffer.from(this.tocOptions, 'base64').toString())
++    this.$store.set('page/tocDepth', {
++      min: tocOptions.min,
++      max: tocOptions.max
++    })
++    this.$store.set('page/useDefaultTocDepth', tocOptions.useDefault)
++
+     this.setCurrentSavedState()
+ 
+     this.checkoutDateActive = this.checkoutDate
+@@ -304,6 +318,8 @@ export default {
+                 $publishStartDate: Date
+                 $scriptCss: String
+                 $scriptJs: String
++                $tocDepth: RangeInput
++                $useDefaultTocDepth: Boolean
+                 $tags: [String]!
+                 $title: String!
+               ) {
+@@ -320,6 +336,8 @@ export default {
+                     publishStartDate: $publishStartDate
+                     scriptCss: $scriptCss
+                     scriptJs: $scriptJs
++                    tocDepth: $tocDepth
++                    useDefaultTocDepth: $useDefaultTocDepth
+                     tags: $tags
+                     title: $title
+                   ) {
+@@ -349,6 +367,8 @@ export default {
+               publishStartDate: this.$store.get('page/publishStartDate') || '',
+               scriptCss: this.$store.get('page/scriptCss'),
+               scriptJs: this.$store.get('page/scriptJs'),
++              tocDepth: this.$store.get('page/tocDepth'),
++              useDefaultTocDepth: this.$store.get('page/useDefaultTocDepth'),
+               tags: this.$store.get('page/tags'),
+               title: this.$store.get('page/title')
+             }
+@@ -392,7 +412,6 @@ export default {
+             this.$root.$emit('saveConflict')
+             throw new Error(this.$t('editor:conflict.warning'))
+           }
+-
+           let resp = await this.$apollo.mutate({
+             mutation: gql`
+               mutation (
+@@ -408,6 +427,8 @@ export default {
+                 $publishStartDate: Date
+                 $scriptCss: String
+                 $scriptJs: String
++                $tocDepth: RangeInput
++                $useDefaultTocDepth: Boolean
+                 $tags: [String]
+                 $title: String
+               ) {
+@@ -425,6 +446,8 @@ export default {
+                     publishStartDate: $publishStartDate
+                     scriptCss: $scriptCss
+                     scriptJs: $scriptJs
++                    tocDepth: $tocDepth
++                    useDefaultTocDepth: $useDefaultTocDepth
+                     tags: $tags
+                     title: $title
+                   ) {
+@@ -454,6 +477,8 @@ export default {
+               publishStartDate: this.$store.get('page/publishStartDate') || '',
+               scriptCss: this.$store.get('page/scriptCss'),
+               scriptJs: this.$store.get('page/scriptJs'),
++              tocDepth: this.$store.get('page/tocDepth'),
++              useDefaultTocDepth: this.$store.get('page/useDefaultTocDepth'),
+               tags: this.$store.get('page/tags'),
+               title: this.$store.get('page/title')
+             }
+@@ -536,7 +561,9 @@ export default {
+         tags: this.$store.get('page/tags'),
+         title: this.$store.get('page/title'),
+         css: this.$store.get('page/scriptCss'),
+-        js: this.$store.get('page/scriptJs')
++        js: this.$store.get('page/scriptJs'),
++        tocDepth: this.$store.get('page/tocDepth@min') + (this.$store.get('page/tocDepth@max') * 10),
++        useDefaultTocDepth: this.$store.get('page/useDefaultTocDepth')
+       }
+     },
+     injectCustomCss: _.debounce(css => {
+diff --git a/client/components/editor/editor-modal-properties.vue b/client/components/editor/editor-modal-properties.vue
+index 0738b333f2..dc885aa132 100644
+--- a/client/components/editor/editor-modal-properties.vue
++++ b/client/components/editor/editor-modal-properties.vue
+@@ -1,5 +1,5 @@
+ <template lang='pug'>
+-  v-dialog(
++v-dialog(
+     v-model='isShown'
+     persistent
+     width='1000'
+@@ -19,9 +19,9 @@
+     v-card(tile)
+       v-tabs(color='white', background-color='blue darken-1', dark, centered, v-model='currentTab')
+         v-tab {{$t('editor:props.info')}}
++        v-tab {{$t('editor:props.toc')}}
+         v-tab {{$t('editor:props.scheduling')}}
+         v-tab(:disabled='!hasScriptPermission') {{$t('editor:props.scripts')}}
+-        v-tab(disabled) {{$t('editor:props.social')}}
+         v-tab(:disabled='!hasStylePermission') {{$t('editor:props.styles')}}
+         v-tab-item(transition='fade-transition', reverse-transition='fade-transition')
+           v-card-text.pt-5
+@@ -90,6 +90,24 @@
+               hide-no-data
+               :search-input.sync='newTagSearch'
+               )
++        v-tab-item(transition='fade-transition', reverse-transition='fade-transition')
++          v-card-text
++            .overline.pb-5 {{$t('editor:props.tocTitle')}}
++            v-switch(
++              :label='$t(`editor:props.tocUseDefault`)'
++              v-model='useDefaultTocDepth'
++            )
++            v-range-slider(
++              :disabled='useDefaultTocDepth'
++              prepend-icon='mdi-menu-open'
++              :label='$t(`editor:props.tocHeadingLevels`)'
++              v-model='tocDepth'
++              :min='1'
++              :max='6'
++              :tick-labels='["H1", "H2", "H3", "H4", "H5", "H6"]'
++              )
++            .text-caption.pl-8.grey--text {{$t('editor:props.tocHeadingLevelsHint')}}
++
+         v-tab-item(transition='fade-transition', reverse-transition='fade-transition')
+           v-card-text
+             .overline {{$t('editor:props.publishState')}}
+@@ -196,43 +214,6 @@
+           .editor-props-codeeditor-hint
+             .caption {{$t('editor:props.htmlHint')}}
+ 
+-        v-tab-item(transition='fade-transition', reverse-transition='fade-transition')
+-          v-card-text
+-            .overline {{$t('editor:props.socialFeatures')}}
+-            v-switch(
+-              :label='$t(`editor:props.allowComments`)'
+-              v-model='isPublished'
+-              color='primary'
+-              :hint='$t(`editor:props.allowCommentsHint`)'
+-              persistent-hint
+-              inset
+-              )
+-            v-switch(
+-              :label='$t(`editor:props.allowRatings`)'
+-              v-model='isPublished'
+-              color='primary'
+-              :hint='$t(`editor:props.allowRatingsHint`)'
+-              persistent-hint
+-              disabled
+-              inset
+-              )
+-            v-switch(
+-              :label='$t(`editor:props.displayAuthor`)'
+-              v-model='isPublished'
+-              color='primary'
+-              :hint='$t(`editor:props.displayAuthorHint`)'
+-              persistent-hint
+-              inset
+-              )
+-            v-switch(
+-              :label='$t(`editor:props.displaySharingBar`)'
+-              v-model='isPublished'
+-              color='primary'
+-              :hint='$t(`editor:props.displaySharingBarHint`)'
+-              persistent-hint
+-              inset
+-              )
+-
+         v-tab-item(:transition='false', :reverse-transition='false')
+           .editor-props-codeeditor-title
+             .overline {{$t('editor:props.css')}}
+@@ -255,6 +236,7 @@ import 'codemirror/mode/htmlmixed/htmlmixed.js'
+ import 'codemirror/mode/css/css.js'
+ 
+ /* global siteLangs, siteConfig */
++// eslint-disable-next-line no-useless-escape
+ const filenamePattern = /^(?![\#\/\.\$\^\=\*\;\:\&\?\(\)\[\]\{\}\"\'\>\<\,\@\!\%\`\~\s])(?!.*[\#\/\.\$\^\=\*\;\:\&\?\(\)\[\]\{\}\"\'\>\<\,\@\!\%\`\~\s]$)[^\#\.\$\^\=\*\;\:\&\?\(\)\[\]\{\}\"\'\>\<\,\@\!\%\`\~\s]*$/
+ 
+ export default {
+@@ -276,10 +258,10 @@ export default {
+       currentTab: 0,
+       cm: null,
+       rules: {
+-          required: value => !!value || 'This field is required.',
+-          path: value => {
+-            return filenamePattern.test(value) || 'Invalid path. Please ensure it does not contain special characters, or begin/end in a slash or hashtag string.'
+-          }
++        required: value => !!value || 'This field is required.',
++        path: value => {
++          return filenamePattern.test(value) || 'Invalid path. Please ensure it does not contain special characters, or begin/end in a slash or hashtag string.'
++        }
+       }
+     }
+   },
+@@ -297,6 +279,19 @@ export default {
+     isPublished: sync('page/isPublished'),
+     publishStartDate: sync('page/publishStartDate'),
+     publishEndDate: sync('page/publishEndDate'),
++    tocDepth: {
++      get() {
++        const tocDepth = this.$store.get('page/tocDepth')
++        return [tocDepth.min, tocDepth.max]
++      },
++      set(value) {
++        this.$store.set('page/tocDepth', {
++          min: parseInt(value[0]),
++          max: parseInt(value[1])
++        })
++      }
++    },
++    useDefaultTocDepth: sync('page/useDefaultTocDepth'),
+     scriptJs: sync('page/scriptJs'),
+     scriptCss: sync('page/scriptCss'),
+     hasScriptPermission: get('page/effectivePermissions@pages.script'),
+@@ -328,7 +323,7 @@ export default {
+       if (this.cm) {
+         this.cm.toTextArea()
+       }
+-      if (newValue === 2) {
++      if (newValue === 3) {
+         this.$nextTick(() => {
+           setTimeout(() => {
+             this.loadEditor(this.$refs.codejs, 'html')
+diff --git a/client/graph/admin/theme/theme-mutation-save.gql b/client/graph/admin/theme/theme-mutation-save.gql
+index 86853ebade..ed1d53435f 100644
+--- a/client/graph/admin/theme/theme-mutation-save.gql
++++ b/client/graph/admin/theme/theme-mutation-save.gql
+@@ -1,6 +1,6 @@
+-mutation($theme: String!, $iconset: String!, $darkMode: Boolean!, $tocPosition: String, $injectCSS: String, $injectHead: String, $injectBody: String) {
++mutation($theme: String!, $iconset: String!, $darkMode: Boolean!, $tocPosition: String, $tocDepth: RangeInput!, $injectCSS: String, $injectHead: String, $injectBody: String) {
+   theming {
+-    setConfig(theme: $theme, iconset: $iconset, darkMode: $darkMode, tocPosition: $tocPosition, injectCSS: $injectCSS, injectHead: $injectHead, injectBody: $injectBody) {
++    setConfig(theme: $theme, iconset: $iconset, darkMode: $darkMode, tocPosition: $tocPosition, tocDepth: $tocDepth, injectCSS: $injectCSS, injectHead: $injectHead, injectBody: $injectBody) {
+       responseResult {
+         succeeded
+         errorCode
+diff --git a/client/graph/admin/theme/theme-query-config.gql b/client/graph/admin/theme/theme-query-config.gql
+index 5009fe06af..9d9192b913 100644
+--- a/client/graph/admin/theme/theme-query-config.gql
++++ b/client/graph/admin/theme/theme-query-config.gql
+@@ -4,6 +4,10 @@ query {
+       theme
+       iconset
+       darkMode
++      tocDepth {
++        min
++        max
++      }
+       tocPosition
+       injectCSS
+       injectHead
+diff --git a/client/store/page.js b/client/store/page.js
+index 92979647b8..4eea9fca80 100644
+--- a/client/store/page.js
++++ b/client/store/page.js
+@@ -17,6 +17,11 @@ const state = {
+   editor: '',
+   mode: '',
+   scriptJs: '',
++  tocDepth: {
++    min: 1,
++    max: 2
++  },
++  useDefaultTocDepth: true,
+   scriptCss: '',
+   effectivePermissions: {
+     comments: {
+diff --git a/client/themes/default/components/page-toc-item.vue b/client/themes/default/components/page-toc-item.vue
+new file mode 100644
+index 0000000000..78ec2a6997
+--- /dev/null
++++ b/client/themes/default/components/page-toc-item.vue
+@@ -0,0 +1,72 @@
++<template lang="pug">
++  .page-toc-item
++    template(v-if='level >= min')
++      v-list-item(@click='click(item.anchor)', v-if='max > level', :key='item.anchor', :class='[isNestedLevel ? "pl-9" : "pl-6"]')
++        v-icon.pl-0(small, color='grey lighten-1', v-if='item.children.length > 0') {{ $vuetify.rtl ? `mdi-menu-up` : `mdi-menu-up` }}
++        v-list-item-title.pl-4(v-bind:class='titleClasses') {{item.title}}
++      v-list-group(v-else, sub-group, v-bind:class='{"pl-6": isNestedLevel}')
++        template(v-slot:activator)
++          v-list-item.pl-0(@click='click(item.anchor)', :key='item.anchor')
++            v-list-item-title(v-bind:class='titleClasses') {{item.title}}
++        page-toc-item(v-if='item.children.length > 0', v-for='subItem in item.children', :key='subItem.anchor', :item='subItem', :level='level + 1', :min='min', :max='max')
++    page-toc-item(v-show='max > level && item.children.length > 0', v-for='subItem in item.children', :key='subItem.anchor', :item='subItem', :level='level + 1', :min='min', :max='max')
++</template>
++
++<script>
++
++export default {
++  name: 'PageTocItem',
++  props: {
++    item: {
++      type: Object,
++      default: () => {}
++    },
++    min: {
++      type: Number,
++      default: 1
++    },
++    max: {
++      type: Number,
++      default: 2
++    },
++    level: {
++      type: Number,
++      default: 1
++    }
++  },
++  data() {
++    return {
++      scrollOpts: {
++        duration: 1500,
++        offset: 0,
++        easing: 'easeInOutCubic'
++      }
++    }
++  },
++  computed: {
++    isNestedLevel() {
++      return this.level > this.min
++    },
++    titleClasses() {
++      return {
++        'caption': this.isNestedLevel,
++        'grey--text': this.isNestedLevel,
++        'text--lighten-1': this.$vuetify.theme.dark && this.isNestedLevel,
++        'text--darken-1': !this.$vuetify.theme.dark && this.isNestedLevel
++      }
++    }
++  },
++  methods: {
++    click (anchor) {
++      this.$vuetify.goTo(anchor, this.scrollOpts)
++    }
++  }
++}
++</script>
++
++<style lang='scss'>
++// Hack to fix animations of multi level nesting v-list-group
++.page-toc-item .v-list-group--sub-group.v-list-group--active .v-list-item:not(.v-list-item--active) .v-list-item__icon.v-list-group__header__prepend-icon .v-icon {
++  transform: rotate(0deg)!important;
++}
++</style>
+diff --git a/client/themes/default/components/page.vue b/client/themes/default/components/page.vue
+index 0d1f6473fa..5401beefd9 100644
+--- a/client/themes/default/components/page.vue
++++ b/client/themes/default/components/page.vue
+@@ -94,18 +94,14 @@
+             )
+             v-card.page-toc-card.mb-5(v-if='tocDecoded.length')
+               .overline.pa-5.pb-0(:class='$vuetify.theme.dark ? `blue--text text--lighten-2` : `primary--text`') {{$t('common:page.toc')}}
+-              v-list.pb-3(dense, nav, :class='$vuetify.theme.dark ? `darken-3-d3` : ``')
+-                template(v-for='(tocItem, tocIdx) in tocDecoded')
+-                  v-list-item(@click='$vuetify.goTo(tocItem.anchor, scrollOpts)')
+-                    v-icon(color='grey', small) {{ $vuetify.rtl ? `mdi-chevron-left` : `mdi-chevron-right` }}
+-                    v-list-item-title.px-3 {{tocItem.title}}
+-                  //- v-divider(v-if='tocIdx < toc.length - 1 || tocItem.children.length')
+-                  template(v-for='tocSubItem in tocItem.children')
+-                    v-list-item(@click='$vuetify.goTo(tocSubItem.anchor, scrollOpts)')
+-                      v-icon.px-3(color='grey lighten-1', small) {{ $vuetify.rtl ? `mdi-chevron-left` : `mdi-chevron-right` }}
+-                      v-list-item-title.px-3.caption.grey--text(:class='$vuetify.theme.dark ? `text--lighten-1` : `text--darken-1`') {{tocSubItem.title}}
+-                    //- v-divider(inset, v-if='tocIdx < toc.length - 1')
+-
++              v-list.py-2(dense, nav, :class='$vuetify.theme.dark ? `darken-3-d3` : ``')
++                page-toc-item(
++                  v-for='(item, idx) in tocDecoded'
++                  :key='`tocitem-` + idx'
++                  :item='item'
++                  :min='tocOptionsDecoded.min'
++                  :max='tocOptionsDecoded.max'
++                  )
+             v-card.page-tags-card.mb-5(v-if='tags.length > 0')
+               .pa-5
+                 .overline.teal--text.pb-2(:class='$vuetify.theme.dark ? `text--lighten-3` : ``') {{$t('common:page.tags')}}
+@@ -360,6 +356,7 @@
+ import { StatusIndicator } from 'vue-status-indicator'
+ import Tabset from './tabset.vue'
+ import NavSidebar from './nav-sidebar.vue'
++import PageTocItem from './page-toc-item.vue'
+ import Prism from 'prismjs'
+ import mermaid from 'mermaid'
+ import { get, sync } from 'vuex-pathify'
+@@ -407,6 +404,7 @@ Prism.plugins.toolbar.registerButton('copy-to-clipboard', (env) => {
+ export default {
+   components: {
+     NavSidebar,
++    PageTocItem,
+     StatusIndicator
+   },
+   props: {
+@@ -489,6 +487,10 @@ export default {
+     filename: {
+       type: String,
+       default: ''
++    },
++    tocOptions: {
++      type: String,
++      default: ''
+     }
+   },
+   data() {
+@@ -560,12 +562,16 @@ export default {
+       return JSON.parse(Buffer.from(this.toc, 'base64').toString())
+     },
+     tocPosition: get('site/tocPosition'),
++    tocOptionsDecoded () {
++      return JSON.parse(Buffer.from(this.tocOptions, 'base64').toString())
++    },
+     hasAdminPermission: get('page/effectivePermissions@system.manage'),
+     hasWritePagesPermission: get('page/effectivePermissions@pages.write'),
+     hasManagePagesPermission: get('page/effectivePermissions@pages.manage'),
+     hasDeletePagesPermission: get('page/effectivePermissions@pages.delete'),
+     hasReadSourcePermission: get('page/effectivePermissions@source.read'),
+     hasReadHistoryPermission: get('page/effectivePermissions@history.read'),
++
+     hasAnyPagePermissions () {
+       return this.hasAdminPermission || this.hasWritePagesPermission || this.hasManagePagesPermission ||
+         this.hasDeletePagesPermission || this.hasReadSourcePermission || this.hasReadHistoryPermission
+diff --git a/server/app/data.yml b/server/app/data.yml
+index 0cd628a6c9..9bd1c47950 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -60,6 +60,9 @@ defaults:
+       theme: 'default'
+       iconset: 'md'
+       darkMode: false
++      tocDepth:
++        min: 1
++        max: 2
+       tocPosition: 'left'
+     auth:
+       autoLogin: false
+diff --git a/server/controllers/common.js b/server/controllers/common.js
+index 55cc4d333f..bf62aaf195 100644
+--- a/server/controllers/common.js
++++ b/server/controllers/common.js
+@@ -179,6 +179,11 @@ router.get(['/e', '/e/*'], async (req, res, next) => {
+       title: null,
+       description: null,
+       updatedAt: new Date().toISOString(),
++      tocOptions: {
++        min: 1,
++        max: 2,
++        useDefault: true
++      },
+       extra: {
+         css: '',
+         js: ''
+@@ -507,6 +512,13 @@ router.get('/*', async (req, res, next) => {
+           injectCode.body = `${injectCode.body}\n${page.extra.js}`
+         }
+ 
++        // -> Set TOC display options
++        const tocOptions = _.get(page, 'tocOptions.useDefault', true) ?
++          WIKI.config.theming.tocDepth : {
++            min: page.tocOptions.min,
++            max: page.tocOptions.max
++          }
++
+         if (req.query.legacy || req.get('user-agent').indexOf('Trident') >= 0) {
+           // -> Convert page TOC
+           if (_.isString(page.toc)) {
+@@ -552,6 +564,7 @@ router.get('/*', async (req, res, next) => {
+           res.render('page', {
+             page,
+             sidebar,
++            tocOptions,
+             injectCode,
+             comments: commentTmpl,
+             effectivePermissions,
+diff --git a/server/db/migrations-sqlite/2.5.284.js b/server/db/migrations-sqlite/2.5.284.js
+new file mode 100644
+index 0000000000..cd362a52e0
+--- /dev/null
++++ b/server/db/migrations-sqlite/2.5.284.js
+@@ -0,0 +1,12 @@
++exports.up = async knex => {
++  await knex.schema
++    .alterTable('pages', table => {
++      table.json('tocOptions').notNullable().defaultTo(JSON.stringify({
++        min: 1,
++        max: 2,
++        useDefault: true
++      }))
++    })
++}
++
++exports.down = knex => { }
+diff --git a/server/db/migrations/2.5.284.js b/server/db/migrations/2.5.284.js
+new file mode 100644
+index 0000000000..cd362a52e0
+--- /dev/null
++++ b/server/db/migrations/2.5.284.js
+@@ -0,0 +1,12 @@
++exports.up = async knex => {
++  await knex.schema
++    .alterTable('pages', table => {
++      table.json('tocOptions').notNullable().defaultTo(JSON.stringify({
++        min: 1,
++        max: 2,
++        useDefault: true
++      }))
++    })
++}
++
++exports.down = knex => { }
+diff --git a/server/graph/resolvers/theming.js b/server/graph/resolvers/theming.js
+index 3a175c0fa9..b18a5a8a8e 100644
+--- a/server/graph/resolvers/theming.js
++++ b/server/graph/resolvers/theming.js
+@@ -24,6 +24,7 @@ module.exports = {
+         theme: WIKI.config.theming.theme,
+         iconset: WIKI.config.theming.iconset,
+         darkMode: WIKI.config.theming.darkMode,
++        tocDepth: WIKI.config.theming.tocDepth,
+         tocPosition: WIKI.config.theming.tocPosition || 'left',
+         injectCSS: new CleanCSS({ format: 'beautify' }).minify(WIKI.config.theming.injectCSS).styles,
+         injectHead: WIKI.config.theming.injectHead,
+@@ -45,6 +46,7 @@ module.exports = {
+           theme: args.theme,
+           iconset: args.iconset,
+           darkMode: args.darkMode,
++          tocDepth: args.tocDepth,
+           tocPosition: args.tocPosition || 'left',
+           injectCSS: args.injectCSS || '',
+           injectHead: args.injectHead || '',
+diff --git a/server/graph/schemas/common.graphql b/server/graph/schemas/common.graphql
+index 50e9cbdc64..3909ddf222 100644
+--- a/server/graph/schemas/common.graphql
++++ b/server/graph/schemas/common.graphql
+@@ -21,6 +21,17 @@ input KeyValuePairInput {
+   value: String!
+ }
+ 
++# Generic Range Value
++type Range {
++  min: Int
++  max: Int
++}
++
++input RangeInput {
++  min: Int!
++  max: Int!
++}
++
+ # Generic Mutation Response
+ type DefaultResponse {
+   responseResult: ResponseStatus
+diff --git a/server/graph/schemas/page.graphql b/server/graph/schemas/page.graphql
+index 552ad32586..2322d72737 100644
+--- a/server/graph/schemas/page.graphql
++++ b/server/graph/schemas/page.graphql
+@@ -98,6 +98,8 @@ type PageMutation {
+     scriptJs: String
+     tags: [String]!
+     title: String!
++    tocDepth: RangeInput
++    useDefaultTocDepth: Boolean
+   ): PageResponse @auth(requires: ["write:pages", "manage:pages", "manage:system"])
+ 
+   update(
+@@ -115,6 +117,8 @@ type PageMutation {
+     scriptJs: String
+     tags: [String]
+     title: String
++    tocDepth: RangeInput
++    useDefaultTocDepth: Boolean
+   ): PageResponse @auth(requires: ["write:pages", "manage:pages", "manage:system"])
+ 
+   convert(
+@@ -180,33 +184,35 @@ type PageMigrationResponse {
+ }
+ 
+ type Page {
+-  id: Int!
+-  path: String!
+-  hash: String!
+-  title: String!
+-  description: String!
+-  isPrivate: Boolean! @auth(requires: ["write:pages", "manage:system"])
+-  isPublished: Boolean! @auth(requires: ["write:pages", "manage:system"])
++  id: Int
++  path: String
++  hash: String
++  title: String
++  description: String
++  isPrivate: Boolean @auth(requires: ["write:pages", "manage:system"])
++  isPublished: Boolean @auth(requires: ["write:pages", "manage:system"])
+   privateNS: String @auth(requires: ["write:pages", "manage:system"])
+-  publishStartDate: Date! @auth(requires: ["write:pages", "manage:system"])
+-  publishEndDate: Date! @auth(requires: ["write:pages", "manage:system"])
+-  tags: [PageTag]!
+-  content: String! @auth(requires: ["read:source", "write:pages", "manage:system"])
++  publishStartDate: Date @auth(requires: ["write:pages", "manage:system"])
++  publishEndDate: Date @auth(requires: ["write:pages", "manage:system"])
++  tags: [PageTag]
++  content: String @auth(requires: ["read:source", "write:pages", "manage:system"])
+   render: String
+   toc: String
+-  contentType: String!
+-  createdAt: Date!
+-  updatedAt: Date!
+-  editor: String! @auth(requires: ["write:pages", "manage:system"])
+-  locale: String!
++  tocDepth: Range
++  useDefaultTocDepth: Boolean
++  contentType: String
++  createdAt: Date
++  updatedAt: Date
++  editor: String @auth(requires: ["write:pages", "manage:system"])
++  locale: String
+   scriptCss: String
+   scriptJs: String
+-  authorId: Int! @auth(requires: ["write:pages", "manage:system"])
+-  authorName: String! @auth(requires: ["write:pages", "manage:system"])
+-  authorEmail: String! @auth(requires: ["write:pages", "manage:system"])
+-  creatorId: Int! @auth(requires: ["write:pages", "manage:system"])
+-  creatorName: String! @auth(requires: ["write:pages", "manage:system"])
+-  creatorEmail: String! @auth(requires: ["write:pages", "manage:system"])
++  authorId: Int @auth(requires: ["write:pages", "manage:system"])
++  authorName: String @auth(requires: ["write:pages", "manage:system"])
++  authorEmail: String @auth(requires: ["write:pages", "manage:system"])
++  creatorId: Int @auth(requires: ["write:pages", "manage:system"])
++  creatorName: String @auth(requires: ["write:pages", "manage:system"])
++  creatorEmail: String @auth(requires: ["write:pages", "manage:system"])
+ }
+ 
+ type PageTag {
+diff --git a/server/graph/schemas/theming.graphql b/server/graph/schemas/theming.graphql
+index 2c7b2fb662..6cf5ae4f17 100644
+--- a/server/graph/schemas/theming.graphql
++++ b/server/graph/schemas/theming.graphql
+@@ -28,6 +28,7 @@ type ThemingMutation {
+     theme: String!
+     iconset: String!
+     darkMode: Boolean!
++    tocDepth: RangeInput!
+     tocPosition: String
+     injectCSS: String
+     injectHead: String
+@@ -44,6 +45,7 @@ type ThemingConfig {
+   iconset: String!
+   darkMode: Boolean!
+   tocPosition: String
++  tocDepth: Range
+   injectCSS: String
+   injectHead: String
+   injectBody: String
+diff --git a/server/helpers/page.js b/server/helpers/page.js
+index 8bea0aa3b2..8d1dcf83e7 100644
+--- a/server/helpers/page.js
++++ b/server/helpers/page.js
+@@ -82,8 +82,18 @@ module.exports = {
+       ['date', page.updatedAt],
+       ['tags', page.tags ? page.tags.map(t => t.tag).join(', ') : ''],
+       ['editor', page.editorKey],
+-      ['dateCreated', page.createdAt]
++      ['dateCreated', page.createdAt],
++      ['doUseTocDefault', page.doUseTocDefault]
+     ]
++    if (page.minTocLevel) {
++      meta.push(['minTocLevel', page.minTocLevel])
++    }
++    if (page.tocLevel) {
++      meta.push(['tocLevel', page.tocLevel])
++    }
++    if (page.tocCollapseLevel) {
++      meta.push(['tocCollapseLevel', page.tocCollapseLevel])
++    }
+     switch (page.contentType) {
+       case 'markdown':
+         return '---\n' + meta.map(mt => `${mt[0]}: ${mt[1]}`).join('\n') + '\n---\n\n' + page.content
+diff --git a/server/models/pages.js b/server/models/pages.js
+index bb5b658512..a61a188f3f 100644
+--- a/server/models/pages.js
++++ b/server/models/pages.js
+@@ -47,7 +47,6 @@ module.exports = class Page extends Model {
+         publishEndDate: {type: 'string'},
+         content: {type: 'string'},
+         contentType: {type: 'string'},
+-
+         createdAt: {type: 'string'},
+         updatedAt: {type: 'string'}
+       }
+@@ -55,7 +54,7 @@ module.exports = class Page extends Model {
+   }
+ 
+   static get jsonAttributes() {
+-    return ['extra']
++    return ['extra', 'tocOptions']
+   }
+ 
+   static get relationMappings() {
+@@ -162,6 +161,11 @@ module.exports = class Page extends Model {
+       },
+       title: 'string',
+       toc: 'string',
++      tocOptions: {
++        min: 'uint',
++        max: 'uint',
++        useDefault: 'boolean'
++      },
+       updatedAt: 'string'
+     })
+   }
+@@ -312,6 +316,11 @@ module.exports = class Page extends Model {
+       publishStartDate: opts.publishStartDate || '',
+       title: opts.title,
+       toc: '[]',
++      tocOptions: JSON.stringify({
++        min: _.get(opts, 'tocDepth.min', 1),
++        max: _.get(opts, 'tocDepth.max', 2),
++        useDefault: opts.useDefaultTocDepth !== false
++      }),
+       extra: JSON.stringify({
+         js: scriptJs,
+         css: scriptCss
+@@ -431,6 +440,11 @@ module.exports = class Page extends Model {
+       publishEndDate: opts.publishEndDate || '',
+       publishStartDate: opts.publishStartDate || '',
+       title: opts.title,
++      tocOptions: JSON.stringify({
++        min: _.get(opts, 'tocDepth.min', ogPage.tocOptions.min || 1),
++        max: _.get(opts, 'tocDepth.max', ogPage.tocOptions.max || 2),
++        useDefault: _.get(opts, 'useDefaultTocDepth', ogPage.tocOptions.useDefault !== false)
++      }),
+       extra: JSON.stringify({
+         ...ogPage.extra,
+         js: scriptJs,
+@@ -992,6 +1006,7 @@ module.exports = class Page extends Model {
+           'pages.content',
+           'pages.render',
+           'pages.toc',
++          'pages.tocOptions',
+           'pages.contentType',
+           'pages.createdAt',
+           'pages.updatedAt',
+@@ -1073,6 +1088,7 @@ module.exports = class Page extends Model {
+       tags: page.tags.map(t => _.pick(t, ['tag', 'title'])),
+       title: page.title,
+       toc: _.isString(page.toc) ? page.toc : JSON.stringify(page.toc),
++      tocOptions: page.tocOptions,
+       updatedAt: page.updatedAt
+     }))
+   }
+diff --git a/server/setup.js b/server/setup.js
+index 44da308b61..e6bc5e7592 100644
+--- a/server/setup.js
++++ b/server/setup.js
+@@ -128,6 +128,10 @@ module.exports = () => {
+         theme: 'default',
+         darkMode: false,
+         iconset: 'mdi',
++        tocDepth: {
++          min: 1,
++          max: 2
++        },
+         injectCSS: '',
+         injectHead: '',
+         injectBody: ''
+diff --git a/server/views/editor.pug b/server/views/editor.pug
+index 0f0b64c026..2ea9b19f8c 100644
+--- a/server/views/editor.pug
++++ b/server/views/editor.pug
+@@ -19,6 +19,7 @@ block body
+       script-css=page.extra.css
+       script-js=page.extra.js
+       init-mode=page.mode
++      toc-options=Buffer.from(JSON.stringify(page.tocOptions)).toString('base64')
+       init-editor=page.editorKey
+       init-content=page.content
+       checkout-date=page.updatedAt
+diff --git a/server/views/page.pug b/server/views/page.pug
+index 32649fbe74..b1b3b73e86 100644
+--- a/server/views/page.pug
++++ b/server/views/page.pug
+@@ -25,6 +25,7 @@ block body
+       toc=Buffer.from(page.toc).toString('base64')
+       :page-id=page.id
+       sidebar=Buffer.from(JSON.stringify(sidebar)).toString('base64')
++      toc-options=Buffer.from(JSON.stringify(tocOptions)).toString('base64')
+       nav-mode=config.nav.mode
+       comments-enabled=config.features.featurePageComments
+       effective-permissions=Buffer.from(JSON.stringify(effectivePermissions)).toString('base64')

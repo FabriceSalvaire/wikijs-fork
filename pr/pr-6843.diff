@@ -1,0 +1,17 @@
+diff --git a/server/modules/authentication/ldap/authentication.js b/server/modules/authentication/ldap/authentication.js
+index 29d2148220..d2b8aacd34 100644
+--- a/server/modules/authentication/ldap/authentication.js
++++ b/server/modules/authentication/ldap/authentication.js
+@@ -75,11 +75,7 @@ module.exports = {
+ }
+ 
+ function getTlsOptions(conf) {
+-  if (!conf.tlsEnabled) {
+-    return {}
+-  }
+-
+-  if (!conf.tlsCertPath) {
++  if (!conf.tlsEnabled || !conf.tlsCertPath) {
+     return {
+       rejectUnauthorized: conf.verifyTLSCertificate
+     }

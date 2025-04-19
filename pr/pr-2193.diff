@@ -1,0 +1,102 @@
+diff --git a/.babelrc b/.babelrc
+index 2511369299..990673ae40 100644
+--- a/.babelrc
++++ b/.babelrc
+@@ -1,5 +1,11 @@
+ {
+   "comments": true,
++  "env": {
++    "development": {
++      "sourceMaps": true,
++      "retainLines": true
++    }
++  },
+   "plugins": [
+     "lodash",
+     "graphql-tag",
+diff --git a/.vscode/extensions.json b/.vscode/extensions.json
+index adb5f8c679..3c2acadd26 100644
+--- a/.vscode/extensions.json
++++ b/.vscode/extensions.json
+@@ -4,6 +4,7 @@
+     "dbaeumer.vscode-eslint",
+     "christian-kohler.path-intellisense",
+     "mrmlnc.vscode-puglint",
+-    "octref.vetur"
++    "octref.vetur",
++    "firefox-devtools.vscode-firefox-debug"
+   ]
+ }
+diff --git a/.vscode/launch.json b/.vscode/launch.json
+index b9ef82e540..18483c3d8c 100644
+--- a/.vscode/launch.json
++++ b/.vscode/launch.json
+@@ -3,19 +3,19 @@
+     // Hover to view descriptions of existing attributes.
+     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+     "version": "0.2.0",
++    "compounds": [
++        {
++            "name": "Server / Client Debug",
++            "configurations": ["Launch Program", "Launch Firefox Client Debug"]
++        }
++    ],
+     "configurations": [
+-    {
+-      "type": "node",
+-      "request": "attach",
+-      "name": "Attach (Inspector Protocol)",
+-      "port": 9229,
+-      "protocol": "inspector"
+-    },
+         {
+             "type": "node",
+-            "request": "launch",
+-            "name": "Launch Program",
+-            "program": "${workspaceRoot}\\server.js"
++            "request": "attach",
++            "name": "Attach (Inspector Protocol)",
++            "port": 9229,
++            "protocol": "inspector"
+         },
+         {
+             "type": "node",
+@@ -23,6 +23,25 @@
+             "name": "Attach to Port",
+             "address": "localhost",
+             "port": 9222
+-        }
++        },
++        {
++            "type": "node",
++            "request": "launch",
++            "name": "Launch Program",
++            "program": "${workspaceRoot}\\server\\index.js"
++        },
++	{
++            "name": "Launch Firefox Client Debug",
++            "type": "firefox",
++            "request": "launch",
++            "url": "http://localhost:3000/",
++            "webRoot": "${workspaceRoot}",
++            "pathMappings": [
++                {
++                    "url": "webpack:///client",
++                    "path": "${workspaceRoot}/client"
++                }
++            ]
++        },
+     ]
+ }
+diff --git a/dev/webpack/webpack.dev.js b/dev/webpack/webpack.dev.js
+index 39c71be181..bd158d8d2f 100644
+--- a/dev/webpack/webpack.dev.js
++++ b/dev/webpack/webpack.dev.js
+@@ -23,6 +23,7 @@ fs.emptyDirSync(path.join(process.cwd(), 'assets'))
+ 
+ module.exports = {
+   mode: 'development',
++  devtool: 'source-map',
+   entry: {
+     app: ['./client/index-app.js', 'webpack-hot-middleware/client'],
+     legacy: ['./client/index-legacy.js', 'webpack-hot-middleware/client'],

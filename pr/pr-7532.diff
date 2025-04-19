@@ -1,0 +1,27 @@
+diff --git a/dev/helm/templates/deployment.yaml b/dev/helm/templates/deployment.yaml
+index e6dc786baf..80f6548c29 100644
+--- a/dev/helm/templates/deployment.yaml
++++ b/dev/helm/templates/deployment.yaml
+@@ -14,6 +14,9 @@ spec:
+     metadata:
+       labels:
+         {{- include "wiki.selectorLabels" . | nindent 8 }}
++        {{- with .Values.podLabels }}
++        {{- toYaml . | nindent 8 }}
++        {{- end }}
+       annotations:
+         {{- toYaml .Values.podAnnotations | nindent 8 }}
+     spec:
+diff --git a/dev/helm/values.yaml b/dev/helm/values.yaml
+index 8e5e366706..5640faab07 100644
+--- a/dev/helm/values.yaml
++++ b/dev/helm/values.yaml
+@@ -44,6 +44,8 @@ startupProbe:
+ 
+ podAnnotations: {}
+ 
++podLabels: {}
++
+ podSecurityContext: {}
+   # fsGroup: 2000
+ 

@@ -1,0 +1,123 @@
+diff --git a/dev/helm/README.md b/dev/helm/README.md
+index 9e6192dbaa..a40ac6b3d3 100644
+--- a/dev/helm/README.md
++++ b/dev/helm/README.md
+@@ -98,6 +98,7 @@ The following table lists the configurable parameters of the Wiki.js chart and t
+ | `affinity`                       | Affinity settings for wiki.js pod assignment    | `{}`                                                       |
+ | `schedulerName`                  | Name of an alternate scheduler for wiki.js pod  | `nil`                                                      |
+ | `tolerations`                    | Toleration labels for wiki.jsk pod assignment    | `[]`                                                       |
++| `offlineMode`                    | Enable offline-mode                             | `false`                                                    |
+ | `ingress.enabled`                    | Enable ingress controller resource          | `false`                                                    |
+ | `ingress.annotations`                | Ingress annotations                         | `{}`                                                       |
+ | `ingress.hosts`                      | List of ingress rules                        | `[{"host": "wiki.local", "paths": ["/"]}]`                |
+diff --git a/dev/helm/templates/configmap.yaml b/dev/helm/templates/configmap.yaml
+new file mode 100644
+index 0000000000..1b74b04483
+--- /dev/null
++++ b/dev/helm/templates/configmap.yaml
+@@ -0,0 +1,28 @@
++apiVersion: v1
++kind: ConfigMap
++metadata:
++  name: {{ include "wiki.fullname" . }}-config
++  labels:
++    {{- include "wiki.labels" . | nindent 4 }}
++data:
++  config.yml: |
++    port: 3000
++    bindIP: 0.0.0.0
++    db:
++      type: $(DB_TYPE)
++      host: '$(DB_HOST)'
++      port: $(DB_PORT)
++      user: '$(DB_USER)'
++      pass: '$(DB_PASS)'
++      db: $(DB_NAME)
++      storage: $(DB_FILEPATH)
++      ssl: $(DB_SSL)
++    ssl:
++      enabled: $(SSL_ACTIVE)
++      port: 3443
++      provider: letsencrypt
++      domain: $(LETSENCRYPT_DOMAIN)
++      subscriberEmail: $(LETSENCRYPT_EMAIL)
++    logLevel: info
++    ha: $(HA_ACTIVE)
++    offline: $(OFFLINE_ACTIVE)
+diff --git a/dev/helm/templates/deployment.yaml b/dev/helm/templates/deployment.yaml
+index b96fda6b7c..8d488cb231 100644
+--- a/dev/helm/templates/deployment.yaml
++++ b/dev/helm/templates/deployment.yaml
+@@ -39,9 +39,9 @@ spec:
+             - name: DB_USER
+               value: {{ default "wiki" .Values.postgresql.postgresqlUser }}
+             - name: DB_SSL
+-              value: "{{ default "false" .Values.postgresql.ssl }}"    
++              value: "{{ default "false" .Values.postgresql.ssl }}"
+             - name: DB_SSL_CA
+-              value: "{{ default "" .Values.postgresql.ca }}"   
++              value: "{{ default "" .Values.postgresql.ca }}"
+             - name: DB_PASS
+               valueFrom:
+                 secretKeyRef:
+@@ -51,6 +51,8 @@ spec:
+                   name: {{ template "wiki.postgresql.secret" . }}
+                 {{- end }}
+                   key: {{ template "wiki.postgresql.secretKey" . }}
++            - name: OFFLINE_ACTIVE
++              value: "{{ default "false" .Values.offlineMode }}"
+           ports:
+             - name: http
+               containerPort: 3000
+@@ -61,6 +63,11 @@ spec:
+             {{- toYaml .Values.readinessProbe | nindent 12 }}
+           resources:
+             {{- toYaml .Values.resources | nindent 12 }}
++          volumeMounts:
++            - name: config
++              mountPath: /wiki/config.yml
++              subPath: config.yml
++              readOnly: true
+       {{- with .Values.nodeSelector }}
+       nodeSelector:
+         {{- toYaml . | nindent 8 }}
+@@ -73,3 +80,7 @@ spec:
+       tolerations:
+         {{- toYaml . | nindent 8 }}
+     {{- end }}
++      volumes:
++      - name: config
++        configMap:
++          name: {{ include "wiki.fullname" . }}-config
+diff --git a/dev/helm/values.yaml b/dev/helm/values.yaml
+index 8a34f41c0a..7c0c9c0935 100644
+--- a/dev/helm/values.yaml
++++ b/dev/helm/values.yaml
+@@ -12,6 +12,9 @@ imagePullSecrets: []
+ nameOverride: ""
+ fullnameOverride: ""
+ 
++# Enable offline ("air-gapped") mode, will require sideloading locale files
++offlineMode: false
++
+ serviceAccount:
+   # Specifies whether a service account should be created
+   create: true
+@@ -92,7 +95,7 @@ postgresql:
+   enabled: true
+   ## ssl enforce SSL communication with PostgresSQL
+   ## Default to false
+-  ##  
++  ##
+   # ssl: false
+   ## ca Certificate of Authority
+   ## Default to empty, point to location of CA
+@@ -102,7 +105,7 @@ postgresql:
+   ## Default to postgres
+   ##
+   # postgresqlHost: postgres
+-  ## postgresqlPort port for postgres 
++  ## postgresqlPort port for postgres
+   ## Default to 5432
+   ##
+   # postgresqlPort: 5432

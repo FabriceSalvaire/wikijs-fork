@@ -1,0 +1,74 @@
+diff --git a/client/components/editor/markdown/plantuml.js b/client/components/editor/markdown/plantuml.js
+index 0e89b218ca..bd1ee7a853 100644
+--- a/client/components/editor/markdown/plantuml.js
++++ b/client/components/editor/markdown/plantuml.js
+@@ -13,6 +13,7 @@ module.exports = {
+       const closeChar = closeMarker.charCodeAt(0)
+       const imageFormat = opts.imageFormat || 'svg'
+       const server = opts.server || 'https://plantuml.requarks.io'
++      const renderSvgAsObject = opts.renderSvgAsObject || false
+ 
+       md.block.ruler.before('fence', 'uml_diagram', (state, startLine, endLine, silent) => {
+         let nextLine
+@@ -134,7 +135,8 @@ module.exports = {
+       openMarker: conf.openMarker,
+       closeMarker: conf.closeMarker,
+       imageFormat: conf.imageFormat,
+-      server: conf.server
++      server: conf.server,
++      renderSvgAsObject: conf.renderSvgAsObject
+     })
+   }
+ }
+diff --git a/server/modules/rendering/markdown-plantuml/definition.yml b/server/modules/rendering/markdown-plantuml/definition.yml
+index e8b156fc8f..97bf3718b5 100644
+--- a/server/modules/rendering/markdown-plantuml/definition.yml
++++ b/server/modules/rendering/markdown-plantuml/definition.yml
+@@ -39,3 +39,10 @@ props:
+       - ascii
+     order: 4
+     public: true
++  renderSvgAsObject:
++    type: Boolean
++    default: false
++    title: Render svg as object tag instead of img tag
++    hint: Allows for interactive content like links in plantuml graphs - it may have security implications
++    order: 5
++    public: true
+diff --git a/server/modules/rendering/markdown-plantuml/renderer.js b/server/modules/rendering/markdown-plantuml/renderer.js
+index 40eedc0452..f38c1fc5fb 100644
+--- a/server/modules/rendering/markdown-plantuml/renderer.js
++++ b/server/modules/rendering/markdown-plantuml/renderer.js
+@@ -13,6 +13,7 @@ module.exports = {
+       const closeChar = closeMarker.charCodeAt(0)
+       const imageFormat = opts.imageFormat || 'svg'
+       const server = opts.server || 'https://plantuml.requarks.io'
++      const renderSvgAsObject = opts.renderSvgAsObject || false
+ 
+       md.block.ruler.before('fence', 'uml_diagram', (state, startLine, endLine, silent) => {
+         let nextLine
+@@ -129,12 +130,22 @@ module.exports = {
+       }, {
+         alt: [ 'paragraph', 'reference', 'blockquote', 'list' ]
+       })
+-      md.renderer.rules.uml_diagram = md.renderer.rules.image
++      if (renderSvgAsObject && imageFormat === 'svg') {
++        md.renderer.rules.uml_diagram = (tokens, idx) => {
++          const currentToken = tokens[idx]
++          const src = currentToken.attrGet('src')
++          const clazz = currentToken.attrGet('class')
++          return `<object data='${src}' class="${clazz}"></object>`
++        }
++      } else {
++        md.renderer.rules.uml_diagram = md.renderer.rules.image
++      }
+     }, {
+       openMarker: conf.openMarker,
+       closeMarker: conf.closeMarker,
+       imageFormat: conf.imageFormat,
+-      server: conf.server
++      server: conf.server,
++      renderSvgAsObject: conf.renderSvgAsObject
+     })
+   }
+ }

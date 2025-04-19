@@ -1,0 +1,91 @@
+diff --git a/package.json b/package.json
+index 6717e922ff..2c8c37bb43 100644
+--- a/package.json
++++ b/package.json
+@@ -70,6 +70,7 @@
+     "dependency-graph": "0.11.0",
+     "diff": "4.0.2",
+     "diff2html": "3.1.14",
++    "discord-oauth2": "2.11.0",
+     "dompurify": "2.4.3",
+     "dotize": "0.3.0",
+     "elasticsearch6": "npm:@elastic/elasticsearch@6",
+diff --git a/server/helpers/error.js b/server/helpers/error.js
+index f9a817795c..15fc867718 100644
+--- a/server/helpers/error.js
++++ b/server/helpers/error.js
+@@ -73,6 +73,10 @@ module.exports = {
+     message: 'You are not authorized to register. Your domain is not whitelisted.',
+     code: 1011
+   }),
++  AuthDiscordRoleUnauthorized: CustomError('AuthDiscordRoleUnauthorized', {
++    message: 'You are not authorized to register. You lack the necessary Server Roles.',
++    code: 1012
++  }),
+   AuthRequired: CustomError('AuthRequired', {
+     message: 'You must be authenticated to access this resource.',
+     code: 1019
+diff --git a/server/modules/authentication/discord/authentication.js b/server/modules/authentication/discord/authentication.js
+index eab94fd58a..aea2a2a17f 100644
+--- a/server/modules/authentication/discord/authentication.js
++++ b/server/modules/authentication/discord/authentication.js
+@@ -5,10 +5,13 @@
+ // ------------------------------------
+ 
+ const DiscordStrategy = require('passport-discord').Strategy
++const DiscordOauth2 = require('./node_modules/discord-oauth2/index.js')
+ const _ = require('lodash')
+ 
++
+ module.exports = {
+   init (passport, conf) {
++    const discord = new DiscordOauth2()
+     passport.use(conf.key,
+       new DiscordStrategy({
+         clientID: conf.clientId,
+@@ -19,9 +22,15 @@ module.exports = {
+         passReqToCallback: true
+       }, async (req, accessToken, refreshToken, profile, cb) => {
+         try {
+-          if (conf.guildId && !_.some(profile.guilds, { id: conf.guildId })) {
++          if (conf.roles) {
++            const authRoles = conf.roles.split();
++            const { roles } = await discord.getGuildMember(accessToken, conf.guildId);
++            if (authRoles.every(role => roles.includes(role))
++              throw new WIKI.Error.AuthLoginFailed()
++          } else if (conf.guildId && !_.some(profile.guilds, { id: conf.guildId })) {
+             throw new WIKI.Error.AuthLoginFailed()
+           }
++
+           const user = await WIKI.models.users.processProfile({
+             providerKey: req.params.strategy,
+             profile: {
+diff --git a/server/modules/authentication/discord/definition.yml b/server/modules/authentication/discord/definition.yml
+index e30becbaa1..cd207f5413 100644
+--- a/server/modules/authentication/discord/definition.yml
++++ b/server/modules/authentication/discord/definition.yml
+@@ -23,3 +23,8 @@ props:
+     title: Server ID
+     hint: Optional - Your unique server identifier, such that only members are authorized
+     order: 3
++  roles:
++    type: String
++    title: Required Roles
++    hint: Optional - Comma-separated list of server role IDs that are required for access (you must have a Server ID property configured to use this.)
++    order: 4
+diff --git a/yarn.lock b/yarn.lock
+index 19181d2bdd..fd781d9a85 100644
+--- a/yarn.lock
++++ b/yarn.lock
+@@ -8490,6 +8490,11 @@ dir-glob@^3.0.1:
+   dependencies:
+     path-type "^4.0.0"
+ 
++discord-oauth2@2.11.0:
++  version "2.11.0"
++  resolved "https://registry.yarnpkg.com/discord-oauth2/-/discord-oauth2-2.11.0.tgz#799acc6777a216f8fbbf72d5ea29086eb4303f85"
++  integrity sha512-pIbgXm498f7vqNd8/7JwoLd36YMFOFASSJdqyCGdwQpaG7ULHu9nLyifpVXI1b88xvNLqQwqugS8jxkn8Ypd1Q==
++
+ doctrine@1.5.0:
+   version "1.5.0"
+   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-1.5.0.tgz#379dce730f6166f76cefa4e6707a159b02c5a6fa"

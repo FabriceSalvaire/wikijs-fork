@@ -1,0 +1,124 @@
+diff --git a/package.json b/package.json
+index f5ef7851f1..ce0bd5e2b6 100644
+--- a/package.json
++++ b/package.json
+@@ -42,6 +42,7 @@
+     "@root/csr": "0.8.1",
+     "@root/keypairs": "0.10.1",
+     "@root/pem": "1.0.4",
++    "accept-language-parser": "1.5.0",
+     "acme": "3.0.3",
+     "akismet-api": "5.1.0",
+     "algoliasearch": "4.5.1",
+diff --git a/server/controllers/auth.js b/server/controllers/auth.js
+index 9d691087f3..9c8e90aa63 100644
+--- a/server/controllers/auth.js
++++ b/server/controllers/auth.js
+@@ -3,9 +3,11 @@
+ const express = require('express')
+ const ExpressBrute = require('express-brute')
+ const BruteKnex = require('../helpers/brute-knex')
++const pageHelper = require('../helpers/page')
+ const router = express.Router()
+ const moment = require('moment')
+ const _ = require('lodash')
++const acceptLanguageParser = require('accept-language-parser')
+ 
+ const bruteforce = new ExpressBrute(new BruteKnex({
+   createTable: true,
+@@ -19,16 +21,46 @@ const bruteforce = new ExpressBrute(new BruteKnex({
+   }
+ })
+ 
++/**
++ * Calculates the best language by `Accept-Language` header of request and available locales.
++ * @param {express.Request} req
++ * @param {express.Response} res
++ * @returns
++ */
++function findBestLocale(req, res) {
++  const acceptLanguage = req.headers['accept-language']
++  let locale = null
++  if (acceptLanguage != null) {
++    const locales = res.locals.langs.map(v => v.code).sort((a, b) => b.length - a.length)
++    locale = acceptLanguageParser.pick(locales, acceptLanguage, {loose: true})
++    WIKI.logger.info(`locales: [${locales}], accept: ${acceptLanguage}, choosen: ${locale}`)
++  }
++  return locale ?? res.locals.siteConfig.lang
++}
++
++const localePart = '(/[a-zA-Z]{2}(?:-[a-zA-Z]{2})?)?'
++
+ /**
+  * Login form
+  */
+-router.get('/login', async (req, res, next) => {
++router.get(`${localePart}/login`, async (req, res, next) => {
+   _.set(res.locals, 'pageMeta.title', 'Login')
++  const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
++
++  if (WIKI.config.lang.namespacing && !pageArgs.explicitLocale) {
++    return res.redirect(`/${findBestLocale(req, res)}/${pageArgs.path}`)
++  }
++
++  // setting site config
++  req.i18n.changeLanguage(pageArgs.locale)
++  _.set(res, 'locals.siteConfig.lang', pageArgs.locale)
++  _.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
+ 
+   if (req.query.legacy || (req.get('user-agent') && req.get('user-agent').indexOf('Trident') >= 0)) {
+     const { formStrategies, socialStrategies } = await WIKI.models.authentication.getStrategiesForLegacyClient()
+     res.render('legacy/login', {
+       err: false,
++      localePart: pageArgs.explicitLocale ? '/' + pageArgs.locale : '',
+       formStrategies,
+       socialStrategies
+     })
+@@ -92,8 +124,9 @@ router.all('/login/:strategy/callback', async (req, res, next) => {
+ /**
+  * LEGACY - Login form handling
+  */
+-router.post('/login', bruteforce.prevent, async (req, res, next) => {
++router.post(`${localePart}/login`, bruteforce.prevent, async (req, res, next) => {
+   _.set(res.locals, 'pageMeta.title', 'Login')
++  const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
+ 
+   if (req.query.legacy || req.get('user-agent').indexOf('Trident') >= 0) {
+     try {
+@@ -109,6 +142,7 @@ router.post('/login', bruteforce.prevent, async (req, res, next) => {
+       const { formStrategies, socialStrategies } = await WIKI.models.authentication.getStrategiesForLegacyClient()
+       res.render('legacy/login', {
+         err,
++        localePart: pageArgs.explicitLocale ? '/' + pageArgs.locale : '',
+         formStrategies,
+         socialStrategies
+       })
+diff --git a/server/views/legacy/login.pug b/server/views/legacy/login.pug
+index cd5195619d..3223ab9b86 100644
+--- a/server/views/legacy/login.pug
++++ b/server/views/legacy/login.pug
+@@ -7,7 +7,7 @@ block body
+       .login-dialog
+         if err
+           .login-error= err.message
+-        form(method='post', action='/login')
++        form(method='post', action=localePart + '/login')
+           h1= config.title
+           select(name='strategy')
+             each str in formStrategies
+diff --git a/yarn.lock b/yarn.lock
+index aacf1b04bb..7d17939e7d 100644
+--- a/yarn.lock
++++ b/yarn.lock
+@@ -4312,6 +4312,11 @@ abbrev@1:
+   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
+   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
+ 
++accept-language-parser@1.5.0:
++  version "1.5.0"
++  resolved "https://registry.yarnpkg.com/accept-language-parser/-/accept-language-parser-1.5.0.tgz#8877c54040a8dcb59e0a07d9c1fde42298334791"
++  integrity sha1-iHfFQECo3LWeCgfZwf3kIpgzR5E=
++
+ accepts@^1.3.5, accepts@~1.3.5, accepts@~1.3.7:
+   version "1.3.7"
+   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"

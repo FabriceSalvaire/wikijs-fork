@@ -1,0 +1,13 @@
+diff --git a/server/modules/authentication/azure/definition.yml b/server/modules/authentication/azure/definition.yml
+index ad7d41ebc5..12f7b1356c 100644
+--- a/server/modules/authentication/azure/definition.yml
++++ b/server/modules/authentication/azure/definition.yml
+@@ -9,7 +9,7 @@ isAvailable: true
+ useForm: false
+ scopes:
+   - profile
+-  - email
++  - emailAddress
+   - openid
+ props:
+   entryPoint:

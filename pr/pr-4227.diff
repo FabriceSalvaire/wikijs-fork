@@ -1,0 +1,90 @@
+diff --git a/.prettierrc b/.prettierrc
+new file mode 100644
+index 0000000000..046cb41c1a
+--- /dev/null
++++ b/.prettierrc
+@@ -0,0 +1,4 @@
++{
++  "singleQuote": true
++}
++
+diff --git a/dev/helm/templates/deployment.yaml b/dev/helm/templates/deployment.yaml
+index b96fda6b7c..a01e60ad16 100644
+--- a/dev/helm/templates/deployment.yaml
++++ b/dev/helm/templates/deployment.yaml
+@@ -26,8 +26,12 @@ spec:
+           securityContext:
+             {{- toYaml .Values.securityContext | nindent 12 }}
+           image: "{{ .Values.image.repository }}:{{ default "latest" .Values.image.tag }}"
+-          imagePullPolicy: {{ default "IfNotPresent" .Values.image.imagePullPolicy }}
++          imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
+           env:
++            {{- range $key, $value := $.Values.env }}
++            - name: {{ $key }}
++              value: {{ $value | quote }}
++            {{- end }}
+             - name: DB_TYPE
+               value: postgres
+             - name: DB_HOST
+diff --git a/package.json b/package.json
+index a3f26cc1ec..715009bb23 100644
+--- a/package.json
++++ b/package.json
+@@ -83,11 +83,13 @@
+     "filesize": "6.1.0",
+     "fs-extra": "9.0.1",
+     "getos": "3.2.1",
++    "got": "11.8.2",
+     "graphql": "15.3.0",
+     "graphql-list-fields": "2.0.2",
+     "graphql-rate-limit-directive": "1.2.1",
+     "graphql-subscriptions": "1.1.0",
+     "graphql-tools": "7.0.0",
++    "graphql-upload": "^8.0.0",
+     "he": "1.2.0",
+     "highlight.js": "10.3.1",
+     "i18next": "19.8.3",
+diff --git a/server/setup.js b/server/setup.js
+index 44fb9d5d71..aed04ae94e 100644
+--- a/server/setup.js
++++ b/server/setup.js
+@@ -14,6 +14,14 @@ const semver = require('semver')
+ 
+ /* global WIKI */
+ 
++async function autoInstall() {
++  const got = require('got')
++
++  await got.post(`http://localhost:${WIKI.config.port}/finalize`, {
++    json: JSON.parse(process.env.AUTO_CONFIG)
++  })
++}
++
+ module.exports = () => {
+   WIKI.config.site = {
+     path: '',
+@@ -265,6 +273,16 @@ module.exports = () => {
+         strategyKey: 'local',
+         displayName: 'Local'
+       })
++      
++      // only on auto install right now, should add some
++      // param validation before opening as general api
++      if (req.body.authenticationProvider && process.env.AUTO_INSTALL) {
++        // adds an authentication provider from the start
++        await WIKI.models.authentication.query().insert({
++          ...req.body.authenticationProvider,
++          order: 1
++        })
++      }
+ 
+       // Load editors + enable default
+       await WIKI.models.editors.refreshEditorsFromDisk()
+@@ -446,5 +464,7 @@ module.exports = () => {
+     WIKI.logger.info(`Browse to http://YOUR-SERVER-IP:${WIKI.config.port}/ to complete setup!`)
+     WIKI.logger.info('')
+     WIKI.logger.info('🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺')
++
++    if (process.env.AUTO_INSTALL) autoInstall()
+   })
+ }

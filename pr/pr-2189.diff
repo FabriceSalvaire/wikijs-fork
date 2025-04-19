@@ -1,0 +1,773 @@
+diff --git a/client/components/admin/admin-theme.vue b/client/components/admin/admin-theme.vue
+index 1803ab1b6c..273bf24dd6 100644
+--- a/client/components/admin/admin-theme.vue
++++ b/client/components/admin/admin-theme.vue
+@@ -68,6 +68,75 @@
+                     hint='Select whether the table of contents is shown on the left, right or not at all.'
+                     disabled
+                     )
++                  v-radio-group(
++                    row
++                    outlined
++                    persistent-hint
++                    prepend-icon='mdi-serial-port'
++                    v-model='config.tocLevel'
++                    label='Max Heading Level'
++                    hint='The table of contents will show headings up to the selected level. By default, only heading levels up to H2 are shown.'
++                  )
++                    v-spacer
++                    v-radio(
++                      label='H1'
++                      v-bind:value='1'
++                    )
++                    v-radio(
++                      label='H2'
++                      v-bind:value='2'
++                    )
++                    v-radio(
++                      label='H3'
++                      v-bind:value='3'
++                    )
++                    v-radio(
++                      label='H4'
++                      v-bind:value='4'
++                    )
++                    v-radio(
++                      label='H5'
++                      v-bind:value='5'
++                    )
++                    v-radio(
++                      label='H6'
++                      v-bind:value='6'
++                    )
++                  v-radio-group(
++                    row
++                    outlined
++                    persistent-hint
++                    prepend-icon='mdi-serial-port'
++                    v-model='config.tocCollapseLevel'
++                    label='Collapse Heading Level'
++                    hint='The table of contents will collapse headings starting from the selected level. By default, only heading levels from H2 are collapsed.'
++                  )
++                    v-spacer
++                    v-radio(
++                      label='H1'
++                      v-bind:value='1'
++                    )
++                    v-radio(
++                      label='H2'
++                      v-bind:value='2'
++                    )
++                    v-radio(
++                      label='H3'
++                      v-bind:value='3'
++                    )
++                    v-radio(
++                      label='H4'
++                      v-bind:value='4'
++                    )
++                    v-radio(
++                      label='H5'
++                      v-bind:value='5'
++                    )
++                    v-radio(
++                      label='H6'
++                      v-bind:value='6'
++                    )
++
+ 
+             v-flex(lg6 xs12)
+               v-card.animated.fadeInUp.wait-p2s
+@@ -154,6 +223,8 @@ export default {
+       config: {
+         theme: 'default',
+         darkMode: false,
++        tocLevel: 2,
++        tocCollapseLevel: 2,
+         iconset: '',
+         injectCSS: '',
+         injectHead: '',
+@@ -209,6 +280,8 @@ export default {
+             theme: this.config.theme,
+             iconset: this.config.iconset,
+             darkMode: this.darkMode,
++            tocLevel: parseInt(this.config.tocLevel, 10),
++            tocCollapseLevel: parseInt(this.config.tocCollapseLevel, 10),
+             injectCSS: this.config.injectCSS,
+             injectHead: this.config.injectHead,
+             injectBody: this.config.injectBody
+diff --git a/client/components/editor.vue b/client/components/editor.vue
+index 15311e9bed..e7bc260dd5 100644
+--- a/client/components/editor.vue
++++ b/client/components/editor.vue
+@@ -144,6 +144,14 @@ export default {
+       type: Number,
+       default: 0
+     },
++    tocLevel: {
++      type: Number,
++      default: 0
++    },
++    tocCollapseLevel: {
++      type: Number,
++      default: 0
++    },
+     checkoutDate: {
+       type: String,
+       default: new Date().toISOString()
+@@ -190,6 +198,8 @@ export default {
+         this.path !== this.$store.get('page/path'),
+         this.savedState.title !== this.$store.get('page/title'),
+         this.savedState.description !== this.$store.get('page/description'),
++        this.savedState.tocLevel !== this.$store.get('page/tocLevel'),
++        this.savedState.tocCollapseLevel !== this.$store.get('page/tocCollapseLevel'),
+         this.savedState.tags !== this.$store.get('page/tags'),
+         this.savedState.isPublished !== this.$store.get('page/isPublished'),
+         this.savedState.publishStartDate !== this.$store.get('page/publishStartDate'),
+@@ -223,6 +233,8 @@ export default {
+     this.$store.set('page/title', this.title)
+     this.$store.set('page/scriptCss', this.scriptCss)
+     this.$store.set('page/scriptJs', this.scriptJs)
++    this.$store.set('page/tocLevel', this.tocLevel)
++    this.$store.set('page/tocCollapseLevel', this.tocCollapseLevel)
+ 
+     this.$store.set('page/mode', 'edit')
+ 
+@@ -303,6 +315,8 @@ export default {
+                 $publishStartDate: Date
+                 $scriptCss: String
+                 $scriptJs: String
++                $tocLevel: Int!
++                $tocCollapseLevel: Int!
+                 $tags: [String]!
+                 $title: String!
+               ) {
+@@ -319,6 +333,8 @@ export default {
+                     publishStartDate: $publishStartDate
+                     scriptCss: $scriptCss
+                     scriptJs: $scriptJs
++                    tocLevel: $tocLevel
++                    tocCollapseLevel: $tocCollapseLevel
+                     tags: $tags
+                     title: $title
+                   ) {
+@@ -348,6 +364,8 @@ export default {
+               publishStartDate: this.$store.get('page/publishStartDate') || '',
+               scriptCss: this.$store.get('page/scriptCss'),
+               scriptJs: this.$store.get('page/scriptJs'),
++              tocLevel: this.$store.get('page/tocLevel'),
++              tocCollapseLevel: this.$store.get('page/tocCollapseLevel'),
+               tags: this.$store.get('page/tags'),
+               title: this.$store.get('page/title')
+             }
+@@ -407,6 +425,8 @@ export default {
+                 $publishStartDate: Date
+                 $scriptCss: String
+                 $scriptJs: String
++                $tocLevel: Int
++                $tocCollapseLevel: Int
+                 $tags: [String]
+                 $title: String
+               ) {
+@@ -424,6 +444,8 @@ export default {
+                     publishStartDate: $publishStartDate
+                     scriptCss: $scriptCss
+                     scriptJs: $scriptJs
++                    tocLevel: $tocLevel
++                    tocCollapseLevel: $tocCollapseLevel
+                     tags: $tags
+                     title: $title
+                   ) {
+@@ -453,6 +475,8 @@ export default {
+               publishStartDate: this.$store.get('page/publishStartDate') || '',
+               scriptCss: this.$store.get('page/scriptCss'),
+               scriptJs: this.$store.get('page/scriptJs'),
++              tocLevel: this.$store.get('page/tocLevel'),
++              tocCollapseLevel: this.$store.get('page/tocCollapseLevel'),
+               tags: this.$store.get('page/tags'),
+               title: this.$store.get('page/title')
+             }
+@@ -535,7 +559,9 @@ export default {
+         tags: this.$store.get('page/tags'),
+         title: this.$store.get('page/title'),
+         css: this.$store.get('page/scriptCss'),
+-        js: this.$store.get('page/scriptJs')
++        js: this.$store.get('page/scriptJs'),
++        tocLevel: this.$store.get('page/tocLevel'),
++        tocCollapseLevel: this.$store.get('page/tocCollapseLevel')
+       }
+     },
+     injectCustomCss: _.debounce(css => {
+diff --git a/client/components/editor/editor-modal-properties.vue b/client/components/editor/editor-modal-properties.vue
+index 819c3299b6..0b192794c2 100644
+--- a/client/components/editor/editor-modal-properties.vue
++++ b/client/components/editor/editor-modal-properties.vue
+@@ -66,6 +66,85 @@
+                     @click:append='showPathSelector'
+                     )
+           v-divider
++          v-card-text.grey.pt-5(:class='$vuetify.theme.dark ? `darken-3-d3` : `lighten-5`')
++            .overline.pb-5 Theme Options
++            v-radio-group(
++              row
++              outlined
++              persistent-hint
++              prepend-icon='mdi-serial-port'
++              v-model='tocLevel'
++              label='Max Heading Level'
++              hint='The table of contents will show headings up to the selected level. By default, only heading levels up to H2 are shown.'
++            )
++              v-spacer
++              v-radio(
++                label='Global'
++                v-bind:value='0'
++              )
++              v-radio(
++                label='H1'
++                v-bind:value='1'
++              )
++              v-radio(
++                label='H2'
++                v-bind:value='2'
++              )
++              v-radio(
++                label='H3'
++                v-bind:value='3'
++              )
++              v-radio(
++                label='H4'
++                v-bind:value='4'
++              )
++              v-radio(
++                label='H5'
++                v-bind:value='5'
++              )
++              v-radio(
++                label='H6'
++                v-bind:value='6'
++              )
++            v-radio-group(
++              row
++              outlined
++              persistent-hint
++              prepend-icon='mdi-serial-port'
++              v-model='tocCollapseLevel'
++              label='Collapse Heading Level'
++              hint='The table of contents will collapse headings starting from the selected level. By default, only heading levels from H2 are collapsed.'
++            )
++              v-spacer
++              v-radio(
++                label='Global'
++                v-bind:value='0'
++              )
++              v-radio(
++                label='H1'
++                v-bind:value='1'
++              )
++              v-radio(
++                label='H2'
++                v-bind:value='2'
++              )
++              v-radio(
++                label='H3'
++                v-bind:value='3'
++              )
++              v-radio(
++                label='H4'
++                v-bind:value='4'
++              )
++              v-radio(
++                label='H5'
++                v-bind:value='5'
++              )
++              v-radio(
++                label='H6'
++                v-bind:value='6'
++              )
++          v-divider
+           v-card-text.grey.pt-5(:class='$vuetify.theme.dark ? `darken-3-d5` : `lighten-4`')
+             .overline.pb-5 {{$t('editor:props.categorization')}}
+             v-chip-group.radius-5.mb-5(column, v-if='tags && tags.length > 0')
+@@ -289,6 +368,8 @@ export default {
+     isPublished: sync('page/isPublished'),
+     publishStartDate: sync('page/publishStartDate'),
+     publishEndDate: sync('page/publishEndDate'),
++    tocLevel: sync('page/tocLevel'),
++    tocCollapseLevel: sync('page/tocCollapseLevel'),
+     scriptJs: sync('page/scriptJs'),
+     scriptCss: sync('page/scriptCss'),
+     hasScriptPermission: get('page/effectivePermissions@pages.script'),
+diff --git a/client/graph/admin/theme/theme-mutation-save.gql b/client/graph/admin/theme/theme-mutation-save.gql
+index 856442ce90..b986a0369f 100644
+--- a/client/graph/admin/theme/theme-mutation-save.gql
++++ b/client/graph/admin/theme/theme-mutation-save.gql
+@@ -1,6 +1,6 @@
+-mutation($theme: String!, $iconset: String!, $darkMode: Boolean!, $injectCSS: String, $injectHead: String, $injectBody: String) {
++mutation($theme: String!, $iconset: String!, $darkMode: Boolean!, $tocLevel: Int!, $tocCollapseLevel: Int!, $injectCSS: String, $injectHead: String, $injectBody: String) {
+   theming {
+-    setConfig(theme: $theme, iconset: $iconset, darkMode: $darkMode, injectCSS: $injectCSS, injectHead: $injectHead, injectBody: $injectBody) {
++    setConfig(theme: $theme, iconset: $iconset, darkMode: $darkMode, tocLevel: $tocLevel, tocCollapseLevel: $tocCollapseLevel, injectCSS: $injectCSS, injectHead: $injectHead, injectBody: $injectBody) {
+       responseResult {
+         succeeded
+         errorCode
+diff --git a/client/graph/admin/theme/theme-query-config.gql b/client/graph/admin/theme/theme-query-config.gql
+index 360cb2fa57..8126fe9eb2 100644
+--- a/client/graph/admin/theme/theme-query-config.gql
++++ b/client/graph/admin/theme/theme-query-config.gql
+@@ -4,6 +4,8 @@ query {
+       theme
+       iconset
+       darkMode
++      tocLevel
++      tocCollapseLevel
+       injectCSS
+       injectHead
+       injectBody
+diff --git a/client/store/page.js b/client/store/page.js
+index e6b0992e81..d1c9f1e5af 100644
+--- a/client/store/page.js
++++ b/client/store/page.js
+@@ -16,6 +16,8 @@ const state = {
+   updatedAt: '',
+   mode: '',
+   scriptJs: '',
++  tocLevel: 2,
++  tocCollapseLevel: 2,
+   scriptCss: '',
+   effectivePermissions: {
+     comments: {
+diff --git a/client/themes/default/components/page-toc-item.vue b/client/themes/default/components/page-toc-item.vue
+new file mode 100644
+index 0000000000..4fa2d7e7a0
+--- /dev/null
++++ b/client/themes/default/components/page-toc-item.vue
+@@ -0,0 +1,74 @@
++<template lang="pug">
++  div
++    v-list-item(@click='click(item.anchor)', v-if='(item.children.length === 0 || tocLevel === level) || tocCollapseLevel > level',
++      :key='item.anchor', :class='isNestedLevel ? `pl-9` : `pl-6`')
++      v-icon.pl-0(small, color='grey lighten-1') {{ $vuetify.rtl ? `mdi-chevron-left` : `mdi-chevron-right` }}
++      v-list-item-title.pl-4(v-bind:class='titleClasses') {{item.title}}
++    v-list-group(sub-group, v-else, v-bind:class='{"pl-3": isNestedLevel}')
++      template(v-slot:activator)
++        v-list-item.pl-0(@click='click(item.anchor)', :key='item.anchor')
++          v-list-item-title(v-bind:class='titleClasses') {{item.title}}
++      template(v-if='tocLevel > level', v-for='subItem in item.children')
++        page-toc-item(:item='subItem', :level='level + 1', :tocLevel='tocLevel', :tocCollapseLevel='tocCollapseLevel')
++    template(v-if='tocCollapseLevel > level', v-for='subItem in item.children')
++      page-toc-item(:item='subItem', :level='level + 1', :tocLevel='tocLevel', :tocCollapseLevel='tocCollapseLevel')
++</template>
++
++<script>
++
++export default {
++  name: "pageTocItem",
++  props: {
++    item: {
++      type: Object,
++      default: () => {}
++    },
++    tocLevel: {
++      type: Number,
++      default: 2
++    },
++    tocCollapseLevel: {
++      type: Number,
++      default: 2
++    },
++    level: {
++      type: Number,
++      default: 1
++    }
++  },
++  data() {
++    return {
++      scrollOpts: {
++        duration: 1500,
++        offset: 0,
++        easing: 'easeInOutCubic'
++      }
++    }
++  },
++  computed: {
++    isNestedLevel() {
++      return this.level > 1
++    },
++    titleClasses() {
++      return {
++        "caption": this.isNestedLevel,
++        "grey--text": this.isNestedLevel,
++        "text--lighten-1": this.$vuetify.theme.dark && this.isNestedLevel,
++        "text--darken-1": !this.$vuetify.theme.dark && this.isNestedLevel
++      }
++    },
++  },
++  methods: {
++    click (anchor) {
++      this.$vuetify.goTo(anchor, this.scrollOpts)
++    }
++  }
++}
++</script>
++
++<style lang='scss'>
++// Hack to fix animations of multi level nesting v-list-group
++.v-list-group--sub-group.v-list-group--active .v-list-item:not(.v-list-item--active) .v-list-item__icon.v-list-group__header__prepend-icon .v-icon {
++  transform: rotate(0deg)!important;
++}
++</style>
+diff --git a/client/themes/default/components/page.vue b/client/themes/default/components/page.vue
+index 8d5b222dc1..c2ed2bdd41 100644
+--- a/client/themes/default/components/page.vue
++++ b/client/themes/default/components/page.vue
+@@ -59,18 +59,9 @@
+           v-flex.page-col-sd(lg3, xl2, v-if='$vuetify.breakpoint.lgAndUp')
+             v-card.mb-5(v-if='tocDecoded.length')
+               .overline.pa-5.pb-0(:class='$vuetify.theme.dark ? `blue--text text--lighten-2` : `primary--text`') {{$t('common:page.toc')}}
+-              v-list.pb-3(dense, nav, :class='$vuetify.theme.dark ? `darken-3-d3` : ``')
+-                template(v-for='(tocItem, tocIdx) in tocDecoded')
+-                  v-list-item(@click='$vuetify.goTo(tocItem.anchor, scrollOpts)')
+-                    v-icon(color='grey', small) {{ $vuetify.rtl ? `mdi-chevron-left` : `mdi-chevron-right` }}
+-                    v-list-item-title.px-3 {{tocItem.title}}
+-                  //- v-divider(v-if='tocIdx < toc.length - 1 || tocItem.children.length')
+-                  template(v-for='tocSubItem in tocItem.children')
+-                    v-list-item(@click='$vuetify.goTo(tocSubItem.anchor, scrollOpts)')
+-                      v-icon.px-3(color='grey lighten-1', small) {{ $vuetify.rtl ? `mdi-chevron-left` : `mdi-chevron-right` }}
+-                      v-list-item-title.px-3.caption.grey--text(:class='$vuetify.theme.dark ? `text--lighten-1` : `text--darken-1`') {{tocSubItem.title}}
+-                    //- v-divider(inset, v-if='tocIdx < toc.length - 1')
+-
++              v-list.py-0(dense, nav, :class='$vuetify.theme.dark ? `darken-3-d3` : ``')
++                template(v-for='item in tocDecoded')
++                  page-toc-item(:item='item', :tocLevel='tocLevel', :tocCollapseLevel='tocCollapseLevel')
+             v-card.mb-5(v-if='tags.length > 0')
+               .pa-5
+                 .overline.teal--text.pb-2(:class='$vuetify.theme.dark ? `text--lighten-3` : ``') {{$t('common:page.tags')}}
+@@ -307,6 +298,7 @@
+ import { StatusIndicator } from 'vue-status-indicator'
+ import Tabset from './tabset.vue'
+ import NavSidebar from './nav-sidebar.vue'
++import PageTocItem from './page-toc-item.vue'
+ import Prism from 'prismjs'
+ import mermaid from 'mermaid'
+ import { get, sync } from 'vuex-pathify'
+@@ -354,6 +346,7 @@ Prism.plugins.toolbar.registerButton('copy-to-clipboard', (env) => {
+ export default {
+   components: {
+     NavSidebar,
++    PageTocItem,
+     StatusIndicator
+   },
+   props: {
+@@ -424,6 +417,14 @@ export default {
+     commentsExternal: {
+       type: Boolean,
+       default: false
++    },
++    tocLevel: {
++      type: Number,
++      default: 2
++    },
++    tocCollapseLevel: {
++      type: Number,
++      default: 2
+     }
+   },
+   data() {
+diff --git a/server/app/data.yml b/server/app/data.yml
+index f428bdf4ad..1c10a575cc 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -53,6 +53,8 @@ defaults:
+       theme: 'default'
+       iconset: 'md'
+       darkMode: false
++      tocLevel: 2
++      tocCollapseLevel: 2
+     auth:
+       autoLogin: false
+       enforce2FA: false
+diff --git a/server/controllers/common.js b/server/controllers/common.js
+index d1879dfe28..172945c8fd 100644
+--- a/server/controllers/common.js
++++ b/server/controllers/common.js
+@@ -464,6 +464,9 @@ router.get('/*', async (req, res, next) => {
+           injectCode.body = `${injectCode.body}\n${page.extra.js}`
+         }
+ 
++        const tocLevel = page.tocLevel || WIKI.config.theming.tocLevel
++        const tocCollapseLevel = page.tocCollapseLevel || WIKI.config.theming.tocCollapseLevel
++
+         if (req.query.legacy || req.get('user-agent').indexOf('Trident') >= 0) {
+           // -> Convert page TOC
+           if (_.isString(page.toc)) {
+@@ -474,6 +477,8 @@ router.get('/*', async (req, res, next) => {
+           res.render('legacy/page', {
+             page,
+             sidebar,
++            tocLevel,
++            tocCollapseLevel,
+             injectCode,
+             isAuthenticated: req.user && req.user.id !== 2
+           })
+@@ -499,6 +504,8 @@ router.get('/*', async (req, res, next) => {
+           res.render('page', {
+             page,
+             sidebar,
++            tocLevel,
++            tocCollapseLevel,
+             injectCode,
+             comments: WIKI.data.commentProvider,
+             effectivePermissions
+diff --git a/server/db/migrations-sqlite/2.5.13.js b/server/db/migrations-sqlite/2.5.13.js
+new file mode 100644
+index 0000000000..75fca01794
+--- /dev/null
++++ b/server/db/migrations-sqlite/2.5.13.js
+@@ -0,0 +1,9 @@
++exports.up = async knex => {
++  await knex.schema
++    .alterTable('pages', table => {
++      table.integer('tocLevel').notNullable().defaultTo(0)
++      table.integer('tocCollapseLevel').notNullable().defaultTo(0)
++    })
++}
++
++exports.down = knex => { }
+diff --git a/server/db/migrations/2.5.13.js b/server/db/migrations/2.5.13.js
+new file mode 100644
+index 0000000000..75fca01794
+--- /dev/null
++++ b/server/db/migrations/2.5.13.js
+@@ -0,0 +1,9 @@
++exports.up = async knex => {
++  await knex.schema
++    .alterTable('pages', table => {
++      table.integer('tocLevel').notNullable().defaultTo(0)
++      table.integer('tocCollapseLevel').notNullable().defaultTo(0)
++    })
++}
++
++exports.down = knex => { }
+diff --git a/server/graph/resolvers/theming.js b/server/graph/resolvers/theming.js
+index cfd6367038..872d50169e 100644
+--- a/server/graph/resolvers/theming.js
++++ b/server/graph/resolvers/theming.js
+@@ -24,6 +24,8 @@ module.exports = {
+         theme: WIKI.config.theming.theme,
+         iconset: WIKI.config.theming.iconset,
+         darkMode: WIKI.config.theming.darkMode,
++        tocLevel: WIKI.config.theming.tocLevel,
++        tocCollapseLevel: WIKI.config.theming.tocCollapseLevel,
+         injectCSS: new CleanCSS({ format: 'beautify' }).minify(WIKI.config.theming.injectCSS).styles,
+         injectHead: WIKI.config.theming.injectHead,
+         injectBody: WIKI.config.theming.injectBody
+@@ -44,6 +46,8 @@ module.exports = {
+           theme: args.theme,
+           iconset: args.iconset,
+           darkMode: args.darkMode,
++          tocLevel: args.tocLevel,
++          tocCollapseLevel: args.tocCollapseLevel,
+           injectCSS: args.injectCSS || '',
+           injectHead: args.injectHead || '',
+           injectBody: args.injectBody || ''
+diff --git a/server/graph/schemas/page.graphql b/server/graph/schemas/page.graphql
+index f6f43f2a3a..b327a9345e 100644
+--- a/server/graph/schemas/page.graphql
++++ b/server/graph/schemas/page.graphql
+@@ -93,6 +93,8 @@ type PageMutation {
+     scriptJs: String
+     tags: [String]!
+     title: String!
++    tocLevel: Int
++    tocCollapseLevel: Int
+   ): PageResponse @auth(requires: ["write:pages", "manage:pages", "manage:system"])
+ 
+   update(
+@@ -110,6 +112,8 @@ type PageMutation {
+     scriptJs: String
+     tags: [String]
+     title: String
++    tocLevel: Int
++    tocCollapseLevel: Int
+   ): PageResponse @auth(requires: ["write:pages", "manage:pages", "manage:system"])
+ 
+   move(
+@@ -180,6 +184,8 @@ type Page {
+   content: String! @auth(requires: ["read:source", "write:pages", "manage:system"])
+   render: String
+   toc: String
++  tocLevel: Int!
++  tocCollapseLevel: Int!
+   contentType: String!
+   createdAt: Date!
+   updatedAt: Date!
+diff --git a/server/graph/schemas/theming.graphql b/server/graph/schemas/theming.graphql
+index eddebad42e..976aab5edb 100644
+--- a/server/graph/schemas/theming.graphql
++++ b/server/graph/schemas/theming.graphql
+@@ -28,6 +28,8 @@ type ThemingMutation {
+     theme: String!
+     iconset: String!
+     darkMode: Boolean!
++    tocLevel: Int!
++    tocCollapseLevel: Int!
+     injectCSS: String
+     injectHead: String
+     injectBody: String
+@@ -42,6 +44,8 @@ type ThemingConfig {
+   theme: String!
+   iconset: String!
+   darkMode: Boolean!
++  tocLevel: Int!
++  tocCollapseLevel: Int!
+   injectCSS: String
+   injectHead: String
+   injectBody: String
+diff --git a/server/helpers/page.js b/server/helpers/page.js
+index 67d37663f8..38f37ecb3d 100644
+--- a/server/helpers/page.js
++++ b/server/helpers/page.js
+@@ -74,6 +74,12 @@ module.exports = {
+       ['tags', page.tags ? page.tags.map(t => t.tag).join(', ') : ''],
+       ['editor', page.editorKey]
+     ]
++    if (page.tocLevel) {
++      meta.push(['tocLevel', page.tocLevel])
++    }
++    if (page.tocCollapseLevel) {
++      meta.push(['tocCollapseLevel', page.tocCollapseLevel])
++    }
+     switch (page.contentType) {
+       case 'markdown':
+         return '---\n' + meta.map(mt => `${mt[0]}: ${mt[1]}`).join('\n') + '\n---\n\n' + page.content
+diff --git a/server/models/pages.js b/server/models/pages.js
+index 37d0cc11c6..d3ff888b9b 100644
+--- a/server/models/pages.js
++++ b/server/models/pages.js
+@@ -44,7 +44,8 @@ module.exports = class Page extends Model {
+         publishEndDate: {type: 'string'},
+         content: {type: 'string'},
+         contentType: {type: 'string'},
+-
++        tocLevel: {type: 'integer'},
++        tocCollapseLevel: {type: 'integer'},
+         createdAt: {type: 'string'},
+         updatedAt: {type: 'string'}
+       }
+@@ -149,6 +150,8 @@ module.exports = class Page extends Model {
+       },
+       title: 'string',
+       toc: 'string',
++      tocLevel: 'uint',
++      tocCollapseLevel: 'uint',
+       updatedAt: 'string'
+     })
+   }
+@@ -295,6 +298,8 @@ module.exports = class Page extends Model {
+       publishStartDate: opts.publishStartDate || '',
+       title: opts.title,
+       toc: '[]',
++      tocLevel: opts.tocLevel || 0,
++      tocCollapseLevel: opts.tocCollapseLevel || 0,
+       extra: JSON.stringify({
+         js: scriptJs,
+         css: scriptCss
+@@ -414,6 +419,8 @@ module.exports = class Page extends Model {
+       publishEndDate: opts.publishEndDate || '',
+       publishStartDate: opts.publishStartDate || '',
+       title: opts.title,
++      tocLevel: opts.tocLevel || 0,
++      tocCollapseLevel: opts.tocCollapseLevel || 0,
+       extra: JSON.stringify({
+         ...ogPage.extra,
+         js: scriptJs,
+@@ -567,7 +574,7 @@ module.exports = class Page extends Model {
+       path: opts.destinationPath,
+       mode: 'move'
+     })
+-   
++
+     // -> Reconnect Links : Validate invalid links to the new path
+     await WIKI.models.pages.reconnectLinks({
+       locale: opts.destinationLocale,
+@@ -795,6 +802,8 @@ module.exports = class Page extends Model {
+           'pages.content',
+           'pages.render',
+           'pages.toc',
++          'pages.tocLevel',
++          'pages.tocCollapseLevel',
+           'pages.contentType',
+           'pages.createdAt',
+           'pages.updatedAt',
+@@ -874,6 +883,8 @@ module.exports = class Page extends Model {
+       tags: page.tags.map(t => _.pick(t, ['tag', 'title'])),
+       title: page.title,
+       toc: _.isString(page.toc) ? page.toc : JSON.stringify(page.toc),
++      tocLevel: page.tocLevel,
++      tocCollapseLevel: page.tocCollapseLevel,
+       updatedAt: page.updatedAt
+     }))
+   }
+diff --git a/server/modules/storage/disk/common.js b/server/modules/storage/disk/common.js
+index 9ed0b9863d..9caf30a7b1 100644
+--- a/server/modules/storage/disk/common.js
++++ b/server/modules/storage/disk/common.js
+@@ -92,6 +92,8 @@ module.exports = {
+         isPublished: _.get(pageData, 'isPublished', currentPage.isPublished),
+         isPrivate: false,
+         content: pageData.content,
++        tocLevel: pageData.tocLevel,
++        tocCollapseLevel: pageData.tocCollapseLevel,
+         user: user,
+         skipStorage: true
+       })
+@@ -110,7 +112,9 @@ module.exports = {
+         content: pageData.content,
+         user: user,
+         editor: pageEditor,
+-        skipStorage: true
++        skipStorage: true,
++        tocLevel: pageData.tocLevel,
++        tocCollapseLevel: pageData.tocCollapseLevel
+       })
+     }
+   },
+diff --git a/server/setup.js b/server/setup.js
+index c22c0f30ad..8929d94288 100644
+--- a/server/setup.js
++++ b/server/setup.js
+@@ -126,6 +126,8 @@ module.exports = () => {
+       _.set(WIKI.config, 'theming', {
+         theme: 'default',
+         darkMode: false,
++        tocLevel: 2,
++        tocCollapseLevel: 2,
+         iconset: 'mdi',
+         injectCSS: '',
+         injectHead: '',
+diff --git a/server/views/editor.pug b/server/views/editor.pug
+index 0f0b64c026..34222f90c0 100644
+--- a/server/views/editor.pug
++++ b/server/views/editor.pug
+@@ -19,6 +19,8 @@ block body
+       script-css=page.extra.css
+       script-js=page.extra.js
+       init-mode=page.mode
++      :toc-level=page.tocLevel
++      :toc-collapse-level=page.tocCollapseLevel
+       init-editor=page.editorKey
+       init-content=page.content
+       checkout-date=page.updatedAt
+diff --git a/server/views/page.pug b/server/views/page.pug
+index 2096a7c814..2604b4f990 100644
+--- a/server/views/page.pug
++++ b/server/views/page.pug
+@@ -28,6 +28,8 @@ block body
+       comments-enabled=config.features.featurePageComments
+       effective-permissions=Buffer.from(JSON.stringify(effectivePermissions)).toString('base64')
+       comments-external=comments.codeTemplate
++      :toc-level=tocLevel
++      :toc-collapse-level=tocCollapseLevel
+       )
+       template(slot='contents')
+         div!= page.render

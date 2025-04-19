@@ -1,0 +1,13 @@
+diff --git a/dev/helm/templates/_helpers.tpl b/dev/helm/templates/_helpers.tpl
+index 193ceab781..1119d50fab 100644
+--- a/dev/helm/templates/_helpers.tpl
++++ b/dev/helm/templates/_helpers.tpl
+@@ -92,7 +92,7 @@ Set postgres secret
+ {{- if .Values.postgresql.enabled -}}
+ {{- template "wiki.postgresql.fullname" . -}}
+ {{- else -}}
+-{{- template "wiki.fullname" . -}}
++{{- default "postgresql-password" .Values.postgresql.existingSecret | quote -}}
+ {{- end -}}
+ {{- end -}}
+ 

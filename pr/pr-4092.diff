@@ -1,0 +1,92 @@
+diff --git a/server/modules/authentication/eveonline/authentication.js b/server/modules/authentication/eveonline/authentication.js
+new file mode 100644
+index 0000000000..e9c17a3026
+--- /dev/null
++++ b/server/modules/authentication/eveonline/authentication.js
+@@ -0,0 +1,60 @@
++const _ = require('lodash')
++/* global WIKI */
++
++// ------------------------------------
++// EveOnline Account
++// ------------------------------------
++
++const OAuth2Strategy = require('passport-oauth2').Strategy
++var jwt = require('jsonwebtoken');
++
++
++module.exports = {
++  init (passport, conf) {
++    OAuth2Strategy.prototype.userProfile = function (accessToken, cb) {
++      try {
++        const payload = jwt.decode(accessToken);
++        var sub=payload.sub;
++        var chardetail=sub.split(":");
++        var charid=chardetail[2];
++        cb(null, {
++          id: charid,
++          displayName: payload.name,
++          email: charid+'@auth.eveonline.com',
++        })
++      } catch (err) {
++        WIKI.logger.warn('Eve Online - Failed to parse user profile.')
++        cb(err)
++      }
++      }
++
++    passport.use('eveonline',
++      new OAuth2Strategy({
++        authorizationURL: `https://login.eveonline.com/v2/oauth/authorize/`,
++        tokenURL: `https://login.eveonline.com/v2/oauth/token`,
++        clientID: conf.clientId,
++        clientSecret: conf.clientSecret,
++        callbackURL: conf.callbackURL,
++        passReqToCallback: true,
++        state: true
++      }, async (req, accessToken, refreshToken, profile, cb) => {
++        try {
++          const user = await WIKI.models.users.processProfile({
++            providerKey: req.params.strategy,
++            profile
++          })
++          cb(null, user)
++        } catch (err) {
++          cb(err, null)
++        }
++      })
++    )
++  },
++  logout (conf) {
++    if (!conf.logoutURL) {
++      return '/'
++    } else {
++      return conf.logoutURL
++    }
++  }
++}
+diff --git a/server/modules/authentication/eveonline/definition.yml b/server/modules/authentication/eveonline/definition.yml
+new file mode 100644
+index 0000000000..c1fb6cdb78
+--- /dev/null
++++ b/server/modules/authentication/eveonline/definition.yml
+@@ -0,0 +1,20 @@
++key: eveonline
++title: EveOnline
++description: Login with Eveonline's SSO
++author: fuzzysteve
++logo: https://image.eveonline.com/Corporation/98072480_64.png
++color: red accent-3
++website: https://www.eveonline.com/
++isAvailable: true
++useForm: false
++props:
++  clientId:
++    type: String
++    title: Client ID
++    hint: Application Client ID
++    order: 1
++  clientSecret:
++    type: String
++    title: Client Secret
++    hint: Application Client Secret
++    order: 2

@@ -1,0 +1,12 @@
+diff --git a/dev/templates/master.pug b/dev/templates/master.pug
+index 478d2725fe..f698899cde 100644
+--- a/dev/templates/master.pug
++++ b/dev/templates/master.pug
+@@ -92,6 +92,7 @@ html(lang=siteConfig.lang)
+     block head
+ 
+   body
++    noscript='Wiki.js requires Javascript to use. Please enable Javascript and reload the page'
+     != analyticsCode.bodyStart
+     block body
+     != analyticsCode.bodyEnd

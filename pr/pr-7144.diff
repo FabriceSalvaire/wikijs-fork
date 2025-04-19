@@ -1,0 +1,12 @@
+diff --git a/client/components/editor/editor-markdown.vue b/client/components/editor/editor-markdown.vue
+index 4ca6e192c5..565320c4db 100644
+--- a/client/components/editor/editor-markdown.vue
++++ b/client/components/editor/editor-markdown.vue
+@@ -149,7 +149,6 @@
+               v-html='previewHTML'
+               :spellcheck='spellModeActive'
+               :contenteditable='spellModeActive'
+-              @blur='spellModeActive = false'
+               )
+ 
+     v-system-bar.editor-markdown-sysbar(dark, status, color='grey darken-3')

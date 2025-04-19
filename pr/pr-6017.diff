@@ -1,0 +1,154 @@
+diff --git a/client/components/admin/admin-general.vue b/client/components/admin/admin-general.vue
+index 8804ee3922..4f6989e927 100644
+--- a/client/components/admin/admin-general.vue
++++ b/client/components/admin/admin-general.vue
+@@ -177,6 +177,19 @@
+                     persistent-hint
+                     )
+ 
++              v-card.mt-5.animated.fadeInUp.wait-p6s
++                v-toolbar(color='primary', dark, dense, flat)
++                  v-toolbar-title.subtitle-1 File Handling
++                v-card-text
++                  v-switch.mt-0(
++                    inset
++                    label='Append timestamp to filenames'
++                    color='indigo'
++                    v-model='config.uploadAppendTimestampToFilename'
++                    persistent-hint
++                    hint='A timestamp will be appended to the end of the original filename to ensure each uploaded file will not overwrite others.'
++                    )
++
+               v-card.mt-5.animated.fadeInUp.wait-p7s
+                 v-toolbar(color='primary', dark, dense, flat)
+                   v-toolbar-title.subtitle-1 {{$t('admin:general.editShortcuts')}}
+@@ -293,7 +306,8 @@ export default {
+         editMenuExternalBtn: false,
+         editMenuExternalName: '',
+         editMenuExternalIcon: '',
+-        editMenuExternalUrl: ''
++        editMenuExternalUrl: '',
++        uploadAppendTimestampToFilename: false
+       },
+       metaRobots: [
+         { text: 'Index', value: 'index' },
+@@ -358,6 +372,7 @@ export default {
+               $editMenuExternalName: String
+               $editMenuExternalIcon: String
+               $editMenuExternalUrl: String
++              $uploadAppendTimestampToFilename: Boolean
+             ) {
+               site {
+                 updateConfig(
+@@ -381,6 +396,7 @@ export default {
+                   editMenuExternalName: $editMenuExternalName
+                   editMenuExternalIcon: $editMenuExternalIcon
+                   editMenuExternalUrl: $editMenuExternalUrl
++                  uploadAppendTimestampToFilename: $uploadAppendTimestampToFilename
+                 ) {
+                   responseResult {
+                     succeeded
+@@ -412,7 +428,8 @@ export default {
+             editMenuExternalBtn: _.get(this.config, 'editMenuExternalBtn', false),
+             editMenuExternalName: _.get(this.config, 'editMenuExternalName', ''),
+             editMenuExternalIcon: _.get(this.config, 'editMenuExternalIcon', ''),
+-            editMenuExternalUrl: _.get(this.config, 'editMenuExternalUrl', '')
++            editMenuExternalUrl: _.get(this.config, 'editMenuExternalUrl', ''),
++            uploadAppendTimestampToFilename: _.get(this.config, 'uploadAppendTimestampToFilename', false)
+           },
+           watchLoading (isLoading) {
+             this.$store.commit(`loading${isLoading ? 'Start' : 'Stop'}`, 'admin-site-update')
+@@ -473,6 +490,7 @@ export default {
+               editMenuExternalName
+               editMenuExternalIcon
+               editMenuExternalUrl
++              uploadAppendTimestampToFilename
+             }
+           }
+         }
+diff --git a/server/app/data.yml b/server/app/data.yml
+index a7fb78aee7..4e5031a4d3 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -97,6 +97,7 @@ defaults:
+       maxFiles: 10
+       scanSVG: true
+       forceDownload: true
++      appendTimestampToFilename: false
+     flags:
+       ldapdebug: false
+       sqllog: false
+diff --git a/server/controllers/upload.js b/server/controllers/upload.js
+index 3da4dcac77..bfa453a67a 100644
+--- a/server/controllers/upload.js
++++ b/server/controllers/upload.js
+@@ -78,6 +78,13 @@ router.post('/u', (req, res, next) => {
+   // Sanitize filename
+   fileMeta.originalname = sanitize(fileMeta.originalname.toLowerCase().replace(/[\s,;#]+/g, '_'))
+ 
++  // Append timestamp after the filename
++  if (WIKI.config.uploads.appendTimestampToFilename) {
++    const parts = fileMeta.originalname.split('.')
++    const ext = parts.pop()
++    fileMeta.originalname = `${parts.join('.')}_${Date.now()}.${ext}`
++  }
++
+   // Check if user can upload at path
+   const assetPath = (folderId) ? hierarchy.map(h => h.slug).join('/') + `/${fileMeta.originalname}` : fileMeta.originalname
+   if (!WIKI.auth.checkAccess(req.user, ['write:assets'], { path: assetPath })) {
+diff --git a/server/graph/resolvers/site.js b/server/graph/resolvers/site.js
+index db538a217f..00447839cb 100644
+--- a/server/graph/resolvers/site.js
++++ b/server/graph/resolvers/site.js
+@@ -33,7 +33,8 @@ module.exports = {
+         uploadMaxFileSize: WIKI.config.uploads.maxFileSize,
+         uploadMaxFiles: WIKI.config.uploads.maxFiles,
+         uploadScanSVG: WIKI.config.uploads.scanSVG,
+-        uploadForceDownload: WIKI.config.uploads.forceDownload
++        uploadForceDownload: WIKI.config.uploads.forceDownload,
++        uploadAppendTimestampToFilename: WIKI.config.uploads.appendTimestampToFilename
+       }
+     }
+   },
+@@ -117,7 +118,8 @@ module.exports = {
+           maxFileSize: _.get(args, 'uploadMaxFileSize', WIKI.config.uploads.maxFileSize),
+           maxFiles: _.get(args, 'uploadMaxFiles', WIKI.config.uploads.maxFiles),
+           scanSVG: _.get(args, 'uploadScanSVG', WIKI.config.uploads.scanSVG),
+-          forceDownload: _.get(args, 'uploadForceDownload', WIKI.config.uploads.forceDownload)
++          forceDownload: _.get(args, 'uploadForceDownload', WIKI.config.uploads.forceDownload),
++          appendTimestampToFilename: _.get(args, 'uploadAppendTimestampToFilename', WIKI.config.uploads.appendTimestampToFilename)
+         }
+ 
+         await WIKI.configSvc.saveToDb(['host', 'title', 'company', 'contentLicense', 'seo', 'logoUrl', 'pageExtensions', 'auth', 'editShortcuts', 'features', 'security', 'uploads'])
+diff --git a/server/graph/schemas/site.graphql b/server/graph/schemas/site.graphql
+index 4cd36d7643..5507bbf6a4 100644
+--- a/server/graph/schemas/site.graphql
++++ b/server/graph/schemas/site.graphql
+@@ -64,6 +64,7 @@ type SiteMutation {
+     uploadMaxFiles: Int
+     uploadScanSVG: Boolean
+     uploadForceDownload: Boolean
++    uploadAppendTimestampToFilename: Boolean
+ 
+   ): DefaultResponse @auth(requires: ["manage:system"])
+ }
+@@ -113,4 +114,5 @@ type SiteConfig {
+   uploadMaxFiles: Int
+   uploadScanSVG: Boolean
+   uploadForceDownload: Boolean
++  uploadAppendTimestampToFilename: Boolean
+ }
+diff --git a/server/setup.js b/server/setup.js
+index 44da308b61..c30d0a6a49 100644
+--- a/server/setup.js
++++ b/server/setup.js
+@@ -80,6 +80,9 @@ module.exports = () => {
+         tokenExpiration: '30m',
+         tokenRenewal: '14d'
+       })
++      _.set(WIKI.config, 'upload', {
++        appendTimestampToFilename: false
++      })
+       _.set(WIKI.config, 'company', '')
+       _.set(WIKI.config, 'features', {
+         featurePageRatings: true,

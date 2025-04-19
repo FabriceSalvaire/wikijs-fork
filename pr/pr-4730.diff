@@ -1,0 +1,39 @@
+diff --git a/client/libs/animate/animate.scss b/client/libs/animate/animate.scss
+index fd59477904..6e191e10a1 100644
+--- a/client/libs/animate/animate.scss
++++ b/client/libs/animate/animate.scss
+@@ -9,8 +9,8 @@
+  */
+ 
+ .animated {
+-  -webkit-animation-duration: 1s;
+-  animation-duration: 1s;
++  -webkit-animation-duration: 250ms;
++  animation-duration: 250ms;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   &.infinite {
+@@ -18,12 +18,12 @@
+     animation-iteration-count: infinite;
+   }
+   &.hinge {
+-    -webkit-animation-duration: 2s;
+-    animation-duration: 2s;
++    -webkit-animation-duration: 500ms;
++    animation-duration: 500ms;
+   }
+   &.flipOutX, &.flipOutY, &.bounceIn, &.bounceOut {
+-    -webkit-animation-duration: .75s;
+-    animation-duration: .75s;
++    -webkit-animation-duration: 150ms;
++    animation-duration: 150ms;
+   }
+ }
+ 
+@@ -3505,4 +3505,4 @@
+ .spin {
+   -webkit-animation-name: spin;
+   animation-name: spin;
+-}
+\ No newline at end of file
++}

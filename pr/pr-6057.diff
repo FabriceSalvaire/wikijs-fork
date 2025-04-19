@@ -1,0 +1,46 @@
+diff --git a/dev/build/config.yml b/dev/build/config.yml
+index d9e58761a1..55239e39bb 100644
+--- a/dev/build/config.yml
++++ b/dev/build/config.yml
+@@ -18,3 +18,4 @@ ssl:
+ logLevel: $(LOG_LEVEL:info)
+ logFormat: $(LOG_FORMAT:default)
+ ha: $(HA_ACTIVE)
++offline: $(OFFLINE_ACTIVE:false)
+diff --git a/dev/helm/templates/deployment.yaml b/dev/helm/templates/deployment.yaml
+index 62f02bc795..c49c6325bf 100644
+--- a/dev/helm/templates/deployment.yaml
++++ b/dev/helm/templates/deployment.yaml
+@@ -32,6 +32,10 @@ spec:
+           command: [ "sh", "-c" ]
+           args: [ "mkdir -p /wiki/data/sideload && git clone --depth=1 {{ .Values.sideload.repoURL }} /wiki/data/sideload/" ]
+       {{- end }}
++    {{- with .Values.volumeMounts }}
++          volumeMounts:
++            {{- toYaml . | nindent 12 }}
++      {{- end }}
+       containers:
+         - name: {{ .Chart.Name }}
+           securityContext:
+@@ -71,6 +75,8 @@ spec:
+             {{- end }}
+             - name: HA_ACTIVE
+               value: {{ .Values.replicaCount | int | le 2 | quote }}
++            - name: OFFLINE_ACTIVE
++              value: "{{ default "false" .Values.offline }}"
+     {{- with .Values.volumeMounts }}
+           volumeMounts:
+             {{- toYaml . | nindent 12 }}
+diff --git a/dev/helm/values.yaml b/dev/helm/values.yaml
+index a61d53e02e..2000424bfd 100644
+--- a/dev/helm/values.yaml
++++ b/dev/helm/values.yaml
+@@ -4,6 +4,8 @@
+ 
+ replicaCount: 1
+ revisionHistoryLimit: 10
++# If sideload is enable, set the offline parameter to true
++offline: false
+ 
+ image:
+   repository: requarks/wiki

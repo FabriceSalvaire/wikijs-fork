@@ -1,0 +1,148 @@
+diff --git a/config.sample.yml b/config.sample.yml
+index 47edd8d28f..8f072306ea 100644
+--- a/config.sample.yml
++++ b/config.sample.yml
+@@ -145,3 +145,11 @@ dataPath: ./data
+ # file uploads.
+ 
+ bodyParserLimit: 5mb
++
++
++seo:
++  sitemap:
++    enabled: false # sitemap is experimental feature, do not enable in production
++    cacheExpireTime: 3600 # in seconds
++    changefreq: 'weekly'
++    priority: 0.0
+diff --git a/package.json b/package.json
+index 458a6d789e..41c2aff4db 100644
+--- a/package.json
++++ b/package.json
+@@ -177,6 +177,7 @@
+     "semver": "7.3.8",
+     "serve-favicon": "2.5.0",
+     "simple-git": "3.16.0",
++    "sitemap": "8.0.0",
+     "solr-node": "1.2.1",
+     "sqlite3": "5.1.4",
+     "ssh2": "1.11.0",
+diff --git a/server/controllers/common.js b/server/controllers/common.js
+index 55cc4d333f..142fc33d66 100644
+--- a/server/controllers/common.js
++++ b/server/controllers/common.js
+@@ -5,6 +5,7 @@ const _ = require('lodash')
+ const CleanCSS = require('clean-css')
+ const moment = require('moment')
+ const qs = require('querystring')
++const { SitemapStream, streamToPromise } = require('sitemap')
+ 
+ /* global WIKI */
+ 
+@@ -22,6 +23,88 @@ router.get('/robots.txt', (req, res, next) => {
+   }
+ })
+ 
++/**
++ * sitemap.xml
++ */
++// TODO: toggle off before the feature is ready
++if(WIKI.config.seo.sitemap.enabled) {
++
++  const DEFAULT = {
++    cacheExpireTime: 3600,
++    changefreq: 'weekly',
++    priority: 0.0
++  }
++
++  const cache = {
++    lastUpdateAt: 0,
++    content: null,
++  };
++
++  const host = WIKI.config.host
++  const {cacheExpireTime, changefreq, priority} = Object.assign({}, DEFAULT, WIKI.config.seo.sitemap)
++
++  WIKI.logger.info(`Experimental feature sitemap is enabled`)
++  router.get('/sitemap.xml', async (req, res
++
++    ) => {
++
++    res.header('Content-Type', 'application/xml');
++
++    if(Date.now() - cache.lastUpdateAt < cacheExpireTime * 1000 && cache.content !== null) {
++      WIKI.logger.debug(`seo.sitemap: return cached sitemap`)
++      res.send(cache.content)
++      return
++    }
++
++    try {
++
++      const startTime = Date.now();
++      const smStream = new SitemapStream({ hostname: host})
++
++      const TRUE = 1;
++      const FALSE = 0;
++
++      const pages = await WIKI.models.pages.query()
++        .where('isPublished', TRUE)
++        .where('isPrivate', FALSE)
++        .orderBy('updatedAt', 'desc')
++
++      for (const page of pages) {
++        if (WIKI.auth.checkAccess(WIKI.auth.guest, ['read:pages'], page)) {
++          smStream.write({
++            url: `/${page.localeCode}/${page.path}`,
++            lastmod: page.updatedAt,
++            changefreq: changefreq || 'weekly',
++            priority: priority || 0.0
++          })
++        }
++      }
++
++      smStream.end();
++      streamToPromise(smStream)
++        .then((data) => {
++          const endTime = new Date();
++          cache.lastUpdateAt = endTime.getTime()
++          cache.content = data.toString()
++          WIKI.logger.info(`sitemap was generated in ${endTime.getTime() - startTime} ms`)
++          res.send(cache.content)
++        }
++       )
++        .catch(e => {
++          WIKI.logger.error(`unable to generate sitemap: ${e.message}`)
++          res.status(500).end()
++        })
++
++    } catch (e) {
++      WIKI.logger.error(`unexpected failure when generating sitemap: ${e.message}`)
++      res.status(500).end()
++    }
++
++  })
++}
++
++
++
+ /**
+  * Health Endpoint
+  */
+diff --git a/server/setup.js b/server/setup.js
+index 44da308b61..3f6683a913 100644
+--- a/server/setup.js
++++ b/server/setup.js
+@@ -117,7 +117,13 @@ module.exports = () => {
+         description: '',
+         robots: ['index', 'follow'],
+         analyticsService: '',
+-        analyticsId: ''
++        analyticsId: '',
++        sitemap: {
++          enabled: false,
++          cacheExpireTime: 3600, // in seconds,
++          changefreq: 'weekly',
++          priority: 0.0
++        }
+       })
+       _.set(WIKI.config, 'sessionSecret', (await crypto.randomBytesAsync(32)).toString('hex'))
+       _.set(WIKI.config, 'telemetry', {

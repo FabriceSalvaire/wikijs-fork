@@ -1,0 +1,47 @@
+diff --git a/client/components/editor/editor-markdown.vue b/client/components/editor/editor-markdown.vue
+index 04b5c6aa83..b494221d1b 100644
+--- a/client/components/editor/editor-markdown.vue
++++ b/client/components/editor/editor-markdown.vue
+@@ -250,7 +250,7 @@ const md = new MarkdownIt({
+   html: true,
+   breaks: true,
+   linkify: true,
+-  typography: true,
++  typographer: true,
+   highlight(str, lang) {
+     if (lang === 'diagram') {
+       return `<pre class="diagram">` + Buffer.from(str, 'base64').toString() + `</pre>`
+@@ -816,6 +816,9 @@ export default {
+ 
+     this.cm.on('paste', this.onCmPaste)
+ 
++    // Set markdown rendering settings
++    md.set(siteConfig.mdEditorConfig)
++
+     // Render initial preview
+ 
+     this.processContent(this.$store.get('editor/content'))
+diff --git a/server/controllers/common.js b/server/controllers/common.js
+index 3bcfcd940f..c1eae505d2 100644
+--- a/server/controllers/common.js
++++ b/server/controllers/common.js
+@@ -109,6 +109,19 @@ router.get(['/e', '/e/*'], async (req, res, next) => {
+ 
+   req.i18n.changeLanguage(pageArgs.locale)
+ 
++  // -> Set Markdown Editor config for preview rendering
++  const renderers = await WIKI.models.renderers.getRenderers()
++  const md = _.find(renderers, ['key', 'markdownCore'])
++
++  const keyMaps = { allowHTML: 'html', linebreaks: 'breaks' }
++  const config = _.transform(md.config, (res, value, key) => {
++    if (_.has(keyMaps, key)) {
++      key = keyMaps[key]
++    }
++    res[key] = value
++  }, {})
++  _.set(res, 'locals.siteConfig.mdEditorConfig', config)
++
+   // -> Set Editor Lang
+   _.set(res, 'locals.siteConfig.lang', pageArgs.locale)
+   _.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')

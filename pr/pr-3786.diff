@@ -1,0 +1,129 @@
+diff --git a/client/components/admin/admin-security.vue b/client/components/admin/admin-security.vue
+index d2450039d7..5a28ad1cd9 100644
+--- a/client/components/admin/admin-security.vue
++++ b/client/components/admin/admin-security.vue
+@@ -169,6 +169,15 @@
+                     persistent-hint
+                     :hint='$t(`admin:security.bypassLoginHint`)'
+                     )
++                  v-switch(
++                    inset
++                    :label='$t(`admin:security.bypassUnauthorized`)'
++                    color='primary'
++                    v-model='config.authBypassUnauthorized'
++                    prepend-icon='mdi-fast-forward'
++                    persistent-hint
++                    :hint='$t(`admin:security.bypassUnauthorizedHint`)'
++                    )
+                   v-switch(
+                     inset
+                     :label='$t(`admin:security.hideLocalLogin`)'
+@@ -252,6 +261,7 @@ export default {
+         securityCSP: false,
+         securityCSPDirectives: '',
+         authAutoLogin: false,
++        authBypassUnauthorized: false,
+         authHideLocal: false,
+         authLoginBgUrl: '',
+         authJwtAudience: 'urn:wiki.js',
+@@ -278,6 +288,7 @@ export default {
+           mutation: gql`
+             mutation (
+               $authAutoLogin: Boolean
++              $authBypassUnauthorized: Boolean
+               $authEnforce2FA: Boolean
+               $authHideLocal: Boolean
+               $authLoginBgUrl: String
+@@ -299,6 +310,7 @@ export default {
+               site {
+                 updateConfig(
+                   authAutoLogin: $authAutoLogin,
++                  authBypassUnauthorized: $authBypassUnauthorized,
+                   authEnforce2FA: $authEnforce2FA,
+                   authHideLocal: $authHideLocal,
+                   authLoginBgUrl: $authLoginBgUrl,
+@@ -329,6 +341,7 @@ export default {
+           `,
+           variables: {
+             authAutoLogin: _.get(this.config, 'authAutoLogin', false),
++            authBypassUnauthorized: _.get(this.config, 'authBypassUnauthorized', false),
+             authEnforce2FA: _.get(this.config, 'authEnforce2FA', false),
+             authHideLocal: _.get(this.config, 'authHideLocal', false),
+             authLoginBgUrl: _.get(this.config, 'authLoginBgUrl', ''),
+@@ -380,6 +393,7 @@ export default {
+           site {
+             config {
+               authAutoLogin
++              authBypassUnauthorized
+               authEnforce2FA
+               authHideLocal
+               authLoginBgUrl
+diff --git a/server/app/data.yml b/server/app/data.yml
+index 60f308f508..21155b40df 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -55,6 +55,7 @@ defaults:
+       darkMode: false
+     auth:
+       autoLogin: false
++      bypassUnauthorized: false
+       enforce2FA: false
+       hideLocal: false
+       loginBgUrl: ''
+diff --git a/server/controllers/common.js b/server/controllers/common.js
+index 03b931ef26..d1b5895f45 100644
+--- a/server/controllers/common.js
++++ b/server/controllers/common.js
+@@ -444,7 +444,11 @@ router.get('/*', async (req, res, next) => {
+             maxAge: 15 * 60 * 1000
+           })
+         }
+-        if (pageArgs.path === 'home' && req.user.id === 2) {
++
++        // If the user is the guest user (id 2) and either trying to access the home page for the wiki
++        // or the wiki is configured to not show unauthorized for the guest user,
++        // redirect to the login page for the wiki.
++        if ((pageArgs.path === 'home' || WIKI.config.auth.bypassUnauthorized) && req.user.id === 2) {
+           return res.redirect('/login')
+         }
+         _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+diff --git a/server/graph/resolvers/site.js b/server/graph/resolvers/site.js
+index 7b7d4119c6..4e759736de 100644
+--- a/server/graph/resolvers/site.js
++++ b/server/graph/resolvers/site.js
+@@ -22,6 +22,7 @@ module.exports = {
+         ...WIKI.config.features,
+         ...WIKI.config.security,
+         authAutoLogin: WIKI.config.auth.autoLogin,
++        authBypassUnauthorized: WIKI.config.auth.bypassUnauthorized,
+         authEnforce2FA: WIKI.config.auth.enforce2FA,
+         authHideLocal: WIKI.config.auth.hideLocal,
+         authLoginBgUrl: WIKI.config.auth.loginBgUrl,
+@@ -69,6 +70,7 @@ module.exports = {
+ 
+         WIKI.config.auth = {
+           autoLogin: _.get(args, 'authAutoLogin', WIKI.config.auth.autoLogin),
++          bypassUnauthorized: _.get(args, 'authBypassUnauthorized', WIKI.config.auth.bypassUnauthorized),
+           enforce2FA: _.get(args, 'authEnforce2FA', WIKI.config.auth.enforce2FA),
+           hideLocal: _.get(args, 'authHideLocal', WIKI.config.auth.hideLocal),
+           loginBgUrl: _.get(args, 'authLoginBgUrl', WIKI.config.auth.loginBgUrl),
+diff --git a/server/graph/schemas/site.graphql b/server/graph/schemas/site.graphql
+index fcd68f501a..076776d0ca 100644
+--- a/server/graph/schemas/site.graphql
++++ b/server/graph/schemas/site.graphql
+@@ -34,6 +34,7 @@ type SiteMutation {
+     contentLicense: String
+     logoUrl: String
+     authAutoLogin: Boolean
++    authBypassUnauthorized: Boolean
+     authEnforce2FA: Boolean
+     authHideLocal: Boolean
+     authLoginBgUrl: String
+@@ -73,6 +74,7 @@ type SiteConfig {
+   contentLicense: String!
+   logoUrl: String!
+   authAutoLogin: Boolean
++  authBypassUnauthorized: Boolean
+   authEnforce2FA: Boolean
+   authHideLocal: Boolean
+   authLoginBgUrl: String

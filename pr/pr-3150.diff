@@ -1,0 +1,138 @@
+diff --git a/client/components/admin/admin-security.vue b/client/components/admin/admin-security.vue
+index d2450039d7..364bd4bcdb 100644
+--- a/client/components/admin/admin-security.vue
++++ b/client/components/admin/admin-security.vue
+@@ -115,6 +115,23 @@
+ 
+             v-flex(lg6 xs12)
+               v-card.animated.fadeInUp.wait-p2s
++                v-toolbar(color='primary', dark, dense, flat)
++                v-toolbar-title.subtitle-1 {{ $t('admin:security.bodyParser') }}
++                v-card-info(color='blue')
++                  span {{$t('admin:security.bodyParserInfo')}}
++                v-card-text
++                  v-text-field.mt-3(
++                    outlined
++                    :label='$t(`admin:security.bodyParserSize`)'
++                    required
++                    v-model='config.bodyParserSize'
++                    prepend-icon='mdi-page-next-outline'
++                    :hint='$t(`admin:security.bodyParserSizeHint`)'
++                    persistent-hint
++                    :suffix='$t(`admin:security.bodyParserSizeSuffix`)'
++                    style='max-width: 450px;'
++                    )
++              v-card.mt-3.animated.fadeInUp.wait-p2s
+                 v-toolbar(color='primary', dark, dense, flat)
+                   v-toolbar-title.subtitle-1 {{ $t('admin:security.uploads') }}
+                 v-card-info(color='blue')
+@@ -242,6 +259,7 @@ export default {
+       config: {
+         uploadMaxFileSize: 0,
+         uploadMaxFiles: 0,
++        bodyParserSize: 0,
+         securityOpenRedirect: true,
+         securityIframe: true,
+         securityReferrerPolicy: true,
+@@ -286,6 +304,7 @@ export default {
+               $authJwtRenewablePeriod: String
+               $uploadMaxFileSize: Int
+               $uploadMaxFiles: Int
++              $bodyParserSize: Int
+               $securityOpenRedirect: Boolean
+               $securityIframe: Boolean
+               $securityReferrerPolicy: Boolean
+@@ -307,6 +326,7 @@ export default {
+                   authJwtRenewablePeriod: $authJwtRenewablePeriod,
+                   uploadMaxFileSize: $uploadMaxFileSize,
+                   uploadMaxFiles: $uploadMaxFiles,
++                  bodyParserSize: $bodyParserSize,
+                   securityOpenRedirect: $securityOpenRedirect,
+                   securityIframe: $securityIframe,
+                   securityReferrerPolicy: $securityReferrerPolicy,
+@@ -337,6 +357,7 @@ export default {
+             authJwtRenewablePeriod: _.get(this.config, 'authJwtRenewablePeriod', ''),
+             uploadMaxFileSize: _.toSafeInteger(_.get(this.config, 'uploadMaxFileSize', 0)),
+             uploadMaxFiles: _.toSafeInteger(_.get(this.config, 'uploadMaxFiles', 0)),
++            bodyParserSize: _.toSafeInteger(_.get(this.config, 'bodyParserSize', 0)),
+             securityOpenRedirect: _.get(this.config, 'securityOpenRedirect', false),
+             securityIframe: _.get(this.config, 'securityIframe', false),
+             securityReferrerPolicy: _.get(this.config, 'securityReferrerPolicy', false),
+@@ -388,6 +409,7 @@ export default {
+               authJwtRenewablePeriod
+               uploadMaxFileSize
+               uploadMaxFiles
++              bodyParserSize
+               securityOpenRedirect
+               securityIframe
+               securityReferrerPolicy
+diff --git a/server/app/data.yml b/server/app/data.yml
+index 60f308f508..78681ee220 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -80,6 +80,7 @@ defaults:
+     uploads:
+       maxFileSize: 5242880
+       maxFiles: 10
++    bodyParserSize: 1
+     flags:
+       ldapdebug: false
+       sqllog: false
+diff --git a/server/graph/resolvers/site.js b/server/graph/resolvers/site.js
+index 7b7d4119c6..79ca8ea70d 100644
+--- a/server/graph/resolvers/site.js
++++ b/server/graph/resolvers/site.js
+@@ -29,7 +29,8 @@ module.exports = {
+         authJwtExpiration: WIKI.config.auth.tokenExpiration,
+         authJwtRenewablePeriod: WIKI.config.auth.tokenRenewal,
+         uploadMaxFileSize: WIKI.config.uploads.maxFileSize,
+-        uploadMaxFiles: WIKI.config.uploads.maxFiles
++        uploadMaxFiles: WIKI.config.uploads.maxFiles,
++        bodyParserSize: WIKI.config.bodyParserSize
+       }
+     }
+   },
+@@ -100,7 +101,11 @@ module.exports = {
+           maxFiles: _.get(args, 'uploadMaxFiles', WIKI.config.uploads.maxFiles)
+         }
+ 
+-        await WIKI.configSvc.saveToDb(['host', 'title', 'company', 'contentLicense', 'seo', 'logoUrl', 'auth', 'features', 'security', 'uploads'])
++        if (args.bodyParserSize) {
++          WIKI.config.bodyParserSize = args.bodyParserSize
++        }
++
++        await WIKI.configSvc.saveToDb(['host', 'title', 'company', 'contentLicense', 'seo', 'logoUrl', 'auth', 'features', 'security', 'uploads', 'bodyParserSize'])
+ 
+         if (WIKI.config.security.securityTrustProxy) {
+           WIKI.app.enable('trust proxy')
+diff --git a/server/graph/schemas/site.graphql b/server/graph/schemas/site.graphql
+index fcd68f501a..403c4c8642 100644
+--- a/server/graph/schemas/site.graphql
++++ b/server/graph/schemas/site.graphql
+@@ -54,6 +54,7 @@ type SiteMutation {
+     securityCSPDirectives: String
+     uploadMaxFileSize: Int
+     uploadMaxFiles: Int
++    bodyParserSize: Int
+ 
+   ): DefaultResponse @auth(requires: ["manage:system"])
+ }
+@@ -93,4 +94,5 @@ type SiteConfig {
+   securityCSPDirectives: String!
+   uploadMaxFileSize: Int!
+   uploadMaxFiles: Int!
++  bodyParserSize: Int!
+ }
+diff --git a/server/master.js b/server/master.js
+index 84192611c4..77099b9ef3 100644
+--- a/server/master.js
++++ b/server/master.js
+@@ -91,7 +91,7 @@ module.exports = async () => {
+   // GraphQL Server
+   // ----------------------------------------
+ 
+-  app.use(bodyParser.json({ limit: '1mb' }))
++  app.use(bodyParser.json({ limit: `${WIKI.config.bodyParserSize}mb` }))
+   await WIKI.servers.startGraphQL()
+ 
+   // ----------------------------------------

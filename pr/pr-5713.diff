@@ -1,0 +1,61 @@
+diff --git a/server/modules/authentication/oidc/authentication.js b/server/modules/authentication/oidc/authentication.js
+index ae3811116c..56633c2f54 100644
+--- a/server/modules/authentication/oidc/authentication.js
++++ b/server/modules/authentication/oidc/authentication.js
+@@ -32,13 +32,26 @@ module.exports = {
+           if (conf.mapGroups) {
+             const groups = _.get(profile, '_json.' + conf.groupsClaim)
+             if (groups && _.isArray(groups)) {
+-              const currentGroups = (await user.$relatedQuery('groups').select('groups.id')).groups.map(g => g.id)
++              if (conf.createGroups) {
++                const existingGroups = (await WIKI.models.groups.query().select('groups.name')).map(g => g.name)
++                for (const groupName of _.difference(groups, existingGroups)) {
++                  await WIKI.models.groups.query().insertAndFetch({
++                    name: groupName,
++                    permissions: JSON.stringify(WIKI.data.groups.defaultPermissions),
++                    pageRules: JSON.stringify(WIKI.data.groups.defaultPageRules),
++                    isSystem: false
++                  })
++                }
++                await WIKI.auth.reloadGroups()
++                WIKI.events.outbound.emit('reloadGroups')
++              }
++              const currentGroups = (await user.$relatedQuery('groups').select('groups.id')).map(g => g.id)
+               const expectedGroups = Object.values(WIKI.auth.groups).filter(g => groups.includes(g.name)).map(g => g.id)
+               for (const groupId of _.difference(expectedGroups, currentGroups)) {
+                 await user.$relatedQuery('groups').relate(groupId)
+               }
+               for (const groupId of _.difference(currentGroups, expectedGroups)) {
+-                await user.$relatedQuery('groups').unrelate(groupId)
++                await user.$relatedQuery('groups').unrelate().where('groups.id', '=', groupId)
+               }
+             }
+           }
+diff --git a/server/modules/authentication/oidc/definition.yml b/server/modules/authentication/oidc/definition.yml
+index ae1c636a28..a6a3e13fca 100644
+--- a/server/modules/authentication/oidc/definition.yml
++++ b/server/modules/authentication/oidc/definition.yml
+@@ -55,15 +55,21 @@ props:
+     hint: Map groups matching names from the groups claim value
+     default: false
+     order: 8
++  createGroups:
++    type: Boolean
++    title: Create Mapped Groups
++    hint: Create new groups from idp if they don't exist
++    default: false
++    order: 9
+   groupsClaim:
+     type: String
+     title: Groups Claim
+     hint: Field containing the group names
+     default: groups
+     maxWidth: 500
+-    order: 9
++    order: 10
+   logoutURL:
+     type: String
+     title: Logout URL
+     hint: (optional) Logout URL on the OAuth2 provider where the user will be redirected to complete the logout process.
+-    order: 10
++    order: 11

@@ -1,0 +1,174 @@
+diff --git a/client/graph/admin/pages/pages-query-single.gql b/client/graph/admin/pages/pages-query-single.gql
+index f245772afc..0ebe5e08f1 100644
+--- a/client/graph/admin/pages/pages-query-single.gql
++++ b/client/graph/admin/pages/pages-query-single.gql
+@@ -11,6 +11,11 @@ query($id: Int!) {
+       privateNS
+       publishStartDate
+       publishEndDate
++      backLinkPages {
++        id
++        path
++        title
++      }
+       contentType
+       createdAt
+       updatedAt
+diff --git a/client/themes/default/components/page.vue b/client/themes/default/components/page.vue
+index 8d5b222dc1..5c1a1bb45b 100644
+--- a/client/themes/default/components/page.vue
++++ b/client/themes/default/components/page.vue
+@@ -91,6 +91,20 @@
+                   )
+                   v-icon(:color='$vuetify.theme.dark ? `teal lighten-3` : `teal`', size='20') mdi-tag-multiple
+ 
++            v-card.mb-5(v-if='backLinkPages&&backLinkPages.length > 0')
++              .pa-5
++                .overline.teal--text.pb-2(:class='$vuetify.theme.dark ? `text--lighten-3` : ``') BackLinks
++                v-chip.mr-1.mb-1(
++                  label
++                  :color='$vuetify.theme.dark ? `teal darken-1` : `teal lighten-5`'
++                  v-for='(link, idx) in backLinkPages'
++                  :href='`/` + link.path'
++                  :key='`link-` + link.id'
++                )
++                  v-icon(:color='$vuetify.theme.dark ? `teal lighten-3` : `teal`', left, small) mdi-tag
++                  span(:class='$vuetify.theme.dark ? `teal--text text--lighten-5` : `teal--text text--darken-2`') {{link.title}}
++
++
+             v-card.mb-5(v-if='commentsEnabled && commentsPerms.read')
+               .pa-5
+                 .overline.pb-2.blue-grey--text.d-flex.align-center(:class='$vuetify.theme.dark ? `text--lighten-3` : `text--darken-2`')
+@@ -389,6 +403,10 @@ export default {
+       type: Array,
+       default: () => ([])
+     },
++    backLinkPages: {
++      type: Array,
++      default: () => ([])
++    },
+     authorName: {
+       type: String,
+       default: 'Unknown'
+@@ -520,6 +538,9 @@ export default {
+     if (this.effectivePermissions) {
+       this.$store.set('page/effectivePermissions', JSON.parse(Buffer.from(this.effectivePermissions, 'base64').toString()))
+     }
++    if (this.backLinkPages) {
++      this.$store.set('page/backLinkPages', this.backLinkPages)
++    }
+ 
+     this.$store.set('page/mode', 'view')
+   },
+diff --git a/server/graph/schemas/page.graphql b/server/graph/schemas/page.graphql
+index a230185c32..cd6628c1a6 100644
+--- a/server/graph/schemas/page.graphql
++++ b/server/graph/schemas/page.graphql
+@@ -181,6 +181,7 @@ type Page {
+   publishStartDate: Date! @auth(requires: ["write:pages", "manage:system"])
+   publishEndDate: Date! @auth(requires: ["write:pages", "manage:system"])
+   tags: [PageTag]!
++  backLinkPages: [Page]
+   content: String! @auth(requires: ["read:source", "write:pages", "manage:system"])
+   render: String
+   toc: String
+diff --git a/server/models/pages.js b/server/models/pages.js
+index 04ac6f34e8..739fae2f2b 100644
+--- a/server/models/pages.js
++++ b/server/models/pages.js
+@@ -77,6 +77,14 @@ module.exports = class Page extends Model {
+           to: 'pageLinks.pageId'
+         }
+       },
++      backLinks: {
++        relation: Model.HasManyRelation,
++        modelClass: require('./pageLinks'),
++        join: {
++          from: 'pages.path',
++          to: 'pageLinks.path'
++        }
++      },
+       author: {
+         relation: Model.BelongsToOneRelation,
+         modelClass: require('./users'),
+@@ -157,7 +165,14 @@ module.exports = class Page extends Model {
+       },
+       title: 'string',
+       toc: 'string',
+-      updatedAt: 'string'
++      updatedAt: 'string',
++      backLinkPages: [
++        {
++          id: 'uint',
++          path: 'string',
++          title: 'string'
++        }
++      ]
+     })
+   }
+ 
+@@ -787,8 +802,9 @@ module.exports = class Page extends Model {
+    */
+   static async getPageFromDb(opts) {
+     const queryModeID = _.isNumber(opts)
++    let page, backLink, backLinkPage,promises = []
+     try {
+-      return WIKI.models.pages.query()
++      page = await WIKI.models.pages.query()
+         .column([
+           'pages.id',
+           'pages.path',
+@@ -824,6 +840,10 @@ module.exports = class Page extends Model {
+         .modifyGraph('tags', builder => {
+           builder.select('tag', 'title')
+         })
++        .withGraphFetched('backLinks')
++        .modifyGraph('backLinks', builder => {
++          builder.select('path', 'pageId', 'localeCode')
++        })
+         .where(queryModeID ? {
+           'pages.id': opts
+         } : {
+@@ -848,10 +868,20 @@ module.exports = class Page extends Model {
+         //   }
+         // })
+         .first()
++      if (page && page.backLinks && page.backLinks.length) {
++        page.backLinks = page.backLinks.filter((link)=>{
++          return link.localeCode === page.localeCode
++        })
++        for (backLink of page.backLinks) {
++          promises.push(backLink.$relatedQuery('page').column(['id', 'path', 'title']))
++        }
++        page.backLinkPages = await Promise.all(promises)
++      }
+     } catch (err) {
+       WIKI.logger.warn(err)
+       throw err
+     }
++    return page
+   }
+ 
+   /**
+@@ -882,7 +912,8 @@ module.exports = class Page extends Model {
+       tags: page.tags.map(t => _.pick(t, ['tag', 'title'])),
+       title: page.title,
+       toc: _.isString(page.toc) ? page.toc : JSON.stringify(page.toc),
+-      updatedAt: page.updatedAt
++      updatedAt: page.updatedAt,
++      backLinkPages: page.backLinkPages
+     }))
+   }
+ 
+diff --git a/server/views/page.pug b/server/views/page.pug
+index 2096a7c814..d591948e30 100644
+--- a/server/views/page.pug
++++ b/server/views/page.pug
+@@ -16,6 +16,7 @@ block body
+       title=page.title
+       description=page.description
+       :tags=page.tags
++      :back-link-pages=page.backLinkPages
+       created-at=page.createdAt
+       updated-at=page.updatedAt
+       author-name=page.authorName

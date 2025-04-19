@@ -1,0 +1,14 @@
+diff --git a/server/modules/authentication/rocketchat/authentication.js b/server/modules/authentication/rocketchat/authentication.js
+index c966326ee6..9b21ece8ae 100644
+--- a/server/modules/authentication/rocketchat/authentication.js
++++ b/server/modules/authentication/rocketchat/authentication.js
+@@ -40,7 +40,8 @@ module.exports = {
+         clientID: conf.clientId,
+         clientSecret: conf.clientSecret,
+         callbackURL: conf.callbackURL,
+-        passReqToCallback: true
++        passReqToCallback: true,
++        state: true
+       }, async (req, accessToken, refreshToken, profile, cb) => {
+         try {
+           const user = await WIKI.models.users.processProfile({

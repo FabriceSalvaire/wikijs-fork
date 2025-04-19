@@ -1,0 +1,385 @@
+diff --git a/client/components/editor.vue b/client/components/editor.vue
+index 0a6c61e3ce..e64c5cfeed 100644
+--- a/client/components/editor.vue
++++ b/client/components/editor.vue
+@@ -46,7 +46,7 @@
+         v-divider.ml-3(vertical)
+     v-content
+       component(:is='currentEditor', :save='save')
+-      editor-modal-properties(v-model='dialogProps')
++      editor-modal-properties(v-model='dialogProps' v-on:editor_changed="saveAndRefresh")
+       editor-modal-editorselect(v-model='dialogEditorSelector')
+       editor-modal-unsaved(v-model='dialogUnsaved', @discard='exitGo')
+       component(:is='activeModal')
+@@ -507,6 +507,10 @@ export default {
+         // Error is already handled
+       }
+     },
++    async saveAndRefresh() {
++      await this.save({ rethrow: true })
++      window.location.reload()
++    },
+     async exit() {
+       if (this.isDirty) {
+         this.dialogUnsaved = true
+diff --git a/client/components/editor/editor-modal-properties.vue b/client/components/editor/editor-modal-properties.vue
+index 819c3299b6..8fc0e15dff 100644
+--- a/client/components/editor/editor-modal-properties.vue
++++ b/client/components/editor/editor-modal-properties.vue
+@@ -89,6 +89,23 @@
+               hide-no-data
+               :search-input.sync='newTagSearch'
+               )
++          v-divider
++          v-card-text.grey.pt-5(:class='$vuetify.theme.dark ? `darken-3-d5` : `lighten-4`')
++            .overline.pb-5 Editor
++            v-container.pa-0(fluid, grid-list-lg)
++              v-layout(row, wrap)
++                v-flex(xs12, md3)
++                  v-select(
++                    outlined
++                    label='Editor'
++                    :items='editors'
++                    v-model='editorKey'
++                    hide-details
++                  )
++                v-flex.align-self-center(xs12, md2)
++                  v-btn(color='success', depressed, @click='changeEditor', large)
++                    v-icon(left) mdi-check
++                    span Save & Refresh
+         v-tab-item(transition='fade-transition', reverse-transition='fade-transition')
+           v-card-text
+             .overline {{$t('editor:props.publishState')}}
+@@ -271,6 +288,7 @@ export default {
+       newTag: '',
+       newTagSuggestions: [],
+       newTagSearch: '',
++      editors: [{text: 'CODE', value: 'code'}, {text: 'MARKDOWN', value: 'markdown'}, {text: 'VISUAL', value: 'ckeditor'}],
+       currentTab: 0,
+       cm: null
+     }
+@@ -280,6 +298,7 @@ export default {
+       get() { return this.value },
+       set(val) { this.$emit('input', val) }
+     },
++    editorKey: sync('editor/editorKey'),
+     mode: get('editor/mode'),
+     title: sync('page/title'),
+     description: sync('page/description'),
+@@ -349,6 +368,10 @@ export default {
+       this.locale = locale
+       this.path = path
+     },
++    async changeEditor() {
++      this.close()
++      this.$emit('editor_changed')
++    },
+     loadEditor(ref, mode) {
+       this.cm = CodeMirror.fromTextArea(ref, {
+         tabSize: 2,
+diff --git a/package.json b/package.json
+index 44d6b1f5fd..63386b46ce 100644
+--- a/package.json
++++ b/package.json
+@@ -177,6 +177,7 @@
+     "striptags": "3.1.1",
+     "subscriptions-transport-ws": "0.9.17",
+     "tar-fs": "2.1.0",
++    "turndown": "6.0.0",
+     "twemoji": "13.0.0",
+     "uslug": "1.0.4",
+     "uuid": "8.2.0",
+diff --git a/server/jobs/convert-type.js b/server/jobs/convert-type.js
+new file mode 100644
+index 0000000000..7a3dee4804
+--- /dev/null
++++ b/server/jobs/convert-type.js
+@@ -0,0 +1,83 @@
++const TurndownService = require('turndown')
++const _ = require('lodash')
++
++/* global WIKI */
++
++const htmlToMarkdown = async (page) => {
++  const turndownService = new TurndownService()
++  return turndownService.turndown(page.content)
++}
++
++const markdownToHtml = async (page) => {
++  await WIKI.models.renderers.fetchDefinitions()
++  const pipeline = await WIKI.models.renderers.getRenderingPipeline(page.contentType)
++  const cores = _.filter(pipeline, ['input', 'markdown'])
++  let output = page.content
++  for (let core of cores) {
++    const renderer = require(`../modules/rendering/${_.kebabCase(core.key)}/renderer.js`)
++    output = await renderer.render.call({
++      config: core.config,
++      children: core.children,
++      page: page,
++      input: output
++    })
++  }
++  return output
++}
++
++const convertersMap = {
++  html: {
++    markdown: htmlToMarkdown
++  },
++  markdown: {
++    html: markdownToHtml
++  }
++}
++
++module.exports = async (data) => {
++  const parsedData = JSON.parse(data)
++  const pageId = parsedData.id
++  const fromType = parsedData.fromType;
++  const toType = parsedData.toType;
++  try {
++
++    WIKI.models = require('../core/db').init()
++    await WIKI.configSvc.loadFromDb()
++    await WIKI.configSvc.applyFlags()
++
++    WIKI.logger.info(`Converting page ID ${pageId} type from ${fromType} to ${toType}...`)
++    if (fromType === toType) {
++      WIKI.logger.warn(`Skipping identity type conversion of page ID ${pageId}`)
++      return
++    }
++    const converter = convertersMap[fromType] && convertersMap[fromType][toType]
++    if (!converter) {
++      WIKI.logger.error(`No (${fromType}) ==> (${toType}) converter found for page ID ${pageId}`)
++      throw new Error('No matching type converter')
++    }
++    const page = await WIKI.models.pages.getPageFromDb(pageId)
++    if (!page) {
++      throw new Error('Invalid Page Id')
++    }
++    if (_.isEmpty(page.content)) {
++      await WIKI.models.knex.destroy()
++      WIKI.logger.warn(`Skipping conversion of page ID ${pageId} due to empty content`)
++      return
++    }
++    const output = await converter(page)
++
++     // Save to DB
++    await WIKI.models.pages.query()
++      .patch({
++        content: output,
++      })
++      .where('id', pageId)
++
++    await WIKI.models.knex.destroy()
++    WIKI.logger.info(`Converting page ID ${pageId} type: [ COMPLETED ]`)
++  } catch (err) {
++    WIKI.logger.error(`Converting page ID ${pageId} type: [ FAILED ]`)
++    WIKI.logger.error(err.message)
++    throw err
++  }
++}
+diff --git a/server/models/pages.js b/server/models/pages.js
+index 37d0cc11c6..05a152d33e 100644
+--- a/server/models/pages.js
++++ b/server/models/pages.js
+@@ -406,7 +406,9 @@ module.exports = class Page extends Model {
+     }
+ 
+     // -> Update page
+-    await WIKI.models.pages.query().patch({
++    const contentType = _.get(_.find(WIKI.data.editors, ['key', opts.editor]), `contentType`, ogPage.contentType)
++    const contentTypeChanged = contentType !== ogPage.contentType;
++    const patch = {
+       authorId: opts.user.id,
+       content: opts.content,
+       description: opts.description,
+@@ -419,9 +421,38 @@ module.exports = class Page extends Model {
+         js: scriptJs,
+         css: scriptCss
+       })
+-    }).where('id', ogPage.id)
++    }
++    if (!contentTypeChanged) {
++      patch.editorKey = opts.editor
++      patch.contentType = contentType
++    }
++    await WIKI.models.pages.query().patch(patch).where('id', ogPage.id)
+     let page = await WIKI.models.pages.getPageFromDb(ogPage.id)
+ 
++    // -> Convert content to new type
++    if (contentTypeChanged) {
++      try {
++        const convertJob = await WIKI.scheduler.registerJob({
++          name: 'convert-type',
++          immediate: true,
++          worker: true
++        }, JSON.stringify({
++          id: page.id,
++          fromType: ogPage.contentType,
++          toType: contentType
++        }))
++        await convertJob.finished
++        await WIKI.models.pages.query().patch({
++          editorKey: opts.editor,
++          contentType,
++        }).where('id', page.id)
++        page = await WIKI.models.pages.getPageFromDb(page.id)
++      } catch (e) {
++        WIKI.logger.error(`Converting page ID ${page.id} type: [ FAILED ]`)
++        WIKI.logger.error(err.message)
++      }
++    }
++
+     // -> Save Tags
+     await WIKI.models.tags.associateTags({ tags: opts.tags, page })
+ 
+@@ -436,6 +467,21 @@ module.exports = class Page extends Model {
+ 
+     // -> Update on Storage
+     if (!opts.skipStorage) {
++      if (contentTypeChanged) {
++        await WIKI.models.storage.pageEvent({
++          event: 'renamed',
++          page: {
++            ...page,
++            destinationPath: page.path,
++            destinationLocaleCode: page.localeCode,
++            destinationHash: page.hash,
++            moveAuthorId: opts.user.id,
++            moveAuthorName: opts.user.name,
++            moveAuthorEmail: opts.user.email,
++            sourceContentType: ogPage.contentType,
++          }
++        })
++      }
+       await WIKI.models.storage.pageEvent({
+         event: 'updated',
+         page
+diff --git a/server/modules/storage/azure/storage.js b/server/modules/storage/azure/storage.js
+index 1228d76718..c0175dfa5a 100644
+--- a/server/modules/storage/azure/storage.js
++++ b/server/modules/storage/azure/storage.js
+@@ -7,8 +7,9 @@ const _ = require('lodash')
+ 
+ /* global WIKI */
+ 
+-const getFilePath = (page, pathKey) => {
+-  const fileName = `${page[pathKey]}.${pageHelper.getFileExtension(page.contentType)}`
++const getFilePath = (page, pathKey, isSource) => {
++  const fileName = `${page[pathKey]}.${
++    pageHelper.getFileExtension((isSource ? page.sourceContentType : undefined) || page.contentType)}`
+   const withLocaleCode = WIKI.config.lang.namespacing && WIKI.config.lang.code !== page.localeCode
+   return withLocaleCode ? `${page.localeCode}/${fileName}` : fileName
+ }
+@@ -62,7 +63,7 @@ module.exports = {
+   },
+   async renamed(page) {
+     WIKI.logger.info(`(STORAGE/${this.storageName}) Renaming file ${page.path} to ${page.destinationPath}...`)
+-    let sourceFilePath = getFilePath(page, 'path')
++    let sourceFilePath = getFilePath(page, 'path', true)
+     let destinationFilePath = getFilePath(page, 'destinationPath')
+     if (WIKI.config.lang.namespacing) {
+       if (WIKI.config.lang.code !== page.localeCode) {
+diff --git a/server/modules/storage/disk/storage.js b/server/modules/storage/disk/storage.js
+index 6fc916acfd..e4748cfa58 100644
+--- a/server/modules/storage/disk/storage.js
++++ b/server/modules/storage/disk/storage.js
+@@ -75,7 +75,7 @@ module.exports = {
+   async renamed(page) {
+     WIKI.logger.info(`(STORAGE/DISK) Renaming file [${page.localeCode}] ${page.path} to [${page.destinationLocaleCode}] ${page.destinationPath}...`)
+ 
+-    let sourceFilePath = `${page.path}.${pageHelper.getFileExtension(page.contentType)}`
++    let sourceFilePath = `${page.path}.${pageHelper.getFileExtension(page.sourceContentType || page.contentType)}`
+     let destinationFilePath = `${page.destinationPath}.${pageHelper.getFileExtension(page.contentType)}`
+ 
+     if (WIKI.config.lang.namespacing) {
+diff --git a/server/modules/storage/git/storage.js b/server/modules/storage/git/storage.js
+index 7f5c1e6675..ba02aab2ac 100644
+--- a/server/modules/storage/git/storage.js
++++ b/server/modules/storage/git/storage.js
+@@ -300,7 +300,7 @@ module.exports = {
+    */
+   async renamed(page) {
+     WIKI.logger.info(`(STORAGE/GIT) Committing file move from [${page.localeCode}] ${page.path} to [${page.destinationLocaleCode}] ${page.destinationPath}...`)
+-    let sourceFileName = `${page.path}.${pageHelper.getFileExtension(page.contentType)}`
++    let sourceFileName = `${page.path}.${pageHelper.getFileExtension(page.sourceContentType || page.contentType)}`
+     let destinationFileName = `${page.destinationPath}.${pageHelper.getFileExtension(page.contentType)}`
+ 
+     if (WIKI.config.lang.namespacing) {
+diff --git a/server/modules/storage/s3/common.js b/server/modules/storage/s3/common.js
+index 66068c4b8b..d016dca14f 100644
+--- a/server/modules/storage/s3/common.js
++++ b/server/modules/storage/s3/common.js
+@@ -10,8 +10,9 @@ const pageHelper = require('../../../helpers/page.js')
+ /**
+  * Deduce the file path given the `page` object and the object's key to the page's path.
+  */
+-const getFilePath = (page, pathKey) => {
+-  const fileName = `${page[pathKey]}.${pageHelper.getFileExtension(page.contentType)}`
++const getFilePath = (page, pathKey, isSource) => {
++  const fileName = `${page[pathKey]}.${
++    pageHelper.getFileExtension((isSource ? page.sourceContentType : undefined) || page.contentType)}`
+   const withLocaleCode = WIKI.config.lang.namespacing && WIKI.config.lang.code !== page.localeCode
+   return withLocaleCode ? `${page.localeCode}/${fileName}` : fileName
+ }
+@@ -79,7 +80,7 @@ module.exports = class S3CompatibleStorage {
+   }
+   async renamed(page) {
+     WIKI.logger.info(`(STORAGE/${this.storageName}) Renaming file ${page.path} to ${page.destinationPath}...`)
+-    let sourceFilePath = getFilePath(page, 'path')
++    let sourceFilePath = getFilePath(page, 'path', true)
+     let destinationFilePath = getFilePath(page, 'destinationPath')
+     if (WIKI.config.lang.namespacing) {
+       if (WIKI.config.lang.code !== page.localeCode) {
+diff --git a/server/modules/storage/sftp/storage.js b/server/modules/storage/sftp/storage.js
+index 5ded65c524..460e2e7a11 100644
+--- a/server/modules/storage/sftp/storage.js
++++ b/server/modules/storage/sftp/storage.js
+@@ -8,8 +8,9 @@ const pageHelper = require('../../../helpers/page.js')
+ 
+ /* global WIKI */
+ 
+-const getFilePath = (page, pathKey) => {
+-  const fileName = `${page[pathKey]}.${pageHelper.getFileExtension(page.contentType)}`
++const getFilePath = (page, pathKey, isSource) => {
++  const fileName = `${page[pathKey]}.${
++    pageHelper.getFileExtension(isSource ? (page.sourceContentType || page.contentType) : page.contentType)}`
+   const withLocaleCode = WIKI.config.lang.namespacing && WIKI.config.lang.code !== page.localeCode
+   return withLocaleCode ? `${page.localeCode}/${fileName}` : fileName
+ }
+@@ -62,7 +63,7 @@ module.exports = {
+   },
+   async renamed(page) {
+     WIKI.logger.info(`(STORAGE/SFTP) Renaming file ${page.path} to ${page.destinationPath}...`)
+-    let sourceFilePath = getFilePath(page, 'path')
++    let sourceFilePath = getFilePath(page, 'path', true)
+     let destinationFilePath = getFilePath(page, 'destinationPath')
+     if (WIKI.config.lang.namespacing) {
+       if (WIKI.config.lang.code !== page.localeCode) {
+diff --git a/yarn.lock b/yarn.lock
+index 6ef14bfee9..b11d3c5339 100644
+--- a/yarn.lock
++++ b/yarn.lock
+@@ -11176,7 +11176,7 @@ jsbn@~0.1.0:
+   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
+   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
+ 
+-jsdom@16.3.0:
++jsdom@16.3.0, jsdom@^16.2.0:
+   version "16.3.0"
+   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.3.0.tgz#75690b7dac36c67be49c336dcd7219bbbed0810c"
+   integrity sha512-zggeX5UuEknpdZzv15+MS1dPYG0J/TftiiNunOeNxSl3qr8Z6cIlQpN0IdJa44z9aFxZRIVqRncvEhQ7X5DtZg==
+@@ -17799,6 +17799,13 @@ tunnel@0.0.6, tunnel@^0.0.6:
+   resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
+   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
+ 
++turndown@6.0.0:
++  version "6.0.0"
++  resolved "https://registry.yarnpkg.com/turndown/-/turndown-6.0.0.tgz#c083d6109a9366be1b84b86b20af09140ea4b413"
++  integrity sha512-UVJBhSyRHCpNKtQ00mNWlYUM/i+tcipkb++F0PrOpt0L7EhNd0AX9mWEpL2dRFBu7LWXMp4HgAMA4OeKKnN7og==
++  dependencies:
++    jsdom "^16.2.0"
++
+ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
+   version "0.14.5"
+   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"

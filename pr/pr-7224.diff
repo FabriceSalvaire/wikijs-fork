@@ -1,0 +1,12 @@
+diff --git a/client/themes/default/scss/app.scss b/client/themes/default/scss/app.scss
+index c01faf1245..5332a1f7a4 100644
+--- a/client/themes/default/scss/app.scss
++++ b/client/themes/default/scss/app.scss
+@@ -1266,6 +1266,7 @@
+     .prismjs{
+       box-shadow: none;
+       background-color: #FFF;
++      white-space: pre-wrap;
+ 
+       @at-root .theme--dark & {
+         background-color: #FFF;

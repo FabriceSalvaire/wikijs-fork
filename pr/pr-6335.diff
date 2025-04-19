@@ -1,0 +1,126 @@
+diff --git a/client/components/admin/admin-security.vue b/client/components/admin/admin-security.vue
+index 7a8d305b2a..cf498750a9 100644
+--- a/client/components/admin/admin-security.vue
++++ b/client/components/admin/admin-security.vue
+@@ -196,6 +196,15 @@
+                     persistent-hint
+                     :hint='$t(`admin:security.hideLocalLoginHint`)'
+                     )
++                    //- :label='$t(`admin:security.startGuestAuth`)'
++                    //- :hint='$t(`admin:security.startGuestAuthHint`)'
++                  v-switch(
++                    inset
++                    color='primary'
++                    v-model='config.authGuestLogin'
++                    prepend-icon='mdi-login'
++                    persistent-hint
++                    )
+                 v-divider.mt-3
+                 .overline.grey--text.pa-4 {{$t('admin:security.loginSecurity')}}
+                 .px-4.pb-3
+@@ -272,6 +281,7 @@ export default {
+         securityCSP: false,
+         securityCSPDirectives: '',
+         authAutoLogin: false,
++        authGuestLogin: false,
+         authHideLocal: false,
+         authLoginBgUrl: '',
+         authJwtAudience: 'urn:wiki.js',
+@@ -298,6 +308,7 @@ export default {
+           mutation: gql`
+             mutation (
+               $authAutoLogin: Boolean
++              $authGuestLogin: Boolean
+               $authEnforce2FA: Boolean
+               $authHideLocal: Boolean
+               $authLoginBgUrl: String
+@@ -321,6 +332,7 @@ export default {
+               site {
+                 updateConfig(
+                   authAutoLogin: $authAutoLogin,
++                  authGuestLogin: $authGuestLogin,
+                   authEnforce2FA: $authEnforce2FA,
+                   authHideLocal: $authHideLocal,
+                   authLoginBgUrl: $authLoginBgUrl,
+@@ -353,6 +365,7 @@ export default {
+           `,
+           variables: {
+             authAutoLogin: _.get(this.config, 'authAutoLogin', false),
++            authGuestLogin: _.get(this.config, 'authGuestLogin', false),
+             authEnforce2FA: _.get(this.config, 'authEnforce2FA', false),
+             authHideLocal: _.get(this.config, 'authHideLocal', false),
+             authLoginBgUrl: _.get(this.config, 'authLoginBgUrl', ''),
+@@ -406,6 +419,7 @@ export default {
+           site {
+             config {
+               authAutoLogin
++              authGuestLogin
+               authEnforce2FA
+               authHideLocal
+               authLoginBgUrl
+diff --git a/server/app/data.yml b/server/app/data.yml
+index 7c3d0803b9..5a3c7fb74a 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -63,6 +63,7 @@ defaults:
+       tocPosition: 'left'
+     auth:
+       autoLogin: false
++      guestLogin: false
+       enforce2FA: false
+       hideLocal: false
+       loginBgUrl: ''
+diff --git a/server/controllers/common.js b/server/controllers/common.js
+index 55cc4d333f..ec8bdfb73b 100644
+--- a/server/controllers/common.js
++++ b/server/controllers/common.js
+@@ -450,6 +450,9 @@ router.get('/*', async (req, res, next) => {
+         if (pageArgs.path === 'home' && req.user.id === 2) {
+           return res.redirect('/login')
+         }
++        if (WIKI.config.auth.guestLogin && req.user.id === 2) {
++          return res.redirect('/login')
++        }
+         _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+         return res.status(403).render('unauthorized', {
+           action: 'view'
+diff --git a/server/graph/resolvers/site.js b/server/graph/resolvers/site.js
+index 27cd340c12..61225d231e 100644
+--- a/server/graph/resolvers/site.js
++++ b/server/graph/resolvers/site.js
+@@ -25,6 +25,7 @@ module.exports = {
+         ...WIKI.config.features,
+         ...WIKI.config.security,
+         authAutoLogin: WIKI.config.auth.autoLogin,
++        authGuestLogin: WIKI.config.auth.guestLogin,
+         authEnforce2FA: WIKI.config.auth.enforce2FA,
+         authHideLocal: WIKI.config.auth.hideLocal,
+         authLoginBgUrl: WIKI.config.auth.loginBgUrl,
+@@ -82,6 +83,7 @@ module.exports = {
+ 
+         WIKI.config.auth = {
+           autoLogin: _.get(args, 'authAutoLogin', WIKI.config.auth.autoLogin),
++          guestLogin: _.get(args, 'authGuestLogin', WIKI.config.auth.guestLogin),
+           enforce2FA: _.get(args, 'authEnforce2FA', WIKI.config.auth.enforce2FA),
+           hideLocal: _.get(args, 'authHideLocal', WIKI.config.auth.hideLocal),
+           loginBgUrl: _.get(args, 'authLoginBgUrl', WIKI.config.auth.loginBgUrl),
+diff --git a/server/graph/schemas/site.graphql b/server/graph/schemas/site.graphql
+index 29370f2073..0d6e99e4f7 100644
+--- a/server/graph/schemas/site.graphql
++++ b/server/graph/schemas/site.graphql
+@@ -36,6 +36,7 @@ type SiteMutation {
+     logoUrl: String
+     pageExtensions: String
+     authAutoLogin: Boolean
++    authGuestLogin: Boolean
+     authEnforce2FA: Boolean
+     authHideLocal: Boolean
+     authLoginBgUrl: String
+@@ -86,6 +87,7 @@ type SiteConfig {
+   logoUrl: String
+   pageExtensions: String
+   authAutoLogin: Boolean
++  authGuestLogin: Boolean
+   authEnforce2FA: Boolean
+   authHideLocal: Boolean
+   authLoginBgUrl: String

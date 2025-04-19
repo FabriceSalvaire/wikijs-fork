@@ -1,0 +1,123 @@
+diff --git a/server/models/users.js b/server/models/users.js
+index facb158a72..997ab0d32f 100644
+--- a/server/models/users.js
++++ b/server/models/users.js
+@@ -225,6 +225,18 @@ module.exports = class User extends Model {
+       })
+     }
+ 
++    // Parse jobTitle
++    let jobTitle = "";
++    if (_.isString(profile.jobTitle) && profile.jobTitle.length > 0) {
++      jobTitle = profile.jobTitle;
++    }
++
++    // Parse location
++    let location = "";
++    if (_.isString(profile.location) && profile.location.length > 0) {
++      location = profile.location;
++    }
++
+     // Update existing user
+     if (user) {
+       if (!user.isActive) {
+@@ -264,6 +276,8 @@ module.exports = class User extends Model {
+         email: primaryEmail,
+         name: displayName,
+         pictureUrl: pictureUrl,
++        jobTitle: jobTitle,
++        location: location,
+         localeCode: WIKI.config.lang.code,
+         defaultEditor: 'markdown',
+         tfaIsActive: false,
+diff --git a/server/modules/authentication/azure/authentication.js b/server/modules/authentication/azure/authentication.js
+index a983d1486e..9339df2d52 100644
+--- a/server/modules/authentication/azure/authentication.js
++++ b/server/modules/authentication/azure/authentication.js
+@@ -1,4 +1,5 @@
+ const _ = require('lodash')
++const { default: axios } = require("axios");
+ 
+ /* global WIKI */
+ 
+@@ -28,23 +29,31 @@ module.exports = {
+         identityMetadata: conf.entryPoint,
+         clientID: conf.clientId,
+         redirectUrl: conf.callbackURL,
+-        responseType: 'id_token',
++        responseType: 'id_token code',
+         responseMode: 'form_post',
+         scope: ['profile', 'email', 'openid'],
+         allowHttpForRedirectUrl: WIKI.IS_DEBUG,
++        clientSecret: conf.clientSecretValueString,
+         passReqToCallback: true,
+         cookieSameSite: keyArray.length > 0,
+         useCookieInsteadOfSession: keyArray.length > 0,
+         cookieEncryptionKeys: keyArray
+-      }, async (req, iss, sub, profile, cb) => {
++      }, async (req, iss, sub, profile, access_token, refresh_token, cb) => {
+         const usrEmail = _.get(profile, '_json.email', null) || _.get(profile, '_json.preferred_username')
+         try {
++          const fullProfile = await callAPI(
++            "https://graph.microsoft.com/beta/me",
++            access_token
++          );
++
+           const user = await WIKI.models.users.processProfile({
+             providerKey: req.params.strategy,
+             profile: {
+               id: profile.oid,
+               displayName: profile.displayName,
+               email: usrEmail,
++              jobTitle: fullProfile.jobTitle,
++              location: fullProfile.department,
+               picture: ''
+             }
+           })
+@@ -53,6 +62,26 @@ module.exports = {
+           cb(err, null)
+         }
+       })
+-    )
++    );
++
++    async function callAPI(endpoint, accessToken) {
++      if (!accessToken || accessToken === "") {
++        throw new Error("No tokens found");
++      }
++
++      const options = {
++        headers: {
++          Authorization: `Bearer ${accessToken}`,
++        },
++      };
++
++      try {
++        const response = await axios.default.get(endpoint, options);
++        return response.data;
++      } catch (error) {
++        console.log(error);
++        return error;
++      }
++    }
+   }
+ }
+diff --git a/server/modules/authentication/azure/definition.yml b/server/modules/authentication/azure/definition.yml
+index ad7d41ebc5..d20f3c99a9 100644
+--- a/server/modules/authentication/azure/definition.yml
++++ b/server/modules/authentication/azure/definition.yml
+@@ -22,8 +22,13 @@ props:
+     title: Client ID
+     hint: The client ID of your application in AAD (Azure Active Directory)
+     order: 2
++  clientSecretValueString:
++    type: String
++    title: Client Secret Value String
++    hint: Some String
++    order: 3
+   cookieEncryptionKeyString:
+     type: String
+     title: Cookie Encryption Key String
+     hint: Random string with 44-character length.  Setting this enables workaround for Chrome's SameSite cookies.
+-    order: 3
++    order: 4

@@ -1,0 +1,178 @@
+diff --git a/client/themes/default/scss/app.scss b/client/themes/default/scss/app.scss
+index 2647745a67..d6158cf33a 100644
+--- a/client/themes/default/scss/app.scss
++++ b/client/themes/default/scss/app.scss
+@@ -803,6 +803,68 @@
+     }
+   }
+ 
++  // -------------------------------------
++  // INLINE FIGURES AND CAPTIONS FOR MARKDOWN
++  // ----------------------------------------
++
++  .figcaption {
++    font-size: 12px;
++    color: mc('grey', '700');
++    background-color: mc('grey', '100');
++
++    @at-root .theme--dark & {
++      color: mc('grey', '400');
++      background-color: mc('grey', '800');
++    }
++  }
++
++  .illustration {
++    padding-top: 1.25rem; // depends on paragraph top margin and line-height
++
++    &.align-left {
++      width: auto;
++      clear: left;
++      float: left;
++      margin: 0 2ex 1rem 0;
++    }
++    &.align-right {
++      width: auto;
++      clear: right;
++      float: right;
++      margin: 0 0 1rem 1.5ex; // less margin needed when
++                              // figure is floating right
++                              // in left-aligned text
++    }
++
++    figure {
++      display: table-cell !important;
++      width: 0;
++      padding: 1ex;
++
++      font-size: 12px;
++      color: mc('grey', '700');
++      background-color: mc('grey', '100');
++
++      @at-root .theme--dark & {
++        color: mc('grey', '400');
++        background-color: mc('grey', '800');
++      }
++
++      img {
++        display: block;
++        max-width: none !important;
++      }
++
++      figcaption {
++        margin-top: 0.75rem;
++        font-size: 0.75rem;
++
++        label {
++          font-style: italic;
++        }
++      }
++    }
++  }
+ }
+ 
+ // ---------------------------------
+diff --git a/server/modules/rendering/html-figcaption/definition.yml b/server/modules/rendering/html-figcaption/definition.yml
+new file mode 100644
+index 0000000000..d39734a519
+--- /dev/null
++++ b/server/modules/rendering/html-figcaption/definition.yml
+@@ -0,0 +1,27 @@
++key: htmlFigcaption
++title: Figures with Captions
++description: Render floating figures
++author: despens
++icon: mdi-tooltip-image
++enabledDefault: true
++dependsOn: htmlCore
++props:
++  images:
++    type: Boolean
++    title: Caption images
++    default: true
++    hint: Enable captioning for regular images.
++    order: 1
++  enumerate:
++    type: Boolean
++    title: Enumerate captions
++    default: false
++    hint: Automatically add numbers to captions
++    order: 98
++  enumerate_prefix:
++    type: String
++    title: Enumeration prefix
++    default: "Fig. "
++    hint: String for naming enumerated figures, such as "Figure", "Fig.", "Abbildung"
++    order: 99
++
+diff --git a/server/modules/rendering/html-figcaption/renderer.js b/server/modules/rendering/html-figcaption/renderer.js
+new file mode 100644
+index 0000000000..9c7328376a
+--- /dev/null
++++ b/server/modules/rendering/html-figcaption/renderer.js
+@@ -0,0 +1,66 @@
++/* eslint-disable camelcase */
++module.exports = {
++  init($, config) {
++    // Define which elements can be captioned.
++    // Currently, only <img> is supported,
++    // could be extended to <video>, <audio>,
++    // <iframe>, mermaid elements, etc
++    let figurable_selectors = []
++    if (config.images) figurable_selectors.push('img')
++    let figurable_selector = figurable_selectors.join(', ')
++
++    // Check every paragraph with class caption.
++    // If it contains a figurable element in the
++    // beginning followed by text, the text will be
++    // used as a caption for the figureable.
++    // If the paragraph doesn't start with a figurable
++    // element, but the previous paragraph just contains
++    // a single figureable element, the current
++    // paragraph's text will be used as a caption
++    // for the figurable.
++    $('p.figcaption').each((idx, elm) => {
++      let figurable_elm, caption_elm, replace_elm
++
++      let transform = false
++      elm = $(elm)
++
++      // figurable to be captioned is in the same paragraph
++      if (elm.contents(':first-child').is(figurable_selector)) {
++        figurable_elm = elm.children(figurable_selector)
++        caption_elm = $('<figcaption>')
++          .append(elm.contents())
++        replace_elm = elm
++        transform = true
++
++      // figurable to be captioned is in the paragraph above
++      } else {
++        let prev = elm.prev('p')
++        if (prev.text().trim().length === 0) {
++          figurable_elm = prev.children(figurable_selector)
++          caption_elm = $('<figcaption>')
++            .append(elm.contents())
++          prev.remove()
++          replace_elm = elm
++          transform = true
++        }
++      }
++
++      if (transform) {
++        elm.removeClass('figcaption')
++        let wrapper_elm = $('<div>')
++          .attr('class', elm.attr('class'))
++          .addClass('illustration')
++
++        if (config.enumerate) {
++          caption_elm.prepend(`<label>${config.enumerate_prefix}${idx + 1}: </label>`)
++        }
++
++        let figure = $('<figure>')
++          .append(figurable_elm)
++          .append(caption_elm)
++        wrapper_elm.append(figure)
++        replace_elm.replaceWith(wrapper_elm)
++      }
++    })
++  }
++}

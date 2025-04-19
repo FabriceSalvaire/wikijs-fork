@@ -1,0 +1,197 @@
+diff --git a/client/components/admin/admin-theme.vue b/client/components/admin/admin-theme.vue
+index 83ec5fac8f..69506e476b 100644
+--- a/client/components/admin/admin-theme.vue
++++ b/client/components/admin/admin-theme.vue
+@@ -130,6 +130,17 @@
+                     :hint='$t(`admin:theme.bodyHtmlInjectionHint`)'
+                     auto-grow
+                     )
++                  v-divider.mt-3
++                  v-switch(
++                    inset
++                    v-model='injectInEditor'
++                    :label='$t(`admin:theme.injectInEditor`)'
++                    color='primary'
++                    persistent-hint
++                    :hint='$t(`admin:theme.injectInEditorHint`)'
++                    )
++                  i18next.caption.mt-1(path='admin:theme.injectInEditorWarning', tag='div')
++                    strong.red--text(place='caution') {{$t('admin:theme.injectInEditorWarningCaution')}}
+ </template>
+ 
+ <script>
+@@ -157,13 +168,16 @@ export default {
+         iconset: '',
+         injectCSS: '',
+         injectHead: '',
+-        injectBody: ''
++        injectBody: '',
++        injectInEditor: false
+       },
+-      darkModeInitial: false
++      darkModeInitial: false,
++      injectInEditorInitial: false
+     }
+   },
+   computed: {
+     darkMode: sync('site/dark'),
++    injectInEditor: sync('site/injectEditor'),
+     headers() {
+       return [
+         {
+@@ -193,9 +207,11 @@ export default {
+   },
+   mounted() {
+     this.darkModeInitial = this.darkMode
++    this.injectInEditorInitial = this.injectInEditor
+   },
+   beforeDestroy() {
+     this.darkMode = this.darkModeInitial
++    this.injectInEditor = this.injectInEditorInitial
+     this.$vuetify.theme.dark = this.darkModeInitial
+   },
+   methods: {
+@@ -211,12 +227,14 @@ export default {
+             darkMode: this.darkMode,
+             injectCSS: this.config.injectCSS,
+             injectHead: this.config.injectHead,
+-            injectBody: this.config.injectBody
++            injectBody: this.config.injectBody,
++            injectInEditor: this.injectInEditor
+           }
+         })
+         const resp = _.get(respRaw, 'data.theming.setConfig.responseResult', {})
+         if (resp.succeeded) {
+           this.darkModeInitial = this.darkMode
++          this.injectInEditorInitial = this.injectInEditor
+           this.$store.commit('showNotification', {
+             message: 'Theme settings updated successfully.',
+             style: 'success',
+diff --git a/client/graph/admin/theme/theme-mutation-save.gql b/client/graph/admin/theme/theme-mutation-save.gql
+index 856442ce90..aa3da2b0c7 100644
+--- a/client/graph/admin/theme/theme-mutation-save.gql
++++ b/client/graph/admin/theme/theme-mutation-save.gql
+@@ -1,6 +1,6 @@
+-mutation($theme: String!, $iconset: String!, $darkMode: Boolean!, $injectCSS: String, $injectHead: String, $injectBody: String) {
++mutation($theme: String!, $iconset: String!, $darkMode: Boolean!, $injectCSS: String, $injectHead: String, $injectBody: String, $injectInEditor: Boolean!) {
+   theming {
+-    setConfig(theme: $theme, iconset: $iconset, darkMode: $darkMode, injectCSS: $injectCSS, injectHead: $injectHead, injectBody: $injectBody) {
++    setConfig(theme: $theme, iconset: $iconset, darkMode: $darkMode, injectCSS: $injectCSS, injectHead: $injectHead, injectBody: $injectBody, injectInEditor: $injectInEditor) {
+       responseResult {
+         succeeded
+         errorCode
+diff --git a/client/graph/admin/theme/theme-query-config.gql b/client/graph/admin/theme/theme-query-config.gql
+index 360cb2fa57..479f702784 100644
+--- a/client/graph/admin/theme/theme-query-config.gql
++++ b/client/graph/admin/theme/theme-query-config.gql
+@@ -6,7 +6,8 @@ query {
+       darkMode
+       injectCSS
+       injectHead
+-      injectBody
++      injectBody,
++      injectInEditor
+     }
+   }
+ }
+diff --git a/client/store/site.js b/client/store/site.js
+index e26830e335..fb3737e12f 100644
+--- a/client/store/site.js
++++ b/client/store/site.js
+@@ -6,6 +6,7 @@ const state = {
+   company: siteConfig.company,
+   contentLicense: siteConfig.contentLicense,
+   dark: siteConfig.darkMode,
++  injectEditor: siteConfig.injectEditor,
+   mascot: true,
+   title: siteConfig.title,
+   logoUrl: siteConfig.logoUrl,
+diff --git a/server/app/data.yml b/server/app/data.yml
+index ca48a5eae7..cc4e30e71e 100644
+--- a/server/app/data.yml
++++ b/server/app/data.yml
+@@ -55,6 +55,7 @@ defaults:
+       theme: 'default'
+       iconset: 'md'
+       darkMode: false
++      injectInEditor: false
+     auth:
+       autoLogin: false
+       enforce2FA: false
+diff --git a/server/graph/resolvers/theming.js b/server/graph/resolvers/theming.js
+index cfd6367038..b6e7965434 100644
+--- a/server/graph/resolvers/theming.js
++++ b/server/graph/resolvers/theming.js
+@@ -26,7 +26,8 @@ module.exports = {
+         darkMode: WIKI.config.theming.darkMode,
+         injectCSS: new CleanCSS({ format: 'beautify' }).minify(WIKI.config.theming.injectCSS).styles,
+         injectHead: WIKI.config.theming.injectHead,
+-        injectBody: WIKI.config.theming.injectBody
++        injectBody: WIKI.config.theming.injectBody,
++        injectInEditor: WIKI.config.theming.injectInEditor
+       }
+     }
+   },
+@@ -46,7 +47,8 @@ module.exports = {
+           darkMode: args.darkMode,
+           injectCSS: args.injectCSS || '',
+           injectHead: args.injectHead || '',
+-          injectBody: args.injectBody || ''
++          injectBody: args.injectBody || '',
++          injectInEditor: args.injectInEditor
+         }
+ 
+         await WIKI.configSvc.saveToDb(['theming'])
+diff --git a/server/graph/schemas/theming.graphql b/server/graph/schemas/theming.graphql
+index eddebad42e..7d4ae4c35a 100644
+--- a/server/graph/schemas/theming.graphql
++++ b/server/graph/schemas/theming.graphql
+@@ -31,6 +31,7 @@ type ThemingMutation {
+     injectCSS: String
+     injectHead: String
+     injectBody: String
++    injectInEditor: Boolean!
+   ): DefaultResponse @auth(requires: ["manage:theme", "manage:system"])
+ }
+ 
+@@ -45,6 +46,7 @@ type ThemingConfig {
+   injectCSS: String
+   injectHead: String
+   injectBody: String
++  injectInEditor: Boolean!
+ }
+ 
+ type ThemingTheme {
+diff --git a/server/setup.js b/server/setup.js
+index 6d87a29f26..52be819e79 100644
+--- a/server/setup.js
++++ b/server/setup.js
+@@ -129,7 +129,8 @@ module.exports = () => {
+         iconset: 'mdi',
+         injectCSS: '',
+         injectHead: '',
+-        injectBody: ''
++        injectBody: '',
++        injectInEditor: false
+       })
+       _.set(WIKI.config, 'title', 'Wiki.js')
+ 
+diff --git a/server/views/editor.pug b/server/views/editor.pug
+index 0f0b64c026..7359aac862 100644
+--- a/server/views/editor.pug
++++ b/server/views/editor.pug
+@@ -3,6 +3,8 @@ extends master.pug
+ block head
+   if injectCode.css
+     style(type='text/css')!= injectCode.css
++  if injectCode.head
++    != injectCode.head
+ 
+ block body
+   #root
+@@ -24,3 +26,5 @@ block body
+       checkout-date=page.updatedAt
+       effective-permissions=Buffer.from(JSON.stringify(effectivePermissions)).toString('base64')
+       )
++  if injectCode.body
++    != injectCode.body

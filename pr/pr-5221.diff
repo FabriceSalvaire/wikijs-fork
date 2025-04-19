@@ -1,0 +1,35 @@
+diff --git a/server/graph/resolvers/asset.js b/server/graph/resolvers/asset.js
+index 91efbdda87..c289fa3ba5 100644
+--- a/server/graph/resolvers/asset.js
++++ b/server/graph/resolvers/asset.js
+@@ -55,6 +55,15 @@ module.exports = {
+           parentId: parentFolderId,
+           slug: folderSlug
+         }).first()
++
++        const hierarchy = parentFolderId ? await WIKI.models.assetFolders.getHierarchy(parentFolderId) : []
++
++        // Check target folder permissions
++        const folderTargetPath = parentFolderId ? hierarchy.map(h => h.slug).join('/') + `/${folderSlug}` : folderSlug
++        if (!WIKI.auth.checkAccess(context.req.user, ['write:assets'], { path: folderTargetPath })) {
++          throw new WIKI.Error.AssetCreateFolderForbidden()
++        }
++
+         if (!result) {
+           await WIKI.models.assetFolders.query().insert({
+             slug: folderSlug,
+diff --git a/server/helpers/error.js b/server/helpers/error.js
+index f9a817795c..be2353abe7 100644
+--- a/server/helpers/error.js
++++ b/server/helpers/error.js
+@@ -1,6 +1,10 @@
+ const CustomError = require('custom-error-instance')
+ 
+ module.exports = {
++  AssetCreateFolderForbidden: CustomError('AssetCreateFolderForbidden', {
++    message: 'You are not authorized to create this folder.',
++    code: 2010
++  }),
+   AssetDeleteForbidden: CustomError('AssetDeleteForbidden', {
+     message: 'You are not authorized to delete this asset.',
+     code: 2003

@@ -1,0 +1,303 @@
+diff --git a/client/components/admin/admin-general.vue b/client/components/admin/admin-general.vue
+index 075960745e..607392fac5 100644
+--- a/client/components/admin/admin-general.vue
++++ b/client/components/admin/admin-general.vue
+@@ -119,7 +119,7 @@
+             v-flex(lg6 xs12)
+               v-card.animated.fadeInUp.wait-p4s
+                 v-toolbar(color='indigo', dark, dense, flat)
+-                  v-toolbar-title.subtitle-1 Features
++                  v-toolbar-title.subtitle-1 {{$t(`admin:general.features`)}}
+                 v-card-text
+                   //- v-switch(
+                   //-   inset
+@@ -175,7 +175,7 @@
+ 
+               v-card.mt-5.animated.fadeInUp.wait-p6s
+                 v-toolbar(color='primary', dark, dense, flat)
+-                  v-toolbar-title.subtitle-1 URL Handling
++                  v-toolbar-title.subtitle-1 {{$t(`admin:general.urlHandling`)}}
+                 v-card-text
+                   v-text-field(
+                     outlined
+diff --git a/client/components/admin/admin-pages-edit.vue b/client/components/admin/admin-pages-edit.vue
+index cd43533bfb..58e0fa4334 100644
+--- a/client/components/admin/admin-pages-edit.vue
++++ b/client/components/admin/admin-pages-edit.vue
+@@ -5,7 +5,7 @@
+         .admin-header
+           img.animated.fadeInUp(src='/_assets/svg/icon-view-details.svg', alt='Edit Page', style='width: 80px;')
+           .admin-header-title
+-            .headline.blue--text.text--darken-2.animated.fadeInLeft Page Details
++            .headline.blue--text.text--darken-2.animated.fadeInLeft {{$t('admin:pages.edit.title')}}
+             .subtitle-1.grey--text.animated.fadeInLeft.wait-p2s
+               v-chip.ml-0.mr-2(label, small).caption ID {{page.id}}
+               span /{{page.locale}}/{{page.path}}
+@@ -28,47 +28,47 @@
+           v-menu(offset-y, origin='top right')
+             template(v-slot:activator='{ on }')
+               v-btn.mx-3.animated.fadeInDown.wait-p2s(color='black', v-on='on', depressed, dark)
+-                span Actions
++                span {{$t('admin:pages.edit.actions')}}
+                 v-icon(right) mdi-chevron-down
+             v-list(dense, nav)
+               v-list-item(:href='`/` + page.locale + `/` + page.path')
+                 v-list-item-icon
+                   v-icon(color='indigo') mdi-text-subject
+-                v-list-item-title View
++                v-list-item-title {{$t('admin:pages.edit.action.view')}}
+               v-list-item(:href='`/e/` + page.locale + `/` + page.path')
+                 v-list-item-icon
+                   v-icon(color='indigo') mdi-pencil
+-                v-list-item-title Edit
++                v-list-item-title {{$t('admin:pages.edit.action.edit')}}
+               v-list-item(@click='', disabled)
+                 v-list-item-icon
+                   v-icon(color='grey') mdi-cube-scan
+-                v-list-item-title Re-Render
++                v-list-item-title {{$t('admin:pages.edit.action.reRender')}}
+               v-list-item(@click='', disabled)
+                 v-list-item-icon
+                   v-icon(color='grey') mdi-earth-remove
+-                v-list-item-title Unpublish
++                v-list-item-title {{$t('admin:pages.edit.action.unpublish')}}
+               v-list-item(:href='`/s/` + page.locale + `/` + page.path')
+                 v-list-item-icon
+                   v-icon(color='indigo') mdi-code-tags
+-                v-list-item-title View Source
++                v-list-item-title {{$t('admin:pages.edit.action.viewSource')}}
+               v-list-item(:href='`/h/` + page.locale + `/` + page.path')
+                 v-list-item-icon
+                   v-icon(color='indigo') mdi-history
+-                v-list-item-title View History
++                v-list-item-title {{$t('admin:pages.edit.action.viewHistory')}}
+               v-list-item(@click='', disabled)
+                 v-list-item-icon
+                   v-icon(color='grey') mdi-content-duplicate
+-                v-list-item-title Duplicate
++                v-list-item-title {{$t('admin:pages.edit.action.duplicate')}}
+               v-list-item(@click='', disabled)
+                 v-list-item-icon
+                   v-icon(color='grey') mdi-content-save-move-outline
+-                v-list-item-title Move / Rename
++                v-list-item-title {{$t('admin:pages.edit.action.moveRename')}}
+               v-dialog(v-model='deletePageDialog', max-width='500')
+                 template(v-slot:activator='{ on }')
+                   v-list-item(v-on='on')
+                     v-list-item-icon
+                       v-icon(color='red') mdi-trash-can-outline
+-                    v-list-item-title Delete
++                    v-list-item-title {{$t('admin:pages.edit.action.delete')}}
+                 v-card
+                   .dialog-header.is-short.is-red
+                     v-icon.mr-2(color='white') mdi-file-document-box-remove-outline
+@@ -87,60 +87,60 @@
+                     v-btn(color='red darken-2', @click='deletePage', :loading='loading').white--text {{$t('common:actions.delete')}}
+           v-btn.animated.fadeInDown(color='success', large, depressed, disabled)
+             v-icon(left) mdi-check
+-            span Save Changes
++            span {{$t('common:actions.saveChanges')}}
+       v-flex(xs12, lg6)
+         v-card.animated.fadeInUp
+           v-toolbar(color='primary', dense, dark, flat)
+             v-icon.mr-2 mdi-text-subject
+-            span Properties
++            span {{$t('common:actions.properties')}}
+           v-list.py-0(two-line, dense)
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Title
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.pageInfo')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.title }}
+             v-divider
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Description
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.description')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.description || '-' }}
+             v-divider
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Locale
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.locale')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.locale }}
+             v-divider
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Path
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.path')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.path }}
+             v-divider
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Editor
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.editor')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.editor || '?' }}
+             v-divider
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Content Type
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.contentType')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.contentType || '?' }}
+             v-divider
+             v-list-item
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Page Hash
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.pageHash')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.hash }}
+ 
+       v-flex(xs12, lg6)
+         v-card.animated.fadeInUp.wait-p2s
+           v-toolbar(color='primary', dense, dark, flat)
+             v-icon.mr-2 mdi-account-multiple
+-            span Users
++            span {{$t('admin:pages.edit.users')}}
+           v-list.py-0(two-line, dense)
+             v-list-item
+               v-list-item-avatar(size='24')
+                 v-btn(icon, :to='`/users/` + page.creatorId')
+                   v-icon(color='grey') mdi-account
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Creator
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.creator')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.creatorName }} #[em.caption ({{ page.creatorEmail }})]
+               v-list-item-action
+                 v-list-item-action-text {{ page.createdAt | moment('calendar') }}
+@@ -150,7 +150,7 @@
+                 v-btn(icon, :to='`/users/` + page.authorId')
+                   v-icon(color='grey') mdi-account
+               v-list-item-content
+-                v-list-item-title: .overline.grey--text Last Editor
++                v-list-item-title: .overline.grey--text {{$t('admin:pages.edit.lastEditor')}}
+                 v-list-item-subtitle.body-2(:class='$vuetify.theme.dark ? `grey--text text--lighten-2` : `grey--text text--darken-3`') {{ page.authorName }} #[em.caption ({{ page.authorEmail }})]
+               v-list-item-action
+                 v-list-item-action-text {{ page.updatedAt | moment('calendar') }}
+@@ -192,7 +192,7 @@ export default {
+         if (_.get(resp, 'data.pages.delete.responseResult.succeeded', false)) {
+           this.$store.commit('showNotification', {
+             style: 'green',
+-            message: `Page deleted successfully.`,
++            message: this.$t('admin:pages.edit.deleteSuccess'),
+             icon: 'check'
+           })
+           this.$router.replace('/pages')
+diff --git a/client/components/admin/admin-pages-visualize.vue b/client/components/admin/admin-pages-visualize.vue
+index 3c9b20eb65..3f3dcbc2af 100644
+--- a/client/components/admin/admin-pages-visualize.vue
++++ b/client/components/admin/admin-pages-visualize.vue
+@@ -5,8 +5,8 @@
+         .admin-header
+           img.animated.fadeInUp(src='/_assets/svg/icon-venn-diagram.svg', alt='Visualize Pages', style='width: 80px;')
+           .admin-header-title
+-            .headline.blue--text.text--darken-2.animated.fadeInLeft Visualize Pages
+-            .subtitle-1.grey--text.animated.fadeInLeft.wait-p2s Dendrogram representation of your pages
++            .headline.blue--text.text--darken-2.animated.fadeInLeft {{$t('admin:pages.visualize.title')}}
++            .subtitle-1.grey--text.animated.fadeInLeft.wait-p2s {{$t('admin:pages.visualize.subtitle')}}
+           v-spacer
+           v-select.mx-5.animated.fadeInDown.wait-p1s(
+             v-if='locales.length > 0'
+@@ -22,13 +22,13 @@
+           v-btn-toggle.animated.fadeInDown(v-model='graphMode', color='primary', dense, rounded)
+             v-btn.px-5(value='htree')
+               v-icon(left, :color='graphMode === `htree` ? `primary` : `grey darken-3`') mdi-sitemap
+-              span.text-none Hierarchical Tree
++              span.text-none {{$t('admin:pages.visualize.hierarchialTree')}}
+             v-btn.px-5(value='hradial')
+               v-icon(left, :color='graphMode === `hradial` ? `primary` : `grey darken-3`') mdi-chart-donut-variant
+-              span.text-none Hierarchical Radial
++              span.text-none {{$t('admin:pages.visualize.hierarchialRadial')}}
+             v-btn.px-5(value='rradial')
+               v-icon(left, :color='graphMode === `rradial` ? `primary` : `grey darken-3`') mdi-blur-radial
+-              span.text-none Relational Radial
++              span.text-none {{$t('admin:pages.visualize.relationalRadial')}}
+         .admin-pages-visualize-svg(ref='svgContainer', v-show='pages.length >= 1')
+         v-alert(v-if='pages.length < 1', outlined, type='warning', style='max-width: 650px; margin: 0 auto;') Looks like there's no data yet to graph!
+ </template>
+diff --git a/client/components/admin/admin-pages.vue b/client/components/admin/admin-pages.vue
+index 0ca26de1b8..ef3c942044 100644
+--- a/client/components/admin/admin-pages.vue
++++ b/client/components/admin/admin-pages.vue
+@@ -5,17 +5,17 @@
+         .admin-header
+           img.animated.fadeInUp(src='/_assets/svg/icon-file.svg', alt='Page', style='width: 80px;')
+           .admin-header-title
+-            .headline.blue--text.text--darken-2.animated.fadeInLeft Pages
+-            .subtitle-1.grey--text.animated.fadeInLeft.wait-p2s Manage pages
++            .headline.blue--text.text--darken-2.animated.fadeInLeft {{$t(`admin:pages.title`)}}
++            .subtitle-1.grey--text.animated.fadeInLeft.wait-p2s {{$t(`admin:pages.subtitle`)}}
+           v-spacer
+           v-btn.animated.fadeInDown.wait-p1s(icon, color='grey', outlined, @click='refresh')
+             v-icon.grey--text mdi-refresh
+           v-btn.animated.fadeInDown.mx-3(color='primary', outlined, @click='recyclebin', disabled)
+             v-icon(left) mdi-delete-outline
+-            span Recycle Bin
++            span {{$t(`admin:pages.recycleBin`)}}
+           v-btn.animated.fadeInDown(color='primary', depressed, large, to='pages/visualize')
+             v-icon(left) mdi-graph
+-            span Visualize
++            span {{$t(`admin:pages.visualization`)}}
+         v-card.mt-3.animated.fadeInUp
+           .pa-2.d-flex.align-center(:class='$vuetify.theme.dark ? `grey darken-3-d5` : `grey lighten-3`')
+             v-text-field(
+@@ -23,7 +23,7 @@
+               flat
+               v-model='search'
+               prepend-inner-icon='mdi-file-search-outline'
+-              label='Search Pages...'
++              :label='$t(`admin:pages.search`)'
+               hide-details
+               dense
+               style='max-width: 400px;'
+@@ -75,7 +75,7 @@
+                 td {{ props.item.createdAt | moment('calendar') }}
+                 td {{ props.item.updatedAt | moment('calendar') }}
+             template(slot='no-data')
+-              v-alert.ma-3(icon='mdi-alert', :value='true', outlined) No pages to display.
++              v-alert.ma-3(icon='mdi-alert', :value='true', outlined) {{$t(`admin:pages.noPagesToDisplay`)}}
+           .text-center.py-2.animated.fadeInDown(v-if='this.pageTotal > 1')
+             v-pagination(v-model='pagination', :length='pageTotal')
+ </template>
+@@ -93,18 +93,18 @@ export default {
+       pageTotal: 0,
+       headers: [
+         { text: 'ID', value: 'id', width: 80, sortable: true },
+-        { text: 'Title', value: 'title' },
+-        { text: 'Path', value: 'path' },
+-        { text: 'Created', value: 'createdAt', width: 250 },
+-        { text: 'Last Updated', value: 'updatedAt', width: 250 }
++        { text: this.$t('admin:pages.pageTitle'), value: 'title' },
++        { text: this.$t('admin:pages.pagePath'), value: 'path' },
++        { text: this.$t('admin:pages.pageCreated'), value: 'createdAt', width: 250 },
++        { text: this.$t('admin:pages.pageUpdated'), value: 'updatedAt', width: 250 }
+       ],
+       search: '',
+       selectedLang: null,
+       selectedState: null,
+       states: [
+-        { text: 'All Publishing States', value: null },
+-        { text: 'Published', value: true },
+-        { text: 'Not Published', value: false }
++        { text: this.$t('admin:pages.publishState.all'), value: null },
++        { text: this.$t('admin:pages.publishState.published'), value: true },
++        { text: this.$t('admin:pages.publishState.notPublished'), value: false }
+       ],
+       loading: false
+     }
+@@ -123,7 +123,7 @@ export default {
+     },
+     langs () {
+       return _.concat({
+-        text: 'All Locales',
++        text: this.$t('admin:pages.allLocales'),
+         value: null
+       }, _.uniqBy(this.pages, 'locale').map(pg => ({
+         text: pg.locale,
+@@ -135,7 +135,7 @@ export default {
+     async refresh() {
+       await this.$apollo.queries.pages.refetch()
+       this.$store.commit('showNotification', {
+-        message: 'Page list has been refreshed.',
++        message: this.$t('admin:pages.pageListRefreshed'),
+         style: 'success',
+         icon: 'cached'
+       })

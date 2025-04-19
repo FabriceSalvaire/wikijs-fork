@@ -1,0 +1,22 @@
+diff --git a/client/components/tags.vue b/client/components/tags.vue
+index 56bc6cbbcb..4d7ceb4e55 100644
+--- a/client/components/tags.vue
++++ b/client/components/tags.vue
+@@ -129,6 +129,7 @@
+                 )
+                 v-card.radius-7(
+                   @click='goTo(item)'
++                  @mousedown.middle='goToNewTab(item)'
+                   style='height:100%;'
+                   :class='$vuetify.theme.dark ? `grey darken-4` : ``'
+                   )
+@@ -295,6 +296,9 @@ export default {
+     },
+     goTo (page) {
+       window.location.assign(`/${page.locale}/${page.path}`)
++    },
++    goToNewTab (page) {
++      window.open(`/${page.locale}/${page.path}`)
+     }
+   },
+   apollo: {

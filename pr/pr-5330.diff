@@ -1,0 +1,105 @@
+diff --git a/dev/helm/README.md b/dev/helm/README.md
+index ae95ab45dd..72a7a3d9d6 100644
+--- a/dev/helm/README.md
++++ b/dev/helm/README.md
+@@ -125,6 +125,7 @@ The following table lists the configurable parameters of the Wiki.js chart and t
+ | `postgresql.postgresqlPort`            | External postgres port                      | `5432`                                                     |
+ | `postgresql.ssl`                       | Enable external postgres SSL connection     | `false`                                                   |
+ | `postgresql.ca`                        | Certificate of Authority content for postgres  | `nil`                                                     |
++| `postgresql.rejectUnauthorized`                 | Reject self-signed CA certificate     | `true`                                                   |
+ | `postgresql.persistence.enabled`                | Enable postgres persistence using PVC                | `true`                                                     |
+ | `postgresql.persistence.existingClaim`          | Provide an existing `PersistentVolumeClaim` for postgres | `nil`                                                      |
+ | `postgresql.persistence.storageClass`           | Postgres PVC Storage Class (example: `nfs`)                           | `nil`                 |
+diff --git a/dev/helm/templates/deployment.yaml b/dev/helm/templates/deployment.yaml
+index 24910f2b52..87f59e8d00 100644
+--- a/dev/helm/templates/deployment.yaml
++++ b/dev/helm/templates/deployment.yaml
+@@ -53,6 +53,8 @@ spec:
+               value: "{{ default "false" .Values.postgresql.ssl }}"
+             - name: DB_SSL_CA
+               value: "{{ default "" .Values.postgresql.ca }}"
++            - name: DB_SSL_REJECTUNAUTHORIZED
++              value: "{{ hasKey .Values.postgresql "rejectUnauthorized" | ternary .Values.postgresql.rejectUnauthorized true }}"
+             - name: DB_PASS
+               valueFrom:
+                 secretKeyRef:
+diff --git a/dev/helm/values.yaml b/dev/helm/values.yaml
+index 6b7296a7aa..ce5c9ba42a 100644
+--- a/dev/helm/values.yaml
++++ b/dev/helm/values.yaml
+@@ -115,9 +115,15 @@ postgresql:
+   ##
+   # ssl: false
+   ## ca Certificate of Authority
+-  ## Default to empty, point to location of CA
++  ## this can either be a single line string (without spaces or new lines)
++  ## without the prefix and suffix lines, or a path to a certificate file.
++  ## Default to empty
+   ##
+-  # ca: "path to ca"
++  # ca: "single line or path to ca"
++  ## rejectUnauthorized reject self-signed certificates
++  ## Default to true
++  ##
++  # rejectUnauthorized: true
+   ## postgresqlHost override postgres database host
+   ## Default to postgres
+   ##
+diff --git a/server/core/db.js b/server/core/db.js
+index 2d614c55fd..49f6cdac7d 100644
+--- a/server/core/db.js
++++ b/server/core/db.js
+@@ -39,7 +39,12 @@ module.exports = {
+ 
+     // Handle SSL Options
+ 
+-    let dbUseSSL = (WIKI.config.db.ssl === true || WIKI.config.db.ssl === 'true' || WIKI.config.db.ssl === 1 || WIKI.config.db.ssl === '1')
++    let isTruthy = function(value) {
++      return (value === true || value === 'true' || value === 1 || value === '1')
++    }
++
++    let dbUseSSL = isTruthy(WIKI.config.db.ssl)
++    let rejectUnauthorized = !_.isEmpty(process.env.DB_SSL_REJECTUNAUTHORIZED) ? isTruthy(process.env.DB_SSL_REJECTUNAUTHORIZED) : true;
+     let sslOptions = null
+     if (dbUseSSL && _.isPlainObject(dbConfig) && _.get(WIKI.config.db, 'sslOptions.auto', null) === false) {
+       sslOptions = WIKI.config.db.sslOptions
+@@ -60,18 +65,22 @@ module.exports = {
+       sslOptions = true
+     }
+ 
+-    // Handle inline SSL CA Certificate mode
++    // Handle self-signed CA file or concatenated string
++    // https://node-postgres.com/features/ssl
+     if (!_.isEmpty(process.env.DB_SSL_CA)) {
+-      const chunks = []
+-      for (let i = 0, charsLength = process.env.DB_SSL_CA.length; i < charsLength; i += 64) {
+-        chunks.push(process.env.DB_SSL_CA.substring(i, i + 64))
++      try {
++        ca = fs.readFileSync(process.env.DB_SSL_CA).toString()
++      } catch(_) {
++        const chunks = []
++        for (let i = 0, charsLength = process.env.DB_SSL_CA.length; i < charsLength; i += 64) {
++          chunks.push(process.env.DB_SSL_CA.substring(i, i + 64))
++        }
++
++        ca = '-----BEGIN CERTIFICATE-----\n' + chunks.join('\n') + '\n-----END CERTIFICATE-----\n'
+       }
+ 
+       dbUseSSL = true
+-      sslOptions = {
+-        rejectUnauthorized: true,
+-        ca: '-----BEGIN CERTIFICATE-----\n' + chunks.join('\n') + '\n-----END CERTIFICATE-----\n'
+-      }
++      sslOptions = { rejectUnauthorized, ca }
+     }
+ 
+     // Engine-specific config
+@@ -80,7 +89,7 @@ module.exports = {
+         dbClient = 'pg'
+ 
+         if (dbUseSSL && _.isPlainObject(dbConfig)) {
+-          dbConfig.ssl = (sslOptions === true) ? { rejectUnauthorized: true } : sslOptions
++          dbConfig.ssl = (sslOptions === true) ? { rejectUnauthorized } : sslOptions
+         }
+         break
+       case 'mariadb':

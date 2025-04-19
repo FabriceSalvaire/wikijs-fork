@@ -1,0 +1,13 @@
+diff --git a/dev/build/Dockerfile b/dev/build/Dockerfile
+index af5d217310..f22a00a77f 100644
+--- a/dev/build/Dockerfile
++++ b/dev/build/Dockerfile
+@@ -44,7 +44,7 @@ COPY --chown=node:node ./LICENSE ./LICENSE
+ 
+ USER node
+ 
+-VOLUME ["/wiki/data/content"]
++VOLUME ["/wiki/data"]
+ 
+ EXPOSE 3000
+ EXPOSE 3443
