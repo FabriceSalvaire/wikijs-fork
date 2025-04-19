@@ -175,9 +175,10 @@
 
 import _ from 'lodash'
 import { get, sync } from 'vuex-pathify'
-import markdownHelp from './markdown/help.vue'
 import gql from 'graphql-tag'
 import DOMPurify from 'dompurify'
+
+import markdownHelp from './markdown/help.vue'
 
 /* global siteConfig, siteLangs */
 
@@ -221,9 +222,11 @@ import mdMultiTable from 'markdown-it-multimd-table'
 import mdFootnote from 'markdown-it-footnote'
 import mdImsize from 'markdown-it-imsize'
 import katex from 'katex'
-import underline from '../../libs/markdown-it-underline'
 import 'katex/dist/contrib/mhchem'
+
 import twemoji from 'twemoji'
+
+import underline from '../../libs/markdown-it-underline'
 import plantuml from './markdown/plantuml'
 
 // Prism (Syntax Highlighting)
@@ -233,9 +236,9 @@ import Prism from 'prismjs'
 import mermaid from 'mermaid'
 
 // Helpers
+import cmFold from './common/cmFold'
 import katexHelper from './common/katex'
 import tabsetHelper from './markdown/tabset'
-import cmFold from './common/cmFold'
 
 // ========================================
 // INIT
