@@ -64,7 +64,6 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
 
 # Further Modification Ideas
 
-- Markdown editor : key to add `</br>`
 - Insert Link : insert the page title instead of its slug
 - Insert Link Modal : Expand current folder and scroll to it (notice the modal is only destroyed when we leave the editor).
 
@@ -129,6 +128,7 @@ I wrote some React apps, but I could not figure out where is the documentation f
   compile ECMAScript 2015+
 - [Cheerio](https://cheerio.js.org)
   Parsing and manipulating HTML and XML
+- [draw.io](https://www.drawio.com/)
 - [Hammer.JS](https://hammerjs.github.io/)
   Gesture made by touch, mouse and pointerEvents
 - [js-cookie](https://github.com/js-cookie/js-cookie)
@@ -136,6 +136,7 @@ I wrote some React apps, but I could not figure out where is the documentation f
   SQL Query Builder
 - [Lodash](https://lodash.com)
 - [markdown-it](https://github.com/markdown-it/markdown-it)
+- [MDI — Material Design Icons](https://github.com/Templarian/MaterialDesign-JS)
 - [Mermaid](https://mermaid.js.org)
   Diagramming and charting tool
 - [Moment.js](https://momentjs.com)
