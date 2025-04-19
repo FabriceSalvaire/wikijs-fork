@@ -108,6 +108,7 @@ const localeSegmentRegex = /^[A-Z]{2}(-[A-Z]{2})?$/i
 /* global siteLangs, siteConfig */
 
 export default {
+  // ----------------------------------------------------------------------------
   props: {
     value: {
       type: Boolean,
@@ -134,13 +135,15 @@ export default {
       default: false
     }
   },
+
+  // ----------------------------------------------------------------------------
   data() {
     return {
       treeViewCacheId: 0,
       searchLoading: false,
       currentLocale: siteConfig.lang,
       currentFolderPath: '',
-      currentPath: 'new-page',
+      currentPath: 'new-page',  // ???
       currentPage: null,
       currentNode: [0],
       openNodes: [0],
@@ -174,6 +177,8 @@ export default {
       }
     }
   },
+
+  // ----------------------------------------------------------------------------
   computed: {
     isShown: {
       get() { return this.value },
@@ -204,16 +209,30 @@ export default {
       }
     }
   },
+
+  // ----------------------------------------------------------------------------
   watch: {
+    // ---------------------------------------------
     isShown (newValue, oldValue) {
       if (newValue && !oldValue) {
-        this.currentPath = this.path
+        // this.currentPath = this.path
+        let currentPagePath = this.$store.get('page/path')
+        let currentFolderPath = _.dropRight(currentPagePath.split('/')).join('/')
+        if (currentFolderPath) {
+          currentFolderPath += '/'
+        }
+        // console.log('Current page path', currentPagePath)
+        // console.log('Current folder path', currentFolderPath)
+        this.currentPath = currentFolderPath
+
         this.currentLocale = this.locale
         _.delay(() => {
           this.$refs.pathIpt.focus()
         })
       }
     },
+
+    // ---------------------------------------------
     currentNode (newValue, oldValue) {
       if (newValue.length < 1) { // force a selection
         this.$nextTick(() => {
@@ -235,14 +254,29 @@ export default {
           })
         }
 
-        this.currentPath = _.compact([_.get(current, 'path', ''), _.last(this.currentPath.split('/'))]).join('/')
+        // this.currentPath = _.compact([_.get(current, 'path', ''), _.last(this.currentPath.split('/'))]).join('/')
+        // This code looks buggy
+        //   type a filename and then select a folder ?
+        //   maybe it explain why default is 'new-page' ?
+        // Fixme: TypeError: this.currentPath is null
+        // let filename = _.last(this.currentPath.split('/'))
+        let folderPath = _.get(current, 'path', '')
+        // _.compact remove empty element
+        // Fixme: TypeError: _.compact() is not a function
+        // this.currentPath = _.compact([folderPath, filename]).join('/')
+        this.currentPath = folderPath
+        // console.log('currentNode', this.currentNode, this.currentPath, this.currentPage)
       }
     },
+
+    // ---------------------------------------------
     currentPage (newValue, oldValue) {
       if (!_.isEmpty(newValue)) {
         this.currentPath = newValue.path
       }
     },
+
+    // ---------------------------------------------
     currentLocale (newValue, oldValue) {
       this.$nextTick(() => {
         this.tree = [
@@ -260,10 +294,15 @@ export default {
       })
     }
   },
+
+  // ----------------------------------------------------------------------------
   methods: {
+    // ---------------------------------------------
     close() {
       this.isShown = false
     },
+
+    // ---------------------------------------------
     open() {
       const exit = this.openHandler({
         locale: this.currentLocale,
@@ -274,6 +313,8 @@ export default {
         this.close()
       }
     },
+
+    // ---------------------------------------------
     async fetchFolders (item) {
       this.searchLoading = true
       const resp = await this.$apollo.query({
