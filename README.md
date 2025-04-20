@@ -20,11 +20,11 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
 - [PostCSS](https://postcss.org) and [postcss-loader](https://www.npmjs.com/package/postcss-loader) was upgraded to fix the `No PostCSS Config found` error. It is probably due to some upgrades versus the Docker image.
 - [caniuse-lite](https://www.npmjs.com/package/caniuse-lite) was outdated and printed a warning.
 - [Katex](https://katex.org) was upgraded to the latest to enhance the Math support.
-- [mdi](https://www.npmjs.com/package/@mdi/js) was upgraded to the latest. Telegram icon was replaced by a SVG from [SimpleIcons](https://simpleicons.org/?q=telegram)
+- [mdi](https://www.npmjs.com/package/@mdi/js) was upgraded to the latest. Telegram icon was replaced by an SVG from [SimpleIcons](https://simpleicons.org/?q=telegram)
 
 ### Known Issues
 
-- [ssh2](https://github.com/mscdex/ssh2) has an optional dependencies, `cpu_features`, that fails to build and make noises.
+- [ssh2](https://github.com/mscdex/ssh2) has an optional dependency, `cpu_features`, that fails to build and make noises.
 
   See [Remove cpu_features dependency](https://github.com/mscdex/ssh2/issues/1083).
   A workaround is to use `--ignore-optional` for Yarn.
@@ -39,8 +39,8 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
   - Removed default content for new page.
 
 - **Markdown Editor**
-  - In addition to the CodeMirror editor, a basic textarea was implemented to perform standard browser actions like spell checking, or support for browser extensions like [LanguageTool](https://languagetool.org) or an [external editor](https://github.com/asamuzaK/withExEditor).  A button is used to switch between both editors.  It looks like a hack, but it offers the same experience as you usually get when editing Mardown with a browser.  Moreover it is better than the actual solution that shows errors in the live preview.  Especially since the preview is spoiled by LanguageTool when it contains math. **TODO: for some reasons, the live preview is not updated when editing the textarea**
-  - Set the Emacs [keymap](https://codemirror.net/5/doc/manual.html#keymaps) for CodeMirror (Vi and Sublime Text are also available).  Of course, it will not transform your browser to an evil editor but it is much better and just one line of code... Notice some commands work poorly.
+  - In addition to the CodeMirror editor, a basic textarea was implemented to perform standard browser actions like spell checking, or support for browser extensions like [LanguageTool](https://languagetool.org) or an [external editor](https://github.com/asamuzaK/withExEditor).  A button is used to switch between both editors.  It looks like a hack, but it offers the same experience as you usually get when editing Mardown with a browser.  Moreover, it is better than the actual solution that shows errors in the live preview.  Especially since the preview is spoiled by LanguageTool when it contains math. **TODO: for some reason, the live preview is not updated when editing the textarea**
+  - Set the Emacs [keymap](https://codemirror.net/5/doc/manual.html#keymaps) for CodeMirror (Vi and Sublime Text are also available).  Of course, it will not transform your browser to an evil editor, but it is much better and just one line of code... Notice some commands work poorly.
   - Set a shortcut `Ctrl-Enter` to insert at cursor `</br>` which is useful to force line breaking.
   - Link insertion: use the page title instead of its slug (I don't understand the reason of this behaviour).
 
@@ -79,7 +79,7 @@ If you don't want to use a Docker image, the build process works on Linux Fedora
 This repository contains these tools (written in Python or Bash):
 - a tool to explore imports in the source code and match them with `package.json` dependencies
 - a tool to upgrade `@mdi/font` package: lookup for mdi icons in the source code and check for upgrade using the changelog
-- a tool to fetch PR from github
+- a tool to fetch PR from GitHub
 - a tool to apply `yarn add / upgrade`
 - a Bash shell script to build the project
 - a tool to rsync on the server
@@ -114,11 +114,11 @@ This repository contains these tools (written in Python or Bash):
 
   - Markown-it
   - CodeMirror
-1. upgrade for better performance
+1. Upgrade for better performance
 
 ### Build Tools
 
-Vue.js depends of Babel, so don't update build tool.
+Vue.js depends on Babel, so don't update build tool.
 
 ### Markown-it
 
@@ -130,7 +130,7 @@ LanguageTool doesn't work with CodeMirror.
 
 # Framework Notes
 
-Vues.js is known to be more lighter than React, which is nice for mobile.  But what about its API stability, code readability ???  IMHO, Vue/Pug templates are hard to read versus React/JSX and Qt/QML.  It looks OK for toy applications but...  Same apply to this Javascript flavour where the code is a bunch of lines of code in the `<script>` section.
+Vues.js is known to be lighter than React, which is nice for mobile.  But what about its API stability, code readability ???  IMHO, Vue/Pug templates are hard to read versus React/JSX and Qt/QML.  It looks OK for toy applications but...  Same apply to this Javascript flavour where the code is a bunch of lines of code in the `<script>` section.
 
 I have experience with React, but I could not figure out where is the documentation for Vuetify using Pug :-) ...
 
@@ -174,7 +174,7 @@ I have experience with React, but I could not figure out where is the documentat
 - [graphql - npm](https://www.npmjs.com/package/graphql)
   JavaScript reference implementation for GraphQL
 - [graphql-rate-limit-directive - npm](https://www.npmjs.com/package/graphql-rate-limit-directive)
-  Fixed window rate limiting directive for GraphQL. Use to limit repeated requests to queries and mutations.
+  Fixed window rate limiting directive for GraphQL. Used to limit repeated requests to queries and mutations.
 - [graphql-subscriptions - npm](https://www.npmjs.com/package/graphql-subscriptions)
   Implement pubsub subscriptions in GraphQL
 - [graphql-tool - npm](https://www.npmjs.com/package/graphql-tool)
@@ -271,3 +271,7 @@ Node.js will treat `.cjs` files as CommonJS (which uses require and module.expor
 - [Vite](https://vite.dev)
   Local development server, faster than Webpack
 - [cdnjs.cloudflare.com/polyfill](https://cdnjs.cloudflare.com/polyfill)
+
+<!-- Local Variables: -->
+<!-- languagetool-local-disabled-rules: ("WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "CLEAN_UP" "WHITESPACE_RULE" "WHITESPACE_RULE" "CONSECUTIVE_SPACES" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "WHITESPACE_RULE" "LC_AFTER_PERIOD" "WHITESPACE_RULE") -->
+<!-- End: -->
