@@ -967,8 +967,8 @@ export default {
     })
 
     // Handle special paste
-
-    this.cm.on('paste', this.onCmPaste)
+    // Fixme: does nothing
+    // this.cm.on('paste', this.onCmPaste)
 
     // Render initial preview
 
