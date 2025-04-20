@@ -304,10 +304,13 @@ export default {
 
     // ---------------------------------------------
     open() {
+      // on click on "Select" button
       const exit = this.openHandler({
         locale: this.currentLocale,
         path: this.currentPath,
-        id: (this.mustExist && this.currentPage) ? this.currentPage.pageId : 0
+        // mustExist ???
+        id: (this.mustExist && this.currentPage) ? this.currentPage.pageId : 0,
+        title: this.currentPage ? this.currentPage.title : ''
       })
       if (exit !== false) {
         this.close()

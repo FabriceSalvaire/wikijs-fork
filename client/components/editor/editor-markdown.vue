@@ -724,11 +724,12 @@ export default {
     },
 
     // ---------------------------------------------
-    insertLinkHandler ({ locale, path }) {
+    insertLinkHandler ({ locale, path, title }) {
       // Fixme: insert title
-      const lastPart = _.last(path.split('/'))
+      // const link_title = _.last(path.split('/'))
+      const link_title = title
       this.insertAtCursor({
-        content: siteLangs.length > 0 ? `[${lastPart}](/${locale}/${path})` : `[${lastPart}](/${path})`
+        content: siteLangs.length > 0 ? `[${link_title}](/${locale}/${path})` : `[${link_title}](/${path})`
       })
     },
 
