@@ -26,11 +26,15 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
 ## Modifications
 
 - **Page Creation**
-  - To make workflow faster, an user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
-  - The folder of the current page is used to initialize the path of a new page, instead of "/new-page". A click on a folder resets the path instead to concatenate the folder and the filename.
+
+  To make the workflow faster...
+  - An user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
+  - It is cumbersome to have to click many times to create a page (expand the folder tree).  For this reason, the folder of the current page is used to initialize the path of a new page, instead of "/new-page".  A click on a folder resets the path instead to concatenate the folder and the filename (I don't understand the reason of this behaviour).  Notice, you can open a browser tab by folder to simulate a working directory.
+
 - **Markdown Editor**
-  - Set the Emacs [keymap](https://codemirror.net/5/doc/manual.html#keymaps) for CodeMirror
-  - Set a shortcut `Ctrl-Enter` to insert at cursor `</br>`
+  - Set the Emacs [keymap](https://codemirror.net/5/doc/manual.html#keymaps) for CodeMirror (Vi and Sublime Text are also available).  Of course, it will not transform your browser to an evil editor but it is much better and just one line of code... Notice some commands work poorly.
+  - Set a shortcut `Ctrl-Enter` to insert at cursor `</br>` which is useful to force line breaking.
+  - Link insertion: use the page title instead of its slug (I don't understand the reason of this behaviour).
 
 # Build Process
 
@@ -75,7 +79,6 @@ This repository contains these tools (written in Python or Bash):
 
 # Further Modification Ideas
 
-- Insert Link : insert the page title instead of its slug
 - Insert Link Modal : Expand current folder and scroll to it (notice the modal is only destroyed when we leave the editor).
 
 **Short list of PR to review**
