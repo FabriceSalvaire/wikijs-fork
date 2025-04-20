@@ -1,6 +1,9 @@
 This repository contains a custom [Wiki.js](https://github.com/requarks/wiki) fork featuring some upgrades and modifications.
 
-Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Giard](https://github.com/ngpixel).  At the same time, the current version V2 was unfortunately mostly frozen as it is.  It is a pity, because for example, it was faster to update Katex than to figure out why it was not rendering correctly.  I know for a Wiki audience that a lot of peoples are begging for free supports... But it deserves Wiki.js to be maintained by a more collaborative effort.  There is any doubt we can try to continue to maintain the V2.  So why ?  Is JS framework's API too unstable ?  Do we need to restart from scratch due to the actual limitations ?  Is there a funding problem ?
+A CLI for Wiki.js is available in this [repository](https://github.com/FabriceSalvaire/wikijs-cli) which targets power user use cases.  It provides a command line front end and some tools which can be run on the client side.  Moreover, it is easier for me to implement new things in Python than to dive in the Wiki.js server and client code.
+
+**Colophon**
+Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Giard](https://github.com/ngpixel).  Many thanks to him to have released this nice free software Wiki.  But at the same time, the current version V2 was unfortunately mostly frozen as it is.  It is a pity, because for example, it was faster to update Katex than to figure out why it was not rendering correctly.  I know for a Wiki audience that a lot of peoples are begging for free supports... But it deserves Wiki.js to be maintained by a more collaborative effort.  There is any doubt we can try to continue to maintain the V2.  So why ?  Is JS framework's API too unstable ?  Do we need to restart from scratch due to the actual limitations ?  Is there a funding problem ?
 
 > [!IMPORTANT]
 > **NOTICE THAT ANY SUPPORT IS PROVIDED**
@@ -121,9 +124,9 @@ LanguageTool doesn't work with CodeMirror.
 
 # Framework Notes
 
-Vues.js is known to be more lighter than React but what about is API stability, code readability ???
+Vues.js is known to be more lighter than React, which is nice for mobile.  But what about its API stability, code readability ???  IMHO, Vue/Pug templates are hard to read versus React/JSX and Qt/QML.  It looks OK for toy applications but...  Same apply to this Javascript flavour where the code is a bunch of lines of code in the `<script>` section.
 
-I wrote some React apps, but I could not figure out where is the documentation for Vuetify using Pug :-) ...
+I have experience with React, but I could not figure out where is the documentation for Vuetify using Pug :-) ...
 </br>
 
 **Tutorials**
