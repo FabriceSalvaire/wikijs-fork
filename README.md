@@ -102,6 +102,7 @@ This repository contains these tools (written in Python or Bash):
 - Most of the time, a major upgrade changes the API !
 
 **Idea**
+1. Split server and client as for V3, notice that both can be independent
 1. upgrade serious security issues, see `yarn audit`
 1. upgrade to Vue 3
 1. check for improvements
@@ -127,11 +128,6 @@ LanguageTool doesn't work with CodeMirror.
 Vues.js is known to be more lighter than React, which is nice for mobile.  But what about its API stability, code readability ???  IMHO, Vue/Pug templates are hard to read versus React/JSX and Qt/QML.  It looks OK for toy applications but...  Same apply to this Javascript flavour where the code is a bunch of lines of code in the `<script>` section.
 
 I have experience with React, but I could not figure out where is the documentation for Vuetify using Pug :-) ...
-</br>
-
-**Tutorials**
-- [Building Vue Components With Pug & Stylus. | by Victor Onuoha Martins | Medium](https://medium.com/@martinsOnuoha/building-vue-components-with-pug-stylus-564615ed289)
-- [Vuetify + VueJS 3 | Cours](https://cours.brosseau.ovh/tp/vuejs3/vuetify.html)
 
 # Dependencies Links
 
@@ -252,3 +248,21 @@ I have experience with React, but I could not figure out where is the documentat
 - LanguageTool support ???
 - [purocean/monaco-spellchecker](https://github.com/purocean/monaco-spellchecker/)
   Demo is not so convincing...
+
+
+## Node.sj Notes
+
+Node.js will treat `.cjs` files as CommonJS (which uses require and module.exports) modules and `.mjs` files as ECMAScript modules (which uses import and export).
+
+- [CommonJS vs. ES modules in Node.js - LogRocket Blog](https://blog.logrocket.com/commonjs-vs-es-modules-node-js/)
+
+
+## Bundling Notes
+
+- [pNPM](https://pnpm.io)
+  Package manager that replaces npm or yarn
+
+  **:-) It uses hard links or symlinks to link packages from a global store instead of copying them to the node_modules folder...**
+- [Vite](https://vite.dev)
+  Local development server, faster than Webpack
+- [cdnjs.cloudflare.com/polyfill](https://cdnjs.cloudflare.com/polyfill)
