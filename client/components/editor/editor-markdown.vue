@@ -110,6 +110,11 @@
               v-btn.animated.fadeIn.wait-p2s(icon, tile, v-on='on', @click='previewShown = !previewShown').mx-0
                 v-icon mdi-book-open-outline
             span {{$t('editor:markup.togglePreviewPane')}}
+          v-tooltip(bottom, color='primary')
+            template(v-slot:activator='{ on }')
+              v-btn.animated.fadeIn.wait-p2s(icon, tile, v-on='on', @click='simpleEditor = !simpleEditor').mx-0
+                v-icon mdi-shield-edit
+            span Toggle Simple Editor
     .editor-markdown-main
       .editor-markdown-sidebar
         v-tooltip(right, color='teal')
@@ -139,8 +144,15 @@
               v-btn.mt-3.animated.fadeInLeft.wait-p4s(icon, tile, v-on='on', dark, @click='toggleHelp').mx-0
                 v-icon(:color='helpShown ? `teal` : ``') mdi-help-circle
             span {{$t('editor:markup.markdownFormattingHelp')}}
-      .editor-markdown-editor
+      .editor-markdown-editor(:style='simpleEditor ? `display:  none` : ``')
         textarea(ref='cm')
+      .editor-markdown-simple-editor(:style='simpleEditor ? `` : `display:  none`')
+        //- v-textarea
+        textarea(
+          ref='simpleEditor'
+          :value='simpleEditorContent'
+          @input='onSimpleEditorContentInput()'
+          )
       transition(name='editor-markdown-preview')
         .editor-markdown-preview(v-if='previewShown')
           .editor-markdown-preview-content.contents(ref='editorPreviewContainer')
@@ -407,6 +419,8 @@ export default {
       previewHTML: '',
       helpShown: false,
       spellModeActive: false,
+      simpleEditorContent: '',
+      simpleEditor: false,
       insertLinkDialog: false
     }
   },
@@ -445,7 +459,26 @@ export default {
           this.$refs.editorPreview.focus()
         })
       }
-    }
+    },
+
+    // ---------------------------------------------
+    simpleEditor (newValue, oldValue) {
+      if (newValue) {
+        this.$nextTick(() => {
+          console.log('Enable simple editor')
+          // const content = this.cm.doc.getValue()
+          const content = this.$store.get('editor/content')
+          this.simpleEditorContent = content
+          this.$refs.simpleEditor.focus()
+        })
+      } else {
+        this.$nextTick(() => {
+          console.log('Enable CodeMirror editor')
+          this.cm.setValue(this.$store.get('editor/content'))
+          this.$refs.cm.focus()
+        })
+      }
+    },
   },
 
   // ----------------------------------------------------------------------------
@@ -484,6 +517,30 @@ export default {
       //     reader.readAsDataURL(file)
       //   }
       // }
+    },
+
+    // ---------------------------------------------
+    updateLivePreview (newContent) {
+      _.debounce(function (newContent) {
+        console.log('updateLivePreview')
+        this.previewHTML = DOMPurify.sanitize(md.render(newContent), {
+          ADD_TAGS: ['foreignObject']
+        })
+      }, 600)
+    },
+
+    onSimpleEditorContentInput () {
+      console.log('simpleEditorContent changed')
+      // console.log(this.simpleEditorContent)
+      // console.log(this.$refs.simpleEditor.value)
+      // simpleEditorContent is not updated
+      const newContent = this.$refs.simpleEditor.value
+      // cf. cm.onChange
+      // update store and debounce processContent
+      this.$store.set('editor/content', newContent)
+      // Fixme: why not value ???
+      // this.onCmInput(this.$store.get('editor/content'))
+      this.updateLivePreview(newContent)
     },
 
     // ---------------------------------------------
@@ -976,6 +1033,30 @@ $editor-height-mobile: calc(100vh - 112px - 16px);
 
     @include until($tablet) {
       height: $editor-height-mobile;
+    }
+  }
+
+  &-simple-editor {
+    // background-color: mc('grey', '100');
+    background-color: darken(mc('grey', '900'), 4.5%);
+    flex: 1 1 50%;
+    display: block;
+    position: relative;
+
+    @include until($tablet) {
+      height: $editor-height-mobile;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+
+    // Codemirror theme
+    font-family: Roboto Mono, monospace;
+    font-size: .9rem;
+    color: #e0e0e0;
+    background-color: #181818;
     }
   }
 
