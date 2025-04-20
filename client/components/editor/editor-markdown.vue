@@ -532,14 +532,14 @@ export default {
     /**
      * Set current line as header
      */
-    setHeaderLine(lvl) {
+    setHeaderLine(level) {
       const curLine = this.cm.doc.getCursor('head').line
       let lineContent = this.cm.doc.getLine(curLine)
       const lineLength = lineContent.length
       if (_.startsWith(lineContent, '#')) {
         lineContent = lineContent.replace(/^(#+ )/, '')
       }
-      lineContent = _.times(lvl, n => '#').join('') + ` ` + lineContent
+      lineContent = _.times(level, n => '#').join('') + ` ` + lineContent
       this.cm.doc.replaceRange(lineContent, { line: curLine, ch: 0 }, { line: curLine, ch: lineLength })
     },
 
@@ -550,13 +550,13 @@ export default {
     getHeaderLevel(cm) {
       const curLine = this.cm.doc.getCursor('head').line
       let lineContent = this.cm.doc.getLine(curLine)
-      let lvl = 0
+      let level = 0
 
       const result = lineContent.match(/^(#+) /)
       if (result) {
-        lvl = _.get(result, '[1]', '').length
+        level = _.get(result, '[1]', '').length
       }
-      return lvl
+      return level
     },
 
     // ---------------------------------------------
@@ -868,15 +868,15 @@ export default {
       return false
     })
     _.set(keyBindings, `${CtrlKey}-Alt-Right`, c => {
-      let lvl = this.getHeaderLevel(c)
-      if (lvl >= 6) { lvl = 5 }
-      this.setHeaderLine(lvl + 1)
+      let level = this.getHeaderLevel(c)
+      if (level >= 6) { level = 5 }
+      this.setHeaderLine(level + 1)
       return false
     })
     _.set(keyBindings, `${CtrlKey}-Alt-Left`, c => {
-      let lvl = this.getHeaderLevel(c)
-      if (lvl <= 1) { lvl = 2 }
-      this.setHeaderLine(lvl - 1)
+      let level = this.getHeaderLevel(c)
+      if (level <= 1) { level = 2 }
+      this.setHeaderLine(level - 1)
       return false
     })
 
