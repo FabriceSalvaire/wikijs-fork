@@ -10,6 +10,9 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
 >
 > **BUT ANY USEFUL PR IS WELCOME OR TALK ABOUT MAINTAINING V2**
 
+> [!NOTE]
+> This repository contains custom modifications, so the Git log does not necessary contains clean commits.
+
 # Changelog vs V2
 
 ## Package Upgrades
@@ -33,8 +36,10 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
   To make the workflow faster...
   - An user profile setting was added to disable the editor selector modal and use Markown by default.  Actually, the setting value is stored in a cookie. It should be stored in db, but it requires more coding...
   - It is cumbersome to have to click many times to create a page (expand the folder tree).  For this reason, the folder of the current page is used to initialize the path of a new page, instead of "/new-page".  A click on a folder resets the path instead to concatenate the folder and the filename (I don't understand the reason of this behaviour).  Notice, you can open a browser tab by folder to simulate a working directory.
+  - Removed default content for new page.
 
 - **Markdown Editor**
+  - In addition to the CodeMirror editor, a basic textarea was implemented to perform standard browser actions like spell checking, or support for browser extensions like [LanguageTool](https://languagetool.org) or an [external editor](https://github.com/asamuzaK/withExEditor).  A button is used to switch between both editors.  It looks like a hack, but it offers the same experience as you usually get when editing Mardown with a browser.  Moreover it is better than the actual solution that shows errors in the live preview.  Especially since the preview is spoiled by LanguageTool when it contains math. **TODO: for some reasons, the live preview is not updated when editing the textarea**
   - Set the Emacs [keymap](https://codemirror.net/5/doc/manual.html#keymaps) for CodeMirror (Vi and Sublime Text are also available).  Of course, it will not transform your browser to an evil editor but it is much better and just one line of code... Notice some commands work poorly.
   - Set a shortcut `Ctrl-Enter` to insert at cursor `</br>` which is useful to force line breaking.
   - Link insertion: use the page title instead of its slug (I don't understand the reason of this behaviour).
@@ -102,7 +107,7 @@ This repository contains these tools (written in Python or Bash):
 - Most of the time, a major upgrade changes the API !
 
 **Idea**
-1. Split server and client as for V3, notice that both can be independent
+1. Split server and client as for V3.  It will permit to have two independent `package.json`.  The Node.js server only needs the Javascript files from the `server` directory, the required `node_modules` and the `assets` directory built by Webpack.
 1. upgrade serious security issues, see `yarn audit`
 1. upgrade to Vue 3
 1. check for improvements
