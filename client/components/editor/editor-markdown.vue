@@ -545,6 +545,7 @@ export default {
 
     // ---------------------------------------------
     processContent (newContent) {
+      // reset LinesMap
       linesMap = []
       // this.$store.set('editor/content', newContent)
       this.processMarkers(this.cm.firstLine(), this.cm.lastLine())
@@ -874,7 +875,6 @@ export default {
     })
 
     // Initialize CodeMirror
-
     this.cm = CodeMirror.fromTextArea(this.$refs.cm, {
       tabSize: 2,
       mode: 'text/markdown',
@@ -895,11 +895,20 @@ export default {
       // https://codemirror.net/5/keymap/emacs.js
       keyMap: 'emacs'  // Fixme: should be a profile setting
     })
+
+    // initialise content
     this.cm.setValue(this.$store.get('editor/content'))
+
+    // Set event handler
+    //   Fires every time the content of the editor is changed
     this.cm.on('change', c => {
+      // update store and debounce processContent
       this.$store.set('editor/content', c.getValue())
+      // Fixme: why not c ???
       this.onCmInput(this.$store.get('editor/content'))
     })
+
+    // Set the height
     if (this.$vuetify.breakpoint.mdAndUp) {
       this.cm.setSize(null, 'calc(100vh - 112px - 24px)')
     } else {
@@ -907,7 +916,6 @@ export default {
     }
 
     // Set Keybindings
-
     const keyBindings = {
       'F11' (c) {
         c.setOption('fullScreen', !c.getOption('fullScreen'))
@@ -940,14 +948,12 @@ export default {
       this.setHeaderLine(level - 1)
       return false
     })
-
     _.set(keyBindings, `${CtrlKey}-Enter`, c => {
       this.insertAtCursor({
         content: '</br>'
       })
       return false
     })
-
     _.set(keyBindings, `${CtrlKey}-Alt-W`, c => {
       // this command is buggy
       console.log('killRegion')
@@ -957,10 +963,11 @@ export default {
 
     this.cm.setOption('extraKeys', keyBindings)
 
+    // Set event handler
+    // Fired whenever new input is read from the hidden textarea (typed or pasted by the user)
     this.cm.on('inputRead', this.autocomplete)
 
     // Handle cursor movement
-
     this.cm.on('cursorActivity', c => {
       this.positionSync(c)
       this.scrollSync(c)
@@ -971,10 +978,10 @@ export default {
     // this.cm.on('paste', this.onCmPaste)
 
     // Render initial preview
-
     this.processContent(this.$store.get('editor/content'))
     this.refresh()
 
+    //
     this.$root.$on('editorInsert', opts => {
       switch (opts.kind) {
         case 'IMAGE':
