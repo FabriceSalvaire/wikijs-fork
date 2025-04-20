@@ -22,7 +22,7 @@ def yield_source(source_path: Path, suffixes: list[str] = ('.js', '.vue')) -> It
         for root, dirs, filenames in source_path.joinpath(dir).walk():
             for _ in filenames:
                 path = Path(root) / _
-                if path.suffix in suffixes:
+                if suffixes is None or path.suffix in suffixes:
                     yield path
 
 ####################################################################################################
@@ -239,8 +239,30 @@ def lookup_mdi(source_path: Path):
 
 ####################################################################################################
 
+def dump_file_tree(source_path: Path) -> None:
+    # ['.asar', '.css', '.gql', '.graphql', '.html', '.ico', '.jpg', '.js', '.json', '.md',
+    #  '.png', '.pug', '.scss', '.svg', '.vue', '.woff', '.woff2', '.xml', '.yml']
+    suffixes = set()
+    for dir in ('client', 'server'):
+        for root, dirs, filenames in source_path.joinpath(dir).walk():
+            dirs.sort()
+            root = root.relative_to(source_path)
+            INDENT = ' '*4
+            indentation = INDENT*(len(root.parts)-1)
+            print(indentation + root.name)
+            for _ in sorted(filenames):
+                suffix = Path(_).suffix
+                suffixes.add(suffix)
+                if suffix in ('.js', '.vue'):
+                    print(indentation + INDENT + _)
+    print(sorted(suffixes))
+
+####################################################################################################
+
+
 source_path = Path(__file__).parents[1]
 # print(f"Root Source: {source_path}")
 
 # explore_dependencies(source_path)
-lookup_mdi(source_path)
+# lookup_mdi(source_path)
+# dump_file_tree(source_path)
