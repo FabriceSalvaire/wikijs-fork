@@ -75,6 +75,7 @@ import { get } from 'vuex-pathify'
 /* global siteLangs */
 
 export default {
+  // ----------------------------------------------------------------------------
   props: {
     color: {
       type: String,
@@ -93,6 +94,8 @@ export default {
       default: 'MIXED'
     }
   },
+
+  // ----------------------------------------------------------------------------
   data() {
     return {
       currentMode: 'custom',
@@ -105,10 +108,14 @@ export default {
       loadedCache: []
     }
   },
+
+  // ----------------------------------------------------------------------------
   computed: {
     path: get('page/path'),
     locale: get('page/locale')
   },
+
+  // ----------------------------------------------------------------------------
   methods: {
     switchMode (mode) {
       this.currentMode = mode
@@ -221,6 +228,8 @@ export default {
       window.location.assign(siteLangs.length > 0 ? `/${this.locale}/home` : '/')
     }
   },
+
+  // ----------------------------------------------------------------------------
   mounted () {
     this.currentParent.title = `/ ${this.$t('common:sidebar.root')}`
     if (this.navMode === 'TREE') {

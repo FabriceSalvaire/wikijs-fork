@@ -12,16 +12,21 @@ import { customAlphabet } from 'nanoid/non-secure'
 const nanoid = customAlphabet('1234567890abcdef', 10)
 
 export default {
+  // ----------------------------------------------------------------------------
   data() {
     return {
       currentTab: 0
     }
   },
+
+  // ----------------------------------------------------------------------------
   watch: {
     currentTab (newValue, oldValue) {
       this.setActiveTab()
     }
   },
+
+  // ----------------------------------------------------------------------------
   methods: {
     setActiveTab () {
       this.$refs.tabs.childNodes.forEach((node, idx) => {
@@ -44,6 +49,8 @@ export default {
       })
     }
   },
+
+  // ----------------------------------------------------------------------------
   mounted () {
     // Handle scroll to header on load within hidden tab content
     if (window.location.hash && window.location.hash.length > 1) {

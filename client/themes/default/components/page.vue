@@ -405,10 +405,13 @@ Prism.plugins.toolbar.registerButton('copy-to-clipboard', (env) => {
 })
 
 export default {
+  // ----------------------------------------------------------------------------
   components: {
     NavSidebar,
     StatusIndicator
   },
+
+  // ----------------------------------------------------------------------------
   props: {
     pageId: {
       type: Number,
@@ -523,6 +526,8 @@ export default {
       winWidth: 0
     }
   },
+
+  // ----------------------------------------------------------------------------
   computed: {
     isAuthenticated: get('user/authenticated'),
     commentsCount: get('page/commentsCount'),
@@ -579,6 +584,8 @@ export default {
       }
     }
   },
+
+  // ----------------------------------------------------------------------------
   created() {
     this.$store.set('page/authorId', this.authorId)
     this.$store.set('page/authorName', this.authorName)
@@ -601,6 +608,8 @@ export default {
 
     this.$store.set('page/mode', 'view')
   },
+
+  // ----------------------------------------------------------------------------
   mounted () {
     if (this.$vuetify.theme.dark) {
       this.scrollStyle.bar.background = '#424242'
@@ -647,6 +656,8 @@ export default {
       window.boot.notify('page-ready')
     })
   },
+
+  // ----------------------------------------------------------------------------
   methods: {
     goHome () {
       window.location.assign('/')

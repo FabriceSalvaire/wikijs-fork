@@ -20,6 +20,7 @@ const md = new MarkdownIt({
 })
 
 export default {
+  // ----------------------------------------------------------------------------
   props: {
     color: {
       type: String,
@@ -30,11 +31,15 @@ export default {
       default: 'grey darken-3'
     }
   },
+
+  // ----------------------------------------------------------------------------
   data() {
     return {
       currentYear: (new Date()).getFullYear()
     }
   },
+
+  // ----------------------------------------------------------------------------
   computed: {
     company: get('site/company'),
     contentLicense: get('site/contentLicense'),

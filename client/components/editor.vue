@@ -70,7 +70,10 @@ import editorStore from '../store/editor'
 WIKI.$store.registerModule('editor', editorStore)
 
 export default {
+  // ----------------------------------------------------------------------------
   i18nOptions: { namespaces: 'editor' },
+
+  // ----------------------------------------------------------------------------
   components: {
     AtomSpinner,
     StatusIndicator,
@@ -88,6 +91,8 @@ export default {
     editorModalConflict: () => import(/* webpackChunkName: "editor-conflict", webpackMode: "lazy" */ './editor/editor-modal-conflict.vue'),
     editorModalDrawio: () => import(/* webpackChunkName: "editor", webpackMode: "eager" */ './editor/editor-modal-drawio.vue')
   },
+
+  // ----------------------------------------------------------------------------
   props: {
     locale: {
       type: String,
@@ -154,6 +159,8 @@ export default {
       default: ''
     }
   },
+
+  // ----------------------------------------------------------------------------
   data() {
     return {
       isSaving: false,
@@ -176,6 +183,8 @@ export default {
       }
     }
   },
+
+  // ----------------------------------------------------------------------------
   computed: {
     currentEditor: sync('editor/editor'),
     activeModal: sync('editor/activeModal'),
@@ -200,6 +209,8 @@ export default {
       ], Boolean)
     }
   },
+
+  // ----------------------------------------------------------------------------
   watch: {
     currentEditor(newValue, oldValue) {
       if (newValue !== '' && this.mode === 'create') {
@@ -212,6 +223,8 @@ export default {
       this.injectCustomCss(newValue)
     }
   },
+
+  // ----------------------------------------------------------------------------
   created() {
     this.$store.set('page/id', this.pageId)
     this.$store.set('page/description', this.description)
@@ -235,6 +248,8 @@ export default {
       this.$store.set('page/effectivePermissions', JSON.parse(Buffer.from(this.effectivePermissions, 'base64').toString()))
     }
   },
+
+  // ----------------------------------------------------------------------------
   mounted() {
     this.$store.set('editor/mode', this.initMode || 'create')
 
@@ -264,6 +279,8 @@ export default {
     // this.$store.set('editor/mode', 'edit')
     // this.currentEditor = `editorApi`
   },
+
+  // ----------------------------------------------------------------------------
   methods: {
     openPropsModal(name) {
       this.dialogProps = true
