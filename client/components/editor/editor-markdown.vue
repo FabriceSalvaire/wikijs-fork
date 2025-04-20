@@ -861,7 +861,10 @@ export default {
     this.$store.set('editor/editorKey', 'markdown')
 
     if (this.mode === 'create' && !this.$store.get('editor/content')) {
-      this.$store.set('editor/content', '# Header\nYour content here')
+      // Set content for new page
+      // const templateContent = '# Header\nYour content here'
+      const templateContent = ''
+      this.$store.set('editor/content', templateContent)
     }
 
     // Initialize Mermaid API
