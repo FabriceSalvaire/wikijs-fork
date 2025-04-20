@@ -179,6 +179,8 @@ I wrote some React apps, but I could not figure out where is the documentation f
 - [Knex.js](https://knexjs.org)
   SQL Query Builder
 - [Lodash](https://lodash.com)
+
+  [Lodash @npm](https://www.npmjs.com/package/lodash)
 - [Luxon — Moment](https://moment.github.io/luxon)
   Date and time
 - [markdown-it](https://github.com/markdown-it/markdown-it)
