@@ -203,7 +203,7 @@ I have experience with React, but I could not figure out where is the documentat
 - [nodemailer](https://github.com/nodemailer/nodemailer)
   Send email
 - [Objection.js](https://vincit.github.io/objection.js)
-  ORM
+  ORM based on Knew
 - [Passport.js](https://www.passportjs.org)
    Authentication middleware
 - [passport-jwt](https://www.passportjs.org/packages/passport-jwt)
