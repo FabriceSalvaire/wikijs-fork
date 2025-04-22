@@ -1,0 +1,85 @@
+# Emacs CodeMirror Shortcuts
+
+- `Ctrl-Alt-W`: `killRegion`
+- `Ctrl-K`: `killLineEmacs`
+- `Alt-W`: `killRingSave`
+- `Ctrl-Y`: `yank`
+- `Alt-Y`: `yankPop`
+- `Ctrl-Space`: `setMark`
+- `Ctrl-Shift-2`: `setMark`
+- `Ctrl-F`: `forwardChar`
+- `Ctrl-B`: `backwardChar`
+- `Right`: `forwardChar`
+- `Left`: `backwardChar`
+- `Ctrl-D`: `deleteChar`
+- `Delete`: `deleteForwardChar`
+- `Ctrl-H`: `deleteBackwardChar`
+- `Backspace`: `deleteBackwardChar`
+- `Alt-F`: `forwardWord`
+- `Alt-B`: `backwardWord`
+- `Alt-Right`: `forwardWord`
+- `Alt-Left`: `backwardWord`
+- `Alt-D`: `killWord`
+- `Alt-Backspace`: `backwardKillWord`
+- `Ctrl-N`: `nextLine`
+- `Ctrl-P`: `previousLine`
+- `Down`: `nextLine`
+- `Up`: `previousLine`
+- `Ctrl-A`: `goLineStart`
+- `Ctrl-E`: `goLineEnd`
+- `End`: `goLineEnd`
+- `Home`: `goLineStart`
+- `Alt-V`: `scrollDownCommand`
+- `Ctrl-V`: `scrollUpCommand`
+- `PageUp`: `scrollDownCommand`
+- `PageDown`: `scrollUpCommand`
+- `Ctrl-Up`: `backwardParagraph`
+- `Ctrl-Down`: `forwardParagraph`
+- `Alt-{`: `backwardParagraph`
+- `Alt-}`: `forwardParagraph`
+- `Alt-A`: `backwardSentence`
+- `Alt-E`: `forwardSentence`
+- `Alt-K`: `killSentence`
+- `Ctrl-X Delete`: `backwardKillSentence`
+- `Ctrl-Alt-K`: `killSexp`
+- `Ctrl-Alt-Backspace`: `backwardKillSexp`
+- `Ctrl-Alt-F`: `forwardSexp`
+- `Ctrl-Alt-B`: `backwardSexp`
+- `Shift-Ctrl-Alt-2`: `markSexp`
+- `Ctrl-Alt-T`: `transposeSexps`
+- `Ctrl-Alt-U`: `backwardUpList`
+- `Alt-Space`: `justOneSpace`
+- `Ctrl-O`: `openLine`
+- `Ctrl-T`: `transposeCharsRepeatable`
+- `Alt-C`: `capitalizeWord`
+- `Alt-U`: `upcaseWord`
+- `Alt-L`: `downcaseWord`
+- `Alt-;`: `toggleComment`
+- `Ctrl-/`: `undoRepeatable`
+- `Shift-Ctrl--`: `undoRepeatable`
+- `Ctrl-Z`: `undoRepeatable`
+- `Cmd-Z`: `undoRepeatable`
+- `Ctrl-X U`: `undoRepeatable`
+- `Shift-Ctrl-Z`: `redo`
+- `Shift-Alt-,`: `goDocStart`
+- `Shift-Alt-.`: `goDocEnd`
+- `Ctrl-S`: `findPersistentNext`
+- `Ctrl-R`: `findPersistentPrev`
+- `Ctrl-G`: `keyboardQuit`
+- `Shift-Alt-5`: `replace`
+- `Alt-/`: `autocomplete`
+- `Enter`: `newlineAndIndent`
+- `Ctrl-J`: `newline`
+- `Tab`: `indentAuto`
+- `Alt-G G`: `gotoLine`
+- `Ctrl-X Tab`: `indentRigidly`
+- `Ctrl-X Ctrl-X`: `exchangePointAndMark`
+- `Ctrl-X Ctrl-S`: `save`
+- `Ctrl-X Ctrl-W`: `save`
+- `Ctrl-X S`: `saveAll`
+- `Ctrl-X F`: `open`
+- `Ctrl-X K`: `close`
+- `Ctrl-X H`: `selectAll`
+- `Ctrl-Q Tab`: `quotedInsertTab`
+- `Ctrl-U`: `universalArgument`
+- `fallthrough`: `default`
