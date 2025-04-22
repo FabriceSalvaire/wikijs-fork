@@ -58,9 +58,9 @@ def sync_node_modules() -> None:
 # systemctl stop wikijs
 # systemctl start wikijs
 
-sync_node_modules()
+# sync_node_modules()
 sync('assets')
-sync('server')
+# sync('server')
 
 # to set dev = false
 #   cf. server/core/config.js
