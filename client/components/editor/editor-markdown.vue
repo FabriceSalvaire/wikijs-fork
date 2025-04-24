@@ -203,7 +203,8 @@ import CodeMirror from 'codemirror'
 import 'codemirror/lib/codemirror.css'
 
 // Keymap
-import 'codemirror/keymap/emacs.js'
+// import 'codemirror/keymap/emacs.js'
+import './common/emacs.js'
 
 // Language
 import 'codemirror/mode/markdown/markdown.js'
