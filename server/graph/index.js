@@ -14,11 +14,9 @@ const { createRateLimitTypeDef } = require('graphql-rate-limit-directive')
 WIKI.logger.info(`Loading GraphQL Schema...`)
 
 // Init Subscription PubSub
-
 WIKI.GQLEmitter = new PubSub()
 
 // Schemas
-
 let typeDefs = [createRateLimitTypeDef()]
 let schemas = fs.readdirSync(path.join(WIKI.SERVERPATH, 'graph/schemas'))
 schemas.forEach(schema => {
@@ -26,7 +24,6 @@ schemas.forEach(schema => {
 })
 
 // Resolvers
-
 let resolvers = {
   // Upload: GraphQLUpload
 }
@@ -36,13 +33,11 @@ resolversObj.forEach(resolver => {
 })
 
 // Directives
-
 let schemaDirectives = {
   ...autoload(path.join(WIKI.SERVERPATH, 'graph/directives'))
 }
 
 // Live Trail Logger (admin)
-
 class LiveTrailLogger extends Transport {
   constructor(opts) {
     super(opts)

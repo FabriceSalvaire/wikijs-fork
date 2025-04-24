@@ -7,9 +7,11 @@ module.exports = {
   Query: {
     async site() { return {} }
   },
+
   Mutation: {
     async site() { return {} }
   },
+
   SiteQuery: {
     async config(obj, args, context, info) {
       return {
@@ -38,6 +40,7 @@ module.exports = {
       }
     }
   },
+
   SiteMutation: {
     async updateConfig(obj, args, context) {
       try {

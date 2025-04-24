@@ -26,6 +26,7 @@ module.exports = {
 
     this.bootMaster()
   },
+
   /**
    * Pre-Master Boot Sequence
    */
@@ -47,6 +48,7 @@ module.exports = {
       process.exit(1)
     }
   },
+
   /**
    * Boot Master Process
    */
@@ -65,6 +67,7 @@ module.exports = {
       process.exit(1)
     }
   },
+
   /**
    * Post-Master Boot Sequence
    */
@@ -88,6 +91,7 @@ module.exports = {
 
     await WIKI.models.subscribeToNotifications()
   },
+
   /**
    * Init Telemetry
    */
@@ -103,6 +107,7 @@ module.exports = {
       WIKI.telemetry.sendError(err)
     })
   },
+
   /**
    * Graceful shutdown
    */

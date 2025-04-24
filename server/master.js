@@ -12,11 +12,11 @@ const _ = require('lodash')
 
 /* global WIKI */
 
+// imported by core/kernel.js:bootMaster
 module.exports = async () => {
   // ----------------------------------------
   // Load core modules
   // ----------------------------------------
-
   WIKI.auth = require('./core/auth').init()
   WIKI.lang = require('./core/localization').init()
   WIKI.mail = require('./core/mail').init()
@@ -25,14 +25,12 @@ module.exports = async () => {
   // ----------------------------------------
   // Load middlewares
   // ----------------------------------------
-
   const mw = autoload(path.join(WIKI.SERVERPATH, '/middlewares'))
   const ctrl = autoload(path.join(WIKI.SERVERPATH, '/controllers'))
 
   // ----------------------------------------
   // Define Express App
   // ----------------------------------------
-
   const app = express()
   WIKI.app = app
   app.use(compression())
@@ -40,7 +38,6 @@ module.exports = async () => {
   // ----------------------------------------
   // Security
   // ----------------------------------------
-
   app.use(mw.security)
   app.use(cors({ origin: false }))
   app.options('*', cors({ origin: false }))
@@ -51,7 +48,6 @@ module.exports = async () => {
   // ----------------------------------------
   // Public Assets
   // ----------------------------------------
-
   app.use(favicon(path.join(WIKI.ROOTPATH, 'assets', 'favicon.ico')))
   app.use('/_assets/svg/twemoji', async (req, res, next) => {
     try {
@@ -68,13 +64,11 @@ module.exports = async () => {
   // ----------------------------------------
   // SSL Handlers
   // ----------------------------------------
-
   app.use('/', ctrl.ssl)
 
   // ----------------------------------------
   // Passport Authentication
   // ----------------------------------------
-
   app.use(cookieParser())
   app.use(session({
     secret: WIKI.config.sessionSecret,
@@ -90,20 +84,17 @@ module.exports = async () => {
   // ----------------------------------------
   // GraphQL Server
   // ----------------------------------------
-
   app.use(bodyParser.json({ limit: WIKI.config.bodyParserLimit || '1mb' }))
   await WIKI.servers.startGraphQL()
 
   // ----------------------------------------
   // SEO
   // ----------------------------------------
-
   app.use(mw.seo)
 
   // ----------------------------------------
   // View Engine Setup
   // ----------------------------------------
-
   app.set('views', path.join(WIKI.SERVERPATH, 'views'))
   app.set('view engine', 'pug')
 
@@ -112,13 +103,11 @@ module.exports = async () => {
   // ----------------------------------------
   // Localization
   // ----------------------------------------
-
   WIKI.lang.attachMiddleware(app)
 
   // ----------------------------------------
   // View accessible data
   // ----------------------------------------
-
   app.locals.siteConfig = {}
   app.locals.analyticsCode = {}
   app.locals.basedir = WIKI.ROOTPATH
@@ -134,7 +123,6 @@ module.exports = async () => {
   // ----------------------------------------
   // HMR (Dev Mode Only)
   // ----------------------------------------
-
   if (global.DEV) {
     app.use(global.WP_DEV.devMiddleware)
     app.use(global.WP_DEV.hotMiddleware)
@@ -198,7 +186,6 @@ module.exports = async () => {
   // ----------------------------------------
   // Start HTTP Server(s)
   // ----------------------------------------
-
   await WIKI.servers.startHTTP()
 
   if (WIKI.config.ssl.enabled === true || WIKI.config.ssl.enabled === 'true' || WIKI.config.ssl.enabled === 1 || WIKI.config.ssl.enabled === '1') {

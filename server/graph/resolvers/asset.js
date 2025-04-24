@@ -6,13 +6,19 @@ const assetHelper = require('../../helpers/asset')
 /* global WIKI */
 
 module.exports = {
+  // --------------------------------------------------------------------------------
   Query: {
     async assets() { return {} }
   },
+
+  // --------------------------------------------------------------------------------
   Mutation: {
     async assets() { return {} }
   },
+
+  // --------------------------------------------------------------------------------
   AssetQuery: {
+    // -------------------------------------------------- 
     async list(obj, args, context) {
       let cond = {
         folderId: args.folderId === 0 ? null : args.folderId
@@ -31,6 +37,8 @@ module.exports = {
         kind: a.kind.toUpperCase()
       }))
     },
+
+    // -------------------------------------------------- 
     async folders(obj, args, context) {
       const results = await WIKI.models.assetFolders.query().where({
         parentId: args.parentFolderId === 0 ? null : args.parentFolderId
@@ -43,7 +51,10 @@ module.exports = {
       })
     }
   },
+
+  // --------------------------------------------------------------------------------
   AssetMutation: {
+    // -------------------------------------------------- 
     /**
      * Create New Asset Folder
      */
@@ -71,6 +82,8 @@ module.exports = {
         return graphHelper.generateError(err)
       }
     },
+
+    // -------------------------------------------------- 
     /**
      * Rename an Asset
      */
@@ -150,6 +163,8 @@ module.exports = {
         return graphHelper.generateError(err)
       }
     },
+
+    // -------------------------------------------------- 
     /**
      * Delete an Asset
      */
@@ -189,6 +204,8 @@ module.exports = {
         return graphHelper.generateError(err)
       }
     },
+
+    // -------------------------------------------------- 
     /**
      * Flush Temporary Uploads
      */
@@ -203,6 +220,8 @@ module.exports = {
       }
     }
   }
+
+  // --------------------------------------------------------------------------------
   // File: {
   //   folder(fl) {
   //     return fl.getFolder()

@@ -3,6 +3,10 @@
 // Licensed under AGPLv3
 // ===========================================
 
+// ----------------------------------------
+// Wikijs.js Server Main for Node.js
+// ----------------------------------------
+
 const path = require('path')
 const { nanoid } = require('nanoid')
 const { DateTime } = require('luxon')
@@ -13,6 +17,7 @@ const { gte } = require('semver')
 // ----------------------------------------
 
 let WIKI = {
+  // Fixme: coding convention SERVER_PATH
   IS_DEBUG: process.env.NODE_ENV === 'development',
   IS_MASTER: true,
   ROOTPATH: process.cwd(),
@@ -30,19 +35,16 @@ WIKI.configSvc.init()
 // ----------------------------------------
 // Init Logger
 // ----------------------------------------
-
 WIKI.logger = require('./core/logger').init('MASTER')
 
 // ----------------------------------------
 // Start Kernel
 // ----------------------------------------
-
 WIKI.kernel.init()
 
 // ----------------------------------------
 // Register exit handler
 // ----------------------------------------
-
 process.on('SIGTERM', () => {
   WIKI.kernel.shutdown()
 })

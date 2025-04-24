@@ -15,6 +15,7 @@ module.exports = {
   },
   connections: new Map(),
   le: null,
+
   /**
    * Start HTTP Server
    */
@@ -53,6 +54,7 @@ module.exports = {
       })
     })
   },
+
   /**
    * Start HTTPS Server
    */
@@ -115,6 +117,7 @@ module.exports = {
       })
     })
   },
+
   /**
    * Start GraphQL Server
    */
@@ -132,6 +135,7 @@ module.exports = {
     })
     this.servers.graph.applyMiddleware({ app: WIKI.app, cors: false })
   },
+
   /**
    * Close all active connections
    */
@@ -147,6 +151,7 @@ module.exports = {
       this.connections.clear()
     }
   },
+
   /**
    * Stop all servers
    */
@@ -162,6 +167,7 @@ module.exports = {
     }
     this.servers.graph = null
   },
+
   /**
    * Restart Server
    */

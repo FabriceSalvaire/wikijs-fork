@@ -14,6 +14,7 @@ const semver = require('semver')
 
 /* global WIKI */
 
+// imported by core/kernel.js:bootMaster
 module.exports = () => {
   WIKI.config.site = {
     path: '',
@@ -25,14 +26,12 @@ module.exports = () => {
   // ----------------------------------------
   // Define Express App
   // ----------------------------------------
-
   let app = express()
   app.use(compression())
 
   // ----------------------------------------
   // Public Assets
   // ----------------------------------------
-
   app.use(favicon(path.join(WIKI.ROOTPATH, 'assets', 'favicon.ico')))
   app.use('/_assets', express.static(path.join(WIKI.ROOTPATH, 'assets')))
 
@@ -54,7 +53,6 @@ module.exports = () => {
   // ----------------------------------------
   // HMR (Dev Mode Only)
   // ----------------------------------------
-
   if (global.DEV) {
     app.use(global.WP_DEV.devMiddleware)
     app.use(global.WP_DEV.hotMiddleware)
@@ -63,7 +61,6 @@ module.exports = () => {
   // ----------------------------------------
   // Controllers
   // ----------------------------------------
-
   app.get('*', async (req, res) => {
     let packageObj = await fs.readJson(path.join(WIKI.ROOTPATH, 'package.json'))
     res.render('setup', { packageObj })
@@ -234,7 +231,6 @@ module.exports = () => {
       })
 
       // Create default groups
-
       WIKI.logger.info('Creating default groups...')
       const adminGroup = await WIKI.models.groups.query().insert({
         name: 'Administrators',
@@ -321,7 +317,6 @@ module.exports = () => {
       }
 
       // Create site nav
-
       WIKI.logger.info('Creating default site navigation')
       await WIKI.models.navigation.query().insert({
         key: 'site',
