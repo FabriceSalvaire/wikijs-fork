@@ -52,18 +52,24 @@ module.exports = class Tag extends Model {
 
   // Update tags for a page
   static async associateTags ({ tags, page }) {
-    let existingTags = await WIKI.models.tags.query().column('id', 'tag')
-
     // Format tags
     tags = _.uniq(tags.map(t => _.trim(t).toLowerCase()))
 
-    // Create missing tags
+    // Fetch tags from db
+    // Fixme: could be large
+    let existingTags = await WIKI.models.tags.query().column('id', 'tag')
 
+    // Create missing tags
+    // Fixme: unreadable, efficient ???
+    //  https://lodash.com/docs/4.17.15#differenceBy
+    //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+    //  newTags = tags - existingTags
     const newTags = _.filter(tags, t => !_.some(existingTags, ['tag', t])).map(t => ({
       tag: t,
       title: t
     }))
-    if (newTags.length > 0) {
+    // Fixme: > 0 is useless
+   if (newTags.length > 0) {
       if (WIKI.config.db.type === 'postgres') {
         const createdTags = await WIKI.models.tags.query().insert(newTags)
         existingTags = _.concat(existingTags, createdTags)
@@ -75,8 +81,7 @@ module.exports = class Tag extends Model {
       }
     }
 
-    // Fetch current page tags
-
+    // Compute intersection of existingTags with tags
     const targetTags = _.filter(existingTags, t => _.includes(tags, t.tag))
 
     // Fetch current page tags
