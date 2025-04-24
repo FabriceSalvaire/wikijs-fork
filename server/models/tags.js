@@ -50,11 +50,11 @@ module.exports = class Tag extends Model {
     this.updatedAt = new Date().toISOString()
   }
 
+  // Update tags for a page
   static async associateTags ({ tags, page }) {
     let existingTags = await WIKI.models.tags.query().column('id', 'tag')
 
     // Format tags
-
     tags = _.uniq(tags.map(t => _.trim(t).toLowerCase()))
 
     // Create missing tags
@@ -78,10 +78,11 @@ module.exports = class Tag extends Model {
     // Fetch current page tags
 
     const targetTags = _.filter(existingTags, t => _.includes(tags, t.tag))
+
+    // Fetch current page tags
     const currentTags = await page.$relatedQuery('tags')
 
     // Tags to relate
-
     const tagsToRelate = _.differenceBy(targetTags, currentTags, 'id')
     if (tagsToRelate.length > 0) {
       if (WIKI.config.db.type === 'postgres') {
@@ -94,7 +95,6 @@ module.exports = class Tag extends Model {
     }
 
     // Tags to unrelate
-
     const tagsToUnrelate = _.differenceBy(currentTags, targetTags, 'id')
     if (tagsToUnrelate.length > 0) {
       await page.$relatedQuery('tags').unrelate().whereIn('tags.id', _.map(tagsToUnrelate, 'id'))
