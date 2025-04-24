@@ -1,14 +1,15 @@
+const compression = require('compression')
+const path = require('path')
+const _ = require('lodash')
+
 const autoload = require('auto-load')
 const bodyParser = require('body-parser')
-const compression = require('compression')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const express = require('express')
 const session = require('express-session')
 const KnexSessionStore = require('connect-session-knex')(session)
 const favicon = require('serve-favicon')
-const path = require('path')
-const _ = require('lodash')
 
 /* global WIKI */
 
@@ -188,7 +189,12 @@ module.exports = async () => {
   // ----------------------------------------
   await WIKI.servers.startHTTP()
 
-  if (WIKI.config.ssl.enabled === true || WIKI.config.ssl.enabled === 'true' || WIKI.config.ssl.enabled === 1 || WIKI.config.ssl.enabled === '1') {
+  if (
+    WIKI.config.ssl.enabled === true ||
+    WIKI.config.ssl.enabled === 'true' ||
+    WIKI.config.ssl.enabled === 1 ||
+    WIKI.config.ssl.enabled === '1'
+  ) {
     await WIKI.servers.startHTTPS()
   }
 

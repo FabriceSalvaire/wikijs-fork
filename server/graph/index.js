@@ -1,12 +1,13 @@
 const _ = require('lodash')
 const fs = require('fs')
-// const gqlTools = require('graphql-tools')
 const path = require('path')
 const autoload = require('auto-load')
 const PubSub = require('graphql-subscriptions').PubSub
-const { LEVEL, MESSAGE } = require('triple-beam')
-const Transport = require('winston-transport')
 const { createRateLimitTypeDef } = require('graphql-rate-limit-directive')
+const Transport = require('winston-transport')
+const { LEVEL, MESSAGE } = require('triple-beam')
+
+// const gqlTools = require('graphql-tools')
 // const { GraphQLUpload } = require('graphql-upload')
 
 /* global WIKI */

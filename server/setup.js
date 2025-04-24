@@ -1,14 +1,16 @@
+const compression = require('compression')
+const fs = require('fs-extra')
+const http = require('http')
 const path = require('path')
 const { v4: uuid } = require('uuid')
+const _ = require('lodash')
+
+const Promise = require('bluebird')
+const crypto = Promise.promisifyAll(require('crypto'))
+
 const bodyParser = require('body-parser')
-const compression = require('compression')
 const express = require('express')
 const favicon = require('serve-favicon')
-const http = require('http')
-const Promise = require('bluebird')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const crypto = Promise.promisifyAll(require('crypto'))
 const pem2jwk = require('pem-jwk').pem2jwk
 const semver = require('semver')
 

@@ -1,6 +1,6 @@
+const _ = require('lodash')
 const { SchemaDirectiveVisitor } = require('graphql-tools')
 const { defaultFieldResolver } = require('graphql')
-const _ = require('lodash')
 
 class AuthDirective extends SchemaDirectiveVisitor {
   visitObject(type) {
