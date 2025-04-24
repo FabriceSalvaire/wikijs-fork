@@ -13,6 +13,20 @@ Actually, Wiki.js V3 is a work in progress and a personal project of [Nicolas Gi
 > [!NOTE]
 > This repository contains custom modifications, so the Git log does not necessary contains clean commits.
 
+# Wikijs Comparison to other Wikis
+
+**Outline**
+- It seems it does not feature a raw Markdown editor.
+- It requires a Redis or Valkey server.
+- It requires Node.js version 20.
+- I features a REST API instead of GaphQL.
+- I have to fight hard to build it from source on Fedora 41 (e.g. fix some package versions).
+- It took me a while to understand why I could not connect to the Node server due to IPV6, then due to an error 301 for HTTPS... (where is `.env` documentation ???)  WSGI works so well with a proxy line Nginx...
+- Logging is horrible and breaks the TTY console.
+- Then I got a page but was unable to login and verify my admin account... continue with Slack ? WTF is that ???
+- Conclusion, it was the worst experience with such application, the documentation is very minimalist, and it seems to be only tested on D ocker.  Maybe it is intentional, it has a Github repository but no more...
+- Good point ? It uses React framework.
+
 # Changelog vs V2
 
 ## Package Upgrades
