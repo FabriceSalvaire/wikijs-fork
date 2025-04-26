@@ -14,7 +14,7 @@ if colorama:
 
 ####################################################################################################
 
-def printc(text: str) -> None:
+def strc(text: str) -> None:
     raw = ''
     start = 0
     color_stack = []
@@ -39,7 +39,10 @@ def printc(text: str) -> None:
                 if colorama:
                     raw += getattr(Fore, color.upper())
             start = j + 1
-    print(raw)
+    return raw
+
+def printc(text: str) -> None:
+    print(strc(text))
 
 ####################################################################################################
 

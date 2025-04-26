@@ -18,6 +18,7 @@ import json
 from invoke import task
 
 from .helper import printc
+from .yarn import PackageJson, YarnLock, NODE_LIBS
 import build
 
 ####################################################################################################
@@ -186,34 +187,25 @@ def explore_dependencies(ctx):
     # imports = json.loads(imports_json_file.read_text())
 
     package_json_file = SOURCE_PATH.joinpath('package.json')
-    package_json = json.loads(package_json_file.read_text())
-    dependencies = package_json['dependencies']
-    dev_dependencies = package_json['devDependencies']
+    package_json = PackageJson(package_json_file)
+    dependencies = package_json.dependencies
+    dev_dependencies = package_json.dev_dependencies
+    all_dependencies = package_json.all_dependencies
+
+    node_modules_path = SOURCE_PATH.joinpath('node_modules')
+    # node_modules = [_.name for _ in node_modules_path.iterdir()]
 
     external_imports = imports['external']
     print()
-    def check_dependencies(type_, dependencies):
+
+    def check_dependencies(type_: str, dependencies: dict) -> None:
         printc(f'<blue>{type_}Dependency not imported:</blue>')
         for dependency in sorted(dependencies):
             if dependency not in external_imports:
                 print(' '*2 + dependency)
+
     check_dependencies('', dependencies)
     # check_dependencies('dev', dev_dependencies)
-
-    node_modules_path = SOURCE_PATH.joinpath('node_modules')
-    # node_modules = [_.name for _ in node_modules_path.iterdir()]
-    NODE_LIBS = (
-        'crypto',
-        'fs',
-        'http',
-        'https',
-        'os',
-        'path',
-        'stream',
-        'url',
-        'util',
-        'zlib',
-    )
 
     print()
     printc('<blue>Import not found:</blue>')
@@ -249,11 +241,11 @@ def explore_dependencies(ctx):
     def find_depency(_):
         type_ = ''
         version = '???'
-        if _ in dependencies:
-            version = dependencies[_]
-        elif _ in dev_dependencies:
-            type_ = 'dev'
-            version = dev_dependencies[_]
+        if _ in all_dependencies:
+            dependency = all_dependencies[_]
+            version = dependency.version
+            if dependency.is_dev:
+                type_ = 'dev' 
         return type_, version
 
     for key, values in map.items():
@@ -344,3 +336,20 @@ def dump_file_tree(ctx) -> None:
                 if suffix in ('.js', '.vue'):
                     print(indentation + INDENT + _)
     print(sorted(suffixes))
+
+####################################################################################################
+
+@task
+def read_yarn(ctx) -> None:
+    printc('<cyan>Package.json</cyan>')
+    package_json_file = SOURCE_PATH.joinpath('package.json')
+    package_json = PackageJson(package_json_file)
+    for _ in package_json.all_dependencies.values():
+        print(_)
+
+    print()
+    printc('<cyan>Yarn Lock</cyan>')
+    yarn_lock_file = SOURCE_PATH.joinpath('yarn.lock')
+    yarn_lock = YarnLock(yarn_lock_file, package_json)
+    for _ in yarn_lock.dependencies.values():
+        print(str(_))
