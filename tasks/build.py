@@ -21,8 +21,8 @@ from invoke import task
 NODE = '/usr/bin/node'
 NPX = '/usr/bin/npx'
 
-WIKIJS_DIR = Path(__file__).parents[1]
-NODE_MODULES = WIKIJS_DIR.joinpath('node_modules')
+SOURCE_PATH = Path(__file__).parents[1]
+NODE_MODULES = SOURCE_PATH.joinpath('node_modules')
 
 ####################################################################################################
 
@@ -41,6 +41,9 @@ def dev(ctx):
 
 def symlink_node_module(target: Path | str) -> None:
     if NODE_MODULES.exists():
+        if str(NODE_MODULES.readlink()) == str(target):
+            print(f"node_modules -> {target} is already set")
+            return
         if NODE_MODULES.is_symlink():
             # Security Note: unlink does not delete directory
             NODE_MODULES.unlink(missing_ok=True)
@@ -62,26 +65,18 @@ def symlink_prod(ctx):
 
 @task(pre=[symlink_dev], post=[])
 def build(ctx):
-    # sh: line 1: webpack: command not found
-    # cmd = ('webpack', '--profile', '--config', 'dev/webpack/webpack.prod.js')
-    # cmd = ' '.join(cmd)
-    # cmd = (NPX, '-c', ...)
-    # cmd = f"{NPX} -c '{cmd}'"
     cmd = (
         NODE,
         str(NODE_MODULES.joinpath('webpack/bin/webpack.js')),
+        '--color=true',   # to force color else it detects a pipe instead of tty
         '--profile',
-        '--color=true',
         '--config',
         'dev/webpack/webpack.prod.js',
     )
     print(' '.join(cmd))
     subprocess.run(
         cmd,
-        # ' '.join(cmd),
-        # shell=True,
         env={
             'NODE_OPTIONS': '--openssl-legacy-provider',
         },
-        # cwd=WIKIJS_DIR,
     )
