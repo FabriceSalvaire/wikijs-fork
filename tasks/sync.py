@@ -5,17 +5,19 @@ import subprocess
 
 from invoke import task
 
+from .helper import join_cmd
+
 ####################################################################################################
 
-WIKIJS_DIR = Path(__file__).parents[1]
-NODE_MODULES = WIKIJS_DIR.joinpath('node_modules')
+SOURCE_PATH = Path(__file__).parents[1]
+NODE_MODULES = SOURCE_PATH.joinpath('node_modules')
 
 RULE = '-'*50
 
 ####################################################################################################
 
 def run_command(cmd: list[str]) -> None:
-    print(' '.join(cmd))
+    print(join_cmd(cmd))
     subprocess.run(cmd, shell=False, check=True)
 
 ####################################################################################################
@@ -45,7 +47,7 @@ def rsync(ctx, src: str, dst: str = '', dry_run: bool = False) -> None:
     HOST = config.host
     DEST = config.dest
 
-    cmd = [RSYNC, '-av', '--delete', '--delete-before']w
+    cmd = [RSYNC, '-av', '--delete', '--delete-before']
     if dry_run:
         cmd.append('--dry-run')
     cmd.append(src)
@@ -71,7 +73,9 @@ def sync_node_modules(ctx) -> None:
     print()
     print(RULE)
     print("Sync node_modules")
-    rsync(ctx, NODE_MODULES + '/', 'node_modules/')
+    # src = NODE_MODULES + '/'
+    src = ctx.config.node_modules.prod + '/'
+    rsync(ctx, src, 'node_modules/')
 
 ####################################################################################################
 
@@ -85,11 +89,11 @@ def post(ctx):
 
 ####################################################################################################
 
-@task
+@task(pre=[pre], post=[post])
 def sync(ctx):
     # sync_node_modules(ctx)
     sync_source(ctx, 'assets')
-    # sync_source(ctx, 'server')
+    sync_source(ctx, 'server')
     # to set dev = false
     #   cf. server/core/config.js
     #     const packageInfo = require(path.join(WIKI.ROOTPATH, 'package.json'))

@@ -5,14 +5,18 @@ import time
 from pathlib import Path
 from pprint import pprint
 
-from github import Github
+try:
+    from github import Github
+    import requests
+except ImportError:
+    pass
 
-import requests
+from invoke import task
 
 ####################################################################################################
 
-ROOT_SOURCE = Path(__file__).parents[1]
-PR_DIR = ROOT_SOURCE.joinpath('pr')
+SOURCE_PATH = Path(__file__).parents[1]
+PR_DIR = SOURCE_PATH.joinpath('pr')
 PULLS_JSON_FILE = PR_DIR.joinpath('pulls.json')
 
 ####################################################################################################
@@ -74,7 +78,15 @@ def cleanup_pulls(data: dict) -> None:
 
 ####################################################################################################
 
-def dump_pull_request(repo, dump_json: bool = True) -> None:
+def origin():
+    return github_login('requarks/wiki')
+
+####################################################################################################
+
+@task
+def dump_pull_request(ctx, dump_json: bool = True) -> None:
+    repo = origin()
+
     pulls_json = {}
 
     pulls = repo.get_pulls(state='open', sort='created', base='main')
@@ -108,11 +120,6 @@ def dump_pull_request(repo, dump_json: bool = True) -> None:
             )
 
 ####################################################################################################
-
-
-REPOSITORY_NAME = 'requarks/wiki'
-repo = github_login(REPOSITORY_NAME)
-dump_pull_request(repo, dump_json=False)
 
 # issues = repo.get_issues()
 # for _ in issues:
