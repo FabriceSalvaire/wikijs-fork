@@ -18,12 +18,13 @@ import json
 from invoke import task
 
 from .helper import printc
-from .yarn import PackageJson, YarnLock, NODE_LIBS
+from .yarn import NODE_LIBS, PackageJson, YarnLock, NodeModules
 import build
 
 ####################################################################################################
 
 SOURCE_PATH = Path(__file__).parents[1]
+NODE_MODULES_PATH = SOURCE_PATH.joinpath('node_modules')
 
 ####################################################################################################
 
@@ -192,8 +193,7 @@ def explore_dependencies(ctx):
     dev_dependencies = package_json.dev_dependencies
     all_dependencies = package_json.all_dependencies
 
-    node_modules_path = SOURCE_PATH.joinpath('node_modules')
-    # node_modules = [_.name for _ in node_modules_path.iterdir()]
+    # node_modules = [_.name for _ in NODE_MODULES_PATH.iterdir()]
 
     external_imports = imports['external']
     print()
@@ -213,7 +213,7 @@ def explore_dependencies(ctx):
     for dependency in external_imports_keys:
         files = external_imports[dependency]
         # files.sort()
-        if dependency not in NODE_LIBS and not node_modules_path.joinpath(dependency).exists():
+        if dependency not in NODE_LIBS and not NODE_MODULES_PATH.joinpath(dependency).exists():
             printc(' '*2 + f'<green>{dependency}</green>')
             for _ in sorted(files):
                 print(' '*6 + _)
@@ -222,7 +222,7 @@ def explore_dependencies(ctx):
     printc('<blue>Packages:</blue>')
     for dependency in external_imports_keys:
         files = external_imports[dependency]
-        if dependency not in NODE_LIBS and node_modules_path.joinpath(dependency).exists():
+        if dependency not in NODE_LIBS and NODE_MODULES_PATH.joinpath(dependency).exists():
             printc(' '*2 + f'<green>{dependency}</green>')
             for _ in sorted(files):
                 print(' '*6 + _)
@@ -234,7 +234,7 @@ def explore_dependencies(ctx):
         'client': [],
     }
     for dependency, files in external_imports.items():
-        if dependency not in NODE_LIBS and node_modules_path.joinpath(dependency).exists():
+        if dependency not in NODE_LIBS and NODE_MODULES_PATH.joinpath(dependency).exists():
             for _ in set([Path(_).parts[0] for _ in files]):
                 map[_].append(dependency)
 
@@ -351,5 +351,11 @@ def read_yarn(ctx) -> None:
     printc('<cyan>Yarn Lock</cyan>')
     yarn_lock_file = SOURCE_PATH.joinpath('yarn.lock')
     yarn_lock = YarnLock(yarn_lock_file, package_json)
-    for _ in yarn_lock.dependencies.values():
-        print(str(_))
+    for i, _ in enumerate(yarn_lock.dependencies.values()):
+        print(f'{i+1:4}', str(_))
+
+####################################################################################################
+
+@task
+def scan_node_modules(ctx) -> None:
+    node_modules = NodeModules(NODE_MODULES_PATH)

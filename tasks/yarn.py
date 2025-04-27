@@ -56,12 +56,15 @@ class PackageJson:
 
     def __init__(self, path: Path | str) -> None:
         path = Path(path)
-        package_json = json.loads(path.read_text())
+        data = json.loads(path.read_text())
+
+        for _ in ('name', 'version'):
+            setattr(self, _, data[_])
 
         def build_map(key: str, is_dev: bool) -> dict:
             return {
                 name: Dependency(name, version, is_dev)
-                for name, version in package_json[key].items()
+                for name, version in data[key].items()
             }
 
         self.dependencies = build_map('dependencies', False)
@@ -86,6 +89,8 @@ class PackageJson:
 
 class YarnLock:
 
+    """Yarn Lock Parser"""
+
     ##############################################
 
     def __init__(self, path: Path | str, package_json: PackageJson) -> None:
@@ -95,6 +100,7 @@ class YarnLock:
         def split_name_version(text: str):
             if text.startswith('"'):
                 text = text[1:-1]
+            # name can start with @
             i = text.rfind('@')
             if i == -1:
                 raise ValueError(text)
@@ -102,17 +108,17 @@ class YarnLock:
             version = text[i+1:]
             return name, version
 
-        dependency = None
+        dependencies = []
         for line in path.read_text().splitlines():
             line = line.rstrip()
             # print(line)
             if not line:
-                dependency = None
+                dependencies = []
             elif line.startswith('#'):
                 continue
             elif not line.startswith(' '):
                 # Start a dependency
-                if dependency is not None:
+                if dependencies:
                     raise ValueError(line)
                 line = line[:-1]   # remove trailing :
                 if ',' in line:
@@ -121,26 +127,60 @@ class YarnLock:
                     versions = [_[1] for _ in parts]
                 else:
                     name, version = split_name_version(line)
-                    versions = [version] 
+                    versions = [version]
                 is_dev = name in package_json.dev_dependencies
-                dependency = Dependency(name, version, is_dev)
-                dependency.indirect = not(is_dev or name in package_json.dependencies)
+                indirect = not (is_dev or name in package_json.dependencies)
                 for version in versions:
+                    # print(name, version, is_dev, indirect)
+                    dependency = Dependency(name, version, is_dev)
+                    dependency.indirect = indirect
                     self.dependencies[f'{name}@{version}'] = dependency
+                    dependencies.append(dependency)
             else:
                 line = line.strip()
                 if line.startswith('version'):
                     version = line.split('"')[1]
-                    dependency.lock_version = version
+                    for _ in dependencies:
+                        _.lock_version = version
                     # if dependency.version != version:
                     #     raise ValueError(f"{dependency.name} {dependency.version} != {version}")
                 elif line.startswith('resolved'):
-                    dependency.resolved = line.split('"')[1]
+                    for _ in dependencies:
+                        _.resolved = line.split('"')[1]
                 elif line.startswith('integrity'):
-                    dependency.integrity = line.split(' ')[1]
+                    for _ in dependencies:
+                        _.integrity = line.split(' ')[1]
                 elif line.startswith('"'):
                     _ = line.split('"')
                     name = _[1]
                     version = _[3]
-                    dependency.dependencies[name] = version
+                    for _ in dependencies:
+                        _.dependencies[name] = version
                 # else 'dependencies:'
+
+####################################################################################################
+
+class NodeModules:
+
+    ##############################################
+
+    def __init__(self, path: Path | str) -> None:
+        self.path = Path(path)
+        self.walk()
+
+    ##############################################
+
+    def walk(self) -> None:
+        for root, dirs, files in self.path.walk():
+            root = Path(root)
+            if root.name == 'node_modules':
+                for _ in dirs:
+                    if _ not in ('.bin'):
+                        path = (root / _).relative_to(self.path)
+                        _ = str(path).replace('/node_modules/', ' > ')
+                        print(_)
+
+            # for _ in dirs:
+            #     if _ == 'node_modules':
+            #         path = (root / _).relative_to(self.path)
+            #         print(path)
