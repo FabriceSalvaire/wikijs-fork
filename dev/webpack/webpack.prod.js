@@ -268,7 +268,8 @@ module.exports = {
       // Duplicates fixes:
       'apollo-link': path.join(process.cwd(), 'node_modules/apollo-link'),
       'apollo-utilities': path.join(process.cwd(), 'node_modules/apollo-utilities'),
-      'uc.micro': path.join(process.cwd(), 'node_modules/uc.micro'),
+      // 'uc.micro': path.join(process.cwd(), 'node_modules/uc.micro'),
+      'uc.micro': path.join(process.cwd(), 'node_modules/.pnpm/node_modules/uc.micro'),
       'modernizr$': path.resolve(process.cwd(), 'client/.modernizrrc.js')
     },
     extensions: [
@@ -278,7 +279,7 @@ module.exports = {
     ],
     modules: [
       'node_modules'
-    ]
+    ],
   },
   node: {
     fs: 'empty'

@@ -34,3 +34,21 @@ source /home/.../.bashrc
 ```
 ERR_PNPM_INVALID_SELECTOR  Cannot parse the "apollo-server-express/**/graphql-tools" selector
 ```
+
+# Fixes for pnpm
+
+```
+ERROR in ./node_modules/.pnpm/markdown-it@11.0.1/node_modules/markdown-it/lib/common/utils.js
+Module not found: Error: Can't resolve 'uc.micro' in '/home/fabrice/home/developpement/wikijs/node_modules/.pnpm/markdown-it@11.0.1/node_modules/markdown-it/lib/common'
+@ ./node_modules/.pnpm/markdown-it@11.0.1/node_modules/markdown-it/lib/common/utils.js 300:30-49
+...
+```
+
+```
+./node_modules/.pnpm/markdown-it@11.0.1/node_modules/markdown-it/lib/common/utils.js   @300
+
+exports.lib.ucmicro = require('uc.micro');
+
+./node_modules/.pnpm/markdown-it@11.0.1/node_modules
+  uc.micro -> ../../uc.micro@1.0.6/node_modules/uc.micro
+```
