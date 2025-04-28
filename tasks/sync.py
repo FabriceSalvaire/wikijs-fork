@@ -5,7 +5,7 @@ import subprocess
 
 from invoke import task
 
-from .helper import join_cmd
+from .lib.helper import join_cmd
 
 ####################################################################################################
 

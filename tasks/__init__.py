@@ -13,8 +13,8 @@ from . import build
 from . import clean
 from . import explore
 from . import gh
-from . import package
 from . import sync
+from . import yarn
 
 modules = [obj for name, obj in globals().items() if isinstance(obj, ModuleType)]
 ns = Collection()

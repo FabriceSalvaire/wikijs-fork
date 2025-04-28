@@ -17,8 +17,8 @@ import json
 
 from invoke import task
 
-from .helper import printc
-from .yarn import NODE_LIBS, PackageJson, YarnLock, NodeModules
+from .lib.helper import printc
+from .lib.node import NODE_LIBS, PackageJson, YarnLock, NodeModules
 import build
 
 ####################################################################################################
@@ -306,7 +306,7 @@ def lookup_mdi(ctx):
                     name = name[len(MDI):]
                     icon_names.add(name)
 
-    from mdi import MDI_CHANGES
+    from .lib.mdi import MDI_CHANGES
     # pprint(MDI_CHANGES)
     print('To be fixed:')
     for _ in sorted(icon_names):
