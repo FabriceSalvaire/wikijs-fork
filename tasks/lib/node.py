@@ -162,6 +162,8 @@ class YarnLock:
 
 class NodeModules:
 
+    """Class to scan node_modules"""
+
     ##############################################
 
     def __init__(self, path: Path | str) -> None:
