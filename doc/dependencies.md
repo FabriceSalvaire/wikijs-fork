@@ -1,16 +1,25 @@
 # Dependencies Links
 
+## Build
+
+- [package.json | npm Docs](https://docs.npmjs.com/cli/v11/configuring-npm/package-json)
+- [pnpm](https://pnpm.io)
 - [Babel](https://babeljs.io)
   compile ECMAScript 2015+
 - [Yarn](https://yarnpkg.com)
 
   [CLI](https://classic.yarnpkg.com/en/docs/cli)
-</br>
+- [patch-package @npm](https://www.npmjs.com/package/patch-package)
+  patch-package lets app authors instantly make and keep fixes to npm dependencies. It's a vital band-aid for those of us living on the bleeding edge.
+- [postinstall-postinstall @npm](https://www.npmjs.com/package/postinstall-postinstall)
+  Run your app's postinstall npm script during this package's postinstall script.
+
+# ...
 
 - [acme](https://git.rootprojects.org/root/acme.js.git)
    Library for getting Free SSL certifications through Let's Encrypt v2, using ACME (RFC 8555)
 
-  [acme - npm](https://www.npmjs.com/package/acme)
+  [acme @npm](https://www.npmjs.com/package/acme)
 - [Apollo GraphQL](https://www.apollographql.com/)
 - [apollo-server-express](https://www.npmjs.com/package/apollo-server-express)
   Express integration of Apollo Server
@@ -31,17 +40,13 @@
 - [draw.io](https://www.drawio.com) Diagram
 - [EventEmitter2](https://github.com/EventEmitter2/EventEmitter2)
   Eevent emitter implementation with namespaces, wildcards, TTL, works in the browser
-- [Express](https://expressjs.com)
-  Web framework
-- [fs-extra](https://github.com/jprichardson/node-fs-extra)
-  Adds file system methods that aren't included in the native fs module and adds promise support to the fs method
-- [graphql - npm](https://www.npmjs.com/package/graphql)
+- [graphql @npm](https://www.npmjs.com/package/graphql)
   JavaScript reference implementation for GraphQL
-- [graphql-rate-limit-directive - npm](https://www.npmjs.com/package/graphql-rate-limit-directive)
+- [graphql-rate-limit-directive @npm](https://www.npmjs.com/package/graphql-rate-limit-directive)
   Fixed window rate limiting directive for GraphQL. Used to limit repeated requests to queries and mutations.
-- [graphql-subscriptions - npm](https://www.npmjs.com/package/graphql-subscriptions)
+- [graphql-subscriptions @npm](https://www.npmjs.com/package/graphql-subscriptions)
   Implement pubsub subscriptions in GraphQL
-- [graphql-tool - npm](https://www.npmjs.com/package/graphql-tool)
+- [graphql-tool @npm](https://www.npmjs.com/package/graphql-tool)
 - [Hammer.JS](https://hammerjs.github.io/)
   Gesture made by touch, mouse and pointerEvents
 - [js-cookie](https://github.com/js-cookie/js-cookie)
@@ -59,13 +64,11 @@
 - [MDI — Material Design Icons](https://github.com/Templarian/MaterialDesign-JS)
 - [Mermaid](https://mermaid.js.org)
   Diagramming and charting tool
-- [Moment.js](https://momentjs.com)
-
-  [Moment Timezone](https://momentjs.com/timezone)
-  Date
 - [ms](https://github.com/vercel/ms)
   Millisecond conversion utility
-- [nodemailer](https://github.com/nodemailer/nodemailer)
+- [Nodemailer](https://nodemailer.com)
+  [nodemailer @gh](https://github.com/nodemailer/nodemailer)
+  [nodemailer @npm](https://www.npmjs.com/package/nodemailer)
   Send email
 - [Objection.js](https://vincit.github.io/objection.js)
   ORM based on Knew
@@ -79,17 +82,87 @@
   Syntax highlighter
 - [Pug](https://pugjs.org/api/getting-started.html)
   Template engine
-- [@root/keypairs - npm](https://www.npmjs.com/package/@root/keypairs)
-  RSA and ECDSA utils
+
   [Pug HTML Template Engine: A Beginner's Guide — SitePoint](https://www.sitepoint.com/a-beginners-guide-to-pug/)
+
+## Server
+
+- **apollo-server**
+  [apollo-server-core @npm](https://www.npmjs.com/package/apollo-server-core/v/2.25.2)
+  [@apollo/server @npm](https://www.npmjs.com/package/@apollo/server)
+- [clean-css @npm](https://www.npmjs.com/package/clean-css)
+  CSS optimizer
+- [compression @npm](https://www.npmjs.com/package/compression)
+- [emoji-regex @npm](https://www.npmjs.com/package/emoji-regex)
+  egular expression to match all emoji symbols and sequences (including textual representations of emoji) as per the Unicode Standard
+- [Express](https://expressjs.com)
+  Web framework
+
+  [Express changelog](https://expressjs.com/en/changelog)
+  4.18.2
+- [express-session @npm](https://www.npmjs.com/package/express-session)
+  [expressjs/session @gh](https://github.com/expressjs/session)
+  session middleware for Express
+- [fs-extra](https://github.com/jprichardson/node-fs-extra)
+  Adds file system methods that aren't included in the native fs module and adds promise support to the fs method
+- [markdown-it-external-links @npm](https://www.npmjs.com/package/markdown-it-external-links)
+  Plugin for markdown-it that adds CSS classes to links that fall outside of the specified internal domain(s).
+- [markdown-it-mark @npm](https://www.npmjs.com/package/markdown-it-mark)
+  <mark> tag plugin for markdown-it markdown parser.
+- [markdown-it-mathjax @npm](https://www.npmjs.com/package/markdown-it-mathjax)
+- [Moment.js](https://momentjs.com)
+  [moment @npm](https://www.npmjs.com/package/moment)
+  Date
+
+- [Moment Timezone](https://momentjs.com/timezone)
+  [moment-timezone @npm](https://www.npmjs.com/package/moment-timezone)
+  IANA Time zone support for Moment.js
+- [nanoid @npm](https://www.npmjs.com/package/nanoid)
+  unique string ID generator
+- [@root/keypairs @npm](https://www.npmjs.com/package/@root/keypairs)
+  RSA and ECDSA utils
 - [punycode](https://github.com/mathiasbynens/punycode.js)
   Punycode converter that fully complies to RFC 3492 and RFC 5891
-
-- [simple-git](https://github.com/steveukx/git-js)
+- [raven @npm](https://www.npmjs.com/package/raven)
+  Sentry SDK
+  used in logging/sentry
+- [semver @npm](https://www.npmjs.com/package/semver)
+  semantic versioner for npm
+- [simple-git - npm](https://www.npmjs.com/package/simple-git)
+  [simple-git @gh](https://github.com/steveukx/git-js)
+  [CHANGELOG.md](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md)
+  Git interface
+- [apollographql/subscriptions-transport-ws](https://github.com/apollographql/subscriptions-transport-ws)
+  A WebSocket client + server for GraphQL subscriptions
 - [triple-beam](https://github.com/winstonjs/triple-beam)
   Definitions of levels for logging purposes & shareable Symbol constants
 
-  [triple-beam - npm](https://www.npmjs.com/package/triple-beam)
+  [triple-beam @npm](https://www.npmjs.com/package/triple-beam)
+- [turndown @npm](https://www.npmjs.com/package/turndown)
+  Convert HTML into Markdown
+- [@joplin/turndown-plugin-gfm @npm](https://www.npmjs.com/package/@joplin/turndown-plugin-gfm)
+  Turndown plugin which adds GitHub Flavored Markdown extensions
+- [yargs - npm](https://www.npmjs.com/package/yargs)
+  [yargs @gh](https://github.com/yargs/yargs)
+  [yargs](https://yargs.js.org/docs)
+  Parsing arguments and generating user interface
+- [winstonjs](https://github.com/winstonjs/winston)
+  Logging
+- [winston-transport @npm](https://www.npmjs.com/package/winston-transport)
+  Base TransportStream implementation for Winston
+
+  [Application Performance Monitoring & Error Tracking Software | Sentry](https://sentry.io)
+
+### Deprecated
+
+- [request - npm](https://www.npmjs.com/package/request)
+  As of Feb 11th 2020, request is fully **deprecated**
+  [Alternative libraries to request](https://github.com/request/request/issues/3143)
+  [request-promise - npm](https://www.npmjs.com/package/request-promise)
+  last is 4.2.6
+
+## Client
+
 - [Vue.js](https://v2.vuejs.org/v2/guide)
 - [Vuex](https://vuex.vuejs.org)
   State management
@@ -103,11 +176,36 @@
   Material Design Framework for Vue.js
 - [vuetify-loader](https://github.com/vuetifyjs/vuetify-loader)
   Webpack plugin
-- [winstonjs](https://github.com/winstonjs/winston)
-  Logging
-- [winston-transport - npm](https://www.npmjs.com/package/winston-transport)
-  Base TransportStream implementation for Winston
 
+## Unused and Removed
+
+- [chokidar @npm](https://www.npmjs.com/package/chokidar)
+  Minimal and efficient cross-platform file watching library
+- [diff @npm](https://www.npmjs.com/package/diff)
+- [diff2html @npm](https://www.npmjs.com/package/diff2html)
+- [file-type @npm](https://www.npmjs.com/package/file-type)
+  Detect the file type of a file, stream, or data
+- [graphql-list-fields @npm](https://www.npmjs.com/package/graphql-list-fields)
+  When implementing a GraphQL server, it can be useful to know the list of fields being queried on a given type.
+  This module takes a GraphQLResolveInfo object and returns a list of fields.
+- [i18next-node-fs-backend @npm](https://www.npmjs.com/package/i18next-node-fs-backend)
+  deprecated replaced by i18next-fs-backend
+  [i18next @npm](https://www.npmjs.com/package/i18next)
+- [image-size @npm](https://www.npmjs.com/package/image-size)
+  To get dimensions of any image file or buffer.
+- [js-base64 @npm](https://www.npmjs.com/package/js-base64)
+  Base64 transcoder
+- [remove-markdown @npm](https://www.npmjs.com/package/remove-markdown)
+  Remove (strip) Markdown formatting from text. 
+- [scim-query-filter-parser @npm](https://www.npmjs.com/package/scim-query-filter-parser)
+  This implements a parser and compiler for the filtering and sorting features defined in System for Cross-Domain Identity Management (SCIM) Protocol 2.0. It was originally built for use by AuthX;
+- **solr-node**
+  Solr is the blazing-fast, open source, multi-modal search platform built on the full-text, vector, and geospatial search capabilities of Apache Lucene.
+- **ssh2**
+  SSH2 client and server modules written in pure JavaScript for node.js
+  Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist
+- [xss @npm](https://www.npmjs.com/package/xss) 
+  To filter input from users to prevent XSS attacks
 
 # Interesting Package Links
 
