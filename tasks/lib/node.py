@@ -62,6 +62,8 @@ class PackageJson:
             setattr(self, _, data[_])
 
         def build_map(key: str, is_dev: bool) -> dict:
+            if key not in data:
+                return {}
             return {
                 name: Dependency(name, version, is_dev)
                 for name, version in data[key].items()

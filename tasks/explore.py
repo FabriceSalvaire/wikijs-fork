@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+####################################################################################################
 
 """This module implements a JS/Vue source code explorer.
 
@@ -8,10 +8,12 @@ It features
   lookup for mdi icons in the source code and check for upgrade using the changelog.
 """
 
+# Note: client/server split implied some changes
+
 ####################################################################################################
 
-from pprint import pprint
-from typing import Iterator
+# from pprint import pprint
+from typing import Callable, Iterator
 from pathlib import Path
 import json
 
@@ -24,17 +26,38 @@ import build
 ####################################################################################################
 
 SOURCE_PATH = Path(__file__).parents[1]
-NODE_MODULES_PATH = SOURCE_PATH.joinpath('node_modules')
+# NODE_MODULES_PATH = SOURCE_PATH.joinpath('node_modules')
 
 ####################################################################################################
 
-def yield_source_files(source_path: Path, suffixes: list[str] = ('.js', '.vue')) -> Iterator[Path]:
+def wikijs_directory_filter(root: Path, dirs: list[str]) -> None:
+    if root.parent == SOURCE_PATH and root.name in ('wikijs-client', 'wikijs-server'):
+        for _ in list(dirs):
+            if _ not in ('server', 'client'):
+                dirs.remove(_)
+
+####################################################################################################
+
+def yield_source_files(
+        source_path: Path,
+        suffixes: list[str] = ('.js', '.vue'),
+        directory_filter: Callable = wikijs_directory_filter,
+) -> Iterator[Path]:
+    source_path = Path(source_path).absolute()
+    for root, dirs, filenames in source_path.walk():
+        # don't walk in other sub-directories
+        directory_filter(root, dirs)
+        for _ in filenames:
+            path = Path(root) / _
+            if suffixes is None or path.suffix in suffixes:
+                yield path
+
+####################################################################################################
+
+def yield_wikijs_source_files(**kwargs) -> Iterator[Path]:
+    # for dir in ('wikijs-client/client', 'wikijs-server/server'):
     for dir in ('client', 'server'):
-        for root, dirs, filenames in source_path.joinpath(dir).walk():
-            for _ in filenames:
-                path = Path(root) / _
-                if suffixes is None or path.suffix in suffixes:
-                    yield path
+        yield from yield_source_files(SOURCE_PATH.joinpath(dir), **kwargs)
 
 ####################################################################################################
 
@@ -42,16 +65,22 @@ def yield_imports(source_path: Path) -> Iterator[tuple[Path, Path, str]]:
     for path in yield_source_files(source_path):
         yield from yield_file_imports(source_path, path)
 
+
+def yield_wikijs_imports() -> Iterator[tuple[Path, Path, str]]:
+    for path in yield_wikijs_source_files():
+        yield from yield_file_imports(SOURCE_PATH, path)
+
 ####################################################################################################
 
 def yield_file_imports(source_path: Path, path: Path) -> Iterator[tuple[Path, Path, str]]:
     # print(path)
-    local_dirs = [_.name for _ in path.parent.iterdir() if _.is_dir()]
+    # local_dirs = [_.name for _ in path.parent.iterdir() if _.is_dir()]
     # if dirs:
     #     print(dirs)
     with open(path, 'r', encoding='utf8') as fh:
         for line in fh:
-            line = oline = line.strip()
+            line = line.strip()
+            # = oline
             # strip comment
             _ = line.rfind('//')
             if _ != -1:
@@ -134,11 +163,12 @@ def yield_file_imports(source_path: Path, path: Path) -> Iterator[tuple[Path, Pa
 ####################################################################################################
 
 @task
-def dump_imports(ctx, json_file: Path) -> None:
+def dump_imports(ctx, source_path, json_file: str = 'imports.json') -> None:
+    source_path = Path(source_path).absolute()
     complex_imports = {}
     external_imports = {}
     internal_imports = {}
-    for path, module, type_ in yield_imports(SOURCE_PATH):
+    for path, module, type_ in yield_imports(source_path):
         # print(f'{path}  ->  {module}   {is_external}')
         module_ = str(module)
         match type_:
@@ -168,32 +198,38 @@ def dump_imports(ctx, json_file: Path) -> None:
         'external': external_imports,
         'internal': internal_imports,
     }
-    printc(f'<red>Write {json_file}</red>')
-    json_file.write_text(
-        json.dumps(
-            imports,
-            default=custom_json,
-            sort_keys=True,
-            indent=4,
+    if json_file is not None:
+        printc(f'<red>Write {json_file}</red>')
+        Path(json_file).write_text(
+            json.dumps(
+                imports,
+                default=custom_json,
+                sort_keys=True,
+                indent=4,
+            )
+
         )
-    )
     return imports
 
 ####################################################################################################
 
 @task(build.symlink_dev)
-def explore_dependencies(ctx):
-    imports_json_file = Path('imports.json')
-    imports = dump_imports(ctx, imports_json_file)
+def explore_dependencies(ctx, source_path):
+    source_path = Path(source_path).absolute()
+    node_modules_path = source_path.joinpath('node_modules')
+
+    # imports_json_file = Path('imports.json')
+    imports_json_file = None
+    imports = dump_imports(ctx, source_path, imports_json_file)
     # imports = json.loads(imports_json_file.read_text())
 
-    package_json_file = SOURCE_PATH.joinpath('package.json')
+    package_json_file = source_path.joinpath('package.json')
     package_json = PackageJson(package_json_file)
     dependencies = package_json.dependencies
-    dev_dependencies = package_json.dev_dependencies
+    #dev_dependencies = package_json.dev_dependencies
     all_dependencies = package_json.all_dependencies
 
-    # node_modules = [_.name for _ in NODE_MODULES_PATH.iterdir()]
+    # node_modules = [_.name for _ in node_modules_path.iterdir()]
 
     external_imports = imports['external']
     print()
@@ -213,7 +249,7 @@ def explore_dependencies(ctx):
     for dependency in external_imports_keys:
         files = external_imports[dependency]
         # files.sort()
-        if dependency not in NODE_LIBS and not NODE_MODULES_PATH.joinpath(dependency).exists():
+        if dependency not in NODE_LIBS and not node_modules_path.joinpath(dependency).exists():
             printc(' '*2 + f'<green>{dependency}</green>')
             for _ in sorted(files):
                 print(' '*6 + _)
@@ -222,7 +258,7 @@ def explore_dependencies(ctx):
     printc('<blue>Packages:</blue>')
     for dependency in external_imports_keys:
         files = external_imports[dependency]
-        if dependency not in NODE_LIBS and NODE_MODULES_PATH.joinpath(dependency).exists():
+        if dependency not in NODE_LIBS and node_modules_path.joinpath(dependency).exists():
             printc(' '*2 + f'<green>{dependency}</green>')
             for _ in sorted(files):
                 print(' '*6 + _)
@@ -234,7 +270,7 @@ def explore_dependencies(ctx):
         'client': [],
     }
     for dependency, files in external_imports.items():
-        if dependency not in NODE_LIBS and NODE_MODULES_PATH.joinpath(dependency).exists():
+        if dependency not in NODE_LIBS and node_modules_path.joinpath(dependency).exists():
             for _ in set([Path(_).parts[0] for _ in files]):
                 map[_].append(dependency)
 
@@ -245,7 +281,7 @@ def explore_dependencies(ctx):
             dependency = all_dependencies[_]
             version = dependency.version
             if dependency.is_dev:
-                type_ = 'dev' 
+                type_ = 'dev'
         return type_, version
 
     for key, values in map.items():
@@ -278,7 +314,7 @@ def explore_dependencies(ctx):
 def lookup_mdi(ctx):
     """Check MDI Icons"""
     icon_names = set()
-    for path in yield_source_files(SOURCE_PATH, ('.vue',)):
+    for path in yield_wikijs_source_files(suffixes=('.vue',)):
         with open(path, 'r', encoding='utf8') as fh:
             for line in fh:
                 line = line.strip()
@@ -323,6 +359,7 @@ def dump_file_tree(ctx) -> None:
     # ['.asar', '.css', '.gql', '.graphql', '.html', '.ico', '.jpg', '.js', '.json', '.md',
     #  '.png', '.pug', '.scss', '.svg', '.vue', '.woff', '.woff2', '.xml', '.yml']
     suffixes = set()
+    # Fixme: update
     for dir in ('client', 'server'):
         for root, dirs, filenames in SOURCE_PATH.joinpath(dir).walk():
             dirs.sort()
@@ -339,17 +376,24 @@ def dump_file_tree(ctx) -> None:
 
 ####################################################################################################
 
+def read_package_json(source_path) -> PackageJson:
+    package_json_file = source_path.joinpath('package.json')
+    return PackageJson(package_json_file)
+
 @task
-def read_yarn(ctx) -> None:
+def dump_package_json(ctx, source_path) -> None:
     printc('<cyan>Package.json</cyan>')
-    package_json_file = SOURCE_PATH.joinpath('package.json')
-    package_json = PackageJson(package_json_file)
+    source_path = Path(source_path)
+    package_json = read_package_json(source_path)
     for _ in package_json.all_dependencies.values():
         print(_)
 
-    print()
+@task
+def dump_yarn_lock(ctx, source_path) -> None:
     printc('<cyan>Yarn Lock</cyan>')
-    yarn_lock_file = SOURCE_PATH.joinpath('yarn.lock')
+    source_path = Path(source_path)
+    package_json = read_package_json(source_path)
+    yarn_lock_file = source_path.joinpath('yarn.lock')
     yarn_lock = YarnLock(yarn_lock_file, package_json)
     for i, _ in enumerate(yarn_lock.dependencies.values()):
         print(f'{i+1:4}', str(_))
@@ -357,5 +401,7 @@ def read_yarn(ctx) -> None:
 ####################################################################################################
 
 @task
-def scan_node_modules(ctx) -> None:
-    node_modules = NodeModules(NODE_MODULES_PATH)
+def scan_node_modules(ctx, source_path) -> None:
+    # NODE_MODULES_PATH
+    # node_modules =
+    NodeModules(source_path)

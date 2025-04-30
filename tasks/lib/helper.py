@@ -1,5 +1,15 @@
 ####################################################################################################
 
+__all__ = [
+    'SOURCE_PATH',
+    'strc',
+    'join_cmd',
+]
+
+####################################################################################################
+
+from pathlib import Path
+
 try:
     import colorama
     from colorama import Fore, Style
@@ -11,6 +21,10 @@ except ImportError:
 if colorama:
     colorama.just_fix_windows_console()
     colorama.init(autoreset=True)
+
+####################################################################################################
+
+SOURCE_PATH = Path(__file__).parents[2]
 
 ####################################################################################################
 
@@ -48,4 +62,3 @@ def printc(text: str) -> None:
 
 def join_cmd(cmd: list[str]) -> str:
     return ' '.join(cmd)
-
