@@ -13,6 +13,7 @@ from . import build
 from . import clean
 from . import explore
 from . import gh
+from . import pnpm
 from . import sync
 from . import yarn
 
