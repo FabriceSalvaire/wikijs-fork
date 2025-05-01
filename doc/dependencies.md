@@ -55,21 +55,23 @@
 
   [Previous Versions of Apollo Server](https://www.apollographql.com/docs/apollo-server/previous-versions)
 
-- [asciidoctor - npm](https://www.npmjs.com/package/asciidoctor)
+- [asciidoctor @npm](https://www.npmjs.com/package/asciidoctor)
   AsciiDoc
 
 - [bluebird](https://github.com/petkaantonov/bluebird)
   Promise
   **Warning: Please use native promises instead if at all possible**
 
-- [body-parser - npm](https://www.npmjs.com/package/body-parser)
+- [body-parser @npm](https://www.npmjs.com/package/body-parser)
   [expressjs/body-parser: Node.js body parsing middleware](https://github.com/expressjs/body-parser)
   Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
 
-- [chalk - npm](https://www.npmjs.com/package/chalk)
+- [chalk @npm](https://www.npmjs.com/package/chalk)
+  [chalk @gh](https://github.com/chalk/chalk)
   Terminal color
+  **v5 is ESM !**
 
-- [cheerio - npm](https://www.npmjs.com/package/cheerio)
+- [cheerio @npm](https://www.npmjs.com/package/cheerio)
   [cheerio](https://github.com/cheeriojs/cheerio)
   [Cheerio](https://cheerio.js.org)
   [Changelog](https://github.com/cheeriojs/cheerio/releases)
@@ -88,15 +90,15 @@
   C-like unsigned integers
   **Archived**
 
-- [dependency-graph - npm](https://www.npmjs.com/package/dependency-graph)
+- [dependency-graph @npm](https://www.npmjs.com/package/dependency-graph)
   [dependency-graph - gh](https://github.com/jriecken/dependency-graph)
 
-- [dompurify - npm](https://www.npmjs.com/package/dompurify)
+- [dompurify @npm](https://www.npmjs.com/package/dompurify)
   [DOMPurify](https://github.com/cure53/DOMPurify)
   
   XSS sanitizer for HTML, MathML and SVG
 
-- [dotize - npm](https://www.npmjs.com/package/dotize)
+- [dotize @npm](https://www.npmjs.com/package/dotize)
   [dotize](https://github.com/vardars/dotize)
   [Changelog](https://github.com/vardars/dotize/releases)
   Convert complex js object to dot notation js object 
@@ -108,7 +110,7 @@
   Web framework
 
   [Express changelog](https://expressjs.com/en/changelog)
-  4.18.2
+  [Migrating to Express 5](https://expressjs.com/en/guide/migrating-5.html)
 
 - [express-session @npm](https://www.npmjs.com/package/express-session)
   [expressjs/session @gh](https://github.com/expressjs/session)
@@ -117,7 +119,7 @@
 - [EventEmitter2](https://github.com/EventEmitter2/EventEmitter2)
   Eevent emitter implementation with namespaces, wildcards, TTL, works in the browser
 
-- [filesize - npm](https://www.npmjs.com/package/filesize)
+- [filesize @npm](https://www.npmjs.com/package/filesize)
   [filesize.js](https://github.com/avoidwork/filesize.js)
   To get a human-readable file size string from a number (float or integer) or string
 
@@ -125,13 +127,13 @@
   [fs-extra @gh](https://github.com/jprichardson/node-fs-extra)
   Adds file system methods that aren't included in the native fs module and adds promise support to the fs method
 
-- [highlight.js - npm](https://www.npmjs.com/package/highlight.js)
+- [highlight.js @npm](https://www.npmjs.com/package/highlight.js)
   [highlight.js @gh](https://github.com/highlightjs/highlight.js)
   [highlight.js](https://highlightjs.org/)
   [VERSION_11_UPGRADE.md](https://github.com/highlightjs/highlight.js/blob/main/VERSION_11_UPGRADE.md)
   Syntax highlighter 
 
-- [i18next - npm](https://www.npmjs.com/package/i18next)
+- [i18next @npm](https://www.npmjs.com/package/i18next)
   [i18next @gh](https://github.com/i18next/i18next)
   [i18next](https://www.i18next.com)
   [Migration](https://www.i18next.com/misc/migration-guide)
@@ -147,24 +149,24 @@
 
 - [graphql-tool @npm](https://www.npmjs.com/package/graphql-tool)
 
-- [jsdom - npm](https://www.npmjs.com/package/jsdom)
+- [jsdom @npm](https://www.npmjs.com/package/jsdom)
   pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js
   [jsdom @gh](https://github.com/jsdom/jsdom)
 
 
 - [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
 
-- [js-yaml - npm](https://www.npmjs.com/package/js-yaml)
+- [js-yaml @npm](https://www.npmjs.com/package/js-yaml)
   [js-yaml](https://github.com/nodeca/js-yaml)
 
-- [klaw - npm](https://www.npmjs.com/package/klaw)
+- [klaw @npm](https://www.npmjs.com/package/klaw)
   [node-klaw @gh](https://github.com/jprichardson/node-klaw)
   file system walker extracted from fs-extra
 
 - [Knex.js](https://knexjs.org)
   SQL Query Builder
   [knex/UPGRADING.md at master · knex/knex](https://github.com/knex/knex/blob/master/UPGRADING.md)
-- [luxon - npm](https://www.npmjs.com/package/luxon)
+- [luxon @npm](https://www.npmjs.com/package/luxon)
   [Luxon — Moment](https://moment.github.io/luxon)
   [luxon @gh](https://github.com/moment/luxon)
   Date and time
@@ -179,7 +181,7 @@
 
 - [markdown-it-mathjax @npm](https://www.npmjs.com/package/markdown-it-mathjax)
 
-- [mime-types - npm](https://www.npmjs.com/package/mime-types)
+- [mime-types @npm](https://www.npmjs.com/package/mime-types)
   [mime-types @gh](https://github.com/jshttp/mime-types)
   [HISTORY.md](https://github.com/jshttp/mime-types/blob/master/HISTORY.md)
 
@@ -195,7 +197,7 @@
 - [ms](https://github.com/vercel/ms)
   Millisecond conversion utility
 
-- [multer - npm](https://www.npmjs.com/package/multer)
+- [multer @npm](https://www.npmjs.com/package/multer)
   [expressjs/multer](https://github.com/expressjs/multer)
   [expressjs/multer - lts](https://github.com/expressjs/multer)
   middleware for handling multipart/form-data
@@ -203,7 +205,7 @@
 - [nanoid @npm](https://www.npmjs.com/package/nanoid)
   unique string ID generator
 
-- [node-2fa - npm](https://www.npmjs.com/package/node-2fa)
+- [node-2fa @npm](https://www.npmjs.com/package/node-2fa)
   [node-2fa @gh](https://github.com/jeremyscalpello/node-2fa)
   Easy 2-Factor Integration 
 
@@ -212,7 +214,7 @@
   [nodemailer @npm](https://www.npmjs.com/package/nodemailer)
   Send email
 
-- [objection - npm](https://www.npmjs.com/package/objection)
+- [objection @npm](https://www.npmjs.com/package/objection)
   [objection.js](https://github.com/vincit/objection.js)
   [Objection.js](https://vincit.github.io/objection.js)
   [Changelog](https://vincit.github.io/objection.js/release-notes/changelog.html)
@@ -240,7 +242,7 @@
 - [semver @npm](https://www.npmjs.com/package/semver)
   semantic versioner for npm
 
-- [simple-git - npm](https://www.npmjs.com/package/simple-git)
+- [simple-git @npm](https://www.npmjs.com/package/simple-git)
   [simple-git @gh](https://github.com/steveukx/git-js)
   [CHANGELOG.md](https://github.com/steveukx/git-js/blob/main/simple-git/CHANGELOG.md)
   Git interface
@@ -248,7 +250,7 @@
 - [apollographql/subscriptions-transport-ws](https://github.com/apollographql/subscriptions-transport-ws)
   A WebSocket client + server for GraphQL subscriptions
 
-- [tar-fs - npm](https://www.npmjs.com/package/tar-fs)
+- [tar-fs @npm](https://www.npmjs.com/package/tar-fs)
   [tar-fs @gh](https://github.com/mafintosh/tar-fs)
   Filesystem bindings for tar-stream
 
@@ -263,7 +265,7 @@
 - [@joplin/turndown-plugin-gfm @npm](https://www.npmjs.com/package/@joplin/turndown-plugin-gfm)
   Turndown plugin which adds GitHub Flavored Markdown extensions
 
-- [yargs - npm](https://www.npmjs.com/package/yargs)
+- [yargs @npm](https://www.npmjs.com/package/yargs)
   [yargs @gh](https://github.com/yargs/yargs)
   [yargs](https://yargs.js.org/docs)
   Parsing arguments and generating user interface
@@ -279,10 +281,10 @@
 
 ### Deprecated
 
-- [request - npm](https://www.npmjs.com/package/request)
+- [request @npm](https://www.npmjs.com/package/request)
   As of Feb 11th 2020, request is fully **deprecated**
   [Alternative libraries to request](https://github.com/request/request/issues/3143)
-  [request-promise - npm](https://www.npmjs.com/package/request-promise)
+  [request-promise @npm](https://www.npmjs.com/package/request-promise)
   last is 4.2.6
 
 
