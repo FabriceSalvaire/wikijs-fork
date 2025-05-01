@@ -45,6 +45,7 @@ def yield_source_files(
 ) -> Iterator[Path]:
     source_path = Path(source_path).absolute()
     for root, dirs, filenames in source_path.walk():
+        dirs.sort()
         # don't walk in other sub-directories
         directory_filter(root, dirs)
         for _ in filenames:
@@ -405,3 +406,77 @@ def scan_node_modules(ctx, source_path) -> None:
     # NODE_MODULES_PATH
     # node_modules =
     NodeModules(source_path)
+
+####################################################################################################
+
+def js_tokenizer(line: str) -> list[str]:
+    i = line.rfind(r'//')   # ??? index() / raise ValueError
+    if i != -1:
+        line = line[:i]
+    line = line.rstrip()
+
+    tokens = []
+    identifier = None
+    identifier_start = None
+    in_string = False
+
+    def append_token():
+        nonlocal tokens
+        nonlocal identifier
+        nonlocal identifier_start
+        nonlocal in_string
+        if identifier is not None:
+            # if identifier not in ('const',):
+            tokens.append((identifier_start, in_string, identifier))
+        identifier = None
+        identifier_start = None
+        in_string = False
+
+    for i, c in enumerate(line):
+        if c in "'`":
+            if in_string:
+                # end
+                in_string = False
+                identifier += c
+            else:
+                # start
+                in_string = True
+                identifier = c
+                identifier_start = i
+        elif in_string:
+            identifier += c
+        elif c.isalnum() or c in '_':
+            if identifier is None:
+                # start identifier
+                identifier = c
+                identifier_start = i
+            else:
+                identifier += c
+        else:
+            append_token()
+            # if c not in ' =':
+            tokens.append(c)
+    append_token()
+    return tokens
+
+@task(optional=['pattern2'])
+def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
+    for file in yield_source_files(source_path):
+        path = None
+        # for line in file:   # return also a list ???
+        lines = file.read_text().splitlines()
+        for i, line in enumerate(lines):
+            if pattern in line:
+                if pattern2 is not None and pattern2 not in line:
+                    continue
+                line = line.rstrip()
+                # tokens = js_tokenizer(line)
+                if path is None:
+                    _ = file.relative_to(SOURCE_PATH)
+                    path = f'<green>{_.parent}</green>/<blue>{_.name}</blue>'
+                line = line.replace(pattern, '<red>' + pattern + '</red>')
+                if pattern2 is not None:
+                    line = line.replace(pattern2, '<blue>' + pattern2 + '</blue>')
+                # print()
+                printc(f'{path} <red>{i}</red> {line}')
+                #print(tokens)
