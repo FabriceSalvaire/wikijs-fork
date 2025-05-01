@@ -26,7 +26,7 @@ router.get('/.well-known/acme-challenge/:token', (req, res, next) => {
 /**
  * Redirect to HTTPS if HTTP Redirection is enabled
  */
-router.all('/*', (req, res, next) => {
+router.all('/*splat', (req, res, next) => {
   if (WIKI.config.server.sslRedir && !req.secure && WIKI.servers.servers.https) {
     return res.redirect(`https://${req.hostname}${req.originalUrl}`)
   } else {

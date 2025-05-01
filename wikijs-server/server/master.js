@@ -41,7 +41,8 @@ module.exports = async () => {
   // ----------------------------------------
   app.use(mw.security)
   app.use(cors({ origin: false }))
-  app.options('*', cors({ origin: false }))
+  // https://expressjs.com/en/resources/middleware/cors.html
+  app.options('*splat', cors({ origin: false }))
   if (WIKI.config.security.securityTrustProxy) {
     app.enable('trust proxy')
   }

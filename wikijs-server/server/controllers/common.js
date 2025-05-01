@@ -36,7 +36,7 @@ router.get('/healthz', (req, res, next) => {
 /**
  * Administration
  */
-router.get(['/a', '/a/*'], (req, res, next) => {
+router.get(['/a', '/a/*splat'], (req, res, next) => {
   if (!WIKI.auth.checkAccess(req.user, [
     'manage:system',
     'write:users',
@@ -58,7 +58,7 @@ router.get(['/a', '/a/*'], (req, res, next) => {
 /**
  * Download Page / Version
  */
-router.get(['/d', '/d/*'], async (req, res, next) => {
+router.get(['/d', '/d/*splat'], async (req, res, next) => {
   const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
 
   const versionId = (req.query.v) ? _.toSafeInteger(req.query.v) : 0
@@ -101,7 +101,7 @@ router.get(['/d', '/d/*'], async (req, res, next) => {
 /**
  * Create/Edit document
  */
-router.get(['/e', '/e/*'], async (req, res, next) => {
+router.get(['/e', '/e/*splat'], async (req, res, next) => {
   const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
 
   if (WIKI.config.lang.namespacing && !pageArgs.explicitLocale) {
@@ -237,7 +237,7 @@ router.get(['/e', '/e/*'], async (req, res, next) => {
 /**
  * History
  */
-router.get(['/h', '/h/*'], async (req, res, next) => {
+router.get(['/h', '/h/*splat'], async (req, res, next) => {
   const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
 
   if (WIKI.config.lang.namespacing && !pageArgs.explicitLocale) {
@@ -317,7 +317,7 @@ router.get(['/i', '/i/:id'], async (req, res, next) => {
 /**
  * Profile
  */
-router.get(['/p', '/p/*'], (req, res, next) => {
+router.get(['/p', '/p/*splat'], (req, res, next) => {
   if (!req.user || req.user.id < 1 || req.user.id === 2) {
     return res.render('unauthorized', { action: 'view' })
   }
@@ -329,7 +329,7 @@ router.get(['/p', '/p/*'], (req, res, next) => {
 /**
  * Source
  */
-router.get(['/s', '/s/*'], async (req, res, next) => {
+router.get(['/s', '/s/*splat'], async (req, res, next) => {
   const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
   const versionId = (req.query.v) ? _.toSafeInteger(req.query.v) : 0
 
@@ -390,7 +390,7 @@ router.get(['/s', '/s/*'], async (req, res, next) => {
 /**
  * Tags
  */
-router.get(['/t', '/t/*'], (req, res, next) => {
+router.get(['/t', '/t/*splat'], (req, res, next) => {
   _.set(res.locals, 'pageMeta.title', 'Tags')
   res.render('tags')
 })
@@ -414,7 +414,7 @@ router.get('/_userav/:uid', async (req, res, next) => {
 /**
  * View document / asset
  */
-router.get('/*', async (req, res, next) => {
+router.get('/{*splat}', async (req, res, next) => {
   const stripExt = _.some(WIKI.config.pageExtensions, ext => _.endsWith(req.path, `.${ext}`))
   const pageArgs = pageHelper.parsePath(req.path, { stripExt })
   const isPage = (stripExt || pageArgs.path.indexOf('.') === -1)
