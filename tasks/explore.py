@@ -15,7 +15,9 @@ It features
 # from pprint import pprint
 from typing import Callable, Iterator
 from pathlib import Path
+from dataclasses import dataclass
 import json
+import os
 
 from invoke import task
 
@@ -410,11 +412,6 @@ def scan_node_modules(ctx, source_path) -> None:
 ####################################################################################################
 
 def js_tokenizer(line: str) -> list[str]:
-    i = line.rfind(r'//')   # ??? index() / raise ValueError
-    if i != -1:
-        line = line[:i]
-    line = line.rstrip()
-
     tokens = []
     identifier = None
     identifier_start = None
@@ -459,24 +456,69 @@ def js_tokenizer(line: str) -> list[str]:
     append_token()
     return tokens
 
+
+@dataclass
+class LineMatch:
+    file: str
+    line_number: int
+    line: str
+    patterns: list[str]
+
+    ##############################################
+
+    def __str__(self) -> str:
+        _ = self.file.relative_to(SOURCE_PATH)
+        path = f'<green>{_.parent}</green>/<blue>{_.name}</blue>'
+        pattern, pattern2 = self.patterns
+        line = self.line.replace(pattern, '<red>' + pattern + '</red>')
+        if pattern2 is not None:
+            line = line.replace(pattern2, '<blue>' + pattern2 + '</blue>')
+        # return f'{path} <red>{self.line_number}</red> {line}'
+        # return f'{path} <red>{self.line_number}</red>{os.linesep}  {line}'
+        sep = '-'*25 + ' '
+        return f'{line}{os.linesep}{sep}{path} <red>{self.line_number}</red>'
+
 @task(optional=['pattern2'])
 def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
+    patterns = (pattern, pattern2)
+    matches = []
     for file in yield_source_files(source_path):
-        path = None
         # for line in file:   # return also a list ???
         lines = file.read_text().splitlines()
-        for i, line in enumerate(lines):
+        in_comment = False
+        for line_number, line in enumerate(lines):
+            # oline = line
+            if in_comment:
+                i = line.rfind('*/')
+                if i != -1:
+                    line = line[i+2:]
+                    in_comment = False
+                else:
+                    line = ''
+            else:
+                i = line.find('/*')
+                j = line.rfind('*/')
+                if i != -1:
+                    if j != -1:
+                        line = line[:i] + line[j+2:]
+                        in_comment = False
+                    else:
+                        line = line[:i]
+                        in_comment = True
+            if not in_comment:
+                i = line.find('//')   # ??? index() / raise ValueError
+                if i != -1:
+                    line = line[:i]
+            # else:
+            #     print(oline)
+            #     print('>>>', line)
+            line = line.strip()
             if pattern in line:
                 if pattern2 is not None and pattern2 not in line:
                     continue
-                line = line.rstrip()
                 # tokens = js_tokenizer(line)
-                if path is None:
-                    _ = file.relative_to(SOURCE_PATH)
-                    path = f'<green>{_.parent}</green>/<blue>{_.name}</blue>'
-                line = line.replace(pattern, '<red>' + pattern + '</red>')
-                if pattern2 is not None:
-                    line = line.replace(pattern2, '<blue>' + pattern2 + '</blue>')
-                # print()
-                printc(f'{path} <red>{i}</red> {line}')
-                #print(tokens)
+                _ = LineMatch(file, line_number, line, patterns)
+                matches.append(_)
+    # for _ in matches:
+    for _ in sorted(matches, key=lambda _: _.line):
+        printc(str(_))
