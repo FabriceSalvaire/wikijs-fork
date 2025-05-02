@@ -183,8 +183,8 @@ importers:
         specifier: 4.17.21
         version: 4.17.21
       luxon:
-        specifier: 1.25.0
-        version: 1.25.0
+        specifier: 3.6.1
+        version: 3.6.1
       markdown-it:
         specifier: 11.0.1
         version: 11.0.1
@@ -3337,8 +3337,9 @@ packages:
     resolution: {integrity: sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA==}
     engines: {node: '>=12'}
 
-  luxon@1.25.0:
-    resolution: {integrity: sha512-hEgLurSH8kQRjY6i4YLey+mcKVAWXbDNlZRmM6AgWDJ1cY3atl8Ztf5wEY7VBReFbmGnwQPz7KYJblL8B2k0jQ==}
+  luxon@3.6.1:
+    resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
+    engines: {node: '>=12'}
 
   make-fetch-happen@9.1.0:
     resolution: {integrity: sha512-+zopwDy7DNknmwPQplem5lAZX/eCOzSvSNNcSKm5eVwTkOBzoktEfXsa9L23J/GIRhxRsaxzkPEhrJEpE2F4Gg==}
@@ -9026,7 +9027,7 @@ snapshots:
   lru-cache@7.14.1:
     optional: true
 
-  luxon@1.25.0: {}
+  luxon@3.6.1: {}
 
   make-fetch-happen@9.1.0(bluebird@3.7.2):
     dependencies:
