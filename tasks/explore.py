@@ -466,7 +466,7 @@ class LineMatch:
 
     ##############################################
 
-    def __str__(self) -> str:
+    def to_str(self, show_line: bool = True) -> str:
         _ = self.file.relative_to(SOURCE_PATH)
         path = f'<green>{_.parent}</green>/<blue>{_.name}</blue>'
         pattern, pattern2 = self.patterns
@@ -476,7 +476,11 @@ class LineMatch:
         # return f'{path} <red>{self.line_number}</red> {line}'
         # return f'{path} <red>{self.line_number}</red>{os.linesep}  {line}'
         sep = '-'*25 + ' '
-        return f'{line}{os.linesep}{sep}{path} <red>{self.line_number}</red>'
+        if show_line:
+            _ = line
+        else:
+            _ = ''
+        return _ + f'{os.linesep}{sep}{path} <red>{self.line_number}</red>'
 
 @task(optional=['pattern2'])
 def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
@@ -520,5 +524,7 @@ def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
                 _ = LineMatch(file, line_number, line, patterns)
                 matches.append(_)
     # for _ in matches:
+    prev = None
     for _ in sorted(matches, key=lambda _: _.line):
-        printc(str(_))
+        printc(_.to_str(_.line != prev))
+        prev = _.line
