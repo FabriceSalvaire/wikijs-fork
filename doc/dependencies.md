@@ -38,16 +38,17 @@
   maintenance v20
   active v22
 
-- [acme](https://git.rootprojects.org/root/acme.js.git)
-   Library for getting Free SSL certifications through Let's Encrypt v2, using ACME (RFC 8555)
+- [acme @npm](https://www.npmjs.com/package/acme)
+  [acme](https://git.rootprojects.org/root/acme.js.git)
+  Library for getting Free SSL certifications through Let's Encrypt v2, using ACME (RFC 8555)
 
-  [acme @npm](https://www.npmjs.com/package/acme)
+
+- [Apollo GraphQL](https://www.apollographql.com)
 
 - **apollo-server**
   [apollo-server-core @npm](https://www.npmjs.com/package/apollo-server-core/v/2.25.2)
   [@apollo/server @npm](https://www.npmjs.com/package/@apollo/server)
 
-- [Apollo GraphQL](https://www.apollographql.com/)
 
 - [apollo-server-express](https://www.npmjs.com/package/apollo-server-express)
   Express integration of Apollo Server
@@ -63,8 +64,9 @@
   **Warning: Please use native promises instead if at all possible**
 
 - [body-parser @npm](https://www.npmjs.com/package/body-parser)
-  [expressjs/body-parser: Node.js body parsing middleware](https://github.com/expressjs/body-parser)
+  [body-parser @gh](https://github.com/expressjs/body-parser)
   Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+  Node >= 18
 
 - [chalk @npm](https://www.npmjs.com/package/chalk)
   [chalk @gh](https://github.com/chalk/chalk)
@@ -82,7 +84,7 @@
 
 - [compression @npm](https://www.npmjs.com/package/compression)
 
-- [chromium-pickle-js](https://github.com/electron/node-chromium-pickle-js#readme)
+- [chromium-pickle-js](https://github.com/electron/node-chromium-pickle-js)
   Binary value packing and unpacking library compatible with Chromium's Pickle class
   **Archived**
 
@@ -115,7 +117,7 @@
 - [express-session @npm](https://www.npmjs.com/package/express-session)
   [expressjs/session @gh](https://github.com/expressjs/session)
   session middleware for Express
-
+  
 - [EventEmitter2](https://github.com/EventEmitter2/EventEmitter2)
   Eevent emitter implementation with namespaces, wildcards, TTL, works in the browser
 
@@ -158,6 +160,8 @@
 
 - [js-yaml @npm](https://www.npmjs.com/package/js-yaml)
   [js-yaml](https://github.com/nodeca/js-yaml)
+  [CHANGELOG.md](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md)
+  [migrate_v3_to_v4.md](https://github.com/nodeca/js-yaml/blob/master/migrate_v3_to_v4.md)
 
 - [klaw @npm](https://www.npmjs.com/package/klaw)
   [node-klaw @gh](https://github.com/jprichardson/node-klaw)
@@ -166,10 +170,13 @@
 - [Knex.js](https://knexjs.org)
   SQL Query Builder
   [knex/UPGRADING.md at master · knex/knex](https://github.com/knex/knex/blob/master/UPGRADING.md)
+
 - [luxon @npm](https://www.npmjs.com/package/luxon)
-  [Luxon — Moment](https://moment.github.io/luxon)
   [luxon @gh](https://github.com/moment/luxon)
+  [Luxon — Moment](https://moment.github.io/luxon)
+  [Upgrade guide](https://moment.github.io/luxon/#/upgrading)
   Date and time
+  Node >= 12
 
 - [markdown-it](https://github.com/markdown-it/markdown-it)
 
@@ -184,6 +191,7 @@
 - [mime-types @npm](https://www.npmjs.com/package/mime-types)
   [mime-types @gh](https://github.com/jshttp/mime-types)
   [HISTORY.md](https://github.com/jshttp/mime-types/blob/master/HISTORY.md)
+  Node >= 18
 
 - [Moment.js](https://momentjs.com)
   [moment @npm](https://www.npmjs.com/package/moment)
