@@ -52,7 +52,9 @@ def yield_source_files(
         directory_filter(root, dirs)
         for _ in filenames:
             path = Path(root) / _
-            if suffixes is None or path.suffix in suffixes:
+            if ((suffixes is None or path.suffix in suffixes)
+                and not path.name.startswith('.#')
+                ):
                 yield path
 
 ####################################################################################################
