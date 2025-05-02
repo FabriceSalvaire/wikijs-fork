@@ -21,7 +21,7 @@ import os
 
 from invoke import task
 
-from .lib.helper import printc
+from .lib.helper import printc, escape
 from .lib.node import NODE_LIBS, PackageJson, YarnLock, NodeModules
 import build
 
@@ -470,7 +470,8 @@ class LineMatch:
         _ = self.file.relative_to(SOURCE_PATH)
         path = f'<green>{_.parent}</green>/<blue>{_.name}</blue>'
         pattern, pattern2 = self.patterns
-        line = self.line.replace(pattern, '<red>' + pattern + '</red>')
+        line = escape(self.line)
+        line = line.replace(pattern, '<red>' + pattern + '</red>')
         if pattern2 is not None:
             line = line.replace(pattern2, '<blue>' + pattern2 + '</blue>')
         # return f'{path} <red>{self.line_number}</red> {line}'
@@ -481,6 +482,7 @@ class LineMatch:
         else:
             _ = ''
         return _ + f'{os.linesep}{sep}{path} <red>{self.line_number}</red>'
+
 
 @task(optional=['pattern2'])
 def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
@@ -526,5 +528,5 @@ def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
     # for _ in matches:
     prev = None
     for _ in sorted(matches, key=lambda _: _.line):
-        printc(_.to_str(_.line != prev))
+        printc(_.to_str(_.line != prev), escaped=True)
         prev = _.line

@@ -2,6 +2,7 @@
 
 __all__ = [
     'SOURCE_PATH',
+    'escape',
     'strc',
     'join_cmd',
 ]
@@ -28,7 +29,15 @@ SOURCE_PATH = Path(__file__).parents[2]
 
 ####################################################################################################
 
-def strc(text: str) -> None:
+def escape(text: str) -> None:
+    return text.replace('<', '&lt;').replace('>', '&gt;')
+
+def unescape(text: str) -> None:
+    return text.replace('&lt;', '<').replace('&gt;', '>')
+
+####################################################################################################
+
+def strc(text: str, escaped: bool = False) -> None:
     raw = ''
     start = 0
     color_stack = []
@@ -53,10 +62,12 @@ def strc(text: str) -> None:
                 if colorama:
                     raw += getattr(Fore, color.upper())
             start = j + 1
+    if escaped:
+        raw = unescape(raw)
     return raw
 
-def printc(text: str) -> None:
-    print(strc(text))
+def printc(text: str, **kwargs) -> None:
+    print(strc(text, **kwargs))
 
 ####################################################################################################
 
