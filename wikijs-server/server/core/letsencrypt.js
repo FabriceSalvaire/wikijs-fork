@@ -1,6 +1,6 @@
+const _ = require('lodash')
 const ACME = require('acme')
 const Keypairs = require('@root/keypairs')
-const _ = require('lodash')
 const moment = require('moment')
 const CSR = require('@root/csr')
 const PEM = require('@root/pem')
