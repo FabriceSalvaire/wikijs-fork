@@ -12,6 +12,7 @@ const punycode = require('punycode')
 module.exports = {
   apiDirectory: WIKI.dev ? 'https://acme-staging-v02.api.letsencrypt.org/directory' : 'https://acme-v02.api.letsencrypt.org/directory',
   acme: null,
+
   async init () {
     if (!_.get(WIKI.config, 'letsencrypt.payload', false)) {
       await this.requestCertificate()
@@ -31,6 +32,7 @@ module.exports = {
     WIKI.config.ssl.passphrase = null
     WIKI.config.ssl.dhparam = null
   },
+
   async requestCertificate () {
     try {
       WIKI.logger.info(`(LETSENCRYPT) Initializing Let's Encrypt client...`)

@@ -3,6 +3,8 @@ const router = express.Router()
 const _ = require('lodash')
 const qs = require('querystring')
 
+// See also core/letsencrypt.js
+
 /* global WIKI */
 
 /**

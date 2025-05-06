@@ -15,6 +15,8 @@ const favicon = require('serve-favicon')
 
 // imported by core/kernel.js:bootMaster
 module.exports = async () => {
+  WIKI.logger.info('--- Run master.js...')
+
   // ----------------------------------------
   // Load core modules
   // ----------------------------------------
@@ -43,6 +45,7 @@ module.exports = async () => {
   app.use(cors({ origin: false }))
   // https://expressjs.com/en/resources/middleware/cors.html
   app.options('*splat', cors({ origin: false }))
+  // see https://expressjs.com/en/guide/behind-proxies.html
   if (WIKI.config.security.securityTrustProxy) {
     app.enable('trust proxy')
   }
@@ -66,6 +69,7 @@ module.exports = async () => {
   // ----------------------------------------
   // SSL Handlers
   // ----------------------------------------
+  // Fixme: WIKI.config.ssl.enabled ???
   app.use('/', ctrl.ssl)
 
   // ----------------------------------------
@@ -133,7 +137,6 @@ module.exports = async () => {
   // ----------------------------------------
   // Routing
   // ----------------------------------------
-
   app.use(async (req, res, next) => {
     res.locals.siteConfig = {
       title: WIKI.config.title,
@@ -160,12 +163,17 @@ module.exports = async () => {
   // Error handling
   // ----------------------------------------
 
+  // Catch 404 and forward to error handler
   app.use((req, res, next) => {
+    // https://www.npmjs.com/package/http-errors
+    // var createError = require('http-errors');
+    // next(createError(404));
     const err = new Error('Not Found')
     err.status = 404
     next(err)
   })
 
+  // Error handler
   app.use((err, req, res, next) => {
     if (req.path === '/graphql') {
       res.status(err.status || 500).json({
@@ -198,6 +206,8 @@ module.exports = async () => {
   ) {
     await WIKI.servers.startHTTPS()
   }
+
+  WIKI.logger.info('--- Done master.js...')
 
   return true
 }

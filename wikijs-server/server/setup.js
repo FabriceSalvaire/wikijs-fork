@@ -18,6 +18,8 @@ const semver = require('semver')
 
 // imported by core/kernel.js:bootMaster
 module.exports = () => {
+  WIKI.logger.info('--- Run setup.js...')
+
   WIKI.config.site = {
     path: '',
     title: 'Wiki.js'
@@ -45,6 +47,7 @@ module.exports = () => {
   app.set('view engine', 'pug')
 
   app.use(bodyParser.json())
+  // upgrade note: extended is now false by default
   app.use(bodyParser.urlencoded({ extended: false }))
 
   app.locals.config = WIKI.config
@@ -445,4 +448,6 @@ module.exports = () => {
     WIKI.logger.info('')
     WIKI.logger.info('🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺🔺')
   })
+
+  WIKI.logger.info('--- Done setup.js...')
 }
