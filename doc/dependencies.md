@@ -53,8 +53,8 @@
 - [apollo-server-express](https://www.npmjs.com/package/apollo-server-express)
   Express integration of Apollo Server
   **Deprecated**
-
-  [Previous Versions of Apollo Server](https://www.apollographql.com/docs/apollo-server/previous-versions)
+  The `apollo-server-express` package is part of Apollo Server v2 and v3, which are now end-of-life (as of October 22nd 2023 and October 22nd 2024, respectively). This package's functionality is now found in the `@apollo/server` package. See [Previous Versions of Apollo Server](https://www.apollographql.com/docs/apollo-server/previous-versions/) for more details.
+  Apollo Server 3 no longer contains Subscription...
 
 - [asciidoctor @npm](https://www.npmjs.com/package/asciidoctor)
   AsciiDoc
@@ -114,6 +114,12 @@
   [Express changelog](https://expressjs.com/en/changelog)
   [Migrating to Express 5](https://expressjs.com/en/guide/migrating-5.html)
 
+- [express-brute - npm](https://www.npmjs.com/package/express-brute)
+  [express-brute @gh](https://github.com/AdamPflug/express-brute)
+  brute-force protection middleware for express routes that rate-limits incoming requests, increasing the delay with each request in a fibonacci-like sequence
+  v1.0.1 release **9 years ago / gh is 5 years ago**
+  **requires express@4.x**
+
 - [express-session @npm](https://www.npmjs.com/package/express-session)
   [expressjs/session @gh](https://github.com/expressjs/session)
   session middleware for Express
@@ -141,15 +147,21 @@
   [Migration](https://www.i18next.com/misc/migration-guide)
 
 - [graphql @npm](https://www.npmjs.com/package/graphql)
+  [graphql @gh](https://github.com/graphql/graphql-js)
+  [Releases](https://github.com/graphql/graphql-js/releases)
+  [GraphQL](https://www.graphql-js.org/docs/)
   JavaScript reference implementation for GraphQL
 
 - [graphql-rate-limit-directive @npm](https://www.npmjs.com/package/graphql-rate-limit-directive)
   Fixed window rate limiting directive for GraphQL. Used to limit repeated requests to queries and mutations.
+  `server/graph/directives/rate-limit.js`
 
 - [graphql-subscriptions @npm](https://www.npmjs.com/package/graphql-subscriptions)
   Implement pubsub subscriptions in GraphQL
+  `server/graph/index.js` `server/core/servers.js`
 
 - [graphql-tool @npm](https://www.npmjs.com/package/graphql-tool)
+  `server/graph/directives/auth.js`
 
 - [jsdom @npm](https://www.npmjs.com/package/jsdom)
   pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js
