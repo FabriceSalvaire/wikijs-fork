@@ -1,6 +1,7 @@
 ####################################################################################################
 
 from pathlib import Path
+import os
 
 from .helper import printc, Fore
 
@@ -10,9 +11,10 @@ import code_tokenize as ctok
 
 ####################################################################################################
 
+LINESEP = os.linesep
+
 PATCHES = {
     'module.exports = router': 'export { router }',
-    "const Model = require('objection').Model": "import { Model } from 'objection'",
 }
 
 ####################################################################################################
@@ -21,7 +23,7 @@ class RequireExpression:
 
     ##############################################
 
-    def __init__(self, oline: str) -> None:
+    def __init__(self, path: Path, oline: str) -> None:
         self.oline = oline
         self.nline = oline
 
@@ -44,7 +46,12 @@ class RequireExpression:
         try:
             self.const_require(tokens)
         except ValueError:
-            print(f'<red>Fixme</red> {oline}')
+            _ = path.relative_to(Path.cwd())
+            printc(f'<red>Fixme</red>: <blue>{_}</blue>{LINESEP}{oline}')
+        except Exception as e:
+            print(self.oline)
+            print(e)
+            raise
 
     ##############################################
 
@@ -64,8 +71,8 @@ class RequireExpression:
     ##############################################
 
     def const_require(self, tokens: list[str]):
-        if tokens[0] != 'const':
-            return None
+        if self.oline.startswith(' ') or tokens[0] != 'const':
+            raise ValueError
 
         tokens = tokens[1:]
         for i, _ in enumerate(tokens):
@@ -74,7 +81,7 @@ class RequireExpression:
         left = tokens[:i]
         right = tokens[i+1:]
         if right[0] != 'require':
-            raise ValueError(self.oline)
+            raise ValueError
         # print(left, right)
 
         open = None
@@ -135,6 +142,7 @@ class RequireExpression:
                 self.nline = self.nline.replace('*', right[1])
             else:
                 self.nline += f'   // Fixme!: {right_str}' 
+                raise ValueError
 
 ####################################################################################################
 
@@ -148,11 +156,11 @@ class CjsToEsm:
     ##############################################
 
     def __init__(self, path: Path | str) -> None:
-        path = Path(path)
+        self.path = Path(path)
         if True:
             printc('<green>' + '='*100 + '</green>')
-            printc(f'<red>{path}</red>')
-        osource = path.read_text()
+            printc(f'<red>{self.path}</red>')
+        osource = self.path.read_text()
         debug = True
         nsource = self.fix(osource, fix_require=True, fix_export=False, debug=debug)
         if not debug:
@@ -251,75 +259,9 @@ class CjsToEsm:
         if oline.strip().startswith('//'):
             return oline
 
-        print(Fore.GREEN + '-'*80)
-        require_expression = RequireExpression(oline)
+        # print(Fore.GREEN + '-'*80)
+        require_expression = RequireExpression(self.path, oline)
         return require_expression.nline
-
-    ##############################################
-
-    def fix_require_old(self, oline: str) -> str:
-        if oline.strip().startswith('//'):
-            return oline
-
-        nline = self.patch(oline)
-        if nline is not None:
-            return nline
-
-        if oline.startswith(' '):
-            # Fixme: (await import('foo')).bar
-            nline = oline.replace('require', 'await import')
-        else:
-            nline = 'import ' + oline
-            for _ in (
-                    ('require(', ''),
-                    ("')", "'"),
-                    ('const ', ''),
-                    ('=', 'from'),
-            ):
-                nline = nline.replace(*_)
-
-        if './' in nline and not nline.endswith(".js'"):
-            i = nline.rfind("'")
-            if i != -1:
-                nline = nline[:i] + ".js'"
-        if nline.endswith(".js'") and '{' not in nline:
-            nline = nline.replace('import', 'import * as')
-
-        if nline.endswith('.Strategy'):
-            for _ in (
-                    ('.Strategy', ''),
-                    ('from', 'as Strategy from'),
-            ):
-                nline = nline.replace(*_)
-
-        # Fixme:
-        # import EventEmitter from 'eventemitter2'.EventEmitter2
-        # import JSBinType from 'js-binary'.Type
-        # import OIDCStrategy from 'passport-azure-ad'.OIDCStrategy
-        # import PubSub from 'graphql-subscriptions'.PubSub
-        # import UINT64 from 'cuint'.UINT64
-        # import URL from 'url'.URL
-        # import mime from 'mime-types'.lookup
-        # import turndownPluginGfm from '@joplin/turndown-plugin-gfm'.gfm
-
-        # import { v4: uuid } from 'uuid'
-        # await import('winston-papertrail').Papertrail
-        # import tsquery from 'pg-tsquery'()
-        # modelClass: await import('./users.js'
-        # import nanoid from 'nanoid/non-secure'.customAlphabet('1234567890abcdef', 10)
-        # revocationList: await import * as('./cache.js'
-
-        for _ in (
-                'let',
-                # "'.",
-                "'(",
-                # ": ",
-                # 'promisify(',
-                # 'promisifyAll(',
-        ):
-            if _ in nline:
-                return 'Fixme!: ' + nline
-        return nline
 
     ##############################################
 
@@ -359,7 +301,6 @@ class CjsToEsm:
     ##############################################
 
     def fix_default_export(self, oline: str) -> str:
-        # module.exports = router
         nline = self.patch(oline)
         if nline is None:
             nline = oline
