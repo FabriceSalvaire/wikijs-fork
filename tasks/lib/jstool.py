@@ -4,6 +4,8 @@ from pathlib import Path
 
 from .helper import printc, Fore
 
+# https://github.com/cedricrupb/code_tokenize
+# Tokenizer based on Tree Sitter library
 import code_tokenize as ctok
 
 ####################################################################################################
@@ -12,6 +14,127 @@ PATCHES = {
     'module.exports = router': 'export { router }',
     "const Model = require('objection').Model": "import { Model } from 'objection'",
 }
+
+####################################################################################################
+
+class RequireExpression:
+
+    ##############################################
+
+    def __init__(self, oline: str) -> None:
+        self.oline = oline
+        self.nline = oline
+
+        tokens = []
+        quoted = ''
+        for _ in ctok.tokenize(oline, lang='javascript', syntax_error='ignore'):
+            _ = str(_)
+            if _ == '`' and not quoted:
+                quoted = _
+            elif quoted:
+                quoted += _
+                if _ == '`':
+                    tokens.append(quoted)
+                    quoted = ''
+            else:
+                tokens.append(_)
+        self.tokens = tokens
+
+        # print(' | '.join([str(_) for _ in tokens]))
+        try:
+            self.const_require(tokens)
+        except ValueError:
+            print(f'<red>Fixme</red> {oline}')
+
+    ##############################################
+
+    def fix_comma(self, parts: list[str]) -> list[str]:
+        nparts = []
+        for _ in parts:
+            if _ == ',':
+                _ += ' '
+            nparts.append(_)
+        return ''.join(nparts)
+
+    ##############################################
+
+    def quote(self, string: str) -> str:
+        return f"'{string}'"
+
+    ##############################################
+
+    def const_require(self, tokens: list[str]):
+        if tokens[0] != 'const':
+            return None
+
+        tokens = tokens[1:]
+        for i, _ in enumerate(tokens):
+            if _ == '=':
+                break
+        left = tokens[:i]
+        right = tokens[i+1:]
+        if right[0] != 'require':
+            raise ValueError(self.oline)
+        # print(left, right)
+
+        open = None
+        close = None
+        level = 0
+        for i, _ in enumerate(right):
+            match _:
+                case '(':
+                    if level == 0:
+                        open = i
+                    level += 1
+                case ')':
+                    level -= 1
+                    if level == 0:
+                        close = i
+                        break
+        module = right[open+1:close]
+        if len(module) == 1:
+            module = module.pop()
+        else:
+            module = self.fix_comma(module)
+        if '.' in module:
+            for c in "'`":
+                suffix = ".js" + c 
+                if module.endswith(c) and not module.endswith(suffix):
+                    module = module[:-1] + suffix
+        right = right[close+1:]
+        # print(left, module, right)
+
+        if module.startswith("'lodash"):
+            _ = left[0]
+            self.nline = f"import {_} from {module}"
+        # elif module == "'objection'":
+        #     if left[0] == 'Model' and self.fix_comma(right) == '.Model':
+        #         self.nline = "import Model from 'objection'"
+        #         right = ''
+        #     elif not right:
+        #         _ = left[0]
+        #         self.nline = f"import * as {_} from {module}"
+        #     else:
+        #         raise NameError(self.oline)
+        elif left[0] == '{':
+            _ = '{ ' + self.fix_comma(left[1:-1]) + ' }'
+            self.nline = f'import {_} from {module}'
+        elif len(left) == 1 and self.quote(left[0]) == module:
+            self.nline = f'import {module}'
+        elif len(left) == 1:
+            _ = left[0]
+            self.nline = f"import * as {_} from {module}"
+        else:
+            raise NameError(self.oline)
+
+        if right:
+            right_str = self.fix_comma(right)
+            if right_str[1:] == left[0]:
+                self.nline = self.nline.replace('* as ', '')
+            elif len(right) == 2 and right[0] == '.':
+                self.nline = self.nline.replace('*', right[1])
+            else:
+                self.nline += f'   // Fixme!: {right_str}' 
 
 ####################################################################################################
 
@@ -124,27 +247,19 @@ class CjsToEsm:
     ##############################################
 
     def fix_require(self, oline: str) -> str:
-        # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
-        # const _ = require('lodash')
-        #
-        # import defaultExport from "module-name"
-        # import * as name from "module-name"
-        # import { export1 } from "module-name"
-        # import { export1 as alias1 } from "module-name"
-        # import { default as alias } from "module-name"
-        # import { export1, export2 } from "module-name"
-        # import { export1, export2 as alias2, /* … */ } from "module-name"
-        # import { "string name" as alias } from "module-name"
-        # import defaultExport, { export1, /* … */ } from "module-name"
-        # import defaultExport, * as name from "module-name"
-        # import "module-name"
-        # let foo = import("module")
-
+        # skip commented
         if oline.strip().startswith('//'):
             return oline
 
-        for _ in ctok.tokenize(oline, lang='javascript', syntax_error='ignore'):
-            print(_)
+        print(Fore.GREEN + '-'*80)
+        require_expression = RequireExpression(oline)
+        return require_expression.nline
+
+    ##############################################
+
+    def fix_require_old(self, oline: str) -> str:
+        if oline.strip().startswith('//'):
+            return oline
 
         nline = self.patch(oline)
         if nline is not None:
@@ -209,39 +324,6 @@ class CjsToEsm:
     ##############################################
 
     def fix_export(self, oline: str) -> str:
-        # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
-        # // Exporting declarations
-        # export let name1, name2/*, … */; // also var
-        # export const name1 = 1, name2 = 2/*, … */; // also var, let
-        # export function functionName() { /* … */ }
-        # export class ClassName { /* … */ }
-        # export function* generatorFunctionName() { /* … */ }
-        # export const { name1, name2: bar } = o;
-        # export const [ name1, name2 ] = array;
-        #
-        # // Export list
-        # export { name1, /* …, */ nameN };
-        # export { variable1 as name1, variable2 as name2, /* …, */ nameN };
-        # export { variable1 as "string name" };
-        # export { name1 as default /*, … */ };
-        #
-        # // Default exports
-        # export default expression;
-        # export default function functionName() { /* … */ }
-        # export default class ClassName { /* … */ }
-        # export default function* generatorFunctionName() { /* … */ }
-        # export default function () { /* … */ }
-        # export default class { /* … */ }
-        # export default function* () { /* … */ }
-        #
-        # // Aggregating modules
-        # export * from "module-name";
-        # export * as name1 from "module-name";
-        # export { name1, /* …, */ nameN } from "module-name";
-        # export { import1 as name1, import2 as name2, /* …, */ nameN } from "module-name";
-        # export { default, /* …, */ } from "module-name";
-        # export { default as name1 } from "module-name";
-
         # updates: {
         # arabic: '
         # fdCache: {},
