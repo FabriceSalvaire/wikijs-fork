@@ -532,3 +532,12 @@ def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
     for _ in sorted(matches, key=lambda _: _.line):
         printc(_.to_str(_.line != prev), escaped=True)
         prev = _.line
+
+####################################################################################################
+
+@task
+def to_esm(ctx) -> None:
+    from .lib.jstool import CjsToEsm
+    source_path = SOURCE_PATH / 'wikijs-server/server'
+    for _ in yield_source_files(source_path, suffixes=('.js',)):
+        CjsToEsm(_)
