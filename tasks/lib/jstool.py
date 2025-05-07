@@ -4,10 +4,13 @@ from pathlib import Path
 
 from .helper import printc, Fore
 
+import code_tokenize as ctok
+
 ####################################################################################################
 
 PATCHES = {
     'module.exports = router': 'export { router }',
+    "const Model = require('objection').Model": "import { Model } from 'objection'",
 }
 
 ####################################################################################################
@@ -23,12 +26,15 @@ class CjsToEsm:
 
     def __init__(self, path: Path | str) -> None:
         path = Path(path)
-        printc('<green>' + '='*100 + '</green>')
-        printc(f'<red>{path}</red>')
+        if True:
+            printc('<green>' + '='*100 + '</green>')
+            printc(f'<red>{path}</red>')
         osource = path.read_text()
-        nsource = self.fix(osource, fix_require=True, fix_export=True)
-        # print(nsource)
-        path.write_text(nsource)
+        debug = True
+        nsource = self.fix(osource, fix_require=True, fix_export=False, debug=debug)
+        if not debug:
+            # print(nsource)
+            path.write_text(nsource)
 
     ##############################################
 
@@ -55,6 +61,11 @@ class CjsToEsm:
         for oline in source.splitlines():
             oline = oline.rstrip()
             nline = oline
+
+            if oline == 'module.exports = {':
+                nline = 'export default {'
+            elif oline.startswith('module.exports'):
+                nline = self.fix_default_export(oline)
 
             if fix_export:
                 if level == 0:
@@ -88,7 +99,8 @@ class CjsToEsm:
                 nline = self.fix_require(oline)
 
             if debug and nline != oline:
-                if nline is not None and 'export' in nline:
+                if nline is not None:
+                    # and 'export' in nline
                     print()
                     # print(f'< |{oline}|')
                     # print(f'> |{nline}|')
@@ -131,8 +143,16 @@ class CjsToEsm:
         if oline.strip().startswith('//'):
             return oline
 
+        for _ in ctok.tokenize(oline, lang='javascript', syntax_error='ignore'):
+            print(_)
+
+        nline = self.patch(oline)
+        if nline is not None:
+            return nline
+
         if oline.startswith(' '):
-            nline = oline.replace('require', 'import')
+            # Fixme: (await import('foo')).bar
+            nline = oline.replace('require', 'await import')
         else:
             nline = 'import ' + oline
             for _ in (
@@ -140,9 +160,40 @@ class CjsToEsm:
                     ("')", "'"),
                     ('const ', ''),
                     ('=', 'from'),
-                    ('import _', 'import * as _'),
             ):
                 nline = nline.replace(*_)
+
+        if './' in nline and not nline.endswith(".js'"):
+            i = nline.rfind("'")
+            if i != -1:
+                nline = nline[:i] + ".js'"
+        if nline.endswith(".js'") and '{' not in nline:
+            nline = nline.replace('import', 'import * as')
+
+        if nline.endswith('.Strategy'):
+            for _ in (
+                    ('.Strategy', ''),
+                    ('from', 'as Strategy from'),
+            ):
+                nline = nline.replace(*_)
+
+        # Fixme:
+        # import EventEmitter from 'eventemitter2'.EventEmitter2
+        # import JSBinType from 'js-binary'.Type
+        # import OIDCStrategy from 'passport-azure-ad'.OIDCStrategy
+        # import PubSub from 'graphql-subscriptions'.PubSub
+        # import UINT64 from 'cuint'.UINT64
+        # import URL from 'url'.URL
+        # import mime from 'mime-types'.lookup
+        # import turndownPluginGfm from '@joplin/turndown-plugin-gfm'.gfm
+
+        # import { v4: uuid } from 'uuid'
+        # await import('winston-papertrail').Papertrail
+        # import tsquery from 'pg-tsquery'()
+        # modelClass: await import('./users.js'
+        # import nanoid from 'nanoid/non-secure'.customAlphabet('1234567890abcdef', 10)
+        # revocationList: await import * as('./cache.js'
+
         for _ in (
                 'let',
                 # "'.",
@@ -232,7 +283,7 @@ class CjsToEsm:
             nline = oline
             for _ in (
                     ('module.exports =', 'export default'),
-                    ('export default class', 'export class'),
+                    ('export default class', 'export class'),   # Fixme: ok ?
             ):
                 nline = nline.replace(*_, count=1)
         return nline
