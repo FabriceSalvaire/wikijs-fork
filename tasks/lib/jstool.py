@@ -19,6 +19,21 @@ PATCHES = {
 
 ####################################################################################################
 
+NODE_LIBS = (
+    'crypto',
+    'fs',
+    'http',
+    'https',
+    'os',
+    'path',
+    'stream',
+    'url',
+    'util',
+    'zlib',
+)
+
+####################################################################################################
+
 class RequireExpression:
 
     ##############################################
@@ -44,14 +59,40 @@ class RequireExpression:
 
         # print(' | '.join([str(_) for _ in tokens]))
         try:
-            self.const_require(tokens)
+            if self.oline.startswith(' '):
+                self.dynamic_require(tokens)
+            else:
+                self.static_require(tokens)
         except ValueError:
             _ = path.relative_to(Path.cwd())
+            print()
             printc(f'<red>Fixme</red>: <blue>{_}</blue>{LINESEP}{oline}')
         except Exception as e:
             print(self.oline)
             print(e)
             raise
+
+    ##############################################
+
+    def match_delimiter(self, tokens: list[str], delimiters: str = '()') -> list[list[str], list[str]]:
+        open_delimiter, close_delimiter = delimiters[:2]
+        open = None
+        close = None
+        level = 0
+        for i, _ in enumerate(tokens):
+            # match _:
+            #     case open_delimiter:
+            #     case close_delimiter:
+            if _ == open_delimiter:
+                if level == 0:
+                    open = i
+                level += 1
+            elif _ == close_delimiter:
+                level -= 1
+                if level == 0:
+                    close = i
+                    break
+        return tokens[open+1:close], tokens[close+1:]
 
     ##############################################
 
@@ -68,10 +109,28 @@ class RequireExpression:
     def quote(self, string: str) -> str:
         return f"'{string}'"
 
+    def unquote(self, string: str) -> str:
+        return string[1:-1]
+
     ##############################################
 
-    def const_require(self, tokens: list[str]):
-        if self.oline.startswith(' ') or tokens[0] != 'const':
+    def to_module_str(self, module: list[str]) -> str:
+        if len(module) == 1:
+            module = module.pop()
+        else:
+            module = self.fix_comma(module)
+        if '.' in module:
+            for c in "'`":
+                suffix = ".js" + c
+                if module.endswith(c) and not module.endswith(suffix):
+                    module = module[:-1] + suffix
+        return module
+
+    ##############################################
+
+    def static_require(self, tokens: list[str]) -> None:
+        # self.oline.startswith(' ') or 
+        if tokens[0] != 'const':
             raise ValueError
 
         tokens = tokens[1:]
@@ -84,45 +143,16 @@ class RequireExpression:
             raise ValueError
         # print(left, right)
 
-        open = None
-        close = None
-        level = 0
-        for i, _ in enumerate(right):
-            match _:
-                case '(':
-                    if level == 0:
-                        open = i
-                    level += 1
-                case ')':
-                    level -= 1
-                    if level == 0:
-                        close = i
-                        break
-        module = right[open+1:close]
-        if len(module) == 1:
-            module = module.pop()
-        else:
-            module = self.fix_comma(module)
-        if '.' in module:
-            for c in "'`":
-                suffix = ".js" + c 
-                if module.endswith(c) and not module.endswith(suffix):
-                    module = module[:-1] + suffix
-        right = right[close+1:]
+        module, right = self.match_delimiter(right)
+        module = self.to_module_str(module)
         # print(left, module, right)
 
-        if module.startswith("'lodash"):
+        umodule = self.unquote(module)
+        if umodule in NODE_LIBS:
+            self.nline = f"import * as {umodule} from 'node:{umodule}'"
+        elif module.startswith("'lodash"):
             _ = left[0]
             self.nline = f"import {_} from {module}"
-        # elif module == "'objection'":
-        #     if left[0] == 'Model' and self.fix_comma(right) == '.Model':
-        #         self.nline = "import Model from 'objection'"
-        #         right = ''
-        #     elif not right:
-        #         _ = left[0]
-        #         self.nline = f"import * as {_} from {module}"
-        #     else:
-        #         raise NameError(self.oline)
         elif left[0] == '{':
             _ = '{ ' + self.fix_comma(left[1:-1]) + ' }'
             self.nline = f'import {_} from {module}'
@@ -144,6 +174,31 @@ class RequireExpression:
                 self.nline += f'   // Fixme!: {right_str}' 
                 raise ValueError
 
+    ##############################################
+
+    def dynamic_require(self, tokens: list[str]) -> None:
+        i = self.oline.find('require')
+        left = self.oline[:i].rstrip()
+        for i, _ in enumerate(tokens):
+            if _ == 'require':
+                break
+        right = tokens[i+1:]
+
+        module, right = self.match_delimiter(right)
+        module = self.to_module_str(module)
+        # print(left, module, right)
+
+        if len(right) == 1 and right[0] == ',':
+            self.nline = f"{left} await import({module}),"
+        elif right:
+            right_str = self.fix_comma(right)
+            self.nline = f"{left} (await import({module})){right_str}"
+        else:
+            self.nline = f"{left} await import({module})"
+        if self.nline.count('await') > 1:
+            raise ValueError
+        # Fixme: // without spacing
+
 ####################################################################################################
 
 class CjsToEsm:
@@ -158,10 +213,12 @@ class CjsToEsm:
     def __init__(self, path: Path | str) -> None:
         self.path = Path(path)
         if True:
+            print()
             printc('<green>' + '='*100 + '</green>')
-            printc(f'<red>{self.path}</red>')
+            _ = self.path.relative_to(Path.cwd())
+            printc(f'<red>{_}</red>')
         osource = self.path.read_text()
-        debug = True
+        debug = False
         nsource = self.fix(osource, fix_require=True, fix_export=False, debug=debug)
         if not debug:
             # print(nsource)
@@ -229,7 +286,8 @@ class CjsToEsm:
             if fix_require and 'require(' in oline:
                 nline = self.fix_require(oline)
 
-            if debug and nline != oline:
+            # debug and
+            if nline != oline:
                 if nline is not None:
                     # and 'export' in nline
                     print()
@@ -244,8 +302,8 @@ class CjsToEsm:
                 dest.append(nline)
                 prev = nline
 
-        return '\n'.join(dest)
-    # .rstrip().rstrip() + '\n'
+        return LINESEP.join(dest) + LINESEP
+    # .rstrip().rstrip() + LINESEP
 
     ##############################################
 
