@@ -48,6 +48,8 @@ console.warn("...")
 console.error("...")
 ```
 
+To dump an object use `console.log`
+
 # Winston
 
 ```

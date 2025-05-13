@@ -59,6 +59,9 @@
 - [asciidoctor @npm](https://www.npmjs.com/package/asciidoctor)
   AsciiDoc
 
+- [auto-load - npm](https://www.npmjs.com/package/auto-load)
+  require() all files in subfolder
+
 - [bluebird](https://github.com/petkaantonov/bluebird)
   Promise
   **Warning: Please use native promises instead if at all possible**
