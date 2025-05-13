@@ -1,30 +1,62 @@
-# Emacs backup
-*~
+# -*- mode: Conf -*-
 
+################################################################################
 # Secret
 tasks/.github-token
 invoke.yaml
 
+################################################################################
+
+__TRASH__/
+nogit/
+
+################################################################################
+# Emacs backup
+*~
+
+# IDE exclude
+.idea
+*.sublime-*
+
+################################################################################
 # Python cache 
 __pycache__
 
+################################################################################
 # Logs
-logs
 *.log
-/logs
+# logs
+# /logs
 
-# Deployment builds
-dist
+################################################################################
+# NPM / Yarn
+# .npm
+# .node_repl_history
+# npm-debug.log*
+# .yarn
 
+################################################################################
+# Webpack
+.webpack-cache
+# .fusebox
+
+################################################################################
 # Dependency directories
 node_modules
-npm/node_modules
+# npm/node_modules
 
-# NPM / Yarn
-.npm
-.node_repl_history
-npm-debug.log*
-.yarn
+################################################################################
+# Test results
+# test-results/
+# .scannerwork
+
+################################################################################
+# Deployment builds
+# dist
+
+################################################################################
+# Config Files
+wikijs-server/config.yml
 
 # Generated assets
 /assets
@@ -32,43 +64,37 @@ server/views/master.pug
 server/views/legacy/master.pug
 server/views/setup.pug
 
-# Webpack
-.webpack-cache
-.fusebox
-
-# Config Files
-/config.yml
-
-# Data directories
-/repo
-/data
-/uploads
-/content
-/temp
-*.sqlite
-
-# IDE exclude
-.idea
-*.sublime-*
-
-# Test results
-test-results/
-.scannerwork
-
 # Localization Resources
 /server/locales/**/*.yml
 
+################################################################################
+# Wiki instance data
+wikijs-server/test-instance/
+# /repo
+/data
+wikijs-server/data
+# /uploads
+# /content
+# /temp
+*.sqlite
+
+################################################################################
+# Links
+client
+server
+.__pnpm-cache__
+.__pnpm-store__
+
+################################################################################
+
 resources/
 
+################################################################################
 # ...
 
 __NOTES__/
-__TRASH__/
 
 TODO.md
-
-.__pnpm-cache__
-.__pnpm-store__
 
 doc/outline.md
 doc/sql/sqlite-content.sql
@@ -76,19 +102,18 @@ doc/sql/sqlite-fresh-full.sql
 doc/wget/
 doc/yarn-audit/
 
-apage.html
-imports.json
-mdi-updates.txt
-package.json-backup
-webpack.prod.js
-yarn.lock-*
-
-
-wikijs-server/assets/
-wikijs-server/config.yml
-wikijs-server/package-backup.json
-wikijs-server/pnpm-prune-log.txt
-wikijs-server/pnpm-workspace.yaml
-wikijs-server/server/views/legacy/master.pug
-wikijs-server/server/views/master.pug
-wikijs-server/server/views/setup.pug
+# apage.html
+# imports.json
+# mdi-updates.txt
+# package.json-backup
+# webpack.prod.js
+# yarn.lock-*
+ 
+# wikijs-server/assets/
+# wikijs-server/config.yml
+# wikijs-server/package-backup.json
+# wikijs-server/pnpm-prune-log.txt
+# wikijs-server/pnpm-workspace.yaml
+# wikijs-server/server/views/legacy/master.pug
+# wikijs-server/server/views/master.pug
+# wikijs-server/server/views/setup.pug
