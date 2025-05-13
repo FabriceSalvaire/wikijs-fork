@@ -18,6 +18,7 @@ from pathlib import Path
 from dataclasses import dataclass
 import json
 import os
+import subprocess
 
 from invoke import task
 
@@ -541,3 +542,16 @@ def to_esm(ctx) -> None:
     source_path = SOURCE_PATH / 'wikijs-server/server'
     for _ in yield_source_files(source_path, suffixes=('.js',)):
         CjsToEsm(_)
+
+####################################################################################################
+
+@task
+def dynamic_import(ctx, path='server') -> None:
+    # clear ; ag --ignore '*~' 'import\(' server
+    cmd = (
+        '/usr/bin/ag',
+        '--ignore', '*~',
+        r'import\(',
+        path,
+    )
+    subprocess.run(cmd)
