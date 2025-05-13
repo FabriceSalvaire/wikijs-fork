@@ -1,13 +1,13 @@
-const _ = require('lodash')
+import _ from 'lodash'
 /* global WIKI */
 
 // ------------------------------------
 // CAS Account
 // ------------------------------------
 
-const CASStrategy = require('passport-cas').Strategy
+import CASStrategy from 'passport-cas'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new CASStrategy({

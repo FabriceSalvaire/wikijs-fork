@@ -1,7 +1,7 @@
-const asciidoctor = require('asciidoctor')()
-const cheerio = require('cheerio')
+import asciidoctor from 'asciidoctor'   // Fixme!: ()
+import cheerio from 'cheerio'
 
-module.exports = {
+export default {
   async render() {
     const html = asciidoctor.convert(this.input, {
       standalone: false,

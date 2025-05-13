@@ -1,7 +1,7 @@
-const { JSDOM } = require('jsdom')
-const createDOMPurify = require('dompurify')
+import { JSDOM } from 'jsdom'
+import createDOMPurify from 'dompurify'
 
-module.exports = {
+export default {
   async init(input, config) {
     if (config.safeHTML) {
       const window = new JSDOM('').window

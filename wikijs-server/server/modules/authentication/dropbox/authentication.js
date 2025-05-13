@@ -4,10 +4,10 @@
 // Dropbox Account
 // ------------------------------------
 
-const DropboxStrategy = require('passport-dropbox-oauth2').Strategy
-const _ = require('lodash')
+import DropboxStrategy from 'passport-dropbox-oauth2'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new DropboxStrategy({

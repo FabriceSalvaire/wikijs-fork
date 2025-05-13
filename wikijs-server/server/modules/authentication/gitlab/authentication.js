@@ -4,10 +4,10 @@
 // GitLab Account
 // ------------------------------------
 
-const GitLabStrategy = require('passport-gitlab2').Strategy
-const _ = require('lodash')
+import GitLabStrategy from 'passport-gitlab2'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new GitLabStrategy({

@@ -1,11 +1,11 @@
-const { full: mdEmoji } = require('markdown-it-emoji')
-const twemoji = require('twemoji')
+import { full as mdEmoji } from 'markdown-it-emoji'
+import twemoji from 'twemoji'
 
 // ------------------------------------
 // Markdown - Emoji
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(mdEmoji)
 

@@ -4,10 +4,10 @@
 // Microsoft Account
 // ------------------------------------
 
-const WindowsLiveStrategy = require('passport-microsoft').Strategy
-const _ = require('lodash')
+import WindowsLiveStrategy from 'passport-microsoft'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new WindowsLiveStrategy({

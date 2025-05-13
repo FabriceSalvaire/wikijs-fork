@@ -1,6 +1,6 @@
 /* global WIKI */
 
-module.exports = {
+export default {
   activate() {
     // not used
   },

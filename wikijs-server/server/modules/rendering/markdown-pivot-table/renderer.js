@@ -1,6 +1,6 @@
-const pivotTable = require('markdown-it-pivot-table')
+import pivotTable from 'markdown-it-pivot-table'
 
-module.exports = {
+export default {
   init (md) {
     md.use(pivotTable)
   }

@@ -1,10 +1,10 @@
-const fs = require('fs-extra')
-const os = require('os')
-const path = require('path')
+import fs from 'fs-extra'
+import * as os from 'node:os'
+import * as path from 'node:path'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   key: 'sharp',
   title: 'Sharp',
   description: 'Process and transform images. Required to generate thumbnails of uploaded images and perform transformations.',

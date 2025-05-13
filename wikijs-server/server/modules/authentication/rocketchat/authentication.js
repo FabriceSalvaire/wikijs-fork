@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const _ = require('lodash')
 // Rocket.chat Account
 // ------------------------------------
 
-const OAuth2Strategy = require('passport-oauth2').Strategy
+import OAuth2Strategy from 'passport-oauth2'
 
-module.exports = {
+export default {
   init (passport, conf) {
     const siteURL = conf.siteURL.slice(-1) === '/' ? conf.siteURL.slice(0, -1) : conf.siteURL
 

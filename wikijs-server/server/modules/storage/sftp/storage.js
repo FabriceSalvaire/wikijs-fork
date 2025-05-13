@@ -1,10 +1,10 @@
-const SSH2Promise = require('ssh2-promise')
-const _ = require('lodash')
-const path = require('path')
-const stream = require('stream')
-const Promise = require('bluebird')
+import SSH2Promise from 'ssh2-promise'
+import _ from 'lodash'
+import * as path from 'node:path'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-const pageHelper = require('../../../helpers/page.js')
+import pageHelper from '../../../helpers/page.js'
 
 /* global WIKI */
 
@@ -14,7 +14,7 @@ const getFilePath = (page, pathKey) => {
   return withLocaleCode ? `${page.localeCode}/${fileName}` : fileName
 }
 
-module.exports = {
+export default {
   client: null,
   sftp: null,
   async activated() {

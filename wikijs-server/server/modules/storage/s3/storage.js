@@ -1,3 +1,3 @@
-const S3CompatibleStorage = require('./common')
+import S3CompatibleStorage from './common.js'
 
-module.exports = new S3CompatibleStorage('S3')
+export default new S3CompatibleStorage('S3')

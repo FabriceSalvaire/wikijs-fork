@@ -1,12 +1,12 @@
-const winston = require('winston')
+import winston from 'winston'
 
 // ------------------------------------
 // Loggly
 // ------------------------------------
 
-module.exports = {
-  init (logger, conf) {
-    require('winston-loggly-bulk')
+export default {
+  async init (logger, conf) {
+    await import('winston-loggly-bulk')
     logger.add(new winston.transports.Loggly({
       token: conf.token,
       subdomain: conf.subdomain,

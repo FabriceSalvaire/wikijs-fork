@@ -1,6 +1,6 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
-module.exports = {
+export default {
   async init($, config) {
     for (let i = 1; i < 6; i++) {
       $(`h${i}.tabset`).each((idx, elm) => {

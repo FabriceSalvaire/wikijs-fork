@@ -1,4 +1,4 @@
-const mjax = require('mathjax')
+import mjax from 'mathjax'
 
 /* global WIKI */
 
@@ -18,7 +18,7 @@ const extensions = [
   'verb'
 ]
 
-module.exports = {
+export default {
   async init (mdinst, conf) {
     const MathJax = await mjax.init({
       loader: {

@@ -6,7 +6,7 @@ const renderEm = (tokens, idx, opts, env, slf) => {
   return slf.renderToken(tokens, idx, opts)
 }
 
-module.exports = (md) => {
+export default (md) => {
   md.renderer.rules.em_open = renderEm
   md.renderer.rules.em_close = renderEm
 }

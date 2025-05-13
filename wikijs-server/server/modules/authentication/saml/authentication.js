@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const _ = require('lodash')
 // SAML Account
 // ------------------------------------
 
-const SAMLStrategy = require('passport-saml').Strategy
+import SAMLStrategy from 'passport-saml'
 
-module.exports = {
+export default {
   init (passport, conf) {
     const samlConfig = {
       callbackUrl: conf.callbackURL,

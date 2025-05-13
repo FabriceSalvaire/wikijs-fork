@@ -1,9 +1,9 @@
-const { BlobServiceClient, StorageSharedKeyCredential } = require('@azure/storage-blob')
-const stream = require('stream')
-const Promise = require('bluebird')
+import { BlobServiceClient, StorageSharedKeyCredential } from '@azure/storage-blob'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-const pageHelper = require('../../../helpers/page.js')
-const _ = require('lodash')
+import pageHelper from '../../../helpers/page.js'
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -13,7 +13,7 @@ const getFilePath = (page, pathKey) => {
   return withLocaleCode ? `${page.localeCode}/${fileName}` : fileName
 }
 
-module.exports = {
+export default {
   async activated() {
 
   },

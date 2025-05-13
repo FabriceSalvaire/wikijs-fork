@@ -1,11 +1,11 @@
-const mdSub = require('markdown-it-sub')
-const mdSup = require('markdown-it-sup')
+import mdSub from 'markdown-it-sub'
+import mdSup from 'markdown-it-sup'
 
 // ------------------------------------
 // Markdown - Subscript / Superscript
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     if (conf.subEnabled) {
       md.use(mdSub)

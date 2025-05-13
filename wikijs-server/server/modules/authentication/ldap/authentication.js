@@ -4,11 +4,11 @@
 // LDAP Account
 // ------------------------------------
 
-const LdapStrategy = require('passport-ldapauth').Strategy
-const fs = require('fs')
-const _ = require('lodash')
+import LdapStrategy from 'passport-ldapauth'
+import * as fs from 'node:fs'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new LdapStrategy({

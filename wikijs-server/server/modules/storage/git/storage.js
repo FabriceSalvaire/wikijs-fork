@@ -1,20 +1,20 @@
-const path = require('path')
-const sgit = require('simple-git')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const stream = require('stream')
-const Promise = require('bluebird')
+import * as path from 'node:path'
+import sgit from 'simple-git'
+import fs from 'fs-extra'
+import _ from 'lodash'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-const klaw = require('klaw')
-const os = require('os')
+import klaw from 'klaw'
+import * as os from 'node:os'
 
-const pageHelper = require('../../../helpers/page')
-const assetHelper = require('../../../helpers/asset')
-const commonDisk = require('../disk/common')
+import pageHelper from '../../../helpers/page.js'
+import assetHelper from '../../../helpers/asset.js'
+import commonDisk from '../disk/common.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   git: null,
   repoPath: path.resolve(WIKI.ROOTPATH, WIKI.config.dataPath, 'repo'),
   async activated() {

@@ -1,11 +1,11 @@
-const tsquery = require('pg-tsquery')()
-const stream = require('stream')
-const Promise = require('bluebird')
+import tsquery from 'pg-tsquery'   // Fixme!: ()
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async activate() {
     if (WIKI.config.db.type !== 'postgres') {
       throw new WIKI.Error.SearchActivationFailed('Must use PostgreSQL database to activate this engine!')

@@ -56,7 +56,7 @@
   //  It takes the argument to \ce or \pu and returns the corresponding TeX string.
   //
 
-  module.exports = function (tokens, stateMachine) {
+export default function (tokens, stateMachine) {
     // Recreate the argument string from KaTeX's array of tokens.
     var str = "";
     var expectedLoc = tokens[tokens.length - 1].loc.start

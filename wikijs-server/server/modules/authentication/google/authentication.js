@@ -4,10 +4,10 @@
 // Google ID Account
 // ------------------------------------
 
-const GoogleStrategy = require('passport-google-oauth20').Strategy
-const _ = require('lodash')
+import GoogleStrategy from 'passport-google-oauth20'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     const strategy = new GoogleStrategy({
       clientID: conf.clientId,

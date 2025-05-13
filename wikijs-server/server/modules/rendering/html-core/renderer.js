@@ -1,14 +1,14 @@
-const _ = require('lodash')
-const cheerio = require('cheerio')
-const uslug = require('uslug')
-const pageHelper = require('../../../helpers/page')
-const URL = require('url').URL
+import _ from 'lodash'
+import cheerio from 'cheerio'
+import uslug from 'uslug'
+import pageHelper from '../../../helpers/page.js'
+import url from 'node:url'
 
 const mustacheRegExp = /(\{|&#x7b;?){2}(.+?)(\}|&#x7d;?){2}/i
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async render() {
     let $ = cheerio.load(this.input, {
       decodeEntities: true
@@ -23,7 +23,7 @@ module.exports = {
     // --------------------------------
 
     for (let child of _.reject(this.children, ['step', 'post'])) {
-      const renderer = require(`../${_.kebabCase(child.key)}/renderer.js`)
+      const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
       await renderer.init($, child.config)
     }
 
@@ -260,7 +260,7 @@ module.exports = {
     let output = decodeEscape($.html('body').replace('<body>', '').replace('</body>', ''))
 
     for (let child of _.sortBy(_.filter(this.children, ['step', 'post']), ['order'])) {
-      const renderer = require(`../${_.kebabCase(child.key)}/renderer.js`)
+      const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
       output = await renderer.init(output, child.config)
     }
 

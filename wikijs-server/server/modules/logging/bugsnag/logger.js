@@ -1,17 +1,17 @@
-const util = require('util')
-const winston = require('winston')
-const _ = require('lodash')
+import * as util from 'node:util'
+import winston from 'winston'
+import _ from 'lodash'
 
 // ------------------------------------
 // Bugsnag
 // ------------------------------------
 
-module.exports = {
-  init (logger, conf) {
+export default {
+  async init (logger, conf) {
     let BugsnagLogger = winston.transports.BugsnagLogger = function (options) {
       this.name = 'bugsnagLogger'
       this.level = options.level || 'warn'
-      this.bugsnag = require('bugsnag')
+      this.bugsnag = await import('bugsnag')
       this.bugsnag.register(options.key)
     }
     util.inherits(BugsnagLogger, winston.Transport)

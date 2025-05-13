@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   init($, config) {
     $('pre.prismjs > code.language-mermaid').each((i, elm) => {
       const mermaidContent = $(elm).html()

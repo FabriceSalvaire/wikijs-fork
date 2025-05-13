@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const _ = require('lodash')
 // Keycloak Account
 // ------------------------------------
 
-const KeycloakStrategy = require('@exlinc/keycloak-passport')
+import KeycloakStrategy from '@exlinc/keycloak-passport'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new KeycloakStrategy({

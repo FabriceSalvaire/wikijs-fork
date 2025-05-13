@@ -4,10 +4,10 @@
 // GitHub Account
 // ------------------------------------
 
-const GitHubStrategy = require('passport-github2').Strategy
-const _ = require('lodash')
+import GitHubStrategy from 'passport-github2'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     let githubConfig = {
       clientID: conf.clientId,

@@ -1,6 +1,6 @@
-const multiTable = require('markdown-it-multimd-table')
+import multiTable from 'markdown-it-multimd-table'
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(multiTable, {
       multiline: conf.multilineEnabled,

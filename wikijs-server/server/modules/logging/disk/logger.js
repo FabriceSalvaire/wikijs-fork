@@ -2,7 +2,7 @@
 // Disk
 // ------------------------------------
 
-module.exports = {
+export default {
   init (logger, conf) {
 
   }

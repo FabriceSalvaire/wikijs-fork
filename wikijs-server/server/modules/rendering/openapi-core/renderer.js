@@ -1,11 +1,11 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
-module.exports = {
+export default {
   async render() {
     let output = this.input
 
     for (let child of this.children) {
-      const renderer = require(`../${_.kebabCase(child.key)}/renderer.js`)
+      const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
       output = await renderer.init(output, child.config)
     }
 

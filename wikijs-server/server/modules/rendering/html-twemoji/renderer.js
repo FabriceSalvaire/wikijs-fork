@@ -4,7 +4,7 @@
 // HTML - Twemoji
 // ------------------------------------
 
-module.exports = {
+export default {
   init (input, conf) {
     // TODO: Must limit to text nodes only (exclude code blocks, already processed emojis, etc.)
     //

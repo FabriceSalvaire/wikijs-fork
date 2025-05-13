@@ -4,10 +4,10 @@
 // Slack Account
 // ------------------------------------
 
-const SlackStrategy = require('passport-slack-oauth2').Strategy
-const _ = require('lodash')
+import SlackStrategy from 'passport-slack-oauth2'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new SlackStrategy({

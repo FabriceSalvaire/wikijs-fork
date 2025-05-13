@@ -1,10 +1,10 @@
-const mdFootnote = require('markdown-it-footnote')
+import mdFootnote from 'markdown-it-footnote'
 
 // ------------------------------------
 // Markdown - Footnotes
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(mdFootnote)
   }

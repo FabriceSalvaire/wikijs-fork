@@ -4,10 +4,10 @@
 // Okta Account
 // ------------------------------------
 
-const OktaStrategy = require('passport-okta-oauth').Strategy
-const _ = require('lodash')
+import OktaStrategy from 'passport-okta-oauth'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new OktaStrategy({

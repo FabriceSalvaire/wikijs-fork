@@ -1,12 +1,12 @@
-const _ = require('lodash')
-const stream = require('stream')
-const Promise = require('bluebird')
-const fs = require('fs')
+import _ from 'lodash'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
+import * as fs from 'node:fs'
 const pipeline = Promise.promisify(stream.pipeline)
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async activate() {
     // not used
   },
@@ -20,7 +20,7 @@ module.exports = {
     WIKI.logger.info(`(SEARCH/ELASTICSEARCH) Initializing...`)
     switch (this.config.apiVersion) {
       case '8.x':
-        const { Client: Client8 } = require('elasticsearch8')
+        const Client8 = (await import('elasticsearch8')).Client
         this.client = new Client8({
           nodes: this.config.hosts.split(',').map(_.trim),
           sniffOnStart: this.config.sniffOnStart,
@@ -30,7 +30,7 @@ module.exports = {
         })
         break
       case '7.x':
-        const { Client: Client7 } = require('elasticsearch7')
+        const Client7 = (await import('elasticsearch7')).Client
         this.client = new Client7({
           nodes: this.config.hosts.split(',').map(_.trim),
           sniffOnStart: this.config.sniffOnStart,
@@ -40,7 +40,7 @@ module.exports = {
         })
         break
       case '6.x':
-        const { Client: Client6 } = require('elasticsearch6')
+        const Client6 = (await import('elasticsearch6')).Client
         this.client = new Client6({
           nodes: this.config.hosts.split(',').map(_.trim),
           sniffOnStart: this.config.sniffOnStart,
@@ -135,7 +135,7 @@ module.exports = {
         } catch (err) {
           WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Create Index Error: `, _.get(err, 'meta.body.error', err))
         }
-      } 
+      }
     } catch (err) {
       WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Index Check Error: `, _.get(err, 'meta.body.error', err))
     }

@@ -4,9 +4,9 @@
 // Auth0 Account
 // ------------------------------------
 
-const Auth0Strategy = require('passport-auth0').Strategy
+import Auth0Strategy from 'passport-auth0'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new Auth0Strategy({

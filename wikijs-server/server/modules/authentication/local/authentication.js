@@ -1,4 +1,4 @@
-const bcrypt = require('bcryptjs-then')
+import bcrypt from 'bcryptjs-then'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const bcrypt = require('bcryptjs-then')
 // Local Account
 // ------------------------------------
 
-const LocalStrategy = require('passport-local').Strategy
+import LocalStrategy from 'passport-local'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use('local',
       new LocalStrategy({

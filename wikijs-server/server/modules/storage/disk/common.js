@@ -1,17 +1,17 @@
-const fs = require('fs-extra')
-const path = require('path')
-const stream = require('stream')
-const Promise = require('bluebird')
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-const klaw = require('klaw')
-const mime = require('mime-types').lookup
-const _ = require('lodash')
+import klaw from 'klaw'
+import mime from 'mime-types'
+import _ from 'lodash'
 
-const pageHelper = require('../../../helpers/page.js')
+import pageHelper from '../../../helpers/page.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   assetFolders: null,
   async importFromDisk ({ fullPath, moduleName }) {
     const rootUser = await WIKI.models.users.getRootUser()

@@ -1,19 +1,19 @@
-const fs = require('fs-extra')
-const path = require('path')
-const tar = require('tar-fs')
-const zlib = require('zlib')
-const stream = require('stream')
-const _ = require('lodash')
-const Promise = require('bluebird')
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import tar from 'tar-fs'
+import * as zlib from 'node:zlib'
+import * as stream from 'node:stream'
+import _ from 'lodash'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-const moment = require('moment')
+import moment from 'moment'
 
-const pageHelper = require('../../../helpers/page')
-const commonDisk = require('./common')
+import pageHelper from '../../../helpers/page.js'
+import commonDisk from './common.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async activated() {
     // not used
   },

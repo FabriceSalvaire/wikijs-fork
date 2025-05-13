@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const _ = require('lodash')
 // OAuth2 Account
 // ------------------------------------
 
-const OAuth2Strategy = require('passport-oauth2').Strategy
+import OAuth2Strategy from 'passport-oauth2'
 
-module.exports = {
+export default {
   init (passport, conf) {
     var client = new OAuth2Strategy({
       authorizationURL: conf.authorizationURL,

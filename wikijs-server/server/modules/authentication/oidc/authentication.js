@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const _ = require('lodash')
 // OpenID Connect Account
 // ------------------------------------
 
-const OpenIDConnectStrategy = require('passport-openidconnect').Strategy
+import OpenIDConnectStrategy from 'passport-openidconnect'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new OpenIDConnectStrategy({

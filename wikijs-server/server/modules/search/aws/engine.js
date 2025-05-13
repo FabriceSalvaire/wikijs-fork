@@ -1,12 +1,12 @@
-const _ = require('lodash')
-const AWS = require('aws-sdk')
-const stream = require('stream')
-const Promise = require('bluebird')
+import _ from 'lodash'
+import AWS from 'aws-sdk'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async activate() {
     // not used
   },

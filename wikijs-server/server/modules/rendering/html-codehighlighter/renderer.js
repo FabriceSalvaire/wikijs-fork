@@ -1,6 +1,6 @@
-const hljs = require('highlight.js')
+import hljs from 'highlight.js'
 
-module.exports = {
+export default {
   async init($, config) {
     $('pre > code').each((idx, elm) => {
       const codeClasses = $(elm).attr('class') || ''

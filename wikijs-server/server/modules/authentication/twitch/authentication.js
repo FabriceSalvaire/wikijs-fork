@@ -4,10 +4,10 @@
 // Twitch Account
 // ------------------------------------
 
-const TwitchStrategy = require('passport-twitch-strategy').Strategy
-const _ = require('lodash')
+import TwitchStrategy from 'passport-twitch-strategy'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new TwitchStrategy({

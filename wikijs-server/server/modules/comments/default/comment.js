@@ -1,10 +1,10 @@
-const md = require('markdown-it')
-const { full: mdEmoji } = require('markdown-it-emoji')
-const { JSDOM } = require('jsdom')
-const createDOMPurify = require('dompurify')
-const _ = require('lodash')
-const { AkismetClient } = require('akismet-api')
-const moment = require('moment')
+import md from 'markdown-it'
+import { full as mdEmoji } from 'markdown-it-emoji'
+import { JSDOM } from 'jsdom'
+import createDOMPurify from 'dompurify'
+import _ from 'lodash'
+import { AkismetClient } from 'akismet-api'
+import moment from 'moment'
 
 /* global WIKI */
 
@@ -28,7 +28,7 @@ mkdown.use(mdEmoji)
 // Default Comment Provider
 // ------------------------------------
 
-module.exports = {
+export default {
   /**
    * Init
    */

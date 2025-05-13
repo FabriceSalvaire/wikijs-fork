@@ -1,10 +1,10 @@
-const mdImsize = require('markdown-it-imsize')
+import mdImsize from 'markdown-it-imsize'
 
 // ------------------------------------
 // Markdown - Image Size
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(mdImsize)
   }

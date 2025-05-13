@@ -1,4 +1,4 @@
-const request = require('request-promise')
+import request from 'request-promise'
 
 const prefetch = async (element) => {
   const url = element.attr(`src`)
@@ -20,7 +20,7 @@ const prefetch = async (element) => {
   element.removeClass('prefetch-candidate')
 }
 
-module.exports = {
+export default {
   async init($) {
     const promises = $('img.prefetch-candidate').map((index, element) => {
       return prefetch($(element))

@@ -1,13 +1,13 @@
-const _ = require('lodash')
-const { SearchService, QueryType } = require('azure-search-client')
-const request = require('request-promise')
-const stream = require('stream')
-const Promise = require('bluebird')
+import _ from 'lodash'
+import { SearchService, QueryType } from 'azure-search-client'
+import request from 'request-promise'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async activate() {
     // not used
   },

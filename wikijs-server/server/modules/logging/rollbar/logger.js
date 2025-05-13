@@ -1,17 +1,17 @@
-const util = require('util')
-const winston = require('winston')
-const _ = require('lodash')
+import * as util from 'node:util'
+import winston from 'winston'
+import _ from 'lodash'
 
 // ------------------------------------
 // Rollbar
 // ------------------------------------
 
-module.exports = {
-  init (logger, conf) {
+export default {
+  async init (logger, conf) {
     let RollbarLogger = winston.transports.RollbarLogger = function (options) {
       this.name = 'rollbarLogger'
       this.level = options.level || 'warn'
-      this.rollbar = require('rollbar')
+      this.rollbar = await import('rollbar')
       this.rollbar.init(options.key)
     }
     util.inherits(RollbarLogger, winston.Transport)

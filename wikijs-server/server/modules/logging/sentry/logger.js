@@ -1,16 +1,16 @@
-const util = require('util')
-const winston = require('winston')
+import * as util from 'node:util'
+import winston from 'winston'
 
 // ------------------------------------
 // Sentry
 // ------------------------------------
 
-module.exports = {
-  init (logger, conf) {
+export default {
+  async init (logger, conf) {
     let SentryLogger = winston.transports.SentryLogger = function (options) {
       this.name = 'sentryLogger'
       this.level = options.level || 'warn'
-      this.raven = require('raven')
+      this.raven = await import('raven')
       this.raven.config(options.key).install()
     }
     util.inherits(SentryLogger, winston.Transport)

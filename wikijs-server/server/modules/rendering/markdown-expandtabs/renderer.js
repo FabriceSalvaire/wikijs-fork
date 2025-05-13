@@ -1,11 +1,11 @@
-const mdExpandTabs = require('markdown-it-expand-tabs')
-const _ = require('lodash')
+import mdExpandTabs from 'markdown-it-expand-tabs'
+import _ from 'lodash'
 
 // ------------------------------------
 // Markdown - Expand Tabs
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(mdExpandTabs, {
       tabWidth: _.toInteger(conf.tabWidth || 4)

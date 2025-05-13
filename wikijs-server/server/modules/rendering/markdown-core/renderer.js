@@ -1,8 +1,8 @@
-const md = require('markdown-it')
-const mdAttrs = require('markdown-it-attrs')
-const mdDecorate = require('markdown-it-decorate')
-const _ = require('lodash')
-const underline = require('./underline')
+import md from 'markdown-it'
+import mdAttrs from 'markdown-it-attrs'
+import mdDecorate from 'markdown-it-decorate'
+import _ from 'lodash'
+import underline from './underline.js'
 
 const quoteStyles = {
   Chinese: '””‘’',
@@ -19,7 +19,7 @@ const quoteStyles = {
   Swedish: '””’’'
 }
 
-module.exports = {
+export default {
   async render() {
     const mkdown = md({
       html: this.config.allowHTML,
@@ -46,7 +46,7 @@ module.exports = {
     mkdown.use(mdDecorate)
 
     for (let child of this.children) {
-      const renderer = require(`../${_.kebabCase(child.key)}/renderer.js`)
+      const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
       await renderer.init(mkdown, child.config)
     }
 

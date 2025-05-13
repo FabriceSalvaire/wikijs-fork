@@ -1,13 +1,13 @@
-const winston = require('winston')
+import winston from 'winston'
 
 // ------------------------------------
 // Papertrail
 // ------------------------------------
 
-module.exports = {
-  init (logger, conf) {
+export default {
+  async init (logger, conf) {
     // eslint-disable-next-line no-unused-expressions
-    require('winston-papertrail').Papertrail // NOSONAR
+    (await import('winston-papertrail')).Papertrail // NOSONAR
     logger.add(new winston.transports.Papertrail({
       host: conf.host,
       port: conf.port,

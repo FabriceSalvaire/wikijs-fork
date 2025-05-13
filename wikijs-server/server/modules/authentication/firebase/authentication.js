@@ -6,10 +6,10 @@
 
 // INCOMPLETE / TODO
 
-const FirebaseStrategy = require('passport-github2').Strategy
-const _ = require('lodash')
+import FirebaseStrategy from 'passport-github2'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new FirebaseStrategy({

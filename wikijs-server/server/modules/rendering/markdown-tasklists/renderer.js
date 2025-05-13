@@ -1,10 +1,10 @@
-const mdTaskLists = require('markdown-it-task-lists')
+import mdTaskLists from 'markdown-it-task-lists'
 
 // ------------------------------------
 // Markdown - Task Lists
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(mdTaskLists, { label: false, labelAfter: false })
   }

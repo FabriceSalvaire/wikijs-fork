@@ -1,9 +1,9 @@
-const S3 = require('aws-sdk/clients/s3')
-const stream = require('stream')
-const Promise = require('bluebird')
+import S3 from 'aws-sdk/clients/s3'
+import * as stream from 'node:stream'
+import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-const _ = require('lodash')
-const pageHelper = require('../../../helpers/page.js')
+import _ from 'lodash'
+import pageHelper from '../../../helpers/page.js'
 
 /* global WIKI */
 
@@ -19,7 +19,7 @@ const getFilePath = (page, pathKey) => {
 /**
  * Can be used with S3 compatible storage.
  */
-module.exports = class S3CompatibleStorage {
+export class S3CompatibleStorage {
   constructor(storageName) {
     this.storageName = storageName
     this.bucketName = ""

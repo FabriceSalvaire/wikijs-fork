@@ -4,10 +4,10 @@
 // Facebook Account
 // ------------------------------------
 
-const FacebookStrategy = require('passport-facebook').Strategy
-const _ = require('lodash')
+import FacebookStrategy from 'passport-facebook'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new FacebookStrategy({

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   async init($, config) {
     $(`pre.diagram`).each((idx, elm) => {
       $(elm).children('svg').each((sidx, svg) => {

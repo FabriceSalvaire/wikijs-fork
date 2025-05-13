@@ -1,10 +1,10 @@
-const mdAbbr = require('markdown-it-abbr')
+import mdAbbr from 'markdown-it-abbr'
 
 // ------------------------------------
 // Markdown - Abbreviations
 // ------------------------------------
 
-module.exports = {
+export default {
   init (md, conf) {
     md.use(mdAbbr)
   }

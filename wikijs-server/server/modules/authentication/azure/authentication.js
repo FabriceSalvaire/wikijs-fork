@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -6,9 +6,9 @@ const _ = require('lodash')
 // Azure AD Account
 // ------------------------------------
 
-const OIDCStrategy = require('passport-azure-ad').OIDCStrategy
+import OIDCStrategy from 'passport-azure-ad'
 
-module.exports = {
+export default {
   init (passport, conf) {
     // Workaround for Chrome's SameSite cookies
     // cookieSameSite needs useCookieInsteadOfSession to work correctly.

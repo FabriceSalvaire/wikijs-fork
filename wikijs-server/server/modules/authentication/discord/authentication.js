@@ -4,10 +4,10 @@
 // Discord Account
 // ------------------------------------
 
-const DiscordStrategy = require('passport-discord').Strategy
-const _ = require('lodash')
+import DiscordStrategy from 'passport-discord'
+import _ from 'lodash'
 
-module.exports = {
+export default {
   init (passport, conf) {
     passport.use(conf.key,
       new DiscordStrategy({
