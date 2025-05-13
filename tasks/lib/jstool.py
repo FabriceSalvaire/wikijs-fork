@@ -156,11 +156,14 @@ class RequireExpression:
         elif left[0] == '{':
             _ = '{ ' + self.fix_comma(left[1:-1]) + ' }'
             self.nline = f'import {_} from {module}'
-        elif len(left) == 1 and self.quote(left[0]) == module:
-            self.nline = f'import {module}'
+        # elif len(left) == 1 and self.quote(left[0]) == module:
+        #     self.nline = f'import {module}'
+        # elif len(left) == 1:
+        #     _ = left[0]
+        #     self.nline = f"import * as {_} from {module}"
         elif len(left) == 1:
             _ = left[0]
-            self.nline = f"import * as {_} from {module}"
+            self.nline = f"import {_} from {module}"
         else:
             raise NameError(self.oline)
 
@@ -245,7 +248,6 @@ class CjsToEsm:
     ) -> str:
         dest = []
         level = 0
-        prev = None
         for oline in source.splitlines():
             oline = oline.rstrip()
             nline = oline
@@ -293,17 +295,15 @@ class CjsToEsm:
                     print()
                     # print(f'< |{oline}|')
                     # print(f'> |{nline}|')
-                    print('< ' + Fore.BLUE +  oline)
+                    print('< ' + Fore.BLUE + oline)
                     print('> ' + Fore.GREEN + nline)
                 # if nline is not None:
                 #     print(nline)
 
             if nline is not None:
                 dest.append(nline)
-                prev = nline
 
         return LINESEP.join(dest) + LINESEP
-    # .rstrip().rstrip() + LINESEP
 
     ##############################################
 
