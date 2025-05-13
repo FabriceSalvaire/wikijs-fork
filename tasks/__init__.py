@@ -12,6 +12,7 @@ from invoke import task, Collection
 from . import build
 from . import clean
 from . import explore
+from . import fixture
 from . import gh
 from . import pnpm
 from . import sync
