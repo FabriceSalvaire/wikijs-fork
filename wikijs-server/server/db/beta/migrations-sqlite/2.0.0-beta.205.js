@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .createTable('analytics', table => {
       table.string('key').notNullable().primary()
@@ -7,7 +7,7 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => {
+export const down = knex => {
   return knex.schema
     .dropTableIfExists('analytics')
 }

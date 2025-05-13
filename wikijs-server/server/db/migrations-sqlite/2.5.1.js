@@ -1,4 +1,4 @@
-exports.up = async knex => {
+export const up = async knex => {
   // Check for users using disabled strategies
   let protectedStrategies = []
   const disabledStrategies = await knex('authentication').where('isEnabled', false)
@@ -31,4 +31,4 @@ exports.up = async knex => {
   }
 }
 
-exports.down = knex => { }
+export const down = knex => { }

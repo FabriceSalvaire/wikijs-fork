@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .table('pageHistory', table => {
       table.string('action').defaultTo('updated')
@@ -6,7 +6,7 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => {
+export const down = knex => {
   return knex.schema
     .table('pageHistory', table => {
       table.dropColumn('action')

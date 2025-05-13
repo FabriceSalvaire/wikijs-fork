@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .alterTable('comments', table => {
       table.text('render').notNullable().defaultTo('')
@@ -8,4 +8,4 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

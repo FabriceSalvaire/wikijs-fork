@@ -1,6 +1,6 @@
-const has = require('lodash/has')
+import has from 'lodash'
 
-exports.up = async knex => {
+export const up = async knex => {
   // -> Fix 2.5.1 added isEnabled columns for beta users
   const localStrategy = await knex('authentication').where('key', 'local').first()
   if (localStrategy && !has(localStrategy, 'isEnabled')) {
@@ -11,4 +11,4 @@ exports.up = async knex => {
   }
 }
 
-exports.down = knex => { }
+export const down = knex => { }

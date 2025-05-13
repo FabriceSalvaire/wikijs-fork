@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .renameTable('pageHistory', 'pageHistory_old')
     .createTable('pageHistory', table => {
@@ -25,7 +25,7 @@ exports.up = knex => {
     .dropTable('pageHistory_old')
 }
 
-exports.down = knex => {
+export const down = knex => {
   return knex.schema
     .renameTable('pageHistory', 'pageHistory_old')
     .createTable('pageHistory', table => {

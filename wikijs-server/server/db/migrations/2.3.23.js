@@ -1,8 +1,8 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .alterTable('pageTree', table => {
       table.json('ancestors')
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

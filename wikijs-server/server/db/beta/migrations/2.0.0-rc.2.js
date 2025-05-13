@@ -1,6 +1,6 @@
 /* global WIKI */
 
-exports.up = async knex => {
+export const up = async knex => {
   const dbCompat = {
     charset: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`),
     selfCascadeDelete: WIKI.config.db.type !== 'mssql'
@@ -29,7 +29,7 @@ exports.up = async knex => {
     })
 }
 
-exports.down = knex => {
+export const down = knex => {
   const dbCompat = {
     charset: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`),
     selfCascadeDelete: WIKI.config.db.type !== 'mssql'

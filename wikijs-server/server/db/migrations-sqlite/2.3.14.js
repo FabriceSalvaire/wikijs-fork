@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .createTable('commentProviders', table => {
       table.string('key').notNullable().primary()
@@ -7,4 +7,4 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

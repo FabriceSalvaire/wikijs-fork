@@ -1,6 +1,6 @@
 /* global WIKI */
 
-exports.up = knex => {
+export const up = knex => {
   const dbCompat = {
     charset: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`)
   }
@@ -12,7 +12,7 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => {
+export const down = knex => {
   return knex.schema
     .dropTableIfExists('assetData')
 }

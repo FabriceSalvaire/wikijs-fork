@@ -1,6 +1,6 @@
 /* global WIKI */
 
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .alterTable('pages', table => {
       if (WIKI.config.db.type === 'mysql') {
@@ -22,4 +22,4 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

@@ -1,8 +1,8 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
-exports.up = async knex => {
+export const up = async knex => {
   let sqlVersionDate = ''
   switch (WIKI.config.db.type) {
     case 'postgres':
@@ -34,4 +34,4 @@ exports.up = async knex => {
     .raw(sqlVersionDate)
 }
 
-exports.down = knex => { }
+export const down = knex => { }

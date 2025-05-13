@@ -1,6 +1,6 @@
 /* global WIKI */
 
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .table('pages', table => {
       switch (WIKI.config.db.type) {
@@ -17,4 +17,4 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

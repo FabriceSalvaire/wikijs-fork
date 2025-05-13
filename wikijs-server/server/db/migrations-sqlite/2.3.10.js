@@ -1,8 +1,8 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .alterTable('users', table => {
       table.string('lastLoginAt')
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

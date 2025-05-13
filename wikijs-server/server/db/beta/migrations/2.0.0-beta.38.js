@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .table('storage', table => {
       table.string('syncInterval')
@@ -6,7 +6,7 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => {
+export const down = knex => {
   return knex.schema
     .table('storage', table => {
       table.dropColumn('syncInterval')

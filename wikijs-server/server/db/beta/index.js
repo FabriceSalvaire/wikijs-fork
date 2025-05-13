@@ -1,11 +1,11 @@
-const _ = require('lodash')
-const path = require('path')
-const fs = require('fs-extra')
-const semver = require('semver')
+import _ from 'lodash'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import semver from 'semver'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async migrate (knex) {
     const migrationsTableExists = await knex.schema.hasTable('migrations')
     if (!migrationsTableExists) {
@@ -95,8 +95,8 @@ module.exports = {
           getMigrationName(migration) {
             return migration.file
           },
-          getMigration(migration) {
-            return require(path.join(baseMigrationPath, migration.file))
+          async getMigration(migration) {
+            return await import(path.join(baseMigrationPath, migration.file))
           }
         }
       })

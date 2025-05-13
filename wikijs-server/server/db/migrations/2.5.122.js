@@ -1,6 +1,6 @@
 /* global WIKI */
 
-exports.up = knex => {
+export const up = knex => {
   const dbCompat = {
     blobLength: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`),
     charset: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`)
@@ -17,4 +17,4 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }

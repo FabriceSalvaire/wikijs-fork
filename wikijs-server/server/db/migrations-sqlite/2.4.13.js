@@ -1,4 +1,4 @@
-exports.up = knex => {
+export const up = knex => {
   return knex.schema
     .alterTable('pages', table => {
       table.json('extra').notNullable().defaultTo('{}')
@@ -12,4 +12,4 @@ exports.up = knex => {
     })
 }
 
-exports.down = knex => { }
+export const down = knex => { }
