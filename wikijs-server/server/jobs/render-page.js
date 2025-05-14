@@ -1,13 +1,13 @@
-const _ = require('lodash')
-const cheerio = require('cheerio')
+import _ from 'lodash'
+import cheerio from 'cheerio'
 
 /* global WIKI */
 
-module.exports = async (pageId) => {
+export default async (pageId) => {
   WIKI.logger.info(`Rendering page ID ${pageId}...`)
 
   try {
-    WIKI.models = require('../core/db').init()
+    WIKI.models = await (await import('../core/db.js')).default.init()
     await WIKI.configSvc.loadFromDb()
     await WIKI.configSvc.applyFlags()
 
@@ -27,7 +27,7 @@ module.exports = async (pageId) => {
     }
 
     for (let core of pipeline) {
-      const renderer = require(`../modules/rendering/${_.kebabCase(core.key)}/renderer.js`)
+      const renderer = (await import(`../modules/rendering/${_.kebabCase(core.key)}/renderer.js`)).default
       output = await renderer.render.call({
         config: core.config,
         children: core.children,

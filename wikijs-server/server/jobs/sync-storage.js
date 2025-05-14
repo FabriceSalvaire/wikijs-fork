@@ -1,8 +1,8 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
-module.exports = async (targetKey) => {
+export default async (targetKey) => {
   WIKI.logger.info(`Syncing with storage target ${targetKey}...`)
 
   try {

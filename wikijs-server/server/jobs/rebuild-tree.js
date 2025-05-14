@@ -1,12 +1,12 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
-module.exports = async (pageId) => {
+export default async (pageId) => {
   WIKI.logger.info(`Rebuilding page tree...`)
 
   try {
-    WIKI.models = require('../core/db').init()
+    WIKI.models = await (await import('../core/db.js')).default.init()
     await WIKI.configSvc.loadFromDb()
     await WIKI.configSvc.applyFlags()
 

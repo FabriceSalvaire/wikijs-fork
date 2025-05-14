@@ -1,11 +1,11 @@
 /* global WIKI */
 
-const Promise = require('bluebird')
-const fs = require('fs-extra')
-const moment = require('moment')
-const path = require('path')
+import Promise from 'bluebird'
+import fs from 'fs-extra'
+import moment from 'moment'
+import * as path from 'node:path'
 
-module.exports = async () => {
+export default async () => {
   WIKI.logger.info('Purging orphaned upload files...')
 
   try {

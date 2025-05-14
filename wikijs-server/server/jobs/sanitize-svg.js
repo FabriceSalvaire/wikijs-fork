@@ -1,10 +1,10 @@
-const fs = require('fs-extra')
-const { JSDOM } = require('jsdom')
-const createDOMPurify = require('dompurify')
+import fs from 'fs-extra'
+import { JSDOM } from 'jsdom'
+import createDOMPurify from 'dompurify'
 
 /* global WIKI */
 
-module.exports = async (svgPath) => {
+export default async (svgPath) => {
   WIKI.logger.info(`Sanitizing SVG file upload...`)
 
   try {

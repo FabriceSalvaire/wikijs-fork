@@ -1,9 +1,9 @@
-const _ = require('lodash')
-const { createApolloFetch } = require('apollo-fetch')
+import _ from 'lodash'
+import { createApolloFetch } from 'apollo-fetch'
 
 /* global WIKI */
 
-module.exports = async () => {
+export default async () => {
   WIKI.logger.info('Syncing locales with Graph endpoint...')
 
   try {
