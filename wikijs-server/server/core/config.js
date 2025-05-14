@@ -1,17 +1,17 @@
-const _ = require('lodash')
-const chalk = require('chalk')
-const cfgHelper = require('../helpers/config')
-const fs = require('fs')
-const path = require('path')
-const yaml = require('js-yaml')
+import _ from 'lodash'
+import chalk from 'chalk'
+import cfgHelper from '../helpers/config.js'
+import * as fs from 'node:fs'
+import * as path from 'node:path'
+import yaml from 'js-yaml'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   /**
    * Load root config from disk
    */
-  init() {
+  async init() {
     let confPaths = {
       config: path.join(WIKI.ROOTPATH, 'config.yml'),
       data: path.join(WIKI.SERVERPATH, 'app/data.yml'),
@@ -38,7 +38,7 @@ module.exports = {
         )
       )
       appdata = yaml.safeLoad(fs.readFileSync(confPaths.data, 'utf8'))
-      appdata.regex = require(confPaths.dataRegex)
+      appdata.regex = import(confPaths.dataRegex)
       console.info(chalk.green.bold(`OK`))
     } catch (err) {
       console.error(chalk.red.bold(`FAILED`))
@@ -56,7 +56,7 @@ module.exports = {
       appconfig.port = process.env.PORT || 80
     }
 
-    const packageInfo = require(path.join(WIKI.ROOTPATH, 'package.json'))
+    const packageInfo = (await import(path.join(WIKI.ROOTPATH, 'package.json'), { with: { type: "json" } })).default
 
     // Load DB Password from Docker Secret File
     if (process.env.DB_PASS_FILE) {

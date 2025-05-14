@@ -1,7 +1,7 @@
-const moment = require('moment')
-const childProcess = require('child_process')
-const _ = require('lodash')
-const configHelper = require('../helpers/config')
+import moment from 'moment'
+import childProcess from 'child_process'
+import _ from 'lodash'
+import configHelper from '../helpers/config.js'
 
 /* global WIKI */
 
@@ -78,7 +78,8 @@ class Job {
           })
         })
       } else {
-        this.finished = require(`../jobs/${this.name}`)(data)
+        const job = (await import(`../jobs/${this.name}.js`)).default
+        this.finished = job(data)
       }
       await this.finished
     } catch (err) {
@@ -101,7 +102,7 @@ class Job {
   }
 }
 
-module.exports = {
+export default {
   jobs: [],
   init() {
     return this

@@ -1,4 +1,4 @@
-const { injectPageMetadata } = require('../../helpers/page')
+import { injectPageMetadata } from '../../helpers/page.js'
 
 describe('helpers/page/injectPageMetadata', () => {
   const page = {

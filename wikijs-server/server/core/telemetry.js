@@ -1,12 +1,12 @@
-const _ = require('lodash')
-const { createApolloFetch } = require('apollo-fetch')
-const { v4: uuid } = require('uuid')
-const os = require('os')
-const fs = require('fs-extra')
+import _ from 'lodash'
+import { createApolloFetch } from 'apollo-fetch'
+import { v4 as uuid } from 'uuid'
+import * as os from 'node:os'
+import fs from 'fs-extra'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   enabled: false,
   init() {
     WIKI.telemetry = this

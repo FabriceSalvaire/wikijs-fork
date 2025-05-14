@@ -1,10 +1,10 @@
-const fs = require('fs-extra')
-const path = require('path')
-const _ = require('lodash')
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import _ from 'lodash'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async init () {
     if (!WIKI.config.offline) {
       return

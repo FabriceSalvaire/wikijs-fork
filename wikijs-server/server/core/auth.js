@@ -1,25 +1,24 @@
-const passport = require('passport')
-const passportJWT = require('passport-jwt')
-const _ = require('lodash')
-const jwt = require('jsonwebtoken')
-const ms = require('ms')
-const { DateTime } = require('luxon')
-const Promise = require('bluebird')
-const crypto = Promise.promisifyAll(require('crypto'))
-const pem2jwk = require('pem-jwk').pem2jwk
+import passport from 'passport'
+import passportJWT from 'passport-jwt'
+import _ from 'lodash'
+import jwt from 'jsonwebtoken'
+import ms from 'ms'
+import { DateTime } from 'luxon'
+const crypto = import('crypto')
+import pem2jwk from 'pem-jwk'
 
-const securityHelper = require('../helpers/security')
+import securityHelper from '../helpers/security.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   strategies: {},
   guest: {
     cacheExpiration: DateTime.utc().minus({ days: 1 })
   },
   groups: {},
   validApiKeys: [],
-  revocationList: require('./cache').init(),
+  revocationList: (await import('./cache.js')).default.init(),
 
   /**
    * Initialize the authentication module
@@ -79,7 +78,8 @@ module.exports = {
       for (let idx in enabledStrategies) {
         const stg = enabledStrategies[idx]
         try {
-          const strategy = require(`../modules/authentication/${stg.strategyKey}/authentication.js`)
+          const module_path = `../modules/authentication/${stg.strategyKey}/authentication.js`
+          const strategy = (await import(module_path)).default
 
           stg.config.callbackURL = `${WIKI.config.host}/login/${stg.key}/callback`
           stg.config.key = stg.key;

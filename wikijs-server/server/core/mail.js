@@ -1,11 +1,11 @@
-const nodemailer = require('nodemailer')
-const _ = require('lodash')
-const fs = require('fs-extra')
-const path = require('path')
+import nodemailer from 'nodemailer'
+import _ from 'lodash'
+import fs from 'fs-extra'
+import * as path from 'node:path'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   transport: null,
   templates: {},
   init() {

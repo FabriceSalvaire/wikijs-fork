@@ -1,15 +1,15 @@
-const _ = require('lodash')
-const cfgHelper = require('../helpers/config')
-const Promise = require('bluebird')
-const fs = require('fs-extra')
-const path = require('path')
-const zlib = require('zlib')
-const stream = require('stream')
+import _ from 'lodash'
+import cfgHelper from '../helpers/config.js'
+import Promise from 'bluebird'
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import * as zlib from 'node:zlib'
+import * as stream from 'node:stream'
 const pipeline = Promise.promisify(stream.pipeline)
 
 /* global WIKI */
 
-module.exports = {
+export default {
   updates: {
     channel: 'BETA',
     version: WIKI.version,
@@ -37,7 +37,7 @@ module.exports = {
   async upgradeFromMongo (opts) {
     WIKI.logger.info('Upgrading from MongoDB...')
 
-    let mongo = require('mongodb').MongoClient
+    let mongo = (await import('mongodb')).MongoClient
     let parsedMongoConStr = cfgHelper.parseConfigValue(opts.mongoCnStr)
 
     return new Promise((resolve, reject) => {

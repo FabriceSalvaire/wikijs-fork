@@ -1,15 +1,16 @@
-const _ = require('lodash')
-const dotize = require('dotize')
-const i18nMW = require('i18next-express-middleware')
-const i18next = require('i18next')
-const Promise = require('bluebird')
-const fs = require('fs-extra')
-const path = require('path')
-const yaml = require('js-yaml')
+import _ from 'lodash'
+// import dotize from 'dotize'
+import dotize from './dotize.js'
+import i18nMW from 'i18next-express-middleware'
+import i18next from 'i18next'
+import Promise from 'bluebird'
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import yaml from 'js-yaml'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   engine: null,
   namespaces: [],
   init() {

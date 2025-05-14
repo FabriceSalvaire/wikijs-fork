@@ -1,7 +1,7 @@
-const pickle = require('chromium-pickle-js')
-const path = require('path')
-const UINT64 = require('cuint').UINT64
-const fs = require('fs')
+import pickle from 'chromium-pickle-js'
+import * as path from 'node:path'
+import UINT64 from 'cuint'
+import * as fs from 'node:fs'
 
 /* global WIKI */
 
@@ -14,7 +14,7 @@ const packages = {
   'twemoji': path.join(WIKI.ROOTPATH, `assets/svg/twemoji.asar`)
 }
 
-module.exports = {
+export default {
   fdCache: {},
   async serve (pkgName, req, res, next) {
     const file = this.readFilesystemSync(packages[pkgName])
@@ -43,7 +43,7 @@ module.exports = {
     const fds = Object.values(this.fdCache)
     if (fds.length > 0) {
       WIKI.logger.info('Closing ASAR file descriptors...')
-      const closeAsync = require('util').promisify(fs.close)
+      const closeAsync = (await import('util')).promisify(fs.close)
       await Promise.all(fds.map(x => closeAsync(x.fd)))
       this.fdCache = {}
     }

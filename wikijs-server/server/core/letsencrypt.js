@@ -1,15 +1,15 @@
-const _ = require('lodash')
-const ACME = require('acme')
-const Keypairs = require('@root/keypairs')
-const moment = require('moment')
-const CSR = require('@root/csr')
-const PEM = require('@root/pem')
+import _ from 'lodash'
+import ACME from 'acme'
+import Keypairs from '@root/keypairs'
+import moment from 'moment'
+import CSR from '@root/csr'
+import PEM from '@root/pem'
 // eslint-disable-next-line node/no-deprecated-api
-const punycode = require('punycode')
+import punycode from 'punycode'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   apiDirectory: WIKI.dev ? 'https://acme-staging-v02.api.letsencrypt.org/directory' : 'https://acme-v02.api.letsencrypt.org/directory',
   acme: null,
 
