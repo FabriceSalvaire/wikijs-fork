@@ -1,9 +1,9 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
-const _ = require('lodash')
-const multer = require('multer')
-const path = require('path')
-const sanitize = require('sanitize-filename')
+import _ from 'lodash'
+import multer from 'multer'
+import * as path from 'node:path'
+import sanitize from 'sanitize-filename'
 
 /* global WIKI */
 
@@ -104,4 +104,4 @@ router.get('/u', async (req, res, next) => {
   })
 })
 
-module.exports = router
+export { router }

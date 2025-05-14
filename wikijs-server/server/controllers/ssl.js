@@ -1,7 +1,7 @@
-const _ = require('lodash')
-const express = require('express')
+import _ from 'lodash'
+import express from 'express'
 const router = express.Router()
-const qs = require('querystring')
+import qs from 'querystring'
 
 // See also core/letsencrypt.js
 
@@ -36,4 +36,4 @@ router.all('/*splat', (req, res, next) => {
   }
 })
 
-module.exports = router
+export { router }

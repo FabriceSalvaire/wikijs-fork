@@ -1,10 +1,10 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
-const pageHelper = require('../helpers/page')
-const _ = require('lodash')
-const CleanCSS = require('clean-css')
-const moment = require('moment')
-const qs = require('querystring')
+import pageHelper from '../helpers/page.js'
+import _ from 'lodash'
+import CleanCSS from 'clean-css'
+import moment from 'moment'
+import qs from 'querystring'
 
 /* global WIKI */
 
@@ -581,4 +581,4 @@ router.get('/{*splat}', async (req, res, next) => {
   }
 })
 
-module.exports = router
+export { router }

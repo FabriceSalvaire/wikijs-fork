@@ -1,11 +1,11 @@
 /* global WIKI */
 
-const express = require('express')
-const ExpressBrute = require('express-brute')
-const BruteKnex = require('../helpers/brute-knex')
+import express from 'express'
+import ExpressBrute from 'express-brute'
+import BruteKnex from '../helpers/brute-knex.js'
 const router = express.Router()
-const moment = require('moment')
-const _ = require('lodash')
+import moment from 'moment'
+import _ from 'lodash'
 
 const bruteforce = new ExpressBrute(new BruteKnex({
   createTable: true,
@@ -193,4 +193,4 @@ router.get('/.well-known/jwk.pem', function (req, res, next) {
   res.send(WIKI.config.certs.public)
 })
 
-module.exports = router
+export { router }

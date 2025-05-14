@@ -8,7 +8,7 @@
  * @param      {Function}          next    next callback function
  * @return     {any}               void
  */
-module.exports = function (req, res, next) {
+export default function (req, res, next) {
   // -> Disable X-Powered-By
   req.app.disable('x-powered-by')
 

@@ -1,4 +1,4 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
 /* global WIKI */
 
@@ -10,7 +10,7 @@ const _ = require('lodash')
  * @param      {Function}          next    next callback function
  * @return     {any}               void
  */
-module.exports = function (req, res, next) {
+export default function (req, res, next) {
   if (req.path.length > 1 && _.endsWith(req.path, '/')) {
     let query = req.url.slice(req.path.length) || ''
     res.redirect(301, req.path.slice(0, -1) + query)
