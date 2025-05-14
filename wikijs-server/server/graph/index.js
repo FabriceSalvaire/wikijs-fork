@@ -1,11 +1,11 @@
-const _ = require('lodash')
-const fs = require('fs')
-const path = require('path')
-const autoload = require('auto-load')
-const PubSub = require('graphql-subscriptions').PubSub
-const { createRateLimitTypeDef } = require('graphql-rate-limit-directive')
-const Transport = require('winston-transport')
-const { LEVEL, MESSAGE } = require('triple-beam')
+import _ from 'lodash'
+import * as fs from 'node:fs'
+import fsp from 'node:fs/promises'
+import * as path from 'node:path'
+import { PubSub } from 'graphql-subscriptions'
+import { createRateLimitTypeDef } from 'graphql-rate-limit-directive'
+import Transport from 'winston-transport'
+import { LEVEL, MESSAGE } from 'triple-beam'
 
 // const gqlTools = require('graphql-tools')
 // const { GraphQLUpload } = require('graphql-upload')
@@ -28,14 +28,25 @@ schemas.forEach(schema => {
 let resolvers = {
   // Upload: GraphQLUpload
 }
-const resolversObj = _.values(autoload(path.join(WIKI.SERVERPATH, 'graph/resolvers')))
-resolversObj.forEach(resolver => {
+// WIKI.logger.info('import resolvers')
+// const resolverList = await fsp.readdir(path.join(WIKI.SERVERPATH, 'graph/resolvers'))
+// for (const resolverFile of resolverList) {
+for await (const file of fsp.glob(path.join(WIKI.SERVERPATH, 'graph/resolvers/*.js'))) {
+  // WIKI.logger.info(`import resolver ${file}`)
+  const resolver = (await import(file)).default
   _.merge(resolvers, resolver)
-})
+}
 
 // Directives
-let schemaDirectives = {
-  ...autoload(path.join(WIKI.SERVERPATH, 'graph/directives'))
+// WIKI.logger.info('import directives')
+let schemaDirectives = {}
+// const directiveList = await fsp.readdir(path.join(WIKI.SERVERPATH, 'graph/directives'))
+// for (const directiveFile of directiveList) {
+for await (const file of fsp.glob(path.join(WIKI.SERVERPATH, 'graph/directives/*.js'))) {
+  // WIKI.logger.info(`import directive ${file}`)
+  const directive = (await import(file)).default
+  const name = path.parse(file).name
+  schemaDirectives[name] = directive
 }
 
 // Live Trail Logger (admin)
@@ -63,7 +74,7 @@ WIKI.logger.add(new LiveTrailLogger({}))
 
 WIKI.logger.info(`GraphQL Schema: [ OK ]`)
 
-module.exports = {
+export default {
   typeDefs,
   resolvers,
   schemaDirectives
