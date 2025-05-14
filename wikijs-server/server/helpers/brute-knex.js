@@ -1,6 +1,6 @@
-const AbstractClientStore = require('express-brute/lib/AbstractClientStore')
+import AbstractClientStore from 'express-brute/lib/AbstractClientStore.js'
 
-const KnexStore = module.exports = function (options) {
+const KnexStore = function (options) {
   options = options || Object.create(null)
 
   AbstractClientStore.apply(this, arguments)
@@ -9,7 +9,8 @@ const KnexStore = module.exports = function (options) {
   if (this.options.knex) {
     this.knex = this.options.knex
   } else {
-    this.knex = require('knex')(KnexStore.defaultsKnex)
+    WIKI.logger.error('brute knex: not implemented')
+    // this.knex = (await import('knex'))(KnexStore.defaultsKnex)
   }
 
   if (options.createTable === false) {
@@ -146,3 +147,5 @@ KnexStore.defaultsKnex = {
     filename: './brute-knex.sqlite'
   }
 }
+
+export default KnexStore
