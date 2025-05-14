@@ -1,11 +1,11 @@
-const graphHelper = require('../../helpers/graph')
-const safeRegex = require('safe-regex')
-const _ = require('lodash')
-const gql = require('graphql')
+import graphHelper from '../../helpers/graph.js'
+import safeRegex from 'safe-regex'
+import _ from 'lodash'
+import gql from 'graphql'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   Query: {
     async groups () { return {} }
   },

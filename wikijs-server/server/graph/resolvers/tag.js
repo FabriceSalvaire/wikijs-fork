@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Query: {
   //   tags(obj, args, context, info) {
   //     return WIKI.models.Tag.findAll({ where: args })

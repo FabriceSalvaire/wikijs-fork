@@ -1,9 +1,9 @@
-const graphHelper = require('../../helpers/graph')
-const _ = require('lodash')
+import graphHelper from '../../helpers/graph.js'
+import _ from 'lodash'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   Query: {
     async localization() { return {} }
   },

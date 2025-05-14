@@ -1,5 +1,5 @@
-const { createRateLimitDirective } = require('graphql-rate-limit-directive')
+import { createRateLimitDirective } from 'graphql-rate-limit-directive'
 
-module.exports = createRateLimitDirective({
+export default createRateLimitDirective({
   keyGenerator: (directiveArgs, source, args, context, info) => `${context.req.ip}:${info.parentType}.${info.fieldName}`
 })

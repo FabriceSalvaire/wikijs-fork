@@ -1,6 +1,6 @@
-const gql = require('graphql')
+import gql from 'graphql'
 
-module.exports = {
+export default {
   Date: new gql.GraphQLScalarType({
     name: 'Date',
     description: 'ISO date-time string at UTC',

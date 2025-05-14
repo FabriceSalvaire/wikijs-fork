@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Query: {
   //   folders(obj, args, context, info) {
   //     return WIKI.models.Folder.findAll({ where: args })

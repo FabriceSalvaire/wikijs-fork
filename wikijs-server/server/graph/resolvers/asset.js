@@ -1,11 +1,11 @@
-const _ = require('lodash')
-const sanitize = require('sanitize-filename')
-const graphHelper = require('../../helpers/graph')
-const assetHelper = require('../../helpers/asset')
+import _ from 'lodash'
+import sanitize from 'sanitize-filename'
+import graphHelper from '../../helpers/graph.js'
+import assetHelper from '../../helpers/asset.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   // --------------------------------------------------------------------------------
   Query: {
     async assets() { return {} }

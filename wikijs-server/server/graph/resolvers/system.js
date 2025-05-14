@@ -1,15 +1,15 @@
-const _ = require('lodash')
-const Promise = require('bluebird')
-const getos = Promise.promisify(require('getos'))
-const os = require('os')
-const filesize = require('filesize')
-const path = require('path')
-const fs = require('fs-extra')
-const moment = require('moment')
-const graphHelper = require('../../helpers/graph')
-const request = require('request-promise')
-const crypto = require('crypto')
-const nanoid = require('nanoid/non-secure').customAlphabet('1234567890abcdef', 10)
+import _ from 'lodash'
+const getos = import('getos')
+import * as os from 'node:os'
+import filesize from 'filesize'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import moment from 'moment'
+import graphHelper from '../../helpers/graph.js'
+import request from 'request-promise'
+import * as crypto from 'node:crypto'
+import { customAlphabet } from 'nanoid/non-secure'
+const nanoid = customAlphabet('1234567890abcdef', 10)
 
 /* global WIKI */
 
@@ -21,7 +21,7 @@ const dbTypes = {
   mssql: 'MS SQL Server'
 }
 
-module.exports = {
+export default {
   Query: {
     async system () { return {} }
   },
@@ -110,7 +110,7 @@ module.exports = {
      */
     async importUsersFromV1(obj, args, context) {
       try {
-        const MongoClient = require('mongodb').MongoClient
+        const MongoClient = (await import('mongodb')).MongoClient
         if (args.mongoDbConnString && args.mongoDbConnString.length > 10) {
           // -> Connect to DB
 

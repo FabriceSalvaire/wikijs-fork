@@ -1,8 +1,8 @@
-const _ = require('lodash')
-const { SchemaDirectiveVisitor } = require('graphql-tools')
-const { defaultFieldResolver } = require('graphql')
+import _ from 'lodash'
+import { SchemaDirectiveVisitor } from 'graphql-tools'
+import { defaultFieldResolver } from 'graphql'
 
-class AuthDirective extends SchemaDirectiveVisitor {
+export default class AuthDirective extends SchemaDirectiveVisitor {
   visitObject(type) {
     this.ensureFieldsWrapped(type)
     type._requiredAuthScopes = this.args.requires
@@ -52,5 +52,3 @@ class AuthDirective extends SchemaDirectiveVisitor {
     })
   }
 }
-
-module.exports = AuthDirective

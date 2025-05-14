@@ -1,10 +1,10 @@
-const graphHelper = require('../../helpers/graph')
-const _ = require('lodash')
-const CleanCSS = require('clean-css')
+import graphHelper from '../../helpers/graph.js'
+import _ from 'lodash'
+import CleanCSS from 'clean-css'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   Query: {
     async theming() { return {} }
   },

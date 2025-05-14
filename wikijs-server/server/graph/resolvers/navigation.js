@@ -1,8 +1,8 @@
-const graphHelper = require('../../helpers/graph')
+import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   Query: {
     async navigation () { return {} }
   },

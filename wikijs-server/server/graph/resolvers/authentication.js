@@ -1,11 +1,11 @@
-const _ = require('lodash')
-const fs = require('fs-extra')
-const path = require('path')
-const graphHelper = require('../../helpers/graph')
+import _ from 'lodash'
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   Query: {
     async authentication () { return {} }
   },

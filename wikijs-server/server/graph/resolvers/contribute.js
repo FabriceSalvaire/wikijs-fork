@@ -1,9 +1,9 @@
-const request = require('request-promise')
-const _ = require('lodash')
+import request from 'request-promise'
+import _ from 'lodash'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   Query: {
     async contribute() { return {} }
   },
