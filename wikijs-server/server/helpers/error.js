@@ -1,6 +1,6 @@
-const CustomError = require('custom-error-instance')
+import CustomError from 'custom-error-instance'
 
-module.exports = {
+export default {
   AssetDeleteForbidden: CustomError('AssetDeleteForbidden', {
     message: 'You are not authorized to delete this asset.',
     code: 2003

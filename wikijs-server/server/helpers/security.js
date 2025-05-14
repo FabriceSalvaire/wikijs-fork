@@ -1,8 +1,8 @@
-const Promise = require('bluebird')
-const crypto = require('crypto')
-const passportJWT = require('passport-jwt')
+import Promise from 'bluebird'
+import * as crypto from 'node:crypto'
+import passportJWT from 'passport-jwt'
 
-module.exports = {
+export default {
   sanitizeCommitUser (user) {
     // let wlist = new RegExp('[^a-zA-Z0-9-_.\',& ' + appdata.regex.cjk + appdata.regex.arabic + ']', 'g')
     // return {

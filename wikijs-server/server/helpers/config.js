@@ -1,10 +1,10 @@
 'use strict'
 
-const _ = require('lodash')
+import _ from 'lodash'
 
 const isoDurationReg = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/
 
-module.exports = {
+export default {
   /**
    * Parse configuration value for environment vars
    *

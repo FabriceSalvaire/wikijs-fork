@@ -1,7 +1,7 @@
-const crypto = require('crypto')
-const path = require('path')
+import * as crypto from 'node:crypto'
+import * as path from 'node:path'
 
-module.exports = {
+export default {
   /**
    * Generate unique hash from page
    */

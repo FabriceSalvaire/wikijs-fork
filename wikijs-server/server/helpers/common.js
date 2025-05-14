@@ -1,6 +1,6 @@
-const _ = require('lodash')
+import _ from 'lodash'
 
-module.exports = {
+export default {
   /**
    * Get default value of type
    *

@@ -1,7 +1,7 @@
-const qs = require('querystring')
-const _ = require('lodash')
-const crypto = require('crypto')
-const path = require('path')
+import qs from 'querystring'
+import _ from 'lodash'
+import * as crypto from 'node:crypto'
+import * as path from 'node:path'
 
 const localeSegmentRegex = /^[A-Z]{2}(-[A-Z]{2})?$/i
 const localeFolderRegex = /^([a-z]{2}(?:-[a-z]{2})?\/)?(.*)/i
@@ -17,7 +17,7 @@ const extToContent = _.invert(contentToExt)
 
 /* global WIKI */
 
-module.exports = {
+export default {
   /**
    * Parse raw url path and make it safe
    */
