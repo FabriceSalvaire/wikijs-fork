@@ -1,17 +1,23 @@
-const Model = require('objection').Model
-const _ = require('lodash')
-const JSBinType = require('js-binary').Type
-const pageHelper = require('../helpers/page')
-const path = require('path')
-const fs = require('fs-extra')
-const yaml = require('js-yaml')
-const striptags = require('striptags')
-const emojiRegex = require('emoji-regex')
-const he = require('he')
-const CleanCSS = require('clean-css')
-const TurndownService = require('turndown')
-const turndownPluginGfm = require('@joplin/turndown-plugin-gfm').gfm
-const cheerio = require('cheerio')
+import { Model } from 'objection'
+import _ from 'lodash'
+import { Type as JSBinType } from 'js-binary'
+import pageHelper from '../helpers/page.js'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import yaml from 'js-yaml'
+import striptags from 'striptags'
+import emojiRegex from 'emoji-regex'
+import he from 'he'
+import CleanCSS from 'clean-css'
+import TurndownService from 'turndown'
+import turndownPluginGfm from '@joplin/turndown-plugin-gfm'
+import cheerio from 'cheerio'
+
+import Editors from './editors.js'
+import Locales from './locales.js'
+import PageLinks from './pageLinks.js'
+import Tags from './tags.js'
+import User from './users.js'
 
 /* global WIKI */
 
@@ -27,7 +33,7 @@ const punctuationRegex = /[!,:;/\\_+\-=()&#@<>$~%^*[\]{}"'|]+|(\.\s)|(\s\.)/ig
 /**
  * Pages model
  */
-module.exports = class Page extends Model {
+export default class Page extends Model {
   static get tableName() { return 'pages' }
 
   static get jsonSchema () {
@@ -62,7 +68,7 @@ module.exports = class Page extends Model {
     return {
       tags: {
         relation: Model.ManyToManyRelation,
-        modelClass: require('./tags'),
+        modelClass: Tags,
         join: {
           from: 'pages.id',
           through: {
@@ -74,7 +80,7 @@ module.exports = class Page extends Model {
       },
       links: {
         relation: Model.HasManyRelation,
-        modelClass: require('./pageLinks'),
+        modelClass: PageLinks,
         join: {
           from: 'pages.id',
           to: 'pageLinks.pageId'
@@ -82,7 +88,7 @@ module.exports = class Page extends Model {
       },
       author: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'pages.authorId',
           to: 'users.id'
@@ -90,7 +96,7 @@ module.exports = class Page extends Model {
       },
       creator: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'pages.creatorId',
           to: 'users.id'
@@ -98,7 +104,7 @@ module.exports = class Page extends Model {
       },
       editor: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./editors'),
+        modelClass: Editors,
         join: {
           from: 'pages.editorKey',
           to: 'editors.key'
@@ -106,7 +112,7 @@ module.exports = class Page extends Model {
       },
       locale: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./locales'),
+        modelClass: Locales,
         join: {
           from: 'pages.localeCode',
           to: 'locales.code'

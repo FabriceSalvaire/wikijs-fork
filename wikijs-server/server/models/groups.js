@@ -1,9 +1,11 @@
-const Model = require('objection').Model
+import { Model } from 'objection'
+
+import User from './users.js'
 
 /**
  * Groups model
  */
-module.exports = class Group extends Model {
+export default class Group extends Model {
   static get tableName() { return 'groups' }
 
   static get jsonSchema () {
@@ -30,7 +32,7 @@ module.exports = class Group extends Model {
     return {
       users: {
         relation: Model.ManyToManyRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'groups.id',
           through: {

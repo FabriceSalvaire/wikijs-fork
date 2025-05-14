@@ -1,13 +1,16 @@
-const Model = require('objection').Model
-const validate = require('validate.js')
-const _ = require('lodash')
+import { Model } from 'objection'
+import validate from 'validate.js'
+import _ from 'lodash'
+
+import Pages from './pages.js'
+import User from './users.js'
 
 /* global WIKI */
 
 /**
  * Comments model
  */
-module.exports = class Comment extends Model {
+export default class Comment extends Model {
   static get tableName() { return 'comments' }
 
   static get jsonSchema () {
@@ -32,7 +35,7 @@ module.exports = class Comment extends Model {
     return {
       author: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'comments.authorId',
           to: 'users.id'
@@ -40,7 +43,7 @@ module.exports = class Comment extends Model {
       },
       page: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./pages'),
+        modelClass: Pages,
         join: {
           from: 'comments.pageId',
           to: 'pages.id'

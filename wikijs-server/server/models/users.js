@@ -1,19 +1,24 @@
 /* global WIKI */
 
-const bcrypt = require('bcryptjs-then')
-const _ = require('lodash')
-const tfa = require('node-2fa')
-const jwt = require('jsonwebtoken')
-const Model = require('objection').Model
-const validate = require('validate.js')
-const qr = require('qr-image')
+import bcrypt from 'bcryptjs-then'
+import _ from 'lodash'
+import tfa from 'node-2fa'
+import jwt from 'jsonwebtoken'
+import { Model } from 'objection'
+import validate from 'validate.js'
+import qr from 'qr-image'
+
+import Authentication from './authentication.js'
+import Editors from './editors.js'
+import Groups from './groups.js'
+import Locales from './locales.js'
 
 const bcryptRegexp = /^\$2[ayb]\$[0-9]{2}\$[A-Za-z0-9./]{53}$/
 
 /**
  * Users model
  */
-module.exports = class User extends Model {
+export default class User extends Model {
   static get tableName() { return 'users' }
 
   static get jsonSchema () {
@@ -45,7 +50,7 @@ module.exports = class User extends Model {
     return {
       groups: {
         relation: Model.ManyToManyRelation,
-        modelClass: require('./groups'),
+        modelClass: Groups,
         join: {
           from: 'users.id',
           through: {
@@ -57,7 +62,7 @@ module.exports = class User extends Model {
       },
       provider: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./authentication'),
+        modelClass: Authentication,
         join: {
           from: 'users.providerKey',
           to: 'authentication.key'
@@ -65,7 +70,7 @@ module.exports = class User extends Model {
       },
       defaultEditor: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./editors'),
+        modelClass: Editors,
         join: {
           from: 'users.editorKey',
           to: 'editors.key'
@@ -73,7 +78,7 @@ module.exports = class User extends Model {
       },
       locale: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./locales'),
+        modelClass: Locales,
         join: {
           from: 'users.localeCode',
           to: 'locales.code'

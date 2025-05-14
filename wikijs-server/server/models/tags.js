@@ -1,12 +1,14 @@
-const Model = require('objection').Model
-const _ = require('lodash')
+import { Model } from 'objection'
+import _ from 'lodash'
+
+import Pages from './pages.js'
 
 /* global WIKI */
 
 /**
  * Tags model
  */
-module.exports = class Tag extends Model {
+export default class Tag extends Model {
   static get tableName() { return 'tags' }
 
   static get jsonSchema () {
@@ -29,7 +31,7 @@ module.exports = class Tag extends Model {
     return {
       pages: {
         relation: Model.ManyToManyRelation,
-        modelClass: require('./pages'),
+        modelClass: Pages,
         join: {
           from: 'tags.id',
           through: {

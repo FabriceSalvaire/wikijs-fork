@@ -1,12 +1,12 @@
-const Model = require('objection').Model
-const _ = require('lodash')
+import { Model } from 'objection'
+import _ from 'lodash'
 
 /* global WIKI */
 
 /**
  * Navigation model
  */
-module.exports = class Navigation extends Model {
+export default class Navigation extends Model {
   static get tableName() { return 'navigation' }
   static get idColumn() { return 'key' }
 

@@ -1,13 +1,19 @@
-const Model = require('objection').Model
-const _ = require('lodash')
-const { DateTime, Duration } = require('luxon')
+import { Model } from 'objection'
+import _ from 'lodash'
+import { DateTime, Duration } from 'luxon'
+
+import Editors from './editors.js'
+import Locales from './locales.js'
+import PageLinks from './pageLinks.js'
+import Tags from './tags.js'
+import User from './users.js'
 
 /* global WIKI */
 
 /**
  * Page History model
  */
-module.exports = class PageHistory extends Model {
+export default class PageHistory extends Model {
   static get tableName() { return 'pageHistory' }
 
   static get jsonSchema () {
@@ -36,7 +42,7 @@ module.exports = class PageHistory extends Model {
     return {
       tags: {
         relation: Model.ManyToManyRelation,
-        modelClass: require('./tags'),
+        modelClass: Tags,
         join: {
           from: 'pageHistory.id',
           through: {
@@ -48,7 +54,7 @@ module.exports = class PageHistory extends Model {
       },
       page: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./pages'),
+        modelClass: Pages,
         join: {
           from: 'pageHistory.pageId',
           to: 'pages.id'
@@ -56,7 +62,7 @@ module.exports = class PageHistory extends Model {
       },
       author: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'pageHistory.authorId',
           to: 'users.id'
@@ -64,7 +70,7 @@ module.exports = class PageHistory extends Model {
       },
       editor: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./editors'),
+        modelClass: Editors,
         join: {
           from: 'pageHistory.editorKey',
           to: 'editors.key'
@@ -72,7 +78,7 @@ module.exports = class PageHistory extends Model {
       },
       locale: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./locales'),
+        modelClass: Locales,
         join: {
           from: 'pageHistory.localeCode',
           to: 'locales.code'

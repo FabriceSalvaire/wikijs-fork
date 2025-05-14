@@ -1,16 +1,16 @@
-const Model = require('objection').Model
-const path = require('path')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const yaml = require('js-yaml')
-const commonHelper = require('../helpers/common')
+import { Model } from 'objection'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import _ from 'lodash'
+import yaml from 'js-yaml'
+import commonHelper from '../helpers/common.js'
 
 /* global WIKI */
 
 /**
  * Storage model
  */
-module.exports = class Storage extends Model {
+export default class Storage extends Model {
   static get tableName() { return 'storage' }
   static get idColumn() { return 'key' }
 
@@ -126,7 +126,7 @@ module.exports = class Storage extends Model {
       // -> Initialize targets
       for (let target of this.targets) {
         const targetDef = _.find(WIKI.data.storage, ['key', target.key])
-        target.fn = require(`../modules/storage/${target.key}/storage`)
+        target.fn = (await import(`../modules/storage/${target.key}/storage.js`)).default
         target.fn.config = target.config
         target.fn.mode = target.mode
         try {

@@ -1,11 +1,11 @@
-const Model = require('objection').Model
+import { Model } from 'objection'
 
 /* global WIKI */
 
 /**
  * Locales model
  */
-module.exports = class Locale extends Model {
+export default class Locale extends Model {
   static get tableName() { return 'locales' }
   static get idColumn() { return 'code' }
 

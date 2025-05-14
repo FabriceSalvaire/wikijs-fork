@@ -1,17 +1,17 @@
-const Model = require('objection').Model
-const path = require('path')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const yaml = require('js-yaml')
-const DepGraph = require('dependency-graph').DepGraph
-const commonHelper = require('../helpers/common')
+import { Model } from 'objection'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import _ from 'lodash'
+import yaml from 'js-yaml'
+import { DepGraph } from 'dependency-graph'
+import commonHelper from '../helpers/common.js'
 
 /* global WIKI */
 
 /**
  * Renderer model
  */
-module.exports = class Renderer extends Model {
+export default class Renderer extends Model {
   static get tableName() { return 'renderers' }
   static get idColumn() { return 'key' }
 

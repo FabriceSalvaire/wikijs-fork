@@ -1,9 +1,11 @@
-const Model = require('objection').Model
+import { Model } from 'objection'
+
+import Pages from './pages.js'
 
 /**
  * Users model
  */
-module.exports = class PageLink extends Model {
+export default class PageLink extends Model {
   static get tableName() { return 'pageLinks' }
 
   static get jsonSchema () {
@@ -23,7 +25,7 @@ module.exports = class PageLink extends Model {
     return {
       page: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./pages'),
+        modelClass: Pages,
         join: {
           from: 'pageLinks.pageId',
           to: 'pages.id'

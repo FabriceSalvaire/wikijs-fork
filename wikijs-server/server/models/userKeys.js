@@ -1,13 +1,15 @@
 /* global WIKI */
 
-const Model = require('objection').Model
-const { DateTime } = require('luxon')
-const { nanoid } = require('nanoid')
+import { Model } from 'objection'
+import { DateTime } from 'luxon'
+import { nanoid } from 'nanoid'
+
+import User from './users.js'
 
 /**
  * Users model
  */
-module.exports = class UserKey extends Model {
+export default class UserKey extends Model {
   static get tableName() { return 'userKeys' }
 
   static get jsonSchema () {
@@ -29,7 +31,7 @@ module.exports = class UserKey extends Model {
     return {
       user: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'userKeys.userId',
           to: 'users.id'

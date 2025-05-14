@@ -1,14 +1,14 @@
 /* global WIKI */
 
-const Model = require('objection').Model
-const moment = require('moment')
-const ms = require('ms')
-const jwt = require('jsonwebtoken')
+import { Model } from 'objection'
+import moment from 'moment'
+import ms from 'ms'
+import jwt from 'jsonwebtoken'
 
 /**
  * Users model
  */
-module.exports = class ApiKey extends Model {
+export default class ApiKey extends Model {
   static get tableName() { return 'apiKeys' }
 
   static get jsonSchema () {

@@ -1,16 +1,16 @@
-const Model = require('objection').Model
-const path = require('path')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const yaml = require('js-yaml')
-const commonHelper = require('../helpers/common')
+import { Model } from 'objection'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import _ from 'lodash'
+import yaml from 'js-yaml'
+import commonHelper from '../helpers/common.js'
 
 /* global WIKI */
 
 /**
  * SearchEngine model
  */
-module.exports = class SearchEngine extends Model {
+export default class SearchEngine extends Model {
   static get tableName() { return 'searchEngines' }
   static get idColumn() { return 'key' }
 
@@ -98,7 +98,7 @@ module.exports = class SearchEngine extends Model {
   static async initEngine({ activate = false } = {}) {
     const searchEngine = await WIKI.models.searchEngines.query().findOne('isEnabled', true)
     if (searchEngine) {
-      WIKI.data.searchEngine = require(`../modules/search/${searchEngine.key}/engine`)
+      WIKI.data.searchEngine = (await import(`../modules/search/${searchEngine.key}/engine.js`)).default
       WIKI.data.searchEngine.key = searchEngine.key
       WIKI.data.searchEngine.config = searchEngine.config
       if (activate) {

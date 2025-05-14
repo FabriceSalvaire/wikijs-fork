@@ -1,17 +1,20 @@
 /* global WIKI */
 
-const Model = require('objection').Model
-const moment = require('moment')
-const path = require('path')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const assetHelper = require('../helpers/asset')
-const Promise = require('bluebird')
+import { Model } from 'objection'
+import moment from 'moment'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import _ from 'lodash'
+import assetHelper from '../helpers/asset.js'
+import Promise from 'bluebird'
+
+import AssetFolders from './assetFolders.js'
+import User from './users.js'
 
 /**
  * Users model
  */
-module.exports = class Asset extends Model {
+export default class Asset extends Model {
   static get tableName() { return 'assets' }
 
   static get jsonSchema () {
@@ -37,7 +40,7 @@ module.exports = class Asset extends Model {
     return {
       author: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./users'),
+        modelClass: User,
         join: {
           from: 'assets.authorId',
           to: 'users.id'
@@ -45,7 +48,7 @@ module.exports = class Asset extends Model {
       },
       folder: {
         relation: Model.BelongsToOneRelation,
-        modelClass: require('./assetFolders'),
+        modelClass: AssetFolders,
         join: {
           from: 'assets.folderId',
           to: 'assetFolders.id'

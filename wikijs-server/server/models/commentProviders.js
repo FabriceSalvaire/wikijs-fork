@@ -1,16 +1,16 @@
-const Model = require('objection').Model
-const fs = require('fs-extra')
-const path = require('path')
-const _ = require('lodash')
-const yaml = require('js-yaml')
-const commonHelper = require('../helpers/common')
+import { Model } from 'objection'
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import _ from 'lodash'
+import yaml from 'js-yaml'
+import commonHelper from '../helpers/common.js'
 
 /* global WIKI */
 
 /**
  * CommentProvider model
  */
-module.exports = class CommentProvider extends Model {
+export default class CommentProvider extends Model {
   static get tableName() { return 'commentProviders' }
   static get idColumn() { return 'key' }
 
@@ -128,7 +128,7 @@ module.exports = class CommentProvider extends Model {
       } else {
         WIKI.data.commentProvider = {
           ...WIKI.data.commentProvider,
-          ...require(`../modules/comments/${commentProvider.key}/comment`),
+          ... (await import(`../modules/comments/${commentProvider.key}/comment.js`)).default,
           config: commentProvider.config
         }
         await WIKI.data.commentProvider.init()

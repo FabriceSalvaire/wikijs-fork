@@ -1,16 +1,16 @@
-const Model = require('objection').Model
-const path = require('path')
-const fs = require('fs-extra')
-const _ = require('lodash')
-const yaml = require('js-yaml')
-const commonHelper = require('../helpers/common')
+import { Model } from 'objection'
+import * as path from 'node:path'
+import fs from 'fs-extra'
+import _ from 'lodash'
+import yaml from 'js-yaml'
+import commonHelper from '../helpers/common.js'
 
 /* global WIKI */
 
 /**
  * Logger model
  */
-module.exports = class Logger extends Model {
+export default class Logger extends Model {
   static get tableName() { return 'loggers' }
   static get idColumn() { return 'key' }
 

@@ -1,12 +1,12 @@
-const Model = require('objection').Model
-const _ = require('lodash')
+import { Model } from 'objection'
+import _ from 'lodash'
 
 /* global WIKI */
 
 /**
  * Settings model
  */
-module.exports = class Setting extends Model {
+export default class Setting extends Model {
   static get tableName() { return 'settings' }
   static get idColumn() { return 'key' }
 

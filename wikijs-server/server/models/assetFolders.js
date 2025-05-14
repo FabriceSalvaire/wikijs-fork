@@ -1,12 +1,12 @@
-const Model = require('objection').Model
-const _ = require('lodash')
+import { Model } from 'objection'
+import _ from 'lodash'
 
 /* global WIKI */
 
 /**
  * Users model
  */
-module.exports = class AssetFolder extends Model {
+export default class AssetFolder extends Model {
   static get tableName() { return 'assetFolders' }
 
   static get jsonSchema () {

@@ -1,16 +1,16 @@
-const Model = require('objection').Model
-const fs = require('fs-extra')
-const path = require('path')
-const _ = require('lodash')
-const yaml = require('js-yaml')
-const commonHelper = require('../helpers/common')
+import { Model } from 'objection'
+import fs from 'fs-extra'
+import * as path from 'node:path'
+import _ from 'lodash'
+import yaml from 'js-yaml'
+import commonHelper from '../helpers/common.js'
 
 /* global WIKI */
 
 /**
  * Analytics model
  */
-module.exports = class Analytics extends Model {
+export default class Analytics extends Model {
   static get tableName() { return 'analytics' }
   static get idColumn() { return 'key' }
 
