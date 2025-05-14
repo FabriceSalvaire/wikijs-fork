@@ -1,13 +1,13 @@
-const fs = require('fs-extra')
-const http = require('http')
-const https = require('https')
-const { ApolloServer } = require('apollo-server-express')
-const Promise = require('bluebird')
-const _ = require('lodash')
+import fs from 'fs-extra'
+import * as http from 'node:http'
+import * as https from 'node:https'
+import { ApolloServer } from 'apollo-server-express'
+import Promise from 'bluebird'
+import _ from 'lodash'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   servers: {
     graph: null,
     http: null,
@@ -60,7 +60,7 @@ module.exports = {
    */
   async startHTTPS () {
     if (WIKI.config.ssl.provider === 'letsencrypt') {
-      this.le = require('./letsencrypt')
+      this.le = (await import('./letsencrypt.js')).default
       await this.le.init()
     }
 
@@ -122,7 +122,7 @@ module.exports = {
    * Start GraphQL Server
    */
   async startGraphQL () {
-    const graphqlSchema = require('../graph')
+    const graphqlSchema = (await import('../graph/index.js')).default
     this.servers.graph = new ApolloServer({
       ...graphqlSchema,
       context: ({ req, res }) => ({ req, res }),

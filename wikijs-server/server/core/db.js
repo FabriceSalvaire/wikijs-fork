@@ -1,20 +1,20 @@
-const _ = require('lodash')
-const autoload = require('auto-load')
-const path = require('path')
-const Promise = require('bluebird')
-const Knex = require('knex')
-const fs = require('fs')
-const Objection = require('objection')
+import _ from 'lodash'
+// import autoload from 'auto-load'
+import * as path from 'node:path'
+import Promise from 'bluebird'
+import Knex from 'knex'
+import * as fs from 'node:fs'
+import Objection from 'objection'
 
-const migrationSource = require('../db/migrator-source')
-const migrateFromBeta = require('../db/beta')
+import migrationSource from '../db/migrator-source.js'
+import migrateFromBeta from '../db/beta/index.js'
 
 /* global WIKI */
 
 /**
  * ORM DB module
  */
-module.exports = {
+export default {
   Objection,
   knex: null,
   listener: null,
@@ -23,7 +23,7 @@ module.exports = {
    *
    * @return     {Object}  DB instance
    */
-  init() {
+  async init() {
     let self = this
 
     // Fetch DB Config
@@ -160,8 +160,7 @@ module.exports = {
     Objection.Model.knex(this.knex)
 
     // Load DB Models
-
-    const models = autoload(path.join(WIKI.SERVERPATH, 'models'))
+    const models = (await import(path.join(WIKI.SERVERPATH, 'models/index.js'))).default
 
     // Set init tasks
     let conAttempts = 0
@@ -230,7 +229,7 @@ module.exports = {
       return
     }
 
-    const PGPubSub = require('pg-pubsub')
+    const PGPubSub = await import('pg-pubsub')
 
     this.listener = new PGPubSub(this.knex.client.connectionSettings, {
       log (ev) {

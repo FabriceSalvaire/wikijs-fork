@@ -1,35 +1,38 @@
-const compression = require('compression')
-const path = require('path')
-const _ = require('lodash')
+import compression from 'compression'
+import * as path from 'node:path'
+import _ from 'lodash'
 
-const autoload = require('auto-load')
-const bodyParser = require('body-parser')
-const cookieParser = require('cookie-parser')
-const cors = require('cors')
-const express = require('express')
-const session = require('express-session')
-const KnexSessionStore = require('connect-session-knex')(session)
-const favicon = require('serve-favicon')
+// import autoload from 'auto-load'
+import bodyParser from 'body-parser'
+import cookieParser from 'cookie-parser'
+import cors from 'cors'
+import express from 'express'
+import session from 'express-session'
+import connectSessionKnex from 'connect-session-knex'
+const KnexSessionStore = connectSessionKnex(session)
+import favicon from 'serve-favicon'
 
 /* global WIKI */
 
 // imported by core/kernel.js:bootMaster
-module.exports = async () => {
+export default async () => {
   WIKI.logger.info('--- Run master.js...')
 
   // ----------------------------------------
   // Load core modules
   // ----------------------------------------
-  WIKI.auth = require('./core/auth').init()
-  WIKI.lang = require('./core/localization').init()
-  WIKI.mail = require('./core/mail').init()
-  WIKI.system = require('./core/system').init()
+  WIKI.auth = (await import('./core/auth.js')).default.init()
+  WIKI.lang = (await import('./core/localization.js')).default.init()
+  WIKI.mail = (await import('./core/mail.js')).default.init()
+  WIKI.system = (await import('./core/system.js')).default.init()
 
   // ----------------------------------------
   // Load middlewares
   // ----------------------------------------
-  const mw = autoload(path.join(WIKI.SERVERPATH, '/middlewares'))
-  const ctrl = autoload(path.join(WIKI.SERVERPATH, '/controllers'))
+  // const mw = autoload(path.join(WIKI.SERVERPATH, '/middlewares'))
+  // const ctrl = autoload(path.join(WIKI.SERVERPATH, '/controllers'))
+  const mw = (await import(path.join(WIKI.SERVERPATH, '/middlewares/index.js'))).default
+  const ctrl = (await import(path.join(WIKI.SERVERPATH, '/controllers/index.js'))).default
 
   // ----------------------------------------
   // Define Express App

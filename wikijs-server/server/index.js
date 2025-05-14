@@ -7,11 +7,14 @@
 // Wikijs.js Server Main for Node.js
 // ----------------------------------------
 
-const path = require('path')
-const { nanoid } = require('nanoid')
-const { DateTime } = require('luxon')
+import * as path from 'node:path'
+import { nanoid } from 'nanoid'
+import { DateTime } from 'luxon'
 
-// const { gte } = require('semver')
+import configSvc from './core/config.js'
+import Error from './helpers/error.js'
+import kernel from './core/kernel.js'
+import logger from './core/logger.js'
 
 // ----------------------------------------
 // Init WIKI instance
@@ -24,19 +27,22 @@ let WIKI = {
   ROOTPATH: process.cwd(),
   INSTANCE_ID: nanoid(10),
   SERVERPATH: path.join(process.cwd(), 'server'),
-  Error: require('./helpers/error'),
-  configSvc: require('./core/config'),
-  kernel: require('./core/kernel'),
+  // Error: (await import('./helpers/error.js')).default,
+  // configSvc: (await import('./core/config.js')).default,
+  // kernel: (await import('./core/kernel.js')).default,
+  Error,
+  configSvc,
+  kernel,
   startedAt: DateTime.utc()
 }
 global.WIKI = WIKI
 
-WIKI.configSvc.init()
+await WIKI.configSvc.init()
 
 // ----------------------------------------
 // Init Logger
 // ----------------------------------------
-WIKI.logger = require('./core/logger').init('MASTER')
+WIKI.logger = logger.init('MASTER')
 
 // ----------------------------------------
 // Start Kernel

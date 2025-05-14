@@ -1,16 +1,17 @@
-const _ = require('lodash')
-const EventEmitter = require('eventemitter2').EventEmitter2
+import _ from 'lodash'
+import EventEmitter from 'eventemitter2'
+import StackTracey from 'stacktracey'
 
 /* global WIKI */
 
-module.exports = {
+export default {
   async init() {
     WIKI.logger.info('=======================================')
     WIKI.logger.info(`= Wiki.js ${_.padEnd(WIKI.version + ' ', 29, '=')}`)
     WIKI.logger.info('=======================================')
     WIKI.logger.info('Initializing...')
 
-    WIKI.models = require('./db').init()
+    WIKI.models = await (await import('./db.js')).default.init()
 
     try {
       await WIKI.models.onReady
@@ -24,7 +25,7 @@ module.exports = {
       process.exit(1)
     }
 
-    this.bootMaster()
+    await this.bootMaster()
   },
 
   /**
@@ -33,16 +34,16 @@ module.exports = {
   async preBootMaster() {
     try {
       await this.initTelemetry()
-      WIKI.sideloader = await require('./sideloader').init()
-      WIKI.cache = require('./cache').init()
-      WIKI.scheduler = require('./scheduler').init()
-      WIKI.servers = require('./servers')
+      WIKI.sideloader = await (await import('./sideloader.js')).default.init()
+      WIKI.cache = (await import('./cache.js')).default.init()
+      WIKI.scheduler = (await import('./scheduler.js')).default.init()
+      WIKI.servers = (await import('./servers.js')).default
       WIKI.events = {
         inbound: new EventEmitter(),
         outbound: new EventEmitter()
       }
-      WIKI.extensions = require('./extensions')
-      WIKI.asar = require('./asar')
+      WIKI.extensions = (await import('./extensions.js')).default
+      WIKI.asar = (await import('./asar.js')).default
     } catch (err) {
       WIKI.logger.error(err)
       process.exit(1)
@@ -56,11 +57,11 @@ module.exports = {
     try {
       if (WIKI.config.setup) {
         WIKI.logger.info('Starting setup wizard...')
-        require('../setup')()
+        await (await import('../setup.js')).default()
       } else {
         await this.preBootMaster()
-        await require('../master')()
-        this.postBootMaster()
+        await (await import('../master.js')).default()
+        await this.postBootMaster()
       }
     } catch (err) {
       WIKI.logger.error(err)
@@ -96,8 +97,7 @@ module.exports = {
    * Init Telemetry
    */
   async initTelemetry() {
-    require('./telemetry').init()
-
+    (await import('./telemetry.js')).default.init()
     process.on('unhandledRejection', (err) => {
       WIKI.logger.warn(err)
       WIKI.telemetry.sendError(err)

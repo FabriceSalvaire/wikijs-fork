@@ -1,23 +1,22 @@
-const compression = require('compression')
-const fs = require('fs-extra')
-const http = require('http')
-const path = require('path')
-const { v4: uuid } = require('uuid')
-const _ = require('lodash')
+import compression from 'compression'
+import fs from 'fs-extra'
+import * as http from 'node:http'
+import * as path from 'node:path'
+import { v4 as uuid } from 'uuid'
+import _ from 'lodash'
 
-const Promise = require('bluebird')
-const crypto = Promise.promisifyAll(require('crypto'))
+const crypto = await import('node:crypto')
 
-const bodyParser = require('body-parser')
-const express = require('express')
-const favicon = require('serve-favicon')
-const pem2jwk = require('pem-jwk').pem2jwk
-const semver = require('semver')
+import bodyParser from 'body-parser'
+import express from 'express'
+import favicon from 'serve-favicon'
+import { pem2jwk } from 'pem-jwk'
+import semver from 'semver'
 
 /* global WIKI */
 
 // imported by core/kernel.js:bootMaster
-module.exports = () => {
+export default async () => {
   WIKI.logger.info('--- Run setup.js...')
 
   WIKI.config.site = {
@@ -25,7 +24,7 @@ module.exports = () => {
     title: 'Wiki.js'
   }
 
-  WIKI.system = require('./core/system')
+  WIKI.system = (await import('./core/system.js')).default
 
   // ----------------------------------------
   // Define Express App
@@ -52,7 +51,7 @@ module.exports = () => {
 
   app.locals.config = WIKI.config
   app.locals.data = WIKI.data
-  app.locals._ = require('lodash')
+  app.locals._ = await import('lodash')
   app.locals.devMode = WIKI.devMode
 
   // ----------------------------------------
@@ -121,7 +120,7 @@ module.exports = () => {
         analyticsService: '',
         analyticsId: ''
       })
-      _.set(WIKI.config, 'sessionSecret', (await crypto.randomBytesAsync(32)).toString('hex'))
+      _.set(WIKI.config, 'sessionSecret', (await crypto.randomBytes(32)).toString('hex'))
       _.set(WIKI.config, 'telemetry', {
         isEnabled: req.body.telemetry === true,
         clientId: uuid()
@@ -137,7 +136,7 @@ module.exports = () => {
       _.set(WIKI.config, 'title', 'Wiki.js')
 
       // Init Telemetry
-      WIKI.kernel.initTelemetry()
+      // await WIKI.kernel.initTelemetry()
       // WIKI.telemetry.sendEvent('setup', 'install-start')
 
       // Basic checks

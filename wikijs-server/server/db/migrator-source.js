@@ -1,29 +1,32 @@
-const path = require('path')
-const fs = require('fs-extra')
-const semver = require('semver')
+import * as path from 'node:path'
+import fsp from 'node:fs/promises'
+import semver from 'semver'
 
 const baseMigrationPath = path.join(WIKI.SERVERPATH, (WIKI.config.db.type !== 'sqlite') ? 'db/migrations' : 'db/migrations-sqlite')
 
 /* global WIKI */
 
-module.exports = {
+export default {
   /**
    * Gets the migration names
    * @returns Promise<string[]>
    */
   async getMigrations() {
-    const migrationFiles = await fs.readdir(baseMigrationPath)
-    return migrationFiles.map(m => m.replace('.js', '')).sort(semver.compare).map(m => ({
-      file: m,
-      directory: baseMigrationPath
-    }))
+    const files = await Array.fromAsync(await fsp.glob(path.join(baseMigrationPath, '*.js')))
+    return files
+      .map(m => path.parse(m).name)
+      .sort(semver.compare)
+      .map(m => ({
+        file: m,
+        directory: baseMigrationPath
+      }))
   },
 
   getMigrationName(migration) {
     return migration.file.indexOf('.js') >= 0 ? migration.file : `${migration.file}.js`
   },
 
-  getMigration(migration) {
-    return require(path.join(baseMigrationPath, migration.file))
+  async getMigration(migration) {
+    return await import(path.join(baseMigrationPath, migration.file) + '.js')
   }
 }

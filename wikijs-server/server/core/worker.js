@@ -1,21 +1,28 @@
-const path = require('path')
+import * as path from 'node:path'
+
+import Error from '../helpers/error.js'
+import configSvc from './config.js'
+import logger from './logger.js'
 
 let WIKI = {
   IS_DEBUG: process.env.NODE_ENV === 'development',
   ROOTPATH: process.cwd(),
   SERVERPATH: path.join(process.cwd(), 'server'),
-  Error: require('../helpers/error'),
-  configSvc: require('./config')
+  Error, // : (await import('../helpers/error.js')).default,
+  configSvc, // : (await import('./config.js')).default
 }
 global.WIKI = WIKI
 
-WIKI.configSvc.init()
-WIKI.logger = require('./logger').init('JOB')
-const args = require('yargs').argv
+await WIKI.configSvc.init()
+// WIKI.logger = (await import('./logger.js')).default.init('JOB')
+WIKI.logger = logger.init('JOB')
+import yargs from 'yargs'
+const argv = yargs(process.argv.slice(2)).parse()
 
 ;(async () => {
   try {
-    await require(`../jobs/${args.job}`)(args.data)
+    const job = (await import(`../jobs/${argv.job}.js`)).default
+    await job(argv.data)
     process.exit(0)
   } catch (e) {
     await new Promise(resolve => process.stderr.write(e.message, resolve))
