@@ -1,8 +1,11 @@
 # Security Policy
 
-Wiki.js is built with security in mind. We try our absolute best to deliver secure and robust applications. However, like any software, there can be security bugs, either introduced by an update or by using an attack vector that wasn't considered when designing the software.
+Wiki.js is built with security in mind. We try our absolute best to deliver secure and robust
+applications. However, like any software, there can be security bugs, either introduced by an update
+or by using an attack vector that wasn't considered when designing the software.
 
-If you find such vulnerability, it's important to disclose it in a quick and secure manner to the developers. Follow the instructions below to report a vulnerability.
+If you find such vulnerability, it's important to disclose it in a quick and secure manner to the
+developers. Follow the instructions below to report a vulnerability.
 
 ## Supported Versions
 
@@ -13,7 +16,8 @@ If you find such vulnerability, it's important to disclose it in a quick and sec
 
 ## Reporting a Vulnerability
 
-**DO NOT CREATE A GITHUB ISSUE / DISCUSSION** to report a potential vulnerability / security problem. Instead, choose one of these options:
+**DO NOT CREATE A GITHUB ISSUE / DISCUSSION** to report a potential vulnerability / security
+problem. Instead, choose one of these options:
 
 Submit a Vulnerability Report by filling in the form on https://github.com/requarks/wiki/security/advisories/new
 
@@ -24,4 +28,6 @@ Include as much details as possible, such as:
 - Any potential fixes or reference code you think might be helpful in resolving the issue
 - Your GitHub username if you'd like to be included as a collaborator on the private fix branch
 
-The vulnerability will be investigated ASAP. If deemed valid, a draft security advisory will be created on GitHub and you will be included as a collaborator. A fix will be worked on in a private branch to resolves the issue. Once a fix is available, the advisory will be published.
+The vulnerability will be investigated ASAP. If deemed valid, a draft security advisory will be
+created on GitHub and you will be included as a collaborator. A fix will be worked on in a private
+branch to resolves the issue. Once a fix is available, the advisory will be published.
