@@ -28,20 +28,16 @@ export default async () => {
 
   // ----------------------------------------
   // Define Express App
-  // ----------------------------------------
   let app = express()
   app.use(compression())
 
   // ----------------------------------------
   // Public Assets
-  // ----------------------------------------
   app.use(favicon(path.join(WIKI.ROOTPATH, 'assets', 'favicon.ico')))
   app.use('/_assets', express.static(path.join(WIKI.ROOTPATH, 'assets')))
 
   // ----------------------------------------
   // View Engine Setup
-  // ----------------------------------------
-
   app.set('views', path.join(WIKI.SERVERPATH, 'views'))
   app.set('view engine', 'pug')
 
@@ -56,7 +52,6 @@ export default async () => {
 
   // ----------------------------------------
   // HMR (Dev Mode Only)
-  // ----------------------------------------
   if (global.DEV) {
     app.use(global.WP_DEV.devMiddleware)
     app.use(global.WP_DEV.hotMiddleware)
@@ -375,7 +370,6 @@ export default async () => {
 
   // ----------------------------------------
   // Error handling
-  // ----------------------------------------
 
   app.use(function (req, res, next) {
     const err = new Error('Not Found')
@@ -395,7 +389,6 @@ export default async () => {
 
   // ----------------------------------------
   // Start HTTP server
-  // ----------------------------------------
 
   WIKI.logger.info(`Starting HTTP server on port ${WIKI.config.port}...`)
 

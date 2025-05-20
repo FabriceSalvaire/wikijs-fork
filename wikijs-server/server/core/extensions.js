@@ -5,6 +5,7 @@ import * as path from 'node:path'
 
 export default {
   ext: {},
+
   async init () {
     const extDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/extensions'))
     WIKI.logger.info(`Checking for installed optional extensions...`)

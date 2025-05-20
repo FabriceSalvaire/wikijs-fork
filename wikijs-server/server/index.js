@@ -17,8 +17,7 @@ import kernel from './core/kernel.js'
 import logger from './core/logger.js'
 
 // ----------------------------------------
-// Init WIKI instance
-// ----------------------------------------
+// Init global WIKI instance
 
 let WIKI = {
   // Fixme: coding convention SERVER_PATH
@@ -41,25 +40,24 @@ await WIKI.configSvc.init()
 
 // ----------------------------------------
 // Init Logger
-// ----------------------------------------
 WIKI.logger = logger.init('MASTER')
 
 // ----------------------------------------
 // Start Kernel
-// ----------------------------------------
 WIKI.kernel.init()
 
 // ----------------------------------------
 // Register exit handler
-// ----------------------------------------
+
 process.on('SIGTERM', () => {
   WIKI.kernel.shutdown()
 })
+
 process.on('SIGINT', () => {
   WIKI.kernel.shutdown()
 })
+
 process.on('message', (msg) => {
-  if (msg === 'shutdown') {
+  if (msg === 'shutdown')
     WIKI.kernel.shutdown()
-  }
 })

@@ -23,6 +23,7 @@ export default {
   },
 
   getMigrationName(migration) {
+    // Fixme: useless
     return migration.file.indexOf('.js') >= 0 ? migration.file : `${migration.file}.js`
   },
 

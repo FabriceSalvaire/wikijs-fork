@@ -96,6 +96,7 @@ export default class User extends Model {
       await this.generateHash()
     }
   }
+
   async $beforeInsert(context) {
     await super.$beforeInsert(context)
 
@@ -412,8 +413,8 @@ export default class User extends Model {
     }
 
     return new Promise((resolve, reject) => {
-      context.req.login(user, { session: false }, async errc => {
-        if (errc) { return reject(errc) }
+      context.req.login(user, { session: false }, async err => {
+        if (err) { return reject(err) }
         const jwtToken = await WIKI.models.users.refreshToken(user)
         resolve({ jwt: jwtToken.token, redirect })
       })
@@ -510,7 +511,7 @@ export default class User extends Model {
       if (!usr.isActive) {
         throw new WIKI.Error.AuthAccountBanned()
       }
-      
+
       await WIKI.models.users.query().patch({
         password: newPassword,
         mustChangePwd: false

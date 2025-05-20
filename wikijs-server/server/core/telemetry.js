@@ -8,6 +8,7 @@ import fs from 'fs-extra'
 
 export default {
   enabled: false,
+
   init() {
     WIKI.telemetry = this
 
@@ -16,12 +17,15 @@ export default {
       this.sendInstanceEvent('STARTUP')
     }
   },
+
   sendError(err) {
     // TODO
   },
+
   sendEvent(eventCategory, eventAction, eventLabel) {
     // TODO
   },
+
   async sendInstanceEvent(eventType) {
     if (WIKI.devMode || !this.enabled) { return }
 
@@ -138,6 +142,7 @@ export default {
       WIKI.logger.warn(err)
     }
   },
+
   generateClientId() {
     _.set(WIKI.config, 'telemetry.clientId', uuid())
     return WIKI.config.telemetry.clientId

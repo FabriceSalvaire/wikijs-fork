@@ -112,23 +112,18 @@ export default {
    * Graceful shutdown
    */
   async shutdown (devMode = false) {
-    if (WIKI.servers) {
+    if (WIKI.servers)
       await WIKI.servers.stopServers()
-    }
-    if (WIKI.scheduler) {
+    if (WIKI.scheduler)
       await WIKI.scheduler.stop()
-    }
     if (WIKI.models) {
       await WIKI.models.unsubscribeToNotifications()
-      if (WIKI.models.knex) {
+      if (WIKI.models.knex)
         await WIKI.models.knex.destroy()
-      }
     }
-    if (WIKI.asar) {
+    if (WIKI.asar)
       await WIKI.asar.unload()
-    }
-    if (!devMode) {
+    if (!devMode)
       process.exit(0)
-    }
   }
 }
