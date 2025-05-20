@@ -1,3 +1,6 @@
+# -*- mode: Conf -*-
+# https://editorconfig.org/#file-format-details
+
 root = true
 
 [*]
@@ -10,6 +13,9 @@ insert_final_newline = true
 
 [*.{jade,pug,md}]
 trim_trailing_whitespace = false
+
+[*].py
+indent_size = 4
 
 [Makefile]
 indent_style = tab
