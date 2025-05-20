@@ -21,7 +21,8 @@ export default {
     } catch (err) {
       WIKI.logger.error('Database Initialization Error: ' + err.message)
       if (WIKI.IS_DEBUG) {
-        WIKI.logger.error(err)
+        WIKI.logger.error('@kernel.init')
+        WIKI.logger.error(err.stack)
       }
       process.exit(1)
     }
@@ -48,7 +49,8 @@ export default {
       WIKI.extensions = (await import('./extensions.js')).default
       WIKI.asar = (await import('./asar.js')).default
     } catch (err) {
-      WIKI.logger.error(err)
+      WIKI.logger.error('@kernel.preBootMaster')
+      WIKI.logger.error(err.stack)
       process.exit(1)
     }
     WIKI.logger.info('@preBootMaster done')
@@ -70,7 +72,8 @@ export default {
         await this.postBootMaster()
       }
     } catch (err) {
-      WIKI.logger.error(err)
+      WIKI.logger.error('@kernel.BootMaster')
+      WIKI.logger.error(err.stack)
       process.exit(1)
     }
     WIKI.logger.info('@bootMaster done')
