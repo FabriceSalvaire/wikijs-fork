@@ -9,6 +9,7 @@ export default {
     const extDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/extensions'))
     WIKI.logger.info(`Checking for installed optional extensions...`)
     for (let dir of extDirs) {
+      // WIKI.logger.info(`import extension ${dir}`)
       const module_path = path.join(WIKI.SERVERPATH, 'modules/extensions', dir, 'ext.js')
       WIKI.extensions.ext[dir] = (await import(module_path)).default
       const isInstalled = await WIKI.extensions.ext[dir].check()

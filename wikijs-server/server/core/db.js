@@ -160,6 +160,7 @@ export default {
     Objection.Model.knex(this.knex)
 
     // Load DB Models
+    WIKI.logger.info('Loading DB models...')
     const models = (await import(path.join(WIKI.SERVERPATH, 'models/index.js'))).default
 
     // Set init tasks

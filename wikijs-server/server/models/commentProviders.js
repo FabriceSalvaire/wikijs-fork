@@ -99,7 +99,9 @@ export default class CommentProvider extends Model {
   }
 
   static async initProvider() {
+    // WIKI.logger.info("initProvider")
     const commentProvider = await WIKI.models.commentProviders.query().findOne('isEnabled', true)
+    WIKI.logger.info(`Init Comment Provider ${commentProvider.key}`)
     if (commentProvider) {
       WIKI.data.commentProvider = {
         ..._.find(WIKI.data.commentProviders, ['key', commentProvider.key]),

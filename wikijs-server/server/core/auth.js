@@ -78,6 +78,7 @@ export default {
       for (let idx in enabledStrategies) {
         const stg = enabledStrategies[idx]
         try {
+          // WIKI.logger.info(`import ${stg.strategyKey}`)
           const module_path = `../modules/authentication/${stg.strategyKey}/authentication.js`
           const strategy = (await import(module_path)).default
 
@@ -142,6 +143,7 @@ export default {
 
       // Revalidate and renew token
       if (mustRevalidate) {
+        // WIKI.logger.info("auth/authenticate: must revalidate")
         const jwtPayload = jwt.decode(securityHelper.extractJWT(req))
         try {
           const newToken = await WIKI.models.users.refreshToken(jwtPayload.id)

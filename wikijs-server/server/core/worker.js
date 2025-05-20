@@ -21,6 +21,7 @@ const argv = yargs(process.argv.slice(2)).parse()
 
 ;(async () => {
   try {
+    WIKI.logger.info(`import ${argv.job}`)
     const job = (await import(`../jobs/${argv.job}.js`)).default
     await job(argv.data)
     process.exit(0)

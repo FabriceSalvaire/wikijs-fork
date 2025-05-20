@@ -53,6 +53,7 @@ class Job {
   async invoke(data) {
     try {
       if (this.worker) {
+        WIKI.logger.info(`Run worker ${this.name} ${data}`)
         const proc = childProcess.fork(`server/core/worker.js`, [
           `--job=${this.name}`,
           `--data=${data}`
@@ -78,6 +79,7 @@ class Job {
           })
         })
       } else {
+        WIKI.logger.info(`Run job ${this.name} ${data}`)
         const job = (await import(`../jobs/${this.name}.js`)).default
         this.finished = job(data)
       }

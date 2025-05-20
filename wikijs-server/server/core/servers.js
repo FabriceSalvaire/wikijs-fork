@@ -20,6 +20,7 @@ export default {
    * Start HTTP Server
    */
   async startHTTP () {
+    WIKI.logger.info('startHTTP')
     WIKI.logger.info(`HTTP Server on port: [ ${WIKI.config.port} ]`)
     this.servers.http = http.createServer(WIKI.app)
     this.servers.graph.installSubscriptionHandlers(this.servers.http)
@@ -59,6 +60,7 @@ export default {
    * Start HTTPS Server
    */
   async startHTTPS () {
+    WIKI.logger.info('startHTTPS')
     if (WIKI.config.ssl.provider === 'letsencrypt') {
       this.le = (await import('./letsencrypt.js')).default
       await this.le.init()
@@ -122,6 +124,7 @@ export default {
    * Start GraphQL Server
    */
   async startGraphQL () {
+    WIKI.logger.info('startGraphQL')
     const graphqlSchema = (await import('../graph/index.js')).default
     this.servers.graph = new ApolloServer({
       ...graphqlSchema,
@@ -140,6 +143,7 @@ export default {
    * Close all active connections
    */
   closeConnections (mode = 'all') {
+    WIKI.logger.info('closeConnections')
     for (const [key, conn] of this.connections) {
       if (mode !== `all` && key.indexOf(`${mode}:`) !== 0) {
         continue
@@ -156,6 +160,7 @@ export default {
    * Stop all servers
    */
   async stopServers () {
+    WIKI.logger.info('stopServers')
     this.closeConnections()
     if (this.servers.http) {
       await Promise.fromCallback(cb => { this.servers.http.close(cb) })
@@ -172,6 +177,7 @@ export default {
    * Restart Server
    */
   async restartServer (srv = 'https') {
+    WIKI.logger.info('restartServer')
     this.closeConnections(srv)
     switch (srv) {
       case 'http':
