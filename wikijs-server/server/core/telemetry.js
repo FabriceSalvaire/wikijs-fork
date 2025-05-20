@@ -10,6 +10,7 @@ export default {
   enabled: false,
 
   init() {
+    // WIKI.logger.info('telemetry.init')
     WIKI.telemetry = this
 
     if (_.get(WIKI.config, 'telemetry.isEnabled', false) === true && WIKI.config.offline !== true) {

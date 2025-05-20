@@ -97,6 +97,7 @@ export default class SearchEngine extends Model {
 
   static async initEngine({ activate = false } = {}) {
     const searchEngine = await WIKI.models.searchEngines.query().findOne('isEnabled', true)
+    WIKI.logger.info(`Init Search Engine ${searchEngine.key}`)
     if (searchEngine) {
       WIKI.data.searchEngine = (await import(`../modules/search/${searchEngine.key}/engine.js`)).default
       WIKI.data.searchEngine.key = searchEngine.key
