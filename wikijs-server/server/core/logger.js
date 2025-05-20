@@ -1,13 +1,29 @@
 import winston from 'winston'
 
+// Note: Due to performance issue... Winston cannot print the location
+//   Code's file name, function, line number from where logging was done #200
+//     https://github.com/winstonjs/winston/issues/200
+//   Log caller function name and line number #890
+//     https://github.com/winstonjs/winston/issues/890
+
 /* global WIKI */
 
 export default {
   loggers: {},
+
   init(uid) {
     const loggerFormats = [
       winston.format.label({ label: uid }),
-      winston.format.timestamp()
+      // ???
+      winston.format.errors({ stack: true }),
+      winston.format.timestamp(),
+      winston.format.printf((info) => {
+        if (typeof info.message === 'object')
+          info.message = JSON.stringify(info.message, null, 3)
+        if ('stack' in info)
+          info.message += '\n' + info.stack
+        return info.message
+      })
     ]
 
     if (WIKI.config.logFormat === 'json') {
@@ -23,7 +39,6 @@ export default {
     })
 
     // Init Console (default)
-
     logger.add(new winston.transports.Console({
       level: WIKI.config.logLevel,
       prettyPrint: true,
