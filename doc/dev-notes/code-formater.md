@@ -1,0 +1,2 @@
+- [Linting and formatting](https://docs.deno.com/runtime/fundamentals/linting_and_formatting)
+- [TypeScript / JavaScript Plugin - dprint - Code Formatter](https://dprint.dev/plugins/typescript)
