@@ -493,3 +493,64 @@ type Query {
   droid(id: ID!): Droid
 }
 ```
+
+# Libraries
+
+## Python
+
+- [Python | Tools and Libraries | GraphQL](https://graphql.org/community/tools-and-libraries/?tags=python)
+
+- [graphql-core](https://github.com/graphql-python/graphql-core)
+  A Python 3.6+ port of the GraphQL.js reference implementation of GraphQL.
+
+- [datamodel-code-generator](https://github.com/koxudaxi/datamodel-code-generator/)
+  Pydantic model and dataclasses generator for easy conversion of JSON, OpenAPI, JSON Schema, and YAML data sources.
+  [datamodel-code-generator - Pydantic](https://docs.pydantic.dev/latest/integrations/datamodel_code_generator/)
+- [graphql-pydantic-transformer — PyPI](https://pypi.org/project/graphql-pydantic-transformer/)
+  gh ???
+
+**client**
+- [graphql-python/gql](https://github.com/graphql-python/gql)
+  1.6k stars
+  Basic wrapper and
+  [Compose queries dynamically](https://gql.readthedocs.io/en/latest/advanced/dsl_module.html)
+- [sgqlc](https://github.com/profusion/sgqlc)
+  532 stars
+  code generator
+  looks complicated...
+- [mirumee/ariadne-codegen](https://github.com/mirumee/ariadne-codegen)
+  324 stars
+  Python code generator that takes graphql schema, queries, mutations and subscriptions and
+  generates Python package with fully typed and asynchronous GraphQL client.
+  [ariadne-codegen/EXAMPLE.md](https://github.com/mirumee/ariadne-codegen/blob/main/EXAMPLE.md)
+- [graphene-pydantic](https://github.com/graphql-python/graphene-pydantic)
+  241 stars
+- [python-graphql-client](https://github.com/prodigyeducation/python-graphql-client)
+  80 stars
+  Basic wrapper
+- [graphql-query](https://github.com/denisart/graphql-query)
+  65 stars
+  Domain Specific Language (DSL) for GraphQL
+- [qlient](https://github.com/qlient-org/python-qlient)
+  45 stars
+
+- [httpx](https://github.com/encode/httpx)
+- [pydantic](https://github.com/pydantic/pydantic)
+
+
+**Server**
+- [Strawberry](https://strawberry.rocks)
+  [strawberry @gh](https://github.com/strawberry-graphql/strawberry)
+  4.3k stars
+- [Ariadne](https://ariadnegraphql.org)
+  2.3k stars
+- [Tartiflette](https://tartiflette.io)
+  by Dailymotion
+  858 stars
+- [Graphene](https://graphene-python.org)
+  8.2k stars
+  
+[Codegen](https://the-guild.dev/graphql/codegen)
+[dotansimha/graphql-code-generator](https://github.com/dotansimha/graphql-code-generator)
+A tool for generating code based on a GraphQL schema and GraphQL operations
+(query/mutation/subscription), with flexible support for custom plugins.

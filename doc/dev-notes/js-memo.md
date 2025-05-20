@@ -38,6 +38,15 @@ each to a value.
 - [const - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - [var - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 
+# Function
+
+- [Function.prototype.apply() | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
+```
+function.apply(thisArg)
+function.apply(thisArg, argsArray)
+```
+
 # Object
 
 An object initializer is a comma-delimited list of zero or more pairs of property names and
@@ -106,7 +115,56 @@ const obj = {
 - [Object initializer - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 - [get - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
 
-# Export
+# Class
+
+- [Classes | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+```
+class Rectangle {
+  constructor(height, width) {
+    this.height = height
+    this.width = width
+  }
+
+  // Getter
+  get area() {
+    return this.calcArea()
+  }
+
+  // Method
+  calcArea() {
+    return this.height * this.width
+  }
+
+  *getSides() {
+    yield this.height
+    yield this.width
+    yield this.height
+    yield this.width
+  }
+}
+
+const square = new Rectangle(10, 10)
+
+console.log(square.area); // 100
+console.log([...square.getSides()]); // [10, 10, 10, 10]
+```
+
+# Module
+
+```
+export default {
+  attribute: false,
+  ...
+
+  func() {
+    // this -> {}
+    this.attribute
+  }
+}
+```
+
+## Export
 
 - [Export — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 
@@ -144,7 +202,7 @@ export { default, /* …, */ } from "module-name";
 export { default as name1 } from "module-name";
 ```
 
-# Import
+## Import
 
 [Import — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 

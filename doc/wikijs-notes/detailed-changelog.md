@@ -1,5 +1,62 @@
 # Detailed Changelog
 
+The main concerns to maintain Wikijs are:
+- documentation (how it works, how to build it, ...)
+- code readability
+- only keep core features and disable everything which are optional, useless or unknown
+- disable features
+  - that are partially implemented
+  - that depends on obsolete dependencies
+- keep dependencies up to date
+  1. for security !
+  2. else the upgrade step will be more and more difficult...
+
+## Locales
+
+Localisation data are fetched from a server and corresponds to a set of keys and values.
+
+Those data were collected in `server/locales/locale-{language_code}.json`.
+
+## Telemetry
+
+Telemetry data are send to a server whose code is not available.
+
+It does not make sense to enable this feature.
+
+## Node.js
+
+Node.js has good performances thanks to the V8 JIT and its asynchronous implementation.
+
+But actually, its error reporting can be quite laconic.  Especially with ESM and dynamic import,
+where you nearly got "We found an error in your code ! We wish you will figure out where it is..."
+
+This behaviour is reported by users on [nodejs/node issues](https://github.com/nodejs/node/issues).
+
+Use `node --loader server/helper/log-loader.js server` to log module loading.
+
+The source code does not end lines with a semicolon.  However, the Node parser can require a
+semicolon in those cases:
+- before an `await import`
+
+## Logging
+
+Winston is unable to log the location of the call.  This behaviour is reported by users.
+
+## Unit Test
+
+**Actually, any unit test are implemented !!!**
+
+## Coding conventions
+
+- camelcase
+- indent with four spaces
+  Why tab indentation is bad even with a good IDE ???
+
+- `array.length > 0`
+
+[beautifier/js-beautify: Beautifier for javascript](https://github.com/beautifier/js-beautify)
+
+
 ## Client / Server Split
 
 **This is done in V3.**
@@ -37,3 +94,11 @@ There are several locations in the code where `require()` is used to load a modu
 have to check if we really need a (async) dynamic import or if a top level is right.
 
 The `auto-load` tool is replaced by an index file or `glob()` and a dynamic `import()`.
+
+## Database
+
+Actually, the database is build by applying sequentially each migration step.
+
+Is there a way to build the database directly ?
+
+Look at [Alembic](https://alembic.sqlalchemy.org) to compare how is managed database migrations.
