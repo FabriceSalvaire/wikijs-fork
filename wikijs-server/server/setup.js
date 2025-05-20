@@ -131,8 +131,8 @@ export default async () => {
       _.set(WIKI.config, 'title', 'Wiki.js')
 
       // Init Telemetry
-      // await WIKI.kernel.initTelemetry()
-      // WIKI.telemetry.sendEvent('setup', 'install-start')
+      await WIKI.kernel.initTelemetry()
+      WIKI.telemetry.sendEvent('setup', 'install-start')
 
       // Basic checks
       if (!semver.satisfies(process.version, '>=10.12')) {
