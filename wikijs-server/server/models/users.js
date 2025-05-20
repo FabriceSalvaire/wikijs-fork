@@ -365,8 +365,9 @@ export default class User extends Model {
             continuationToken: tfaToken,
             redirect
           }
-        } catch (errc) {
-          WIKI.logger.warn(errc)
+        } catch (err) {
+          WIKI.logger.warn('Afterloginchecks:')
+          WIKI.logger.warn(err)
           throw new WIKI.Error.AuthGenericError()
         }
       } else if (WIKI.config.auth.enforce2FA || (user.tfaIsActive && !user.tfaSecret)) {
@@ -382,8 +383,9 @@ export default class User extends Model {
             tfaQRImage,
             redirect
           }
-        } catch (errc) {
-          WIKI.logger.warn(errc)
+        } catch (err) {
+          WIKI.logger.warn('Afterloginchecks:')
+          WIKI.logger.warn(err)
           throw new WIKI.Error.AuthGenericError()
         }
       }
@@ -402,8 +404,9 @@ export default class User extends Model {
           continuationToken: pwdChangeToken,
           redirect
         }
-      } catch (errc) {
-        WIKI.logger.warn(errc)
+      } catch (err) {
+        WIKI.logger.warn('Afterloginchecks:')
+        WIKI.logger.warn(err)
         throw new WIKI.Error.AuthGenericError()
       }
     }

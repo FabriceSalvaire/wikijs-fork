@@ -83,6 +83,7 @@ class Job {
       }
       await this.finished
     } catch (err) {
+      WIKI.logger.warn(`Scheduler/invoke: Error for job "${this.name}":`)
       WIKI.logger.warn(err)
     }
     if (this.repeat && this.queue.jobs.includes(this)) {

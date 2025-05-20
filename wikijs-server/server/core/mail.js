@@ -74,6 +74,7 @@ export default {
       const rawTmpl = await fs.readFile(path.join(WIKI.SERVERPATH, `templates/${keyKebab}.html`), 'utf8')
       _.set(this.templates, key, _.template(rawTmpl))
     } catch (err) {
+      WIKI.logger.warn('Mail loadTemplate:')
       WIKI.logger.warn(err)
       throw new WIKI.Error.MailTemplateFailed()
     }

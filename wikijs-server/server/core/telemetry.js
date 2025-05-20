@@ -134,6 +134,7 @@ export default {
         WIKI.logger.info('Telemetry is active: [ OK ]')
       }
     } catch (err) {
+      WIKI.logger.warn('Telemetry sendInstanceEvent:')
       WIKI.logger.warn(err)
     }
   },

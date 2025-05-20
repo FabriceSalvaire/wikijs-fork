@@ -89,6 +89,7 @@ export default class Logger extends Model {
       }
     } catch (err) {
       WIKI.logger.error(`Failed to scan or load new loggers: [ FAILED ]`)
+      WIKI.logger.error('@refreshLoggersFromDisk')
       WIKI.logger.error(err)
       if (trx) {
         trx.rollback()

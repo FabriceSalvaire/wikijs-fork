@@ -172,6 +172,7 @@ export default class Storage extends Model {
         }
       }
     } catch (err) {
+      WIKI.logger.warn('Storage:')
       WIKI.logger.warn(err)
       throw err
     }
@@ -183,6 +184,7 @@ export default class Storage extends Model {
         await target.fn[event](page)
       }
     } catch (err) {
+      WIKI.logger.warn('Storage:')
       WIKI.logger.warn(err)
       throw err
     }
@@ -194,6 +196,7 @@ export default class Storage extends Model {
         await target.fn[`asset${_.capitalize(event)}`](asset)
       }
     } catch (err) {
+      WIKI.logger.warn('Storage:')
       WIKI.logger.warn(err)
       throw err
     }
@@ -209,6 +212,7 @@ export default class Storage extends Model {
           key: target.key
         })
       } catch (err) {
+        WIKI.logger.warn('Storage:')
         WIKI.logger.warn(err)
       }
     })
@@ -229,6 +233,7 @@ export default class Storage extends Model {
         throw new Error('Invalid or Inactive Storage Target')
       }
     } catch (err) {
+      WIKI.logger.warn('Storage:')
       WIKI.logger.warn(err)
       throw err
     }

@@ -159,8 +159,9 @@ export default {
 
           // Avoid caching this response
           res.set('Cache-Control', 'no-store')
-        } catch (errc) {
-          WIKI.logger.warn(errc)
+        } catch (err) {
+          WIKI.logger.warn('auth/authenticate: error:')
+          WIKI.logger.warn(err)
           return next()
         }
       }
