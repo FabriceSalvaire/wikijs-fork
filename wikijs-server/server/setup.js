@@ -364,7 +364,9 @@ export default async () => {
       try {
         await WIKI.models.knex('settings').truncate()
       } catch (err) {}
-      WIKI.telemetry.sendError(err)
+      // WIKI.telemetry.sendError(err)
+      WIKI.logger.info(err)
+      WIKI.logger.info(err.stack)
       res.json({ ok: false, error: err.message })
     }
   })
@@ -384,8 +386,9 @@ export default async () => {
       message: err.message,
       error: WIKI.IS_DEBUG ? err : {}
     })
-    WIKI.logger.error(err.message)
-    WIKI.telemetry.sendError(err)
+    WIKI.logger.error('@setup.500 ' + err.message + '\n' + err.stack)
+    // Error: telemetry is not initialised
+    // WIKI.telemetry.sendError(err)
   })
 
   // ----------------------------------------

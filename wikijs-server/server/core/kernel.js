@@ -62,6 +62,7 @@ export default {
     try {
       if (WIKI.config.setup) {
         WIKI.logger.info('Starting setup wizard...')
+        // Fixme: telemetry is not initialised
         await (await import('../setup.js')).default()
       } else {
         await this.preBootMaster()
@@ -105,7 +106,9 @@ export default {
    * Init Telemetry
    */
   async initTelemetry() {
-    (await import('./telemetry.js')).default.init()
+    WIKI.logger.info('@initTelemetry...')   // ;
+    const module = await import('./telemetry.js')
+    module.default.init()
     process.on('unhandledRejection', (err) => {
       WIKI.logger.warn(err)
       WIKI.telemetry.sendError(err)
