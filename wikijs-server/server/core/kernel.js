@@ -6,6 +6,7 @@ import StackTracey from 'stacktracey'
 
 export default {
   async init() {
+    WIKI.logger.info('@kernel init...')
     WIKI.logger.info('=======================================')
     WIKI.logger.info(`= Wiki.js ${_.padEnd(WIKI.version + ' ', 29, '=')}`)
     WIKI.logger.info('=======================================')
@@ -26,12 +27,14 @@ export default {
     }
 
     await this.bootMaster()
+    WIKI.logger.info('@kernel init done')
   },
 
   /**
    * Pre-Master Boot Sequence
    */
   async preBootMaster() {
+    WIKI.logger.info('@preBootMaster...')
     try {
       await this.initTelemetry()
       WIKI.sideloader = await (await import('./sideloader.js')).default.init()
@@ -48,12 +51,14 @@ export default {
       WIKI.logger.error(err)
       process.exit(1)
     }
+    WIKI.logger.info('@preBootMaster done')
   },
 
   /**
    * Boot Master Process
    */
   async bootMaster() {
+    WIKI.logger.info('@bootMaster...')
     try {
       if (WIKI.config.setup) {
         WIKI.logger.info('Starting setup wizard...')
@@ -67,12 +72,14 @@ export default {
       WIKI.logger.error(err)
       process.exit(1)
     }
+    WIKI.logger.info('@bootMaster done')
   },
 
   /**
    * Post-Master Boot Sequence
    */
   async postBootMaster() {
+    WIKI.logger.info('@postBootMaster...')
     await WIKI.models.analytics.refreshProvidersFromDisk()
     await WIKI.models.authentication.refreshStrategiesFromDisk()
     await WIKI.models.commentProviders.refreshProvidersFromDisk()
@@ -91,6 +98,7 @@ export default {
     WIKI.scheduler.start()
 
     await WIKI.models.subscribeToNotifications()
+    WIKI.logger.info('@postBootMaster done')
   },
 
   /**
@@ -112,6 +120,7 @@ export default {
    * Graceful shutdown
    */
   async shutdown (devMode = false) {
+    WIKI.logger.info('@shutdown...')
     if (WIKI.servers)
       await WIKI.servers.stopServers()
     if (WIKI.scheduler)

@@ -69,6 +69,7 @@ export default async () => {
    * Finalize
    */
   app.post('/finalize', async (req, res) => {
+    WIKI.logger.info('Finalize setup...')
     try {
       // Set config
       _.set(WIKI.config, 'auth', {
