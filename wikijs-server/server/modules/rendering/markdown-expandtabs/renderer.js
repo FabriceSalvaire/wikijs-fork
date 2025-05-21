@@ -6,9 +6,9 @@ import _ from 'lodash'
 // ------------------------------------
 
 export default {
-  init (md, conf) {
-    md.use(mdExpandTabs, {
-      tabWidth: _.toInteger(conf.tabWidth || 4)
-    })
-  }
+    init(md, conf) {
+        md.use(mdExpandTabs, {
+            tabWidth: _.toInteger(conf.tabWidth || 4)
+        })
+    }
 }

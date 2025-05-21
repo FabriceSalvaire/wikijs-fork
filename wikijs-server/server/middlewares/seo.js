@@ -11,11 +11,11 @@ import _ from 'lodash'
  * @return     {any}               void
  */
 export default function (req, res, next) {
-  if (req.path.length > 1 && _.endsWith(req.path, '/')) {
-    let query = req.url.slice(req.path.length) || ''
-    res.redirect(301, req.path.slice(0, -1) + query)
-  } else {
-    _.set(res.locals, 'pageMeta.url', `${WIKI.config.host}${req.path}`)
-    return next()
-  }
+    if (req.path.length > 1 && _.endsWith(req.path, '/')) {
+        let query = req.url.slice(req.path.length) || ''
+        res.redirect(301, req.path.slice(0, -1) + query)
+    } else {
+        _.set(res.locals, 'pageMeta.url', `${WIKI.config.host}${req.path}`)
+        return next()
+    }
 }

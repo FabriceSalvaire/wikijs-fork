@@ -102,7 +102,7 @@ function getRequestAudit(req, options) {
     var URLParams = req && req.params ? req.params : NA
     var timestamp = req && req.timestamp ? req.timestamp.toISOString() : NA
     var timestamp_ms = req && req.timestamp ? req.timestamp.valueOf() : NA
-    var requestBody = _.get(req, 'body')  //handle body clone the original body
+    var requestBody = _.get(req, 'body') //handle body clone the original body
 
     if (options.request.customMaskBodyFunc)
         requestBody = options.request.customMaskBodyFunc(req)
@@ -192,11 +192,16 @@ function getResponseAudit(req, res, options) {
 
     let responseBody = ''
     if (isJsonBody(headers)) {
-      // Handle JSON only for json responses:
-      responseBody = handleResponseJson(
-        responseBodyJson, responseBodyStr, options.logger, options.response.excludeBody, options.response.maskBody)
+        // Handle JSON only for json responses:
+        responseBody = handleResponseJson(
+            responseBodyJson,
+            responseBodyStr,
+            options.logger,
+            options.response.excludeBody,
+            options.response.maskBody
+        )
     } else {
-      responseBody = responseBodyStr
+        responseBody = responseBodyStr
     }
 
     headers = handleJson(headers, options.logger, options.response.excludeHeaders, options.response.maskHeaders)

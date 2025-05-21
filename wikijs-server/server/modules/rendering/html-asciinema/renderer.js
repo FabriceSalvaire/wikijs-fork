@@ -1,5 +1,4 @@
 export default {
-  init($, config) {
-
-  }
+    init($, config) {
+    }
 }

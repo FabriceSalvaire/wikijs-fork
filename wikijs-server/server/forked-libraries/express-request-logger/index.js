@@ -105,7 +105,7 @@ export default function (options) {
             '4xx': 'info',
             '5xx': 'error'
         },
-        shouldSkipAuditFunc: function(_req, _res){
+        shouldSkipAuditFunc: function (_req, _res) {
             return false
         }
     }
@@ -115,7 +115,7 @@ export default function (options) {
     setupOptions = validateArrayFields(options, defaults)
     setBodyLengthFields(setupOptions)
 
-    return audit   // Express Middleware
+    return audit // Express Middleware
 }
 
 /**************************************************************************************************/
@@ -141,7 +141,9 @@ function validateArrayFields(options, defaults) {
 /**************************************************************************************************/
 
 function setBodyLengthFields(options) {
-    const isValid = field => field && !isNaN(field) && field > 0
+    const isValid = (field) => field && !isNaN(field) && field > 0
     options.request.maxBodyLength = !isValid(options.request.maxBodyLength) ? undefined : options.request.maxBodyLength
-    options.response.maxBodyLength = !isValid(options.response.maxBodyLength) ? undefined : options.response.maxBodyLength
+    options.response.maxBodyLength = !isValid(options.response.maxBodyLength)
+        ? undefined
+        : options.response.maxBodyLength
 }

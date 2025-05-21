@@ -5,7 +5,7 @@ import mdFootnote from 'markdown-it-footnote'
 // ------------------------------------
 
 export default {
-  init (md, conf) {
-    md.use(mdFootnote)
-  }
+    init(md, conf) {
+        md.use(mdFootnote)
+    }
 }

@@ -5,7 +5,7 @@ import mdImsize from 'markdown-it-imsize'
 // ------------------------------------
 
 export default {
-  init (md, conf) {
-    md.use(mdImsize)
-  }
+    init(md, conf) {
+        md.use(mdImsize)
+    }
 }

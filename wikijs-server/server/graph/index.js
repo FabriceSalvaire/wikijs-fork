@@ -20,21 +20,21 @@ WIKI.GQLEmitter = new PubSub()
 // Schemas
 let typeDefs = [createRateLimitTypeDef()]
 let schemas = fs.readdirSync(path.join(WIKI.SERVERPATH, 'graph/schemas'))
-schemas.forEach(schema => {
-  typeDefs.push(fs.readFileSync(path.join(WIKI.SERVERPATH, `graph/schemas/${schema}`), 'utf8'))
+schemas.forEach((schema) => {
+    typeDefs.push(fs.readFileSync(path.join(WIKI.SERVERPATH, `graph/schemas/${schema}`), 'utf8'))
 })
 
 // Resolvers
 let resolvers = {
-  // Upload: GraphQLUpload
+    // Upload: GraphQLUpload
 }
 // WIKI.logger.info('import resolvers')
 // const resolverList = await fsp.readdir(path.join(WIKI.SERVERPATH, 'graph/resolvers'))
 // for (const resolverFile of resolverList) {
 for await (const file of fsp.glob(path.join(WIKI.SERVERPATH, 'graph/resolvers/*.js'))) {
-  // WIKI.logger.info(`import resolver ${file}`)
-  const resolver = (await import(file)).default
-  _.merge(resolvers, resolver)
+    // WIKI.logger.info(`import resolver ${file}`)
+    const resolver = (await import(file)).default
+    _.merge(resolvers, resolver)
 }
 
 // Directives
@@ -43,31 +43,31 @@ let schemaDirectives = {}
 // const directiveList = await fsp.readdir(path.join(WIKI.SERVERPATH, 'graph/directives'))
 // for (const directiveFile of directiveList) {
 for await (const file of fsp.glob(path.join(WIKI.SERVERPATH, 'graph/directives/*.js'))) {
-  // WIKI.logger.info(`import directive ${file}`)
-  const directive = (await import(file)).default
-  const name = path.parse(file).name
-  schemaDirectives[name] = directive
+    // WIKI.logger.info(`import directive ${file}`)
+    const directive = (await import(file)).default
+    const name = path.parse(file).name
+    schemaDirectives[name] = directive
 }
 
 // Live Trail Logger (admin)
 class LiveTrailLogger extends Transport {
-  constructor(opts) {
-    super(opts)
+    constructor(opts) {
+        super(opts)
 
-    this.name = 'liveTrailLogger'
-    this.level = 'debug'
-  }
+        this.name = 'liveTrailLogger'
+        this.level = 'debug'
+    }
 
-  log (info, callback = () => {}) {
-    WIKI.GQLEmitter.publish('livetrail', {
-      loggingLiveTrail: {
-        timestamp: new Date(),
-        level: info[LEVEL],
-        output: info[MESSAGE]
-      }
-    })
-    callback(null, true)
-  }
+    log(info, callback = () => {}) {
+        WIKI.GQLEmitter.publish('livetrail', {
+            loggingLiveTrail: {
+                timestamp: new Date(),
+                level: info[LEVEL],
+                output: info[MESSAGE]
+            }
+        })
+        callback(null, true)
+    }
 }
 
 WIKI.logger.add(new LiveTrailLogger({}))
@@ -75,7 +75,7 @@ WIKI.logger.add(new LiveTrailLogger({}))
 WIKI.logger.info(`GraphQL Schema: [ OK ]`)
 
 export default {
-  typeDefs,
-  resolvers,
-  schemaDirectives
+    typeDefs,
+    resolvers,
+    schemaDirectives
 }

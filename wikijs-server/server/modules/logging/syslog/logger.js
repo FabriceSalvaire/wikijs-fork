@@ -3,7 +3,6 @@
 // ------------------------------------
 
 export default {
-  init (logger, conf) {
-
-  }
+    init(logger, conf) {
+    }
 }

@@ -4,8 +4,8 @@ import { router as ssl } from './ssl.js'
 import { router as upload } from './upload.js'
 
 export default {
-  auth,
-  common,
-  ssl,
-  upload
+    auth,
+    common,
+    ssl,
+    upload
 }

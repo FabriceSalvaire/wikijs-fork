@@ -9,104 +9,104 @@ import Pages from './pages.js'
  * Tags model
  */
 export default class Tag extends Model {
-  static get tableName() { return 'tags' }
-
-  static get jsonSchema () {
-    return {
-      type: 'object',
-      required: ['tag'],
-
-      properties: {
-        id: {type: 'integer'},
-        tag: {type: 'string'},
-        title: {type: 'string'},
-
-        createdAt: {type: 'string'},
-        updatedAt: {type: 'string'}
-      }
+    static get tableName() {
+        return 'tags'
     }
-  }
 
-  static get relationMappings() {
-    return {
-      pages: {
-        relation: Model.ManyToManyRelation,
-        modelClass: Pages,
-        join: {
-          from: 'tags.id',
-          through: {
-            from: 'pageTags.tagId',
-            to: 'pageTags.pageId'
-          },
-          to: 'pages.id'
+    static get jsonSchema() {
+        return {
+            type: 'object',
+            required: ['tag'],
+
+            properties: {
+                id: { type: 'integer' },
+                tag: { type: 'string' },
+                title: { type: 'string' },
+
+                createdAt: { type: 'string' },
+                updatedAt: { type: 'string' }
+            }
         }
-      }
     }
-  }
 
-  $beforeUpdate() {
-    this.updatedAt = new Date().toISOString()
-  }
-  $beforeInsert() {
-    this.createdAt = new Date().toISOString()
-    this.updatedAt = new Date().toISOString()
-  }
-
-  // Update tags for a page
-  static async associateTags ({ tags, page }) {
-    // Format tags
-    tags = _.uniq(tags.map(t => _.trim(t).toLowerCase()))
-
-    // Fetch tags from db
-    // Fixme: could be large
-    let existingTags = await WIKI.models.tags.query().column('id', 'tag')
-
-    // Create missing tags
-    // Fixme: unreadable, efficient ???
-    //  https://lodash.com/docs/4.17.15#differenceBy
-    //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-    //  newTags = tags - existingTags
-    const newTags = _.filter(tags, t => !_.some(existingTags, ['tag', t])).map(t => ({
-      tag: t,
-      title: t
-    }))
-    // Fixme: > 0 is useless
-   if (newTags.length > 0) {
-      if (WIKI.config.db.type === 'postgres') {
-        const createdTags = await WIKI.models.tags.query().insert(newTags)
-        existingTags = _.concat(existingTags, createdTags)
-      } else {
-        for (const newTag of newTags) {
-          const createdTag = await WIKI.models.tags.query().insert(newTag)
-          existingTags.push(createdTag)
+    static get relationMappings() {
+        return {
+            pages: {
+                relation: Model.ManyToManyRelation,
+                modelClass: Pages,
+                join: {
+                    from: 'tags.id',
+                    through: {
+                        from: 'pageTags.tagId',
+                        to: 'pageTags.pageId'
+                    },
+                    to: 'pages.id'
+                }
+            }
         }
-      }
     }
 
-    // Compute intersection of existingTags with tags
-    const targetTags = _.filter(existingTags, t => _.includes(tags, t.tag))
+    $beforeUpdate() {
+        this.updatedAt = new Date().toISOString()
+    }
+    $beforeInsert() {
+        this.createdAt = new Date().toISOString()
+        this.updatedAt = new Date().toISOString()
+    }
 
-    // Fetch current page tags
-    const currentTags = await page.$relatedQuery('tags')
+    // Update tags for a page
+    static async associateTags({ tags, page }) {
+        // Format tags
+        tags = _.uniq(tags.map((t) => _.trim(t).toLowerCase()))
 
-    // Tags to relate
-    const tagsToRelate = _.differenceBy(targetTags, currentTags, 'id')
-    if (tagsToRelate.length > 0) {
-      if (WIKI.config.db.type === 'postgres') {
-        await page.$relatedQuery('tags').relate(tagsToRelate)
-      } else {
-        for (const tag of tagsToRelate) {
-          await page.$relatedQuery('tags').relate(tag)
+        // Fetch tags from db
+        // Fixme: could be large
+        let existingTags = await WIKI.models.tags.query().column('id', 'tag')
+
+        // Create missing tags
+        // Fixme: unreadable, efficient ???
+        //  https://lodash.com/docs/4.17.15#differenceBy
+        //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+        //  newTags = tags - existingTags
+        const newTags = _.filter(tags, (t) => !_.some(existingTags, ['tag', t])).map((t) => ({
+            tag: t,
+            title: t
+        }))
+        // Fixme: > 0 is useless
+        if (newTags.length > 0) {
+            if (WIKI.config.db.type === 'postgres') {
+                const createdTags = await WIKI.models.tags.query().insert(newTags)
+                existingTags = _.concat(existingTags, createdTags)
+            } else {
+                for (const newTag of newTags) {
+                    const createdTag = await WIKI.models.tags.query().insert(newTag)
+                    existingTags.push(createdTag)
+                }
+            }
         }
-      }
-    }
 
-    // Tags to unrelate
-    const tagsToUnrelate = _.differenceBy(currentTags, targetTags, 'id')
-    if (tagsToUnrelate.length > 0) {
-      await page.$relatedQuery('tags').unrelate().whereIn('tags.id', _.map(tagsToUnrelate, 'id'))
-    }
+        // Compute intersection of existingTags with tags
+        const targetTags = _.filter(existingTags, (t) => _.includes(tags, t.tag))
 
-    page.tags = targetTags
-  }
+        // Fetch current page tags
+        const currentTags = await page.$relatedQuery('tags')
+
+        // Tags to relate
+        const tagsToRelate = _.differenceBy(targetTags, currentTags, 'id')
+        if (tagsToRelate.length > 0) {
+            if (WIKI.config.db.type === 'postgres')
+                await page.$relatedQuery('tags').relate(tagsToRelate)
+            else {
+                for (const tag of tagsToRelate)
+                    await page.$relatedQuery('tags').relate(tag)
+            }
+        }
+
+        // Tags to unrelate
+        const tagsToUnrelate = _.differenceBy(currentTags, targetTags, 'id')
+        if (tagsToUnrelate.length > 0)
+            await page.$relatedQuery('tags').unrelate().whereIn('tags.id', _.map(tagsToUnrelate, 'id'))
+
+        page.tags = targetTags
+    }
 }

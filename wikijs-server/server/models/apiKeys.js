@@ -9,63 +9,65 @@ import jwt from 'jsonwebtoken'
  * Users model
  */
 export default class ApiKey extends Model {
-  static get tableName() { return 'apiKeys' }
-
-  static get jsonSchema () {
-    return {
-      type: 'object',
-      required: ['name', 'key'],
-
-      properties: {
-        id: {type: 'integer'},
-        name: {type: 'string'},
-        key: {type: 'string'},
-        expiration: {type: 'string'},
-        isRevoked: {type: 'boolean'},
-        createdAt: {type: 'string'},
-        validUntil: {type: 'string'}
-      }
+    static get tableName() {
+        return 'apiKeys'
     }
-  }
 
-  async $beforeUpdate(opt, context) {
-    await super.$beforeUpdate(opt, context)
+    static get jsonSchema() {
+        return {
+            type: 'object',
+            required: ['name', 'key'],
 
-    this.updatedAt = moment.utc().toISOString()
-  }
-  async $beforeInsert(context) {
-    await super.$beforeInsert(context)
+            properties: {
+                id: { type: 'integer' },
+                name: { type: 'string' },
+                key: { type: 'string' },
+                expiration: { type: 'string' },
+                isRevoked: { type: 'boolean' },
+                createdAt: { type: 'string' },
+                validUntil: { type: 'string' }
+            }
+        }
+    }
 
-    this.createdAt = moment.utc().toISOString()
-    this.updatedAt = moment.utc().toISOString()
-  }
+    async $beforeUpdate(opt, context) {
+        await super.$beforeUpdate(opt, context)
 
-  static async createNewKey ({ name, expiration, fullAccess, group }) {
-    const entry = await WIKI.models.apiKeys.query().insert({
-      name,
-      key: 'pending',
-      expiration: moment.utc().add(ms(expiration), 'ms').toISOString(),
-      isRevoked: true
-    })
+        this.updatedAt = moment.utc().toISOString()
+    }
+    async $beforeInsert(context) {
+        await super.$beforeInsert(context)
 
-    const key = jwt.sign({
-      api: entry.id,
-      grp: fullAccess ? 1 : group
-    }, {
-      key: WIKI.config.certs.private,
-      passphrase: WIKI.config.sessionSecret
-    }, {
-      algorithm: 'RS256',
-      expiresIn: expiration,
-      audience: WIKI.config.auth.audience,
-      issuer: 'urn:wiki.js'
-    })
+        this.createdAt = moment.utc().toISOString()
+        this.updatedAt = moment.utc().toISOString()
+    }
 
-    await WIKI.models.apiKeys.query().findById(entry.id).patch({
-      key,
-      isRevoked: false
-    })
+    static async createNewKey({ name, expiration, fullAccess, group }) {
+        const entry = await WIKI.models.apiKeys.query().insert({
+            name,
+            key: 'pending',
+            expiration: moment.utc().add(ms(expiration), 'ms').toISOString(),
+            isRevoked: true
+        })
 
-    return key
-  }
+        const key = jwt.sign({
+            api: entry.id,
+            grp: fullAccess ? 1 : group
+        }, {
+            key: WIKI.config.certs.private,
+            passphrase: WIKI.config.sessionSecret
+        }, {
+            algorithm: 'RS256',
+            expiresIn: expiration,
+            audience: WIKI.config.auth.audience,
+            issuer: 'urn:wiki.js'
+        })
+
+        await WIKI.models.apiKeys.query().findById(entry.id).patch({
+            key,
+            isRevoked: false
+        })
+
+        return key
+    }
 }

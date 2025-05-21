@@ -5,7 +5,7 @@ import mdTaskLists from 'markdown-it-task-lists'
 // ------------------------------------
 
 export default {
-  init (md, conf) {
-    md.use(mdTaskLists, { label: false, labelAfter: false })
-  }
+    init(md, conf) {
+        md.use(mdTaskLists, { label: false, labelAfter: false })
+    }
 }

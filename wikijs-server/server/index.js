@@ -20,19 +20,19 @@ import logger from './core/logger.js'
 // Init global WIKI instance
 
 let WIKI = {
-  // Fixme: coding convention SERVER_PATH
-  IS_DEBUG: process.env.NODE_ENV === 'development',
-  IS_MASTER: true,
-  ROOTPATH: process.cwd(),
-  INSTANCE_ID: nanoid(10),
-  SERVERPATH: path.join(process.cwd(), 'server'),
-  // Error: (await import('./helpers/error.js')).default,
-  // configSvc: (await import('./core/config.js')).default,
-  // kernel: (await import('./core/kernel.js')).default,
-  Error,
-  configSvc,
-  kernel,
-  startedAt: DateTime.utc()
+    // Fixme: coding convention SERVER_PATH
+    IS_DEBUG: process.env.NODE_ENV === 'development',
+    IS_MASTER: true,
+    ROOTPATH: process.cwd(),
+    INSTANCE_ID: nanoid(10),
+    SERVERPATH: path.join(process.cwd(), 'server'),
+    // Error: (await import('./helpers/error.js')).default,
+    // configSvc: (await import('./core/config.js')).default,
+    // kernel: (await import('./core/kernel.js')).default,
+    Error,
+    configSvc,
+    kernel,
+    startedAt: DateTime.utc()
 }
 global.WIKI = WIKI
 
@@ -50,14 +50,14 @@ WIKI.kernel.init()
 // Register exit handler
 
 process.on('SIGTERM', () => {
-  WIKI.kernel.shutdown()
+    WIKI.kernel.shutdown()
 })
 
 process.on('SIGINT', () => {
-  WIKI.kernel.shutdown()
+    WIKI.kernel.shutdown()
 })
 
 process.on('message', (msg) => {
-  if (msg === 'shutdown')
-    WIKI.kernel.shutdown()
+    if (msg === 'shutdown')
+        WIKI.kernel.shutdown()
 })

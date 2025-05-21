@@ -6,12 +6,10 @@ import mdSup from 'markdown-it-sup'
 // ------------------------------------
 
 export default {
-  init (md, conf) {
-    if (conf.subEnabled) {
-      md.use(mdSub)
+    init(md, conf) {
+        if (conf.subEnabled)
+            md.use(mdSub)
+        if (conf.supEnabled)
+            md.use(mdSup)
     }
-    if (conf.supEnabled) {
-      md.use(mdSup)
-    }
-  }
 }

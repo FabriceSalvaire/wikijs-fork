@@ -4,15 +4,15 @@ import { createApolloFetch } from 'apollo-fetch'
 /* global WIKI */
 
 export default async () => {
-  WIKI.logger.info(`Fetching latest updates from Graph endpoint...`)
+    WIKI.logger.info(`Fetching latest updates from Graph endpoint...`)
 
-  try {
-    const apollo = createApolloFetch({
-      uri: WIKI.config.graphEndpoint
-    })
+    try {
+        const apollo = createApolloFetch({
+            uri: WIKI.config.graphEndpoint
+        })
 
-    const resp = await apollo({
-      query: `query ($channel: ReleaseChannel!, $version: String!) {
+        const resp = await apollo({
+            query: `query ($channel: ReleaseChannel!, $version: String!) {
         releases {
           checkForUpdates(channel: $channel, version: $version) {
             channel
@@ -23,19 +23,18 @@ export default async () => {
           }
         }
       }`,
-      variables: {
-        channel: WIKI.config.channel,
-        version: WIKI.version
-      }
-    })
-    const info = _.get(resp, 'data.releases.checkForUpdates', false)
-    if (info) {
-      WIKI.system.updates = info
-    }
+            variables: {
+                channel: WIKI.config.channel,
+                version: WIKI.version
+            }
+        })
+        const info = _.get(resp, 'data.releases.checkForUpdates', false)
+        if (info)
+            WIKI.system.updates = info
 
-    WIKI.logger.info(`Fetching latest updates from Graph endpoint: [ COMPLETED ]`)
-  } catch (err) {
-    WIKI.logger.error(`Fetching latest updates from Graph endpoint: [ FAILED ]`)
-    WIKI.logger.error(err.message)
-  }
+        WIKI.logger.info(`Fetching latest updates from Graph endpoint: [ COMPLETED ]`)
+    } catch (err) {
+        WIKI.logger.error(`Fetching latest updates from Graph endpoint: [ FAILED ]`)
+        WIKI.logger.error(err.message)
+    }
 }

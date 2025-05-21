@@ -1,7 +1,7 @@
-export const up = async knex => {
-  await knex('users').update({
-    email: knex.raw('LOWER(??)', ['email'])
-  })
+export const up = async (knex) => {
+    await knex('users').update({
+        email: knex.raw('LOWER(??)', ['email'])
+    })
 }
 
-export const down = knex => { }
+export const down = (knex) => {}

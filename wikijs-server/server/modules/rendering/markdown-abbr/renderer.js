@@ -5,7 +5,7 @@ import mdAbbr from 'markdown-it-abbr'
 // ------------------------------------
 
 export default {
-  init (md, conf) {
-    md.use(mdAbbr)
-  }
+    init(md, conf) {
+        md.use(mdAbbr)
+    }
 }

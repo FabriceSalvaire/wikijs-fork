@@ -33,7 +33,7 @@ export var getRoute = function (req) {
 export function cleanOmitKeys(obj, omitKeys) {
     if (obj && !lodash.isEmpty(omitKeys)) {
         Object.keys(obj).forEach(function (key) {
-            if (lodash.some(omitKeys, omitKey => key === omitKey))
+            if (lodash.some(omitKeys, (omitKey) => key === omitKey))
                 delete obj[key]
             else
                 (obj[key] && typeof obj[key] === 'object') && cleanOmitKeys(obj[key])

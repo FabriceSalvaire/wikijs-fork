@@ -1,23 +1,24 @@
 /* global WIKI */
 
-export const up = knex => {
-  const dbCompat = {
-    charset: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`)
-  }
-  return knex.schema
-    .createTable('pageLinks', table => {
-      if (dbCompat.charset) { table.charset('utf8mb4') }
-      table.increments('id').primary()
-      table.integer('pageId').unsigned().references('id').inTable('pages').onDelete('CASCADE')
-      table.string('path').notNullable()
-      table.string('localeCode', 5).notNullable()
-    })
-    .table('pageLinks', table => {
-      table.index(['path', 'localeCode'])
-    })
+export const up = (knex) => {
+    const dbCompat = {
+        charset: (WIKI.config.db.type === `mysql` || WIKI.config.db.type === `mariadb`)
+    }
+    return knex.schema
+        .createTable('pageLinks', (table) => {
+            if (dbCompat.charset)
+                table.charset('utf8mb4')
+            table.increments('id').primary()
+            table.integer('pageId').unsigned().references('id').inTable('pages').onDelete('CASCADE')
+            table.string('path').notNullable()
+            table.string('localeCode', 5).notNullable()
+        })
+        .table('pageLinks', (table) => {
+            table.index(['path', 'localeCode'])
+        })
 }
 
-export const down = knex => {
-  return knex.schema
-    .dropTableIfExists('pageLinks')
+export const down = (knex) => {
+    return knex.schema
+        .dropTableIfExists('pageLinks')
 }
