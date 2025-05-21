@@ -30,12 +30,12 @@ export default class User extends Model {
 
             properties: {
                 id: { type: 'integer' },
-                email: { type: 'string', format: 'email' },
+                email: { type: 'string' }, // deprecated: format: 'email'
                 name: { type: 'string', minLength: 1, maxLength: 255 },
                 providerId: { type: 'string' },
                 password: { type: 'string' },
                 tfaIsActive: { type: 'boolean', default: false },
-                tfaSecret: { type: ['string', null] },
+                tfaSecret: { type: ['string', 'null'] },
                 jobTitle: { type: 'string' },
                 location: { type: 'string' },
                 pictureUrl: { type: 'string' },

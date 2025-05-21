@@ -142,8 +142,8 @@ export default {
                     if (args.groupMode === `SINGLE`) {
                         const singleGroup = await WIKI.models.groups.query().insert({
                             name: `Import_${curDateISO}`,
-                            permissions: JSON.stringify(WIKI.data.groups.defaultPermissions),
-                            pageRules: JSON.stringify(WIKI.data.groups.defaultPageRules)
+                            permissions: WIKI.data.groups.defaultPermissions,
+                            pageRules: WIKI.data.groups.defaultPageRules
                         })
                         groupsCount++
                         assignableGroups.push(singleGroup.id)
@@ -204,8 +204,8 @@ export default {
 
                                     const newGroup = await WIKI.models.groups.query().insert({
                                         name: `Import_${curDateISO}_${groupsCount + 1}`,
-                                        permissions: JSON.stringify(perms),
-                                        pageRules: JSON.stringify(pageRules)
+                                        permissions: perms,
+                                        pageRules: pageRules
                                     })
                                     reuseGroups.push({
                                         groupId: newGroup.id,

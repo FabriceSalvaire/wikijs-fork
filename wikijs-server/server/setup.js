@@ -233,13 +233,13 @@ export default async () => {
             const adminGroup = await WIKI.models.groups.query().insert({
                 name: 'Administrators',
                 permissions: JSON.stringify(['manage:system']),
-                pageRules: JSON.stringify([]),
+                pageRules: [],
                 isSystem: true
             })
             const guestGroup = await WIKI.models.groups.query().insert({
                 name: 'Guests',
-                permissions: JSON.stringify(['read:pages', 'read:assets', 'read:comments']),
-                pageRules: JSON.stringify([
+                permissions: ['read:pages', 'read:assets', 'read:comments'],
+                pageRules: [
                     {
                         id: 'guest',
                         roles: ['read:pages', 'read:assets', 'read:comments'],
@@ -248,7 +248,7 @@ export default async () => {
                         path: '',
                         locales: []
                     }
-                ]),
+                ],
                 isSystem: true
             })
             if (adminGroup.id !== 1 || guestGroup.id !== 2) {

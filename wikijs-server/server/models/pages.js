@@ -327,10 +327,10 @@ export default class Page extends Model {
             publishStartDate: opts.publishStartDate || '',
             title: opts.title,
             toc: '[]',
-            extra: JSON.stringify({
+            extra: {
                 js: scriptJs,
                 css: scriptCss
-            })
+            }
         })
         const page = await WIKI.models.pages.getPageFromDb({
             path: opts.path,
@@ -447,11 +447,11 @@ export default class Page extends Model {
             publishEndDate: opts.publishEndDate || '',
             publishStartDate: opts.publishStartDate || '',
             title: opts.title,
-            extra: JSON.stringify({
+            extra: {
                 ...ogPage.extra,
                 js: scriptJs,
                 css: scriptCss
-            })
+            }
         }).where('id', ogPage.id)
         let page = await WIKI.models.pages.getPageFromDb(ogPage.id)
 
