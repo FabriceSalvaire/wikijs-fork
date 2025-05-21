@@ -59,7 +59,6 @@ export default async () => {
 
   // ----------------------------------------
   // Controllers
-  // ----------------------------------------
   app.get('*splat', async (req, res) => {
     let packageObj = await fs.readJson(path.join(WIKI.ROOTPATH, 'package.json'))
     res.render('setup', { packageObj })
