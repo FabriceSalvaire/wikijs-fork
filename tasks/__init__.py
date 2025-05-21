@@ -20,6 +20,8 @@ from . import pnpm
 from . import sync
 from . import yarn
 
+from . import test
+
 modules = [obj for name, obj in globals().items() if isinstance(obj, ModuleType)]
 ns = Collection()
 for _ in modules:
