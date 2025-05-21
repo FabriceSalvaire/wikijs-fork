@@ -6,7 +6,7 @@
     "newLineKind": "lf",
     "nextControlFlowPosition": "sameLine",
     "semiColons": false,
-    "operatorPosition": "sameLine",
+    "operatorPosition": "maintain",
     "proseWrap": "preserve",
     "quoteProps": "asNeeded",
     "singleBodyPosition": "nextLine",
@@ -17,6 +17,7 @@
     "typeLiteral.separatorKind": "semiColon",
     "useTabs": false,
     "useBraces": "preferNone",
-    "include": ["server/"]
+    "include": ["server/"],
+    "exclude": ["node_modules/"]
   }
 }
