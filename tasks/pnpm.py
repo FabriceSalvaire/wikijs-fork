@@ -10,10 +10,7 @@ from invoke import task
 from .lib.helper import SOURCE_PATH, printc, join_cmd
 from .lib.node import PackageJson
 
-####################################################################################################
-
-NODE = '/usr/bin/node'
-PNPM = str(Path('~/.local/share/pnpm/pnpm').expanduser())
+from .settings import PNPM
 
 ####################################################################################################
 

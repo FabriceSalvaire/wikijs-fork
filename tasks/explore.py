@@ -22,14 +22,10 @@ import subprocess
 
 from invoke import task
 
+from .settings import SOURCE_PATH
 from .lib.helper import printc, escape
 from .lib.node import NODE_LIBS, PackageJson, YarnLock, NodeModules
-import build
-
-####################################################################################################
-
-SOURCE_PATH = Path(__file__).parents[1]
-# NODE_MODULES_PATH = SOURCE_PATH.joinpath('node_modules')
+from . import build
 
 ####################################################################################################
 
@@ -232,7 +228,7 @@ def explore_dependencies(ctx, source_path):
     package_json_file = source_path.joinpath('package.json')
     package_json = PackageJson(package_json_file)
     dependencies = package_json.dependencies
-    #dev_dependencies = package_json.dev_dependencies
+    # dev_dependencies = package_json.dev_dependencies
     all_dependencies = package_json.all_dependencies
 
     # node_modules = [_.name for _ in node_modules_path.iterdir()]
@@ -394,16 +390,6 @@ def dump_package_json(ctx, source_path) -> None:
     for _ in package_json.all_dependencies.values():
         print(_)
 
-@task
-def dump_yarn_lock(ctx, source_path) -> None:
-    printc('<cyan>Yarn Lock</cyan>')
-    source_path = Path(source_path)
-    package_json = read_package_json(source_path)
-    yarn_lock_file = source_path.joinpath('yarn.lock')
-    yarn_lock = YarnLock(yarn_lock_file, package_json)
-    for i, _ in enumerate(yarn_lock.dependencies.values()):
-        print(f'{i+1:4}', str(_))
-
 ####################################################################################################
 
 @task
@@ -411,6 +397,35 @@ def scan_node_modules(ctx, source_path) -> None:
     # NODE_MODULES_PATH
     # node_modules =
     NodeModules(source_path)
+
+####################################################################################################
+
+@task
+def ag(ctx, pattern: str) -> None:
+    cmd = ['/usr/bin/ag']
+    # --follow
+    # --ignore-case
+    # for _ in ('.json', '.yml', '.graphql', '~'):
+    #     cmd.append(f'--ignore=*{_}')
+    cmd.append('--file-search-regex=.*.js$')
+    cmd.append('--ignore=assets/*')
+    # cmd.append('--files-with-matches')
+    cmd.append(pattern)
+    # print(cmd)
+    subprocess.run(cmd)
+
+####################################################################################################
+
+@task
+def dynamic_import(ctx, path='server') -> None:
+    # clear ; ag --ignore '*~' 'import\(' server
+    cmd = (
+        '/usr/bin/ag',
+        '--ignore', '*~',
+        r'import\(',
+        path,
+    )
+    subprocess.run(cmd)
 
 ####################################################################################################
 
@@ -486,9 +501,10 @@ class LineMatch:
             _ = ''
         return _ + f'{os.linesep}{sep}{path} <red>{self.line_number}</red>'
 
+####################################################################################################
 
 @task(optional=['pattern2'])
-def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
+def search(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
     patterns = (pattern, pattern2)
     matches = []
     for file in yield_source_files(source_path):
@@ -536,22 +552,23 @@ def ag(ctx, source_path: str, pattern: str, pattern2: str = None) -> None:
 
 ####################################################################################################
 
-@task
-def to_esm(ctx) -> None:
-    from .lib.jstool import CjsToEsm
-    source_path = SOURCE_PATH / 'wikijs-server/server'
-    for _ in yield_source_files(source_path, suffixes=('.js',)):
-        CjsToEsm(_)
+# Obsolete
+# @task
+# def dump_yarn_lock(ctx, source_path) -> None:
+#     printc('<cyan>Yarn Lock</cyan>')
+#     source_path = Path(source_path)
+#     package_json = read_package_json(source_path)
+#     yarn_lock_file = source_path.joinpath('yarn.lock')
+#     yarn_lock = YarnLock(yarn_lock_file, package_json)
+#     for i, _ in enumerate(yarn_lock.dependencies.values()):
+#         print(f'{i+1:4}', str(_))
 
 ####################################################################################################
 
-@task
-def dynamic_import(ctx, path='server') -> None:
-    # clear ; ag --ignore '*~' 'import\(' server
-    cmd = (
-        '/usr/bin/ag',
-        '--ignore', '*~',
-        r'import\(',
-        path,
-    )
-    subprocess.run(cmd)
+# Obsolete
+# @task
+# def to_esm(ctx) -> None:
+#     from .lib.jstool import CjsToEsm
+#     source_path = SOURCE_PATH / 'wikijs-server/server'
+#     for _ in yield_source_files(source_path, suffixes=('.js',)):
+#         CjsToEsm(_)

@@ -6,11 +6,9 @@ import subprocess
 from invoke import task
 
 from .lib.helper import join_cmd
+from .settings import SOURCE_PATH, NODE_MODULES
 
 ####################################################################################################
-
-SOURCE_PATH = Path(__file__).parents[1]
-NODE_MODULES = SOURCE_PATH.joinpath('node_modules')
 
 RULE = '-'*50
 

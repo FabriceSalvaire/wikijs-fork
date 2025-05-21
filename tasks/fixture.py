@@ -4,7 +4,7 @@ from pathlib import Path
 from pprint import pprint
 import base64
 import subprocess
-import time
+# import time
 import sys
 import yaml
 
@@ -12,22 +12,13 @@ from invoke import task
 
 try:
     import requests
-    import yaml
+    # import yaml
 except ImportError:
     pass
 
 from .lib.helper import printc
-
-####################################################################################################
-
-SOURCE_PATH = Path(__file__).parents[1]
-SERVER_PATH = SOURCE_PATH / 'wikijs-server'
-
-# Default fake (encoded) email and password
-FAKE_EMAIL = base64.b64decode(b'YWRtaW5Ad2lraWpzLm9yZw==').decode('utf8')
-FAKE_PASSWORD = 'wikijs'
-
-NODE = '/usr/bin/node'
+from .settings import SERVER_PATH, NODE
+from . import settings as S
 
 ####################################################################################################
 
@@ -40,7 +31,7 @@ def load_config() -> dict:
 ####################################################################################################
 
 def read_output(process: subprocess.Popen, until: str) -> None:
-    until  = until.encode('utf8')
+    until = until.encode('utf8')
     try:
         while True:
             _ = process.stdout.readline()
@@ -56,8 +47,8 @@ def read_output(process: subprocess.Popen, until: str) -> None:
 def setup(
     ctx,
     host: str = 'http://localhost:3001',
-    email: str = FAKE_EMAIL,
-    password: str = FAKE_PASSWORD,
+    email: str = S.FAKE_EMAIL,
+    password: str = S.FAKE_PASSWORD,
     run_node: bool = False,
 ):
     """Perfom a wiki setup"""
@@ -69,7 +60,11 @@ def setup(
     printc(f'password: <green>{password}</>')
 
     if not run_node and not db.exists():
-        printc(f'<red>Server down ?</>')
+        printc('<red>Server down ?</>')
+        sys.exit(1)
+
+    if run_node and db.exists():
+        printc('<red>database exists</>')
         sys.exit(1)
 
     node = None

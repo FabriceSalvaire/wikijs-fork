@@ -3,7 +3,7 @@
 import json
 import time
 from pathlib import Path
-from pprint import pprint
+# from pprint import pprint
 
 try:
     from github import Github
@@ -13,9 +13,10 @@ except ImportError:
 
 from invoke import task
 
+from .settings import SOURCE_PATH
+
 ####################################################################################################
 
-SOURCE_PATH = Path(__file__).parents[1]
 PR_DIR = SOURCE_PATH.joinpath('pr')
 PULLS_JSON_FILE = PR_DIR.joinpath('pulls.json')
 

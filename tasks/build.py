@@ -2,9 +2,12 @@
 
 from pathlib import Path
 import subprocess
-import sys
+# import sys
 
 from invoke import task
+
+# from . import settings as S
+from .settings import NODE, NODE_MODULES
 
 ####################################################################################################
 
@@ -15,14 +18,6 @@ from invoke import task
 # "test": "eslint --format codeframe --ext .js,.vue . && pug-lint server/views && jest",
 # "cypress:open": "cypress open",
 # "postinstall": "patch-package"
-
-####################################################################################################
-
-NODE = '/usr/bin/node'
-NPX = '/usr/bin/npx'
-
-SOURCE_PATH = Path(__file__).parents[1]
-NODE_MODULES = SOURCE_PATH.joinpath('node_modules')
 
 ####################################################################################################
 
