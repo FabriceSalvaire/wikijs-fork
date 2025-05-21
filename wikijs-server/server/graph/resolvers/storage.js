@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -17,18 +17,18 @@ export default {
     StorageQuery: {
         async targets(obj, args, context, info) {
             let targets = await WIKI.models.storage.getTargets()
-            targets = _.sortBy(
+            targets = lodash.sortBy(
                 targets.map((tgt) => {
-                    const targetInfo = _.find(WIKI.data.storage, ['key', tgt.key]) || {}
+                    const targetInfo = lodash.find(WIKI.data.storage, ['key', tgt.key]) || {}
                     return {
                         ...targetInfo,
                         ...tgt,
                         hasSchedule: (targetInfo.schedule !== false),
                         syncInterval: tgt.syncInterval || targetInfo.schedule || 'P0D',
                         syncIntervalDefault: targetInfo.schedule,
-                        config: _.sortBy(
-                            _.transform(tgt.config, (res, value, key) => {
-                                const configData = _.get(targetInfo.props, key, false)
+                        config: lodash.sortBy(
+                            lodash.transform(tgt.config, (res, value, key) => {
+                                const configData = lodash.get(targetInfo.props, key, false)
                                 if (configData) {
                                     res.push({
                                         key,
@@ -50,13 +50,13 @@ export default {
         async status(obj, args, context, info) {
             let activeTargets = await WIKI.models.storage.query().where('isEnabled', true)
             return activeTargets.map((tgt) => {
-                const targetInfo = _.find(WIKI.data.storage, ['key', tgt.key]) || {}
+                const targetInfo = lodash.find(WIKI.data.storage, ['key', tgt.key]) || {}
                 return {
                     key: tgt.key,
                     title: targetInfo.title,
-                    status: _.get(tgt, 'state.status', 'pending'),
-                    message: _.get(tgt, 'state.message', 'Initializing...'),
-                    lastAttempt: _.get(tgt, 'state.lastAttempt', null)
+                    status: lodash.get(tgt, 'state.status', 'pending'),
+                    message: lodash.get(tgt, 'state.message', 'Initializing...'),
+                    lastAttempt: lodash.get(tgt, 'state.lastAttempt', null)
                 }
             })
         }
@@ -66,18 +66,18 @@ export default {
             try {
                 let dbTargets = await WIKI.models.storage.getTargets()
                 for (let tgt of args.targets) {
-                    const currentDbTarget = _.find(dbTargets, ['key', tgt.key])
+                    const currentDbTarget = lodash.find(dbTargets, ['key', tgt.key])
                     if (!currentDbTarget)
                         continue
                     await WIKI.models.storage.query().patch({
                         isEnabled: tgt.isEnabled,
                         mode: tgt.mode,
                         syncInterval: tgt.syncInterval,
-                        config: _.reduce(tgt.config, (result, value, key) => {
-                            let configValue = _.get(JSON.parse(value.value), 'v', null)
+                        config: lodash.reduce(tgt.config, (result, value, key) => {
+                            let configValue = lodash.get(JSON.parse(value.value), 'v', null)
                             if (configValue === '********')
-                                configValue = _.get(currentDbTarget.config, value.key, '')
-                            _.set(result, `${value.key}`, configValue)
+                                configValue = lodash.get(currentDbTarget.config, value.key, '')
+                            lodash.set(result, `${value.key}`, configValue)
                             return result
                         }, {}),
                         state: {

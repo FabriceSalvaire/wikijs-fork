@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -38,7 +38,7 @@ export default {
                 useCookieInsteadOfSession: keyArray.length > 0,
                 cookieEncryptionKeys: keyArray
             }, async (req, iss, sub, profile, cb) => {
-                const usrEmail = _.get(profile, '_json.email', null) || _.get(profile, '_json.preferred_username')
+                const usrEmail = lodash.get(profile, '_json.email', null) || lodash.get(profile, '_json.preferred_username')
                 try {
                     const user = await WIKI.models.users.processProfile({
                         providerKey: req.params.strategy,

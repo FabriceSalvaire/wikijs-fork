@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -23,13 +23,13 @@ export default {
         async loggers(obj, args, context, info) {
             let loggers = await WIKI.models.loggers.getLoggers()
             loggers = loggers.map((logger) => {
-                const loggerInfo = _.find(WIKI.data.loggers, ['key', logger.key]) || {}
+                const loggerInfo = lodash.find(WIKI.data.loggers, ['key', logger.key]) || {}
                 return {
                     ...loggerInfo,
                     ...logger,
-                    config: _.sortBy(
-                        _.transform(logger.config, (res, value, key) => {
-                            const configData = _.get(loggerInfo.props, key, {})
+                    config: lodash.sortBy(
+                        lodash.transform(logger.config, (res, value, key) => {
+                            const configData = lodash.get(loggerInfo.props, key, {})
                             res.push({
                                 key,
                                 value: JSON.stringify({
@@ -44,7 +44,7 @@ export default {
             })
             // if (args.filter) { loggers = graphHelper.filter(loggers, args.filter) }
             if (args.orderBy)
-                loggers = _.sortBy(loggers, [args.orderBy])
+                loggers = lodash.sortBy(loggers, [args.orderBy])
             return loggers
         }
     },
@@ -55,8 +55,8 @@ export default {
                     await WIKI.models.loggers.query().patch({
                         isEnabled: logger.isEnabled,
                         level: logger.level,
-                        config: _.reduce(logger.config, (result, value, key) => {
-                            _.set(result, `${value.key}`, value.value)
+                        config: lodash.reduce(logger.config, (result, value, key) => {
+                            lodash.set(result, `${value.key}`, value.value)
                             return result
                         }, {})
                     }).where('key', logger.key)

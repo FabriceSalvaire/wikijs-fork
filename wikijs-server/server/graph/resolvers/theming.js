@@ -1,5 +1,5 @@
 import graphHelper from '../../helpers/graph.js'
-import _ from 'lodash'
+import lodash from 'lodash'
 import CleanCSS from 'clean-css'
 
 /* global WIKI */
@@ -38,7 +38,7 @@ export default {
     ThemingMutation: {
         async setConfig(obj, args, context, info) {
             try {
-                if (!_.isEmpty(args.injectCSS)) {
+                if (!lodash.isEmpty(args.injectCSS)) {
                     args.injectCSS = new CleanCSS({
                         inline: false
                     }).minify(args.injectCSS).styles

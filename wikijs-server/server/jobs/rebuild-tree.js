@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -31,7 +31,7 @@ export default async (pageId) => {
                 depth++
                 const isFolder = depth < pagePaths.length
                 currentPath = currentPath ? `${currentPath}/${part}` : part
-                const found = _.find(tree, {
+                const found = lodash.find(tree, {
                     localeCode: page.localeCode,
                     path: currentPath
                 })
@@ -65,10 +65,10 @@ export default async (pageId) => {
         if (tree.length > 0) {
             // -> Save in chunks, because of per query max parameters (35k Postgres, 2k MSSQL, 1k for SQLite)
             if ((WIKI.config.db.type !== 'sqlite')) {
-                for (const chunk of _.chunk(tree, 100))
+                for (const chunk of lodash.chunk(tree, 100))
                     await WIKI.models.knex.table('pageTree').insert(chunk)
             } else {
-                for (const chunk of _.chunk(tree, 60))
+                for (const chunk of lodash.chunk(tree, 60))
                     await WIKI.models.knex.table('pageTree').insert(chunk)
             }
         }

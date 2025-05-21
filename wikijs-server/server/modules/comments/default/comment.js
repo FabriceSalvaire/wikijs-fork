@@ -2,7 +2,7 @@ import md from 'markdown-it'
 import { full as mdEmoji } from 'markdown-it-emoji'
 import { JSDOM } from 'jsdom'
 import createDOMPurify from 'dompurify'
-import _ from 'lodash'
+import lodash from 'lodash'
 import { AkismetClient } from 'akismet-api'
 import moment from 'moment'
 
@@ -18,7 +18,7 @@ const mkdown = md({
     breaks: true,
     linkify: true,
     highlight(str, lang) {
-        return `<pre><code class="language-${lang}">${_.escape(str)}</code></pre>`
+        return `<pre><code class="language-${lang}">${lodash.escape(str)}</code></pre>`
     }
 })
 
@@ -159,6 +159,6 @@ export default {
      */
     async count(pageId) {
         const result = await WIKI.models.comments.query().count('* as total').where('pageId', pageId).first()
-        return _.toSafeInteger(result.total)
+        return lodash.toSafeInteger(result.total)
     }
 }

@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import * as stream from 'node:stream'
 import Promise from 'bluebird'
 import * as fs from 'node:fs'
@@ -22,7 +22,7 @@ export default {
             case '8.x':
                 const Client8 = (await import('elasticsearch8')).Client
                 this.client = new Client8({
-                    nodes: this.config.hosts.split(',').map(_.trim),
+                    nodes: this.config.hosts.split(',').map(lodash.trim),
                     sniffOnStart: this.config.sniffOnStart,
                     sniffInterval: (this.config.sniffInterval > 0) ? this.config.sniffInterval : false,
                     tls: getTlsOptions(this.config),
@@ -32,7 +32,7 @@ export default {
             case '7.x':
                 const Client7 = (await import('elasticsearch7')).Client
                 this.client = new Client7({
-                    nodes: this.config.hosts.split(',').map(_.trim),
+                    nodes: this.config.hosts.split(',').map(lodash.trim),
                     sniffOnStart: this.config.sniffOnStart,
                     sniffInterval: (this.config.sniffInterval > 0) ? this.config.sniffInterval : false,
                     ssl: getTlsOptions(this.config),
@@ -42,7 +42,7 @@ export default {
             case '6.x':
                 const Client6 = (await import('elasticsearch6')).Client
                 this.client = new Client6({
-                    nodes: this.config.hosts.split(',').map(_.trim),
+                    nodes: this.config.hosts.split(',').map(lodash.trim),
                     sniffOnStart: this.config.sniffOnStart,
                     sniffInterval: (this.config.sniffInterval > 0) ? this.config.sniffInterval : false,
                     ssl: getTlsOptions(this.config),
@@ -102,7 +102,7 @@ export default {
                         }
                     })
                 } catch (err) {
-                    WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Create Index Error: `, _.get(err, 'meta.body.error', err))
+                    WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Create Index Error: `, lodash.get(err, 'meta.body.error', err))
                 }
                 // Elasticsearch 8.x
             } else if (this.config.apiVersion === '8.x' && !indexExists) {
@@ -137,11 +137,11 @@ export default {
                         }
                     })
                 } catch (err) {
-                    WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Create Index Error: `, _.get(err, 'meta.body.error', err))
+                    WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Create Index Error: `, lodash.get(err, 'meta.body.error', err))
                 }
             }
         } catch (err) {
-            WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Index Check Error: `, _.get(err, 'meta.body.error', err))
+            WIKI.logger.error(`(SEARCH/ELASTICSEARCH) Index Check Error: `, lodash.get(err, 'meta.body.error', err))
         }
     },
     /**
@@ -180,7 +180,7 @@ export default {
                 }
             })
             return {
-                results: _.get(results, this.config.apiVersion === '8.x' ? 'hits.hits' : 'body.hits.hits', []).map(
+                results: lodash.get(results, this.config.apiVersion === '8.x' ? 'hits.hits' : 'body.hits.hits', []).map(
                     (r) => ({
                         id: r._id,
                         locale: r._source.locale,
@@ -189,18 +189,18 @@ export default {
                         description: r._source.description
                     })
                 ),
-                suggestions: _.reject(
-                    _.get(results, 'suggest.suggestions', []).map((s) => _.get(s, 'options[0].text', false)),
+                suggestions: lodash.reject(
+                    lodash.get(results, 'suggest.suggestions', []).map((s) => lodash.get(s, 'options[0].text', false)),
                     (s) => !s
                 ),
-                totalHits: _.get(
+                totalHits: lodash.get(
                     results,
                     this.config.apiVersion === '8.x' ? 'hits.total.value' : 'body.hits.total.value',
-                    _.get(results, this.config.apiVersion === '8.x' ? 'hits.total' : 'body.hits.total', 0)
+                    lodash.get(results, this.config.apiVersion === '8.x' ? 'hits.total' : 'body.hits.total', 0)
                 )
             }
         } catch (err) {
-            WIKI.logger.warn('Search Engine Error: ', _.get(err, 'meta.body.error', err))
+            WIKI.logger.warn('Search Engine Error: ', lodash.get(err, 'meta.body.error', err))
         }
     },
 
@@ -221,8 +221,8 @@ export default {
      * Build suggest field
      */
     buildSuggest(page) {
-        return _.reject(
-            _.uniq(_.concat(
+        return lodash.reject(
+            lodash.uniq(lodash.concat(
                 page.title.split(' ').map((s) => ({
                     input: s,
                     weight: 10
@@ -372,7 +372,7 @@ export default {
             try {
                 await this.client.bulk({
                     index: this.config.indexName,
-                    body: _.reduce(chunks, (result, doc) => {
+                    body: lodash.reduce(chunks, (result, doc) => {
                         result.push({
                             index: {
                                 _index: this.config.indexName,

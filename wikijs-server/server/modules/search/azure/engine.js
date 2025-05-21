@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import { QueryType, SearchService } from 'azure-search-client'
 import request from 'request-promise'
 import * as stream from 'node:stream'
@@ -23,7 +23,7 @@ export default {
 
         // -> Create Search Index
         const indexes = await this.client.indexes.list()
-        if (!_.find(_.get(indexes, 'result.value', []), ['name', this.config.indexName])) {
+        if (!lodash.find(lodash.get(indexes, 'result.value', []), ['name', this.config.indexName])) {
             WIKI.logger.info(`(SEARCH/AZURE) Creating index...`)
             await this.client.indexes.create({
                 name: this.config.indexName,

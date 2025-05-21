@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import fs from 'fs-extra'
 import * as path from 'node:path'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -35,8 +35,8 @@ export default class Analytics extends Model {
     }
 
     static async getProviders(isEnabled) {
-        const providers = await WIKI.models.analytics.query().where(_.isBoolean(isEnabled) ? { isEnabled } : {})
-        return _.sortBy(providers, ['key'])
+        const providers = await WIKI.models.analytics.query().where(lodash.isBoolean(isEnabled) ? { isEnabled } : {})
+        return lodash.sortBy(providers, ['key'])
     }
 
     static async refreshProvidersFromDisk() {
@@ -61,21 +61,21 @@ export default class Analytics extends Model {
 
             let newProviders = []
             for (let provider of WIKI.data.analytics) {
-                if (!_.some(dbProviders, ['key', provider.key])) {
+                if (!lodash.some(dbProviders, ['key', provider.key])) {
                     newProviders.push({
                         key: provider.key,
                         isEnabled: false,
-                        config: _.transform(provider.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        config: lodash.transform(provider.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {})
                     })
                 } else {
-                    const providerConfig = _.get(_.find(dbProviders, ['key', provider.key]), 'config', {})
+                    const providerConfig = lodash.get(lodash.find(dbProviders, ['key', provider.key]), 'config', {})
                     await WIKI.models.analytics.query().patch({
-                        config: _.transform(provider.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(provider.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, providerConfig)
                     }).where('key', provider.key)
@@ -118,14 +118,14 @@ export default class Analytics extends Model {
                     'utf8'
                 )
                 let code = yaml.safeLoad(def)
-                code.head = _.defaultTo(code.head, '')
-                code.bodyStart = _.defaultTo(code.bodyStart, '')
-                code.bodyEnd = _.defaultTo(code.bodyEnd, '')
+                code.head = lodash.defaultTo(code.head, '')
+                code.bodyStart = lodash.defaultTo(code.bodyStart, '')
+                code.bodyEnd = lodash.defaultTo(code.bodyEnd, '')
 
-                _.forOwn(provider.config, (value, key) => {
-                    code.head = _.replace(code.head, new RegExp(`{{${key}}}`, 'g'), value)
-                    code.bodyStart = _.replace(code.bodyStart, `{{${key}}}`, value)
-                    code.bodyEnd = _.replace(code.bodyEnd, `{{${key}}}`, value)
+                lodash.forOwn(provider.config, (value, key) => {
+                    code.head = lodash.replace(code.head, new RegExp(`{{${key}}}`, 'g'), value)
+                    code.bodyStart = lodash.replace(code.bodyStart, `{{${key}}}`, value)
+                    code.bodyEnd = lodash.replace(code.bodyEnd, `{{${key}}}`, value)
                 })
 
                 analyticsCode.head += code.head

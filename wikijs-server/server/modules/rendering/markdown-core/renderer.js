@@ -1,7 +1,7 @@
 import md from 'markdown-it'
 import mdAttrs from 'markdown-it-attrs'
 import mdDecorate from 'markdown-it-decorate'
-import _ from 'lodash'
+import lodash from 'lodash'
 import underline from './underline.js'
 
 const quoteStyles = {
@@ -26,12 +26,12 @@ export default {
             breaks: this.config.linebreaks,
             linkify: this.config.linkify,
             typographer: this.config.typographer,
-            quotes: _.get(quoteStyles, this.config.quotes, quoteStyles.English),
+            quotes: lodash.get(quoteStyles, this.config.quotes, quoteStyles.English),
             highlight(str, lang) {
                 if (lang === 'diagram')
                     return `<pre class="diagram">` + Buffer.from(str, 'base64').toString() + `</pre>`
                 else
-                    return `<pre><code class="language-${lang}">${_.escape(str)}</code></pre>`
+                    return `<pre><code class="language-${lang}">${lodash.escape(str)}</code></pre>`
             }
         })
 
@@ -44,7 +44,7 @@ export default {
         mkdown.use(mdDecorate)
 
         for (let child of this.children) {
-            const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
+            const renderer = (await import(`../${lodash.kebabCase(child.key)}/renderer.js`)).default
             await renderer.init(mkdown, child.config)
         }
 

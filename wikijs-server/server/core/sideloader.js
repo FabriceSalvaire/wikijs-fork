@@ -1,6 +1,6 @@
 import fs from 'fs-extra'
 import * as path from 'node:path'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -33,7 +33,7 @@ export default {
             const locales = await fs.readJson(
                 path.resolve(WIKI.ROOTPATH, WIKI.config.dataPath, 'sideload/locales.json')
             )
-            if (locales && _.has(locales, 'data.localization.locales')) {
+            if (locales && lodash.has(locales, 'data.localization.locales')) {
                 for (const locale of locales.data.localization.locales) {
                     try {
                         const localeData = await fs.readJson(
@@ -43,12 +43,12 @@ export default {
                             WIKI.logger.info(`Importing ${locale.name} locale package...`)
 
                             let lcObj = {}
-                            _.forOwn(localeData, (value, key) => {
-                                if (_.includes(key, '::'))
+                            lodash.forOwn(localeData, (value, key) => {
+                                if (lodash.includes(key, '::'))
                                     return
-                                if (_.isEmpty(value))
+                                if (lodash.isEmpty(value))
                                     value = key
-                                _.set(lcObj, key.replace(':', '.'), value)
+                                lodash.set(lcObj, key.replace(':', '.'), value)
                             })
 
                             const localeDbExists = await WIKI.models.locales.query().select('code').where(

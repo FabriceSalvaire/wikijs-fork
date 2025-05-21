@@ -1,6 +1,6 @@
 import passport from 'passport'
 import passportJWT from 'passport-jwt'
-import _ from 'lodash'
+import lodash from 'lodash'
 import jwt from 'jsonwebtoken'
 import ms from 'ms'
 import { DateTime } from 'luxon'
@@ -60,9 +60,9 @@ export default {
         try {
             // Unload any active strategies
             WIKI.auth.strategies = {}
-            const currentStrategies = _.keys(passport._strategies)
-            _.pull(currentStrategies, 'session')
-            _.forEach(currentStrategies, (stg) => {
+            const currentStrategies = lodash.keys(passport._strategies)
+            lodash.pull(currentStrategies, 'session')
+            lodash.forEach(currentStrategies, (stg) => {
                 passport.unuse(stg)
             })
 
@@ -132,14 +132,14 @@ export default {
 
             // Check if user / group is in revocation list
             if (user && !user.api && !mustRevalidate) {
-                const uRevalidate = WIKI.auth.revocationList.get(`u${_.toString(user.id)}`)
+                const uRevalidate = WIKI.auth.revocationList.get(`u${lodash.toString(user.id)}`)
                 if (uRevalidate && user.iat < uRevalidate)
                     mustRevalidate = true
                 else if (DateTime.fromSeconds(user.iat) <= WIKI.startedAt) // Prevent new / restarted instance from allowing revoked tokens
                     mustRevalidate = true
                 else {
                     for (const gid of user.groups) {
-                        const gRevalidate = WIKI.auth.revocationList.get(`g${_.toString(gid)}`)
+                        const gRevalidate = WIKI.auth.revocationList.get(`g${lodash.toString(gid)}`)
                         if (gRevalidate && user.iat < gRevalidate) {
                             mustRevalidate = true
                             break
@@ -185,10 +185,10 @@ export default {
             }
 
             // Process API tokens
-            if (_.has(user, 'api')) {
+            if (lodash.has(user, 'api')) {
                 if (!WIKI.config.api.isEnabled)
                     return next(new Error('API is disabled. You must enable it from the Administration Area first.'))
-                else if (_.includes(WIKI.auth.validApiKeys, user.api)) {
+                else if (lodash.includes(WIKI.auth.validApiKeys, user.api)) {
                     req.user = {
                         id: 1,
                         email: 'api@localhost',
@@ -196,7 +196,7 @@ export default {
                         pictureUrl: null,
                         timezone: 'America/New_York',
                         localeCode: 'en',
-                        permissions: _.get(WIKI.auth.groups, `${user.grp}.permissions`, []),
+                        permissions: lodash.get(WIKI.auth.groups, `${user.grp}.permissions`, []),
                         groups: [user.grp],
                         getGlobalPermissions() {
                             return req.user.permissions
@@ -231,11 +231,11 @@ export default {
         const userPermissions = user.permissions ? user.permissions : user.getGlobalPermissions()
 
         // System Admin
-        if (_.includes(userPermissions, 'manage:system'))
+        if (lodash.includes(userPermissions, 'manage:system'))
             return true
 
         // Check Global Permissions
-        if (_.intersection(userPermissions, permissions).length < 1)
+        if (lodash.intersection(userPermissions, permissions).length < 1)
             return false
 
         // Skip if no page rule to check
@@ -250,16 +250,16 @@ export default {
                 specificity: ''
             }
             user.groups.forEach((grp) => {
-                const grpId = _.isObject(grp) ? _.get(grp, 'id', 0) : grp
-                _.get(WIKI.auth.groups, `${grpId}.pageRules`, []).forEach((rule) => {
+                const grpId = lodash.isObject(grp) ? lodash.get(grp, 'id', 0) : grp
+                lodash.get(WIKI.auth.groups, `${grpId}.pageRules`, []).forEach((rule) => {
                     if (rule.locales && rule.locales.length > 0) {
                         if (!rule.locales.includes(page.locale))
                             return
                     }
-                    if (_.intersection(rule.roles, permissions).length > 0) {
+                    if (lodash.intersection(rule.roles, permissions).length > 0) {
                         switch (rule.match) {
                             case 'START':
-                                if (_.startsWith(`/${page.path}`, `/${rule.path}`)) {
+                                if (lodash.startsWith(`/${page.path}`, `/${rule.path}`)) {
                                     checkState = this._applyPageRuleSpecificity({
                                         rule,
                                         checkState,
@@ -268,7 +268,7 @@ export default {
                                 }
                                 break
                             case 'END':
-                                if (_.endsWith(page.path, rule.path)) {
+                                if (lodash.endsWith(page.path, rule.path)) {
                                     checkState = this._applyPageRuleSpecificity({
                                         rule,
                                         checkState,
@@ -287,7 +287,7 @@ export default {
                                 }
                                 break
                             case 'TAG':
-                                _.get(page, 'tags', []).forEach((tag) => {
+                                lodash.get(page, 'tags', []).forEach((tag) => {
                                     if (tag.tag === rule.path) {
                                         checkState = this._applyPageRuleSpecificity({
                                             rule,
@@ -328,11 +328,11 @@ export default {
         const userPermissions = user.permissions ? user.permissions : user.getGlobalPermissions()
 
         // Check Inclusion Permissions
-        if (_.intersection(userPermissions, includePermissions).length < 1)
+        if (lodash.intersection(userPermissions, includePermissions).length < 1)
             return false
 
         // Check Exclusion Permissions
-        if (_.intersection(userPermissions, excludePermissions).length > 0)
+        if (lodash.intersection(userPermissions, excludePermissions).length > 0)
             return false
 
         return true
@@ -346,7 +346,7 @@ export default {
     _applyPageRuleSpecificity({ rule, checkState, higherPriority = [] }) {
         if (rule.path.length === checkState.specificity.length) {
             // Do not override higher priority rules
-            if (_.includes(higherPriority, checkState.match))
+            if (lodash.includes(higherPriority, checkState.match))
                 return checkState
             // Do not override a previous DENY rule with same match
             if (rule.match === checkState.match && checkState.deny && !rule.deny)
@@ -368,7 +368,7 @@ export default {
      */
     async reloadGroups() {
         const groupsArray = await WIKI.models.groups.query()
-        this.groups = _.keyBy(groupsArray, 'id')
+        this.groups = lodash.keyBy(groupsArray, 'id')
         WIKI.auth.guest.cacheExpiration = DateTime.utc().minus({ days: 1 })
     },
 
@@ -381,7 +381,7 @@ export default {
             '>',
             DateTime.utc().toISO()
         )
-        this.validApiKeys = _.map(keys, 'id')
+        this.validApiKeys = lodash.map(keys, 'id')
     },
 
     /**
@@ -390,7 +390,7 @@ export default {
     async regenerateCertificates() {
         WIKI.logger.info('Regenerating certificates...')
 
-        _.set(WIKI.config, 'sessionSecret', (await crypto.randomBytesAsync(32)).toString('hex'))
+        lodash.set(WIKI.config, 'sessionSecret', (await crypto.randomBytesAsync(32)).toString('hex'))
         const certs = crypto.generateKeyPairSync('rsa', {
             modulusLength: 2048,
             publicKeyEncoding: {
@@ -405,7 +405,7 @@ export default {
             }
         })
 
-        _.set(WIKI.config, 'certs', {
+        lodash.set(WIKI.config, 'certs', {
             jwk: pem2jwk(certs.publicKey),
             public: certs.publicKey,
             private: certs.privateKey
@@ -511,7 +511,7 @@ export default {
      */
     revokeUserTokens({ id, kind = 'u' }) {
         WIKI.auth.revocationList.set(
-            `${kind}${_.toString(id)}`,
+            `${kind}${lodash.toString(id)}`,
             Math.round(DateTime.utc().minus({ seconds: 5 }).toSeconds()),
             Math.ceil(ms(WIKI.config.auth.tokenExpiration) / 1000)
         )

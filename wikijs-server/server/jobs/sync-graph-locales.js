@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import { createApolloFetch } from 'apollo-fetch'
 
 /* global WIKI */
@@ -28,7 +28,7 @@ export default async () => {
         }
       }`
         })
-        const locales = _.sortBy(_.get(respList, 'data.localization.locales', []), 'name').map((lc) => ({
+        const locales = lodash.sortBy(lodash.get(respList, 'data.localization.locales', []), 'name').map((lc) => ({
             ...lc,
             isInstalled: (lc.code === 'en')
         }))
@@ -39,7 +39,7 @@ export default async () => {
         if (WIKI.config.lang.autoUpdate) {
             const activeLocales = WIKI.config.lang.namespacing ? WIKI.config.lang.namespaces : [WIKI.config.lang.code]
             for (const currentLocale of activeLocales) {
-                const localeInfo = _.find(locales, ['code', currentLocale])
+                const localeInfo = lodash.find(locales, ['code', currentLocale])
 
                 const respStrings = await apollo({
                     query: `query ($code: String!) {
@@ -54,14 +54,14 @@ export default async () => {
                         code: currentLocale
                     }
                 })
-                const strings = _.get(respStrings, 'data.localization.strings', [])
+                const strings = lodash.get(respStrings, 'data.localization.strings', [])
                 let lcObj = {}
-                _.forEach(strings, (row) => {
-                    if (_.includes(row.key, '::'))
+                lodash.forEach(strings, (row) => {
+                    if (lodash.includes(row.key, '::'))
                         return
-                    if (_.isEmpty(row.value))
+                    if (lodash.isEmpty(row.value))
                         row.value = row.key
-                    _.set(lcObj, row.key.replace(':', '.'), row.value)
+                    lodash.set(lcObj, row.key.replace(':', '.'), row.value)
                 })
 
                 await WIKI.models.locales.query().update({

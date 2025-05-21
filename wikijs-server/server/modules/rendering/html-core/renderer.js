@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import cheerio from 'cheerio'
 import uslug from 'uslug'
 import pageHelper from '../../../helpers/page.js'
@@ -21,8 +21,8 @@ export default {
         // STEP: PRE
         // --------------------------------
 
-        for (let child of _.reject(this.children, ['step', 'post'])) {
-            const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
+        for (let child of lodash.reject(this.children, ['step', 'post'])) {
+            const renderer = (await import(`../${lodash.kebabCase(child.key)}/renderer.js`)).default
             await renderer.init($, child.config)
         }
 
@@ -56,7 +56,7 @@ export default {
             // -> Assign local / external tag
             if (href.indexOf('://') < 0) {
                 // -> Remove trailing slash
-                if (_.endsWith('/'))
+                if (lodash.endsWith('/'))
                     href = href.slice(0, -1)
 
                 // -> Check for system prefix
@@ -152,7 +152,7 @@ export default {
                     return
                 }
                 if (
-                    _.some(results, (r) => {
+                    lodash.some(results, (r) => {
                         return r.localeCode === hrefObj.locale && r.path === hrefObj.path
                     })
                 ) {
@@ -163,7 +163,7 @@ export default {
             })
 
             // -> Add missing links
-            const missingLinks = _.differenceWith(internalRefs, pastLinks, (nLink, pLink) => {
+            const missingLinks = lodash.differenceWith(internalRefs, pastLinks, (nLink, pLink) => {
                 return nLink.localeCode === pLink.localeCode && nLink.path === pLink.path
             })
             if (missingLinks.length > 0) {
@@ -187,11 +187,11 @@ export default {
 
         // -> Remove outdated links
         if (pastLinks) {
-            const outdatedLinks = _.differenceWith(pastLinks, internalRefs, (nLink, pLink) => {
+            const outdatedLinks = lodash.differenceWith(pastLinks, internalRefs, (nLink, pLink) => {
                 return nLink.localeCode === pLink.localeCode && nLink.path === pLink.path
             })
             if (outdatedLinks.length > 0)
-                await WIKI.models.pageLinks.query().delete().whereIn('id', _.map(outdatedLinks, 'id'))
+                await WIKI.models.pageLinks.query().delete().whereIn('id', lodash.map(outdatedLinks, 'id'))
         }
 
         // --------------------------------
@@ -254,8 +254,8 @@ export default {
 
         let output = decodeEscape($.html('body').replace('<body>', '').replace('</body>', ''))
 
-        for (let child of _.sortBy(_.filter(this.children, ['step', 'post']), ['order'])) {
-            const renderer = (await import(`../${_.kebabCase(child.key)}/renderer.js`)).default
+        for (let child of lodash.sortBy(lodash.filter(this.children, ['step', 'post']), ['order'])) {
+            const renderer = (await import(`../${lodash.kebabCase(child.key)}/renderer.js`)).default
             output = await renderer.init(output, child.config)
         }
 

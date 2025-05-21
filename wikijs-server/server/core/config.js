@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import chalk from 'chalk'
 import cfgHelper from '../helpers/config.js'
 import * as fs from 'node:fs'
@@ -48,7 +48,7 @@ export default {
 
         // Merge with defaults
 
-        appconfig = _.defaultsDeep(appconfig, appdata.defaults.config)
+        appconfig = lodash.defaultsDeep(appconfig, appdata.defaults.config)
 
         if (appconfig.port < 1 || process.env.HEROKU)
             appconfig.port = process.env.PORT || 80
@@ -84,7 +84,7 @@ export default {
     async loadFromDb() {
         let conf = await WIKI.models.settings.getConfig()
         if (conf)
-            WIKI.config = _.defaultsDeep(conf, WIKI.config)
+            WIKI.config = lodash.defaultsDeep(conf, WIKI.config)
         else {
             WIKI.logger.warn('DB Configuration is empty or incomplete. Switching to Setup mode...')
             WIKI.config.setup = true
@@ -99,8 +99,8 @@ export default {
     async saveToDb(keys, propagate = true) {
         try {
             for (let key of keys) {
-                let value = _.get(WIKI.config, key, null)
-                if (!_.isPlainObject(value))
+                let value = lodash.get(WIKI.config, key, null)
+                if (!lodash.isPlainObject(value))
                     value = { v: value }
                 let affectedRows = await WIKI.models.settings.query().patch({ value }).where('key', key)
                 if (affectedRows === 0 && value)

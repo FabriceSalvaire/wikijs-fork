@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 // import autoload from 'auto-load'
 import * as path from 'node:path'
 import Promise from 'bluebird'
@@ -29,7 +29,7 @@ export default {
         // Fetch DB Config
 
         let dbClient = null
-        let dbConfig = (!_.isEmpty(process.env.DATABASE_URL)) ? process.env.DATABASE_URL : {
+        let dbConfig = (!lodash.isEmpty(process.env.DATABASE_URL)) ? process.env.DATABASE_URL : {
             host: WIKI.config.db.host.toString(),
             user: WIKI.config.db.user.toString(),
             password: WIKI.config.db.pass.toString(),
@@ -42,7 +42,7 @@ export default {
         let dbUseSSL = WIKI.config.db.ssl === true || WIKI.config.db.ssl === 'true' || WIKI.config.db.ssl === 1 ||
             WIKI.config.db.ssl === '1'
         let sslOptions = null
-        if (dbUseSSL && _.isPlainObject(dbConfig) && _.get(WIKI.config.db, 'sslOptions.auto', null) === false) {
+        if (dbUseSSL && lodash.isPlainObject(dbConfig) && lodash.get(WIKI.config.db, 'sslOptions.auto', null) === false) {
             sslOptions = WIKI.config.db.sslOptions
             sslOptions.rejectUnauthorized = sslOptions.rejectUnauthorized !== false
             if (sslOptions.ca && sslOptions.ca.indexOf('-----') !== 0)
@@ -58,7 +58,7 @@ export default {
         }
 
         // Handle inline SSL CA Certificate mode
-        if (!_.isEmpty(process.env.DB_SSL_CA)) {
+        if (!lodash.isEmpty(process.env.DB_SSL_CA)) {
             const chunks = []
             for (let i = 0, charsLength = process.env.DB_SSL_CA.length; i < charsLength; i += 64)
                 chunks.push(process.env.DB_SSL_CA.substring(i, i + 64))
@@ -75,14 +75,14 @@ export default {
             case 'postgres':
                 dbClient = 'pg'
 
-                if (dbUseSSL && _.isPlainObject(dbConfig))
+                if (dbUseSSL && lodash.isPlainObject(dbConfig))
                     dbConfig.ssl = (sslOptions === true) ? { rejectUnauthorized: true } : sslOptions
                 break
             case 'mariadb':
             case 'mysql':
                 dbClient = 'mysql2'
 
-                if (dbUseSSL && _.isPlainObject(dbConfig))
+                if (dbUseSSL && lodash.isPlainObject(dbConfig))
                     dbConfig.ssl = sslOptions
 
                 // Fix mysql boolean handling...
@@ -97,16 +97,16 @@ export default {
             case 'mssql':
                 dbClient = 'mssql'
 
-                if (_.isPlainObject(dbConfig)) {
+                if (lodash.isPlainObject(dbConfig)) {
                     dbConfig.appName = 'Wiki.js'
-                    _.set(dbConfig, 'options.appName', 'Wiki.js')
+                    lodash.set(dbConfig, 'options.appName', 'Wiki.js')
 
                     dbConfig.enableArithAbort = true
-                    _.set(dbConfig, 'options.enableArithAbort', true)
+                    lodash.set(dbConfig, 'options.enableArithAbort', true)
 
                     if (dbUseSSL) {
                         dbConfig.encrypt = true
-                        _.set(dbConfig, 'options.encrypt', true)
+                        lodash.set(dbConfig, 'options.encrypt', true)
                     }
                 }
                 break
@@ -241,7 +241,7 @@ export default {
         // -> Outbound events handling
 
         this.listener.addChannel('wiki', (payload) => {
-            if (_.has(payload, 'event') && payload.source !== WIKI.INSTANCE_ID) {
+            if (lodash.has(payload, 'event') && payload.source !== WIKI.INSTANCE_ID) {
                 WIKI.logger.info(`Received event ${payload.event} from instance ${payload.source}: [ OK ]`)
                 WIKI.events.inbound.emit(payload.event, payload.value)
             }

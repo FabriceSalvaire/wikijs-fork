@@ -1,6 +1,6 @@
 import { Model } from 'objection'
 import validate from 'validate.js'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 import Pages from './pages.js'
 import User from './users.js'
@@ -69,7 +69,7 @@ export default class Comment extends Model {
         // -> Input validation
         if (user.id === 2) {
             const validation = validate({
-                email: _.toLower(guestEmail),
+                email: lodash.toLower(guestEmail),
                 name: guestName
             }, {
                 email: {
@@ -93,7 +93,7 @@ export default class Comment extends Model {
                 throw new WIKI.Error.InputInvalid(validation[0])
         }
 
-        content = _.trim(content)
+        content = lodash.trim(content)
         if (content.length < 2)
             throw new WIKI.Error.CommentContentMissing()
 

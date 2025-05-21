@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import cfgHelper from '../helpers/config.js'
 import Promise from 'bluebird'
 import fs from 'fs-extra'
@@ -67,7 +67,7 @@ export default {
                             $not: 'guest'
                         }
                     }).toArray()
-                    await WIKI.models.User.bulkCreate(_.map(userData, (usr) => {
+                    await WIKI.models.User.bulkCreate(lodash.map(userData, (usr) => {
                         return {
                             email: usr.email,
                             name: usr.name || 'Imported User',
@@ -130,7 +130,7 @@ export default {
                                 objectMode: true,
                                 transform: async (asset, enc, cb) => {
                                     const filename = (asset.folderId && asset.folderId > 0)
-                                        ? `${_.get(assetFolders, asset.folderId)}/${asset.filename}`
+                                        ? `${lodash.get(assetFolders, asset.folderId)}/${asset.filename}`
                                         : asset.filename
                                     WIKI.logger.info(`Exporting asset ${filename}...`)
                                     await fs.outputFile(path.join(opts.path, 'assets', filename), asset.data)
@@ -373,8 +373,8 @@ export default {
                                 analytics: await WIKI.models.analytics.query(),
                                 authentication: (await WIKI.models.authentication.query()).map((a) => ({
                                     ...a,
-                                    domainWhitelist: _.get(a, 'domainWhitelist.v', []),
-                                    autoEnrollGroups: _.get(a, 'autoEnrollGroups.v', [])
+                                    domainWhitelist: lodash.get(a, 'domainWhitelist.v', []),
+                                    autoEnrollGroups: lodash.get(a, 'autoEnrollGroups.v', [])
                                 })),
                                 commentProviders: await WIKI.models.commentProviders.query(),
                                 renderers: await WIKI.models.renderers.query(),

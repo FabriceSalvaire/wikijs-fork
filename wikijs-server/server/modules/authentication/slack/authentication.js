@@ -5,7 +5,7 @@
 // ------------------------------------
 
 import SlackStrategy from 'passport-slack-oauth2'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     init(passport, conf) {
@@ -24,7 +24,7 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...userProfile,
-                            picture: _.get(userProfile, 'image_48', '')
+                            picture: lodash.get(userProfile, 'image_48', '')
                         }
                     })
                     cb(null, user)

@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import AWS from 'aws-sdk'
 import * as stream from 'node:stream'
 import Promise from 'bluebird'
@@ -39,7 +39,7 @@ export default {
             DomainName: this.config.domain,
             AnalysisSchemeNames: ['default_anlscheme']
         }).promise()
-        if (_.get(schemes, 'AnalysisSchemes', []).length < 1) {
+        if (lodash.get(schemes, 'AnalysisSchemes', []).length < 1) {
             WIKI.logger.info(`(SEARCH/AWS) Defining Analysis Scheme...`)
             await this.client.defineAnalysisScheme({
                 DomainName: this.config.domain,
@@ -55,7 +55,7 @@ export default {
         const fields = await this.client.describeIndexFields({
             DomainName: this.config.domain
         }).promise()
-        if (_.get(fields, 'IndexFields', []).length < 1) {
+        if (lodash.get(fields, 'IndexFields', []).length < 1) {
             WIKI.logger.info(`(SEARCH/AWS) Defining Index Fields...`)
             await this.client.defineIndexField({
                 DomainName: this.config.domain,
@@ -119,7 +119,7 @@ export default {
             DomainName: this.config.domain,
             SuggesterNames: ['default_suggester']
         }).promise()
-        if (_.get(suggesters, 'Suggesters', []).length < 1) {
+        if (lodash.get(suggesters, 'Suggesters', []).length < 1) {
             WIKI.logger.info(`(SEARCH/AWS) Defining Suggester...`)
             await this.client.defineSuggester({
                 DomainName: this.config.domain,
@@ -167,12 +167,12 @@ export default {
                 suggestions = suggestResults.suggest.suggestions.map((s) => s.suggestion)
             }
             return {
-                results: _.map(results.hits.hit, (r) => ({
+                results: lodash.map(results.hits.hit, (r) => ({
                     id: r.id,
-                    path: _.head(r.fields.path),
-                    locale: _.head(r.fields.locale),
-                    title: _.head(r.fields.title) || '',
-                    description: _.head(r.fields.description) || ''
+                    path: lodash.head(r.fields.path),
+                    locale: lodash.head(r.fields.locale),
+                    title: lodash.head(r.fields.title) || '',
+                    description: lodash.head(r.fields.description) || ''
                 })),
                 suggestions: suggestions,
                 totalHits: results.hits.found
@@ -325,7 +325,7 @@ export default {
             try {
                 await this.clientDomain.uploadDocuments({
                     contentType: 'application/json',
-                    documents: JSON.stringify(_.map(chunks, (doc) => ({
+                    documents: JSON.stringify(lodash.map(chunks, (doc) => ({
                         type: 'add',
                         id: doc.id,
                         fields: {

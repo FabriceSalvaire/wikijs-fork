@@ -5,7 +5,7 @@ import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
 import klaw from 'klaw'
 import mime from 'mime-types'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 import pageHelper from '../../../helpers/page.js'
 
@@ -19,7 +19,7 @@ export default {
         await pipeline(
             klaw(fullPath, {
                 filter: (f) => {
-                    return !_.includes(f, '.git')
+                    return !lodash.includes(f, '.git')
                 }
             }),
             new stream.Transform({
@@ -80,16 +80,16 @@ export default {
             path: contentPath.path,
             locale: contentPath.locale
         })
-        const newTags = !_.isNil(pageData.tags) ? _.get(pageData, 'tags', '').split(', ') : false
+        const newTags = !lodash.isNil(pageData.tags) ? lodash.get(pageData, 'tags', '').split(', ') : false
         if (currentPage) {
             // Already in the DB, can mark as modified
             WIKI.logger.info(`(STORAGE/${moduleName}) Page marked as modified: ${normalizedRelPath}`)
             await WIKI.models.pages.updatePage({
                 id: currentPage.id,
-                title: _.get(pageData, 'title', currentPage.title),
-                description: _.get(pageData, 'description', currentPage.description) || '',
+                title: lodash.get(pageData, 'title', currentPage.title),
+                description: lodash.get(pageData, 'description', currentPage.description) || '',
                 tags: newTags || currentPage.tags.map((t) => t.tag),
-                isPublished: _.get(pageData, 'isPublished', currentPage.isPublished),
+                isPublished: lodash.get(pageData, 'isPublished', currentPage.isPublished),
                 isPrivate: false,
                 content: pageData.content,
                 user: user,
@@ -102,10 +102,10 @@ export default {
             await WIKI.models.pages.createPage({
                 path: contentPath.path,
                 locale: contentPath.locale,
-                title: _.get(pageData, 'title', _.last(contentPath.path.split('/'))),
-                description: _.get(pageData, 'description', '') || '',
+                title: lodash.get(pageData, 'title', lodash.last(contentPath.path.split('/'))),
+                description: lodash.get(pageData, 'description', '') || '',
                 tags: newTags || [],
-                isPublished: _.get(pageData, 'isPublished', true),
+                isPublished: lodash.get(pageData, 'isPublished', true),
                 isPrivate: false,
                 content: pageData.content,
                 user: user,
@@ -125,7 +125,7 @@ export default {
         // -> Find existing folder
         const filePathInfo = path.parse(file.path)
         const folderPath = path.dirname(relPath).replace(/\\/g, '/')
-        let folderId = _.toInteger(_.findKey(this.assetFolders, (fld) => {
+        let folderId = lodash.toInteger(lodash.findKey(this.assetFolders, (fld) => {
             return fld === folderPath
         })) || null
 
@@ -136,7 +136,7 @@ export default {
             let currentFolderParentId = null
             for (const folderPart of folderParts) {
                 currentFolderPath.push(folderPart)
-                const existingFolderId = _.findKey(this.assetFolders, (fld) => {
+                const existingFolderId = lodash.findKey(this.assetFolders, (fld) => {
                     return fld === currentFolderPath.join('/')
                 })
                 if (!existingFolderId) {
@@ -145,10 +145,10 @@ export default {
                         name: folderPart,
                         parentId: currentFolderParentId
                     })
-                    _.set(this.assetFolders, newFolderObj.id, currentFolderPath.join('/'))
+                    lodash.set(this.assetFolders, newFolderObj.id, currentFolderPath.join('/'))
                     currentFolderParentId = newFolderObj.id
                 } else {
-                    currentFolderParentId = _.toInteger(existingFolderId)
+                    currentFolderParentId = lodash.toInteger(existingFolderId)
                 }
             }
             folderId = currentFolderParentId

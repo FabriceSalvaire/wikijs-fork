@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 import Pages from './pages.js'
 
@@ -57,7 +57,7 @@ export default class Tag extends Model {
     // Update tags for a page
     static async associateTags({ tags, page }) {
         // Format tags
-        tags = _.uniq(tags.map((t) => _.trim(t).toLowerCase()))
+        tags = lodash.uniq(tags.map((t) => lodash.trim(t).toLowerCase()))
 
         // Fetch tags from db
         // Fixme: could be large
@@ -68,7 +68,7 @@ export default class Tag extends Model {
         //  https://lodash.com/docs/4.17.15#differenceBy
         //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
         //  newTags = tags - existingTags
-        const newTags = _.filter(tags, (t) => !_.some(existingTags, ['tag', t])).map((t) => ({
+        const newTags = lodash.filter(tags, (t) => !lodash.some(existingTags, ['tag', t])).map((t) => ({
             tag: t,
             title: t
         }))
@@ -76,7 +76,7 @@ export default class Tag extends Model {
         if (newTags.length > 0) {
             if (WIKI.config.db.type === 'postgres') {
                 const createdTags = await WIKI.models.tags.query().insert(newTags)
-                existingTags = _.concat(existingTags, createdTags)
+                existingTags = lodash.concat(existingTags, createdTags)
             } else {
                 for (const newTag of newTags) {
                     const createdTag = await WIKI.models.tags.query().insert(newTag)
@@ -86,13 +86,13 @@ export default class Tag extends Model {
         }
 
         // Compute intersection of existingTags with tags
-        const targetTags = _.filter(existingTags, (t) => _.includes(tags, t.tag))
+        const targetTags = lodash.filter(existingTags, (t) => lodash.includes(tags, t.tag))
 
         // Fetch current page tags
         const currentTags = await page.$relatedQuery('tags')
 
         // Tags to relate
-        const tagsToRelate = _.differenceBy(targetTags, currentTags, 'id')
+        const tagsToRelate = lodash.differenceBy(targetTags, currentTags, 'id')
         if (tagsToRelate.length > 0) {
             if (WIKI.config.db.type === 'postgres')
                 await page.$relatedQuery('tags').relate(tagsToRelate)
@@ -103,9 +103,9 @@ export default class Tag extends Model {
         }
 
         // Tags to unrelate
-        const tagsToUnrelate = _.differenceBy(currentTags, targetTags, 'id')
+        const tagsToUnrelate = lodash.differenceBy(currentTags, targetTags, 'id')
         if (tagsToUnrelate.length > 0)
-            await page.$relatedQuery('tags').unrelate().whereIn('tags.id', _.map(tagsToUnrelate, 'id'))
+            await page.$relatedQuery('tags').unrelate().whereIn('tags.id', lodash.map(tagsToUnrelate, 'id'))
 
         page.tags = targetTags
     }

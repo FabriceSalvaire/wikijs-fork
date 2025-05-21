@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -18,13 +18,13 @@ export default {
         async searchEngines(obj, args, context, info) {
             let searchEngines = await WIKI.models.searchEngines.getSearchEngines()
             searchEngines = searchEngines.map((searchEngine) => {
-                const searchEngineInfo = _.find(WIKI.data.searchEngines, ['key', searchEngine.key]) || {}
+                const searchEngineInfo = lodash.find(WIKI.data.searchEngines, ['key', searchEngine.key]) || {}
                 return {
                     ...searchEngineInfo,
                     ...searchEngine,
-                    config: _.sortBy(
-                        _.transform(searchEngine.config, (res, value, key) => {
-                            const configData = _.get(searchEngineInfo.props, key, false)
+                    config: lodash.sortBy(
+                        lodash.transform(searchEngine.config, (res, value, key) => {
+                            const configData = lodash.get(searchEngineInfo.props, key, false)
                             if (configData) {
                                 res.push({
                                     key,
@@ -41,7 +41,7 @@ export default {
             })
             // if (args.filter) { searchEngines = graphHelper.filter(searchEngines, args.filter) }
             if (args.orderBy)
-                searchEngines = _.sortBy(searchEngines, [args.orderBy])
+                searchEngines = lodash.sortBy(searchEngines, [args.orderBy])
             return searchEngines
         }
     },
@@ -54,8 +54,8 @@ export default {
                         newActiveEngine = searchEngine.key
                     await WIKI.models.searchEngines.query().patch({
                         isEnabled: searchEngine.isEnabled,
-                        config: _.reduce(searchEngine.config, (result, value, key) => {
-                            _.set(result, `${value.key}`, _.get(JSON.parse(value.value), 'v', null))
+                        config: lodash.reduce(searchEngine.config, (result, value, key) => {
+                            lodash.set(result, `${value.key}`, lodash.get(JSON.parse(value.value), 'v', null))
                             return result
                         }, {})
                     }).where('key', searchEngine.key)

@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import fs from 'fs-extra'
 import * as path from 'node:path'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -61,21 +61,21 @@ export default class Editor extends Model {
             // -> Insert new editors
             let newEditors = []
             for (let editor of WIKI.data.editors) {
-                if (!_.some(dbEditors, ['key', editor.key])) {
+                if (!lodash.some(dbEditors, ['key', editor.key])) {
                     newEditors.push({
                         key: editor.key,
                         isEnabled: false,
-                        config: _.transform(editor.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        config: lodash.transform(editor.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {})
                     })
                 } else {
-                    const editorConfig = _.get(_.find(dbEditors, ['key', editor.key]), 'config', {})
+                    const editorConfig = lodash.get(lodash.find(dbEditors, ['key', editor.key]), 'config', {})
                     await WIKI.models.editors.query().patch({
-                        config: _.transform(editor.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(editor.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, editorConfig)
                     }).where('key', editor.key)

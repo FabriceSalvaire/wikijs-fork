@@ -51,7 +51,7 @@ export default {
             })
         )
 
-        // _.forOwn(_.omitBy(WIKI.config.logging.loggers, s => s.enabled === false), (loggerConfig, loggerKey) => {
+        // lodash.forOwn(lodash.omitBy(WIKI.config.logging.loggers, s => s.enabled === false), (loggerConfig, loggerKey) => {
         //   let loggerModule = require(`../modules/logging/${loggerKey}`)
         //   loggerModule.init(logger, loggerConfig)
         //   this.loggers[logger.key] = loggerModule

@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 const getos = import('getos')
 import * as os from 'node:os'
 import filesize from 'filesize'
@@ -34,7 +34,7 @@ export default {
     },
     SystemQuery: {
         flags() {
-            return _.transform(WIKI.config.flags, (result, value, key) => {
+            return lodash.transform(WIKI.config.flags, (result, value, key) => {
                 result.push({ key, value })
             }, [])
         },
@@ -43,7 +43,7 @@ export default {
         },
         async extensions() {
             const exts = Object.values(WIKI.extensions.ext).map((ext) =>
-                _.pick(ext, ['key', 'title', 'description', 'isInstalled'])
+                lodash.pick(ext, ['key', 'title', 'description', 'isInstalled'])
             )
             for (let ext of exts)
                 ext.isCompatible = await WIKI.extensions.ext[ext.key].isCompatible()
@@ -60,8 +60,8 @@ export default {
     },
     SystemMutation: {
         async updateFlags(obj, args, context) {
-            WIKI.config.flags = _.transform(args.flags, (result, row) => {
-                _.set(result, row.key, row.value)
+            WIKI.config.flags = lodash.transform(args.flags, (result, row) => {
+                lodash.set(result, row.key, row.value)
             }, {})
             await WIKI.configSvc.applyFlags()
             await WIKI.configSvc.saveToDb(['flags'])
@@ -82,7 +82,7 @@ export default {
         },
         async setTelemetry(obj, args, context) {
             try {
-                _.set(WIKI.config, 'telemetry.isEnabled', args.enabled)
+                lodash.set(WIKI.config, 'telemetry.isEnabled', args.enabled)
                 WIKI.telemetry.enabled = args.enabled
                 await WIKI.configSvc.saveToDb(['telemetry'])
                 return {
@@ -158,27 +158,27 @@ export default {
                         if (args.groupMode === `MULTI`) {
                             // -> Check if global admin
 
-                            if (_.some(usr.rights, ['role', 'admin']))
+                            if (lodash.some(usr.rights, ['role', 'admin']))
                                 usrGroup.push(1)
                             else {
                                 // -> Check if identical group already exists
 
-                                const currentRights = _.sortBy(
-                                    _.map(usr.rights, (r) => _.pick(r, ['role', 'path', 'exact', 'deny'])),
+                                const currentRights = lodash.sortBy(
+                                    lodash.map(usr.rights, (r) => lodash.pick(r, ['role', 'path', 'exact', 'deny'])),
                                     ['role', 'path', 'exact', 'deny']
                                 )
                                 const ruleSetId = crypto.createHash('sha1').update(JSON.stringify(currentRights))
                                     .digest('base64')
-                                const existingGroup = _.find(reuseGroups, ['hash', ruleSetId])
+                                const existingGroup = lodash.find(reuseGroups, ['hash', ruleSetId])
                                 if (existingGroup)
                                     usrGroup.push(existingGroup.groupId)
                                 else {
                                     // -> Build new group
 
-                                    const pageRules = _.map(usr.rights, (r) => {
+                                    const pageRules = lodash.map(usr.rights, (r) => {
                                         let roles = ['read:pages', 'read:assets', 'read:comments', 'write:comments']
                                         if (r.role === `write`) {
-                                            roles = _.concat(roles, [
+                                            roles = lodash.concat(roles, [
                                                 'write:pages',
                                                 'manage:pages',
                                                 'read:source',
@@ -197,7 +197,7 @@ export default {
                                         }
                                     })
 
-                                    const perms = _.chain(pageRules).reject('deny').map('roles').union().flatten()
+                                    const perms = lodash.chain(pageRules).reject('deny').map('roles').union().flatten()
                                         .value()
 
                                     // -> Create new group
@@ -265,7 +265,7 @@ export default {
          * Set HTTPS Redirection State
          */
         async setHTTPSRedirection(obj, args, context) {
-            _.set(WIKI.config, 'server.sslRedir', args.enabled)
+            lodash.set(WIKI.config, 'server.sslRedir', args.enabled)
             await WIKI.configSvc.saveToDb(['server'])
             return {
                 responseResult: graphHelper.generateSuccess('HTTP Redirection state set successfully.')
@@ -335,7 +335,7 @@ export default {
             return WIKI.version
         },
         dbType() {
-            return _.get(dbTypes, WIKI.config.db.type, 'Unknown DB')
+            return lodash.get(dbTypes, WIKI.config.db.type, 'Unknown DB')
         },
         async dbVersion() {
             let version = 'Unknown Version'
@@ -343,17 +343,17 @@ export default {
                 case 'mariadb':
                 case 'mysql':
                     const resultMYSQL = await WIKI.models.knex.raw('SELECT VERSION() as version;')
-                    version = _.get(resultMYSQL, '[0][0].version', 'Unknown Version')
+                    version = lodash.get(resultMYSQL, '[0][0].version', 'Unknown Version')
                     break
                 case 'mssql':
                     const resultMSSQL = await WIKI.models.knex.raw('SELECT @@VERSION as version;')
-                    version = _.get(resultMSSQL, '[0].version', 'Unknown Version')
+                    version = lodash.get(resultMSSQL, '[0].version', 'Unknown Version')
                     break
                 case 'postgres':
-                    version = _.get(WIKI.models, 'knex.client.version', 'Unknown Version')
+                    version = lodash.get(WIKI.models, 'knex.client.version', 'Unknown Version')
                     break
                 case 'sqlite':
-                    version = _.get(WIKI.models, 'knex.client.driver.VERSION', 'Unknown Version')
+                    version = lodash.get(WIKI.models, 'knex.client.driver.VERSION', 'Unknown Version')
                     break
             }
             return version
@@ -368,13 +368,13 @@ export default {
             return os.hostname()
         },
         httpPort() {
-            return WIKI.servers.servers.http ? _.get(WIKI.servers.servers.http.address(), 'port', 0) : 0
+            return WIKI.servers.servers.http ? lodash.get(WIKI.servers.servers.http.address(), 'port', 0) : 0
         },
         httpRedirection() {
-            return _.get(WIKI.config, 'server.sslRedir', false)
+            return lodash.get(WIKI.config, 'server.sslRedir', false)
         },
         httpsPort() {
-            return WIKI.servers.servers.https ? _.get(WIKI.servers.servers.https.address(), 'port', 0) : 0
+            return WIKI.servers.servers.https ? lodash.get(WIKI.servers.servers.https.address(), 'port', 0) : 0
         },
         latestVersion() {
             return WIKI.system.updates.version
@@ -409,7 +409,7 @@ export default {
         },
         sslExpirationDate() {
             return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
-                ? _.get(WIKI.config.letsencrypt, 'payload.expires', null)
+                ? lodash.get(WIKI.config.letsencrypt, 'payload.expires', null)
                 : null
         },
         sslProvider() {
@@ -430,26 +430,26 @@ export default {
             return WIKI.config.telemetry.clientId
         },
         async upgradeCapable() {
-            return !_.isNil(process.env.UPGRADE_COMPANION)
+            return !lodash.isNil(process.env.UPGRADE_COMPANION)
         },
         workingDirectory() {
             return process.cwd()
         },
         async groupsTotal() {
             const total = await WIKI.models.groups.query().count('* as total').first()
-            return _.toSafeInteger(total.total)
+            return lodash.toSafeInteger(total.total)
         },
         async pagesTotal() {
             const total = await WIKI.models.pages.query().count('* as total').first()
-            return _.toSafeInteger(total.total)
+            return lodash.toSafeInteger(total.total)
         },
         async usersTotal() {
             const total = await WIKI.models.users.query().count('* as total').first()
-            return _.toSafeInteger(total.total)
+            return lodash.toSafeInteger(total.total)
         },
         async tagsTotal() {
             const total = await WIKI.models.tags.query().count('* as total').first()
-            return _.toSafeInteger(total.total)
+            return lodash.toSafeInteger(total.total)
         }
     }
 }

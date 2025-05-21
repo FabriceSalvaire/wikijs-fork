@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -41,8 +41,8 @@ export default class Setting extends Model {
     static async getConfig() {
         const settings = await WIKI.models.settings.query()
         if (settings.length > 0) {
-            return _.reduce(settings, (res, val, key) => {
-                _.set(res, val.key, (_.has(val.value, 'v')) ? val.value.v : val.value)
+            return lodash.reduce(settings, (res, val, key) => {
+                lodash.set(res, val.key, (lodash.has(val.value, 'v')) ? val.value.v : val.value)
                 return res
             }, {})
         } else {

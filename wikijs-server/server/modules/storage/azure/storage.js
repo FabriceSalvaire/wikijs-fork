@@ -3,7 +3,7 @@ import * as stream from 'node:stream'
 import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
 import pageHelper from '../../../helpers/page.js'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -161,7 +161,7 @@ export default {
                 objectMode: true,
                 transform: async (asset, enc, cb) => {
                     const filename = (asset.folderId && asset.folderId > 0)
-                        ? `${_.get(assetFolders, asset.folderId)}/${asset.filename}`
+                        ? `${lodash.get(assetFolders, asset.folderId)}/${asset.filename}`
                         : asset.filename
                     WIKI.logger.info(`(STORAGE/AZURE) Adding asset ${filename}...`)
                     const blockBlobClient = this.container.getBlockBlobClient(filename)

@@ -5,7 +5,7 @@
 // ------------------------------------
 
 import GitLabStrategy from 'passport-gitlab2'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     init(passport, conf) {
@@ -26,7 +26,7 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...profile,
-                            picture: _.get(profile, 'avatarUrl', '')
+                            picture: lodash.get(profile, 'avatarUrl', '')
                         }
                     })
                     cb(null, user)

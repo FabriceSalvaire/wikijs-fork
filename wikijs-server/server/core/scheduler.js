@@ -1,6 +1,6 @@
 import moment from 'moment'
 import childProcess from 'child_process'
-import _ from 'lodash'
+import lodash from 'lodash'
 import configHelper from '../helpers/config.js'
 
 /* global WIKI */
@@ -109,7 +109,7 @@ export default {
         return this
     },
     start() {
-        _.forOwn(WIKI.data.jobs, (queueParams, queueName) => {
+        lodash.forOwn(WIKI.data.jobs, (queueParams, queueName) => {
             if (WIKI.config.offline && queueParams.offlineSkip) {
                 WIKI.logger.warn(`Skipping job ${queueName} because offline mode is enabled. [SKIPPED]`)
                 return
@@ -117,11 +117,11 @@ export default {
 
             const schedule = (configHelper.isValidDurationString(queueParams.schedule)) ? queueParams.schedule : 'P1D'
             this.registerJob({
-                name: _.kebabCase(queueName),
-                immediate: _.get(queueParams, 'onInit', false),
+                name: lodash.kebabCase(queueName),
+                immediate: lodash.get(queueParams, 'onInit', false),
                 schedule: schedule,
-                repeat: _.get(queueParams, 'repeat', false),
-                worker: _.get(queueParams, 'worker', false)
+                repeat: lodash.get(queueParams, 'repeat', false),
+                worker: lodash.get(queueParams, 'worker', false)
             })
         })
     },

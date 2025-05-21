@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import fs from 'fs-extra'
 import * as path from 'node:path'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -42,8 +42,8 @@ export default class Authentication extends Model {
         const strategies = await WIKI.models.authentication.query().orderBy('order')
         return strategies.map((str) => ({
             ...str,
-            domainWhitelist: _.get(str.domainWhitelist, 'v', []),
-            autoEnrollGroups: _.get(str.autoEnrollGroups, 'v', [])
+            domainWhitelist: lodash.get(str.domainWhitelist, 'v', []),
+            autoEnrollGroups: lodash.get(str.autoEnrollGroups, 'v', [])
         }))
     }
 
@@ -53,7 +53,7 @@ export default class Authentication extends Model {
         let socialStrategies = []
 
         for (let stg of strategies) {
-            const stgInfo = _.find(WIKI.data.authentication, ['key', stg.key]) || {}
+            const stgInfo = lodash.find(WIKI.data.authentication, ['key', stg.key]) || {}
             if (stgInfo.useForm) {
                 formStrategies.push({
                     key: stg.key,
@@ -100,7 +100,7 @@ export default class Authentication extends Model {
 
             for (const strategy of dbStrategies) {
                 let newProps = false
-                const strategyDef = _.find(WIKI.data.authentication, ['key', strategy.strategyKey])
+                const strategyDef = lodash.find(WIKI.data.authentication, ['key', strategy.strategyKey])
                 if (!strategyDef) {
                     await WIKI.models.authentication.query().delete().where('key', strategy.key)
                     WIKI.logger.info(
@@ -108,9 +108,9 @@ export default class Authentication extends Model {
                     )
                     continue
                 }
-                strategy.config = _.transform(strategyDef.props, (result, value, key) => {
-                    if (!_.has(result, key)) {
-                        _.set(result, key, value.default)
+                strategy.config = lodash.transform(strategyDef.props, (result, value, key) => {
+                    if (!lodash.has(result, key)) {
+                        lodash.set(result, key, value.default)
                         // we have some new properties added to an existing auth strategy to write to the database
                         newProps = true
                     }

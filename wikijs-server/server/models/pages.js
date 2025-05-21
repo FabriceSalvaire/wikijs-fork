@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import _ from 'lodash'
+import lodash from 'lodash'
 import { Type as JSBinType } from 'js-binary'
 import pageHelper from '../helpers/page.js'
 import * as path from 'node:path'
@@ -278,7 +278,7 @@ export default class Page extends Model {
             throw new WIKI.Error.PageDuplicateCreate()
 
         // -> Check for empty content
-        if (!opts.content || _.trim(opts.content).length < 1)
+        if (!opts.content || lodash.trim(opts.content).length < 1)
             throw new WIKI.Error.PageEmptyContent()
 
         // -> Format CSS Scripts
@@ -289,7 +289,7 @@ export default class Page extends Model {
                 path: opts.path
             })
         ) {
-            if (!_.isEmpty(opts.scriptCss))
+            if (!lodash.isEmpty(opts.scriptCss))
                 scriptCss = new CleanCSS({ inline: false }).minify(opts.scriptCss).styles
             else
                 scriptCss = ''
@@ -311,7 +311,7 @@ export default class Page extends Model {
             authorId: opts.user.id,
             content: opts.content,
             creatorId: opts.user.id,
-            contentType: _.get(_.find(WIKI.data.editors, ['key', opts.editor]), `contentType`, 'text'),
+            contentType: lodash.get(lodash.find(WIKI.data.editors, ['key', opts.editor]), `contentType`, 'text'),
             description: opts.description,
             editorKey: opts.editor,
             hash: pageHelper.generateHash({
@@ -398,7 +398,7 @@ export default class Page extends Model {
         }
 
         // -> Check for empty content
-        if (!opts.content || _.trim(opts.content).length < 1)
+        if (!opts.content || lodash.trim(opts.content).length < 1)
             throw new WIKI.Error.PageEmptyContent()
 
         // -> Create version snapshot
@@ -410,25 +410,25 @@ export default class Page extends Model {
         })
 
         // -> Format Extra Properties
-        if (!_.isPlainObject(ogPage.extra))
+        if (!lodash.isPlainObject(ogPage.extra))
             ogPage.extra = {}
 
         // -> Format CSS Scripts
-        let scriptCss = _.get(ogPage, 'extra.css', '')
+        let scriptCss = lodash.get(ogPage, 'extra.css', '')
         if (
             WIKI.auth.checkAccess(opts.user, ['write:styles'], {
                 locale: opts.locale,
                 path: opts.path
             })
         ) {
-            if (!_.isEmpty(opts.scriptCss))
+            if (!lodash.isEmpty(opts.scriptCss))
                 scriptCss = new CleanCSS({ inline: false }).minify(opts.scriptCss).styles
             else
                 scriptCss = ''
         }
 
         // -> Format JS Scripts
-        let scriptJs = _.get(ogPage, 'extra.js', '')
+        let scriptJs = lodash.get(ogPage, 'extra.js', '')
         if (
             WIKI.auth.checkAccess(opts.user, ['write:scripts'], {
                 locale: opts.locale,
@@ -533,7 +533,7 @@ export default class Page extends Model {
 
         // -> Check content type
         const sourceContentType = ogPage.contentType
-        const targetContentType = _.get(_.find(WIKI.data.editors, ['key', opts.editor]), `contentType`, 'text')
+        const targetContentType = lodash.get(lodash.find(WIKI.data.editors, ['key', opts.editor]), `contentType`, 'text')
         const shouldConvert = sourceContentType !== targetContentType
         let convertedContent = null
 
@@ -683,7 +683,7 @@ export default class Page extends Model {
      */
     static async movePage(opts) {
         let page
-        if (_.has(opts, 'id'))
+        if (lodash.has(opts, 'id'))
             page = await WIKI.models.pages.query().findById(opts.id)
         else {
             page = await WIKI.models.pages.query().findOne({
@@ -751,8 +751,8 @@ export default class Page extends Model {
         })
 
         // -> Move page
-        const destinationTitle = page.title === _.last(page.path.split('/'))
-            ? _.last(opts.destinationPath.split('/'))
+        const destinationTitle = page.title === lodash.last(page.path.split('/'))
+            ? lodash.last(opts.destinationPath.split('/'))
             : page.title
         await WIKI.models.pages.query().patch({
             path: opts.destinationPath,
@@ -817,7 +817,7 @@ export default class Page extends Model {
      * @returns {Promise} Promise with no value
      */
     static async deletePage(opts) {
-        const page = await WIKI.models.pages.getPageFromDb(_.has(opts, 'id') ? opts.id : opts)
+        const page = await WIKI.models.pages.getPageFromDb(lodash.has(opts, 'id') ? opts.id : opts)
         if (!page)
             throw new WIKI.Error.PageNotFound()
 
@@ -1006,7 +1006,7 @@ export default class Page extends Model {
      * @returns {Promise} Promise of the Page Model Instance
      */
     static async getPageFromDb(opts) {
-        const queryModeID = _.isNumber(opts)
+        const queryModeID = lodash.isNumber(opts)
         try {
             return WIKI.models.pages.query()
                 .column([
@@ -1098,8 +1098,8 @@ export default class Page extends Model {
                 description: page.description,
                 editorKey: page.editorKey,
                 extra: {
-                    css: _.get(page, 'extra.css', ''),
-                    js: _.get(page, 'extra.js', '')
+                    css: lodash.get(page, 'extra.css', ''),
+                    js: lodash.get(page, 'extra.js', '')
                 },
                 isPrivate: page.isPrivate === 1 || page.isPrivate === true,
                 isPublished: page.isPublished === 1 || page.isPublished === true,
@@ -1107,9 +1107,9 @@ export default class Page extends Model {
                 publishStartDate: page.publishStartDate,
                 contentType: page.contentType,
                 render: page.render,
-                tags: page.tags.map((t) => _.pick(t, ['tag', 'title'])),
+                tags: page.tags.map((t) => lodash.pick(t, ['tag', 'title'])),
                 title: page.title,
-                toc: _.isString(page.toc) ? page.toc : JSON.stringify(page.toc),
+                toc: lodash.isString(page.toc) ? page.toc : JSON.stringify(page.toc),
                 updatedAt: page.updatedAt
             })
         )

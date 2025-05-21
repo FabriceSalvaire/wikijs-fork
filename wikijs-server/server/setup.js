@@ -3,7 +3,7 @@ import fs from 'fs-extra'
 import * as http from 'node:http'
 import * as path from 'node:path'
 import { v4 as uuid } from 'uuid'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 const crypto = await import('node:crypto')
 
@@ -71,30 +71,30 @@ export default async () => {
         WIKI.logger.info('Finalize setup...')
         try {
             // Set config
-            _.set(WIKI.config, 'auth', {
+            lodash.set(WIKI.config, 'auth', {
                 audience: 'urn:wiki.js',
                 tokenExpiration: '30m',
                 tokenRenewal: '14d'
             })
-            _.set(WIKI.config, 'company', '')
-            _.set(WIKI.config, 'features', {
+            lodash.set(WIKI.config, 'company', '')
+            lodash.set(WIKI.config, 'features', {
                 featurePageRatings: true,
                 featurePageComments: true,
                 featurePersonalWikis: true
             })
-            _.set(WIKI.config, 'graphEndpoint', 'https://graph.requarks.io')
-            _.set(WIKI.config, 'host', req.body.siteUrl)
-            _.set(WIKI.config, 'lang', {
+            lodash.set(WIKI.config, 'graphEndpoint', 'https://graph.requarks.io')
+            lodash.set(WIKI.config, 'host', req.body.siteUrl)
+            lodash.set(WIKI.config, 'lang', {
                 code: 'en',
                 autoUpdate: true,
                 namespacing: false,
                 namespaces: []
             })
-            _.set(WIKI.config, 'logo', {
+            lodash.set(WIKI.config, 'logo', {
                 hasLogo: false,
                 logoIsSquare: false
             })
-            _.set(WIKI.config, 'mail', {
+            lodash.set(WIKI.config, 'mail', {
                 senderName: '',
                 senderEmail: '',
                 host: '',
@@ -109,18 +109,18 @@ export default async () => {
                 dkimKeySelector: '',
                 dkimPrivateKey: ''
             })
-            _.set(WIKI.config, 'seo', {
+            lodash.set(WIKI.config, 'seo', {
                 description: '',
                 robots: ['index', 'follow'],
                 analyticsService: '',
                 analyticsId: ''
             })
-            _.set(WIKI.config, 'sessionSecret', (await crypto.randomBytes(32)).toString('hex'))
-            _.set(WIKI.config, 'telemetry', {
+            lodash.set(WIKI.config, 'sessionSecret', (await crypto.randomBytes(32)).toString('hex'))
+            lodash.set(WIKI.config, 'telemetry', {
                 isEnabled: req.body.telemetry === true,
                 clientId: uuid()
             })
-            _.set(WIKI.config, 'theming', {
+            lodash.set(WIKI.config, 'theming', {
                 theme: 'default',
                 darkMode: false,
                 iconset: 'mdi',
@@ -128,7 +128,7 @@ export default async () => {
                 injectHead: '',
                 injectBody: ''
             })
-            _.set(WIKI.config, 'title', 'Wiki.js')
+            lodash.set(WIKI.config, 'title', 'Wiki.js')
 
             // Init Telemetry
             await WIKI.kernel.initTelemetry()
@@ -160,7 +160,7 @@ export default async () => {
                 }
             })
 
-            _.set(WIKI.config, 'certs', {
+            lodash.set(WIKI.config, 'certs', {
                 jwk: pem2jwk(certs.publicKey),
                 public: certs.publicKey,
                 private: certs.privateKey
@@ -364,7 +364,7 @@ export default async () => {
             WIKI.logger.info('Stopping Setup...')
             WIKI.server.destroy(() => {
                 WIKI.logger.info('Setup stopped. Starting Wiki.js...')
-                _.delay(() => {
+                lodash.delay(() => {
                     WIKI.kernel.bootMaster()
                 }, 1000)
             })

@@ -5,7 +5,7 @@ import ExpressBrute from 'express-brute'
 import BruteKnex from '../helpers/brute-knex.js'
 const router = express.Router()
 import moment from 'moment'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 const bruteforce = new ExpressBrute(
     new BruteKnex({
@@ -26,7 +26,7 @@ const bruteforce = new ExpressBrute(
  * Login form
  */
 router.get('/login', async (req, res, next) => {
-    _.set(res.locals, 'pageMeta.title', 'Login')
+    lodash.set(res.locals, 'pageMeta.title', 'Login')
 
     if (req.query.legacy || (req.get('user-agent') && req.get('user-agent').indexOf('Trident') >= 0)) {
         const { formStrategies, socialStrategies } = await WIKI.models.authentication.getStrategiesForLegacyClient()
@@ -39,12 +39,12 @@ router.get('/login', async (req, res, next) => {
         // -> Bypass Login
         if (WIKI.config.auth.autoLogin && !req.query.all) {
             const stg = await WIKI.models.authentication.query().orderBy('order').first()
-            const stgInfo = _.find(WIKI.data.authentication, ['key', stg.strategyKey])
+            const stgInfo = lodash.find(WIKI.data.authentication, ['key', stg.strategyKey])
             if (!stgInfo.useForm)
                 return res.redirect(`/login/${stg.key}`)
         }
         // -> Show Login
-        const bgUrl = !_.isEmpty(WIKI.config.auth.loginBgUrl)
+        const bgUrl = !lodash.isEmpty(WIKI.config.auth.loginBgUrl)
             ? WIKI.config.auth.loginBgUrl
             : '/_assets/img/splash/1.jpg'
         res.render('login', { bgUrl, hideLocal: WIKI.config.auth.hideLocal })
@@ -97,7 +97,7 @@ router.all('/login/:strategy/callback', async (req, res, next) => {
  * LEGACY - Login form handling
  */
 router.post('/login', bruteforce.prevent, async (req, res, next) => {
-    _.set(res.locals, 'pageMeta.title', 'Login')
+    lodash.set(res.locals, 'pageMeta.title', 'Login')
 
     if (req.query.legacy || req.get('user-agent').indexOf('Trident') >= 0) {
         try {
@@ -136,7 +136,7 @@ router.get('/logout', async (req, res) => {
  * Register form
  */
 router.get('/register', async (req, res, next) => {
-    _.set(res.locals, 'pageMeta.title', 'Register')
+    lodash.set(res.locals, 'pageMeta.title', 'Register')
     const localStrg = await WIKI.models.authentication.getStrategy('local')
     if (localStrg.selfRegistration)
         res.render('register')
@@ -178,7 +178,7 @@ router.get('/login-reset/:token', bruteforce.prevent, async (req, res, next) => 
             userId: usr.id,
             kind: 'changePwd'
         })
-        const bgUrl = !_.isEmpty(WIKI.config.auth.loginBgUrl)
+        const bgUrl = !lodash.isEmpty(WIKI.config.auth.loginBgUrl)
             ? WIKI.config.auth.loginBgUrl
             : '/_assets/img/splash/1.jpg'
         res.render('login', { bgUrl, hideLocal: WIKI.config.auth.hideLocal, changePwdContinuationToken })

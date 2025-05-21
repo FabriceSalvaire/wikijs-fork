@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -67,7 +67,7 @@ export default class AssetFolder extends Model {
             }).select('*').from('ancestors')
         }
         // The ancestors are from children to grandparents, must reverse for correct path order.
-        return _.reverse(hier)
+        return lodash.reverse(hier)
     }
 
     /**
@@ -77,11 +77,11 @@ export default class AssetFolder extends Model {
         const all = await WIKI.models.assetFolders.query()
         let folders = {}
         all.forEach((fld) => {
-            _.set(folders, fld.id, fld.slug)
+            lodash.set(folders, fld.id, fld.slug)
             let parentId = fld.parentId
             while (parentId !== null || parentId > 0) {
-                const parent = _.find(all, ['id', parentId])
-                _.set(folders, fld.id, `${parent.slug}/${_.get(folders, fld.id)}`)
+                const parent = lodash.find(all, ['id', parentId])
+                lodash.set(folders, fld.id, `${parent.slug}/${lodash.get(folders, fld.id)}`)
                 parentId = parent.parentId
             }
         })

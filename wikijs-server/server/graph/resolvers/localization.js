@@ -1,5 +1,5 @@
 import graphHelper from '../../helpers/graph.js'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -27,12 +27,12 @@ export default {
                 'availability'
             )
             remoteLocales = remoteLocales || localLocales
-            return _.map(remoteLocales, (rl) => {
-                let isInstalled = _.some(localLocales, ['code', rl.code])
+            return lodash.map(remoteLocales, (rl) => {
+                let isInstalled = lodash.some(localLocales, ['code', rl.code])
                 return {
                     ...rl,
                     isInstalled,
-                    installDate: isInstalled ? _.find(localLocales, ['code', rl.code]).updatedAt : null
+                    installDate: isInstalled ? lodash.find(localLocales, ['code', rl.code]).updatedAt : null
                 }
             })
         },
@@ -68,7 +68,7 @@ export default {
                 WIKI.config.lang.code = args.locale
                 WIKI.config.lang.autoUpdate = args.autoUpdate
                 WIKI.config.lang.namespacing = args.namespacing
-                WIKI.config.lang.namespaces = _.union(args.namespaces, [args.locale])
+                WIKI.config.lang.namespaces = lodash.union(args.namespaces, [args.locale])
 
                 const newLocale = await WIKI.models.locales.query().select('isRTL').where('code', args.locale).first()
                 WIKI.config.lang.rtl = newLocale.isRTL

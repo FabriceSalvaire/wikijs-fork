@@ -1,5 +1,5 @@
 import request from 'request-promise'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -22,7 +22,7 @@ export default {
                         variables: {}
                     }
                 })
-                return _.get(resp, 'data.sponsors.list', [])
+                return lodash.get(resp, 'data.sponsors.list', [])
             } catch (err) {
                 WIKI.logger.warn(err)
             }

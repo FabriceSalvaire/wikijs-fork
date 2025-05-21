@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -25,7 +25,7 @@ export default {
     MailMutation: {
         async sendTest(obj, args, context) {
             try {
-                if (_.isEmpty(args.recipientEmail) || args.recipientEmail.length < 6)
+                if (lodash.isEmpty(args.recipientEmail) || args.recipientEmail.length < 6)
                     throw new WIKI.Error.MailInvalidRecipient()
 
                 await WIKI.mail.send({

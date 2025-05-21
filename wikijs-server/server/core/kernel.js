@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import EventEmitter from 'eventemitter2'
 // https://www.npmjs.com/package/stacktracey
 // import StackTracey from 'stacktracey'
@@ -9,7 +9,7 @@ export default {
     async init() {
         WIKI.logger.info('@kernel init...')
         WIKI.logger.info('=======================================')
-        WIKI.logger.info(`= Wiki.js ${_.padEnd(WIKI.version + ' ', 29, '=')}`)
+        WIKI.logger.info(`= Wiki.js ${lodash.padEnd(WIKI.version + ' ', 29, '=')}`)
         WIKI.logger.info('=======================================')
         WIKI.logger.info('Initializing...')
 

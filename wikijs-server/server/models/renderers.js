@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import * as path from 'node:path'
 import fs from 'fs-extra'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import { DepGraph } from 'dependency-graph'
 import commonHelper from '../helpers/common.js'
@@ -66,21 +66,21 @@ export default class Renderer extends Model {
             // -> Insert new Renderers
             let newRenderers = []
             for (let renderer of WIKI.data.renderers) {
-                if (!_.some(dbRenderers, ['key', renderer.key])) {
+                if (!lodash.some(dbRenderers, ['key', renderer.key])) {
                     newRenderers.push({
                         key: renderer.key,
-                        isEnabled: _.get(renderer, 'enabledDefault', true),
-                        config: _.transform(renderer.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        isEnabled: lodash.get(renderer, 'enabledDefault', true),
+                        config: lodash.transform(renderer.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {})
                     })
                 } else {
-                    const rendererConfig = _.get(_.find(dbRenderers, ['key', renderer.key]), 'config', {})
+                    const rendererConfig = lodash.get(lodash.find(dbRenderers, ['key', renderer.key]), 'config', {})
                     await WIKI.models.renderers.query().patch({
-                        config: _.transform(renderer.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(renderer.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, rendererConfig)
                     }).where('key', renderer.key)
@@ -98,7 +98,7 @@ export default class Renderer extends Model {
 
             // -> Delete removed Renderers
             for (const renderer of dbRenderers) {
-                if (!_.some(WIKI.data.renderers, ['key', renderer.key])) {
+                if (!lodash.some(WIKI.data.renderers, ['key', renderer.key])) {
                     await WIKI.models.renderers.query().where('key', renderer.key).del()
                     WIKI.logger.info(
                         `Removed renderer ${renderer.key} because it is no longer present in the modules folder: [ OK ]`
@@ -117,7 +117,7 @@ export default class Renderer extends Model {
         const renderersDb = await WIKI.models.renderers.query().where('isEnabled', true)
         if (renderersDb && renderersDb.length > 0) {
             const renderers = renderersDb.map((rdr) => {
-                const renderer = _.find(WIKI.data.renderers, ['key', rdr.key])
+                const renderer = lodash.find(WIKI.data.renderers, ['key', rdr.key])
                 return {
                     ...renderer,
                     config: rdr.config
@@ -125,8 +125,8 @@ export default class Renderer extends Model {
             })
 
             // Build tree
-            const rawCores = _.filter(renderers, (renderer) => !_.has(renderer, 'dependsOn')).map((core) => {
-                core.children = _.filter(renderers, ['dependsOn', core.key])
+            const rawCores = lodash.filter(renderers, (renderer) => !lodash.has(renderer, 'dependsOn')).map((core) => {
+                core.children = lodash.filter(renderers, ['dependsOn', core.key])
                 return core
             })
 
@@ -145,11 +145,11 @@ export default class Renderer extends Model {
             })
 
             // Filter unused cores
-            let activeCoreKeys = _.filter(rawCores, ['input', contentType]).map((core) => core.key)
-            _.clone(activeCoreKeys).map((coreKey) => {
-                activeCoreKeys = _.union(activeCoreKeys, graph.dependenciesOf(coreKey))
+            let activeCoreKeys = lodash.filter(rawCores, ['input', contentType]).map((core) => core.key)
+            lodash.clone(activeCoreKeys).map((coreKey) => {
+                activeCoreKeys = lodash.union(activeCoreKeys, graph.dependenciesOf(coreKey))
             })
-            const activeCores = _.filter(rawCores, (core) => _.includes(activeCoreKeys, core.key))
+            const activeCores = lodash.filter(rawCores, (core) => lodash.includes(activeCoreKeys, core.key))
 
             // Rebuild dependency graph with active cores
             const graphActive = new DepGraph({ circular: true })
@@ -167,8 +167,8 @@ export default class Renderer extends Model {
 
             // Reorder cores in reverse dependency order
             let orderedCores = []
-            _.reverse(graphActive.overallOrder()).map((coreKey) => {
-                orderedCores.push(_.find(rawCores, ['key', coreKey]))
+            lodash.reverse(graphActive.overallOrder()).map((coreKey) => {
+                orderedCores.push(lodash.find(rawCores, ['key', coreKey]))
             })
 
             return orderedCores

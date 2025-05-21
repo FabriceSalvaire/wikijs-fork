@@ -1,5 +1,5 @@
 import mdExpandTabs from 'markdown-it-expand-tabs'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 // ------------------------------------
 // Markdown - Expand Tabs
@@ -8,7 +8,7 @@ import _ from 'lodash'
 export default {
     init(md, conf) {
         md.use(mdExpandTabs, {
-            tabWidth: _.toInteger(conf.tabWidth || 4)
+            tabWidth: lodash.toInteger(conf.tabWidth || 4)
         })
     }
 }

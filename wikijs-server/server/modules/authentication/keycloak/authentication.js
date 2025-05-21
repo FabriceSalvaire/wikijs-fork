@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -24,7 +24,7 @@ export default {
                 passReqToCallback: true
             }, async (req, accessToken, refreshToken, results, profile, cb) => {
                 let displayName = profile.username
-                if (_.isString(profile.fullName) && profile.fullName.length > 0)
+                if (lodash.isString(profile.fullName) && profile.fullName.length > 0)
                     displayName = profile.fullName
                 try {
                     const user = await WIKI.models.users.processProfile({

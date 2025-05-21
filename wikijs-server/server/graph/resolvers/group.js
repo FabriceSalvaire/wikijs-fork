@@ -1,6 +1,6 @@
 import graphHelper from '../../helpers/graph.js'
 import safeRegex from 'safe-regex'
-import _ from 'lodash'
+import lodash from 'lodash'
 import gql from 'graphql'
 
 /* global WIKI */
@@ -51,7 +51,7 @@ export default {
             if (
                 WIKI.auth.checkExclusiveAccess(req.user, ['write:groups'], ['manage:groups', 'manage:system']) &&
                 grp.permissions.some((p) => {
-                    const resType = _.last(p.split(':'))
+                    const resType = lodash.last(p.split(':'))
                     return ['users', 'groups', 'navigation', 'theme', 'api', 'system'].includes(resType)
                 })
             ) {
@@ -147,7 +147,7 @@ export default {
         async update(obj, args, { req }) {
             // Check for unsafe regex page rules
             if (
-                _.some(args.pageRules, (pr) => {
+                lodash.some(args.pageRules, (pr) => {
                     return pr.match === 'REGEX' && !safeRegex(pr.path)
                 })
             ) {
@@ -155,14 +155,14 @@ export default {
             }
 
             // Set default redirect on login value
-            if (_.isEmpty(args.redirectOnLogin))
+            if (lodash.isEmpty(args.redirectOnLogin))
                 args.redirectOnLogin = '/'
 
             // Check assigned permissions for write:groups
             if (
                 WIKI.auth.checkExclusiveAccess(req.user, ['write:groups'], ['manage:groups', 'manage:system']) &&
                 args.permissions.some((p) => {
-                    const resType = _.last(p.split(':'))
+                    const resType = lodash.last(p.split(':'))
                     return ['users', 'groups', 'navigation', 'theme', 'api', 'system'].includes(resType)
                 })
             ) {
@@ -172,7 +172,7 @@ export default {
             // Check assigned permissions for manage:groups
             if (
                 WIKI.auth.checkExclusiveAccess(req.user, ['manage:groups'], ['manage:system']) &&
-                args.permissions.some((p) => _.last(p.split(':')) === 'system')
+                args.permissions.some((p) => lodash.last(p.split(':')) === 'system')
             ) {
                 throw new gql.GraphQLError(
                     'You are not authorized to manage this group or assign the manage:system permissions.'

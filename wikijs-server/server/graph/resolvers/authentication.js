@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import fs from 'fs-extra'
 import * as path from 'node:path'
 import graphHelper from '../../helpers/graph.js'
@@ -42,8 +42,8 @@ export default {
             return WIKI.data.authentication.map((stg) => ({
                 ...stg,
                 isAvailable: stg.isAvailable === true,
-                props: _.sortBy(
-                    _.transform(stg.props, (res, value, key) => {
+                props: lodash.sortBy(
+                    lodash.transform(stg.props, (res, value, key) => {
                         res.push({
                             key,
                             value: JSON.stringify(value)
@@ -59,13 +59,13 @@ export default {
         async activeStrategies(obj, args, context, info) {
             let strategies = await WIKI.models.authentication.getStrategies()
             strategies = strategies.map((stg) => {
-                const strategyInfo = _.find(WIKI.data.authentication, ['key', stg.strategyKey]) || {}
+                const strategyInfo = lodash.find(WIKI.data.authentication, ['key', stg.strategyKey]) || {}
                 return {
                     ...stg,
                     strategy: strategyInfo,
-                    config: _.sortBy(
-                        _.transform(stg.config, (res, value, key) => {
-                            const configData = _.get(strategyInfo.props, key, false)
+                    config: lodash.sortBy(
+                        lodash.transform(stg.config, (res, value, key) => {
+                            const configData = lodash.get(strategyInfo.props, key, false)
                             if (configData) {
                                 res.push({
                                     key,
@@ -80,7 +80,7 @@ export default {
                     )
                 }
             })
-            return args.enabledOnly ? _.filter(strategies, 'isEnabled') : strategies
+            return args.enabledOnly ? lodash.filter(strategies, 'isEnabled') : strategies
         }
     },
     AuthenticationMutation: {
@@ -214,8 +214,8 @@ export default {
                         displayName: str.displayName,
                         order: str.order,
                         isEnabled: str.isEnabled,
-                        config: _.reduce(str.config, (result, value, key) => {
-                            _.set(result, `${value.key}`, _.get(JSON.parse(value.value), 'v', null))
+                        config: lodash.reduce(str.config, (result, value, key) => {
+                            lodash.set(result, `${value.key}`, lodash.get(JSON.parse(value.value), 'v', null))
                             return result
                         }, {}),
                         selfRegistration: str.selfRegistration,
@@ -223,7 +223,7 @@ export default {
                         autoEnrollGroups: { v: str.autoEnrollGroups }
                     }
 
-                    if (_.some(previousStrategies, ['key', str.key])) {
+                    if (lodash.some(previousStrategies, ['key', str.key])) {
                         await WIKI.models.authentication.query().patch({
                             key: str.key,
                             strategyKey: str.strategyKey,
@@ -238,10 +238,10 @@ export default {
                     }
                 }
 
-                for (const str of _.differenceBy(previousStrategies, args.strategies, 'key')) {
+                for (const str of lodash.differenceBy(previousStrategies, args.strategies, 'key')) {
                     const hasUsers = await WIKI.models.users.query().count('* as total').where({ providerKey: str.key })
                         .first()
-                    if (_.toSafeInteger(hasUsers.total) > 0)
+                    if (lodash.toSafeInteger(hasUsers.total) > 0)
                         throw new Error(`Cannot delete ${str.displayName} as 1 or more users are still using it.`)
                     else
                         await WIKI.models.authentication.query().delete().where('key', str.key)

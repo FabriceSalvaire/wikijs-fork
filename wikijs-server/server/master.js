@@ -1,6 +1,6 @@
 import compression from 'compression'
 import * as path from 'node:path'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 // import autoload from 'auto-load'
 import bodyParser from 'body-parser'
@@ -206,7 +206,7 @@ export default async () => {
             })
         } else {
             res.status(err.status || 500)
-            _.set(res.locals, 'pageMeta.title', 'Error')
+            lodash.set(res.locals, 'pageMeta.title', 'Error')
             res.render('error', {
                 message: err.message,
                 error: WIKI.IS_DEBUG ? err : {}

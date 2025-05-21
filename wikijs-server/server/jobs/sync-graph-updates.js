@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import { createApolloFetch } from 'apollo-fetch'
 
 /* global WIKI */
@@ -28,7 +28,7 @@ export default async () => {
                 version: WIKI.version
             }
         })
-        const info = _.get(resp, 'data.releases.checkForUpdates', false)
+        const info = lodash.get(resp, 'data.releases.checkForUpdates', false)
         if (info)
             WIKI.system.updates = info
 

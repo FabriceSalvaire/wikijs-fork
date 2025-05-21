@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     async init($, config) {
@@ -7,10 +7,10 @@ export default {
                 let content = `<tabset>`
                 let tabs = []
                 let tabContents = []
-                $(elm).nextUntil(_.times(i, (t) => `h${t + 1}`).join(', '), `h${i + 1}`).each((hidx, hd) => {
+                $(elm).nextUntil(lodash.times(i, (t) => `h${t + 1}`).join(', '), `h${i + 1}`).each((hidx, hd) => {
                     tabs.push(`<li>${$(hd).html()}</li>`)
                     let tabContent = ''
-                    $(hd).nextUntil(_.times(i + 1, (t) => `h${t + 1}`).join(', ')).each((cidx, celm) => {
+                    $(hd).nextUntil(lodash.times(i + 1, (t) => `h${t + 1}`).join(', ')).each((cidx, celm) => {
                         tabContent += $.html(celm)
                         $(celm).remove()
                     })

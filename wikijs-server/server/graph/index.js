@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import * as fs from 'node:fs'
 import fsp from 'node:fs/promises'
 import * as path from 'node:path'
@@ -34,7 +34,7 @@ let resolvers = {
 for await (const file of fsp.glob(path.join(WIKI.SERVERPATH, 'graph/resolvers/*.js'))) {
     // WIKI.logger.info(`import resolver ${file}`)
     const resolver = (await import(file)).default
-    _.merge(resolvers, resolver)
+    lodash.merge(resolvers, resolver)
 }
 
 // Directives

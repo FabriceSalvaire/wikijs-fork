@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import { createApolloFetch } from 'apollo-fetch'
 
 /* global WIKI */
@@ -24,19 +24,19 @@ export default async (localeCode) => {
                 code: localeCode
             }
         })
-        const strings = _.get(respStrings, 'data.localization.strings', [])
+        const strings = lodash.get(respStrings, 'data.localization.strings', [])
         let lcObj = {}
-        _.forEach(strings, (row) => {
-            if (_.includes(row.key, '::'))
+        lodash.forEach(strings, (row) => {
+            if (lodash.includes(row.key, '::'))
                 return
-            if (_.isEmpty(row.value))
+            if (lodash.isEmpty(row.value))
                 row.value = row.key
-            _.set(lcObj, row.key.replace(':', '.'), row.value)
+            lodash.set(lcObj, row.key.replace(':', '.'), row.value)
         })
 
         const locales = await WIKI.cache.get('locales')
         if (locales) {
-            const currentLocale = _.find(locales, ['code', localeCode]) || {}
+            const currentLocale = lodash.find(locales, ['code', localeCode]) || {}
             const existingLocale = await WIKI.models.locales.query().where('code', localeCode).first()
             if (existingLocale) {
                 await WIKI.models.locales.query().patch({

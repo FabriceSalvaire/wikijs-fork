@@ -8,7 +8,7 @@
 
 /**************************************************************************************************/
 
-import _ from 'lodash'
+import lodash from 'lodash'
 import { flatten } from 'flat'
 
 import * as loggerHelper from './logger-helper.js'
@@ -111,7 +111,7 @@ export default function (options) {
     }
 
     options = options || {}
-    _.defaultsDeep(options, defaults)
+    lodash.defaultsDeep(options, defaults)
     setupOptions = validateArrayFields(options, defaults)
     setBodyLengthFields(setupOptions)
 
@@ -126,9 +126,9 @@ function validateArrayFields(options, defaults) {
     delete defaultsCopy.logger
 
     Object.keys(flatten(defaultsCopy)).forEach((key) => {
-        let optionValue = _.get(options, key)
-        let defaultValue = _.get(defaultsCopy, key)
-        if (_.isArray(defaultValue) && !_.isArray(optionValue)) {
+        let optionValue = lodash.get(options, key)
+        let defaultValue = lodash.get(defaultsCopy, key)
+        if (lodash.isArray(defaultValue) && !lodash.isArray(optionValue)) {
             // throw error - wrong type passed
             let errMsg = `Invalid value specified for field: ${key}, expected array`
             throw new Error(errMsg)

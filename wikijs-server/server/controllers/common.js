@@ -1,7 +1,7 @@
 import express from 'express'
 const router = express.Router()
 import pageHelper from '../helpers/page.js'
-import _ from 'lodash'
+import lodash from 'lodash'
 import CleanCSS from 'clean-css'
 import moment from 'moment'
 import qs from 'querystring'
@@ -15,7 +15,7 @@ const tmplCreateRegex = /^[0-9]+(,[0-9]+)?$/
  */
 router.get('/robots.txt', (req, res, next) => {
     res.type('text/plain')
-    if (_.includes(WIKI.config.seo.robots, 'noindex'))
+    if (lodash.includes(WIKI.config.seo.robots, 'noindex'))
         res.send('User-agent: *\nDisallow: /')
     else
         res.status(200).end()
@@ -47,11 +47,11 @@ router.get(['/a', '/a/*splat'], (req, res, next) => {
             'manage:api'
         ])
     ) {
-        _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+        lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
         return res.status(403).render('unauthorized', { action: 'view' })
     }
 
-    _.set(res.locals, 'pageMeta.title', 'Admin')
+    lodash.set(res.locals, 'pageMeta.title', 'Admin')
     res.render('admin')
 })
 
@@ -61,7 +61,7 @@ router.get(['/a', '/a/*splat'], (req, res, next) => {
 router.get(['/d', '/d/*splat'], async (req, res, next) => {
     const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
 
-    const versionId = (req.query.v) ? _.toSafeInteger(req.query.v) : 0
+    const versionId = (req.query.v) ? lodash.toSafeInteger(req.query.v) : 0
 
     const page = await WIKI.models.pages.getPageFromDb({
         path: pageArgs.path,
@@ -70,22 +70,22 @@ router.get(['/d', '/d/*splat'], async (req, res, next) => {
         isPrivate: false
     })
 
-    pageArgs.tags = _.get(page, 'tags', [])
+    pageArgs.tags = lodash.get(page, 'tags', [])
 
     if (versionId > 0) {
         if (!WIKI.auth.checkAccess(req.user, ['read:history'], pageArgs)) {
-            _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+            lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
             return res.render('unauthorized', { action: 'downloadVersion' })
         }
     } else {
         if (!WIKI.auth.checkAccess(req.user, ['read:source'], pageArgs)) {
-            _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+            lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
             return res.render('unauthorized', { action: 'download' })
         }
     }
 
     if (page) {
-        const fileName = _.last(page.path.split('/')) + '.' + pageHelper.getFileExtension(page.contentType)
+        const fileName = lodash.last(page.path.split('/')) + '.' + pageHelper.getFileExtension(page.contentType)
         res.attachment(fileName)
         if (versionId > 0) {
             const pageVersion = await WIKI.models.pageHistory.getVersion({ pageId: page.id, versionId })
@@ -110,8 +110,8 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
     req.i18n.changeLanguage(pageArgs.locale)
 
     // -> Set Editor Lang
-    _.set(res, 'locals.siteConfig.lang', pageArgs.locale)
-    _.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
+    lodash.set(res, 'locals.siteConfig.lang', pageArgs.locale)
+    lodash.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
 
     // -> Check for reserved path
     if (pageHelper.isReservedPath(pageArgs.path))
@@ -125,7 +125,7 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
         isPrivate: false
     })
 
-    pageArgs.tags = _.get(page, 'tags', [])
+    pageArgs.tags = lodash.get(page, 'tags', [])
 
     // -> Effective Permissions
     const effectivePermissions = WIKI.auth.getEffectivePermissions(req, pageArgs)
@@ -139,34 +139,34 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
     if (page) {
         // -> EDIT MODE
         if (!(effectivePermissions.pages.write || effectivePermissions.pages.manage)) {
-            _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+            lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
             return res.render('unauthorized', { action: 'edit' })
         }
 
         // -> Get page tags
         await page.$relatedQuery('tags')
-        page.tags = _.map(page.tags, 'tag')
+        page.tags = lodash.map(page.tags, 'tag')
 
         // Handle missing extra field
         page.extra = page.extra || { css: '', js: '' }
 
         // -> Beautify Script CSS
-        if (!_.isEmpty(page.extra.css))
+        if (!lodash.isEmpty(page.extra.css))
             page.extra.css = new CleanCSS({ format: 'beautify' }).minify(page.extra.css).styles
 
-        _.set(res.locals, 'pageMeta.title', `Edit ${page.title}`)
-        _.set(res.locals, 'pageMeta.description', page.description)
+        lodash.set(res.locals, 'pageMeta.title', `Edit ${page.title}`)
+        lodash.set(res.locals, 'pageMeta.description', page.description)
         page.mode = 'update'
         page.isPublished = (page.isPublished === true || page.isPublished === 1) ? 'true' : 'false'
         page.content = Buffer.from(page.content).toString('base64')
     } else {
         // -> CREATE MODE
         if (!effectivePermissions.pages.write) {
-            _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+            lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
             return res.render('unauthorized', { action: 'create' })
         }
 
-        _.set(res.locals, 'pageMeta.title', `New Page`)
+        lodash.set(res.locals, 'pageMeta.title', `New Page`)
         page = {
             path: pageArgs.path,
             localeCode: pageArgs.locale,
@@ -188,10 +188,10 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
             let tmplVersionId = 0
             if (req.query.from.indexOf(',')) {
                 const q = req.query.from.split(',')
-                tmplPageId = _.toSafeInteger(q[0])
-                tmplVersionId = _.toSafeInteger(q[1])
+                tmplPageId = lodash.toSafeInteger(q[0])
+                tmplVersionId = lodash.toSafeInteger(q[1])
             } else {
-                tmplPageId = _.toSafeInteger(req.query.from)
+                tmplPageId = lodash.toSafeInteger(req.query.from)
             }
 
             if (tmplVersionId > 0) {
@@ -201,7 +201,7 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
                     versionId: tmplVersionId
                 })
                 if (!pageVersion) {
-                    _.set(res.locals, 'pageMeta.title', 'Page Not Found')
+                    lodash.set(res.locals, 'pageMeta.title', 'Page Not Found')
                     return res.status(404).render('notfound', { action: 'template' })
                 }
                 if (
@@ -210,7 +210,7 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
                         locale: pageVersion.locale
                     })
                 ) {
-                    _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+                    lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
                     return res.render('unauthorized', { action: 'sourceVersion' })
                 }
                 page.content = Buffer.from(pageVersion.content).toString('base64')
@@ -221,7 +221,7 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
                 // -> From Page Live
                 const pageOriginal = await WIKI.models.pages.query().findById(tmplPageId)
                 if (!pageOriginal) {
-                    _.set(res.locals, 'pageMeta.title', 'Page Not Found')
+                    lodash.set(res.locals, 'pageMeta.title', 'Page Not Found')
                     return res.status(404).render('notfound', { action: 'template' })
                 }
                 if (
@@ -230,7 +230,7 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
                         locale: pageOriginal.locale
                     })
                 ) {
-                    _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+                    lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
                     return res.render('unauthorized', { action: 'source' })
                 }
                 page.content = Buffer.from(pageOriginal.content).toString('base64')
@@ -255,8 +255,8 @@ router.get(['/h', '/h/*splat'], async (req, res, next) => {
 
     req.i18n.changeLanguage(pageArgs.locale)
 
-    _.set(res, 'locals.siteConfig.lang', pageArgs.locale)
-    _.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
+    lodash.set(res, 'locals.siteConfig.lang', pageArgs.locale)
+    lodash.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
 
     const page = await WIKI.models.pages.getPageFromDb({
         path: pageArgs.path,
@@ -266,22 +266,22 @@ router.get(['/h', '/h/*splat'], async (req, res, next) => {
     })
 
     if (!page) {
-        _.set(res.locals, 'pageMeta.title', 'Page Not Found')
+        lodash.set(res.locals, 'pageMeta.title', 'Page Not Found')
         return res.status(404).render('notfound', { action: 'history' })
     }
 
-    pageArgs.tags = _.get(page, 'tags', [])
+    pageArgs.tags = lodash.get(page, 'tags', [])
 
     const effectivePermissions = WIKI.auth.getEffectivePermissions(req, pageArgs)
 
     if (!effectivePermissions.history.read) {
-        _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+        lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
         return res.render('unauthorized', { action: 'history' })
     }
 
     if (page) {
-        _.set(res.locals, 'pageMeta.title', page.title)
-        _.set(res.locals, 'pageMeta.description', page.description)
+        lodash.set(res.locals, 'pageMeta.title', page.title)
+        lodash.set(res.locals, 'pageMeta.description', page.description)
 
         res.render('history', { page, effectivePermissions })
     } else {
@@ -293,7 +293,7 @@ router.get(['/h', '/h/*splat'], async (req, res, next) => {
  * Page ID redirection
  */
 router.get(['/i', '/i/:id'], async (req, res, next) => {
-    const pageId = _.toSafeInteger(req.params.id)
+    const pageId = lodash.toSafeInteger(req.params.id)
     if (pageId <= 0)
         return res.redirect('/')
 
@@ -301,7 +301,7 @@ router.get(['/i', '/i/:id'], async (req, res, next) => {
         pageId
     )
     if (!page) {
-        _.set(res.locals, 'pageMeta.title', 'Page Not Found')
+        lodash.set(res.locals, 'pageMeta.title', 'Page Not Found')
         return res.status(404).render('notfound', { action: 'view' })
     }
 
@@ -315,7 +315,7 @@ router.get(['/i', '/i/:id'], async (req, res, next) => {
             tags: page.tags
         })
     ) {
-        _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+        lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
         return res.render('unauthorized', { action: 'view' })
     }
 
@@ -332,7 +332,7 @@ router.get(['/p', '/p/*splat'], (req, res, next) => {
     if (!req.user || req.user.id < 1 || req.user.id === 2)
         return res.render('unauthorized', { action: 'view' })
 
-    _.set(res.locals, 'pageMeta.title', 'User Profile')
+    lodash.set(res.locals, 'pageMeta.title', 'User Profile')
     res.render('profile')
 })
 
@@ -341,7 +341,7 @@ router.get(['/p', '/p/*splat'], (req, res, next) => {
  */
 router.get(['/s', '/s/*splat'], async (req, res, next) => {
     const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
-    const versionId = (req.query.v) ? _.toSafeInteger(req.query.v) : 0
+    const versionId = (req.query.v) ? lodash.toSafeInteger(req.query.v) : 0
 
     const page = await WIKI.models.pages.getPageFromDb({
         path: pageArgs.path,
@@ -350,7 +350,7 @@ router.get(['/s', '/s/*splat'], async (req, res, next) => {
         isPrivate: false
     })
 
-    pageArgs.tags = _.get(page, 'tags', [])
+    pageArgs.tags = lodash.get(page, 'tags', [])
 
     if (WIKI.config.lang.namespacing && !pageArgs.explicitLocale)
         return res.redirect(`/s/${pageArgs.locale}/${pageArgs.path}`)
@@ -358,17 +358,17 @@ router.get(['/s', '/s/*splat'], async (req, res, next) => {
     // -> Effective Permissions
     const effectivePermissions = WIKI.auth.getEffectivePermissions(req, pageArgs)
 
-    _.set(res, 'locals.siteConfig.lang', pageArgs.locale)
-    _.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
+    lodash.set(res, 'locals.siteConfig.lang', pageArgs.locale)
+    lodash.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
 
     if (versionId > 0) {
         if (!effectivePermissions.history.read) {
-            _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+            lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
             return res.render('unauthorized', { action: 'sourceVersion' })
         }
     } else {
         if (!effectivePermissions.source.read) {
-            _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+            lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
             return res.render('unauthorized', { action: 'source' })
         }
     }
@@ -376,8 +376,8 @@ router.get(['/s', '/s/*splat'], async (req, res, next) => {
     if (page) {
         if (versionId > 0) {
             const pageVersion = await WIKI.models.pageHistory.getVersion({ pageId: page.id, versionId })
-            _.set(res.locals, 'pageMeta.title', pageVersion.title)
-            _.set(res.locals, 'pageMeta.description', pageVersion.description)
+            lodash.set(res.locals, 'pageMeta.title', pageVersion.title)
+            lodash.set(res.locals, 'pageMeta.description', pageVersion.description)
             res.render('source', {
                 page: {
                     ...page,
@@ -386,8 +386,8 @@ router.get(['/s', '/s/*splat'], async (req, res, next) => {
                 effectivePermissions
             })
         } else {
-            _.set(res.locals, 'pageMeta.title', page.title)
-            _.set(res.locals, 'pageMeta.description', page.description)
+            lodash.set(res.locals, 'pageMeta.title', page.title)
+            lodash.set(res.locals, 'pageMeta.description', page.description)
 
             res.render('source', { page, effectivePermissions })
         }
@@ -400,7 +400,7 @@ router.get(['/s', '/s/*splat'], async (req, res, next) => {
  * Tags
  */
 router.get(['/t', '/t/*splat'], (req, res, next) => {
-    _.set(res.locals, 'pageMeta.title', 'Tags')
+    lodash.set(res.locals, 'pageMeta.title', 'Tags')
     res.render('tags')
 })
 
@@ -423,13 +423,13 @@ router.get('/_userav/:uid', async (req, res, next) => {
  * View document / asset
  */
 router.get('/{*splat}', async (req, res, next) => {
-    const stripExt = _.some(WIKI.config.pageExtensions, (ext) => _.endsWith(req.path, `.${ext}`))
+    const stripExt = lodash.some(WIKI.config.pageExtensions, (ext) => lodash.endsWith(req.path, `.${ext}`))
     const pageArgs = pageHelper.parsePath(req.path, { stripExt })
     const isPage = stripExt || pageArgs.path.indexOf('.') === -1
 
     if (isPage) {
         if (WIKI.config.lang.namespacing && !pageArgs.explicitLocale) {
-            const query = !_.isEmpty(req.query) ? `?${qs.stringify(req.query)}` : ''
+            const query = !lodash.isEmpty(req.query) ? `?${qs.stringify(req.query)}` : ''
             return res.redirect(`/${pageArgs.locale}/${pageArgs.path}${query}`)
         }
 
@@ -443,7 +443,7 @@ router.get('/{*splat}', async (req, res, next) => {
                 userId: req.user.id,
                 isPrivate: false
             })
-            pageArgs.tags = _.get(page, 'tags', [])
+            pageArgs.tags = lodash.get(page, 'tags', [])
 
             // -> Effective Permissions
             const effectivePermissions = WIKI.auth.getEffectivePermissions(req, pageArgs)
@@ -457,27 +457,27 @@ router.get('/{*splat}', async (req, res, next) => {
                 }
                 if (pageArgs.path === 'home' && req.user.id === 2)
                     return res.redirect('/login')
-                _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+                lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
                 return res.status(403).render('unauthorized', {
                     action: 'view'
                 })
             }
 
-            _.set(res, 'locals.siteConfig.lang', pageArgs.locale)
-            _.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
+            lodash.set(res, 'locals.siteConfig.lang', pageArgs.locale)
+            lodash.set(res, 'locals.siteConfig.rtl', req.i18n.dir() === 'rtl')
 
             if (page) {
-                _.set(res.locals, 'pageMeta.title', page.title)
-                _.set(res.locals, 'pageMeta.description', page.description)
+                lodash.set(res.locals, 'pageMeta.title', page.title)
+                lodash.set(res.locals, 'pageMeta.description', page.description)
 
                 // -> Check Publishing State
                 let pageIsPublished = page.isPublished
-                if (pageIsPublished && !_.isEmpty(page.publishStartDate))
+                if (pageIsPublished && !lodash.isEmpty(page.publishStartDate))
                     pageIsPublished = moment(page.publishStartDate).isSameOrBefore()
-                if (pageIsPublished && !_.isEmpty(page.publishEndDate))
+                if (pageIsPublished && !lodash.isEmpty(page.publishEndDate))
                     pageIsPublished = moment(page.publishEndDate).isSameOrAfter()
                 if (!pageIsPublished && !effectivePermissions.pages.write) {
-                    _.set(res.locals, 'pageMeta.title', 'Unauthorized')
+                    lodash.set(res.locals, 'pageMeta.title', 'Unauthorized')
                     return res.status(403).render('unauthorized', {
                         action: 'view'
                     })
@@ -508,15 +508,15 @@ router.get('/{*splat}', async (req, res, next) => {
                 // Handle missing extra field
                 page.extra = page.extra || { css: '', js: '' }
 
-                if (!_.isEmpty(page.extra.css))
+                if (!lodash.isEmpty(page.extra.css))
                     injectCode.css = `${injectCode.css}\n${page.extra.css}`
 
-                if (!_.isEmpty(page.extra.js))
+                if (!lodash.isEmpty(page.extra.js))
                     injectCode.body = `${injectCode.body}\n${page.extra.js}`
 
                 if (req.query.legacy || req.get('user-agent').indexOf('Trident') >= 0) {
                     // -> Convert page TOC
-                    if (_.isString(page.toc))
+                    if (lodash.isString(page.toc))
                         page.toc = JSON.parse(page.toc)
 
                     // -> Render legacy view
@@ -528,7 +528,7 @@ router.get('/{*splat}', async (req, res, next) => {
                     })
                 } else {
                     // -> Convert page TOC
-                    if (!_.isString(page.toc))
+                    if (!lodash.isString(page.toc))
                         page.toc = JSON.stringify(page.toc)
 
                     // -> Inject comments variables
@@ -543,9 +543,9 @@ router.get('/{*splat}', async (req, res, next) => {
                             { key: 'pageUrl', value: `${WIKI.config.host}/i/${page.id}` },
                             { key: 'pageId', value: page.id }
                         ].forEach((cfg) => {
-                            commentTmpl.head = _.replace(commentTmpl.head, new RegExp(`{{${cfg.key}}}`, 'g'), cfg.value)
-                            commentTmpl.body = _.replace(commentTmpl.body, new RegExp(`{{${cfg.key}}}`, 'g'), cfg.value)
-                            commentTmpl.main = _.replace(commentTmpl.main, new RegExp(`{{${cfg.key}}}`, 'g'), cfg.value)
+                            commentTmpl.head = lodash.replace(commentTmpl.head, new RegExp(`{{${cfg.key}}}`, 'g'), cfg.value)
+                            commentTmpl.body = lodash.replace(commentTmpl.body, new RegExp(`{{${cfg.key}}}`, 'g'), cfg.value)
+                            commentTmpl.main = lodash.replace(commentTmpl.main, new RegExp(`{{${cfg.key}}}`, 'g'), cfg.value)
                         })
                     }
 
@@ -564,10 +564,10 @@ router.get('/{*splat}', async (req, res, next) => {
                     })
                 }
             } else if (pageArgs.path === 'home') {
-                _.set(res.locals, 'pageMeta.title', 'Welcome')
+                lodash.set(res.locals, 'pageMeta.title', 'Welcome')
                 res.render('welcome', { locale: pageArgs.locale })
             } else {
-                _.set(res.locals, 'pageMeta.title', 'Page Not Found')
+                lodash.set(res.locals, 'pageMeta.title', 'Page Not Found')
                 if (effectivePermissions.pages.write)
                     res.status(404).render('new', { path: pageArgs.path, locale: pageArgs.locale })
                 else

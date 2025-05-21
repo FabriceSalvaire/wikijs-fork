@@ -1,5 +1,5 @@
 import graphHelper from '../../helpers/graph.js'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -31,10 +31,10 @@ export default {
             usr.password = ''
             usr.tfaSecret = ''
 
-            const str = _.get(WIKI.auth.strategies, usr.providerKey)
-            str.strategy = _.find(WIKI.data.authentication, ['key', str.strategyKey])
+            const str = lodash.get(WIKI.auth.strategies, usr.providerKey)
+            str.strategy = lodash.find(WIKI.data.authentication, ['key', str.strategyKey])
             usr.providerName = str.displayName
-            usr.providerIs2FACapable = _.get(str, 'strategy.useForm', false)
+            usr.providerIs2FACapable = lodash.get(str, 'strategy.useForm', false)
 
             return usr
         },
@@ -45,7 +45,7 @@ export default {
             if (!usr.isActive)
                 throw new WIKI.Error.AuthAccountBanned()
 
-            const providerInfo = _.get(WIKI.auth.strategies, usr.providerKey, {})
+            const providerInfo = lodash.get(WIKI.auth.strategies, usr.providerKey, {})
 
             usr.providerName = providerInfo.displayName || 'Unknown'
             usr.lastLoginAt = usr.lastLoginAt || usr.updatedAt
@@ -191,9 +191,9 @@ export default {
 
                 await WIKI.models.users.updateUser({
                     id: usr.id,
-                    name: _.trim(args.name),
-                    jobTitle: _.trim(args.jobTitle),
-                    location: _.trim(args.location),
+                    name: lodash.trim(args.name),
+                    jobTitle: lodash.trim(args.jobTitle),
+                    location: lodash.trim(args.location),
                     timezone: args.timezone,
                     dateFormat: args.dateFormat,
                     appearance: args.appearance
@@ -254,7 +254,7 @@ export default {
         },
         async pagesTotal(usr) {
             const result = await WIKI.models.pages.query().count('* as total').where('creatorId', usr.id).first()
-            return _.toSafeInteger(result.total)
+            return lodash.toSafeInteger(result.total)
         }
     }
 }

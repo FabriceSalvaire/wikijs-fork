@@ -1,6 +1,6 @@
 import express from 'express'
 const router = express.Router()
-import _ from 'lodash'
+import lodash from 'lodash'
 import multer from 'multer'
 import * as path from 'node:path'
 import sanitize from 'sanitize-filename'
@@ -19,7 +19,7 @@ router.post('/u', (req, res, next) => {
         }
     }).array('mediaUpload')(req, res, next)
 }, async (req, res, next) => {
-    if (!_.some(req.user.permissions, (pm) => _.includes(['write:assets', 'manage:system'], pm))) {
+    if (!lodash.some(req.user.permissions, (pm) => lodash.includes(['write:assets', 'manage:system'], pm))) {
         return res.status(403).json({
             succeeded: false,
             message: 'You are not authorized to upload files.'
@@ -35,7 +35,7 @@ router.post('/u', (req, res, next) => {
             message: 'You cannot upload multiple files within the same request.'
         })
     }
-    const fileMeta = _.get(req, 'files[0]', false)
+    const fileMeta = lodash.get(req, 'files[0]', false)
     if (!fileMeta) {
         return res.status(500).json({
             succeeded: false,
@@ -46,9 +46,9 @@ router.post('/u', (req, res, next) => {
     // Get folder Id
     let folderId = null
     try {
-        const folderRaw = _.get(req, 'body.mediaUpload', false)
+        const folderRaw = lodash.get(req, 'body.mediaUpload', false)
         if (folderRaw) {
-            folderId = _.get(JSON.parse(folderRaw), 'folderId', null)
+            folderId = lodash.get(JSON.parse(folderRaw), 'folderId', null)
             if (folderId === 0)
                 folderId = null
         } else {

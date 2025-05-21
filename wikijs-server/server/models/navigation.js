@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -35,7 +35,7 @@ export default class Navigation extends Model {
         const navTree = await WIKI.models.navigation.query().findOne('key', `site`)
         if (navTree) {
             // Check for pre-2.3 format
-            if (_.has(navTree.config[0], 'kind')) {
+            if (lodash.has(navTree.config[0], 'kind')) {
                 navTree.config = [{
                     locale: 'en',
                     items: navTree.config.map((item) => ({
@@ -64,8 +64,8 @@ export default class Navigation extends Model {
     }
 
     static getAuthorizedItems(tree = [], groups = []) {
-        return _.filter(tree, (leaf) => {
-            return leaf.visibilityMode === 'all' || _.intersection(leaf.visibilityGroups, groups).length > 0
+        return lodash.filter(tree, (leaf) => {
+            return leaf.visibilityMode === 'all' || lodash.intersection(leaf.visibilityGroups, groups).length > 0
         })
     }
 }

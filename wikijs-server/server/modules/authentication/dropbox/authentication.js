@@ -5,7 +5,7 @@
 // ------------------------------------
 
 import DropboxStrategy from 'passport-dropbox-oauth2'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     init(passport, conf) {
@@ -23,7 +23,7 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...profile,
-                            picture: _.get(profile, '_json.profile_photo_url', '')
+                            picture: lodash.get(profile, '_json.profile_photo_url', '')
                         }
                     })
                     cb(null, user)

@@ -1,6 +1,6 @@
 /**************************************************************************************************/
 
-import _ from 'lodash'
+import lodash from 'lodash'
 
 import * as utils from './utils.js'
 
@@ -94,7 +94,7 @@ export var auditResponse = function (req, res, options) {
 /**************************************************************************************************/
 
 function getRequestAudit(req, options) {
-    var headers = _.get(req, 'headers')
+    var headers = lodash.get(req, 'headers')
     var requestFullURL = utils.getUrl(req)
     var requestRoute = utils.getRoute(req)
     var queryParams = req && req.query !== {} ? req.query : NA
@@ -102,7 +102,7 @@ function getRequestAudit(req, options) {
     var URLParams = req && req.params ? req.params : NA
     var timestamp = req && req.timestamp ? req.timestamp.toISOString() : NA
     var timestamp_ms = req && req.timestamp ? req.timestamp.valueOf() : NA
-    var requestBody = _.get(req, 'body') //handle body clone the original body
+    var requestBody = lodash.get(req, 'body') //handle body clone the original body
 
     if (options.request.customMaskBodyFunc)
         requestBody = options.request.customMaskBodyFunc(req)
@@ -120,7 +120,7 @@ function getRequestAudit(req, options) {
         url: requestFullURL,
         url_route: requestRoute,
         query: queryParams,
-        headers: _.isEmpty(headers) ? NA : headers,
+        headers: lodash.isEmpty(headers) ? NA : headers,
         timestamp: timestamp,
         timestamp_ms: timestamp_ms,
         body: utils.getBodyStr(requestBody, options.request.maxBodyLength)
@@ -144,7 +144,7 @@ function handleResponseJson(objJson, objStr, logger, excludeFields, maskFields) 
 
 function handleJson(obj, logger, excludeFields, maskFields) {
     let result = obj
-    if (_.includes(excludeFields, ALL_FIELDS))
+    if (lodash.includes(excludeFields, ALL_FIELDS))
         result = undefined
     else if (obj) {
         if (shouldBeParsed(maskFields, excludeFields)) {
@@ -176,19 +176,19 @@ function handleJson(obj, logger, excludeFields, maskFields) {
 /**************************************************************************************************/
 
 function shouldBeParsed(maskFields, excludeFields) {
-    return !_.includes(excludeFields, ALL_FIELDS) && (!_.isEmpty(maskFields) || !_.isEmpty(excludeFields))
+    return !lodash.includes(excludeFields, ALL_FIELDS) && (!lodash.isEmpty(maskFields) || !lodash.isEmpty(excludeFields))
 }
 
 /**************************************************************************************************/
 
 function getResponseAudit(req, res, options) {
-    var headers = res && 'function' === typeof res.getHeaders ? res.getHeaders() : _.get(res, '_headers')
+    var headers = res && 'function' === typeof res.getHeaders ? res.getHeaders() : lodash.get(res, '_headers')
     var elapsed = req && res ? res.timestamp - req.timestamp : 0
     var timestamp = res && res.timestamp ? res.timestamp.toISOString() : NA
     var timestamp_ms = res && res.timestamp ? res.timestamp.valueOf() : NA
     var statusCode = res && res.statusCode ? res.statusCode : NA
-    var responseBodyStr = _.get(res, '_bodyStr') //no need to clone because its not the original body
-    var responseBodyJson = _.get(res, '_bodyJson') //no need to clone because its not the original body
+    var responseBodyStr = lodash.get(res, '_bodyStr') //no need to clone because its not the original body
+    var responseBodyJson = lodash.get(res, '_bodyJson') //no need to clone because its not the original body
 
     let responseBody = ''
     if (isJsonBody(headers)) {
@@ -211,7 +211,7 @@ function getResponseAudit(req, res, options) {
         timestamp: timestamp,
         timestamp_ms: timestamp_ms,
         elapsed: elapsed,
-        headers: _.isEmpty(headers) ? NA : headers,
+        headers: lodash.isEmpty(headers) ? NA : headers,
         body: utils.getBodyStr(responseBody, options.response.maxBodyLength)
     }
 
@@ -228,7 +228,7 @@ function isJsonBody(headers) {
 
 function getMaskedQuery(query, fieldsToMask) {
     if (query)
-        return !_.isEmpty(fieldsToMask) ? utils.maskJson(query, fieldsToMask) : query
+        return !lodash.isEmpty(fieldsToMask) ? utils.maskJson(query, fieldsToMask) : query
     else
         return NA
 }

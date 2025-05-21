@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 // import dotize from 'dotize'
 import dotize from './dotize.js'
 import i18nMW from 'i18next-express-middleware'
@@ -47,7 +47,7 @@ export default {
     async getByNamespace(locale, namespace) {
         if (this.engine.hasResourceBundle(locale, namespace)) {
             let data = this.engine.getResourceBundle(locale, namespace)
-            return _.map(dotize.convert(data), (value, key) => {
+            return lodash.map(dotize.convert(data), (value, key) => {
                 return {
                     key,
                     value
@@ -66,8 +66,8 @@ export default {
     async loadLocale(locale, opts = { silent: false }) {
         const res = await WIKI.models.locales.query().findOne('code', locale)
         if (res) {
-            if (_.isPlainObject(res.strings)) {
-                _.forOwn(res.strings, (data, ns) => {
+            if (lodash.isPlainObject(res.strings)) {
+                lodash.forOwn(res.strings, (data, ns) => {
                     this.namespaces.push(ns)
                     this.engine.addResourceBundle(locale, ns, data, true, true)
                 })
@@ -82,7 +82,7 @@ export default {
                 const devEntriesRaw = await fs.readFile(path.join(WIKI.SERVERPATH, `locales/${locale}.yml`), 'utf8')
                 if (devEntriesRaw) {
                     const devEntries = yaml.safeLoad(devEntriesRaw)
-                    _.forOwn(devEntries, (data, ns) => {
+                    lodash.forOwn(devEntries, (data, ns) => {
                         this.namespaces.push(ns)
                         this.engine.addResourceBundle(locale, ns, data, true, true)
                     })

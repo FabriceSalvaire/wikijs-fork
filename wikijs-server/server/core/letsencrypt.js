@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import ACME from 'acme'
 import Keypairs from '@root/keypairs'
 import moment from 'moment'
@@ -16,7 +16,7 @@ export default {
     acme: null,
 
     async init() {
-        if (!_.get(WIKI.config, 'letsencrypt.payload', false))
+        if (!lodash.get(WIKI.config, 'letsencrypt.payload', false))
             await this.requestCertificate()
         else if (WIKI.config.letsencrypt.domain !== WIKI.config.ssl.domain) {
             WIKI.logger.info(`(LETSENCRYPT) Domain has changed. Requesting new certificates...`)
@@ -44,7 +44,7 @@ export default {
                 maintainerEmail: WIKI.config.maintainerEmail,
                 packageAgent: `wikijs/${WIKI.version}`,
                 notify: (ev, msg) => {
-                    if (_.includes(['warning', 'error'], ev))
+                    if (lodash.includes(['warning', 'error'], ev))
                         WIKI.logger.warn(`${ev}: ${msg}`)
                     else
                         WIKI.logger.debug(`${ev}: ${JSON.stringify(msg)}`)
@@ -55,7 +55,7 @@ export default {
 
             // -> Create ACME Subscriber account
 
-            if (!_.get(WIKI.config, 'letsencrypt.account', false)) {
+            if (!lodash.get(WIKI.config, 'letsencrypt.account', false)) {
                 WIKI.logger.info(`(LETSENCRYPT) Setting up account for the first time...`)
                 const accountKeypair = await Keypairs.generate({ kty: 'EC', format: 'jwk' })
                 const account = await this.acme.accounts.create({

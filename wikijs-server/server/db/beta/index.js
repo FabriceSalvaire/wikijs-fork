@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import * as path from 'node:path'
 import fs from 'fs-extra'
 import semver from 'semver'
@@ -16,7 +16,7 @@ export default {
         }
 
         const migrations = await knex('migrations')
-        if (_.some(migrations, (m) => m.name.indexOf('2.0.0-beta') >= 0)) {
+        if (lodash.some(migrations, (m) => m.name.indexOf('2.0.0-beta') >= 0)) {
             // -> Pre-beta.241 locale field length fix
             const localeColnInfo = await knex('pages').columnInfo('localeCode')
             if (WIKI.config.db.type !== 'sqlite' && localeColnInfo.maxLength === 2) {

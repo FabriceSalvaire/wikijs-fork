@@ -5,7 +5,7 @@
 // ------------------------------------
 
 import DiscordStrategy from 'passport-discord'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     init(passport, conf) {
@@ -20,7 +20,7 @@ export default {
                 passReqToCallback: true
             }, async (req, accessToken, refreshToken, profile, cb) => {
                 try {
-                    if (conf.guildId && !_.some(profile.guilds, { id: conf.guildId }))
+                    if (conf.guildId && !lodash.some(profile.guilds, { id: conf.guildId }))
                         throw new WIKI.Error.AuthLoginFailed()
                     const user = await WIKI.models.users.processProfile({
                         providerKey: req.params.strategy,

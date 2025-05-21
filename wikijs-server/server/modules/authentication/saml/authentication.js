@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -19,7 +19,7 @@ export default {
             digestAlgorithm: conf.digestAlgorithm,
             identifierFormat: conf.identifierFormat,
             wantAssertionsSigned: conf.wantAssertionsSigned,
-            acceptedClockSkewMs: _.toSafeInteger(conf.acceptedClockSkewMs),
+            acceptedClockSkewMs: lodash.toSafeInteger(conf.acceptedClockSkewMs),
             disableRequestedAuthnContext: conf.disableRequestedAuthnContext,
             authnContext: (conf.authnContext || '').split('|'),
             racComparison: conf.racComparison,
@@ -30,17 +30,17 @@ export default {
             authnRequestBinding: conf.authnRequestBinding,
             passReqToCallback: true
         }
-        if (!_.isEmpty(conf.audience))
+        if (!lodash.isEmpty(conf.audience))
             samlConfig.audience = conf.audience
-        if (!_.isEmpty(conf.privateKey))
+        if (!lodash.isEmpty(conf.privateKey))
             samlConfig.privateKey = conf.privateKey
-        if (!_.isEmpty(conf.decryptionPvk))
+        if (!lodash.isEmpty(conf.decryptionPvk))
             samlConfig.decryptionPvk = conf.decryptionPvk
         passport.use(
             conf.key,
             new SAMLStrategy(samlConfig, async (req, profile, cb) => {
                 try {
-                    const userId = _.get(profile, [conf.mappingUID], null) || _.get(profile, 'nameID', null)
+                    const userId = lodash.get(profile, [conf.mappingUID], null) || lodash.get(profile, 'nameID', null)
                     if (!userId)
                         throw new Error('Invalid or Missing Unique ID field!')
 
@@ -48,9 +48,9 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             id: userId,
-                            email: _.get(profile, conf.mappingEmail, ''),
-                            displayName: _.get(profile, conf.mappingDisplayName, '???'),
-                            picture: _.get(profile, conf.mappingPicture, '')
+                            email: lodash.get(profile, conf.mappingEmail, ''),
+                            displayName: lodash.get(profile, conf.mappingDisplayName, '???'),
+                            picture: lodash.get(profile, conf.mappingPicture, '')
                         }
                     })
 
@@ -58,21 +58,21 @@ export default {
                     // Code copied from the LDAP implementation with a slight variation on the field we extract the value from
                     // In SAML v2 groups come in profile.attributes and can be 1 string or an array of strings
                     if (conf.mapGroups) {
-                        const maybeArrayOfGroups = _.get(profile.attributes, conf.mappingGroups)
-                        const groups = (maybeArrayOfGroups && !_.isArray(maybeArrayOfGroups))
+                        const maybeArrayOfGroups = lodash.get(profile.attributes, conf.mappingGroups)
+                        const groups = (maybeArrayOfGroups && !lodash.isArray(maybeArrayOfGroups))
                             ? [maybeArrayOfGroups]
                             : maybeArrayOfGroups
 
-                        if (groups && _.isArray(groups)) {
+                        if (groups && lodash.isArray(groups)) {
                             const currentGroups = (await user.$relatedQuery('groups').select('groups.id')).map((g) =>
                                 g.id
                             )
                             const expectedGroups = Object.values(WIKI.auth.groups).filter((g) =>
                                 groups.includes(g.name)
                             ).map((g) => g.id)
-                            for (const groupId of _.difference(expectedGroups, currentGroups))
+                            for (const groupId of lodash.difference(expectedGroups, currentGroups))
                                 await user.$relatedQuery('groups').relate(groupId)
-                            for (const groupId of _.difference(currentGroups, expectedGroups))
+                            for (const groupId of lodash.difference(currentGroups, expectedGroups))
                                 await user.$relatedQuery('groups').unrelate().where('groupId', groupId)
                         }
                     }

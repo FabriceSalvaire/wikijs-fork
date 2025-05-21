@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import sanitize from 'sanitize-filename'
 import graphHelper from '../../helpers/graph.js'
 import assetHelper from '../../helpers/asset.js'
@@ -32,7 +32,7 @@ export default {
             const folderHierarchy = await WIKI.models.assetFolders.getHierarchy(args.folderId)
             const folderPath = folderHierarchy.map((h) => h.slug).join('/')
             const results = await WIKI.models.assets.query().where(cond)
-            return _.filter(results, (r) => {
+            return lodash.filter(results, (r) => {
                 const path = folderPath ? `${folderPath}/${r.filename}` : r.filename
                 return WIKI.auth.checkAccess(context.req.user, ['read:assets'], { path })
             }).map((a) => ({
@@ -48,7 +48,7 @@ export default {
             })
             const parentHierarchy = await WIKI.models.assetFolders.getHierarchy(args.parentFolderId)
             const parentPath = parentHierarchy.map((h) => h.slug).join('/')
-            return _.filter(results, (r) => {
+            return lodash.filter(results, (r) => {
                 const path = parentPath ? `${parentPath}/${r.slug}` : r.slug
                 return WIKI.auth.checkAccess(context.req.user, ['read:assets'], { path })
             })
@@ -97,7 +97,7 @@ export default {
                 const asset = await WIKI.models.assets.query().findById(args.id)
                 if (asset) {
                     // Check for extension mismatch
-                    if (!_.endsWith(filename, asset.ext))
+                    if (!lodash.endsWith(filename, asset.ext))
                         throw new WIKI.Error.AssetRenameInvalidExt()
 
                     // Check for non-dot files changing to dotfile

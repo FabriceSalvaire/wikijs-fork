@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import fs from 'fs-extra'
 import * as path from 'node:path'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -39,8 +39,8 @@ export default class CommentProvider extends Model {
     }
 
     static async getProviders(isEnabled) {
-        const providers = await WIKI.models.commentProviders.query().where(_.isBoolean(isEnabled) ? { isEnabled } : {})
-        return _.sortBy(providers, ['key'])
+        const providers = await WIKI.models.commentProviders.query().where(lodash.isBoolean(isEnabled) ? { isEnabled } : {})
+        return lodash.sortBy(providers, ['key'])
     }
 
     static async refreshProvidersFromDisk() {
@@ -65,21 +65,21 @@ export default class CommentProvider extends Model {
 
             let newProviders = []
             for (let provider of WIKI.data.commentProviders) {
-                if (!_.some(dbProviders, ['key', provider.key])) {
+                if (!lodash.some(dbProviders, ['key', provider.key])) {
                     newProviders.push({
                         key: provider.key,
                         isEnabled: provider.key === 'default',
-                        config: _.transform(provider.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        config: lodash.transform(provider.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {})
                     })
                 } else {
-                    const providerConfig = _.get(_.find(dbProviders, ['key', provider.key]), 'config', {})
+                    const providerConfig = lodash.get(lodash.find(dbProviders, ['key', provider.key]), 'config', {})
                     await WIKI.models.commentProviders.query().patch({
-                        config: _.transform(provider.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(provider.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, providerConfig)
                     }).where('key', provider.key)
@@ -108,7 +108,7 @@ export default class CommentProvider extends Model {
         WIKI.logger.info(`Init Comment Provider ${commentProvider.key}`)
         if (commentProvider) {
             WIKI.data.commentProvider = {
-                ..._.find(WIKI.data.commentProviders, ['key', commentProvider.key]),
+                ...lodash.find(WIKI.data.commentProviders, ['key', commentProvider.key]),
                 head: '',
                 bodyStart: '',
                 bodyEnd: '',
@@ -121,14 +121,14 @@ export default class CommentProvider extends Model {
                     'utf8'
                 )
                 let code = yaml.safeLoad(def)
-                code.head = _.defaultTo(code.head, '')
-                code.body = _.defaultTo(code.body, '')
-                code.main = _.defaultTo(code.main, '')
+                code.head = lodash.defaultTo(code.head, '')
+                code.body = lodash.defaultTo(code.body, '')
+                code.main = lodash.defaultTo(code.main, '')
 
-                _.forOwn(commentProvider.config, (value, key) => {
-                    code.head = _.replace(code.head, new RegExp(`{{${key}}}`, 'g'), value)
-                    code.body = _.replace(code.body, new RegExp(`{{${key}}}`, 'g'), value)
-                    code.main = _.replace(code.main, new RegExp(`{{${key}}}`, 'g'), value)
+                lodash.forOwn(commentProvider.config, (value, key) => {
+                    code.head = lodash.replace(code.head, new RegExp(`{{${key}}}`, 'g'), value)
+                    code.body = lodash.replace(code.body, new RegExp(`{{${key}}}`, 'g'), value)
+                    code.main = lodash.replace(code.main, new RegExp(`{{${key}}}`, 'g'), value)
                 })
 
                 WIKI.data.commentProvider.head = code.head

@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import * as path from 'node:path'
 import fs from 'fs-extra'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -56,21 +56,21 @@ export default class Storage extends Model {
             }
             WIKI.data.storage = diskTargets.map((target) => ({
                 ...target,
-                isAvailable: _.get(target, 'isAvailable', false),
+                isAvailable: lodash.get(target, 'isAvailable', false),
                 props: commonHelper.parseModuleProps(target.props)
             }))
 
             // -> Insert new targets
             let newTargets = []
             for (let target of WIKI.data.storage) {
-                if (!_.some(dbTargets, ['key', target.key])) {
+                if (!lodash.some(dbTargets, ['key', target.key])) {
                     newTargets.push({
                         key: target.key,
                         isEnabled: false,
                         mode: target.defaultMode || 'push',
                         syncInterval: target.schedule || 'P0D',
-                        config: _.transform(target.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        config: lodash.transform(target.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {}),
                         state: {
@@ -80,11 +80,11 @@ export default class Storage extends Model {
                         }
                     })
                 } else {
-                    const targetConfig = _.get(_.find(dbTargets, ['key', target.key]), 'config', {})
+                    const targetConfig = lodash.get(lodash.find(dbTargets, ['key', target.key]), 'config', {})
                     await WIKI.models.storage.query().patch({
-                        config: _.transform(target.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(target.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, targetConfig)
                     }).where('key', target.key)
@@ -102,7 +102,7 @@ export default class Storage extends Model {
 
             // -> Delete removed targets
             for (const target of dbTargets) {
-                if (!_.some(WIKI.data.storage, ['key', target.key])) {
+                if (!lodash.some(WIKI.data.storage, ['key', target.key])) {
                     await WIKI.models.storage.query().where('key', target.key).del()
                     WIKI.logger.info(
                         `Removed target ${target.key} because it is no longer present in the modules folder: [ OK ]`
@@ -124,13 +124,13 @@ export default class Storage extends Model {
         this.targets = await WIKI.models.storage.query().where('isEnabled', true).orderBy('key')
         try {
             // -> Stop and delete existing jobs
-            const prevjobs = _.remove(WIKI.scheduler.jobs, (job) => job.name === `sync-storage`)
+            const prevjobs = lodash.remove(WIKI.scheduler.jobs, (job) => job.name === `sync-storage`)
             if (prevjobs.length > 0)
                 prevjobs.forEach((job) => job.stop())
 
             // -> Initialize targets
             for (let target of this.targets) {
-                const targetDef = _.find(WIKI.data.storage, ['key', target.key])
+                const targetDef = lodash.find(WIKI.data.storage, ['key', target.key])
                 target.fn = (await import(`../modules/storage/${target.key}/storage.js`)).default
                 target.fn.config = target.config
                 target.fn.mode = target.mode
@@ -197,7 +197,7 @@ export default class Storage extends Model {
     static async assetEvent({ event, asset }) {
         try {
             for (let target of this.targets)
-                await target.fn[`asset${_.capitalize(event)}`](asset)
+                await target.fn[`asset${lodash.capitalize(event)}`](asset)
         } catch (err) {
             WIKI.logger.warn('Storage:')
             WIKI.logger.warn(err)
@@ -225,9 +225,9 @@ export default class Storage extends Model {
 
     static async executeAction(targetKey, handler) {
         try {
-            const target = _.find(this.targets, ['key', targetKey])
+            const target = lodash.find(this.targets, ['key', targetKey])
             if (target) {
-                if (_.hasIn(target.fn, handler))
+                if (lodash.hasIn(target.fn, handler))
                     await target.fn[handler]()
                 else
                     throw new Error('Invalid Handler for Storage Target')

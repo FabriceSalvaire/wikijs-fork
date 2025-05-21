@@ -5,7 +5,7 @@
 // ------------------------------------
 
 import TwitchStrategy from 'passport-twitch-strategy'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     init(passport, conf) {
@@ -22,7 +22,7 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...profile,
-                            picture: _.get(profile, 'profile_image_url', '')
+                            picture: lodash.get(profile, 'profile_image_url', '')
                         }
                     })
                     cb(null, user)

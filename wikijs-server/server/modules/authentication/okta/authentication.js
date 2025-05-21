@@ -5,7 +5,7 @@
 // ------------------------------------
 
 import OktaStrategy from 'passport-okta-oauth'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     init(passport, conf) {
@@ -25,7 +25,7 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...profile,
-                            picture: _.get(profile, '_json.profile', '')
+                            picture: lodash.get(profile, '_json.profile', '')
                         }
                     })
                     cb(null, user)

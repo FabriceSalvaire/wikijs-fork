@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import * as path from 'node:path'
 import fs from 'fs-extra'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -62,22 +62,22 @@ export default class Logger extends Model {
             // -> Insert new loggers
             let newLoggers = []
             for (let logger of WIKI.data.loggers) {
-                if (!_.some(dbLoggers, ['key', logger.key])) {
+                if (!lodash.some(dbLoggers, ['key', logger.key])) {
                     newLoggers.push({
                         key: logger.key,
                         isEnabled: (logger.key === 'console'),
                         level: logger.defaultLevel,
-                        config: _.transform(logger.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        config: lodash.transform(logger.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {})
                     })
                 } else {
-                    const loggerConfig = _.get(_.find(dbLoggers, ['key', logger.key]), 'config', {})
+                    const loggerConfig = lodash.get(lodash.find(dbLoggers, ['key', logger.key]), 'config', {})
                     await WIKI.models.loggers.query().patch({
-                        config: _.transform(logger.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(logger.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, loggerConfig)
                     }).where('key', logger.key)
@@ -104,7 +104,7 @@ export default class Logger extends Model {
     static async pageEvent({ event, page }) {
         const loggers = await WIKI.models.storage.query().where('isEnabled', true)
         if (loggers && loggers.length > 0) {
-            _.forEach(loggers, (logger) => {
+            lodash.forEach(loggers, (logger) => {
                 WIKI.queue.job.syncStorage.add({
                     event,
                     logger,

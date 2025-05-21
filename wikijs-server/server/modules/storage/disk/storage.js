@@ -3,7 +3,7 @@ import * as path from 'node:path'
 import tar from 'tar-fs'
 import * as zlib from 'node:zlib'
 import * as stream from 'node:stream'
-import _ from 'lodash'
+import lodash from 'lodash'
 import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
 import moment from 'moment'
@@ -174,7 +174,7 @@ export default {
                 objectMode: true,
                 transform: async (asset, enc, cb) => {
                     const filename = (asset.folderId && asset.folderId > 0)
-                        ? `${_.get(assetFolders, asset.folderId)}/${asset.filename}`
+                        ? `${lodash.get(assetFolders, asset.folderId)}/${asset.filename}`
                         : asset.filename
                     WIKI.logger.info(`(STORAGE/DISK) Dumping asset ${filename}...`)
                     await fs.outputFile(path.join(this.config.path, filename), asset.data)

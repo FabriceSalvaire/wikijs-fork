@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     generateSuccess(msg) {
@@ -6,13 +6,13 @@ export default {
             succeeded: true,
             errorCode: 0,
             slug: 'ok',
-            message: _.defaultTo(msg, 'Operation succeeded.')
+            message: lodash.defaultTo(msg, 'Operation succeeded.')
         }
     },
     generateError(err, complete = true) {
         const error = {
             succeeded: false,
-            errorCode: _.isFinite(err.code) ? err.code : 1,
+            errorCode: lodash.isFinite(err.code) ? err.code : 1,
             slug: err.name,
             message: err.message || 'An unexpected error occured.'
         }

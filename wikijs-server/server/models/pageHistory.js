@@ -1,5 +1,5 @@
 import { Model } from 'objection'
-import _ from 'lodash'
+import lodash from 'lodash'
 import { DateTime, Duration } from 'luxon'
 
 import Editors from './editors.js'
@@ -208,16 +208,16 @@ export default class PageHistory extends Model {
         }
 
         return {
-            trail: _.reduce(_.reverse(history.results), (res, ph) => {
+            trail: lodash.reduce(lodash.reverse(history.results), (res, ph) => {
                 let actionType = 'edit'
                 let valueBefore = null
                 let valueAfter = null
 
                 if (!prevPh && history.total < upperLimit)
                     actionType = 'initial'
-                else if (_.get(prevPh, 'path', '') !== ph.path) {
+                else if (lodash.get(prevPh, 'path', '') !== ph.path) {
                     actionType = 'move'
-                    valueBefore = _.get(prevPh, 'path', '')
+                    valueBefore = lodash.get(prevPh, 'path', '')
                     valueAfter = ph.path
                 }
 

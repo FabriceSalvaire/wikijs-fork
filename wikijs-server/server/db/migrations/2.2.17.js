@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -17,7 +17,7 @@ export const up = async (knex) => {
         case 'mariadb':
             // -> Fix for 2.2.50 failed migration
             const pageHistoryColumns = await knex.schema.raw('SHOW COLUMNS FROM pageHistory')
-            if (_.some(pageHistoryColumns[0], ['Field', 'versionDate'])) {
+            if (lodash.some(pageHistoryColumns[0], ['Field', 'versionDate'])) {
                 console.info('MySQL 2.2.50 Migration Fix - Dropping failed versionDate column...')
                 await knex.schema.raw('ALTER TABLE pageHistory DROP COLUMN versionDate')
                 console.info('versionDate column dropped successfully.')

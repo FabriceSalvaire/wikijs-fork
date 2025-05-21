@@ -1,5 +1,5 @@
 import qs from 'querystring'
-import _ from 'lodash'
+import lodash from 'lodash'
 import * as crypto from 'node:crypto'
 import * as path from 'node:path'
 
@@ -13,7 +13,7 @@ const contentToExt = {
     asciidoc: 'adoc',
     html: 'html'
 }
-const extToContent = _.invert(contentToExt)
+const extToContent = lodash.invert(contentToExt)
 
 /* global WIKI */
 
@@ -31,8 +31,8 @@ export default {
         }
 
         // Clean Path
-        rawPath = _.trim(qs.unescape(rawPath))
-        if (_.startsWith(rawPath, '/'))
+        rawPath = lodash.trim(qs.unescape(rawPath))
+        if (lodash.startsWith(rawPath, '/'))
             rawPath = rawPath.substring(1)
         rawPath = rawPath.replace(unsafeCharsRegex, '')
         if (rawPath === '')
@@ -41,9 +41,9 @@ export default {
         rawPath = rawPath.replace(/\\/g, '').replace(/\/\//g, '').replace(/\.\.+/ig, '')
 
         // Extract Info
-        let pathParts = _.filter(_.split(rawPath, '/'), (p) => {
-            p = _.trim(p)
-            return !_.isEmpty(p) && p !== '..' && p !== '.'
+        let pathParts = lodash.filter(lodash.split(rawPath, '/'), (p) => {
+            p = lodash.trim(p)
+            return !lodash.isEmpty(p) && p !== '..' && p !== '.'
         })
         if (pathParts[0].length === 1)
             pathParts.shift()
@@ -55,7 +55,7 @@ export default {
 
         // Strip extension
         if (opts.stripExt && pathParts.length > 0) {
-            const lastPart = _.last(pathParts)
+            const lastPart = lodash.last(pathParts)
             if (lastPart.indexOf('.') > 0) {
                 pathParts.pop()
                 const lastPartMeta = path.parse(lastPart)
@@ -63,7 +63,7 @@ export default {
             }
         }
 
-        pathObj.path = _.join(pathParts, '/')
+        pathObj.path = lodash.join(pathParts, '/')
         return pathObj
     },
     /**
@@ -93,7 +93,7 @@ export default {
             case 'json':
                 return {
                     ...page.content,
-                    _meta: _.fromPairs(meta)
+                    _meta: lodash.fromPairs(meta)
                 }
             default:
                 return page.content
@@ -103,13 +103,13 @@ export default {
      * Check if path is a reserved path
      */
     isReservedPath(rawPath) {
-        const firstSection = _.head(rawPath.split('/'))
+        const firstSection = lodash.head(rawPath.split('/'))
         if (firstSection.length <= 1)
             return true
         else if (localeSegmentRegex.test(firstSection))
             return true
         else if (
-            _.some(WIKI.data.reservedPaths, (p) => {
+            lodash.some(WIKI.data.reservedPaths, (p) => {
                 return p === firstSection
             })
         ) {
@@ -122,14 +122,14 @@ export default {
      * Get file extension from content type
      */
     getFileExtension(contentType) {
-        return _.get(contentToExt, contentType, 'txt')
+        return lodash.get(contentToExt, contentType, 'txt')
     },
     /**
      * Get content type from file extension
      */
     getContentType(filePath) {
-        const ext = _.last(filePath.split('.'))
-        return _.get(extToContent, ext, false)
+        const ext = lodash.last(filePath.split('.'))
+        return lodash.get(extToContent, ext, false)
     },
     /**
      * Get Page Meta object from disk path
@@ -140,7 +140,7 @@ export default {
             fpath = filePath.replace(/\\/g, '/')
         let meta = {
             locale: WIKI.config.lang.code,
-            path: _.initial(fpath.split('.')).join('')
+            path: lodash.initial(fpath.split('.')).join('')
         }
         const result = localeFolderRegex.exec(meta.path)
         if (result[1]) {

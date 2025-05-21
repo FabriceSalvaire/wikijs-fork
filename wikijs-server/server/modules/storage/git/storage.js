@@ -1,7 +1,7 @@
 import * as path from 'node:path'
 import sgit from 'simple-git'
 import fs from 'fs-extra'
-import _ from 'lodash'
+import lodash from 'lodash'
 import * as stream from 'node:stream'
 import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
@@ -33,7 +33,7 @@ export default {
         this.git = sgit(this.repoPath, { maxConcurrentProcesses: 1 })
 
         // Set custom binary path
-        if (!_.isEmpty(this.config.gitBinaryPath))
+        if (!lodash.isEmpty(this.config.gitBinaryPath))
             this.git.customBinary(this.config.gitBinaryPath)
 
         // Initialize repo (if needed)
@@ -64,7 +64,7 @@ export default {
 
         // Add remote
         WIKI.logger.info('(STORAGE/GIT) Setting SSL Verification config...')
-        await this.git.raw(['config', '--local', '--bool', 'http.sslVerify', _.toString(this.config.verifySSL)])
+        await this.git.raw(['config', '--local', '--bool', 'http.sslVerify', lodash.toString(this.config.verifySSL)])
         switch (this.config.authType) {
             case 'ssh':
                 WIKI.logger.info('(STORAGE/GIT) Setting SSH Command config...')
@@ -94,7 +94,7 @@ export default {
             default:
                 WIKI.logger.info('(STORAGE/GIT) Adding origin remote via HTTP/S...')
                 let originUrl = ''
-                if (_.startsWith(this.config.repoUrl, 'http')) {
+                if (lodash.startsWith(this.config.repoUrl, 'http')) {
                     originUrl = this.config.repoUrl.replace(
                         '://',
                         `://${encodeURI(this.config.basicUsername)}:${encodeURI(this.config.basicPassword)}@`
@@ -115,8 +115,8 @@ export default {
         // Checkout branch
         const branches = await this.git.branch()
         if (
-            !_.includes(branches.all, this.config.branch) &&
-            !_.includes(branches.all, `remotes/origin/${this.config.branch}`)
+            !lodash.includes(branches.all, this.config.branch) &&
+            !lodash.includes(branches.all, `remotes/origin/${this.config.branch}`)
         ) {
             throw new Error('Invalid branch! Make sure it exists on the remote first.')
         }
@@ -132,18 +132,18 @@ export default {
      * SYNC
      */
     async sync() {
-        const currentCommitLog = _.get(await this.git.log(['-n', '1', this.config.branch, '--']), 'latest', {})
+        const currentCommitLog = lodash.get(await this.git.log(['-n', '1', this.config.branch, '--']), 'latest', {})
 
         const rootUser = await WIKI.models.users.getRootUser()
 
         // Pull rebase
-        if (_.includes(['sync', 'pull'], this.mode)) {
+        if (lodash.includes(['sync', 'pull'], this.mode)) {
             WIKI.logger.info(`(STORAGE/GIT) Performing pull rebase from origin on branch ${this.config.branch}...`)
             await this.git.pull('origin', this.config.branch, ['--rebase'])
         }
 
         // Push
-        if (_.includes(['sync', 'push'], this.mode)) {
+        if (lodash.includes(['sync', 'push'], this.mode)) {
             WIKI.logger.info(`(STORAGE/GIT) Performing push to origin on branch ${this.config.branch}...`)
             let pushOpts = ['--signed=if-asked']
             if (this.mode === 'push')
@@ -152,11 +152,11 @@ export default {
         }
 
         // Process Changes
-        if (_.includes(['sync', 'pull'], this.mode)) {
-            const latestCommitLog = _.get(await this.git.log(['-n', '1', this.config.branch, '--']), 'latest', {})
+        if (lodash.includes(['sync', 'pull'], this.mode)) {
+            const latestCommitLog = lodash.get(await this.git.log(['-n', '1', this.config.branch, '--']), 'latest', {})
 
             const diff = await this.git.diffSummary(['-M', currentCommitLog.hash, latestCommitLog.hash])
-            if (_.get(diff, 'files', []).length > 0) {
+            if (lodash.get(diff, 'files', []).length > 0) {
                 let filesToProcess = []
                 const filePattern = /(.*?)(?:{(.*?))? => (?:(.*?)})?(.*)/
                 for (const f of diff.files) {
@@ -463,7 +463,7 @@ export default {
         await pipeline(
             klaw(this.repoPath, {
                 filter: (f) => {
-                    return !_.includes(f, '.git')
+                    return !lodash.includes(f, '.git')
                 }
             }),
             new stream.Transform({
@@ -549,7 +549,7 @@ export default {
                 objectMode: true,
                 transform: async (asset, enc, cb) => {
                     const filename = (asset.folderId && asset.folderId > 0)
-                        ? `${_.get(assetFolders, asset.folderId)}/${asset.filename}`
+                        ? `${lodash.get(assetFolders, asset.folderId)}/${asset.filename}`
                         : asset.filename
                     WIKI.logger.info(`(STORAGE/GIT) Adding asset ${filename}...`)
                     await fs.outputFile(path.join(this.repoPath, filename), asset.data)

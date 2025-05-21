@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 /* global WIKI */
 
 // ------------------------------------
@@ -23,9 +23,9 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...profile,
-                            id: _.get(profile.attributes, conf.uniqueIdAttribute, profile.user),
-                            email: _.get(profile.attributes, conf.emailAttribute),
-                            name: _.get(profile.attributes, conf.displayNameAttribute, profile.user),
+                            id: lodash.get(profile.attributes, conf.uniqueIdAttribute, profile.user),
+                            email: lodash.get(profile.attributes, conf.emailAttribute),
+                            name: lodash.get(profile.attributes, conf.displayNameAttribute, profile.user),
                             picture: ''
                         }
                     })

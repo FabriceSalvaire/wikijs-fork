@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import express from 'express'
 const router = express.Router()
 import qs from 'querystring'
@@ -12,7 +12,7 @@ import qs from 'querystring'
  */
 router.get('/.well-known/acme-challenge/:token', (req, res, next) => {
     res.type('text/plain')
-    if (_.get(WIKI.config, 'letsencrypt.challenge', false)) {
+    if (lodash.get(WIKI.config, 'letsencrypt.challenge', false)) {
         if (WIKI.config.letsencrypt.challenge.token === req.params.token) {
             res.send(WIKI.config.letsencrypt.challenge.keyAuthorization)
             WIKI.logger.info(`(LETSENCRYPT) Received valid challenge request. [ ACCEPTED ]`)

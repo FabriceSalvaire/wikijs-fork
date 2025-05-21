@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer'
-import _ from 'lodash'
+import lodash from 'lodash'
 import fs from 'fs-extra'
 import * as path from 'node:path'
 
@@ -9,7 +9,7 @@ export default {
     transport: null,
     templates: {},
     init() {
-        if (_.get(WIKI.config, 'mail.host', '').length > 2) {
+        if (lodash.get(WIKI.config, 'mail.host', '').length > 2) {
             let conf = {
                 host: WIKI.config.mail.host,
                 port: WIKI.config.mail.port,
@@ -19,7 +19,7 @@ export default {
                     rejectUnauthorized: !(WIKI.config.mail.verifySSL === false)
                 }
             }
-            if (_.get(WIKI.config, 'mail.user', '').length > 1) {
+            if (lodash.get(WIKI.config, 'mail.user', '').length > 1) {
                 conf = {
                     ...conf,
                     auth: {
@@ -28,7 +28,7 @@ export default {
                     }
                 }
             }
-            if (_.get(WIKI.config, 'mail.useDKIM', false)) {
+            if (lodash.get(WIKI.config, 'mail.useDKIM', false)) {
                 conf = {
                     ...conf,
                     dkim: {
@@ -59,7 +59,7 @@ export default {
             to: opts.to,
             subject: `${opts.subject} - ${WIKI.config.title}`,
             text: opts.text,
-            html: _.get(this.templates, opts.template)({
+            html: lodash.get(this.templates, opts.template)({
                 logo: (WIKI.config.logoUrl.startsWith('http') ? '' : WIKI.config.host) + WIKI.config.logoUrl,
                 siteTitle: WIKI.config.title,
                 copyright: WIKI.config.company.length > 0 ? WIKI.config.company : 'Powered by Wiki.js',
@@ -68,12 +68,12 @@ export default {
         })
     },
     async loadTemplate(key) {
-        if (_.has(this.templates, key))
+        if (lodash.has(this.templates, key))
             return
-        const keyKebab = _.kebabCase(key)
+        const keyKebab = lodash.kebabCase(key)
         try {
             const rawTmpl = await fs.readFile(path.join(WIKI.SERVERPATH, `templates/${keyKebab}.html`), 'utf8')
-            _.set(this.templates, key, _.template(rawTmpl))
+            lodash.set(this.templates, key, lodash.template(rawTmpl))
         } catch (err) {
             WIKI.logger.warn('Mail loadTemplate:')
             WIKI.logger.warn(err)

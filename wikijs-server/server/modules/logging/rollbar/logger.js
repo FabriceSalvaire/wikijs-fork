@@ -1,6 +1,6 @@
 import * as util from 'node:util'
 import winston from 'winston'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 // ------------------------------------
 // Rollbar
@@ -17,7 +17,7 @@ export default {
         util.inherits(RollbarLogger, winston.Transport)
 
         RollbarLogger.prototype.log = function (level, msg, meta, callback) {
-            this.rollbar.handleErrorWithPayloadData(new Error(msg), _.assignIn(meta, { level }))
+            this.rollbar.handleErrorWithPayloadData(new Error(msg), lodash.assignIn(meta, { level }))
             callback(null, true)
         }
 

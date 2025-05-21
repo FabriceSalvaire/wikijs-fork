@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -22,7 +22,7 @@ export default {
                     const usr = JSON.parse(body)
                     cb(null, {
                         id: usr._id,
-                        displayName: _.isEmpty(usr.name) ? usr.username : usr.name,
+                        displayName: lodash.isEmpty(usr.name) ? usr.username : usr.name,
                         email: usr.emails[0].address,
                         picture: usr.avatarUrl
                     })

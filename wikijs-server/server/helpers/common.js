@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 export default {
     /**
@@ -18,16 +18,16 @@ export default {
         }
     },
     parseModuleProps(props) {
-        return _.transform(props, (result, value, key) => {
+        return lodash.transform(props, (result, value, key) => {
             let defaultValue = ''
-            if (_.isPlainObject(value))
-                defaultValue = !_.isNil(value.default) ? value.default : this.getTypeDefaultValue(value.type)
+            if (lodash.isPlainObject(value))
+                defaultValue = !lodash.isNil(value.default) ? value.default : this.getTypeDefaultValue(value.type)
             else
                 defaultValue = this.getTypeDefaultValue(value)
-            _.set(result, key, {
+            lodash.set(result, key, {
                 default: defaultValue,
                 type: (value.type || value).toLowerCase(),
-                title: value.title || _.startCase(key),
+                title: value.title || lodash.startCase(key),
                 hint: value.hint || false,
                 enum: value.enum || false,
                 multiline: value.multiline || false,

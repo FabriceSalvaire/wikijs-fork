@@ -4,9 +4,9 @@ import passportJWT from 'passport-jwt'
 
 export default {
     sanitizeCommitUser(user) {
-        // let wlist = new RegExp('[^a-zA-Z0-9-_.\',& ' + appdata.regex.cjk + appdata.regex.arabic + ']', 'g')
+        // let wlist = new RegExp('[^a-zA-Z0-9-lodash.\',& ' + appdata.regex.cjk + appdata.regex.arabic + ']', 'g')
         // return {
-        //   name: _.chain(user.name).replace(wlist, '').trim().value(),
+        //   name: lodash.chain(user.name).replace(wlist, '').trim().value(),
         //   email: appconfig.git.showUserEmail ? user.email : appconfig.git.serverEmail
         // }
     },

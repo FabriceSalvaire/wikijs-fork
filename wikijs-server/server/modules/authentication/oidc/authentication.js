@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -31,22 +31,22 @@ export default {
                         providerKey: req.params.strategy,
                         profile: {
                             ...profile,
-                            email: _.get(profile, '_json.' + conf.emailClaim),
-                            displayName: _.get(profile, '_json.' + conf.displayNameClaim, '')
+                            email: lodash.get(profile, '_json.' + conf.emailClaim),
+                            displayName: lodash.get(profile, '_json.' + conf.displayNameClaim, '')
                         }
                     })
                     if (conf.mapGroups) {
-                        const groups = _.get(profile, '_json.' + conf.groupsClaim)
-                        if (groups && _.isArray(groups)) {
+                        const groups = lodash.get(profile, '_json.' + conf.groupsClaim)
+                        if (groups && lodash.isArray(groups)) {
                             const currentGroups = (await user.$relatedQuery('groups').select('groups.id')).map((g) =>
                                 g.id
                             )
                             const expectedGroups = Object.values(WIKI.auth.groups).filter((g) =>
                                 groups.includes(g.name)
                             ).map((g) => g.id)
-                            for (const groupId of _.difference(expectedGroups, currentGroups))
+                            for (const groupId of lodash.difference(expectedGroups, currentGroups))
                                 await user.$relatedQuery('groups').relate(groupId)
-                            for (const groupId of _.difference(currentGroups, expectedGroups))
+                            for (const groupId of lodash.difference(currentGroups, expectedGroups))
                                 await user.$relatedQuery('groups').unrelate().where('groupId', groupId)
                         }
                     }

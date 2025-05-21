@@ -4,7 +4,7 @@ import { Model } from 'objection'
 import moment from 'moment'
 import * as path from 'node:path'
 import fs from 'fs-extra'
-import _ from 'lodash'
+import lodash from 'lodash'
 import assetHelper from '../helpers/asset.js'
 import Promise from 'bluebird'
 
@@ -97,7 +97,7 @@ export default class Asset extends Model {
             filename: opts.originalname,
             hash: fileHash,
             ext: fileInfo.ext,
-            kind: _.startsWith(opts.mimetype, 'image/') ? 'image' : 'binary',
+            kind: lodash.startsWith(opts.mimetype, 'image/') ? 'image' : 'binary',
             mime: opts.mimetype,
             fileSize: opts.size,
             folderId: opts.folderId
@@ -218,7 +218,7 @@ export default class Asset extends Model {
                 path: assetPath
             }
         })
-        for (let location of _.filter(localLocations, (location) => Boolean(location.path))) {
+        for (let location of lodash.filter(localLocations, (location) => Boolean(location.path))) {
             const assetExists = await WIKI.models.assets.getAssetFromCache(assetPath, location.path, res)
             if (assetExists)
                 return true

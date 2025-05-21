@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -21,13 +21,13 @@ export default {
         async providers(obj, args, context, info) {
             const providers = await WIKI.models.commentProviders.getProviders()
             return providers.map((provider) => {
-                const providerInfo = _.find(WIKI.data.commentProviders, ['key', provider.key]) || {}
+                const providerInfo = lodash.find(WIKI.data.commentProviders, ['key', provider.key]) || {}
                 return {
                     ...providerInfo,
                     ...provider,
-                    config: _.sortBy(
-                        _.transform(provider.config, (res, value, key) => {
-                            const configData = _.get(providerInfo.props, key, false)
+                    config: lodash.sortBy(
+                        lodash.transform(provider.config, (res, value, key) => {
+                            const configData = lodash.get(providerInfo.props, key, false)
                             if (configData) {
                                 res.push({
                                     key,
@@ -168,8 +168,8 @@ export default {
                 for (let provider of args.providers) {
                     await WIKI.models.commentProviders.query().patch({
                         isEnabled: provider.isEnabled,
-                        config: _.reduce(provider.config, (result, value, key) => {
-                            _.set(result, `${value.key}`, _.get(JSON.parse(value.value), 'v', null))
+                        config: lodash.reduce(provider.config, (result, value, key) => {
+                            lodash.set(result, `${value.key}`, lodash.get(JSON.parse(value.value), 'v', null))
                             return result
                         }, {})
                     }).where('key', provider.key)

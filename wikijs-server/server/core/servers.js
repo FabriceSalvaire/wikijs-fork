@@ -3,7 +3,7 @@ import * as http from 'node:http'
 import * as https from 'node:https'
 import { ApolloServer } from 'apollo-server-express'
 import Promise from 'bluebird'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -74,9 +74,9 @@ export default {
             } else {
                 tlsOpts.pfx = WIKI.config.ssl.inline ? WIKI.config.ssl.pfx : fs.readFileSync(WIKI.config.ssl.pfx)
             }
-            if (!_.isEmpty(WIKI.config.ssl.passphrase))
+            if (!lodash.isEmpty(WIKI.config.ssl.passphrase))
                 tlsOpts.passphrase = WIKI.config.ssl.passphrase
-            if (!_.isEmpty(WIKI.config.ssl.dhparam))
+            if (!lodash.isEmpty(WIKI.config.ssl.dhparam))
                 tlsOpts.dhparam = WIKI.config.ssl.dhparam
         } catch (err) {
             WIKI.logger.error('Failed to setup HTTPS server parameters:')

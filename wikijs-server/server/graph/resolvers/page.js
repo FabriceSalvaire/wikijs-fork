@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -62,7 +62,7 @@ export default {
                 const resp = await WIKI.data.searchEngine.query(args.query, args)
                 return {
                     ...resp,
-                    results: _.filter(resp.results, (r) => {
+                    results: lodash.filter(resp.results, (r) => {
                         return WIKI.auth.checkAccess(context.req.user, ['read:pages'], {
                             path: r.path,
                             locale: r.locale,
@@ -115,7 +115,7 @@ export default {
                             queryBuilder.where('authorId', args.authorId)
                     }
                     if (args.tags && args.tags.length > 0)
-                        queryBuilder.whereIn('tags.tag', args.tags.map((t) => _.trim(t).toLowerCase()))
+                        queryBuilder.whereIn('tags.tag', args.tags.map((t) => lodash.trim(t).toLowerCase()))
                     const orderDir = args.orderByDirection === 'DESC' ? 'desc' : 'asc'
                     switch (args.orderBy) {
                         case 'CREATED':
@@ -135,17 +135,17 @@ export default {
                             break
                     }
                 })
-            results = _.filter(results, (r) => {
+            results = lodash.filter(results, (r) => {
                 return WIKI.auth.checkAccess(context.req.user, ['read:pages'], {
                     path: r.path,
                     locale: r.locale
                 })
             }).map((r) => ({
                 ...r,
-                tags: _.map(r.tags, 'tag')
+                tags: lodash.map(r.tags, 'tag')
             }))
             if (args.tags && args.tags.length > 0)
-                results = _.filter(results, (r) => _.every(args.tags, (t) => _.includes(r.tags, t)))
+                results = lodash.filter(results, (r) => lodash.every(args.tags, (t) => lodash.includes(r.tags, t)))
             return results
         },
         /**
@@ -210,19 +210,19 @@ export default {
                     { locale: 'localeCode' }
                 ])
                 .withGraphJoined('tags')
-            const allTags = _.filter(pages, (r) => {
+            const allTags = lodash.filter(pages, (r) => {
                 return WIKI.auth.checkAccess(context.req.user, ['read:pages'], {
                     path: r.path,
                     locale: r.locale
                 })
             }).flatMap((r) => r.tags)
-            return _.orderBy(_.uniqBy(allTags, 'id'), ['tag'], ['asc'])
+            return lodash.orderBy(lodash.uniqBy(allTags, 'id'), ['tag'], ['asc'])
         },
         /**
          * SEARCH TAGS
          */
         async searchTags(obj, args, context, info) {
-            const query = _.trim(args.query)
+            const query = lodash.trim(args.query)
             const pages = await WIKI.models.pages.query()
                 .column([
                     'path',
@@ -240,13 +240,13 @@ export default {
                             builderSub.where('tags.tag', 'LIKE', `%${query}%`)
                     })
                 })
-            const allTags = _.filter(pages, (r) => {
+            const allTags = lodash.filter(pages, (r) => {
                 return WIKI.auth.checkAccess(context.req.user, ['read:pages'], {
                     path: r.path,
                     locale: r.locale
                 })
             }).flatMap((r) => r.tags).map((t) => t.tag)
-            return _.uniq(allTags).slice(0, 5)
+            return lodash.uniq(allTags).slice(0, 5)
         },
         /**
          * FETCH PAGE TREE
@@ -285,7 +285,7 @@ export default {
                     if (args.includeAncestors && curPage && curPage.ancestors.length > 0) {
                         builder.orWhereIn(
                             'id',
-                            _.isString(curPage.ancestors) ? JSON.parse(curPage.ancestors) : curPage.ancestors
+                            lodash.isString(curPage.ancestors) ? JSON.parse(curPage.ancestors) : curPage.ancestors
                         )
                     }
                 }
@@ -339,7 +339,7 @@ export default {
                     })
             }
 
-            return _.reduce(results, (result, val) => {
+            return lodash.reduce(results, (result, val) => {
                 // -> Check if user has access to source and linked page
                 if (
                     !WIKI.auth.checkAccess(context.req.user, ['read:pages'], { path: val.path, locale: args.locale }) ||
@@ -348,7 +348,7 @@ export default {
                     return result
                 }
 
-                const existingEntry = _.findIndex(result, ['id', val.id])
+                const existingEntry = lodash.findIndex(result, ['id', val.id])
                 if (existingEntry >= 0) {
                     if (val.link)
                         result[existingEntry].links.push(`${val.locale}/${val.link}`)
@@ -518,8 +518,8 @@ export default {
                 const affectedRows = await WIKI.models.tags.query()
                     .findById(args.id)
                     .patch({
-                        tag: _.trim(args.tag).toLowerCase(),
-                        title: _.trim(args.title)
+                        tag: lodash.trim(args.tag).toLowerCase(),
+                        title: lodash.trim(args.title)
                     })
                 if (affectedRows < 1)
                     throw new Error('This tag does not exist.')

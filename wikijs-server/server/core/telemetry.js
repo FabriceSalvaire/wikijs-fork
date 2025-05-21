@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import { createApolloFetch } from 'apollo-fetch'
 import { v4 as uuid } from 'uuid'
 import * as os from 'node:os'
@@ -13,7 +13,7 @@ export default {
         // WIKI.logger.info('telemetry.init')
         WIKI.telemetry = this
 
-        if (_.get(WIKI.config, 'telemetry.isEnabled', false) === true && WIKI.config.offline !== true) {
+        if (lodash.get(WIKI.config, 'telemetry.isEnabled', false) === true && WIKI.config.offline !== true) {
             this.enabled = true
             this.sendInstanceEvent('STARTUP')
         }
@@ -61,17 +61,17 @@ export default {
                 case 'mariadb':
                 case 'mysql':
                     const resultMYSQL = await WIKI.models.knex.raw('SELECT VERSION() as version;')
-                    dbVersion = _.get(resultMYSQL, '[0][0].version', 'Unknown')
+                    dbVersion = lodash.get(resultMYSQL, '[0][0].version', 'Unknown')
                     break
                 case 'mssql':
                     const resultMSSQL = await WIKI.models.knex.raw('SELECT @@VERSION as version;')
-                    dbVersion = _.get(resultMSSQL, '[0].version', 'Unknown')
+                    dbVersion = lodash.get(resultMSSQL, '[0].version', 'Unknown')
                     break
                 case 'postgres':
-                    dbVersion = _.get(WIKI.models, 'knex.client.version', 'Unknown')
+                    dbVersion = lodash.get(WIKI.models, 'knex.client.version', 'Unknown')
                     break
                 case 'sqlite':
-                    dbVersion = _.get(WIKI.models, 'knex.client.driver.VERSION', 'Unknown')
+                    dbVersion = lodash.get(WIKI.models, 'knex.client.driver.VERSION', 'Unknown')
                     break
             }
 
@@ -131,7 +131,7 @@ export default {
                     event: eventType
                 }
             })
-            const telemetryResponse = _.get(respStrings, 'data.telemetry.instance.responseResult', {
+            const telemetryResponse = lodash.get(respStrings, 'data.telemetry.instance.responseResult', {
                 succeeded: false,
                 message: 'Unexpected Error'
             })
@@ -146,7 +146,7 @@ export default {
     },
 
     generateClientId() {
-        _.set(WIKI.config, 'telemetry.clientId', uuid())
+        lodash.set(WIKI.config, 'telemetry.clientId', uuid())
         return WIKI.config.telemetry.clientId
     }
 }

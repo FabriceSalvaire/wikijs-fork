@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import cheerio from 'cheerio'
 
 /* global WIKI */
@@ -20,13 +20,13 @@ export default async (pageId) => {
 
         let output = page.content
 
-        if (_.isEmpty(page.content)) {
+        if (lodash.isEmpty(page.content)) {
             await WIKI.models.knex.destroy()
             WIKI.logger.warn(`Failed to render page ID ${pageId} because content was empty: [ FAILED ]`)
         }
 
         for (let core of pipeline) {
-            const renderer = (await import(`../modules/rendering/${_.kebabCase(core.key)}/renderer.js`)).default
+            const renderer = (await import(`../modules/rendering/${lodash.kebabCase(core.key)}/renderer.js`)).default
             output = await renderer.render.call({
                 config: core.config,
                 children: core.children,
@@ -41,12 +41,12 @@ export default async (pageId) => {
         let toc = { root: [] }
 
         $('h1,h2,h3,h4,h5,h6').each((idx, el) => {
-            const depth = _.toSafeInteger(el.name.substring(1)) - (isStrict ? 1 : 2)
+            const depth = lodash.toSafeInteger(el.name.substring(1)) - (isStrict ? 1 : 2)
             let leafPathError = false
 
-            const leafPath = _.reduce(_.times(depth), (curPath, curIdx) => {
-                if (_.has(toc, curPath)) {
-                    const lastLeafIdx = _.get(toc, curPath).length - 1
+            const leafPath = lodash.reduce(lodash.times(depth), (curPath, curIdx) => {
+                if (lodash.has(toc, curPath)) {
+                    const lastLeafIdx = lodash.get(toc, curPath).length - 1
                     if (lastLeafIdx >= 0)
                         curPath = `${curPath}[${lastLeafIdx}].children`
                     else
@@ -61,8 +61,8 @@ export default async (pageId) => {
             const leafSlug = $('.toc-anchor', el).first().attr('href')
             $('.toc-anchor', el).remove()
 
-            _.get(toc, leafPath).push({
-                title: _.trim($(el).text()),
+            lodash.get(toc, leafPath).push({
+                title: lodash.trim($(el).text()),
                 anchor: leafSlug,
                 children: []
             })

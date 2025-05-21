@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import { SchemaDirectiveVisitor } from 'graphql-tools'
 import { defaultFieldResolver } from 'graphql'
 
@@ -42,7 +42,7 @@ export default class AuthDirective extends SchemaDirectiveVisitor {
                 const context = args[2]
                 if (!context.req.user)
                     throw new Error('Unauthorized')
-                if (!_.some(context.req.user.permissions, (pm) => _.includes(requiredScopes, pm)))
+                if (!lodash.some(context.req.user.permissions, (pm) => lodash.includes(requiredScopes, pm)))
                     throw new Error('Forbidden')
 
                 return resolve.apply(this, args)

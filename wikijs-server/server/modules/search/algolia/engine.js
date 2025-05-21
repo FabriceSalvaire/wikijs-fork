@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import algoliasearch from 'algoliasearch'
 import * as stream from 'node:stream'
 import Promise from 'bluebird'
@@ -51,7 +51,7 @@ export default {
                 hitsPerPage: 50
             })
             return {
-                results: _.map(results.hits, (r) => ({
+                results: lodash.map(results.hits, (r) => ({
                     id: r.objectID,
                     locale: r.locale,
                     path: r.path,
@@ -167,7 +167,7 @@ export default {
             WIKI.logger.info(`(SEARCH/ALGOLIA) Sending batch of ${chunks.length}...`)
             try {
                 await this.index.saveObjects(
-                    _.map(chunks, (doc) => ({
+                    lodash.map(chunks, (doc) => ({
                         objectID: doc.id,
                         locale: doc.locale,
                         path: doc.path,

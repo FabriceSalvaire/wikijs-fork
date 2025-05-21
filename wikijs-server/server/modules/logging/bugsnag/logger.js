@@ -1,6 +1,6 @@
 import * as util from 'node:util'
 import winston from 'winston'
-import _ from 'lodash'
+import lodash from 'lodash'
 
 // ------------------------------------
 // Bugsnag
@@ -17,7 +17,7 @@ export default {
         util.inherits(BugsnagLogger, winston.Transport)
 
         BugsnagLogger.prototype.log = function (level, msg, meta, callback) {
-            this.bugsnag.notify(new Error(msg), _.assignIn(meta, { severity: level }))
+            this.bugsnag.notify(new Error(msg), lodash.assignIn(meta, { severity: level }))
             callback(null, true)
         }
 

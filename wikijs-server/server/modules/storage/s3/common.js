@@ -2,7 +2,7 @@ import S3 from 'aws-sdk/clients/s3'
 import * as stream from 'node:stream'
 import Promise from 'bluebird'
 const pipeline = Promise.promisify(stream.pipeline)
-import _ from 'lodash'
+import lodash from 'lodash'
 import pageHelper from '../../../helpers/page.js'
 
 /* global WIKI */
@@ -40,15 +40,15 @@ export class S3CompatibleStorage {
             apiVersions: '2006-03-01'
         }
 
-        if (!_.isNil(this.config.region))
+        if (!lodash.isNil(this.config.region))
             s3Config.region = this.config.region
-        if (!_.isNil(this.config.endpoint))
+        if (!lodash.isNil(this.config.endpoint))
             s3Config.endpoint = this.config.endpoint
-        if (!_.isNil(this.config.sslEnabled))
+        if (!lodash.isNil(this.config.sslEnabled))
             s3Config.sslEnabled = this.config.sslEnabled
-        if (!_.isNil(this.config.s3ForcePathStyle))
+        if (!lodash.isNil(this.config.s3ForcePathStyle))
             s3Config.s3ForcePathStyle = this.config.s3ForcePathStyle
-        if (!_.isNil(this.config.s3BucketEndpoint))
+        if (!lodash.isNil(this.config.s3BucketEndpoint))
             s3Config.s3BucketEndpoint = this.config.s3BucketEndpoint
 
         this.s3 = new S3(s3Config)
@@ -167,7 +167,7 @@ export class S3CompatibleStorage {
                 objectMode: true,
                 transform: async (asset, enc, cb) => {
                     const filename = (asset.folderId && asset.folderId > 0)
-                        ? `${_.get(assetFolders, asset.folderId)}/${asset.filename}`
+                        ? `${lodash.get(assetFolders, asset.folderId)}/${asset.filename}`
                         : asset.filename
                     WIKI.logger.info(`(STORAGE/${this.storageName}) Adding asset ${filename}...`)
                     await this.s3.putObject({ Key: filename, Body: asset.data }).promise()

@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 import graphHelper from '../../helpers/graph.js'
 
 /* global WIKI */
@@ -18,13 +18,13 @@ export default {
         async renderers(obj, args, context, info) {
             let renderers = await WIKI.models.renderers.getRenderers()
             renderers = renderers.map((rdr) => {
-                const rendererInfo = _.find(WIKI.data.renderers, ['key', rdr.key]) || {}
+                const rendererInfo = lodash.find(WIKI.data.renderers, ['key', rdr.key]) || {}
                 return {
                     ...rendererInfo,
                     ...rdr,
-                    config: _.sortBy(
-                        _.transform(rdr.config, (res, value, key) => {
-                            const configData = _.get(rendererInfo.props, key, false)
+                    config: lodash.sortBy(
+                        lodash.transform(rdr.config, (res, value, key) => {
+                            const configData = lodash.get(rendererInfo.props, key, false)
                             if (configData) {
                                 res.push({
                                     key,
@@ -41,7 +41,7 @@ export default {
             })
             // if (args.filter) { renderers = graphHelper.filter(renderers, args.filter) }
             if (args.orderBy)
-                renderers = _.sortBy(renderers, [args.orderBy])
+                renderers = lodash.sortBy(renderers, [args.orderBy])
             return renderers
         }
     },
@@ -51,8 +51,8 @@ export default {
                 for (let rdr of args.renderers) {
                     await WIKI.models.renderers.query().patch({
                         isEnabled: rdr.isEnabled,
-                        config: _.reduce(rdr.config, (result, value, key) => {
-                            _.set(result, `${value.key}`, _.get(JSON.parse(value.value), 'v', null))
+                        config: lodash.reduce(rdr.config, (result, value, key) => {
+                            lodash.set(result, `${value.key}`, lodash.get(JSON.parse(value.value), 'v', null))
                             return result
                         }, {})
                     }).where('key', rdr.key)

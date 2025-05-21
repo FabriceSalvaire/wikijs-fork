@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import lodash from 'lodash'
 
 /* global WIKI */
 
@@ -6,7 +6,7 @@ export default async (targetKey) => {
     WIKI.logger.info(`Syncing with storage target ${targetKey}...`)
 
     try {
-        const target = _.find(WIKI.models.storage.targets, ['key', targetKey])
+        const target = lodash.find(WIKI.models.storage.targets, ['key', targetKey])
         if (target) {
             await target.fn.sync()
             WIKI.logger.info(`Syncing with storage target ${targetKey}: [ COMPLETED ]`)

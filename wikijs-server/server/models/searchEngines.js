@@ -1,7 +1,7 @@
 import { Model } from 'objection'
 import * as path from 'node:path'
 import fs from 'fs-extra'
-import _ from 'lodash'
+import lodash from 'lodash'
 import yaml from 'js-yaml'
 import commonHelper from '../helpers/common.js'
 
@@ -62,21 +62,21 @@ export default class SearchEngine extends Model {
             // -> Insert new searchEngines
             let newSearchEngines = []
             for (let searchEngine of WIKI.data.searchEngines) {
-                if (!_.some(dbSearchEngines, ['key', searchEngine.key])) {
+                if (!lodash.some(dbSearchEngines, ['key', searchEngine.key])) {
                     newSearchEngines.push({
                         key: searchEngine.key,
                         isEnabled: false,
-                        config: _.transform(searchEngine.props, (result, value, key) => {
-                            _.set(result, key, value.default)
+                        config: lodash.transform(searchEngine.props, (result, value, key) => {
+                            lodash.set(result, key, value.default)
                             return result
                         }, {})
                     })
                 } else {
-                    const searchEngineConfig = _.get(_.find(dbSearchEngines, ['key', searchEngine.key]), 'config', {})
+                    const searchEngineConfig = lodash.get(lodash.find(dbSearchEngines, ['key', searchEngine.key]), 'config', {})
                     await WIKI.models.searchEngines.query().patch({
-                        config: _.transform(searchEngine.props, (result, value, key) => {
-                            if (!_.has(result, key))
-                                _.set(result, key, value.default)
+                        config: lodash.transform(searchEngine.props, (result, value, key) => {
+                            if (!lodash.has(result, key))
+                                lodash.set(result, key, value.default)
                             return result
                         }, searchEngineConfig)
                     }).where('key', searchEngine.key)

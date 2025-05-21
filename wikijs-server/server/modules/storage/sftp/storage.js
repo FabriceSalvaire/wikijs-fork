@@ -1,5 +1,5 @@
 import SSH2Promise from 'ssh2-promise'
-import _ from 'lodash'
+import lodash from 'lodash'
 import * as path from 'node:path'
 import * as stream from 'node:stream'
 import Promise from 'bluebird'
@@ -158,7 +158,7 @@ export default {
                 objectMode: true,
                 transform: async (asset, enc, cb) => {
                     const filename = (asset.folderId && asset.folderId > 0)
-                        ? `${_.get(assetFolders, asset.folderId)}/${asset.filename}`
+                        ? `${lodash.get(assetFolders, asset.folderId)}/${asset.filename}`
                         : asset.filename
                     WIKI.logger.info(`(STORAGE/SFTP) Adding asset ${filename}...`)
                     await this.ensureDirectory(filename)
@@ -173,9 +173,9 @@ export default {
     async ensureDirectory(filePath) {
         if (filePath.indexOf('/') >= 0) {
             try {
-                const folderPaths = _.dropRight(filePath.split('/'))
+                const folderPaths = lodash.dropRight(filePath.split('/'))
                 for (let i = 1; i <= folderPaths.length; i++) {
-                    const folderSection = _.take(folderPaths, i).join('/')
+                    const folderSection = lodash.take(folderPaths, i).join('/')
                     const folderDir = path.posix.join(this.config.basePath, folderSection)
                     try {
                         await this.sftp.readdir(folderDir)
