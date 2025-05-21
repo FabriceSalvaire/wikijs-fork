@@ -54,8 +54,68 @@ Winston is unable to log the location of the call.  This behaviour is reported b
 
 - `array.length > 0`
 
-[beautifier/js-beautify: Beautifier for javascript](https://github.com/beautifier/js-beautify)
+**Deno formatting settings**
+See [Deno — Linting and formatting](https://docs.deno.com/runtime/fundamentals/linting_and_formatting)
+```
+  "bracePosition": "sameLine",
+      // brace position for blocks
+      // e.g. `if (..) {`
+      // maintain, sameLine, nextLine, sameLineUnlessHanging
+  "indentWidth": 4,
+  "lineWidth": 120,
+  "newLineKind": "lf",
+  "nextControlFlowPosition": "sameLine",
+      // e.g. `} else {`
+      // sameLine, nextLine, maintain
+  "semiColons": false,
+  "operatorPosition": "maintain",
+      // where to place the operator for expressions that span multiple lines
+      // e.g. `&&` `||` `? :`
+      // sameLine, nextLine, maintain
+  "proseWrap": "preserve",
+      // e.g. ???
+      // always, never, preserve
+  "quoteProps": "asNeeded",
+      // quoting of object properties
+      // e.g. `'foo': ...`
+      // asNeeded, consistent, preserve
+  "singleBodyPosition": "nextLine",
+     // e.g. `if (...)\n...`
+     // sameLine, nextLine, maintain, sameLineUnlessHanging
+  "singleQuote": true,
+  "spaceAround": false,
+     // e.g. `if ( ... )` `[ 1, 2, 3 ]` `foo( 1, 2 )`
+     // control spacing around enclosed expressions
+  "spaceSurroundingProperties": true,
+     // control spacing surrounding single line object-like nodes
+     // e.g. `{ silent: false }`
+  "trailingCommas": "never",
+     // control trailing commas in multi-line arrays/objects
+     // e.g. `(1, 2, 3,)`
+     // but we cannot control that for multi-lines !
+     // always, never
+  "typeLiteral.separatorKind": "semiColon",
+     // define separator kind for type literals
+     // e.g. ???
+     // comma, semiColon
+  "useTabs": false, 
+  "useBraces": "preferNone",
+     // whether to use braces for if statements, for statements, and while statements
+     // e.g. `if (...)\n    single line expression\n`
+     // maintain, whenNotSingleLine, always, preferNone
+```
 
+Notice we cannot control
+```
+const afunc = (foo) => ...
+// vs
+const afunc = foo => ...
+
+var alist = [
+    1,
+    2 // keep ,
+]
+```
 
 ## Client / Server Split
 
