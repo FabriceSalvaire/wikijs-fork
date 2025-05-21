@@ -15,6 +15,7 @@ from . import explore
 from . import fixture
 from . import gh
 from . import GraphQL
+from . import linter
 from . import pnpm
 from . import sync
 from . import yarn
