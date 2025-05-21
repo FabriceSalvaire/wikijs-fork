@@ -5,7 +5,7 @@
 
 from types import ModuleType
 
-from invoke import task, Collection
+from invoke import Collection
 
 ####################################################################################################
 
@@ -14,6 +14,7 @@ from . import clean
 from . import explore
 from . import fixture
 from . import gh
+from . import GraphQL
 from . import pnpm
 from . import sync
 from . import yarn
