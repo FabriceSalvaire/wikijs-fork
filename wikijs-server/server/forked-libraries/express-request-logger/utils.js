@@ -1,18 +1,20 @@
-'use strict'
+import lodash from 'lodash'
 
-var _ = require('lodash')
 const MASK = 'XXXXX'
 const NA = 'N/A'
 const VALID_LEVELS = ['trace', 'debug', 'info', 'warn', 'error']
 const DEFAULT_LEVEL = 'info'
 
-var getUrl = function (req) {
-    var url = req && req.url || NA
+/**************************************************************************************************/
 
+export var getUrl = function (req) {
+    var url = req && req.url || NA
     return url
 }
 
-var getRoute = function (req) {
+/**************************************************************************************************/
+
+export var getRoute = function (req) {
     var url = NA
 
     if (req) {
@@ -26,10 +28,12 @@ var getRoute = function (req) {
     return url
 }
 
-function cleanOmitKeys(obj, omitKeys) {
-    if (obj && !_.isEmpty(omitKeys)) {
+/**************************************************************************************************/
+
+export function cleanOmitKeys(obj, omitKeys) {
+    if (obj && !lodash.isEmpty(omitKeys)) {
         Object.keys(obj).forEach(function (key) {
-            if (_.some(omitKeys, (omitKey) => key === omitKey))
+            if (lodash.some(omitKeys, omitKey => key === omitKey))
                 delete obj[key]
             else
                 (obj[key] && typeof obj[key] === 'object') && cleanOmitKeys(obj[key])
@@ -38,23 +42,29 @@ function cleanOmitKeys(obj, omitKeys) {
     return obj
 }
 
-var shouldAuditURL = function (excludeURLs, req) {
-    return _.every(excludeURLs, function (path) {
+/**************************************************************************************************/
+
+export var shouldAuditURL = function (excludeURLs, req) {
+    return lodash.every(excludeURLs, function (path) {
         var url = getUrl(req)
         var route = getRoute(req)
         return !(url.includes(path) || route.includes(path))
     })
 }
 
-var maskJson = function (jsonObj, fieldsToMask) {
-    let jsonObjCopy = _.cloneDeepWith(jsonObj, function (value, key) {
-        if (_.includes(fieldsToMask, key))
+/**************************************************************************************************/
+
+export var maskJson = function (jsonObj, fieldsToMask) {
+    let jsonObjCopy = lodash.cloneDeepWith(jsonObj, function (value, key) {
+        if (lodash.includes(fieldsToMask, key))
             return MASK
     })
     return jsonObjCopy
 }
 
-var getLogLevel = function (statusCode, levelsMap) {
+/**************************************************************************************************/
+
+export var getLogLevel = function (statusCode, levelsMap) {
     let level = DEFAULT_LEVEL // Default
 
     if (levelsMap) {
@@ -71,22 +81,14 @@ var getLogLevel = function (statusCode, levelsMap) {
     return level
 }
 
-var getBodyStr = function (body, maxBodyLength) {
-    if (_.isEmpty(body))
+/**************************************************************************************************/
+
+export var getBodyStr = function (body, maxBodyLength) {
+    if (lodash.isEmpty(body))
         return NA
     else {
         let bodyStr = (typeof body !== 'string') ? JSON.stringify(body) : body
         let shouldShorten = maxBodyLength && maxBodyLength > 0 && bodyStr.length > maxBodyLength
         return shouldShorten ? bodyStr.substr(0, maxBodyLength) + '...' : bodyStr
     }
-}
-
-module.exports = {
-    getRoute: getRoute,
-    getUrl: getUrl,
-    shouldAuditURL: shouldAuditURL,
-    maskJson: maskJson,
-    cleanOmitKeys: cleanOmitKeys,
-    getLogLevel: getLogLevel,
-    getBodyStr: getBodyStr
 }

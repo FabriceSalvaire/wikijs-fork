@@ -11,6 +11,8 @@ import session from 'express-session'
 import connectSessionKnex from 'connect-session-knex'
 const KnexSessionStore = connectSessionKnex(session)
 import favicon from 'serve-favicon'
+// import audit from 'express-requests-logger'
+import audit from './forked-libraries/express-request-logger/index.js'
 
 /* global WIKI */
 
@@ -40,6 +42,18 @@ export default async () => {
   const app = express()
   WIKI.app = app
   app.use(compression())
+
+  app.use(audit({
+    logger: WIKI.logger,
+    request: {
+      // excludeHeaders: ['*'],
+    },
+    reponse: {
+      // excludeHeaders: ['*'],
+      // excludeBody: ['*'],
+      // maxBodyLength: 10,
+    }
+  }))
 
   // ----------------------------------------
   // Security

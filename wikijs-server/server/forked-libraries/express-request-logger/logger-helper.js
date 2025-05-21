@@ -1,14 +1,20 @@
-'use strict'
+/**************************************************************************************************/
 
-var utils = require('./utils')
-var _ = require('lodash')
+import _ from 'lodash'
+
+import * as utils from './utils.js'
+
+/**************************************************************************************************/
+
 var ALL_FIELDS = '*'
 const NA = 'N/A'
 const DEFAULT_LOG_LEVEL = 'info'
 const START = 'start'
 const END = 'end'
 
-var auditRequest = function (req, options) {
+/**************************************************************************************************/
+
+export var auditRequest = function (req, options) {
     var shouldAudit = utils.shouldAuditURL(options.excludeURLs, req)
 
     if (shouldAudit) {
@@ -31,11 +37,13 @@ var auditRequest = function (req, options) {
         if (req && req.additionalAudit)
             auditObject = Object.assign(auditObject, req.additionalAudit)
 
-        options.logger.info(auditObject, 'Inbound Transaction')
+        options.logger.info(auditObject)
     }
 }
 
-var auditResponse = function (req, res, options) {
+/**************************************************************************************************/
+
+export var auditResponse = function (req, res, options) {
     var request
     var response
 
@@ -69,9 +77,21 @@ var auditResponse = function (req, res, options) {
             let resolvedLogLevel = utils.getLogLevel(res.statusCode, options.levels)
             level = options.logger[resolvedLogLevel] ? resolvedLogLevel : level
         }
-        options.logger[level](auditObject, 'Inbound Transaction')
+
+        // const message = auditObject
+        let message = `${request.method} ${request.url} -> ${request.url_route}`
+        if (request.method == 'POST') {
+            message += '\n' + request.body
+            message += '\n' + response.body
+        }
+        // const info = {
+        //     url_route: request.url_route,
+        // }
+        options.logger[level](message)
     }
 }
+
+/**************************************************************************************************/
 
 function getRequestAudit(req, options) {
     var headers = _.get(req, 'headers')
@@ -82,7 +102,7 @@ function getRequestAudit(req, options) {
     var URLParams = req && req.params ? req.params : NA
     var timestamp = req && req.timestamp ? req.timestamp.toISOString() : NA
     var timestamp_ms = req && req.timestamp ? req.timestamp.valueOf() : NA
-    var requestBody = _.get(req, 'body') //handle body clone the original body
+    var requestBody = _.get(req, 'body')  //handle body clone the original body
 
     if (options.request.customMaskBodyFunc)
         requestBody = options.request.customMaskBodyFunc(req)
@@ -109,6 +129,8 @@ function getRequestAudit(req, options) {
     return auditObject
 }
 
+/**************************************************************************************************/
+
 function handleResponseJson(objJson, objStr, logger, excludeFields, maskFields) {
     let result
     if (shouldBeParsed(maskFields, excludeFields))
@@ -117,6 +139,8 @@ function handleResponseJson(objJson, objStr, logger, excludeFields, maskFields) 
         result = objStr || objJson
     return handleJson(result, logger, excludeFields, maskFields)
 }
+
+/**************************************************************************************************/
 
 function handleJson(obj, logger, excludeFields, maskFields) {
     let result = obj
@@ -149,9 +173,13 @@ function handleJson(obj, logger, excludeFields, maskFields) {
     return result
 }
 
+/**************************************************************************************************/
+
 function shouldBeParsed(maskFields, excludeFields) {
     return !_.includes(excludeFields, ALL_FIELDS) && (!_.isEmpty(maskFields) || !_.isEmpty(excludeFields))
 }
+
+/**************************************************************************************************/
 
 function getResponseAudit(req, res, options) {
     var headers = res && 'function' === typeof res.getHeaders ? res.getHeaders() : _.get(res, '_headers')
@@ -162,18 +190,13 @@ function getResponseAudit(req, res, options) {
     var responseBodyStr = _.get(res, '_bodyStr') //no need to clone because its not the original body
     var responseBodyJson = _.get(res, '_bodyJson') //no need to clone because its not the original body
 
-    let responseBody
+    let responseBody = ''
     if (isJsonBody(headers)) {
-        // Handle JSON only for json responses:
-        responseBody = handleResponseJson(
-            responseBodyJson,
-            responseBodyStr,
-            options.logger,
-            options.response.excludeBody,
-            options.response.maskBody
-        )
+      // Handle JSON only for json responses:
+      responseBody = handleResponseJson(
+        responseBodyJson, responseBodyStr, options.logger, options.response.excludeBody, options.response.maskBody)
     } else {
-        responseBody = responseBodyStr
+      responseBody = responseBodyStr
     }
 
     headers = handleJson(headers, options.logger, options.response.excludeHeaders, options.response.maskHeaders)
@@ -190,18 +213,17 @@ function getResponseAudit(req, res, options) {
     return auditObject
 }
 
+/**************************************************************************************************/
+
 function isJsonBody(headers) {
     return headers && headers['content-type'] && headers['content-type'].includes('application/json')
 }
+
+/**************************************************************************************************/
 
 function getMaskedQuery(query, fieldsToMask) {
     if (query)
         return !_.isEmpty(fieldsToMask) ? utils.maskJson(query, fieldsToMask) : query
     else
         return NA
-}
-
-module.exports = {
-    auditRequest: auditRequest,
-    auditResponse: auditResponse
 }
