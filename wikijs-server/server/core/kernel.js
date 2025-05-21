@@ -1,6 +1,7 @@
 import _ from 'lodash'
 import EventEmitter from 'eventemitter2'
-import StackTracey from 'stacktracey'
+// https://www.npmjs.com/package/stacktracey
+// import StackTracey from 'stacktracey'
 
 /* global WIKI */
 
