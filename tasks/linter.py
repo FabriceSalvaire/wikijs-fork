@@ -1,22 +1,27 @@
 ####################################################################################################
 
+from pathlib import Path
 import subprocess
 
 from invoke import task
 
 from . settings import DENO
+from .lib.helper import printc, join_cmd
 
 ####################################################################################################
 
 @task
-def format(ctx, path):
+def format(ctx, path, check=True):
     # config in deno.json
     # https://docs.deno.com/runtime/fundamentals/configuration/#formatting
     # https://dprint.dev/plugins/typescript/
-    cmd = (
+    path = Path(path).resolve()
+    cmd = [
         DENO,
         'fmt',
-        '--check',
-        path
-    )
+    ]
+    if check:
+        cmd.append('--check')
+    cmd.append(str(path))
+    print(join_cmd(cmd))
     subprocess.run(cmd)
