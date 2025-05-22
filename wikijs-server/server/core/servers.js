@@ -126,7 +126,7 @@ export default {
             ...graphqlSchema,
             context: ({ req, res }) => ({ req, res }),
             subscriptions: {
-                onConnect: (connectionParams, webSocket) => {
+                onConnect: (_connectionParams, _webSocket) => {
                 },
                 path: '/graphql-subscriptions'
             }
