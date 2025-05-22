@@ -17,18 +17,20 @@ export default {
         minimumVersionRequired: '2.0.0-beta.0',
         minimumNodeRequired: '10.12.0'
     },
+
     exportStatus: {
         status: 'notrunning',
         progress: 0,
         message: '',
         updatedAt: null
     },
+
     init() {
         // Clear content cache
         fs.emptyDir(path.resolve(WIKI.ROOTPATH, WIKI.config.dataPath, 'cache'))
-
         return this
     },
+
     /**
      * Upgrade from WIKI.js 1.x - MongoDB database
      *
@@ -87,6 +89,7 @@ export default {
             })
         })
     },
+
     /**
      * Export Wiki to Disk
      */
