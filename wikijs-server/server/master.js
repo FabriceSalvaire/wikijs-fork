@@ -180,7 +180,6 @@ export default async () => {
     // ----------------------------------------
     // Error handling
     // ----------------------------------------
-
     // Catch 404 and forward to error handler
     app.use((req, res, next) => {
         // https://www.npmjs.com/package/http-errors

@@ -18,6 +18,7 @@ import logger from './core/logger.js'
 
 // ----------------------------------------
 // Init global WIKI instance
+// ----------------------------------------
 
 let WIKI = {
     // Fixme: coding convention SERVER_PATH
@@ -38,16 +39,18 @@ global.WIKI = WIKI
 
 await WIKI.configSvc.init()
 
-// ----------------------------------------
 // Init Logger
 WIKI.logger = logger.init('MASTER')
 
 // ----------------------------------------
 // Start Kernel
+// ----------------------------------------
+
 WIKI.kernel.init()
 
 // ----------------------------------------
 // Register exit handler
+// ----------------------------------------
 
 process.on('SIGTERM', () => {
     WIKI.kernel.shutdown()
