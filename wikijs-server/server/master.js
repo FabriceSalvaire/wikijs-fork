@@ -72,7 +72,7 @@ export default async () => {
     app.use('/_assets/svg/twemoji', async (req, res, next) => {
         try {
             WIKI.asar.serve('twemoji', req, res, next)
-        } catch (err) {
+        } catch (_err) {
             res.sendStatus(404)
         }
     })
@@ -191,7 +191,7 @@ export default async () => {
     })
 
     // Error handler
-    app.use((err, req, res, next) => {
+    app.use((err, req, res, _next) => {
         WIKI.logger.error('@master')
         WIKI.logger.error(err)
         if (req.path === '/graphql') {
