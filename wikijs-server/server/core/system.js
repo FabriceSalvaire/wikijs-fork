@@ -1,11 +1,12 @@
 import lodash from 'lodash'
-import cfgHelper from '../helpers/config.js'
 import Promise from 'bluebird'
 import fs from 'fs-extra'
 import * as path from 'node:path'
 import * as zlib from 'node:zlib'
 import * as stream from 'node:stream'
 const pipeline = Promise.promisify(stream.pipeline)
+
+// import cfgHelper from '../helpers/config.js'
 
 /* global WIKI */
 
@@ -36,59 +37,59 @@ export default {
      *
      * @param {Object} opts Options object
      */
-    async upgradeFromMongo(opts) {
-        WIKI.logger.info('Upgrading from MongoDB...')
+    // async upgradeFromMongo(opts) {
+    //     WIKI.logger.info('Upgrading from MongoDB...')
 
-        let mongo = (await import('mongodb')).MongoClient
-        let parsedMongoConStr = cfgHelper.parseConfigValue(opts.mongoCnStr)
+    //     let mongo = (await import('mongodb')).MongoClient
+    //     let parsedMongoConStr = cfgHelper.parseConfigValue(opts.mongoCnStr)
 
-        return new Promise((resolve, reject) => {
-            // Connect to MongoDB
+    //     return new Promise((resolve, reject) => {
+    //         // Connect to MongoDB
 
-            mongo.connect(parsedMongoConStr, {
-                autoReconnect: false,
-                reconnectTries: 2,
-                reconnectInterval: 1000,
-                connectTimeoutMS: 5000,
-                socketTimeoutMS: 5000
-            }, async (err, db) => {
-                try {
-                    if (err !== null)
-                        throw err
+    //         mongo.connect(parsedMongoConStr, {
+    //             autoReconnect: false,
+    //             reconnectTries: 2,
+    //             reconnectInterval: 1000,
+    //             connectTimeoutMS: 5000,
+    //             socketTimeoutMS: 5000
+    //         }, async (err, db) => {
+    //             try {
+    //                 if (err !== null)
+    //                     throw err
 
-                    let users = db.collection('users')
+    //                 let users = db.collection('users')
 
-                    // Check if users table is populated
-                    let userCount = await users.count()
-                    if (userCount < 2)
-                        throw new Error('MongoDB Upgrade: Users table is empty!')
+    //                 // Check if users table is populated
+    //                 let userCount = await users.count()
+    //                 if (userCount < 2)
+    //                     throw new Error('MongoDB Upgrade: Users table is empty!')
 
-                    // Import all users
-                    let userData = await users.find({
-                        email: {
-                            $not: 'guest'
-                        }
-                    }).toArray()
-                    await WIKI.models.User.bulkCreate(lodash.map(userData, (usr) => {
-                        return {
-                            email: usr.email,
-                            name: usr.name || 'Imported User',
-                            password: usr.password || '',
-                            provider: usr.provider || 'local',
-                            providerId: usr.providerId || '',
-                            role: 'user',
-                            createdAt: usr.createdAt
-                        }
-                    }))
+    //                 // Import all users
+    //                 let userData = await users.find({
+    //                     email: {
+    //                         $not: 'guest'
+    //                     }
+    //                 }).toArray()
+    //                 await WIKI.models.User.bulkCreate(lodash.map(userData, (usr) => {
+    //                     return {
+    //                         email: usr.email,
+    //                         name: usr.name || 'Imported User',
+    //                         password: usr.password || '',
+    //                         provider: usr.provider || 'local',
+    //                         providerId: usr.providerId || '',
+    //                         role: 'user',
+    //                         createdAt: usr.createdAt
+    //                     }
+    //                 }))
 
-                    resolve(true)
-                } catch (errc) {
-                    reject(errc)
-                }
-                db.close()
-            })
-        })
-    },
+    //                 resolve(true)
+    //             } catch (errc) {
+    //                 reject(errc)
+    //             }
+    //             db.close()
+    //         })
+    //     })
+    // },
 
     /**
      * Export Wiki to Disk
