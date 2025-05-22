@@ -4,7 +4,7 @@ import { DateTime, Duration } from 'luxon'
 
 import Editors from './editors.js'
 import Locales from './locales.js'
-import PageLinks from './pageLinks.js'
+import Pages from './pages.js'
 import Tags from './tags.js'
 import User from './users.js'
 
