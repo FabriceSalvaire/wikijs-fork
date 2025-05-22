@@ -232,7 +232,7 @@ export default async () => {
             WIKI.logger.info('Creating default groups...')
             const adminGroup = await WIKI.models.groups.query().insert({
                 name: 'Administrators',
-                permissions: JSON.stringify(['manage:system']),
+                permissions: ['manage:system'],
                 pageRules: [],
                 isSystem: true
             })
