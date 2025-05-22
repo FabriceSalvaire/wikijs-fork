@@ -41,7 +41,7 @@ export default class Setting extends Model {
     static async getConfig() {
         const settings = await WIKI.models.settings.query()
         if (settings.length > 0) {
-            return lodash.reduce(settings, (res, val, key) => {
+            return lodash.reduce(settings, (res, val, _key) => {
                 lodash.set(res, val.key, (lodash.has(val.value, 'v')) ? val.value.v : val.value)
                 return res
             }, {})

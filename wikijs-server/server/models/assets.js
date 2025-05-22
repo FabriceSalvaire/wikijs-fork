@@ -203,7 +203,7 @@ export default class Asset extends Model {
     static async getAssetFromCache(assetPath, cachePath, res) {
         try {
             await fs.access(cachePath, fs.constants.R_OK)
-        } catch (err) {
+        } catch (_err) {
             return false
         }
         const sendFile = Promise.promisify(res.sendFile, { context: res })

@@ -309,7 +309,7 @@ export default class User extends Model {
                 WIKI.auth.passport.authenticate(selStrategy.key, {
                     session: !strInfo.useForm,
                     scope: strInfo.scopes ? strInfo.scopes : null
-                }, async (err, user, info) => {
+                }, async (err, user, _info) => {
                     if (err)
                         return reject(err)
                     if (!user)
@@ -532,7 +532,7 @@ export default class User extends Model {
     /**
      * Send a password reset request
      */
-    static async loginForgotPassword({ email }, context) {
+    static async loginForgotPassword({ email }, _context) {
         const usr = await WIKI.models.users.query().where({
             email,
             providerKey: 'local'
@@ -766,7 +766,7 @@ export default class User extends Model {
      * @param {Object} param0 User fields
      * @param {Object} context GraphQL Context
      */
-    static async register({ email, password, name, verify = false, bypassChecks = false }, context) {
+    static async register({ email, password, name, verify = false, bypassChecks = false }, _context) {
         const localStrg = await WIKI.models.authentication.getStrategy('local')
         // Check if self-registration is enabled
         if (localStrg.selfRegistration || bypassChecks) {
@@ -935,7 +935,7 @@ export default class User extends Model {
                 return usrData.data
             else
                 return null
-        } catch (err) {
+        } catch (_err) {
             WIKI.logger.warn(`Failed to process binary thumbnail data for user ${userId}`)
         }
     }

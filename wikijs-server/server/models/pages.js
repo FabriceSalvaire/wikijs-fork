@@ -232,7 +232,7 @@ export default class Page extends Model {
                     }
                     break
             }
-        } catch (err) {
+        } catch (_err) {
             WIKI.logger.warn('Failed to parse page metadata. Invalid syntax.')
         }
         return {
@@ -625,7 +625,7 @@ export default class Page extends Model {
                 })
 
                 td.addRule('taskList', {
-                    filter: (n, o) => {
+                    filter: (n, _o) => {
                         return n.nodeName === 'INPUT' && n.getAttribute('type') === 'checkbox'
                     },
                     replacement: (c, n) => {
@@ -634,10 +634,10 @@ export default class Page extends Model {
                 })
 
                 td.addRule('removeTocAnchors', {
-                    filter: (n, o) => {
+                    filter: (n, _o) => {
                         return n.nodeName === 'A' && n.classList.contains('toc-anchor')
                     },
-                    replacement: (c) => ''
+                    replacement: (_c) => ''
                 })
 
                 convertedContent = td.turndown(ogPage.content)
@@ -888,6 +888,7 @@ export default class Page extends Model {
                 replaceArgs.to = `<a href="${pageHref}" class="is-internal-link is-valid-page">`
                 break
             case 'move':
+                // eslint
                 const prevPageHref = `/${opts.sourceLocale}/${opts.sourcePath}`
                 replaceArgs.from = `<a href="${prevPageHref}" class="is-internal-link is-valid-page">`
                 replaceArgs.to = `<a href="${pageHref}" class="is-internal-link is-valid-page">`

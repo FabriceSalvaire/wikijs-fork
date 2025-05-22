@@ -48,7 +48,7 @@ export default class UserKey extends Model {
         this.createdAt = DateTime.utc().toISO()
     }
 
-    static async generateToken({ userId, kind }, context) {
+    static async generateToken({ userId, kind }, _context) {
         const token = await nanoid()
         await WIKI.models.userKeys.query().insert({
             kind,
@@ -59,7 +59,7 @@ export default class UserKey extends Model {
         return token
     }
 
-    static async validateToken({ kind, token, skipDelete }, context) {
+    static async validateToken({ kind, token, skipDelete }, _context) {
         const res = await WIKI.models.userKeys.query().findOne({ kind, token }).withGraphJoined('user')
         if (res) {
             if (skipDelete !== true)
