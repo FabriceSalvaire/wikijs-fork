@@ -27,20 +27,24 @@ export default {
             return {}
         }
     },
+
     Mutation: {
         async system() {
             return {}
         }
     },
+
     SystemQuery: {
         flags() {
             return lodash.transform(WIKI.config.flags, (result, value, key) => {
                 result.push({ key, value })
             }, [])
         },
+
         async info() {
             return {}
         },
+
         async extensions() {
             const exts = Object.values(WIKI.extensions.ext).map((ext) =>
                 lodash.pick(ext, ['key', 'title', 'description', 'isInstalled'])
@@ -49,6 +53,7 @@ export default {
                 ext.isCompatible = await WIKI.extensions.ext[ext.key].isCompatible()
             return exts
         },
+
         async exportStatus() {
             return {
                 status: WIKI.system.exportStatus.status,
@@ -58,6 +63,7 @@ export default {
             }
         }
     },
+
     SystemMutation: {
         async updateFlags(obj, args, context) {
             WIKI.config.flags = lodash.transform(args.flags, (result, row) => {
@@ -69,6 +75,7 @@ export default {
                 responseResult: graphHelper.generateSuccess('System Flags applied successfully')
             }
         },
+
         async resetTelemetryClientId(obj, args, context) {
             try {
                 WIKI.telemetry.generateClientId()
@@ -80,6 +87,7 @@ export default {
                 return graphHelper.generateError(err)
             }
         },
+
         async setTelemetry(obj, args, context) {
             try {
                 lodash.set(WIKI.config, 'telemetry.isEnabled', args.enabled)
@@ -92,6 +100,7 @@ export default {
                 return graphHelper.generateError(err)
             }
         },
+
         async performUpgrade(obj, args, context) {
             try {
                 if (process.env.UPGRADE_COMPANION) {
@@ -114,6 +123,7 @@ export default {
                 return graphHelper.generateError(err)
             }
         },
+
         /**
          * Import Users from a v1 installation
          */
@@ -261,6 +271,7 @@ export default {
                 return graphHelper.generateError(err)
             }
         },
+
         /**
          * Set HTTPS Redirection State
          */
@@ -271,6 +282,7 @@ export default {
                 responseResult: graphHelper.generateSuccess('HTTP Redirection state set successfully.')
             }
         },
+
         /**
          * Renew SSL Certificate
          */
@@ -324,6 +336,7 @@ export default {
             }
         }
     },
+
     SystemInfo: {
         configFile() {
             return path.join(process.cwd(), 'config.yml')
@@ -337,6 +350,7 @@ export default {
         dbType() {
             return lodash.get(dbTypes, WIKI.config.db.type, 'Unknown DB')
         },
+
         async dbVersion() {
             let version = 'Unknown Version'
             switch (WIKI.config.db.type) {
@@ -358,33 +372,42 @@ export default {
             }
             return version
         },
+
         dbHost() {
             if (WIKI.config.db.type === 'sqlite')
                 return WIKI.config.db.storage
             else
                 return WIKI.config.db.host
         },
+
         hostname() {
             return os.hostname()
         },
+
         httpPort() {
             return WIKI.servers.servers.http ? lodash.get(WIKI.servers.servers.http.address(), 'port', 0) : 0
         },
+
         httpRedirection() {
             return lodash.get(WIKI.config, 'server.sslRedir', false)
         },
+
         httpsPort() {
             return WIKI.servers.servers.https ? lodash.get(WIKI.servers.servers.https.address(), 'port', 0) : 0
         },
+
         latestVersion() {
             return WIKI.system.updates.version
         },
+
         latestVersionReleaseDate() {
             return moment.utc(WIKI.system.updates.releaseDate)
         },
+
         nodeVersion() {
             return process.version.substr(1)
         },
+
         async operatingSystem() {
             let osLabel = `${os.type()} (${os.platform()}) ${os.release()} ${os.arch()}`
             if (os.platform() === 'linux') {
@@ -395,58 +418,73 @@ export default {
             }
             return osLabel
         },
+
         async platform() {
             const isDockerized = await fs.pathExists('/.dockerenv')
             if (isDockerized)
                 return 'docker'
             return os.platform()
         },
+
         ramTotal() {
             return filesize(os.totalmem())
         },
+
         sslDomain() {
             return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt` ? WIKI.config.ssl.domain : null
         },
+
         sslExpirationDate() {
             return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
                 ? lodash.get(WIKI.config.letsencrypt, 'payload.expires', null)
                 : null
         },
+
         sslProvider() {
             return WIKI.config.ssl.enabled ? WIKI.config.ssl.provider : null
         },
+
         sslStatus() {
             return 'OK'
         },
+
         sslSubscriberEmail() {
             return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
                 ? WIKI.config.ssl.subscriberEmail
                 : null
         },
+
         telemetry() {
             return WIKI.telemetry.enabled
         },
+
         telemetryClientId() {
             return WIKI.config.telemetry.clientId
         },
+
         async upgradeCapable() {
             return !lodash.isNil(process.env.UPGRADE_COMPANION)
         },
+
         workingDirectory() {
             return process.cwd()
         },
+
         async groupsTotal() {
             const total = await WIKI.models.groups.query().count('* as total').first()
             return lodash.toSafeInteger(total.total)
         },
+
         async pagesTotal() {
             const total = await WIKI.models.pages.query().count('* as total').first()
             return lodash.toSafeInteger(total.total)
         },
+
         async usersTotal() {
             const total = await WIKI.models.users.query().count('* as total').first()
             return lodash.toSafeInteger(total.total)
         },
+
         async tagsTotal() {
             const total = await WIKI.models.tags.query().count('* as total').first()
             return lodash.toSafeInteger(total.total)
