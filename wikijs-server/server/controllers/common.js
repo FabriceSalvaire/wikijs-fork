@@ -13,7 +13,7 @@ const tmplCreateRegex = /^[0-9]+(,[0-9]+)?$/
 /**
  * Robots.txt
  */
-router.get('/robots.txt', (req, res, next) => {
+router.get('/robots.txt', (req, res, _next) => {
     res.type('text/plain')
     if (lodash.includes(WIKI.config.seo.robots, 'noindex'))
         res.send('User-agent: *\nDisallow: /')
@@ -24,7 +24,7 @@ router.get('/robots.txt', (req, res, next) => {
 /**
  * Health Endpoint
  */
-router.get('/healthz', (req, res, next) => {
+router.get('/healthz', (req, res, _next) => {
     if (WIKI.models.knex.client.pool.numFree() < 1 && WIKI.models.knex.client.pool.numUsed() < 1)
         res.status(503).json({ ok: false }).end()
     else
@@ -34,7 +34,7 @@ router.get('/healthz', (req, res, next) => {
 /**
  * Administration
  */
-router.get(['/a', '/a/*splat'], (req, res, next) => {
+router.get(['/a', '/a/*splat'], (req, res, _next) => {
     if (
         !WIKI.auth.checkAccess(req.user, [
             'manage:system',
@@ -58,7 +58,7 @@ router.get(['/a', '/a/*splat'], (req, res, next) => {
 /**
  * Download Page / Version
  */
-router.get(['/d', '/d/*splat'], async (req, res, next) => {
+router.get(['/d', '/d/*splat'], async (req, res, _next) => {
     const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
 
     const versionId = (req.query.v) ? lodash.toSafeInteger(req.query.v) : 0
@@ -247,7 +247,7 @@ router.get(['/e', '/e/*splat'], async (req, res, next) => {
 /**
  * History
  */
-router.get(['/h', '/h/*splat'], async (req, res, next) => {
+router.get(['/h', '/h/*splat'], async (req, res, _next) => {
     const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
 
     if (WIKI.config.lang.namespacing && !pageArgs.explicitLocale)
@@ -292,7 +292,7 @@ router.get(['/h', '/h/*splat'], async (req, res, next) => {
 /**
  * Page ID redirection
  */
-router.get(['/i', '/i/:id'], async (req, res, next) => {
+router.get(['/i', '/i/:id'], async (req, res, _next) => {
     const pageId = lodash.toSafeInteger(req.params.id)
     if (pageId <= 0)
         return res.redirect('/')
@@ -328,7 +328,7 @@ router.get(['/i', '/i/:id'], async (req, res, next) => {
 /**
  * Profile
  */
-router.get(['/p', '/p/*splat'], (req, res, next) => {
+router.get(['/p', '/p/*splat'], (req, res, _next) => {
     if (!req.user || req.user.id < 1 || req.user.id === 2)
         return res.render('unauthorized', { action: 'view' })
 
@@ -339,7 +339,7 @@ router.get(['/p', '/p/*splat'], (req, res, next) => {
 /**
  * Source
  */
-router.get(['/s', '/s/*splat'], async (req, res, next) => {
+router.get(['/s', '/s/*splat'], async (req, res, _next) => {
     const pageArgs = pageHelper.parsePath(req.path, { stripExt: true })
     const versionId = (req.query.v) ? lodash.toSafeInteger(req.query.v) : 0
 
@@ -399,7 +399,7 @@ router.get(['/s', '/s/*splat'], async (req, res, next) => {
 /**
  * Tags
  */
-router.get(['/t', '/t/*splat'], (req, res, next) => {
+router.get(['/t', '/t/*splat'], (req, res, _next) => {
     lodash.set(res.locals, 'pageMeta.title', 'Tags')
     res.render('tags')
 })
@@ -407,7 +407,7 @@ router.get(['/t', '/t/*splat'], (req, res, next) => {
 /**
  * User Avatar
  */
-router.get('/_userav/:uid', async (req, res, next) => {
+router.get('/_userav/:uid', async (req, res, _next) => {
     if (!WIKI.auth.checkAccess(req.user, ['read:pages']))
         return res.sendStatus(403)
     const av = await WIKI.models.users.getUserAvatarData(req.params.uid)
