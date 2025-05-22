@@ -1,6 +1,6 @@
 import pickle from 'chromium-pickle-js'
 import * as path from 'node:path'
-import UINT64 from 'cuint'
+import  { UINT64 } from 'cuint'
 import * as fs from 'node:fs'
 
 /* global WIKI */
@@ -8,6 +8,7 @@ import * as fs from 'node:fs'
 /**
  * Based of express-serve-asar (https://github.com/toyobayashi/express-serve-asar)
  * by Fenglin Li (https://github.com/toyobayashi)
+ * A Node.js Express middleware for serving static files inside Electron's asar file.
  */
 
 const packages = {
