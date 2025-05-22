@@ -14,11 +14,11 @@ const nanoid = customAlphabet('1234567890abcdef', 10)
 /* global WIKI */
 
 const dbTypes = {
-    mysql: 'MySQL',
     mariadb: 'MariaDB',
+    mssql: 'MS SQL Server',
+    mysql: 'MySQL',
     postgres: 'PostgreSQL',
-    sqlite: 'SQLite',
-    mssql: 'MS SQL Server'
+    sqlite: 'SQLite'
 }
 
 export default {
@@ -65,7 +65,7 @@ export default {
     },
 
     SystemMutation: {
-        async updateFlags(obj, args, context) {
+        async updateFlags(obj, args, _context) {
             WIKI.config.flags = lodash.transform(args.flags, (result, row) => {
                 lodash.set(result, row.key, row.value)
             }, {})
@@ -76,7 +76,7 @@ export default {
             }
         },
 
-        async resetTelemetryClientId(obj, args, context) {
+        async resetTelemetryClientId(_obj, _args, _context) {
             try {
                 WIKI.telemetry.generateClientId()
                 await WIKI.configSvc.saveToDb(['telemetry'])
@@ -88,7 +88,7 @@ export default {
             }
         },
 
-        async setTelemetry(obj, args, context) {
+        async setTelemetry(obj, args, _context) {
             try {
                 lodash.set(WIKI.config, 'telemetry.isEnabled', args.enabled)
                 WIKI.telemetry.enabled = args.enabled
@@ -101,7 +101,7 @@ export default {
             }
         },
 
-        async performUpgrade(obj, args, context) {
+        async performUpgrade(_obj, _args, _context) {
             try {
                 if (process.env.UPGRADE_COMPANION) {
                     await request({
@@ -127,7 +127,7 @@ export default {
         /**
          * Import Users from a v1 installation
          */
-        async importUsersFromV1(obj, args, context) {
+        async importUsersFromV1(obj, args, _context) {
             try {
                 const MongoClient = (await import('mongodb')).MongoClient
                 if (args.mongoDbConnString && args.mongoDbConnString.length > 10) {
@@ -275,7 +275,7 @@ export default {
         /**
          * Set HTTPS Redirection State
          */
-        async setHTTPSRedirection(obj, args, context) {
+        async setHTTPSRedirection(obj, args, _context) {
             lodash.set(WIKI.config, 'server.sslRedir', args.enabled)
             await WIKI.configSvc.saveToDb(['server'])
             return {
@@ -286,7 +286,7 @@ export default {
         /**
          * Renew SSL Certificate
          */
-        async renewHTTPSCertificate(obj, args, context) {
+        async renewHTTPSCertificate(_obj, _args, _context) {
             try {
                 if (!WIKI.config.ssl.enabled)
                     throw new WIKI.Error.SystemSSLDisabled()
@@ -309,7 +309,7 @@ export default {
         /**
          * Export Wiki to Disk
          */
-        async export(obj, args, context) {
+        async export(obj, args, _context) {
             try {
                 const desiredPath = path.resolve(WIKI.ROOTPATH, args.path)
                 // -> Check if export process is already running
@@ -355,14 +355,16 @@ export default {
             let version = 'Unknown Version'
             switch (WIKI.config.db.type) {
                 case 'mariadb':
-                case 'mysql':
+                case 'mysql': {
                     const resultMYSQL = await WIKI.models.knex.raw('SELECT VERSION() as version;')
                     version = lodash.get(resultMYSQL, '[0][0].version', 'Unknown Version')
                     break
-                case 'mssql':
+                }
+                case 'mssql': {
                     const resultMSSQL = await WIKI.models.knex.raw('SELECT @@VERSION as version;')
                     version = lodash.get(resultMSSQL, '[0].version', 'Unknown Version')
                     break
+                }
                 case 'postgres':
                     version = lodash.get(WIKI.models, 'knex.client.version', 'Unknown Version')
                     break
