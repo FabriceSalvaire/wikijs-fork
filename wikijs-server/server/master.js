@@ -2,7 +2,6 @@ import compression from 'compression'
 import * as path from 'node:path'
 import lodash from 'lodash'
 
-// import autoload from 'auto-load'
 import bodyParser from 'body-parser'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
@@ -30,8 +29,6 @@ export default async () => {
     // ----------------------------------------
     // Load middlewares
     // ----------------------------------------
-    // const mw = autoload(path.join(WIKI.SERVERPATH, '/middlewares'))
-    // const ctrl = autoload(path.join(WIKI.SERVERPATH, '/controllers'))
     const mw = (await import(path.join(WIKI.SERVERPATH, '/middlewares/index.js'))).default
     const ctrl = (await import(path.join(WIKI.SERVERPATH, '/controllers/index.js'))).default
 

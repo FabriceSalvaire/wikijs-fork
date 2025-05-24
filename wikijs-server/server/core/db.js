@@ -1,5 +1,4 @@
 import lodash from 'lodash'
-// import autoload from 'auto-load'
 import * as path from 'node:path'
 import Promise from 'bluebird'
 import Knex from 'knex'

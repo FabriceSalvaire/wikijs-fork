@@ -4,8 +4,9 @@ import filesize from 'filesize'
 import * as path from 'node:path'
 import fs from 'fs-extra'
 import moment from 'moment'
-import graphHelper from '../../helpers/graph.js'
 import request from 'request-promise'
+
+import graphHelper from '../../helpers/graph.js'
 
 // getos actuall implementation requires a promise proxy
 import _getOs from 'getos'
