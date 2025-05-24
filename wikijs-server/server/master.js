@@ -88,7 +88,7 @@ export default async () => {
     // SSL Handlers
     // ----------------------------------------
     // Fixme: WIKI.config.ssl.enabled ???
-    app.use('/', ctrl.ssl)
+    // app.use('/', ctrl.ssl)
 
     // ----------------------------------------
     // Passport Authentication
@@ -217,14 +217,14 @@ export default async () => {
     // ----------------------------------------
     await WIKI.servers.startHTTP()
 
-    if (
-        WIKI.config.ssl.enabled === true ||
-        WIKI.config.ssl.enabled === 'true' ||
-        WIKI.config.ssl.enabled === 1 ||
-        WIKI.config.ssl.enabled === '1'
-    ) {
-        await WIKI.servers.startHTTPS()
-    }
+    // if (
+    //     WIKI.config.ssl.enabled === true ||
+    //     WIKI.config.ssl.enabled === 'true' ||
+    //     WIKI.config.ssl.enabled === 1 ||
+    //     WIKI.config.ssl.enabled === '1'
+    // ) {
+    //     await WIKI.servers.startHTTPS()
+    // }
 
     WIKI.logger.info('--- Done master.js...')
 

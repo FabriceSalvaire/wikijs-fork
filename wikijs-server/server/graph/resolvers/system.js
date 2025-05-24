@@ -280,36 +280,36 @@ export default {
         /**
          * Set HTTPS Redirection State
          */
-        async setHTTPSRedirection(obj, args, _context) {
-            lodash.set(WIKI.config, 'server.sslRedir', args.enabled)
-            await WIKI.configSvc.saveToDb(['server'])
-            return {
-                responseResult: graphHelper.generateSuccess('HTTP Redirection state set successfully.')
-            }
-        },
+        // async setHTTPSRedirection(obj, args, _context) {
+        //     lodash.set(WIKI.config, 'server.sslRedir', args.enabled)
+        //     await WIKI.configSvc.saveToDb(['server'])
+        //     return {
+        //         responseResult: graphHelper.generateSuccess('HTTP Redirection state set successfully.')
+        //     }
+        // },
 
         /**
          * Renew SSL Certificate
          */
-        async renewHTTPSCertificate(_obj, _args, _context) {
-            try {
-                if (!WIKI.config.ssl.enabled)
-                    throw new WIKI.Error.SystemSSLDisabled()
-                else if (WIKI.config.ssl.provider !== `letsencrypt`)
-                    throw new WIKI.Error.SystemSSLRenewInvalidProvider()
-                else if (!WIKI.servers.le)
-                    throw new WIKI.Error.SystemSSLLEUnavailable()
-                else {
-                    await WIKI.servers.le.requestCertificate()
-                    await WIKI.servers.restartServer('https')
-                    return {
-                        responseResult: graphHelper.generateSuccess('SSL Certificate renewed successfully.')
-                    }
-                }
-            } catch (err) {
-                return graphHelper.generateError(err)
-            }
-        },
+        // async renewHTTPSCertificate(_obj, _args, _context) {
+        //     try {
+        //         if (!WIKI.config.ssl.enabled)
+        //             throw new WIKI.Error.SystemSSLDisabled()
+        //         else if (WIKI.config.ssl.provider !== `letsencrypt`)
+        //             throw new WIKI.Error.SystemSSLRenewInvalidProvider()
+        //         else if (!WIKI.servers.le)
+        //             throw new WIKI.Error.SystemSSLLEUnavailable()
+        //         else {
+        //             await WIKI.servers.le.requestCertificate()
+        //             await WIKI.servers.restartServer('https')
+        //             return {
+        //                 responseResult: graphHelper.generateSuccess('SSL Certificate renewed successfully.')
+        //             }
+        //         }
+        //     } catch (err) {
+        //         return graphHelper.generateError(err)
+        //     }
+        // },
 
         /**
          * Export Wiki to Disk
@@ -395,13 +395,13 @@ export default {
             return WIKI.servers.servers.http ? lodash.get(WIKI.servers.servers.http.address(), 'port', 0) : 0
         },
 
-        httpRedirection() {
-            return lodash.get(WIKI.config, 'server.sslRedir', false)
-        },
+        // httpRedirection() {
+        //     return lodash.get(WIKI.config, 'server.sslRedir', false)
+        // },
 
-        httpsPort() {
-            return WIKI.servers.servers.https ? lodash.get(WIKI.servers.servers.https.address(), 'port', 0) : 0
-        },
+        // httpsPort() {
+        //     return WIKI.servers.servers.https ? lodash.get(WIKI.servers.servers.https.address(), 'port', 0) : 0
+        // },
 
         latestVersion() {
             return WIKI.system.updates.version
@@ -443,29 +443,29 @@ export default {
             return filesize(os.totalmem())
         },
 
-        sslDomain() {
-            return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt` ? WIKI.config.ssl.domain : null
-        },
+        // sslDomain() {
+        //     return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt` ? WIKI.config.ssl.domain : null
+        // },
 
-        sslExpirationDate() {
-            return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
-                ? lodash.get(WIKI.config.letsencrypt, 'payload.expires', null)
-                : null
-        },
+        // sslExpirationDate() {
+        //     return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
+        //         ? lodash.get(WIKI.config.letsencrypt, 'payload.expires', null)
+        //         : null
+        // },
 
-        sslProvider() {
-            return WIKI.config.ssl.enabled ? WIKI.config.ssl.provider : null
-        },
+        // sslProvider() {
+        //     return WIKI.config.ssl.enabled ? WIKI.config.ssl.provider : null
+        // },
 
-        sslStatus() {
-            return 'OK'
-        },
+        // sslStatus() {
+        //     return 'OK'
+        // },
 
-        sslSubscriberEmail() {
-            return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
-                ? WIKI.config.ssl.subscriberEmail
-                : null
-        },
+        // sslSubscriberEmail() {
+        //     return WIKI.config.ssl.enabled && WIKI.config.ssl.provider === `letsencrypt`
+        //         ? WIKI.config.ssl.subscriberEmail
+        //         : null
+        // },
 
         telemetry() {
             return WIKI.telemetry.enabled
