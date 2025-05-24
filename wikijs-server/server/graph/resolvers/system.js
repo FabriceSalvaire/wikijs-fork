@@ -1,5 +1,4 @@
 import lodash from 'lodash'
-const getos = import('getos')
 import * as os from 'node:os'
 import filesize from 'filesize'
 import * as path from 'node:path'
@@ -7,6 +6,11 @@ import fs from 'fs-extra'
 import moment from 'moment'
 import graphHelper from '../../helpers/graph.js'
 import request from 'request-promise'
+
+// getos actuall implementation requires a promise proxy
+import _getOs from 'getos'
+import util from 'node:util'
+const getOs = util.promisify(_getOs)
 
 // import * as crypto from 'node:crypto'
 // import { customAlphabet } from 'nanoid/non-secure'
@@ -412,14 +416,20 @@ export default {
         },
 
         async operatingSystem() {
-            let osLabel = `${os.type()} (${os.platform()}) ${os.release()} ${os.arch()}`
             if (os.platform() === 'linux') {
-                const osInfo = await getos()
-                osLabel = `${os.type()} - ${osInfo.dist} (${osInfo.codename || os.platform()}) ${
-                    osInfo.release || os.release()
-                } ${os.arch()}`
-            }
-            return osLabel
+                // Note: this code return undefined due to a call to async.each to read files
+                //   getos code is outdated
+                // return getOs((err, os) => {
+                //     if (err)
+                //         WIKI.logger.warn(err)
+                //     return `${os.os} - ${os.dist} (${os.codename}) ${os.release}`
+                // })
+                const _ = await getOs()
+                // Fixme: .type() ???
+                // osLabel = `${os.type()} - ${osInfo.dist} (${osInfo.codename || os.platform()}) ${osInfo.release || os.release()} ${os.arch()}`
+                return `${_.os} - ${_.dist} (${_.codename}) ${_.release}`
+            } else
+                return `${os.type()} (${os.platform()}) ${os.release()} ${os.arch()}`
         },
 
         async platform() {
