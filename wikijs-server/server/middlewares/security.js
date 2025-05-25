@@ -34,10 +34,9 @@ export default function (req, res, next) {
         res.set('Strict-Transport-Security', `max-age=${WIKI.config.security.securityHSTSDuration}; includeSubDomains`)
 
     // -> Prevent Open Redirect from user provided URL
-    if (WIKI.config.security.securityOpenRedirect) {
+    if (WIKI.config.security.securityOpenRedirect)
         // Strips out all repeating / character in the provided URL
         req.url = req.url.replace(/(\/)(?=\/*\1)/g, '')
-    }
 
     return next()
 }

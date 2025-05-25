@@ -1,4 +1,5 @@
 import * as path from 'node:path'
+import yargs from 'yargs'
 
 import Error from '../helpers/error.js'
 import configSvc from './config.js'
@@ -14,10 +15,10 @@ let WIKI = {
 global.WIKI = WIKI
 
 await WIKI.configSvc.init()
-// WIKI.logger = (await import('./logger.js')).default.init('JOB')
 WIKI.logger = logger.init('JOB')
-import yargs from 'yargs'
+
 const argv = yargs(process.argv.slice(2)).parse()
+
 ;(async () => {
     try {
         WIKI.logger.info(`import ${argv.job}`)
