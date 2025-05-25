@@ -107,6 +107,7 @@
   [dotize](https://github.com/vardars/dotize)
   [Changelog](https://github.com/vardars/dotize/releases)
   Convert complex js object to dot notation js object 
+  **npm package ahas issue with ESM**
 
 - [emoji-regex @npm](https://www.npmjs.com/package/emoji-regex)
   egular expression to match all emoji symbols and sequences (including textual representations of emoji) as per the Unicode Standard
@@ -138,16 +139,11 @@
   [fs-extra @gh](https://github.com/jprichardson/node-fs-extra)
   Adds file system methods that aren't included in the native fs module and adds promise support to the fs method
 
-- [highlight.js @npm](https://www.npmjs.com/package/highlight.js)
-  [highlight.js @gh](https://github.com/highlightjs/highlight.js)
-  [highlight.js](https://highlightjs.org/)
-  [VERSION_11_UPGRADE.md](https://github.com/highlightjs/highlight.js/blob/main/VERSION_11_UPGRADE.md)
-  Syntax highlighter 
-
-- [i18next @npm](https://www.npmjs.com/package/i18next)
-  [i18next @gh](https://github.com/i18next/i18next)
-  [i18next](https://www.i18next.com)
-  [Migration](https://www.i18next.com/misc/migration-guide)
+- [getos @npm](https://www.npmjs.com/package/getos?activeTab=versions)
+  [getos @gh](https://github.com/retrohacker/getos)
+  **This package must be promisify due to async.each**
+  [async @npm](https://www.npmjs.com/package/async)
+  
 
 - [graphql @npm](https://www.npmjs.com/package/graphql)
   [graphql @gh](https://github.com/graphql/graphql-js)
@@ -165,6 +161,17 @@
 
 - [graphql-tool @npm](https://www.npmjs.com/package/graphql-tool)
   `server/graph/directives/auth.js`
+
+- [highlight.js @npm](https://www.npmjs.com/package/highlight.js)
+  [highlight.js @gh](https://github.com/highlightjs/highlight.js)
+  [highlight.js](https://highlightjs.org/)
+  [VERSION_11_UPGRADE.md](https://github.com/highlightjs/highlight.js/blob/main/VERSION_11_UPGRADE.md)
+  Syntax highlighter 
+
+- [i18next @npm](https://www.npmjs.com/package/i18next)
+  [i18next @gh](https://github.com/i18next/i18next)
+  [i18next](https://www.i18next.com)
+  [Migration](https://www.i18next.com/misc/migration-guide)
 
 - [jsdom @npm](https://www.npmjs.com/package/jsdom)
   pure-JavaScript implementation of many web standards, notably the WHATWG DOM and HTML Standards, for use with Node.js
@@ -301,6 +308,10 @@
 
   [Application Performance Monitoring & Error Tracking Software | Sentry](https://sentry.io)
 
+### Sub-dependencies
+
+- [Ajv JSON schema validator](https://ajv.js.org)
+- [JSON Schema](https://json-schema.org)
 
 ### Deprecated
 

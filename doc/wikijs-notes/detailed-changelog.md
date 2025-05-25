@@ -162,3 +162,16 @@ Actually, the database is build by applying sequentially each migration step.
 Is there a way to build the database directly ?
 
 Look at [Alembic](https://alembic.sqlalchemy.org) to compare how is managed database migrations.
+
+## Knex / Objection
+
+According to the migration guide, there is nothing to do but this is not complete.
+
+> [!CAUTION]
+> For the fields declared in `jsonAttributes()`, `JSON.stringify` is now called automatically by the framework.
+> A simple check for a remaining bug in the code is to look for double quoted fields in the database.
+> It means a value that will be decoded as a string instead of a JSON object, i.e. an array or a map,
+> e.g. a SQL value like '"[\"manage:system\"]"' instead of '["manage:system"]'
+> like in `INSERT INTO "groups" VALUES(1,'Administrators','"[\"manage:system\"]"','[]',1,'2025-05-21T18:21:23.730Z','2025-05-21T18:21:23.730Z','/');`
+> This error breaks the WIKI authentication and return HTTP 403 when you try to login, but it could be worse...
+> Thus we can just look for `\"` occurrences in a SQL dump.
