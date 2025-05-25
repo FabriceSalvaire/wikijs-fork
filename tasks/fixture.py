@@ -76,6 +76,9 @@ def setup(
             cmd,
             stdout=subprocess.PIPE,
             # stderr=subprocess.PIPE,
+            env={
+                # 'DEBUG': '*',
+            }
         )
         read_output(node, until='🔺🔺🔺')
 
