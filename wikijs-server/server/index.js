@@ -14,7 +14,7 @@ import { DateTime } from 'luxon'
 import configSvc from './core/config.js'
 import Error from './helpers/error.js'
 import kernel from './core/kernel.js'
-import logger from './core/logger.js'
+import * as logger from './core/logger.js'
 
 // ----------------------------------------
 // Init global WIKI instance

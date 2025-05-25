@@ -3,7 +3,7 @@ import yargs from 'yargs'
 
 import Error from '../helpers/error.js'
 import configSvc from './config.js'
-import logger from './logger.js'
+import * as logger from './logger.js'
 
 let WIKI = {
     IS_DEBUG: process.env.NODE_ENV === 'development',

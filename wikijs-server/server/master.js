@@ -189,8 +189,7 @@ export default async () => {
 
     // Error handler
     app.use((err, req, res, _next) => {
-        WIKI.logger.error('@master')
-        WIKI.logger.error(err)
+        WIKI.logger.error_stack('@master', err)
         if (req.path === '/graphql') {
             res.status(err.status || 500).json({
                 data: {},

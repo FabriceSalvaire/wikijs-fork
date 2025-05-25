@@ -1,5 +1,6 @@
 import lodash from 'lodash'
 import EventEmitter from 'eventemitter2'
+
 // https://www.npmjs.com/package/stacktracey
 // import StackTracey from 'stacktracey'
 
@@ -20,11 +21,10 @@ export default {
             await WIKI.configSvc.loadFromDb()
             await WIKI.configSvc.applyFlags()
         } catch (err) {
+            // Fixme: ok ?
             WIKI.logger.error('Database Initialization Error: ' + err.message)
-            if (WIKI.IS_DEBUG) {
-                WIKI.logger.error('@kernel.init')
-                WIKI.logger.error(err.stack)
-            }
+            if (WIKI.IS_DEBUG)
+                WIKI.logger.error_stack('@kernel.init', err)
             process.exit(1)
         }
 
@@ -50,8 +50,7 @@ export default {
             WIKI.extensions = (await import('./extensions.js')).default
             WIKI.asar = (await import('./asar.js')).default
         } catch (err) {
-            WIKI.logger.error('@kernel.preBootMaster')
-            WIKI.logger.error(err.stack)
+            WIKI.logger.error_stack('@kernel.preBootMaster', err)
             process.exit(1)
         }
         WIKI.logger.info('@preBootMaster done')
@@ -73,8 +72,7 @@ export default {
                 await this.postBootMaster()
             }
         } catch (err) {
-            WIKI.logger.error('@kernel.BootMaster')
-            WIKI.logger.error(err.stack)
+            WIKI.logger.error_stack('@kernel.BootMaster', err)
             process.exit(1)
         }
         WIKI.logger.info('@bootMaster done')

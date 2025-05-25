@@ -394,7 +394,7 @@ export default async () => {
             message: err.message,
             error: WIKI.IS_DEBUG ? err : {}
         })
-        WIKI.logger.error('@setup.500 ' + err.message + '\n' + err.stack)
+        WIKI.logger.error_stack('@setup.500', err)
         // Error: telemetry is not initialised
         // WIKI.telemetry.sendError(err)
     })
