@@ -1,10 +1,8 @@
 import { Model } from 'objection'
-import * as path from 'node:path'
-import fs from 'fs-extra'
 import lodash from 'lodash'
-import yaml from 'js-yaml'
 import { DepGraph } from 'dependency-graph'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -40,19 +38,7 @@ export default class Renderer extends Model {
     }
 
     static async fetchDefinitions() {
-        const rendererDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/rendering'))
-        let diskRenderers = []
-        for (let dir of rendererDirs) {
-            const def = await fs.readFile(
-                path.join(WIKI.SERVERPATH, 'modules/rendering', dir, 'definition.yml'),
-                'utf8'
-            )
-            diskRenderers.push(yaml.safeLoad(def))
-        }
-        WIKI.data.renderers = diskRenderers.map((renderer) => ({
-            ...renderer,
-            props: commonHelper.parseModuleProps(renderer.props)
-        }))
+        WIKI.data.renderers =  await load_modules('rendering')
     }
 
     static async refreshRenderersFromDisk() {

@@ -2,8 +2,8 @@ import { Model } from 'objection'
 import fs from 'fs-extra'
 import * as path from 'node:path'
 import lodash from 'lodash'
-import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -84,19 +84,7 @@ export default class Authentication extends Model {
             const dbStrategies = await WIKI.models.authentication.query()
 
             // -> Fetch definitions from disk
-            const authDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/authentication'))
-            WIKI.data.authentication = []
-            for (let dir of authDirs) {
-                const defRaw = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/authentication', dir, 'definition.yml'),
-                    'utf8'
-                )
-                const def = yaml.safeLoad(defRaw)
-                WIKI.data.authentication.push({
-                    ...def,
-                    props: commonHelper.parseModuleProps(def.props)
-                })
-            }
+            WIKI.data.authentication = await load_modules('authentication')
 
             for (const strategy of dbStrategies) {
                 let newProps = false

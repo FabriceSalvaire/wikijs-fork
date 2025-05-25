@@ -3,7 +3,8 @@ import fs from 'fs-extra'
 import * as path from 'node:path'
 import lodash from 'lodash'
 import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -45,19 +46,7 @@ export default class Analytics extends Model {
             const dbProviders = await WIKI.models.analytics.query()
 
             // -> Fetch definitions from disk
-            const analyticsDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/analytics'))
-            let diskProviders = []
-            for (let dir of analyticsDirs) {
-                const def = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/analytics', dir, 'definition.yml'),
-                    'utf8'
-                )
-                diskProviders.push(yaml.safeLoad(def))
-            }
-            WIKI.data.analytics = diskProviders.map((provider) => ({
-                ...provider,
-                props: commonHelper.parseModuleProps(provider.props)
-            }))
+            WIKI.data.analytics = await load_modules('analytics')
 
             let newProviders = []
             for (let provider of WIKI.data.analytics) {

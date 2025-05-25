@@ -1,9 +1,7 @@
 import { Model } from 'objection'
-import * as path from 'node:path'
-import fs from 'fs-extra'
 import lodash from 'lodash'
-import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -45,19 +43,7 @@ export default class Logger extends Model {
             const dbLoggers = await WIKI.models.loggers.query()
 
             // -> Fetch definitions from disk
-            const loggersDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/logging'))
-            let diskLoggers = []
-            for (let dir of loggersDirs) {
-                const def = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/logging', dir, 'definition.yml'),
-                    'utf8'
-                )
-                diskLoggers.push(yaml.safeLoad(def))
-            }
-            WIKI.data.loggers = diskLoggers.map((logger) => ({
-                ...logger,
-                props: commonHelper.parseModuleProps(logger.props)
-            }))
+            WIKI.data.loggers = await load_modules('logging')
 
             // -> Insert new loggers
             let newLoggers = []

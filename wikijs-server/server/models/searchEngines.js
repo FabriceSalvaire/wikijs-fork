@@ -1,9 +1,7 @@
 import { Model } from 'objection'
-import * as path from 'node:path'
-import fs from 'fs-extra'
 import lodash from 'lodash'
-import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -45,19 +43,7 @@ export default class SearchEngine extends Model {
             const dbSearchEngines = await WIKI.models.searchEngines.query()
 
             // -> Fetch definitions from disk
-            const searchEnginesDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/search'))
-            let diskSearchEngines = []
-            for (let dir of searchEnginesDirs) {
-                const def = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/search', dir, 'definition.yml'),
-                    'utf8'
-                )
-                diskSearchEngines.push(yaml.safeLoad(def))
-            }
-            WIKI.data.searchEngines = diskSearchEngines.map((searchEngine) => ({
-                ...searchEngine,
-                props: commonHelper.parseModuleProps(searchEngine.props)
-            }))
+            WIKI.data.searchEngines =  await load_modules('search')
 
             // -> Insert new searchEngines
             let newSearchEngines = []

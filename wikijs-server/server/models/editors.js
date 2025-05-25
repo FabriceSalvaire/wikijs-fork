@@ -1,9 +1,7 @@
 import { Model } from 'objection'
-import fs from 'fs-extra'
-import * as path from 'node:path'
 import lodash from 'lodash'
-import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -44,19 +42,7 @@ export default class Editor extends Model {
             const dbEditors = await WIKI.models.editors.query()
 
             // -> Fetch definitions from disk
-            const editorDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/editor'))
-            let diskEditors = []
-            for (let dir of editorDirs) {
-                const def = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/editor', dir, 'definition.yml'),
-                    'utf8'
-                )
-                diskEditors.push(yaml.safeLoad(def))
-            }
-            WIKI.data.editors = diskEditors.map((editor) => ({
-                ...editor,
-                props: commonHelper.parseModuleProps(editor.props)
-            }))
+            WIKI.data.editors = await load_modules('editor')
 
             // -> Insert new editors
             let newEditors = []

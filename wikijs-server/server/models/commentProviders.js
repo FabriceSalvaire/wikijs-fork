@@ -3,7 +3,8 @@ import fs from 'fs-extra'
 import * as path from 'node:path'
 import lodash from 'lodash'
 import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -49,19 +50,7 @@ export default class CommentProvider extends Model {
             const dbProviders = await WIKI.models.commentProviders.query()
 
             // -> Fetch definitions from disk
-            const commentDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/comments'))
-            let diskProviders = []
-            for (let dir of commentDirs) {
-                const def = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/comments', dir, 'definition.yml'),
-                    'utf8'
-                )
-                diskProviders.push(yaml.safeLoad(def))
-            }
-            WIKI.data.commentProviders = diskProviders.map((provider) => ({
-                ...provider,
-                props: commonHelper.parseModuleProps(provider.props)
-            }))
+            WIKI.data.commentProviders = await load_modules('comments')
 
             let newProviders = []
             for (let provider of WIKI.data.commentProviders) {

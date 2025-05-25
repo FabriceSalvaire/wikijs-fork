@@ -1,9 +1,7 @@
 import { Model } from 'objection'
-import * as path from 'node:path'
-import fs from 'fs-extra'
 import lodash from 'lodash'
-import yaml from 'js-yaml'
-import commonHelper from '../helpers/common.js'
+
+import { load_modules } from '../helpers/module.js'
 
 /* global WIKI */
 
@@ -45,20 +43,7 @@ export default class Storage extends Model {
             const dbTargets = await WIKI.models.storage.query()
 
             // -> Fetch definitions from disk
-            const storageDirs = await fs.readdir(path.join(WIKI.SERVERPATH, 'modules/storage'))
-            let diskTargets = []
-            for (let dir of storageDirs) {
-                const def = await fs.readFile(
-                    path.join(WIKI.SERVERPATH, 'modules/storage', dir, 'definition.yml'),
-                    'utf8'
-                )
-                diskTargets.push(yaml.safeLoad(def))
-            }
-            WIKI.data.storage = diskTargets.map((target) => ({
-                ...target,
-                isAvailable: lodash.get(target, 'isAvailable', false),
-                props: commonHelper.parseModuleProps(target.props)
-            }))
+            WIKI.data.storage = await load_modules('storage')
 
             // -> Insert new targets
             let newTargets = []
