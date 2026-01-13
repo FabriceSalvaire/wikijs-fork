@@ -17,6 +17,7 @@ export default {
     Objection,
     knex: null,
     listener: null,
+
     /**
      * Initialize DB
      *
@@ -213,6 +214,7 @@ export default {
             ...models
         }
     },
+
     /**
      * Subscribe to database LISTEN / NOTIFY for multi-instances events
      */
@@ -255,6 +257,7 @@ export default {
 
         WIKI.logger.info(`High-Availability Listener initialized successfully: [ OK ]`)
     },
+
     /**
      * Unsubscribe from database LISTEN / NOTIFY
      */
@@ -265,6 +268,7 @@ export default {
             this.listener.close()
         }
     },
+
     /**
      * Publish event via database NOTIFY
      *

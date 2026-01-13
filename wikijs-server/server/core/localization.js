@@ -13,6 +13,10 @@ import yaml from 'js-yaml'
 export default {
     engine: null,
     namespaces: [],
+
+    /**
+     * ...
+     */
     init() {
         this.namespaces = WIKI.data.localeNamespaces
         this.engine = i18next
@@ -30,6 +34,7 @@ export default {
 
         return this
     },
+
     /**
      * Attach i18n middleware for Express
      *
@@ -38,6 +43,7 @@ export default {
     attachMiddleware(app) {
         app.use(i18nMW.handle(this.engine))
     },
+
     /**
      * Get all entries for a specific locale and namespace
      *
@@ -57,6 +63,7 @@ export default {
             throw new Error('Invalid locale or namespace')
         }
     },
+
     /**
      * Load entries from the DB for a single locale
      *
@@ -93,6 +100,7 @@ export default {
             }
         }
     },
+
     /**
      * Reload all namespaces for all active locales from the DB
      *
@@ -105,6 +113,7 @@ export default {
                 await this.loadLocale(ns, { silent })
         }
     },
+
     /**
      * Set the active locale
      *

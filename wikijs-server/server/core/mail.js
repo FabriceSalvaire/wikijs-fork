@@ -8,6 +8,10 @@ import * as path from 'node:path'
 export default {
     transport: null,
     templates: {},
+
+    /**
+     * ...
+     */
     init() {
         if (lodash.get(WIKI.config, 'mail.host', '').length > 2) {
             let conf = {
@@ -45,6 +49,10 @@ export default {
         }
         return this
     },
+
+    /**
+     * ...
+     */
     async send(opts) {
         if (!this.transport) {
             WIKI.logger.warn('Cannot send email because mail is not setup in the administration area!')
@@ -67,6 +75,10 @@ export default {
             })
         })
     },
+
+    /**
+     * ...
+     */
     async loadTemplate(key) {
         if (lodash.has(this.templates, key))
             return

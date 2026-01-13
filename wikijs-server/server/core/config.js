@@ -90,6 +90,7 @@ export default {
             WIKI.config.setup = true
         }
     },
+
     /**
      * Save config to DB
      *
@@ -115,6 +116,7 @@ export default {
 
         return true
     },
+
     /**
      * Apply Dev Flags
      */

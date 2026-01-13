@@ -9,6 +9,9 @@ import fs from 'fs-extra'
 export default {
     enabled: false,
 
+    /**
+     * ...
+     */
     init() {
         // WIKI.logger.info('telemetry.init')
         WIKI.telemetry = this
@@ -19,14 +22,23 @@ export default {
         }
     },
 
+    /**
+     * ...
+     */
     sendError(err) {
         // TODO
     },
 
+    /**
+     * ...
+     */
     sendEvent(eventCategory, eventAction, eventLabel) {
         // TODO
     },
 
+    /**
+     * ...
+     */
     async sendInstanceEvent(eventType) {
         if (WIKI.devMode || !this.enabled)
             return
@@ -145,6 +157,9 @@ export default {
         }
     },
 
+    /**
+     * ...
+     */
     generateClientId() {
         lodash.set(WIKI.config, 'telemetry.clientId', uuid())
         return WIKI.config.telemetry.clientId

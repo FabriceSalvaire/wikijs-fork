@@ -7,6 +7,9 @@ import EventEmitter from 'eventemitter2'
 /* global WIKI */
 
 export default {
+    /**
+     * ...
+     */
     async init() {
         WIKI.logger.info('@kernel init...')
         WIKI.logger.info('=======================================')

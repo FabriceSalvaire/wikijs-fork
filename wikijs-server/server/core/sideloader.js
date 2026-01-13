@@ -5,6 +5,9 @@ import lodash from 'lodash'
 /* global WIKI */
 
 export default {
+    /**
+     * ...
+     */
     async init() {
         if (!WIKI.config.offline)
             return
@@ -22,6 +25,10 @@ export default {
             WIKI.logger.warn(err)
         }
     },
+
+    /**
+     * ...
+     */
     async importLocales() {
         const localeExists = await fs.pathExists(
             path.resolve(WIKI.ROOTPATH, WIKI.config.dataPath, 'sideload/locales.json')

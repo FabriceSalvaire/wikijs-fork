@@ -105,9 +105,17 @@ class Job {
 
 export default {
     jobs: [],
+
+    /**
+     * ...
+     */
     init() {
         return this
     },
+
+    /**
+     * ...
+     */
     start() {
         lodash.forOwn(WIKI.data.jobs, (queueParams, queueName) => {
             if (WIKI.config.offline && queueParams.offlineSkip) {
@@ -125,11 +133,19 @@ export default {
             })
         })
     },
+
+    /**
+     * ...
+     */
     registerJob(opts, data) {
         const job = new Job(opts, this)
         job.start(data)
         return job
     },
+
+    /**
+     * ...
+     */
     async stop() {
         return Promise.all(this.jobs.map((job) => job.stop()))
     }

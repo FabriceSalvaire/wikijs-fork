@@ -66,12 +66,14 @@ export default {
         pathObj.path = lodash.join(pathParts, '/')
         return pathObj
     },
+
     /**
      * Generate unique hash from page
      */
     generateHash(opts) {
         return crypto.createHash('sha1').update(`${opts.locale}|${opts.path}|${opts.privateNS}`).digest('hex')
     },
+
     /**
      * Inject Page Metadata
      */
@@ -99,6 +101,7 @@ export default {
                 return page.content
         }
     },
+
     /**
      * Check if path is a reserved path
      */
@@ -118,12 +121,14 @@ export default {
             return false
         }
     },
+
     /**
      * Get file extension from content type
      */
     getFileExtension(contentType) {
         return lodash.get(contentToExt, contentType, 'txt')
     },
+
     /**
      * Get content type from file extension
      */
@@ -131,6 +136,7 @@ export default {
         const ext = lodash.last(filePath.split('.'))
         return lodash.get(extToContent, ext, false)
     },
+
     /**
      * Get Page Meta object from disk path
      */

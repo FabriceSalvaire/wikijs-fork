@@ -10,6 +10,7 @@ export default {
         //   email: appconfig.git.showUserEmail ? user.email : appconfig.git.serverEmail
         // }
     },
+
     /**
      * Generate a random token
      *
@@ -24,6 +25,9 @@ export default {
         })
     },
 
+    /**
+     * ...
+     */
     extractJWT: passportJWT.ExtractJwt.fromExtractors([
         passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
         (req) => {

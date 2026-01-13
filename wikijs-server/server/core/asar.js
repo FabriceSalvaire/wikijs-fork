@@ -17,6 +17,10 @@ const packages = {
 
 export default {
     fdCache: {},
+
+    /**
+     * ...
+     */
     async serve(pkgName, req, res, next) {
         const file = this.readFilesystemSync(packages[pkgName])
         const { filesystem, fd } = file
@@ -40,6 +44,10 @@ export default {
             res.sendStatus(404)
         }
     },
+
+    /**
+     * ...
+     */
     async unload() {
         const fds = Object.values(this.fdCache)
         if (fds.length > 0) {
@@ -49,6 +57,10 @@ export default {
             this.fdCache = {}
         }
     },
+
+    /**
+     * ...
+     */
     readArchiveHeaderSync(fd) {
         let size
         let headerBuf
@@ -67,6 +79,10 @@ export default {
         const header = headerPickle.createIterator().readString()
         return { header: JSON.parse(header), headerSize: size }
     },
+
+    /**
+     * ...
+     */
     readFilesystemSync(archive) {
         if (!this.fdCache[archive]) {
             const fd = fs.openSync(archive, 'r')

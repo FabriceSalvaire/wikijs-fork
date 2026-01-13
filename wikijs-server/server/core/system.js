@@ -26,6 +26,9 @@ export default {
         updatedAt: null
     },
 
+    /**
+     * ...
+     */
     init() {
         // Clear content cache
         fs.emptyDir(path.resolve(WIKI.ROOTPATH, WIKI.config.dataPath, 'cache'))
