@@ -1,6 +1,6 @@
 import pickle from 'chromium-pickle-js'
 import * as path from 'node:path'
-import  { UINT64 } from 'cuint'
+import { UINT64 } from 'cuint'
 import * as fs from 'node:fs'
 
 /* global WIKI */
