@@ -63,20 +63,51 @@ def symlink_dev(ctx):
 def symlink_prod(ctx):
     symlink_node_module(ctx.config.node_modules.prod)
 
-@task(pre=[symlink_dev], post=[])
-def build(ctx):
-    cmd = (
+####################################################################################################
+
+@task
+def bind_dev(ctx):
+    if not list(NODE_MODULES.iterdir()):
+        ctx.run(f"sudo mount --bind {ctx.config.node_modules.prod} {NODE_MODULES}")
+
+####################################################################################################
+
+#@task(pre=[symlink_dev], post=[])
+@task(pre=[bind_dev], post=[])
+def build(ctx, verbose=False):
+    cmd = [
         NODE,
         str(NODE_MODULES.joinpath('webpack/bin/webpack.js')),
         '--color=true',   # to force color else it detects a pipe instead of tty
-        '--profile',
+        '--profile',   # captures timing information for each step of the compilation and includes this in the output
         '--config',
         'dev/webpack/webpack.prod.js',
-    )
+    ]
+    if verbose:
+        cmd.append('--verbose')
     print(' '.join(cmd))
     subprocess.run(
         cmd,
         env={
             'NODE_OPTIONS': '--openssl-legacy-provider',
         },
+    )
+    if not SOURCE_PATH.joinpath('assets', 'manifest.json'):
+        print("Build Failed")
+    else:
+        print("Build succeed")
+
+####################################################################################################
+
+@task
+def start(ctx):
+    cmd = [
+        NODE,
+        'server',
+    ]
+    subprocess.run(
+        cmd,
+        # env={
+        #     'NODE_OPTIONS': '--openssl-legacy-provider',
+        # },
     )
