@@ -234,6 +234,7 @@ import mdMark from 'markdown-it-mark'
 import mdMultiTable from 'markdown-it-multimd-table'
 import mdFootnote from 'markdown-it-footnote'
 import mdImsize from 'markdown-it-imsize'
+
 import katex from 'katex'
 import 'katex/dist/contrib/mhchem'
 
@@ -353,29 +354,42 @@ plantuml.init(md, {})
 // Fixme: show error
 
 const macros = {}   // could be useful in settings
-md.inline.ruler.after('escape', 'katex_inline', katexHelper.katexInline)
-md.renderer.rules.katex_inline = (tokens, idx) => {
+
+function render_katex(tokens, idx) {
+  let tex_string = tokens[idx].content
   try {
     return katex.renderToString(tokens[idx].content, {
-      displayMode: false, macros
+      // throwOnError: true,
+      displayMode: true,
+      macros
     })
   } catch (err) {
     console.warn(err)
-    return tokens[idx].content
+    if (err instanceof katex.ParseError) {
+      // KaTeX can't parse the expression
+      // + '<div class="katex-string">' + ...  + '</div>'
+      return '<div class="katex-error">'
+        + ("Error in LaTeX '" + tex_string + "': " + err.message)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+      + '</div>'
+    } else
+      throw e   // other error
+  // return tex_string
   }
 }
+
+md.inline.ruler.after('escape', 'katex_inline', katexHelper.katexInline)
+
+md.renderer.rules.katex_inline = render_katex
+
 md.block.ruler.after('blockquote', 'katex_block', katexHelper.katexBlock, {
   alt: [ 'paragraph', 'reference', 'blockquote', 'list' ]
 })
+
 md.renderer.rules.katex_block = (tokens, idx) => {
-  try {
-    return `<p>` + katex.renderToString(tokens[idx].content, {
-      displayMode: true, macros
-    }) + `</p>`
-  } catch (err) {
-    console.warn(err)
-    return tokens[idx].content
-  }
+  return `<p>` + render_katex(tokens, idx) + `</p>`
 }
 
 // ========================================
@@ -1304,5 +1318,16 @@ $editor-height-mobile: calc(100vh - 112px - 16px);
 li.CodeMirror-hint-active {
   background: mc('blue', '500');
   color: #FFF;
+}
+
+// KaTeX
+.katex-error {
+  background: orange;
+  padding: 1em;
+  border-radius: 1em;
+
+  .katex-string {
+      color: black;
+  }
 }
 </style>
