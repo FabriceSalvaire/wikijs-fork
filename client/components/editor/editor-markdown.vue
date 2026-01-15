@@ -965,7 +965,7 @@ export default {
     })
     _.set(keyBindings, `${CtrlKey}-Enter`, c => {
       this.insertAtCursor({
-        content: '</br>'
+        content: '<br>'
       })
       return false
     })
