@@ -150,7 +150,7 @@
         //- v-textarea
         textarea(
           ref='simpleEditor'
-          :value='simpleEditorContent'
+          v-model='simple_editor_content'
           @input='onSimpleEditorContentInput()'
           )
       transition(name='editor-markdown-preview')
@@ -434,7 +434,7 @@ export default {
       previewHTML: '',
       helpShown: false,
       spellModeActive: false,
-      simpleEditorContent: '',
+      simple_editor_content: '',
       simpleEditor: false,
       insertLinkDialog: false
     }
@@ -482,14 +482,16 @@ export default {
         this.$nextTick(() => {
           console.log('Enable simple editor')
           // const content = this.cm.doc.getValue()
+          // was initialised in mounted
           const content = this.$store.get('editor/content')
-          this.simpleEditorContent = content
+          this.simple_editor_content = content
           this.$refs.simpleEditor.focus()
         })
       } else {
         this.$nextTick(() => {
           console.log('Enable CodeMirror editor')
-          this.cm.setValue(this.$store.get('editor/content'))
+          const content = this.$store.get('editor/content')
+          this.cm.setValue(content)
           this.$refs.cm.focus()
         })
       }
@@ -536,6 +538,7 @@ export default {
 
     // ---------------------------------------------
     updateLivePreview (newContent) {
+      // see processContent
       _.debounce(function (newContent) {
         console.log('updateLivePreview')
         this.previewHTML = DOMPurify.sanitize(md.render(newContent), {
@@ -545,17 +548,17 @@ export default {
     },
 
     onSimpleEditorContentInput () {
-      console.log('simpleEditorContent changed')
-      // console.log(this.simpleEditorContent)
-      // console.log(this.$refs.simpleEditor.value)
-      // simpleEditorContent is not updated
-      const newContent = this.$refs.simpleEditor.value
+      console.log('simple_editor_content changed')
+      // console.log('this.simple_editor_content', this.simple_editor_content)
+      // console.log('this.$refs.simpleEditor.value', this.$refs.simpleEditor.value)
+      // const new_content = this.$refs.simpleEditor.value
+      const new_content = this.simple_editor_content
       // cf. cm.onChange
       // update store and debounce processContent
-      this.$store.set('editor/content', newContent)
+      this.$store.set('editor/content', new_content)
       // Fixme: why not value ???
       // this.onCmInput(this.$store.get('editor/content'))
-      this.updateLivePreview(newContent)
+      this.updateLivePreview(new_content)
     },
 
     // ---------------------------------------------
@@ -878,9 +881,9 @@ export default {
 
     if (this.mode === 'create' && !this.$store.get('editor/content')) {
       // Set content for new page
-      // const templateContent = '# Header\nYour content here'
-      const templateContent = ''
-      this.$store.set('editor/content', templateContent)
+      // const template_content = '# Header\nYour content here'
+      const template_content = ''
+      this.$store.set('editor/content', template_content)
     }
 
     // Initialize Mermaid API
@@ -912,7 +915,9 @@ export default {
     })
 
     // initialise content
-    this.cm.setValue(this.$store.get('editor/content'))
+    const content = this.$store.get('editor/content')
+    this.cm.setValue(content)
+    this.simple_editor_content = content
 
     // Set event handler
     //   Fires every time the content of the editor is changed
