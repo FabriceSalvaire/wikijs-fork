@@ -29,7 +29,12 @@ from . import build
 
 ####################################################################################################
 
+AG = '/usr/bin/ag'
+
+####################################################################################################
+
 def wikijs_directory_filter(root: Path, dirs: list[str]) -> None:
+    """Filter directories excepted 'client' and 'server'"""
     if root.parent == SOURCE_PATH and root.name in ('wikijs-client', 'wikijs-server'):
         for _ in list(dirs):
             if _ not in ('server', 'client'):
@@ -42,6 +47,7 @@ def yield_source_files(
         suffixes: list[str] = ('.js', '.vue'),
         directory_filter: Callable = wikijs_directory_filter,
 ) -> Iterator[Path]:
+    """Yield source files from a directory"""
     source_path = Path(source_path).absolute()
     for root, dirs, filenames in source_path.walk():
         dirs.sort()
@@ -53,34 +59,37 @@ def yield_source_files(
                 and not path.name.startswith('.#')
                 ):
                 yield path
+    # Fixme: path
+    for _ in (
+            # wikijs-client/webpack/webpack.prod.js (require)
+            source_path.joinpath('webpack', 'webpack.prod.js'),
+            source_path.joinpath('webpack', 'webpack.dev.js'),
+    ):
+        if _.exists():
+            yield _
 
 ####################################################################################################
 
 def yield_wikijs_source_files(**kwargs) -> Iterator[Path]:
+    """Yield source files from client and server directories"""
     # for dir in ('wikijs-client/client', 'wikijs-server/server'):
     for dir in ('client', 'server'):
         yield from yield_source_files(SOURCE_PATH.joinpath(dir), **kwargs)
 
 ####################################################################################################
 
-def yield_imports(source_path: Path) -> Iterator[tuple[Path, Path, str]]:
-    for path in yield_source_files(source_path):
-        yield from yield_file_imports(source_path, path)
-
-
-def yield_wikijs_imports() -> Iterator[tuple[Path, Path, str]]:
-    for path in yield_wikijs_source_files():
-        yield from yield_file_imports(SOURCE_PATH, path)
-
-####################################################################################################
-
 def yield_file_imports(source_path: Path, path: Path) -> Iterator[tuple[Path, Path, str]]:
+    """Yield import from a source file.
+
+    Yield a tuple (relative source path, module, import_type, line_number)
+    where `import_type` is ('internal', 'external', 'complex')
+    """
     # print(path)
     # local_dirs = [_.name for _ in path.parent.iterdir() if _.is_dir()]
     # if dirs:
     #     print(dirs)
     with open(path, 'r', encoding='utf8') as fh:
-        for line in fh:
+        for line_number, line in enumerate(fh.readlines()):
             line = line.strip()
             # = oline
             # strip comment
@@ -160,18 +169,32 @@ def yield_file_imports(source_path: Path, path: Path) -> Iterator[tuple[Path, Pa
                     # print(path)
                     # print(' '*4 + oline)
                     # print(' '*4 + module_)
-                yield (path.relative_to(source_path), module, type_)
+                yield (path.relative_to(source_path), module, type_, line_number)
+
+####################################################################################################
+
+def yield_imports(source_path: Path) -> Iterator[tuple[Path, Path, str]]:
+    """Yield import from a source directory"""
+    for path in yield_source_files(source_path):
+        yield from yield_file_imports(source_path, path)
+
+
+def yield_wikijs_imports() -> Iterator[tuple[Path, Path, str]]:
+    """Yield import from wikijs sources"""
+    for path in yield_wikijs_source_files():
+        yield from yield_file_imports(SOURCE_PATH, path)
 
 ####################################################################################################
 
 @task
 def dump_imports(ctx, source_path, json_file: str = 'imports.json') -> None:
+    """Dump import from a source directory to a JSON file"""
     source_path = Path(source_path).absolute()
     complex_imports = {}
     external_imports = {}
     internal_imports = {}
-    for path, module, type_ in yield_imports(source_path):
-        # print(f'{path}  ->  {module}   {is_external}')
+    for path, module, type_, line_number in yield_imports(source_path):
+        # print(f'{path}  ->  {module}   {type_}   @{line_number}')
         module_ = str(module)
         match type_:
             case 'complex':
@@ -181,7 +204,7 @@ def dump_imports(ctx, source_path, json_file: str = 'imports.json') -> None:
             case 'internal':
                 imports = internal_imports
         imports.setdefault(module_, set())
-        imports[module_].add(str(path))
+        imports[module_].add((str(path), line_number))
 
     # def print_imports(imports: dict) -> None:
     #     for module in sorted(imports.keys()):
@@ -201,7 +224,7 @@ def dump_imports(ctx, source_path, json_file: str = 'imports.json') -> None:
         'internal': internal_imports,
     }
     if json_file is not None:
-        printc(f'<red>Write {json_file}</red>')
+        printc(f'<red>Write {json_file}</>')
         Path(json_file).write_text(
             json.dumps(
                 imports,
@@ -215,16 +238,26 @@ def dump_imports(ctx, source_path, json_file: str = 'imports.json') -> None:
 
 ####################################################################################################
 
-@task(build.symlink_dev)
+# Fixme:
+#@task(build.symlink_dev)
+@task
 def explore_dependencies(ctx, source_path):
     source_path = Path(source_path).absolute()
+    printc(f"source_path is <green>{source_path}</>")
     node_modules_path = source_path.joinpath('node_modules')
+    printc(f"node_modules is <green>{node_modules_path}</>")
+    # basic test to check node_modules has packages
+    if not node_modules_path.joinpath('vue').exists():
+        printc(f"<red>node_modules is empty</>")
+        raise ValueError()
 
+    # Get imports from sources
     # imports_json_file = Path('imports.json')
     imports_json_file = None
     imports = dump_imports(ctx, source_path, imports_json_file)
     # imports = json.loads(imports_json_file.read_text())
 
+    # Load package.json
     package_json_file = source_path.joinpath('package.json')
     package_json = PackageJson(package_json_file)
     dependencies = package_json.dependencies
@@ -234,49 +267,68 @@ def explore_dependencies(ctx, source_path):
     # node_modules = [_.name for _ in node_modules_path.iterdir()]
 
     external_imports = imports['external']
-    print()
 
     def check_dependencies(type_: str, dependencies: dict) -> None:
-        printc(f'<blue>{type_}Dependency not imported:</blue>')
+        printc(f'<blue>{type_}Dependency not imported:</>')
         for dependency in sorted(dependencies):
             if dependency not in external_imports:
                 print(' '*2 + dependency)
 
+    def is_in_node_module(dependency: str) -> bool:
+        path = node_modules_path.joinpath(dependency)
+        if path.exists():
+            # directory found
+            return True
+        else:
+            if path.parent.joinpath(path.name + '.js').exists():
+                return True
+        return False
+
+    # Check if an external dependency is not imported
+    print()
     check_dependencies('', dependencies)
     # check_dependencies('dev', dev_dependencies)
 
-    print()
-    printc('<blue>Import not found:</blue>')
+    # Check if an external import is not in node_modules
     external_imports_keys = sorted(external_imports.keys())
+    print()
+    printc('<blue>Import not found:</>')
     for dependency in external_imports_keys:
         files = external_imports[dependency]
         # files.sort()
-        if dependency not in NODE_LIBS and not node_modules_path.joinpath(dependency).exists():
-            printc(' '*2 + f'<green>{dependency}</green>')
+        if dependency not in NODE_LIBS and not is_in_node_module(dependency):
+            printc(' '*2 + f'<green>{dependency}</>')
             for _ in sorted(files):
-                print(' '*6 + _)
+                print(' '*6 + _[0])
 
+    # List external imports found in node_modules
     print()
-    printc('<blue>Packages:</blue>')
+    printc('<blue>Packages:</>')
     for dependency in external_imports_keys:
         files = external_imports[dependency]
-        if dependency not in NODE_LIBS and node_modules_path.joinpath(dependency).exists():
-            printc(' '*2 + f'<green>{dependency}</green>')
+        # same as before but without `not`
+        if dependency not in NODE_LIBS and is_in_node_module(dependency):
+            printc(' '*2 + f'<green>{dependency}</>')
             for _ in sorted(files):
-                print(' '*6 + _)
+                print(' '*6 + _[0])
 
     print()
-    printc('<blue>Packages:</blue>')
+    printc('<blue>Packages:</>')
+    # Build a map client/server -> dependencies
+    # a source file path must be of the form `(client|server)/...`
     map = {
         'server': [],
         'client': [],
+        'webpack': [],
     }
     for dependency, files in external_imports.items():
         if dependency not in NODE_LIBS and node_modules_path.joinpath(dependency).exists():
-            for _ in set([Path(_).parts[0] for _ in files]):
+            # get top directories for source files
+            for _ in set([Path(_[0]).parts[0] for _ in files]):
                 map[_].append(dependency)
 
     def find_depency(_):
+        """Search for a dependency in package.json"""
         type_ = ''
         version = '???'
         if _ in all_dependencies:
@@ -286,16 +338,17 @@ def explore_dependencies(ctx, source_path):
                 type_ = 'dev'
         return type_, version
 
+    # list for client/server (package: version) grouped by types (dev)
     for key, values in map.items():
         print()
-        printc(f'<green>{key}</green>')
+        printc(f'<green>{key}</>')
         lines = []
         dev_lines = []
         for package in sorted(values):
             type_, version = find_depency(package)
             if version == '???':
                 type_, version = find_depency(Path(package).parts[0])
-            line = f'"{package}": "<blue>{version}</blue>";'
+            line = f'"{package}": "<blue>{version}</>",'
             if type_:
                 _ = dev_lines
             else:
@@ -307,7 +360,7 @@ def explore_dependencies(ctx, source_path):
                 printc(' '*2 + _)
 
         print_lines(lines)
-        printc('<red>dev</red>')
+        printc('<red>dev</>')
         print_lines(dev_lines)
 
 ####################################################################################################
@@ -358,8 +411,13 @@ def lookup_mdi(ctx):
 
 @task
 def dump_file_tree(ctx) -> None:
-    # ['.asar', '.css', '.gql', '.graphql', '.html', '.ico', '.jpg', '.js', '.json', '.md',
-    #  '.png', '.pug', '.scss', '.svg', '.vue', '.woff', '.woff2', '.xml', '.yml']
+    """Dump the file tree for selected suffixes.
+
+    And then List found suffixes.
+    """
+    # Suffixes found in sources:
+    #   ['.asar', '.css', '.gql', '.graphql', '.html', '.ico', '.jpg', '.js', '.json', '.md',
+    #    '.png', '.pug', '.scss', '.svg', '.vue', '.woff', '.woff2', '.xml', '.yml']
     suffixes = set()
     # Fixme: update
     for dir in ('client', 'server'):
@@ -384,6 +442,7 @@ def read_package_json(source_path) -> PackageJson:
 
 @task
 def dump_package_json(ctx, source_path) -> None:
+    """List dependencies from a directory containing a package json"""
     printc('<cyan>Package.json</cyan>')
     source_path = Path(source_path)
     package_json = read_package_json(source_path)
@@ -402,7 +461,8 @@ def scan_node_modules(ctx, source_path) -> None:
 
 @task
 def ag(ctx, pattern: str) -> None:
-    cmd = ['/usr/bin/ag']
+    """Run ag on js files"""
+    cmd = [AG]
     # --follow
     # --ignore-case
     # for _ in ('.json', '.yml', '.graphql', '~'):
@@ -418,9 +478,10 @@ def ag(ctx, pattern: str) -> None:
 
 @task
 def dynamic_import(ctx, path='server') -> None:
+    """Find dynamic import"""
     # clear ; ag --ignore '*~' 'import\(' server
     cmd = (
-        '/usr/bin/ag',
+        AG,
         '--ignore', '*~',
         r'import\(',
         path,
@@ -486,20 +547,20 @@ class LineMatch:
 
     def to_str(self, show_line: bool = True) -> str:
         _ = self.file.relative_to(SOURCE_PATH)
-        path = f'<green>{_.parent}</green>/<blue>{_.name}</blue>'
+        path = f'<green>{_.parent}</>/<blue>{_.name}</>'
         pattern, pattern2 = self.patterns
         line = escape(self.line)
-        line = line.replace(pattern, '<red>' + pattern + '</red>')
+        line = line.replace(pattern, '<red>' + pattern + '</>')
         if pattern2 is not None:
-            line = line.replace(pattern2, '<blue>' + pattern2 + '</blue>')
-        # return f'{path} <red>{self.line_number}</red> {line}'
-        # return f'{path} <red>{self.line_number}</red>{os.linesep}  {line}'
+            line = line.replace(pattern2, '<blue>' + pattern2 + '</>')
+        # return f'{path} <red>{self.line_number}</> {line}'
+        # return f'{path} <red>{self.line_number}</>{os.linesep}  {line}'
         sep = '-'*25 + ' '
         if show_line:
             _ = line
         else:
             _ = ''
-        return _ + f'{os.linesep}{sep}{path} <red>{self.line_number}</red>'
+        return _ + f'{os.linesep}{sep}{path} <red>{self.line_number}</>'
 
 ####################################################################################################
 
